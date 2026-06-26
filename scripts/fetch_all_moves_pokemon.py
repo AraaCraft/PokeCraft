@@ -36,7 +36,7 @@ move_to_register = {
     "stat_changes":None,
     "target_name":None,
     "type_name":None,
-}
+} 
 
 list_moves_url = "https://pokeapi.co/api/v2/move/?limit=1000"
 # moves est une liste de tous les moves du jeu
