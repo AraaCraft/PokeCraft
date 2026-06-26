@@ -1,0 +1,82 @@
+{
+    "id": 319,
+    "name": "sharpedo",
+    "form": "sharpedo-mega",
+    "abilities": [
+        {
+            "ability": {
+                "name": "strong-jaw",
+                "url": "https://pokeapi.co/api/v2/ability/173/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        }
+    ],
+    "stats": [
+        {
+            "base_stat": 70,
+            "effort": 0,
+            "stat": {
+                "name": "hp",
+                "url": "https://pokeapi.co/api/v2/stat/1/"
+            }
+        },
+        {
+            "base_stat": 140,
+            "effort": 2,
+            "stat": {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/"
+            }
+        },
+        {
+            "base_stat": 70,
+            "effort": 0,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        },
+        {
+            "base_stat": 110,
+            "effort": 0,
+            "stat": {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/"
+            }
+        },
+        {
+            "base_stat": 65,
+            "effort": 0,
+            "stat": {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/"
+            }
+        },
+        {
+            "base_stat": 105,
+            "effort": 0,
+            "stat": {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/"
+            }
+        }
+    ],
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "water",
+                "url": "https://pokeapi.co/api/v2/type/11/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "dark",
+                "url": "https://pokeapi.co/api/v2/type/17/"
+            }
+        }
+    ],
+    "weight": 1303
+}

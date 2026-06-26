@@ -1,0 +1,83 @@
+{
+    "id": 38,
+    "name": "ninetales",
+    "form": "ninetales",
+    "abilities": [
+        {
+            "ability": {
+                "name": "flash-fire",
+                "url": "https://pokeapi.co/api/v2/ability/18/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        },
+        {
+            "ability": {
+                "name": "drought",
+                "url": "https://pokeapi.co/api/v2/ability/70/"
+            },
+            "is_hidden": true,
+            "slot": 3
+        }
+    ],
+    "stats": [
+        {
+            "base_stat": 73,
+            "effort": 0,
+            "stat": {
+                "name": "hp",
+                "url": "https://pokeapi.co/api/v2/stat/1/"
+            }
+        },
+        {
+            "base_stat": 76,
+            "effort": 0,
+            "stat": {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/"
+            }
+        },
+        {
+            "base_stat": 75,
+            "effort": 0,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        },
+        {
+            "base_stat": 81,
+            "effort": 0,
+            "stat": {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/"
+            }
+        },
+        {
+            "base_stat": 100,
+            "effort": 1,
+            "stat": {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/"
+            }
+        },
+        {
+            "base_stat": 100,
+            "effort": 1,
+            "stat": {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/"
+            }
+        }
+    ],
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "fire",
+                "url": "https://pokeapi.co/api/v2/type/10/"
+            }
+        }
+    ],
+    "weight": 199
+}

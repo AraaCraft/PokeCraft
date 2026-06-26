@@ -1,0 +1,82 @@
+{
+    "id": 303,
+    "name": "mawile",
+    "form": "mawile-mega",
+    "abilities": [
+        {
+            "ability": {
+                "name": "huge-power",
+                "url": "https://pokeapi.co/api/v2/ability/37/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        }
+    ],
+    "stats": [
+        {
+            "base_stat": 50,
+            "effort": 0,
+            "stat": {
+                "name": "hp",
+                "url": "https://pokeapi.co/api/v2/stat/1/"
+            }
+        },
+        {
+            "base_stat": 105,
+            "effort": 1,
+            "stat": {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/"
+            }
+        },
+        {
+            "base_stat": 125,
+            "effort": 1,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        },
+        {
+            "base_stat": 55,
+            "effort": 0,
+            "stat": {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/"
+            }
+        },
+        {
+            "base_stat": 95,
+            "effort": 0,
+            "stat": {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/"
+            }
+        },
+        {
+            "base_stat": 50,
+            "effort": 0,
+            "stat": {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/"
+            }
+        }
+    ],
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "steel",
+                "url": "https://pokeapi.co/api/v2/type/9/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "fairy",
+                "url": "https://pokeapi.co/api/v2/type/18/"
+            }
+        }
+    ],
+    "weight": 235
+}

@@ -1,0 +1,90 @@
+{
+    "id": 38,
+    "name": "ninetales",
+    "form": "ninetales-alola",
+    "abilities": [
+        {
+            "ability": {
+                "name": "snow-cloak",
+                "url": "https://pokeapi.co/api/v2/ability/81/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        },
+        {
+            "ability": {
+                "name": "snow-warning",
+                "url": "https://pokeapi.co/api/v2/ability/117/"
+            },
+            "is_hidden": true,
+            "slot": 3
+        }
+    ],
+    "stats": [
+        {
+            "base_stat": 73,
+            "effort": 0,
+            "stat": {
+                "name": "hp",
+                "url": "https://pokeapi.co/api/v2/stat/1/"
+            }
+        },
+        {
+            "base_stat": 67,
+            "effort": 0,
+            "stat": {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/"
+            }
+        },
+        {
+            "base_stat": 75,
+            "effort": 0,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        },
+        {
+            "base_stat": 81,
+            "effort": 0,
+            "stat": {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/"
+            }
+        },
+        {
+            "base_stat": 100,
+            "effort": 0,
+            "stat": {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/"
+            }
+        },
+        {
+            "base_stat": 109,
+            "effort": 2,
+            "stat": {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/"
+            }
+        }
+    ],
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "ice",
+                "url": "https://pokeapi.co/api/v2/type/15/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "fairy",
+                "url": "https://pokeapi.co/api/v2/type/18/"
+            }
+        }
+    ],
+    "weight": 199
+}

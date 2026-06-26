@@ -1,0 +1,82 @@
+{
+    "id": 1000,
+    "name": "gholdengo",
+    "form": "gholdengo",
+    "abilities": [
+        {
+            "ability": {
+                "name": "good-as-gold",
+                "url": "https://pokeapi.co/api/v2/ability/283/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        }
+    ],
+    "stats": [
+        {
+            "base_stat": 87,
+            "effort": 0,
+            "stat": {
+                "name": "hp",
+                "url": "https://pokeapi.co/api/v2/stat/1/"
+            }
+        },
+        {
+            "base_stat": 60,
+            "effort": 0,
+            "stat": {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/"
+            }
+        },
+        {
+            "base_stat": 95,
+            "effort": 0,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        },
+        {
+            "base_stat": 133,
+            "effort": 2,
+            "stat": {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/"
+            }
+        },
+        {
+            "base_stat": 91,
+            "effort": 0,
+            "stat": {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/"
+            }
+        },
+        {
+            "base_stat": 84,
+            "effort": 0,
+            "stat": {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/"
+            }
+        }
+    ],
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "steel",
+                "url": "https://pokeapi.co/api/v2/type/9/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "ghost",
+                "url": "https://pokeapi.co/api/v2/type/8/"
+            }
+        }
+    ],
+    "weight": 300
+}

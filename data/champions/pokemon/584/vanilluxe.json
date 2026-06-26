@@ -1,0 +1,91 @@
+{
+    "id": 584,
+    "name": "vanilluxe",
+    "form": "vanilluxe",
+    "abilities": [
+        {
+            "ability": {
+                "name": "ice-body",
+                "url": "https://pokeapi.co/api/v2/ability/115/"
+            },
+            "is_hidden": false,
+            "slot": 1
+        },
+        {
+            "ability": {
+                "name": "snow-warning",
+                "url": "https://pokeapi.co/api/v2/ability/117/"
+            },
+            "is_hidden": false,
+            "slot": 2
+        },
+        {
+            "ability": {
+                "name": "weak-armor",
+                "url": "https://pokeapi.co/api/v2/ability/133/"
+            },
+            "is_hidden": true,
+            "slot": 3
+        }
+    ],
+    "stats": [
+        {
+            "base_stat": 71,
+            "effort": 0,
+            "stat": {
+                "name": "hp",
+                "url": "https://pokeapi.co/api/v2/stat/1/"
+            }
+        },
+        {
+            "base_stat": 95,
+            "effort": 0,
+            "stat": {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/"
+            }
+        },
+        {
+            "base_stat": 85,
+            "effort": 0,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        },
+        {
+            "base_stat": 110,
+            "effort": 3,
+            "stat": {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/"
+            }
+        },
+        {
+            "base_stat": 95,
+            "effort": 0,
+            "stat": {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/"
+            }
+        },
+        {
+            "base_stat": 79,
+            "effort": 0,
+            "stat": {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/"
+            }
+        }
+    ],
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "ice",
+                "url": "https://pokeapi.co/api/v2/type/15/"
+            }
+        }
+    ],
+    "weight": 575
+}

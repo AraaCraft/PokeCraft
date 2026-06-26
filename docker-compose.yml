@@ -1,0 +1,13 @@
+services:
+  teambuilder-web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      # Synchronise le dossier actuel avec le dossier /app du conteneur
+      - .:/app
+    environment:
+      # Ces variables activent le mode développement de Flask
+      # Le serveur redémarrera tout seul à chaque modification du code
+      - FLASK_APP=app.py
+      - FLASK_DEBUG=1
