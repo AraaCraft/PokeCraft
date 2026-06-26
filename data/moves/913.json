@@ -1,0 +1,31 @@
+{
+    "accuracy": 0,
+    "damage_class": "status",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 913,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "dragon-cheer",
+    "name_fr": "Cri Draconique",
+    "name_en": "Dragon Cheer",
+    "power": 0,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "all-allies",
+    "type_name": "dragon"
+}

@@ -1,0 +1,46 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": 100,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 370,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage-raise",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 100
+    },
+    "shortname": "close-combat",
+    "name_fr": "Close Combat",
+    "name_en": "Close Combat",
+    "power": 120,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": -1,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        },
+        {
+            "change": -1,
+            "stat": {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/"
+            }
+        }
+    ],
+    "target_name": "selected-pokemon",
+    "type_name": "fighting"
+}

@@ -1,0 +1,76 @@
+{
+    "accuracy": null,
+    "damage_class": "physical",
+    "effect_chance": null,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "Inflige des dommages de type Normal.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Inflicts Normal-type damage.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "gold-silver",
+                "url": "https://pokeapi.co/api/v2/version-group/3/"
+            }
+        },
+        {
+            "effect_entries": [
+                {
+                    "effect": "Le lanceur reçoit la moitié des dommages infligés en recul.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "The user receieves 1/2 of the damage dealt in recoil.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "diamond-pearl",
+                "url": "https://pokeapi.co/api/v2/version-group/8/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 165,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": -25,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "struggle",
+    "name_fr": "Lutte",
+    "name_en": "Struggle",
+    "power": 50,
+    "pp": 1,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "random-opponent",
+    "type_name": "normal"
+}

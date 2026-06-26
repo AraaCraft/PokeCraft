@@ -1,0 +1,31 @@
+{
+    "accuracy": 95,
+    "damage_class": "special",
+    "effect_chance": 30,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 403,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 30,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "air-slash",
+    "name_fr": "Lame d’Air",
+    "name_en": "Air Slash",
+    "power": 75,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "flying"
+}

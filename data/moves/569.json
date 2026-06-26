@@ -1,0 +1,31 @@
+{
+    "accuracy": null,
+    "damage_class": "status",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 569,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "whole-field-effect",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "ion-deluge",
+    "name_fr": "Déluge Plasmique",
+    "name_en": "Ion Deluge",
+    "power": null,
+    "pp": 25,
+    "priority": 1,
+    "stat_changes": [],
+    "target_name": "entire-field",
+    "type_name": "electric"
+}

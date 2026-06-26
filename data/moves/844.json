@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 844,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "infernal-parade",
+    "name_fr": "Cortège Funèbre",
+    "name_en": "Infernal Parade",
+    "power": 60,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "ghost"
+}

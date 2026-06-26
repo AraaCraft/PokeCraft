@@ -1,0 +1,31 @@
+{
+    "accuracy": 90,
+    "damage_class": "physical",
+    "effect_chance": 100,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 738,
+    "meta": {
+        "ailment_name": "leech-seed",
+        "ailment_chance": 100,
+        "category_name": "damage-ailment",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "sappy-seed",
+    "name_fr": "Évo-Écolo",
+    "name_en": "Sappy Seed",
+    "power": 100,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "grass"
+}

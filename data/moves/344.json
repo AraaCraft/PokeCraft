@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": 10,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 344,
+    "meta": {
+        "ailment_name": "paralysis",
+        "ailment_chance": 10,
+        "category_name": "damage-ailment",
+        "crit_rate": 0,
+        "drain": -33,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "volt-tackle",
+    "name_fr": "Électacle",
+    "name_en": "Volt Tackle",
+    "power": 120,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "electric"
+}

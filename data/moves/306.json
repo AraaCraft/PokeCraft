@@ -1,0 +1,39 @@
+{
+    "accuracy": 95,
+    "damage_class": "physical",
+    "effect_chance": 50,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 306,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage-lower",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 50
+    },
+    "shortname": "crush-claw",
+    "name_fr": "Éclate Griffe",
+    "name_en": "Crush Claw",
+    "power": 75,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": -1,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        }
+    ],
+    "target_name": "selected-pokemon",
+    "type_name": "normal"
+}

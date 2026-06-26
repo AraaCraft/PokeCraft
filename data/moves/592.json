@@ -1,0 +1,31 @@
+{
+    "accuracy": 95,
+    "damage_class": "special",
+    "effect_chance": 30,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 592,
+    "meta": {
+        "ailment_name": "burn",
+        "ailment_chance": 30,
+        "category_name": "damage-ailment",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "steam-eruption",
+    "name_fr": "Jet de Vapeur",
+    "name_en": "Steam Eruption",
+    "power": 110,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "water"
+}

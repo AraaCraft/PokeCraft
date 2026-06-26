@@ -1,0 +1,54 @@
+{
+    "accuracy": 70,
+    "damage_class": "special",
+    "effect_chance": 10,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "N’interagit pas avec Grêle.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Does not interact with Hail.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "diamond-pearl",
+                "url": "https://pokeapi.co/api/v2/version-group/8/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 59,
+    "meta": {
+        "ailment_name": "freeze",
+        "ailment_chance": 10,
+        "category_name": "damage-ailment",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "blizzard",
+    "name_fr": "Blizzard",
+    "name_en": "Blizzard",
+    "power": 110,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "all-opponents",
+    "type_name": "ice"
+}

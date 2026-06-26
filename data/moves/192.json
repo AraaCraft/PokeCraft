@@ -1,0 +1,31 @@
+{
+    "accuracy": 50,
+    "damage_class": "special",
+    "effect_chance": 100,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 192,
+    "meta": {
+        "ailment_name": "paralysis",
+        "ailment_chance": 100,
+        "category_name": "damage-ailment",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "zap-cannon",
+    "name_fr": "Élecanon",
+    "name_en": "Zap Cannon",
+    "power": 120,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "electric"
+}

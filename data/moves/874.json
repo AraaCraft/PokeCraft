@@ -1,0 +1,39 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 874,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "make-it-rain",
+    "name_fr": "Ruée d'Or",
+    "name_en": "Make It Rain",
+    "power": 120,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": -1,
+            "stat": {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/"
+            }
+        }
+    ],
+    "target_name": "all-opponents",
+    "type_name": "steel"
+}

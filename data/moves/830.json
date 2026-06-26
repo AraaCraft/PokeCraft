@@ -1,0 +1,31 @@
+{
+    "accuracy": 90,
+    "damage_class": "physical",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 830,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "stone-axe",
+    "name_fr": "Hache de Pierre",
+    "name_en": "Stone Axe",
+    "power": 65,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "rock"
+}

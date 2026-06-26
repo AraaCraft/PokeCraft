@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "status",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 50,
+    "meta": {
+        "ailment_name": "disable",
+        "ailment_chance": 0,
+        "category_name": "unique",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": 4,
+        "min_hits": null,
+        "min_turns": 4,
+        "stat_chance": 0
+    },
+    "shortname": "disable",
+    "name_fr": "Entrave",
+    "name_en": "Disable",
+    "power": null,
+    "pp": 20,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "normal"
+}

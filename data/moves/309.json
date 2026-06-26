@@ -1,0 +1,39 @@
+{
+    "accuracy": 90,
+    "damage_class": "physical",
+    "effect_chance": 20,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 309,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage-raise",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 20
+    },
+    "shortname": "meteor-mash",
+    "name_fr": "Poing Météore",
+    "name_en": "Meteor Mash",
+    "power": 90,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": 1,
+            "stat": {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/"
+            }
+        }
+    ],
+    "target_name": "selected-pokemon",
+    "type_name": "steel"
+}

@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 915,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "temper-flare",
+    "name_fr": "Indignition",
+    "name_en": "Temper Flare",
+    "power": 75,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "fire"
+}

@@ -1,0 +1,54 @@
+{
+    "accuracy": null,
+    "damage_class": "status",
+    "effect_chance": null,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "Fonctionne pendant le sommeil grâce à Blabla Dodo si les PV ne sont pas au maximum.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Works while asleep through Sleep Talk if not at full health.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "diamond-pearl",
+                "url": "https://pokeapi.co/api/v2/version-group/8/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 156,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "unique",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "rest",
+    "name_fr": "Repos",
+    "name_en": "Rest",
+    "power": null,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "user",
+    "type_name": "psychic"
+}

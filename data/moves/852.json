@@ -1,0 +1,39 @@
+{
+    "accuracy": null,
+    "damage_class": "status",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 852,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "silk-trap",
+    "name_fr": "Piège de Fil",
+    "name_en": "Silk Trap",
+    "power": 0,
+    "pp": 10,
+    "priority": 4,
+    "stat_changes": [
+        {
+            "change": -1,
+            "stat": {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/"
+            }
+        }
+    ],
+    "target_name": "user",
+    "type_name": "bug"
+}

@@ -1,0 +1,54 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": null,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "Météores peut toucher le lanceur lorsqu’il est sous terre, contrairement aux autres capacités. A cause d’un bug, si le lanceur ne parvient pas à effectuer le deuxième tour de la capcité, par exemple à cause d’une paralysis, il reste sous terre jusqu’à ce qu’il soit rappelé ou utilise à nouveau Tunnel avec succès. Il peut agir comme s’il était à la surface pendant ce temps, mais les capacités continuent de ne pas le toucher.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Swift can hit the user while underground, and no other moves can.  Due to a bug, if the user fails to carry out the move’s second turn, e.g. due to paralysis, it remains underground until it switches out or uses Dig again successfully.  It can act as if it were aboveground in the meantime, but moves still miss it.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "gold-silver",
+                "url": "https://pokeapi.co/api/v2/version-group/3/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 91,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "dig",
+    "name_fr": "Tunnel",
+    "name_en": "Dig",
+    "power": 80,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "ground"
+}

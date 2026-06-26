@@ -1,22 +1,22 @@
 # 26/06/2026
-# Version : 1.0
+# Version : 1.1 Ajout de la récupération des moves
 # Descrtiption : Script pour récupérer les données des pokémons présent sur Pokémon Champions
 
 import requests
 import json
 import os
 
-# S'assure que le dossier data existe
-os.makedirs('data', exist_ok=True)
+# TODO: Récupérer les id des moves plutôt que leurs noms
 
 pokemon = {
     "id":None,
     "name":None,
     "form":None,
-    "abilities":None,
+    "abilities":[],
     "stats":None,
-    "types":None,
+    "types":[],
     "weight":None,
+    "moves":[],
 }
 champions_dex_url_api = "https://pokeapi.co/api/v2/pokedex/36/"
 # entries est une liste de tous les pokémon de champions
@@ -27,11 +27,12 @@ for entry in entries:
     print(entry["entry_number"], entry["pokemon_species"]["name"],
           entry["pokemon_species"]["url"])
     # On crée le dossier pour le pokémon en question
-    pokemon_dir = f"data/champions/pokemon/{entry["entry_number"]}"
+    pokemon_dir = f"/app/data/champions/pokemon/{entry["entry_number"]}"
     os.makedirs(pokemon_dir, exist_ok=True)
     # varieties est une liste des formes du pokémon en question
     varieties = requests.get(entry["pokemon_species"]["url"]).json()["varieties"]
 
+    # On itère pour chaque forme existante pour le pokémon en question
     for variety in varieties:
         # variety_data est le json de la forme en question
         variety_data = requests.get(variety["pokemon"]["url"]).json()
@@ -58,8 +59,32 @@ for entry in entries:
             open(f"{pokemon_dir}/{variety["pokemon"]["name"]}-back_default.png", 'wb').write(back_sprite_default_raw.content)
         back_sprite_female_raw = None       # Plus tard
 
+        # On itère pour chaque attaque du pokémon en question
+        for move in variety_data["moves"]:
+            versions = move["version_group_details"]
+            # On itère sur chaque version de jeu Pokémon où le move existe sur le pokémon en question
+            for version in versions:
+                # Si ce move existe sur Champions on le stocke
+                if (version["version_group"]["name"]=="champions"):
+                    # On récupère la chaîne de caractère url du 30eme char à l'avant dernier
+                    pokemon["moves"].append(move["move"]["url"][31:-1])
+                    break
+
+
         # Génère le json du pokémon en question, par forme, indent=4 pour plus de lisibilité
         json_str = json.dumps(pokemon, indent=4)
         # On crée le fichier json du pokémon en question, par forme, dans le dossier pokemon_dir/ dans un dossier avec son id pokédex
         with open(f"{pokemon_dir}/{variety["pokemon"]["name"]}.json", "w") as f:
             f.write(json_str)
+
+        # Réinitialise "pokemon"
+        pokemon = {
+            "id":None,
+            "name":None,
+            "form":None,
+            "abilities":[],
+            "stats":None,
+            "types":[],
+            "weight":None,
+            "moves":[],
+        }

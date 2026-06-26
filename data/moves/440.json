@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": 10,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 440,
+    "meta": {
+        "ailment_name": "poison",
+        "ailment_chance": 10,
+        "category_name": "damage-ailment",
+        "crit_rate": 1,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "cross-poison",
+    "name_fr": "Poison Croix",
+    "name_en": "Cross Poison",
+    "power": 70,
+    "pp": 20,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "poison"
+}

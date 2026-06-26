@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": 30,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 435,
+    "meta": {
+        "ailment_name": "paralysis",
+        "ailment_chance": 30,
+        "category_name": "damage-ailment",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "discharge",
+    "name_fr": "Coup d’Jus",
+    "name_en": "Discharge",
+    "power": 80,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "all-other-pokemon",
+    "type_name": "electric"
+}

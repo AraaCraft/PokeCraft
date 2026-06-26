@@ -1,0 +1,31 @@
+{
+    "accuracy": 80,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 847,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "wildbolt-storm",
+    "name_fr": "Typhon Fulgurant",
+    "name_en": "Wildbolt Storm",
+    "power": 100,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "all-opponents",
+    "type_name": "electric"
+}

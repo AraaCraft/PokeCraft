@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 909,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "thunderclap",
+    "name_fr": "Vif Éclair",
+    "name_en": "Thunderclap",
+    "power": 70,
+    "pp": 5,
+    "priority": 1,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "electric"
+}

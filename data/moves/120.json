@@ -1,0 +1,54 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": null,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "Réduit de moitié la Defense pour le calcul des dommages, ce qui équivaut à doubler la puissance de l’attaque.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Halves the target’s Defense for damage calculation, which is similar to doubling the attack’s power.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "black-white",
+                "url": "https://pokeapi.co/api/v2/version-group/11/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 120,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "self-destruct",
+    "name_fr": "Destruction",
+    "name_en": "Self-Destruct",
+    "power": 200,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "all-other-pokemon",
+    "type_name": "normal"
+}

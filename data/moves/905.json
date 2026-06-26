@@ -1,0 +1,39 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 905,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "electro-shot",
+    "name_fr": "Fulgurayon",
+    "name_en": "Electro Shot",
+    "power": 130,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": 1,
+            "stat": {
+                "name": "special-attack",
+                "url": "https://pokeapi.co/api/v2/stat/4/"
+            }
+        }
+    ],
+    "target_name": "selected-pokemon",
+    "type_name": "electric"
+}

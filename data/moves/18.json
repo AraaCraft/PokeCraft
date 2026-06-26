@@ -1,0 +1,54 @@
+{
+    "accuracy": null,
+    "damage_class": "status",
+    "effect_chance": null,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "Sans effet en combat de dresseurs.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Does nothing in trainer battles.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "gold-silver",
+                "url": "https://pokeapi.co/api/v2/version-group/3/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 18,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "force-switch",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "whirlwind",
+    "name_fr": "Cyclone",
+    "name_en": "Whirlwind",
+    "power": null,
+    "pp": 20,
+    "priority": -6,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "normal"
+}

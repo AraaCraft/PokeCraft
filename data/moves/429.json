@@ -1,0 +1,39 @@
+{
+    "accuracy": 85,
+    "damage_class": "special",
+    "effect_chance": 30,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 429,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage-lower",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 30
+    },
+    "shortname": "mirror-shot",
+    "name_fr": "Miroi-Tir",
+    "name_en": "Mirror Shot",
+    "power": 65,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": -1,
+            "stat": {
+                "name": "accuracy",
+                "url": "https://pokeapi.co/api/v2/stat/7/"
+            }
+        }
+    ],
+    "target_name": "selected-pokemon",
+    "type_name": "steel"
+}

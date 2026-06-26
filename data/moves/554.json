@@ -1,0 +1,31 @@
+{
+    "accuracy": 90,
+    "damage_class": "special",
+    "effect_chance": 30,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 554,
+    "meta": {
+        "ailment_name": "burn",
+        "ailment_chance": 30,
+        "category_name": "damage-ailment",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "ice-burn",
+    "name_fr": "Feu Glacé",
+    "name_en": "Ice Burn",
+    "power": 140,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "ice"
+}

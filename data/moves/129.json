@@ -1,0 +1,54 @@
+{
+    "accuracy": null,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "Touche les Pokémon sous les effets de Tunnel et Vol.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Hits Pokémon under the effects of Dig and Fly.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "gold-silver",
+                "url": "https://pokeapi.co/api/v2/version-group/3/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 129,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "swift",
+    "name_fr": "Météores",
+    "name_en": "Swift",
+    "power": 60,
+    "pp": 20,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "all-opponents",
+    "type_name": "normal"
+}

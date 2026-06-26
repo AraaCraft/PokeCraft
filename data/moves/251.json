@@ -1,0 +1,54 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": null,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "Détermine les dommages en utilisant l’Attack de base du lanceur et de ses alliés et la Defense de base de l’adversaire à la place des stats calculées.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Determines damage using each participant’s base Attack and the opponent’s base Defense in place of calculated stats.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "black-white",
+                "url": "https://pokeapi.co/api/v2/version-group/11/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 251,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": 6,
+        "max_turns": null,
+        "min_hits": 6,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "beat-up",
+    "name_fr": "Baston",
+    "name_en": "Beat Up",
+    "power": null,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "dark"
+}

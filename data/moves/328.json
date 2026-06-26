@@ -1,0 +1,31 @@
+{
+    "accuracy": 85,
+    "damage_class": "physical",
+    "effect_chance": 100,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 328,
+    "meta": {
+        "ailment_name": "trap",
+        "ailment_chance": 100,
+        "category_name": "damage-ailment",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": 6,
+        "min_hits": null,
+        "min_turns": 5,
+        "stat_chance": 0
+    },
+    "shortname": "sand-tomb",
+    "name_fr": "Tourbi-Sable",
+    "name_en": "Sand Tomb",
+    "power": 35,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "ground"
+}

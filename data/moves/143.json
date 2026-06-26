@@ -1,0 +1,31 @@
+{
+    "accuracy": 90,
+    "damage_class": "physical",
+    "effect_chance": 30,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 143,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 1,
+        "drain": 0,
+        "flinch_chance": 30,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "sky-attack",
+    "name_fr": "Piqué",
+    "name_en": "Sky Attack",
+    "power": 140,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "flying"
+}

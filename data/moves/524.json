@@ -1,0 +1,31 @@
+{
+    "accuracy": 90,
+    "damage_class": "special",
+    "effect_chance": 100,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 524,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 100,
+        "category_name": "damage",
+        "crit_rate": 6,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "frost-breath",
+    "name_fr": "Souffle Glacé",
+    "name_en": "Frost Breath",
+    "power": 60,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "ice"
+}

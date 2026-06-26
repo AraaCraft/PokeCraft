@@ -1,0 +1,39 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 855,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "lumina-crash",
+    "name_fr": "Lumino-Impact",
+    "name_en": "Lumina Crash",
+    "power": 80,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": -2,
+            "stat": {
+                "name": "special-defense",
+                "url": "https://pokeapi.co/api/v2/stat/5/"
+            }
+        }
+    ],
+    "target_name": "selected-pokemon",
+    "type_name": "psychic"
+}

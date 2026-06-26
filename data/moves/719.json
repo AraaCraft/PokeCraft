@@ -1,0 +1,31 @@
+{
+    "accuracy": null,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 719,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 2,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "10-000-000-volt-thunderbolt",
+    "name_fr": "Giga-Tonnerre",
+    "name_en": "10,000,000 Volt Thunderbolt",
+    "power": 195,
+    "pp": 1,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "electric"
+}

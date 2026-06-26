@@ -1,0 +1,31 @@
+{
+    "accuracy": null,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 574,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "disarming-voice",
+    "name_fr": "Voix Enjôleuse",
+    "name_en": "Disarming Voice",
+    "power": 40,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "all-opponents",
+    "type_name": "fairy"
+}

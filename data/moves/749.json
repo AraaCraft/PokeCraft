@@ -1,0 +1,39 @@
+{
+    "accuracy": 100,
+    "damage_class": "status",
+    "effect_chance": 100,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 749,
+    "meta": {
+        "ailment_name": "tar-shot",
+        "ailment_chance": 100,
+        "category_name": "swagger",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 100
+    },
+    "shortname": "tar-shot",
+    "name_fr": "Goudronnage",
+    "name_en": "Tar Shot",
+    "power": null,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": -1,
+            "stat": {
+                "name": "speed",
+                "url": "https://pokeapi.co/api/v2/stat/6/"
+            }
+        }
+    ],
+    "target_name": "selected-pokemon",
+    "type_name": "rock"
+}

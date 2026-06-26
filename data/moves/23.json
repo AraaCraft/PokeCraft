@@ -1,0 +1,54 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": 30,
+    "effect_changes": [
+        {
+            "effect_entries": [
+                {
+                    "effect": "N’interagit pas avec Lilliput.",
+                    "language": {
+                        "name": "fr",
+                        "url": "https://pokeapi.co/api/v2/language/5/"
+                    }
+                },
+                {
+                    "effect": "Does not interact with Minimize.",
+                    "language": {
+                        "name": "en",
+                        "url": "https://pokeapi.co/api/v2/language/9/"
+                    }
+                }
+            ],
+            "version_group": {
+                "name": "gold-silver",
+                "url": "https://pokeapi.co/api/v2/version-group/3/"
+            }
+        }
+    ],
+    "effect_entries": null,
+    "id": 23,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 30,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "stomp",
+    "name_fr": "Écrasement",
+    "name_en": "Stomp",
+    "power": 65,
+    "pp": 20,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "normal"
+}

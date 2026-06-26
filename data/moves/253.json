@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 253,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": 3,
+        "min_hits": null,
+        "min_turns": 3,
+        "stat_chance": 0
+    },
+    "shortname": "uproar",
+    "name_fr": "Brouhaha",
+    "name_en": "Uproar",
+    "power": 90,
+    "pp": 10,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "random-opponent",
+    "type_name": "normal"
+}

@@ -1,0 +1,39 @@
+{
+    "accuracy": 95,
+    "damage_class": "physical",
+    "effect_chance": 50,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 591,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage-raise",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": 50
+    },
+    "shortname": "diamond-storm",
+    "name_fr": "Orage Adamantin",
+    "name_en": "Diamond Storm",
+    "power": 100,
+    "pp": 5,
+    "priority": 0,
+    "stat_changes": [
+        {
+            "change": 2,
+            "stat": {
+                "name": "defense",
+                "url": "https://pokeapi.co/api/v2/stat/3/"
+            }
+        }
+    ],
+    "target_name": "all-opponents",
+    "type_name": "rock"
+}

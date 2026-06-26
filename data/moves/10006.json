@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": 10,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 10006,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "shadow-chill",
+    "name_fr": "Froid Noir",
+    "name_en": "Shadow Chill",
+    "power": 75,
+    "pp": null,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "shadow"
+}

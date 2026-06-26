@@ -79,5 +79,6 @@
             }
         }
     ],
-    "weight": 60
+    "weight": 60,
+    "moves": []
 }

@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 10010,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "shadow-storm",
+    "name_fr": "Typhon Noir",
+    "name_en": "Shadow Storm",
+    "power": 95,
+    "pp": null,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "opponents-field",
+    "type_name": "shadow"
+}

@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "physical",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 131,
+    "meta": {
+        "ailment_name": "none",
+        "ailment_chance": 0,
+        "category_name": "damage",
+        "crit_rate": 0,
+        "drain": 0,
+        "flinch_chance": 0,
+        "healing": 0,
+        "max_hits": 5,
+        "max_turns": null,
+        "min_hits": 2,
+        "min_turns": null,
+        "stat_chance": 0
+    },
+    "shortname": "spike-cannon",
+    "name_fr": "Picanon",
+    "name_en": "Spike Cannon",
+    "power": 20,
+    "pp": 15,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "selected-pokemon",
+    "type_name": "normal"
+}

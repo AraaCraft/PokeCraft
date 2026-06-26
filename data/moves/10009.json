@@ -1,0 +1,31 @@
+{
+    "accuracy": 100,
+    "damage_class": "special",
+    "effect_chance": null,
+    "effect_changes": [],
+    "effect_entries": null,
+    "id": 10009,
+    "meta": {
+        "ailment_name": null,
+        "ailment_chance": null,
+        "category_name": null,
+        "crit_rate": null,
+        "drain": null,
+        "flinch_chance": null,
+        "healing": null,
+        "max_hits": null,
+        "max_turns": null,
+        "min_hits": null,
+        "min_turns": null,
+        "stat_chance": null
+    },
+    "shortname": "shadow-rave",
+    "name_fr": "Rage Noire",
+    "name_en": "Shadow Rave",
+    "power": 70,
+    "pp": null,
+    "priority": 0,
+    "stat_changes": [],
+    "target_name": "opponents-field",
+    "type_name": "shadow"
+}
