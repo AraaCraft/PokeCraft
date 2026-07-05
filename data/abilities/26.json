@@ -1,0 +1,8 @@
+{
+    "id": 26,
+    "name": "levitate",
+    "name_fr": "Lévitation",
+    "name_en": "Levitate",
+    "description_fr": "Immunise contre toutes les capacités de type Sol.",
+    "description_en": "Not hit by GROUND attacks."
+}

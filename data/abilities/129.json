@@ -1,0 +1,8 @@
+{
+    "id": 129,
+    "name": "defeatist",
+    "name_fr": "Défaitiste",
+    "name_en": "Defeatist",
+    "description_fr": "Baisse les stats quand les PV tombent à la moitié.",
+    "description_en": "Lowers stats when HP becomes half or less."
+}

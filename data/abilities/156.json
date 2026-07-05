@@ -1,0 +1,8 @@
+{
+    "id": 156,
+    "name": "magic-bounce",
+    "name_fr": "Miroir Magik",
+    "name_en": "Magic Bounce",
+    "description_fr": "Renvoie les attaques de statut.",
+    "description_en": "Reflects status- changing moves."
+}

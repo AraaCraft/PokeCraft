@@ -1,0 +1,8 @@
+{
+    "id": 215,
+    "name": "innards-out",
+    "name_fr": "Expuls’Organes",
+    "name_en": "Innards Out",
+    "description_fr": "Le Pokémon inflige à l’adversaire l’ayant mis K.O. des dégâts égaux au nombre de PV qu’il lui restait avant le coup de grâce.",
+    "description_en": "Damages the attacker landing the finishing hit by the amount equal to its last HP."
+}

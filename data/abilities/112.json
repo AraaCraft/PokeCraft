@@ -1,0 +1,8 @@
+{
+    "id": 112,
+    "name": "slow-start",
+    "name_fr": "Début Calme",
+    "name_en": "Slow Start",
+    "description_fr": "Divise temporairement Vitesse et Attaque par 2.",
+    "description_en": "Temporarily halves Attack and Speed."
+}

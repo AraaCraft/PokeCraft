@@ -1,0 +1,8 @@
+{
+    "id": 128,
+    "name": "defiant",
+    "name_fr": "Acharné",
+    "name_en": "Defiant",
+    "description_fr": "Monte l'Attaque quand les stats baissent.",
+    "description_en": "When its stats are lowered its Attack increases."
+}

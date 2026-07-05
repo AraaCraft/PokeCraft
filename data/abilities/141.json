@@ -1,0 +1,8 @@
+{
+    "id": 141,
+    "name": "moody",
+    "name_fr": "Lunatique",
+    "name_en": "Moody",
+    "description_fr": "Monte une stat tout en en baissant une autre.",
+    "description_en": "Raises one stat and lowers another."
+}

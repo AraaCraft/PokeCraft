@@ -1,0 +1,8 @@
+{
+    "id": 170,
+    "name": "magician",
+    "name_fr": "Magicien",
+    "name_en": "Magician",
+    "description_fr": "Les capacités volent aussi l’objet tenu par la cible.",
+    "description_en": "The Pokémon steals the held item of a Pokémon it hits with a move."
+}

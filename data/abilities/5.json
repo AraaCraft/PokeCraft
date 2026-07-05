@@ -1,0 +1,8 @@
+{
+    "id": 5,
+    "name": "sturdy",
+    "name_fr": "Fermeté",
+    "name_en": "Sturdy",
+    "description_fr": "Protège des capacités mettant K.O. en un coup.",
+    "description_en": "Negates 1-hit KO attacks."
+}

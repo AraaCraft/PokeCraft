@@ -1,0 +1,8 @@
+{
+    "id": 121,
+    "name": "multitype",
+    "name_fr": "Multi-Type",
+    "name_en": "Multitype",
+    "description_fr": "Modifie le type en fonction de la Plaque tenue.",
+    "description_en": "Changes type to match the held Plate."
+}

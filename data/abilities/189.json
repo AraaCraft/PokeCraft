@@ -1,0 +1,8 @@
+{
+    "id": 189,
+    "name": "primordial-sea",
+    "name_fr": "Mer Primaire",
+    "name_en": "Primordial Sea",
+    "description_fr": "Altère les conditions météo et rend inefficaces les attaques Feu.",
+    "description_en": "Affects weather and nullifies any Fire-type attacks."
+}

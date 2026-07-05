@@ -1,0 +1,8 @@
+{
+    "id": 131,
+    "name": "healer",
+    "name_fr": "Cœur Soin",
+    "name_en": "Healer",
+    "description_fr": "Guérit parfois le statut des alliés alentour.",
+    "description_en": "May heal an ally’s status conditions."
+}

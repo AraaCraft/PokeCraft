@@ -1,0 +1,8 @@
+{
+    "id": 16,
+    "name": "color-change",
+    "name_fr": "Homochromie",
+    "name_en": "Color Change",
+    "description_fr": "Le Pokémon adopte le type de la capacité ennemie.",
+    "description_en": "Changes type to foe’s move."
+}

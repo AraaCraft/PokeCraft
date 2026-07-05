@@ -1,0 +1,8 @@
+{
+    "id": 100,
+    "name": "stall",
+    "name_fr": "Frein",
+    "name_en": "Stall",
+    "description_fr": "Attaque toujours après l'ennemi, même plus lent.",
+    "description_en": "The Pokémon moves after even slower foes."
+}

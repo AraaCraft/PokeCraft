@@ -1,0 +1,8 @@
+{
+    "id": 225,
+    "name": "rks-system",
+    "name_fr": "Système Alpha",
+    "name_en": "RKS System",
+    "description_fr": "Change le type du Pokémon en fonction de la ROM équipée.",
+    "description_en": "Changes the Pokémon’s type to match the memory disc it holds."
+}

@@ -1,0 +1,8 @@
+{
+    "id": 123,
+    "name": "bad-dreams",
+    "name_fr": "Mauvais Rêve",
+    "name_en": "Bad Dreams",
+    "description_fr": "Réduit les PV d'un ennemi endormi.",
+    "description_en": "Reduces a sleeping foe’s HP."
+}

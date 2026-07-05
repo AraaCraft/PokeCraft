@@ -1,0 +1,8 @@
+{
+    "id": 119,
+    "name": "frisk",
+    "name_fr": "Fouille",
+    "name_en": "Frisk",
+    "description_fr": "Permet de connaître l'objet tenu par l'ennemi.",
+    "description_en": "The Pokémon can check the foe’s held item."
+}

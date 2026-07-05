@@ -1,0 +1,8 @@
+{
+    "id": 174,
+    "name": "refrigerate",
+    "name_fr": "Peau Gelée",
+    "name_en": "Refrigerate",
+    "description_fr": "Les capacités de type Normal deviennent de type Glace.",
+    "description_en": "Normal-type moves become Ice-type moves."
+}

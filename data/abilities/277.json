@@ -1,0 +1,8 @@
+{
+    "id": 277,
+    "name": "wind-power",
+    "name_fr": "Turbine Éolienne",
+    "name_en": "Wind Power",
+    "description_fr": "Si le Pokémon est touché par une capacité faisant appel\\nau vent, il se charge en électricité.",
+    "description_en": "The Pokémon becomes charged when it is hit by a wind move, boosting the power of the next Electric-type move the Pokémon uses."
+}

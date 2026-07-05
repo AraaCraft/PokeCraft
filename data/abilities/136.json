@@ -1,0 +1,8 @@
+{
+    "id": 136,
+    "name": "multiscale",
+    "name_fr": "Multiécaille",
+    "name_en": "Multiscale",
+    "description_fr": "Reçoit moins de dégâts si les PV sont au maximum.",
+    "description_en": "Reduces damage when HP is full."
+}

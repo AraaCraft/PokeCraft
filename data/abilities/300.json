@@ -1,0 +1,8 @@
+{
+    "id": 300,
+    "name": "supersweet-syrup",
+    "name_fr": "Nectar Mielleux",
+    "name_en": "Supersweet Syrup",
+    "description_fr": "La première fois que le Pokémon entre au combat,\\nune odeur de nectar sucré se répand sur le terrain,\\nce qui baisse l’Esquive de l’adversaire.",
+    "description_en": "Lowers the evasion of opposing Pokémon by 1 stage when first sent into battle"
+}

@@ -1,0 +1,8 @@
+{
+    "id": 255,
+    "name": "gorilla-tactics",
+    "name_fr": "Entêtement",
+    "name_en": "Gorilla Tactics",
+    "description_fr": "Augmente l’Attaque, mais empêche d’utiliser toute autre capacité que celle utilisée en premier par le Pokémon.",
+    "description_en": "Boosts the Pokémon’s Attack stat but only allows the use of the first selected move."
+}

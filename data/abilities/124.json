@@ -1,0 +1,8 @@
+{
+    "id": 124,
+    "name": "pickpocket",
+    "name_fr": "Pickpocket",
+    "name_en": "Pickpocket",
+    "description_fr": "Vole l’objet de l’ennemi si son attaque touche.",
+    "description_en": "Steals an item when hit by another Pokémon."
+}

@@ -1,0 +1,8 @@
+{
+    "id": 191,
+    "name": "delta-stream",
+    "name_fr": "Souffle Delta",
+    "name_en": "Delta Stream",
+    "description_fr": "Altère les conditions météo et annule les faiblesses du type Vol.",
+    "description_en": "Affects weather and eliminates all of the Flying type’s weaknesses."
+}

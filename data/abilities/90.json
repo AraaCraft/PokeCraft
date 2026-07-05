@@ -1,0 +1,8 @@
+{
+    "id": 90,
+    "name": "poison-heal",
+    "name_fr": "Soin Poison",
+    "name_en": "Poison Heal",
+    "description_fr": "Restaure des PV si le Pokémon est empoisonné.",
+    "description_en": "Restores HP if the Pokémon is poisoned."
+}

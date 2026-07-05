@@ -1,0 +1,8 @@
+{
+    "id": 290,
+    "name": "opportunist",
+    "name_fr": "Opportuniste",
+    "name_en": "Opportunist",
+    "description_fr": "Quand les stats de l’ennemi augmentent, le Pokémon\\nen profite pour augmenter ses stats de la même manière.",
+    "description_en": "If an opponent's stat is boosted, the Pokémon seizes the opportunity to boost the same stat for itself."
+}

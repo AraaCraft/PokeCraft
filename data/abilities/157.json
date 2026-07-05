@@ -1,0 +1,8 @@
+{
+    "id": 157,
+    "name": "sap-sipper",
+    "name_fr": "Herbivore",
+    "name_en": "Sap Sipper",
+    "description_fr": "Augmente l’Attaque après une attaque Plante.",
+    "description_en": "Boosts Attack when hit by a Grass-type move."
+}

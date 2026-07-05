@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PokemonCard from '../components/PokemonCard.astro';
+
+// Fetch all local JSON files
+const pokemonFiles = import.meta.glob('../../../data/champions/pokemon/**/*.json', { eager: true });
+
+// Extract the default export (which is the JSON content)
+const allPokemons = Object.values(pokemonFiles).map((file: any) => file.default);
+
+// Filter out G-Max and unwanted Pikachu forms
+const validPokemons = allPokemons.filter(p => {
+	if (p.form.includes('-gmax')) return false;
+	if (p.id === 25 && p.form !== 'pikachu') return false; // Pikachu forms exclusion
+	return true;
+});
+
+// Keep only one card per Pokemon (the base form)
+const uniquePokemonsMap = new Map();
+for (const p of validPokemons) {
+	if (!uniquePokemonsMap.has(p.id)) {
+		uniquePokemonsMap.set(p.id, p);
+	} else {
+		// Prefer the exact name match for the base form
+		if (p.form === p.name) {
+			uniquePokemonsMap.set(p.id, p);
+		}
+	}
+}
+
+let pokemons = Array.from(uniquePokemonsMap.values());
+
+// Sort by ID
+pokemons.sort((a, b) => a.id - b.id);
+---
+
+<Layout title="Pokédex Champions">
+	<header class="page-header">
+		<h1>Pokédex Champions</h1>
+		<p>Welcome to the static Pokédex generated from your local data!</p>
+	</header>
+
+	<main class="pokemon-grid">
+		{pokemons.map((pokemon) => (
+			<PokemonCard pokemon={pokemon} />
+		))}
+	</main>
+</Layout>
+
+<style>
+	.page-header {
+		text-align: center;
+		margin-bottom: 3rem;
+		padding-top: 2rem;
+	}
+	
+	.page-header p {
+		color: var(--text-muted);
+		font-size: 1.1rem;
+	}
+</style>

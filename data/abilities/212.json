@@ -1,0 +1,8 @@
+{
+    "id": 212,
+    "name": "corrosion",
+    "name_fr": "Corrosion",
+    "name_en": "Corrosion",
+    "description_fr": "Permet d’empoisonner les Pokémon de type Acier ou Poison.",
+    "description_en": "The Pokémon can poison the target even if it’s a Steel or Poison type."
+}

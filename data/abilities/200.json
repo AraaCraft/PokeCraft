@@ -1,0 +1,8 @@
+{
+    "id": 200,
+    "name": "steelworker",
+    "name_fr": "Expert Acier",
+    "name_en": "Steelworker",
+    "description_fr": "Augmente la puissance des attaques de type Acier.",
+    "description_en": "Powers up Steel-type moves."
+}

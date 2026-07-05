@@ -1,0 +1,8 @@
+{
+    "id": 205,
+    "name": "triage",
+    "name_fr": "Prioguérison",
+    "name_en": "Triage",
+    "description_fr": "Toutes les capacités qui soignent le Pokémon directement deviennent prioritaires.",
+    "description_en": "Gives priority to a healing move."
+}

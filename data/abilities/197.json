@@ -1,0 +1,8 @@
+{
+    "id": 197,
+    "name": "shields-down",
+    "name_fr": "Bouclier-Carcan",
+    "name_en": "Shields Down",
+    "description_fr": "Lorsque le Pokémon perd la moitié de ses PV, son enveloppe se brise, mais son Attaque et son Attaque Spéciale augmentent.",
+    "description_en": "When its HP becomes half or less, the Pokémon’s shell breaks and it becomes aggressive."
+}

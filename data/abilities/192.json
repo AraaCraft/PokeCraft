@@ -1,0 +1,8 @@
+{
+    "id": 192,
+    "name": "stamina",
+    "name_fr": "Endurance",
+    "name_en": "Stamina",
+    "description_fr": "Augmente la Défense du Pokémon lorsqu’il subit une attaque.",
+    "description_en": "Boosts the Defense stat when hit by an attack."
+}

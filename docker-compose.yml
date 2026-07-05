@@ -2,7 +2,7 @@ services:
   teambuilder-web:
     build: .
     ports:
-      - "5000:5000"
+      - "5001:5000"
     volumes:
       # Synchronise le dossier actuel avec le dossier /app du conteneur
       - .:/app
@@ -25,5 +25,5 @@ services:
       volumes:
         - mysql_data:/var/lib/mysql
 
-  volumes:
-    mysql_data:
+volumes:
+  mysql_data:

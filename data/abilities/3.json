@@ -1,0 +1,8 @@
+{
+    "id": 3,
+    "name": "speed-boost",
+    "name_fr": "Turbo",
+    "name_en": "Speed Boost",
+    "description_fr": "Améliore la VITESSE.",
+    "description_en": "Gradually boosts SPEED."
+}

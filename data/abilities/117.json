@@ -1,0 +1,8 @@
+{
+    "id": 117,
+    "name": "snow-warning",
+    "name_fr": "Alerte Neige",
+    "name_en": "Snow Warning",
+    "description_fr": "Déclenche une tempête de grêle pendant un combat.",
+    "description_en": "The Pokémon summons a hailstorm in battle."
+}

@@ -1,0 +1,8 @@
+{
+    "id": 125,
+    "name": "sheer-force",
+    "name_fr": "Sans Limite",
+    "name_en": "Sheer Force",
+    "description_fr": "Frappe plus fort mais annule les effets cumulés.",
+    "description_en": "Removes added effects to increase move damage."
+}

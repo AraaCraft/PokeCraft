@@ -1,0 +1,8 @@
+{
+    "id": 231,
+    "name": "shadow-shield",
+    "name_fr": "Spectro-Bouclier",
+    "name_en": "Shadow Shield",
+    "description_fr": "Le Pokémon reçoit moins de dégâts quand ses PV sont au maximum.",
+    "description_en": "Reduces the amount of damage the Pokémon takes while its HP is full."
+}

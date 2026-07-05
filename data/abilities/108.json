@@ -1,0 +1,8 @@
+{
+    "id": 108,
+    "name": "forewarn",
+    "name_fr": "Prédiction",
+    "name_en": "Forewarn",
+    "description_fr": "Découvre la capacité ennemie la plus puissante.",
+    "description_en": "Determines what moves the foe has."
+}

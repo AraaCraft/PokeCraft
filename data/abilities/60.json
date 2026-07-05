@@ -1,0 +1,8 @@
+{
+    "id": 60,
+    "name": "sticky-hold",
+    "name_fr": "Glu",
+    "name_en": "Sticky Hold",
+    "description_fr": "Empêche le vol d'objets.",
+    "description_en": "Prevents item theft."
+}

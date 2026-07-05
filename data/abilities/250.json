@@ -1,0 +1,8 @@
+{
+    "id": 250,
+    "name": "mimicry",
+    "name_fr": "Mimétisme",
+    "name_en": "Mimicry",
+    "description_fr": "Le Pokémon adopte le même type que le terrain lorsqu’un champ est actif.",
+    "description_en": "Changes the Pokémon’s type depending on the terrain."
+}

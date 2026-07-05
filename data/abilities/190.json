@@ -1,0 +1,8 @@
+{
+    "id": 190,
+    "name": "desolate-land",
+    "name_fr": "Terre Finale",
+    "name_en": "Desolate Land",
+    "description_fr": "Altère les conditions météo et rend inefficaces les attaques Eau.",
+    "description_en": "Affects weather and nullifies any Water-type attacks."
+}

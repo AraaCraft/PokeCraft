@@ -1,0 +1,738 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const pokemonFiles = import.meta.glob('../../../../data/champions/pokemon/**/*.json', { eager: true });
+  
+  const allPokemons = Object.values(pokemonFiles).map((file: any) => file.default);
+  
+  // Filter out unwanted forms
+  const validPokemons = allPokemons.filter(p => {
+    if (p.form.includes('-gmax')) return false;
+    if (p.id === 25 && p.form !== 'pikachu') return false;
+    return true;
+  });
+
+  // Group by ID
+  const grouped = new Map();
+  for (const p of validPokemons) {
+    if (!grouped.has(p.id)) {
+      grouped.set(p.id, []);
+    }
+    grouped.get(p.id).push(p);
+  }
+
+  const paths = Array.from(grouped.entries()).map(([id, forms]) => {
+    // Sort forms so the base form is first
+    forms.sort((a, b) => {
+      if (a.form === a.name) return -1;
+      if (b.form === b.name) return 1;
+      return a.form.localeCompare(b.form);
+    });
+
+    return {
+      params: { id: String(id) },
+      props: { forms },
+    };
+  });
+
+  return paths;
+}
+
+const { id } = Astro.params;
+const { forms } = Astro.props;
+
+// Default to the first form (which we sorted to be the base form)
+const defaultForm = forms[0];
+
+const formattedName = defaultForm.name.charAt(0).toUpperCase() + defaultForm.name.slice(1);
+const formattedId = String(defaultForm.id).padStart(4, '0');
+
+// We serialize the forms to pass them to the client-side script
+const formsJson = JSON.stringify(forms);
+---
+
+<Layout title={`${formattedName} #${formattedId}`}>
+  <div class="pokemon-detail">
+    <a href="/" class="back-link">← Back to Pokédex</a>
+    
+    <div class="detail-container">
+      <div class="glass-panel detail-card" id="detail-card">
+        <header class="detail-header">
+          <span class="pokemon-id">#{formattedId}</span>
+          <div class="header-title-container">
+            <h1 id="pokemon-name">{formattedName}</h1>
+            <button id="play-cry-btn" class="cry-btn" aria-label="Play cry" title="Play cry">
+              🔊
+            </button>
+          </div>
+        </header>
+
+        {forms.length > 1 && (
+          <div class="forms-selector">
+            <h3>Forms :</h3>
+            <div class="forms-buttons">
+              {forms.map((f: any, index: number) => (
+                <button 
+                  class={`form-btn ${index === 0 ? 'active' : ''}`} 
+                  data-index={index}
+                >
+                  {f.form.replace(`${f.name}-`, '').replace('-', ' ').toUpperCase() || 'BASE'}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div class="content-wrapper">
+          <div class="image-section">
+            <!-- Base image logic -->
+            <img id="pokemon-image" src={`/data/champions/pokemon/${defaultForm.id}/${defaultForm.form}-front_default.png`} alt={formattedName} />
+          </div>
+          
+          <div class="stats-section">
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="label">Weight</span>
+                <span class="value" id="pokemon-weight"></span>
+              </div>
+              <div class="info-item">
+                <span class="label">Abilities</span>
+                <span class="value" id="pokemon-abilities"></span>
+              </div>
+            </div>
+
+            <div class="types-container">
+              <h3>Types</h3>
+              <div class="types" id="pokemon-types">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Effectiveness Card -->
+      <div class="glass-panel effectiveness-card" id="effectiveness-card">
+        <div class="base-stats-section-top">
+          <h2>Base Stats</h2>
+          <div class="stats-list" id="pokemon-stats">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="type-defenses-section">
+          <h2>Infos Types</h2>
+          <div id="type-effectiveness-content">
+            <p>Calculating...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Store data for the client script -->
+  <script is:inline define:vars={{ forms }}>
+    // This script runs on the client
+    const card = document.getElementById('detail-card');
+    const nameEl = document.getElementById('pokemon-name');
+    const imageEl = document.getElementById('pokemon-image');
+    const typesEl = document.getElementById('pokemon-types');
+    const statsEl = document.getElementById('pokemon-stats');
+    const weightEl = document.getElementById('pokemon-weight');
+    const abilitiesEl = document.getElementById('pokemon-abilities');
+    const buttons = document.querySelectorAll('.form-btn');
+    const playCryBtn = document.getElementById('play-cry-btn');
+    
+    let currentAudio = null;
+
+    function updateUI(formIndex) {
+      const p = forms[formIndex];
+      
+      // Update image using local sprite
+      imageEl.src = `/data/champions/pokemon/${p.id}/${p.form}-front_default.png`;
+
+      // Update name
+      let displayName = p.name.charAt(0).toUpperCase() + p.name.slice(1);
+      if (p.form !== p.name) {
+         displayName += ' (' + p.form.replace(`${p.name}-`, '').replace('-', ' ').toUpperCase() + ')';
+      }
+      nameEl.textContent = displayName;
+
+      // Update Audio logic
+      const audioSrc = `/data/champions/pokemon/${p.id}/${p.form}.ogg`;
+      
+      playCryBtn.onclick = () => {
+        if (currentAudio) {
+          currentAudio.pause();
+          currentAudio.currentTime = 0;
+        }
+        currentAudio = new Audio(audioSrc);
+        currentAudio.volume = 0.5; // Don't blast ears
+        currentAudio.play().catch(e => console.error("Error playing sound:", e));
+        
+        // Add a little animation to button when playing
+        playCryBtn.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+          playCryBtn.style.transform = '';
+        }, 200);
+      };
+
+      // Update types
+      typesEl.innerHTML = '';
+      p.types.forEach(t => {
+        const span = document.createElement('span');
+        span.className = `type-badge bg-${t.type.name}`;
+        span.textContent = t.type.name;
+        typesEl.appendChild(span);
+      });
+
+      // Update accent color
+      const primaryType = p.types[0] ? p.types[0].type.name : 'normal';
+      card.style.setProperty('--accent-color', `var(--type-${primaryType})`);
+      const effCard = document.getElementById('effectiveness-card');
+      if (effCard) effCard.style.setProperty('--accent-color', `var(--type-${primaryType})`);
+
+      // Update stats
+      statsEl.innerHTML = '';
+      p.stats.forEach(s => {
+        const row = document.createElement('div');
+        row.className = 'stat-row';
+        
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'stat-name';
+        nameSpan.textContent = s.stat.name.replace('-', ' ');
+        
+        const valSpan = document.createElement('span');
+        valSpan.className = 'stat-val';
+        valSpan.textContent = s.base_stat;
+
+        const bgDiv = document.createElement('div');
+        bgDiv.className = 'stat-bar-bg';
+
+        const fillDiv = document.createElement('div');
+        fillDiv.className = 'stat-bar-fill';
+        fillDiv.style.width = `${Math.min((s.base_stat / 255) * 100, 100)}%`;
+        fillDiv.style.backgroundColor = 'var(--accent-color)';
+
+        bgDiv.appendChild(fillDiv);
+        row.appendChild(nameSpan);
+        row.appendChild(valSpan);
+        row.appendChild(bgDiv);
+        statsEl.appendChild(row);
+      });
+
+      // Update weight
+      weightEl.textContent = (p.weight / 10).toFixed(1) + ' kg';
+
+      // Update abilities
+      abilitiesEl.innerHTML = '';
+      p.abilities.forEach((a, index) => {
+        const abilityName = a.ability.name.replace('-', ' ');
+        const span = document.createElement('span');
+        span.className = 'ability-badge';
+        span.textContent = abilityName + (a.is_hidden ? ' (Hidden)' : '');
+        span.setAttribute('data-tooltip', 'Loading...'); // Default tooltip
+        
+        const urlParts = a.ability.url.split('/').filter(Boolean);
+        const abilityId = urlParts[urlParts.length - 1];
+
+        // Fetch description on hover from local JSON if not already fetched
+        span.addEventListener('mouseenter', async () => {
+          if (span.getAttribute('data-tooltip') === 'Loading...') {
+            try {
+              const res = await fetch(`/data/abilities/${abilityId}.json`);
+              if (!res.ok) throw new Error("Not found");
+              const data = await res.json();
+              
+              // We want English for now
+              if (data.description_en) {
+                span.setAttribute('data-tooltip', data.description_en);
+              } else {
+                span.setAttribute('data-tooltip', 'Description not available.');
+              }
+            } catch (err) {
+              span.setAttribute('data-tooltip', 'Error loading description. Make sure to run fetch_all_abilities_pokemon.py first.');
+            }
+          }
+        });
+
+        abilitiesEl.appendChild(span);
+        
+        if (index < p.abilities.length - 1) {
+          abilitiesEl.appendChild(document.createTextNode(', '));
+        }
+      });
+      // Type Effectiveness logic
+      const effContentEl = document.getElementById('type-effectiveness-content');
+      effContentEl.innerHTML = '<p>Calculating...</p>';
+      
+      // Calculate weaknesses and resistances async
+      (async () => {
+        try {
+          let multipliers = {};
+          const allTypes = ["normal", "fighting", "flying", "poison", "ground", "rock", "bug", "ghost", "steel", "fire", "water", "grass", "electric", "psychic", "ice", "dragon", "dark", "fairy"];
+          allTypes.forEach(t => multipliers[t] = 1.0);
+
+          for (const t of p.types) {
+            const res = await fetch(`/data/types/${t.type.name}.json`);
+            if (res.ok) {
+               const typeData = await res.json();
+               const dr = typeData.damage_relations;
+               
+               dr.double_damage_from.forEach(dt => { if (multipliers[dt.name] !== undefined) multipliers[dt.name] *= 2.0; });
+               dr.half_damage_from.forEach(dt => { if (multipliers[dt.name] !== undefined) multipliers[dt.name] *= 0.5; });
+               dr.no_damage_from.forEach(dt => { if (multipliers[dt.name] !== undefined) multipliers[dt.name] *= 0; });
+            }
+          }
+          
+          const groups = { 4: [], 2: [], 0.5: [], 0.25: [], 0: [] };
+          
+          for (const [tName, val] of Object.entries(multipliers)) {
+             if (groups[val] !== undefined) {
+                groups[val].push(tName);
+             }
+          }
+          
+          effContentEl.innerHTML = '';
+          
+          const renderGroup = (title, typesList) => {
+             if (typesList.length === 0) return;
+             const div = document.createElement('div');
+             div.className = 'eff-group';
+             
+             const h3 = document.createElement('div');
+             h3.className = 'eff-title';
+             h3.textContent = title;
+             div.appendChild(h3);
+             
+             const badges = document.createElement('div');
+             badges.className = 'eff-badges';
+             typesList.forEach(t => {
+                const span = document.createElement('span');
+                span.className = `type-badge bg-${t}`;
+                span.textContent = t;
+                badges.appendChild(span);
+             });
+             div.appendChild(badges);
+             effContentEl.appendChild(div);
+          };
+          
+          renderGroup('Weaknesses (x4)', groups[4]);
+          renderGroup('Weaknesses (x2)', groups[2]);
+          renderGroup('Resistances (x0.5)', groups[0.5]);
+          renderGroup('Resistances (x0.25)', groups[0.25]);
+          renderGroup('Immunities (x0)', groups[0]);
+          
+          if (effContentEl.innerHTML === '') {
+             effContentEl.innerHTML = '<p>No specific weaknesses or resistances.</p>';
+          }
+        } catch(err) {
+           console.error("Error calculating type effectiveness", err);
+           effContentEl.innerHTML = '<p>Error loading type data. Make sure fetch_all_types_pokemon.py was run.</p>';
+        }
+      })();
+    }
+
+    // Initialize with first form
+    updateUI(0);
+
+    // Add event listeners to buttons
+    buttons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        buttons.forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        updateUI(parseInt(e.target.dataset.index));
+      });
+    });
+  </script>
+</Layout>
+
+<style>
+  .pokemon-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .detail-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    .detail-container {
+      grid-template-columns: 1.5fr 1fr;
+      align-items: start;
+    }
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: white;
+  }
+
+  .detail-card {
+    padding: 2rem;
+    border-top: 6px solid var(--accent-color);
+    transition: border-color 0.3s;
+  }
+
+  .detail-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .pokemon-id {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    font-weight: 700;
+  }
+
+  .header-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0.5rem 0;
+  }
+
+  .detail-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+  }
+
+  .cry-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+    opacity: 0.7;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .cry-btn:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+  }
+
+  .types {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* We need global context for type badges inside the component so client script can use them */
+  :global(.type-badge) {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  }
+
+  .forms-selector {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 12px;
+  }
+
+  .forms-selector h3 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .forms-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .form-btn {
+    background: var(--surface-color-light);
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .form-btn:hover {
+    background: rgba(255,255,255,0.1);
+  }
+
+  .form-btn.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .image-section {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.6));
+    transition: opacity 0.3s;
+    image-rendering: pixelated;
+  }
+
+  .stats-section {
+    flex: 1.5;
+    min-width: 300px;
+  }
+
+  .stats-section h2 {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+  }
+
+  /* We need global context for client script generated rows */
+  :global(.stat-row) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+  }
+
+  :global(.stat-name) {
+    width: 120px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  :global(.stat-val) {
+    width: 40px;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 1rem;
+  }
+
+  :global(.stat-bar-bg) {
+    flex: 1;
+    height: 8px;
+    background-color: var(--surface-color-light);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  :global(.stat-bar-fill) {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease-out, background-color 0.3s;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .info-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-item .label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  .info-item .value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .types-container {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .types-container h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  :global(.ability-badge) {
+    position: relative;
+    cursor: help;
+    text-decoration: underline dotted var(--text-muted);
+    text-underline-offset: 4px;
+  }
+
+  :global(.ability-badge::after) {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: var(--surface-color);
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+    width: max-content;
+    max-width: 250px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    border: 1px solid var(--glass-border);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    z-index: 100;
+    text-transform: none;
+    font-weight: normal;
+    text-align: left;
+    pointer-events: none;
+  }
+
+  :global(.ability-badge:hover::after) {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* Tooltip arrow */
+  :global(.ability-badge::before) {
+    content: '';
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    border: 6px solid transparent;
+    border-top-color: var(--surface-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    z-index: 101;
+    pointer-events: none;
+  }
+
+  :global(.ability-badge:hover::before) {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(12px);
+  }
+
+  :global(.bg-normal) { background-color: var(--type-normal); }
+  :global(.bg-fire) { background-color: var(--type-fire); }
+  :global(.bg-water) { background-color: var(--type-water); }
+  :global(.bg-electric) { background-color: var(--type-electric); }
+  :global(.bg-grass) { background-color: var(--type-grass); }
+  :global(.bg-ice) { background-color: var(--type-ice); }
+  :global(.bg-fighting) { background-color: var(--type-fighting); }
+  :global(.bg-poison) { background-color: var(--type-poison); }
+  :global(.bg-ground) { background-color: var(--type-ground); }
+  :global(.bg-flying) { background-color: var(--type-flying); }
+  :global(.bg-psychic) { background-color: var(--type-psychic); }
+  :global(.bg-bug) { background-color: var(--type-bug); }
+  :global(.bg-rock) { background-color: var(--type-rock); }
+  :global(.bg-ghost) { background-color: var(--type-ghost); }
+  :global(.bg-dragon) { background-color: var(--type-dragon); }
+  :global(.bg-dark) { background-color: var(--type-dark); }
+  :global(.bg-steel) { background-color: var(--type-steel); }
+  :global(.bg-fairy) { background-color: var(--type-fairy); }
+  :global(.bg-stellar) { background-color: #40B5A5; }
+  :global(.bg-unknown) { background-color: #68A090; }
+
+  /* Effectiveness Card Styles */
+  .effectiveness-card {
+    padding: 2rem;
+    border-top: 6px solid var(--accent-color, var(--glass-border));
+  }
+
+  .effectiveness-card h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+  }
+
+  :global(.eff-group) {
+    margin-bottom: 1.5rem;
+  }
+
+  :global(.eff-title) {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+  }
+
+  :global(.eff-badges) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .type-defenses-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+  }
+  
+  .base-stats-section-top h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+  }
+
+  .type-defenses-section h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+  }
+</style>

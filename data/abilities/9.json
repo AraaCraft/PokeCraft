@@ -1,0 +1,8 @@
+{
+    "id": 9,
+    "name": "static",
+    "name_fr": "Statik",
+    "name_en": "Static",
+    "description_fr": "Paralyse au toucher.",
+    "description_en": "Paralyzes on contact."
+}

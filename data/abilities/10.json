@@ -1,0 +1,8 @@
+{
+    "id": 10,
+    "name": "volt-absorb",
+    "name_fr": "Absorbe-Volt",
+    "name_en": "Volt Absorb",
+    "description_fr": "Change l'électricité en PV.",
+    "description_en": "Turns electricity into HP."
+}

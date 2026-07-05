@@ -1,0 +1,8 @@
+{
+    "id": 137,
+    "name": "toxic-boost",
+    "name_fr": "Rage Poison",
+    "name_en": "Toxic Boost",
+    "description_fr": "Booste les att. physiques si le statut est poison.",
+    "description_en": "Powers up physical attacks when poisoned."
+}

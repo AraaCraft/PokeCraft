@@ -1,0 +1,8 @@
+{
+    "id": 224,
+    "name": "beast-boost",
+    "name_fr": "Boost Chimère",
+    "name_en": "Beast Boost",
+    "description_fr": "Augmente la stat la plus élevée du Pokémon s’il met K.O. un autre Pokémon pendant son tour.",
+    "description_en": "The Pokémon boosts its most proficient stat each time it knocks out a Pokémon."
+}

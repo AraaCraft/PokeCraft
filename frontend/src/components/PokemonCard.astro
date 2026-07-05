@@ -1,0 +1,128 @@
+---
+interface Props {
+  pokemon: {
+    id: number;
+    name: string;
+    types: { type: { name: string } }[];
+  };
+}
+
+const { pokemon } = Astro.props;
+const formattedName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+const formattedId = String(pokemon.id).padStart(4, '0');
+
+// Types to comma-separated string for display
+const typeNames = pokemon.types.map(t => t.type.name).join(', ');
+
+// Helper to get color var
+const primaryType = pokemon.types[0]?.type.name || 'normal';
+---
+
+<a href={`/pokemon/${pokemon.id}`} class="pokemon-card glass-panel" style={`--accent-color: var(--type-${primaryType})`}>
+  <div class="card-header">
+    <span class="pokemon-id">#{formattedId}</span>
+  </div>
+  
+  <div class="pokemon-image">
+    <!-- Fetching the local sprite downloaded by the Python script -->
+    <img src={`/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedName} loading="lazy" />
+  </div>
+
+  <div class="card-info">
+    <h2>{formattedName}</h2>
+    <div class="types">
+      {pokemon.types.map((t) => (
+        <span class={`type-badge bg-${t.type.name}`}>{t.type.name}</span>
+      ))}
+    </div>
+  </div>
+</a>
+
+<style>
+  .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border-top: 4px solid var(--accent-color);
+  }
+
+  .pokemon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    border-color: var(--accent-color);
+  }
+
+  .card-header {
+    padding: 0.5rem 1rem;
+    text-align: right;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  .pokemon-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  }
+
+  .pokemon-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+    image-rendering: pixelated;
+  }
+
+  .card-info {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .card-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+
+  .types {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .type-badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  }
+
+  /* We generate backgrounds for types dynamically based on variables */
+  .bg-normal { background-color: var(--type-normal); }
+  .bg-fire { background-color: var(--type-fire); }
+  .bg-water { background-color: var(--type-water); }
+  .bg-electric { background-color: var(--type-electric); }
+  .bg-grass { background-color: var(--type-grass); }
+  .bg-ice { background-color: var(--type-ice); }
+  .bg-fighting { background-color: var(--type-fighting); }
+  .bg-poison { background-color: var(--type-poison); }
+  .bg-ground { background-color: var(--type-ground); }
+  .bg-flying { background-color: var(--type-flying); }
+  .bg-psychic { background-color: var(--type-psychic); }
+  .bg-bug { background-color: var(--type-bug); }
+  .bg-rock { background-color: var(--type-rock); }
+  .bg-ghost { background-color: var(--type-ghost); }
+  .bg-dragon { background-color: var(--type-dragon); }
+  .bg-dark { background-color: var(--type-dark); }
+  .bg-steel { background-color: var(--type-steel); }
+  .bg-fairy { background-color: var(--type-fairy); }
+</style>

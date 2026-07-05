@@ -1,0 +1,8 @@
+{
+    "id": 84,
+    "name": "unburden",
+    "name_fr": "Délestage",
+    "name_en": "Unburden",
+    "description_fr": "Augmente la Vit. si l'objet tenu est utilisé ou perdu.",
+    "description_en": "Raises Speed if a held item is used."
+}

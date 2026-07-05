@@ -1,0 +1,8 @@
+{
+    "id": 126,
+    "name": "contrary",
+    "name_fr": "Contestation",
+    "name_en": "Contrary",
+    "description_fr": "Inverse les variations de stats.",
+    "description_en": "Makes stat changes have an opposite effect."
+}

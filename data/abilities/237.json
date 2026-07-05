@@ -1,0 +1,8 @@
+{
+    "id": 237,
+    "name": "ball-fetch",
+    "name_fr": "Ramasse Ball",
+    "name_en": "Ball Fetch",
+    "description_fr": "Si le Pokémon ne tient aucun objet, il ramassera la Poké Ball lors du premier lancer raté du combat.",
+    "description_en": "If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle."
+}

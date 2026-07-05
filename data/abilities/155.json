@@ -1,0 +1,8 @@
+{
+    "id": 155,
+    "name": "rattled",
+    "name_fr": "Phobique",
+    "name_en": "Rattled",
+    "description_fr": "Sa peur de certains types augmente sa Vitesse.",
+    "description_en": "Some move types scare it and boost its Speed."
+}

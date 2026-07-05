@@ -1,0 +1,8 @@
+{
+    "id": 6,
+    "name": "damp",
+    "name_fr": "Moiteur",
+    "name_en": "Damp",
+    "description_fr": "Empêche auto-destruction.",
+    "description_en": "Prevents self-destruction."
+}

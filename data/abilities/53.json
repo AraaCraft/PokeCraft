@@ -1,0 +1,8 @@
+{
+    "id": 53,
+    "name": "pickup",
+    "name_fr": "Ramassage",
+    "name_en": "Pickup",
+    "description_fr": "Permet parfois au Pokémon de ramasser des objets.",
+    "description_en": "May pick up items."
+}

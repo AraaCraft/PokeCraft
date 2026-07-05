@@ -1,0 +1,8 @@
+{
+    "id": 99,
+    "name": "no-guard",
+    "name_fr": "Annule Garde",
+    "name_en": "No Guard",
+    "description_fr": "Attaques du Pokémon et de l'ennemi réussissent.",
+    "description_en": "Ensures the Pokémon and its foe’s attacks land."
+}

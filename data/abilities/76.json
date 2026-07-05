@@ -1,0 +1,8 @@
+{
+    "id": 76,
+    "name": "air-lock",
+    "name_fr": "Air Lock",
+    "name_en": "Air Lock",
+    "description_fr": "Ignore les effets du climat.",
+    "description_en": "Negates weather effects."
+}

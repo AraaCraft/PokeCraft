@@ -1,0 +1,8 @@
+{
+    "id": 54,
+    "name": "truant",
+    "name_fr": "Absentéisme",
+    "name_en": "Truant",
+    "description_fr": "Frappe tous les 2 tours.",
+    "description_en": "Moves only every two turns."
+}

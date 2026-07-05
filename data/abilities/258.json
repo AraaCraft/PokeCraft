@@ -1,0 +1,8 @@
+{
+    "id": 258,
+    "name": "hunger-switch",
+    "name_fr": "Déclic Fringale",
+    "name_en": "Hunger Switch",
+    "description_fr": "À la fin de chaque tour, le Pokémon alterne entre ses formes Mode Rassasié et Mode Affamé.",
+    "description_en": "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of each turn."
+}

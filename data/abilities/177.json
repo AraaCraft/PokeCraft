@@ -1,0 +1,8 @@
+{
+    "id": 177,
+    "name": "gale-wings",
+    "name_fr": "Ailes Bourrasque",
+    "name_en": "Gale Wings",
+    "description_fr": "Les attaques de type Vol sont prioritaires.",
+    "description_en": "Gives priority to Flying-type moves."
+}

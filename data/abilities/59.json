@@ -1,0 +1,8 @@
+{
+    "id": 59,
+    "name": "forecast",
+    "name_fr": "Météo",
+    "name_en": "Forecast",
+    "description_fr": "Change selon le climat.",
+    "description_en": "Changes with the weather."
+}

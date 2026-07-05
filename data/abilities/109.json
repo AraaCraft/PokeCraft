@@ -1,0 +1,8 @@
+{
+    "id": 109,
+    "name": "unaware",
+    "name_fr": "Inconscient",
+    "name_en": "Unaware",
+    "description_fr": "Ignore les changements de stats de l'ennemi.",
+    "description_en": "Ignores any change in ability by the foe."
+}

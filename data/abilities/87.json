@@ -1,0 +1,8 @@
+{
+    "id": 87,
+    "name": "dry-skin",
+    "name_fr": "Peau Sèche",
+    "name_en": "Dry Skin",
+    "description_fr": "Perd des PV à la chaleur. L'eau les restaure.",
+    "description_en": "Reduces HP if it is hot. Water restores HP."
+}

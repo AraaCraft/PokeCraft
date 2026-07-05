@@ -1,0 +1,8 @@
+{
+    "id": 208,
+    "name": "schooling",
+    "name_fr": "Banc",
+    "name_en": "Schooling",
+    "description_fr": "Le Pokémon se rassemble avec ses congénères quand ses PV sont élevés. Plus ses PV baissent, plus le banc s’amenuise.",
+    "description_en": "When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low."
+}

@@ -1,0 +1,8 @@
+{
+    "id": 83,
+    "name": "anger-point",
+    "name_fr": "Colérique",
+    "name_en": "Anger Point",
+    "description_fr": "Monte l’Attaque au max après un coup critique.",
+    "description_en": "Raises Attack upon taking a critical hit."
+}

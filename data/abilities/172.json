@@ -1,0 +1,8 @@
+{
+    "id": 172,
+    "name": "competitive",
+    "name_fr": "Battant",
+    "name_en": "Competitive",
+    "description_fr": "Monte l’Attaque quand une stat est baissée par l’adversaire.",
+    "description_en": "Boosts the Sp. Atk stat when a stat is lowered."
+}

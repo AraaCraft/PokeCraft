@@ -1,0 +1,8 @@
+{
+    "id": 168,
+    "name": "protean",
+    "name_fr": "Protéen",
+    "name_en": "Protean",
+    "description_fr": "Le Pokémon prend le type de sa dernière capacité lancée.",
+    "description_en": "Changes the Pokémon’s type to the type of the move it’s using."
+}

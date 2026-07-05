@@ -1,0 +1,8 @@
+{
+    "id": 256,
+    "name": "neutralizing-gas",
+    "name_fr": "Gaz Inhibiteur",
+    "name_en": "Neutralizing Gas",
+    "description_fr": "Si un Pokémon avec Gaz Inhibiteur est sur le terrain, les effets des talents de tous les autres Pokémon sont annulés.",
+    "description_en": "If the Pokémon with Neutralizing Gas is in the battle, the effects of all Pokémon’s Abilities will be nullified or will not be triggered."
+}

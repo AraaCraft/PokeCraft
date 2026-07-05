@@ -1,0 +1,8 @@
+{
+    "id": 274,
+    "name": "wind-rider",
+    "name_fr": "Aéroporté",
+    "name_en": "Wind Rider",
+    "description_fr": "L’Attaque du Pokémon augmente si un vent arrière souffle\\nou s’il est touché par une capacité faisant appel au vent.\\nDans ce dernier cas, il ne subit aucun dégât.",
+    "description_en": "Boosts the Pokémon's Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves."
+}

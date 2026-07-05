@@ -1,0 +1,8 @@
+{
+    "id": 158,
+    "name": "prankster",
+    "name_fr": "Farceur",
+    "name_en": "Prankster",
+    "description_fr": "Utilise les attaques de statut en premier.",
+    "description_en": "Gives priority to a status move."
+}

@@ -1,0 +1,8 @@
+{
+    "id": 27,
+    "name": "effect-spore",
+    "name_fr": "Pose Spore",
+    "name_en": "Effect Spore",
+    "description_fr": "Laisse spores si touché.",
+    "description_en": "Leaves spores on contact."
+}

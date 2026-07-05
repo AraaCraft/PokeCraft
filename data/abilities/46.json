@@ -1,0 +1,8 @@
+{
+    "id": 46,
+    "name": "pressure",
+    "name_fr": "Pression",
+    "name_en": "Pressure",
+    "description_fr": "Force l’ennemi à dépenser plus de PP.",
+    "description_en": "Raises foe’s PP usage."
+}

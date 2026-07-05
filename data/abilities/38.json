@@ -1,0 +1,8 @@
+{
+    "id": 38,
+    "name": "poison-point",
+    "name_fr": "Point Poison",
+    "name_en": "Poison Point",
+    "description_fr": "Empoisonne quand touché.",
+    "description_en": "Poisons foe on contact."
+}

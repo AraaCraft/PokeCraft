@@ -1,0 +1,8 @@
+{
+    "id": 115,
+    "name": "ice-body",
+    "name_fr": "Corps Gel",
+    "name_en": "Ice Body",
+    "description_fr": "Récupère des PV lors des tempêtes de grêle.",
+    "description_en": "The Pokémon regains HP in a hailstorm."
+}

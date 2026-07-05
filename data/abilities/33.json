@@ -1,0 +1,8 @@
+{
+    "id": 33,
+    "name": "swift-swim",
+    "name_fr": "Glissade",
+    "name_en": "Swift Swim",
+    "description_fr": "Monte VITESSE s'il pleut.",
+    "description_en": "Raises SPEED in rain."
+}
