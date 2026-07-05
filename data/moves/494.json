@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user dances with an odd rhythm that compels the target to mimic it, making the target’s Ability the same as the user’s.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

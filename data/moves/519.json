@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "A column of fire hits opposing Pokémon. When used with its Grass equivalent, its damage increases into a vast sea of fire.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

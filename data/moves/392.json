@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user envelops itself in a veil made of water. It regains some HP on every turn.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

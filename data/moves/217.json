@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "A bomb that may restore HP.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

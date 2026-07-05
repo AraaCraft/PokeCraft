@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user stimulates its brain by thinking bad thoughts. It sharply raises the user’s Sp. Atk.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

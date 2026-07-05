@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user lifts its spirits, healing its own status conditions and raising its offensive and defensive stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

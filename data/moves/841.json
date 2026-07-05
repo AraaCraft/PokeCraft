@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks its target with spine-chilling resentment. This may also leave the target with frostbite. This move's power is doubled if the target has a status condition.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

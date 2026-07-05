@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "The user fiercely attacks the target using its entire body.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

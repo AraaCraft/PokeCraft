@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "Reduces the foe's ATTACK.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

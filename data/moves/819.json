@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "special",
+    "description_en": "The user traps the target in a cage of sparking electricity for four to five turns.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

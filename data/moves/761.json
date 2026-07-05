@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "This is a Fighting-type attack Dynamax Pokémon use. This raises ally Pokémon’s Attack stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

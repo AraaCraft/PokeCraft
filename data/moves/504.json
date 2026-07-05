@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user breaks its shell, lowering its Defense and Sp. Def stats but sharply raising Attack, Sp. Atk, and Speed stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

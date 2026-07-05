@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "special",
+    "description_en": "The user bombards the target with telekinetic force. A wondrous wall of light is put up to weaken the power of the opposing Pokémon’s special moves.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

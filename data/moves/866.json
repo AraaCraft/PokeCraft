@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user performs a spin attack that can also eliminate the effects of such moves as Bind, Wrap, and Leech Seed. This also poisons opposing Pokémon.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

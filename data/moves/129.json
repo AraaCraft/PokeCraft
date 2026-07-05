@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "special",
+    "description_en": "An attack that never misses.",
     "effect_chance": null,
     "effect_changes": [
         {

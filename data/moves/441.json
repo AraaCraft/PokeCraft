@@ -1,6 +1,7 @@
 {
     "accuracy": 80,
     "damage_class": "physical",
+    "description_en": "The user shoots filthy garbage at the foe to attack. It may also poison the target.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

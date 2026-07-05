@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "special",
+    "description_en": "Drawing power from the Eternal Flower, the user fires a powerful beam of light. This also damages the user quite a lot.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

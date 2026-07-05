@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "A loud attack that uses sound waves to injure.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

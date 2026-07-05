@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user rotates, centering the hex nut in its chest, and then strikes with its arms twice in a row. This may also make the target flinch.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

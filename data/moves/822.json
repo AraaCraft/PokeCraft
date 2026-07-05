@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user transforms its wrath into a fire-like aura to attack. This may also make opposing Pokémon flinch.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

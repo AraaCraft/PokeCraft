@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "This move inflicts physical or special damage, whichever will be more effective. This may also poison the target.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

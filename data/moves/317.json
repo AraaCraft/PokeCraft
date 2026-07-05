@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "Stops the foe from moving with rocks and cuts SPEED.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

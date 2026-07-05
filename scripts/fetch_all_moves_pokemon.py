@@ -6,9 +6,14 @@ import requests
 import json
 import os
 
+# Set correct output directory
+output_dir = "/Users/margauxbrun/PokeCraft/data/moves"
+os.makedirs(output_dir, exist_ok=True)
+
 move_to_register = {
     "accuracy":None,
     "damage_class":None,
+    "description_en":None,
     "effect_chance":None,
     "effect_changes":None,
     "effect_entries":None,
@@ -68,6 +73,13 @@ for move in moves:
         move_to_register["meta"]["min_turns"] = move_details["meta"]["min_turns"]
         move_to_register["meta"]["stat_chance"] = move_details["meta"]["stat_chance"]
 
+    # Extract English description
+    for entry in move_details.get("flavor_text_entries", []):
+        if entry.get("language", {}).get("name") == "en":
+            # Remove newlines and form feeds
+            move_to_register["description_en"] = entry["flavor_text"].replace("\n", " ").replace("\f", " ")
+            break
+
     move_to_register["shortname"] = move_details["name"]
     for name in move_details["names"]:
         if (name["language"]["name"] == "fr"):
@@ -81,14 +93,15 @@ for move in moves:
     move_to_register["target_name"] = move_details["target"]["name"]
     move_to_register["type_name"] = move_details["type"]["name"]
 
-    # On veut les stocker dans /data/moves/
+    # On veut les stocker dans le répertoire de sortie local
     json_str = json.dumps(move_to_register, indent=4, ensure_ascii=False)
-    with open(f"/app/data/moves/{move_to_register['id']}.json", "w", encoding="utf-8") as f:
+    with open(os.path.join(output_dir, f"{move_to_register['id']}.json"), "w", encoding="utf-8") as f:
         f.write(json_str)
 
     move_to_register = {
         "accuracy":None,
         "damage_class":None,
+        "description_en":None,
         "effect_chance":None,
         "effect_changes":None,
         "effect_entries":None,

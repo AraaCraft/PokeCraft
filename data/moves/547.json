@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user sings an ancient song and attacks by appealing to the hearts of those listening. It may also induce sleep.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

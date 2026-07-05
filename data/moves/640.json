@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "The user breathes a stream of intense fire toward the target with the full force of its Z-Power. The power varies depending on the original move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

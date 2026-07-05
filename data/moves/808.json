@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user lashes out to vent its frustration toward the target. If the user’s stats were lowered during this turn, the power of this move is doubled.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

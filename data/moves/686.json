@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks the target by dancing very hard. The user’s type determines the type of this move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

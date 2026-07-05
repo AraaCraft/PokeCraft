@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user scatters mysterious water around and restores the HP of itself and its ally Pokémon in the battle.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

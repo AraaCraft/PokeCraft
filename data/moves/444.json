@@ -1,6 +1,7 @@
 {
     "accuracy": 80,
     "damage_class": "physical",
+    "description_en": "The user stabs the foe with a sharpened stone. It has a high critical-hit ratio. ",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user concentrates intensely. The attack on the next turn always results in a critical hit.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

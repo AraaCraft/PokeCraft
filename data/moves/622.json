@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "The user builds up its momentum using its Z-Power and crashes into the target at full speed. The power varies, depending on the original move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

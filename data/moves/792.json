@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "This move enables the user to protect itself from all attacks. Its chance of failing rises if it is used in succession. Direct contact harshly lowers the attacker’s Defense stat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

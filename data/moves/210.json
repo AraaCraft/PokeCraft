@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "Successive hits raise power.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

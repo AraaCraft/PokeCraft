@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user reacts to the target's movement and strikes with the heel of its palm, making the target flinch. This move fails if the target is not readying a priority move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

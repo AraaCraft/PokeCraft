@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user exchanges Speed stats with the target.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

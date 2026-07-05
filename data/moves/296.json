@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Attacks with a flurry of down. May lower SP. ATK.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

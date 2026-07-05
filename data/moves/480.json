@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user strikes the target with a fierce blow. This attack always results in a critical hit.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

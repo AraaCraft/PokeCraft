@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user releases countless shots of light. Its type varies with the kind of Plate the user is holding.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

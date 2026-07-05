@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Knocks down the foe’s held item to prevent its use.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

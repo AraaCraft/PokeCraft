@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
+    "description_en": "The user attacks by throwing two steel gears at its target.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

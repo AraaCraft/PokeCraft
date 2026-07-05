@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "status",
+    "description_en": "Steals HP from the foe on every turn.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

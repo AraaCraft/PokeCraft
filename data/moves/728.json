@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "special",
+    "description_en": "After obtaining Z-Power, the user, Kommo-o, attacks the opposing Pokémon with full force. This move boosts the user’s stats.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 80,
     "damage_class": "physical",
+    "description_en": "An attack that al­ so hurts the user.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

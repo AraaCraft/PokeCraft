@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "special",
+    "description_en": "The user tears the foe along with the space around it. This move has a high critical-hit ratio.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Blows away the foe & ends battle.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "An attack that never misses.",
     "effect_chance": null,
     "effect_changes": [
         {

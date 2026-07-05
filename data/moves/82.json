@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Always inflicts 40HP damage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

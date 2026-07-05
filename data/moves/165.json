@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "Used only if all PP are exhausted.",
     "effect_chance": null,
     "effect_changes": [
         {

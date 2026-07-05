@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "special",
+    "description_en": "The user hits the target with the force of nature. It halves the target’s HP.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

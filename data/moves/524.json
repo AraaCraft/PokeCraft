@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "special",
+    "description_en": "The user blows a cold breath on the target. This attack always results in a critical hit.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

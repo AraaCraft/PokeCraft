@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user rampages and spews vicious flames to inflict damage on the target, then becomes fixated on using this move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

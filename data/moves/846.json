@@ -1,6 +1,7 @@
 {
     "accuracy": 80,
     "damage_class": "special",
+    "description_en": "The user attacks with savagely cold winds that cause both body and spirit to tremble. This may also leave the target with frostbite.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

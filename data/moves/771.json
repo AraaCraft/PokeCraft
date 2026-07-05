@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "This is a Ground-type attack Dynamax Pokémon use. This raises ally Pokémon’s Sp. Def stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

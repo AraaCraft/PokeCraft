@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user stirs up a violent petal blizzard and attacks everything around it.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

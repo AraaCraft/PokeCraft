@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user hits the target with throwing stars two to five times in a row. This move always goes first.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

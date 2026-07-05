@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user attacks while destroying the terrain. This move fails when the ground hasn’t turned into a terrain.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

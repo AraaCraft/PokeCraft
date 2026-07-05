@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "Envelops the foe with down to sharply reduce ATTACK.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

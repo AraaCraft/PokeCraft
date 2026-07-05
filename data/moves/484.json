@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user slams into the target with its heavy body. The more the user outweighs the target, the greater its damage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

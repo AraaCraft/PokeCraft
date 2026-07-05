@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "Squeezes the foe for 2-5 turns.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "This move raises all the user’s stats but prevents the user from switching out or fleeing.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

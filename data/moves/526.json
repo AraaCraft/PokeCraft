@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user is roused, and its Attack and Sp. Atk stats increase.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

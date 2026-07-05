@@ -1,6 +1,7 @@
 {
     "accuracy": 80,
     "damage_class": "special",
+    "description_en": "The user attacks by wrapping the target in fierce winds brimming with love and hate. This move’s additional effects depend on the user’s form.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

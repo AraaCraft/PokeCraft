@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "The user stabs the target with a sharp horn. This attack never misses.",
     "effect_chance": null,
     "effect_changes": [
         {

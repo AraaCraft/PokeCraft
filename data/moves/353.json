@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Summons strong sunlight to attack 2 turns later.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "An attack that may steal a held item.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

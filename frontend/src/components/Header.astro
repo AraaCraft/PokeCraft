@@ -1,0 +1,55 @@
+---
+---
+<header class="global-header glass-panel">
+  <div class="header-content">
+    <a href="/" class="logo">
+      <span class="poke">Poke</span><span class="craft">Craft</span>
+    </a>
+  </div>
+</header>
+
+<style>
+  .global-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    /* Extra blur for a true glassmorphism header */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--glass-border);
+    border-radius: 0 0 16px 16px;
+  }
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .poke {
+    color: white;
+  }
+
+  .craft {
+    color: var(--primary-color, #ff5350);
+  }
+
+  .logo:hover {
+    opacity: 0.9;
+  }
+</style>

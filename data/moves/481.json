@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks the target with a bursting flame. The bursting flame damages Pokémon next to the target as well.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

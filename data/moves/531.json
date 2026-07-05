@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user unleashes a vicious blow after its cute act makes the target less wary. It may also make the target flinch.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

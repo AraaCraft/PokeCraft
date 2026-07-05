@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "Cuts the foe's HP by 1/2.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

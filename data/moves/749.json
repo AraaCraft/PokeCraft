@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user pours sticky tar over the target, lowering the target’s Speed stat. The target becomes weaker to Fire-type moves.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "special",
+    "description_en": "The user strengthens itself with a mysterious power. If it excels in offense, its offensive stats are raised. If it excels in defense, its defensive stats are raised.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

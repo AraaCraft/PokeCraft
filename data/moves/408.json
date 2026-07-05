@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks with a ray of light that sparkles as if it were made of gemstones.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

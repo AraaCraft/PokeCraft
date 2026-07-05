@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user throws down a giant thunderbolt. This attack does greater damage when influenced by an enormous flame.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

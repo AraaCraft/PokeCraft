@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "This is a Bug-type attack Dynamax Pokémon use. This lowers the target’s Sp. Atk stat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

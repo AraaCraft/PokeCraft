@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "The user binds the target with full force with threads of silk that the user spits using its Z-Power. The power varies, depending on the original move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

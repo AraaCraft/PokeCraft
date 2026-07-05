@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user cuts with its long horn. The odd power contained in the horn does physical damage to the target.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

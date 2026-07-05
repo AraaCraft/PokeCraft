@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Strikes the target with wings.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

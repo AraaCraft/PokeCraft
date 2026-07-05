@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target’s.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user releases a horrible aura imbued with dark thoughts. It may also make the target flinch.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

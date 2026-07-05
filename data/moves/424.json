@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "The user bites with flame-cloaked fangs. It may also make the foe flinch or sustain a burn.",
     "effect_chance": 10,
     "effect_changes": [
         {

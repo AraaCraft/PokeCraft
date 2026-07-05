@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "With its mysterious power, the user swaps the effects on either side of the field.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

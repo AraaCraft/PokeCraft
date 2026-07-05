@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "This is an Ice-type attack Dynamax Pokémon use. The user summons a hailstorm lasting five turns.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

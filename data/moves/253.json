@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Causes an uproar for 2 to 5 turns and prevents sleep.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

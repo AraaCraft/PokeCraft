@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "After making its attack, the user rushes back to switch places with a party Pokémon in waiting.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

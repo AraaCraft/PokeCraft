@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Squirts water to attack.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

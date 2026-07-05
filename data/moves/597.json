@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user raises the Sp. Def stat of an ally Pokémon by using a mysterious aroma.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

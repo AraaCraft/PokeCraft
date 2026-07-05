@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user puts a forest curse on the target. Afflicted targets are now Grass type as well.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

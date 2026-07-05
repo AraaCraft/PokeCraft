@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "A kick with a high critical- hit ratio. May cause a burn.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

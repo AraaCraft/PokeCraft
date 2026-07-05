@@ -1,6 +1,7 @@
 {
     "accuracy": 50,
     "damage_class": "special",
+    "description_en": "An attack that always paralyzes.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

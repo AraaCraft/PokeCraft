@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "A fiery punch. May cause a burn.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

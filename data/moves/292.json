@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Straight-arm punches that strike the foe 2 to 5 times.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

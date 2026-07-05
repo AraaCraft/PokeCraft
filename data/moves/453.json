@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user lunges at the foe at a speed that makes it almost invisible. It is sure to strike first.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

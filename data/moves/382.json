@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user tries to cut ahead of the foe to steal and use the foe’s intended move with greater power.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

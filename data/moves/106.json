@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Raises the user's DEFENSE.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

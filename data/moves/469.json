@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user and its allies are protected from wide-ranging attacks for one turn. If used in succession, its chance of failing rises.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

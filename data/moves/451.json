@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "special",
+    "description_en": "The user fires a concentrated bundle of electricity. It may also raise the user’s Sp. Atk stat.",
     "effect_chance": 70,
     "effect_changes": [],
     "effect_entries": null,

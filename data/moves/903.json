@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "special",
+    "description_en": "The user sets off an explosion of sticky candy syrup, which coats the target and causes the target's Speed stat to drop each turn for three turns.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

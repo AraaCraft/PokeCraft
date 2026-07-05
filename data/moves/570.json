@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks everything around it. The user’s HP is restored by half the damage taken by those hit.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

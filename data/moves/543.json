@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user charges its head into its target, using its powerful guard hair. It also damages the user a little.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

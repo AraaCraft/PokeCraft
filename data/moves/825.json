@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks by sending a frightful amount of small ghosts at opposing Pokémon.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

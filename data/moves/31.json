@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
+    "description_en": "Jabs the target 2-5 times.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

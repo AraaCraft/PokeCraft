@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "Cloaking itself in psychic energy, the user slams into the target. This may also raise the user’s defensive stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

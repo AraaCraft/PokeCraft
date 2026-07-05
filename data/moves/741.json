@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "The more Eevee loves its Trainer, the greater the move’s power. It never misses.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

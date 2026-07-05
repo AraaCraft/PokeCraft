@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Recycles a used item for one more use.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

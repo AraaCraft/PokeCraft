@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "special",
+    "description_en": "The user acts bad and attacks the target. A wondrous wall of light is put up to weaken the power of the opposing Pokémon’s physical moves.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

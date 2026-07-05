@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user covers the target in a powder that explodes and damages the target if it uses a Fire-type move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user entangles the target with its anchor chain while attacking. The target becomes unable to flee.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

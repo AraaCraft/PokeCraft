@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Restores HP by 1/2 the user's max HP.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user toys with the target and attacks it using light and fluid dance steps. This also boosts the user's Speed stat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

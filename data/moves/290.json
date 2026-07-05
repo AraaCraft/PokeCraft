@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "An attack with effects that vary by location.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

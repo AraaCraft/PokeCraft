@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Whips up a strong gust of wind.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "A column of water strikes the target. When combined with its fire equivalent, the damage increases and a rainbow appears.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

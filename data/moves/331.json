@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Shoots 2 to 5 seeds in a row to strike the foe.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

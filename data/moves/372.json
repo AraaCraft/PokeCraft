@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "If the foe has already taken some damage in the same turn, this attack’s power is doubled.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

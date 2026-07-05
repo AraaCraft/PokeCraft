@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect.",
     "effect_chance": null,
     "effect_changes": [
         {

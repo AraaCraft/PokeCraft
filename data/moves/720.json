@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks everything around it by causing its own head to explode. This also damages the user.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

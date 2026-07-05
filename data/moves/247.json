@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "An attack that may lower SPCL.DEF.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 60,
     "damage_class": "status",
+    "description_en": "May put the foe to sleep.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

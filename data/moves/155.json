@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "Throws a bone boomerang that strikes twice.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user raises the Defense stat of all Grass-type Pokémon in battle with a mysterious power.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

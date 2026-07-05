@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "The user bites with electrified fangs. It may also make the foe flinch or become paralyzed.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

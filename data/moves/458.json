@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "The user slams the foe with a tail, etc. The target is hit twice in a row. ",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

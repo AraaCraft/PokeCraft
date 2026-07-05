@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user rotates its gears, raising its Attack and sharply raising its Speed.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

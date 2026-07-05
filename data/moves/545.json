@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "An inferno of scarlet flames torches everything around the user. It may leave targets with a burn.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

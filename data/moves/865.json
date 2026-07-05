@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "The user performs a perfectly timed triple dive, hitting the target with splashes of water three times in a row.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

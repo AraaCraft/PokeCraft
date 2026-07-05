@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user boasts its strength and attacks the target. The more the user’s stats are raised, the greater the move’s power.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

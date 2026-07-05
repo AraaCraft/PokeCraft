@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "All stat changes affecting the target turn topsy-turvy and become the opposite of what they were.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

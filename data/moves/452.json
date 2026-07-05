@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user slams its rugged body into the foe to attack. The user also sustains serious damage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

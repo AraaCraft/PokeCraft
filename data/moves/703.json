@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "special",
+    "description_en": "After obtaining Z-Power, the user, Mew, attacks the target with full force. The terrain will be charged with psychic energy.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

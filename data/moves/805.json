@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user utilizes the power of the terrain to attack. This move’s type and power changes depending on the terrain when it’s used.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

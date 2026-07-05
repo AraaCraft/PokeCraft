@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "A strong electric blast crashes down on the target, giving it an electric shock. This may also make the target flinch.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

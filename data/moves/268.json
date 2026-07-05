@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Charges power to boost the electric move used next.",
     "effect_chance": null,
     "effect_changes": [
         {

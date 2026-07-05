@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "special",
+    "description_en": "The user attacks by throwing a clump of special mud. All status changes are returned to normal.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

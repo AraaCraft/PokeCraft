@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user shoots a torrent of water at the target and changes the target’s type to Water.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

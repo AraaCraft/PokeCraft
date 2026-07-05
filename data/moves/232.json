@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "An attack that may up user's ATTACK.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

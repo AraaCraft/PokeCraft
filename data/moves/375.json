@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "Using its psychic power of suggestion, the user transfers its status problems to the target.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

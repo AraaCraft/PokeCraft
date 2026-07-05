@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user regains up to half of its max HP. It restores more HP in a sandstorm.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

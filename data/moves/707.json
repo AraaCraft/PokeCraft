@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Driven by frustration, the user attacks the target. If the user’s previous move has failed, the power of this move doubles.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

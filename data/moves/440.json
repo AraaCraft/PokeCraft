@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "A slashing attack that may also leave the target poisoned. It has a high critical-hit ratio.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

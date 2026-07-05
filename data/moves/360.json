@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user tackles the foe with a high-speed spin. The slower the user, the greater the damage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

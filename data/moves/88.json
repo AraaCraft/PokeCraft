@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "Drops rocks on the enemy.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

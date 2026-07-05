@@ -1,6 +1,7 @@
 {
     "accuracy": 75,
     "damage_class": "status",
+    "description_en": "A move that causes confusion.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Gains power if the user’s HP is lower than the foe’s HP.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

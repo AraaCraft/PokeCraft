@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Gravity is intensified for five turns, making moves involving flying unusable and negating Levitation.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

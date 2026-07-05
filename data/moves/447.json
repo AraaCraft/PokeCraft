@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user snares the foe with grass and trips it. The heavier the foe, the greater the damage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

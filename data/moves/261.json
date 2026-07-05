@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "status",
+    "description_en": "Inflicts a burn on the foe with intense fire.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

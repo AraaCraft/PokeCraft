@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "Confuses the foe, but raises its SP. ATK.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

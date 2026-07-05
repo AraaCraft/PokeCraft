@@ -1,6 +1,7 @@
 {
     "accuracy": 70,
     "damage_class": "special",
+    "description_en": "The user heightens its mental focus and unleashes its power. It may also lower the target’s Sp. Def.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

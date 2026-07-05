@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "Hurls boulders at the foe 2 to 5 times in a row.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

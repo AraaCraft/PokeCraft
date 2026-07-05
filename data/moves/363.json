@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user draws power to attack by using its held Berry. The Berry determines its type and power.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "A seed that causes worry is planted on the foe. It prevents sleep by making its ability Insomnia.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

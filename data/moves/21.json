@@ -1,6 +1,7 @@
 {
     "accuracy": 75,
     "damage_class": "physical",
+    "description_en": "Slams the foe with a tail, vine, etc.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

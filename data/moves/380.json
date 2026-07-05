@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user hurls up its stomach acids on the foe. The fluid eliminates the effect of the foe’s ability.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "Makes the foe laugh to lower ATTACK and DEFENSE.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

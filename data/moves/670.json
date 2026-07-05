@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user attacks by pelting the target with leaves.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user holds back when it attacks and the target is left with at least 1 HP.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

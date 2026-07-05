@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Powerful against paralyzed foes, but also heals them.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

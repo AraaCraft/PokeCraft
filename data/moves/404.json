@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user slashes at the foe by crossing its scythes or claws as if they were a pair of scissors.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

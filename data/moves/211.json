@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "Stiff wings strike the foe.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

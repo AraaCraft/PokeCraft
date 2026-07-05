@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "status",
+    "description_en": "Emits a horrible screech that sharply lowers SP. DEF.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

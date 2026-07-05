@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Spurred by desperation, the user attacks the target. This move's power is doubled if the user's previous move failed.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

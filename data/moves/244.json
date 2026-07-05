@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Copies the foe's stat changes.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

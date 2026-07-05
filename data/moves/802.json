@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks everything around it and faints upon using this move. This move’s power is increased on Misty Terrain.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

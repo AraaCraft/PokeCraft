@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Gliding on the ground, the user attacks the target. This move always goes first on Grassy Terrain.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

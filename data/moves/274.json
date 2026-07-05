@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Attacks randomly with one of the partner’s moves.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

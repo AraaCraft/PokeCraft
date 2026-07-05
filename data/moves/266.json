@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user draws attention to itself, making all targets take aim only at the user.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

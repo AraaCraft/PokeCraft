@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The foe is stabbed with a tentacle or arm steeped in poison. It may also poison the foe.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

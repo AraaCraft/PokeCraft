@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "An attack useable only while asleep.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

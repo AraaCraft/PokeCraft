@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

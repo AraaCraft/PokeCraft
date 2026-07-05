@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Raises SP. ATK and SP. DEF by focusing the mind.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

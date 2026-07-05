@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks the target using its angelic voice. This also confuses the target if its stats have been boosted during the turn.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

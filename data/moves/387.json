@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "This move can be used only after the user has used all the other moves it knows in the battle.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

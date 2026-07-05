@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user attacks the target with fire. If the target is holding a Berry, the Berry becomes burnt up and unusable.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

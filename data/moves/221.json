@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "An attack that may inflict a burn.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

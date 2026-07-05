@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user faints. In return, the Pokémon taking its place will have its HP restored and status cured.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Jabs the foe twice using stingers.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

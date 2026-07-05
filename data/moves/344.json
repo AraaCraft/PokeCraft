@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "A life-risking tackle that slightly hurts the user.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

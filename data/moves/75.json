@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "Has a high criti­ cal hit ratio.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

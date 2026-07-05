@@ -1,0 +1,53 @@
+---
+
+---
+
+<footer class="global-footer glass-panel">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <span class="poke">Poke</span><span class="craft">Craft</span>
+    </div>
+    <p>&copy; {new Date().getFullYear()} PokeCraft. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .global-footer {
+    margin-top: auto; /* Pushes footer to the bottom of the page when container is flex */
+    border-radius: 16px 16px 0 0;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: none;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-brand {
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .poke {
+    color: white;
+  }
+
+  .craft {
+    color: var(--primary-color, #ff5350);
+  }
+
+  p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+</style>

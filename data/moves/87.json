@@ -1,6 +1,7 @@
 {
     "accuracy": 70,
     "damage_class": "special",
+    "description_en": "An attack that may cause paralysis.",
     "effect_chance": 30,
     "effect_changes": [
         {

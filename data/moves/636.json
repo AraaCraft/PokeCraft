@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "Deep-seated grudges summoned by the user’s Z-Power trap the target. The power varies, depending on the original move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

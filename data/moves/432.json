@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Obstacles are moved, reducing the foe’s evasion stat. It can also be used to clear deep fog, etc.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

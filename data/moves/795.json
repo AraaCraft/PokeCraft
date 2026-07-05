@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "special",
+    "description_en": "This is Eternatus’s most powerful attack in its original form. The user can’t move on the next turn.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

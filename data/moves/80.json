@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Works 2-3 turns and confuses user.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "Waits 2-3 turns & hits back double.",
     "effect_chance": null,
     "effect_changes": [
         {

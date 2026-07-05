@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user attacks while simultaneously stitching the target’s shadow to the ground to prevent the target from escaping.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Attacks the foe by firing 2 to 5 icicles in a row.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

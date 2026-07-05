@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user powerfully wrings the foe. The more HP the foe has, the greater this attack’s power.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 30,
     "damage_class": "physical",
+    "description_en": "A one-hit KO, drill attack.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

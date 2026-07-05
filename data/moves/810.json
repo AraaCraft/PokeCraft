@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user surrounds everything around it with highly acidic gas and melts away items they hold.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

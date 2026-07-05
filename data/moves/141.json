@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Steals 1/2 of the damage inflicted.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

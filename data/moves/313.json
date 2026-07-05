@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "Feigns crying to sharply lower the foe’s SP. DEF.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

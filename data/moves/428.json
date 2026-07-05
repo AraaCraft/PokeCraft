@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "The user focuses its willpower to its head and rams the foe. It may also make the target flinch.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

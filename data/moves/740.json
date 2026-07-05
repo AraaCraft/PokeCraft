@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "special",
+    "description_en": "The user attacks the target by wrapping it with a whirlwind of an overpowering scent. This also heals all status conditions of the user’s party.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

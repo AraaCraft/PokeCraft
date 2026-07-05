@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "An aquatic charge attack.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

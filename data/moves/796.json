@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "special",
+    "description_en": "The user fires a beam of steel that it collected from its entire body. This also damages the user.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

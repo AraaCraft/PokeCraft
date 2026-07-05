@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "An attack that may freeze the foe.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

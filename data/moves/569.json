@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user disperses electrically charged particles, which changes Normal-type moves to Electric-type moves.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

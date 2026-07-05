@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "An electrified punch that may paralyze the foe.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

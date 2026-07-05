@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user instructs the target to use the target’s last move again.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

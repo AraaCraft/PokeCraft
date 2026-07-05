@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "An attack that may make foe flinch.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

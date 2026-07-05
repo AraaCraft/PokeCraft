@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "A sleeper loses 1/4 HP every turn.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

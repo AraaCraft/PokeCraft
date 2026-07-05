@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "An attack using a horn to jab.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

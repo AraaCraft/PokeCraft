@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "special",
+    "description_en": "1st turn: Attack 2nd turn: Rest",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

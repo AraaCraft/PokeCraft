@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
+    "description_en": "The user hurls giant chunks of ice at the target to inflict damage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

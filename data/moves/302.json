@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Attacks with thorny arms. May cause flinching.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "This move reduces damage from physical and special moves for five turns. This can be used only in a hailstorm.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

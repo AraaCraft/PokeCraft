@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Party POKéMON join in the attack. ",
     "effect_chance": null,
     "effect_changes": [
         {

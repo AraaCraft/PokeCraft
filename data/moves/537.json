@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user crushes its targets by rolling over them with its rolled-up body. This attack may make the target flinch.",
     "effect_chance": 30,
     "effect_changes": [
         {

@@ -1,6 +1,7 @@
 {
     "accuracy": 0,
     "damage_class": "special",
+    "description_en": "The user attacks by launching particle blades at the target twice in a row. This attack never misses.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

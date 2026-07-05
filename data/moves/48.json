@@ -1,6 +1,7 @@
 {
     "accuracy": 55,
     "damage_class": "status",
+    "description_en": "Sound waves that cause confusion.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

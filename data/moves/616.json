@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user gathers the energy of the land and focuses that power on opposing Pokémon to damage them.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

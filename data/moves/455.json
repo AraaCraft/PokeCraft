@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user calls out its underlings to make a living shield, raising its Defense and Sp. Def stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "By locking down the battlefield, the user keeps all Pokémon from fleeing during the next turn.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user stares at the target with its baby-doll eyes, which lowers its Attack stat. This move always goes first.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

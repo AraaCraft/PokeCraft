@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user creates a bizarre area in which slower Pokémon get to move first for five turns.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
+    "description_en": "Bounces up, then down the next turn. May paralyze.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

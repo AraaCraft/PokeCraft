@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
+    "description_en": "A powerful punch thrown very hard.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

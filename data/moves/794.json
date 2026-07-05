@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user attacks wildly with its thick leek. The user can’t move on the next turn, because the force of this move makes it stagger.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

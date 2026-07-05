@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "The user grows a gigantic stalk that scatters seeds to attack the target. The seeds drain the target’s HP every turn.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

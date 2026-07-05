@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "An extremely speedy and unavoidable attack.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user fires a beam of light at its target. The type changes depending on the Drive the user holds.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

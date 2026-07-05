@@ -1,6 +1,7 @@
 {
     "accuracy": 75,
     "damage_class": "physical",
+    "description_en": "The user tackles the foe while exhibiting overwhelming menace. It may also make the target flinch.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

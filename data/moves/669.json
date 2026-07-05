@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "In this two-turn attack, the user gathers light and fills a blade with the light’s energy, attacking the target on the next turn.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

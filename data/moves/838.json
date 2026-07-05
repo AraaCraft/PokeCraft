@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user smashes into the target in a full-body tackle. This also lowers the user’s defensive stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user locks the target in and prevents it from fleeing. This move also lowers the target’s Defense and Sp. Def every turn.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

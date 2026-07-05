@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "May miss, damaging the user.",
     "effect_chance": null,
     "effect_changes": [
         {

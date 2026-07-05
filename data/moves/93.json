@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "A psychic attack that may cause confusion.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

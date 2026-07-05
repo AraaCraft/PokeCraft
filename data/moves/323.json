@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Inflicts more damage if the user’s HP is high.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

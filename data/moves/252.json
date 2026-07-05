@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "A 1st-turn, 1st-strike move that causes flinching.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

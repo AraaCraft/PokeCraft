@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "An attack that gains power if injured by the foe.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

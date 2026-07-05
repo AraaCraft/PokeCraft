@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "Taunts the foe into only using attack moves.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

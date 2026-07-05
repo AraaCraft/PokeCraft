@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "special",
+    "description_en": "The user yells as if it is ranting about something, making the target’s Sp. Atk stat decrease.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

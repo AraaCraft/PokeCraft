@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "The user launches a steel bomb that sticks to the target. This attack will not miss.",
     "effect_chance": null,
     "effect_changes": [
         {

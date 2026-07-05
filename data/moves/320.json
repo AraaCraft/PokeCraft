@@ -1,6 +1,7 @@
 {
     "accuracy": 55,
     "damage_class": "status",
+    "description_en": "Lulls the foe into sleep with a pleasant melody.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

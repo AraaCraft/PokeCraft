@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "A sharp-fanged attack. May badly poison the foe.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

@@ -50,6 +50,21 @@ const formattedId = String(defaultForm.id).padStart(4, '0');
 
 // We serialize the forms to pass them to the client-side script
 const formsJson = JSON.stringify(forms);
+
+// Extract only the moves used by this pokemon's forms to pass to the client
+const usedMoveIds = new Set();
+forms.forEach((f: any) => f.moves.forEach((mId: string | number) => usedMoveIds.add(String(mId))));
+
+const allMovesFiles = import.meta.glob('../../../../data/moves/*.json', { eager: true });
+const pokemonMovesMap: Record<string, any> = {};
+Object.values(allMovesFiles).forEach((file: any) => {
+  const moveData = file.default;
+  const moveId = String(moveData.id);
+  if (usedMoveIds.has(moveId)) {
+    pokemonMovesMap[moveId] = moveData;
+  }
+});
+const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
 ---
 
 <Layout title={`${formattedName} #${formattedId}`}>
@@ -129,10 +144,35 @@ const formsJson = JSON.stringify(forms);
         </div>
       </div>
     </div>
+    
+    <!-- Moves Block -->
+    <div class="glass-panel moves-card">
+      <div class="moves-header">
+        <h2>Moves (Champions)</h2>
+        <div class="moves-filters">
+          <select id="filter-type">
+            <option value="all">Tous les types</option>
+          </select>
+          <select id="filter-category">
+            <option value="all">Toutes les catégories</option>
+            <option value="physical">Physique</option>
+            <option value="special">Spécial</option>
+            <option value="status">Statut</option>
+          </select>
+          <select id="sort-order">
+            <option value="asc">Ordre A-Z</option>
+            <option value="desc">Ordre Z-A</option>
+          </select>
+        </div>
+      </div>
+      <div id="pokemon-moves-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
   </div>
 
   <!-- Store data for the client script -->
-  <script is:inline define:vars={{ forms }}>
+  <script is:inline define:vars={{ forms, pokemonMovesMap }}>
     // This script runs on the client
     const card = document.getElementById('detail-card');
     const nameEl = document.getElementById('pokemon-name');
@@ -143,8 +183,99 @@ const formsJson = JSON.stringify(forms);
     const abilitiesEl = document.getElementById('pokemon-abilities');
     const buttons = document.querySelectorAll('.form-btn');
     const playCryBtn = document.getElementById('play-cry-btn');
+    const filterTypeEl = document.getElementById('filter-type');
+    const filterCategoryEl = document.getElementById('filter-category');
+    const sortOrderEl = document.getElementById('sort-order');
     
     let currentAudio = null;
+    let currentMovesData = [];
+
+    function renderMoves() {
+      const movesEl = document.getElementById('pokemon-moves-content');
+      if (!currentMovesData || currentMovesData.length === 0) {
+         movesEl.innerHTML = '<p>No moves learned in Champions.</p>';
+         return;
+      }
+
+      let moves = [...currentMovesData];
+
+      // Filter by Type
+      if (filterTypeEl) {
+        const typeFilter = filterTypeEl.value;
+        if (typeFilter !== 'all') {
+          moves = moves.filter(m => m.type_name === typeFilter);
+        }
+      }
+
+      // Filter by Category
+      if (filterCategoryEl) {
+        const catFilter = filterCategoryEl.value;
+        if (catFilter !== 'all') {
+          moves = moves.filter(m => m.damage_class === catFilter);
+        }
+      }
+
+      // Sort
+      if (sortOrderEl) {
+        const sortDir = sortOrderEl.value;
+        moves.sort((a, b) => {
+          const res = (a.name_en || '').localeCompare(b.name_en || '');
+          return sortDir === 'asc' ? res : -res;
+        });
+      }
+
+      if (moves.length === 0) {
+         movesEl.innerHTML = '<p style="padding: 1rem; color: #a0a0a0;">Aucune capacité ne correspond à ces critères.</p>';
+         return;
+      }
+
+      const movesHtml = `
+        <div class="moves-table-container">
+          <table class="moves-table">
+            <thead>
+              <tr>
+                <th>MOVE</th>
+                <th style="text-align:center;">TYPE</th>
+                <th style="text-align:center;">CATEGORY</th>
+                <th style="text-align:center;">POWER</th>
+                <th style="text-align:center;">ACCURACY</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${moves.map(m => {
+                const catIcon = m.damage_class === 'physical' ? '💥' : m.damage_class === 'special' ? '🔮' : '🛡️';
+                const catText = m.damage_class === 'physical' ? 'Physique' : m.damage_class === 'special' ? 'Spécial' : 'Statut';
+                const typeCapitalized = m.type_name.charAt(0).toUpperCase() + m.type_name.slice(1);
+                return `
+                <tr>
+                  <td>
+                    <span class="move-name has-tooltip" data-tooltip="${m.description_en || 'No description available.'}">
+                      <strong>${m.name_en || '-'}</strong>
+                    </span>
+                  </td>
+                  <td style="text-align:center;">
+                     <span class="type-badge bg-${m.type_name}">${typeCapitalized}</span>
+                  </td>
+                  <td style="text-align:center;">
+                     <span class="category-indicator">
+                       ${catIcon} ${catText}
+                     </span>
+                  </td>
+                  <td style="text-align:center; font-weight: 600;">${m.power || '-'}</td>
+                  <td style="text-align:center; font-weight: 600;">${m.accuracy ? m.accuracy + '%' : '-'}</td>
+                </tr>
+                `;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+      movesEl.innerHTML = movesHtml;
+    }
+
+    [filterTypeEl, filterCategoryEl, sortOrderEl].forEach(el => {
+      if (el) el.addEventListener('change', renderMoves);
+    });
 
     function updateUI(formIndex) {
       const p = forms[formIndex];
@@ -230,7 +361,7 @@ const formsJson = JSON.stringify(forms);
       p.abilities.forEach((a, index) => {
         const abilityName = a.ability.name.replace('-', ' ');
         const span = document.createElement('span');
-        span.className = 'ability-badge';
+        span.className = 'ability-badge has-tooltip';
         span.textContent = abilityName + (a.is_hidden ? ' (Hidden)' : '');
         span.setAttribute('data-tooltip', 'Loading...'); // Default tooltip
         
@@ -332,6 +463,23 @@ const formsJson = JSON.stringify(forms);
            effContentEl.innerHTML = '<p>Error loading type data. Make sure fetch_all_types_pokemon.py was run.</p>';
         }
       })();
+
+      // Update Moves
+      const moveIds = p.moves || [];
+      currentMovesData = moveIds.map(id => pokemonMovesMap[id]).filter(Boolean);
+      
+      // Update Type Filter Options
+      if (filterTypeEl) {
+        const uniqueTypes = [...new Set(currentMovesData.map(m => m.type_name))].sort();
+        const currentSelectedType = filterTypeEl.value;
+        filterTypeEl.innerHTML = '<option value="all">Tous les types</option>' + 
+          uniqueTypes.map(t => `<option value="${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</option>`).join('');
+        if (uniqueTypes.includes(currentSelectedType)) {
+          filterTypeEl.value = currentSelectedType;
+        }
+      }
+      
+      renderMoves();
     }
 
     // Initialize with first form
@@ -602,14 +750,14 @@ const formsJson = JSON.stringify(forms);
     color: white;
   }
 
-  :global(.ability-badge) {
+  :global(.has-tooltip) {
     position: relative;
     cursor: help;
     text-decoration: underline dotted var(--text-muted);
     text-underline-offset: 4px;
   }
 
-  :global(.ability-badge::after) {
+  :global(.has-tooltip::after) {
     content: attr(data-tooltip);
     position: absolute;
     bottom: 150%;
@@ -635,14 +783,14 @@ const formsJson = JSON.stringify(forms);
     pointer-events: none;
   }
 
-  :global(.ability-badge:hover::after) {
+  :global(.has-tooltip:hover::after) {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
   }
 
   /* Tooltip arrow */
-  :global(.ability-badge::before) {
+  :global(.has-tooltip::before) {
     content: '';
     position: absolute;
     bottom: 150%;
@@ -657,7 +805,7 @@ const formsJson = JSON.stringify(forms);
     pointer-events: none;
   }
 
-  :global(.ability-badge:hover::before) {
+  :global(.has-tooltip:hover::before) {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(12px);
@@ -710,10 +858,122 @@ const formsJson = JSON.stringify(forms);
     font-weight: 700;
   }
 
-  :global(.eff-badges) {
+  :global(.eff-group .eff-badges) {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+
+  /* --- Moves Block --- */
+  :global(.moves-header) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  :global(.moves-filters) {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  :global(.moves-filters select) {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+  }
+
+  :global(.moves-filters select:hover) {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  :global(.moves-card) {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-column: 1 / -1;
+    margin-top: 2rem; /* Spacing below the detail cards */
+  }
+
+  :global(.moves-header h2) {
+    color: var(--accent-color, var(--primary-color));
+    margin: 0;
+  }
+
+  :global(.moves-table-container) {
+    overflow: visible;
+    background: #202225; /* Sleek dark background matching screenshot */
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  :global(.moves-table) {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+    color: #e0e0e0; /* Light text for dark bg */
+  }
+
+  :global(.moves-table th), :global(.moves-table td) {
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    width: 20%;
+  }
+
+  :global(.moves-table th) {
+    background: #1a1c1e;
+    font-weight: 700;
+    color: #8e9297;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Make type badges smaller in the moves table */
+  :global(.moves-table .type-badge) {
+    font-size: 0.75rem !important;
+    padding: 0.2rem 0.6rem !important;
+    border-radius: 12px !important;
+  }
+
+  :global(.moves-table tbody tr:last-child td) {
+    border-bottom: none;
+  }
+
+  :global(.moves-table tbody tr:hover) {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  :global(.category-indicator) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+  }
+
+  :global(.move-name) {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #ffffff;
+  }
+
+  :global(.move-desc) {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   .type-defenses-section {

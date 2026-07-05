@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user slashes with a sharp claw made from shadows. It has a high critical-hit ratio.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

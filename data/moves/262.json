@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user faints and lowers the foe’s abilities.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

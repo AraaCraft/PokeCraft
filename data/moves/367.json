@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The user applies pressure to stress points, sharply boosting one of its stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "The Pokémon congratulates you on your special day!",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

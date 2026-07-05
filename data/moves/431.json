@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
+    "description_en": "A charging attack that may also leave the foe confused. It can also be used to scale rocky walls.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

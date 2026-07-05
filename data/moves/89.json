@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Tough but useless vs. flying foes.",
     "effect_chance": null,
     "effect_changes": [
         {

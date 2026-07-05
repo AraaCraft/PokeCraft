@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user attacks by slamming its body into the target. The higher the user’s Defense, the more damage it can inflict on the target.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

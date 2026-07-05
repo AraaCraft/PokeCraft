@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "status",
+    "description_en": "A move that lowers the foe's SPEED.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user throws scorching sand at the target to attack. This may also leave the target with a burn.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

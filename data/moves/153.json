@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Very powerful but makes user faint.",
     "effect_chance": null,
     "effect_changes": [
         {

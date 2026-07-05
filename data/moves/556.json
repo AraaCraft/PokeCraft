@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "The user attacks by harshly dropping an icicle onto the target. It may also make the target flinch.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

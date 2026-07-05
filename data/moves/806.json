@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "The user skitters behind the target to attack. This also lowers the target’s Sp. Atk stat.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

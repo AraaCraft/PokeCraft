@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user vanishes somewhere, then strikes the target on the next turn. This move hits even if the target protects itself.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

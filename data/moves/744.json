@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user unleashes a strong beam from its core. This move deals twice the damage if the target is Dynamaxed.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

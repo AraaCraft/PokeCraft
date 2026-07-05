@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Randomly uses any POKéMON move.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "status",
+    "description_en": "The user scatters a cloud of magic powder that changes the target to Psychic type.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

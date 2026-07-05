@@ -1,6 +1,7 @@
 {
     "accuracy": 80,
     "damage_class": "physical",
+    "description_en": "Quickly scratches 2-5 times.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

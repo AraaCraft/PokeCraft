@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "special",
+    "description_en": "Attacks with muddy water. May lower accuracy.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "This move enables the user to attack first. It fails if the foe is not readying an attack, however.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

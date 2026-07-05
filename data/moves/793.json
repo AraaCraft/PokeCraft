@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "physical",
+    "description_en": "The user pretends to bow its head, but then it stabs the target with its disheveled hair. This attack never misses.",
     "effect_chance": null,
     "effect_changes": [
         {

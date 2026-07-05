@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "Raises ATTACK if the user is hit.",
     "effect_chance": null,
     "effect_changes": [
         {

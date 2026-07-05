@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Heals all status problems with a soothing scent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Scares wild foes to end battle.",
     "effect_chance": null,
     "effect_changes": [
         {

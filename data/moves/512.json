@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user nimbly strikes the target. If the user is not holding an item, this attack inflicts massive damage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

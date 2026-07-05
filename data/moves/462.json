@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The foe is crushed with great force. The attack is more powerful the more HP the foe has left.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

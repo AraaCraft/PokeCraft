@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "A powerful loyalty attack. The user flinches if hit.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

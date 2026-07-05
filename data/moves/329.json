@@ -1,6 +1,7 @@
 {
     "accuracy": 30,
     "damage_class": "special",
+    "description_en": "A chilling attack that causes fainting if it hits.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

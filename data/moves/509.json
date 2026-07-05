@@ -1,6 +1,7 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
+    "description_en": "The user throws the target and drags out another Pokémon in its party. In the wild, the battle ends.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

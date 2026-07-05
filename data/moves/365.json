@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user pecks the foe. If the foe is holding a Berry, the user plucks it and gains its effect.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

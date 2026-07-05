@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "A powerful first- strike move.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

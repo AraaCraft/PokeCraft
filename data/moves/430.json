@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "The user gathers all its light energy and releases it at once. It may also lower the foe’s Sp. Def stat.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

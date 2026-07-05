@@ -1,6 +1,7 @@
 {
     "accuracy": 70,
     "damage_class": "special",
+    "description_en": "An attack that may poison the foe.",
     "effect_chance": 40,
     "effect_changes": [],
     "effect_entries": null,

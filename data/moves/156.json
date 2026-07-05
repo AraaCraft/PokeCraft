@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Sleep for 2 turns to fully recover.",
     "effect_chance": null,
     "effect_changes": [
         {

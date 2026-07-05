@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user swings both arms and hits the target. The target’s stat changes don’t affect this attack’s damage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

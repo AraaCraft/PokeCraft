@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "special",
+    "description_en": "Attacks with a burst of light. May lower SP. DEF.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

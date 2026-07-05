@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "This attack’s power increases the more the foe has powered up with stat changes. ",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

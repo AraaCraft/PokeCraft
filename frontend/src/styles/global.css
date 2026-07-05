@@ -45,6 +45,12 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container {
+  flex: 1;
 }
 
 /* Typography */
@@ -64,6 +70,7 @@ h1 {
 
 /* Utilities */
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;

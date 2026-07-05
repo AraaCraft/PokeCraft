@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Makes a decoy with 1/4 user's max HP.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
+    "description_en": "The user charges its target, surrounding itself with a great amount of electricity. It may leave the target with paralysis.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user retaliates against the foe that last inflicted damage on it with much greater power.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "Tears at the foe with sharp claws. May lower DEFENSE.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

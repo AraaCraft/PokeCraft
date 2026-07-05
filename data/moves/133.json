@@ -1,6 +1,7 @@
 {
     "accuracy": null,
     "damage_class": "status",
+    "description_en": "Sharply raises the user's SPCL.DEF.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

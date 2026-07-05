@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "1st turn: Fly 2nd turn: Attack",
     "effect_chance": null,
     "effect_changes": [
         {

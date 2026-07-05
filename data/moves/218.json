@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "An attack based on lack of loyalty.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

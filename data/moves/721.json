@@ -1,6 +1,7 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
+    "description_en": "The user attacks with electrically charged fists. This move changes Normal-type moves to Electric-type moves.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

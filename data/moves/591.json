@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
+    "description_en": "The user whips up a storm of diamonds to damage opposing Pokémon. This may also raise the user’s Defense stat.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

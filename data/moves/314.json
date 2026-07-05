@@ -1,6 +1,7 @@
 {
     "accuracy": 95,
     "damage_class": "special",
+    "description_en": "Hacks with razorlike wind. High critical-hit ratio.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,
