@@ -5,6 +5,25 @@
     <a href="/" class="logo">
       <span class="poke">Poke</span><span class="craft">Craft</span>
     </a>
+    
+    <div class="header-actions">
+      <div class="search-container">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="pokemon-search" placeholder="Rechercher un Pokémon..." autocomplete="off" />
+        </div>
+        <ul id="search-results" class="search-results hidden">
+          <!-- Populated by JS -->
+        </ul>
+      </div>
+
+      <div class="lang-selector-container">
+        <select class="lang-selector" id="lang-selector">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+        </select>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -29,6 +48,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .logo {
@@ -52,4 +73,261 @@
   .logo:hover {
     opacity: 0.9;
   }
+
+  /* --- Actions Block --- */
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  /* Search Bar */
+  .search-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 16px;
+    font-size: 1.1rem;
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+  #pokemon-search {
+    background: var(--surface-color-light);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 0.7rem 1.2rem 0.7rem 2.8rem;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  #pokemon-search:focus {
+    background: var(--surface-color);
+    border-color: var(--primary-color, #ff5350);
+    box-shadow: 0 0 0 3px rgba(255, 83, 80, 0.2), inset 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  #pokemon-search::placeholder {
+    color: var(--text-muted);
+  }
+
+  /* Search Results Dropdown */
+  .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.5rem;
+    background: #1a1c1e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 0.5rem 0;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1001;
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+    transform: translateY(0);
+  }
+
+  .search-results.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+
+  /* Custom Scrollbar for results */
+  .search-results::-webkit-scrollbar {
+    width: 8px;
+  }
+  .search-results::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .search-results::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+  }
+
+  :global(.search-result-item) {
+    padding: 0;
+  }
+
+  :global(.search-result-link) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.6rem 1rem;
+    color: var(--text-color, #e0e0e0);
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  :global(.search-result-link:hover) {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  :global(.search-result-id) {
+    font-size: 0.8rem;
+    color: var(--text-muted, #a0a0a0);
+    font-family: monospace;
+    background: rgba(0,0,0,0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  :global(.search-result-name) {
+    font-weight: 600;
+  }
+
+  /* Lang Selector */
+  .lang-selector {
+    background: var(--surface-color-light);
+    color: white;
+    border: 1px solid var(--glass-border);
+    padding: 0.7rem 1.2rem;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .lang-selector:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--surface-color);
+  }
+
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+    }
+    #pokemon-search {
+      width: 100%;
+    }
+    #pokemon-search:focus {
+      width: 100%;
+    }
+    .search-container {
+      width: 100%;
+      flex: 1;
+    }
+  }
 </style>
+
+<script>
+  let searchIndex = [];
+  const searchInput = document.getElementById('pokemon-search') as HTMLInputElement;
+  const searchResults = document.getElementById('search-results');
+  const langSelector = document.getElementById('lang-selector') as HTMLSelectElement;
+
+  // Load search index
+  async function loadSearchIndex() {
+    try {
+      const res = await fetch('/data/search_index.json');
+      if (res.ok) {
+        searchIndex = await res.json();
+      }
+    } catch (e) {
+      console.error("Failed to load search index", e);
+    }
+  }
+
+  loadSearchIndex();
+
+  function renderResults(query) {
+    if (!query) {
+      searchResults.classList.add('hidden');
+      return;
+    }
+
+    const q = query.toLowerCase().trim();
+    
+    // Filter matches
+    const matches = searchIndex.filter(p => {
+      // match name
+      if (p.name.toLowerCase().includes(q)) return true;
+      // match id
+      if (String(p.id).includes(q)) return true;
+      // match forms
+      if (p.forms && p.forms.some(f => f.toLowerCase().includes(q))) return true;
+      
+      return false;
+    }).slice(0, 10); // Limit to 10 results
+
+    if (matches.length === 0) {
+      searchResults.innerHTML = '<li style="padding: 1rem; color: #a0a0a0; text-align: center; font-size: 0.9rem;">Aucun Pokémon trouvé</li>';
+      searchResults.classList.remove('hidden');
+      return;
+    }
+
+    searchResults.innerHTML = matches.map(p => {
+      const formattedId = String(p.id).padStart(4, '0');
+      let displayName = p.name;
+      
+      return `
+        <li class="search-result-item">
+          <a href="/pokemon/${p.id}" class="search-result-link">
+            <span class="search-result-id">#${formattedId}</span>
+            <span class="search-result-name">${displayName}</span>
+          </a>
+        </li>
+      `;
+    }).join('');
+
+    searchResults.classList.remove('hidden');
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      renderResults((e.target as HTMLInputElement).value);
+    });
+
+    // Hide when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!searchInput.contains(e.target as Node) && !searchResults.contains(e.target as Node)) {
+        searchResults.classList.add('hidden');
+      }
+    });
+
+    // Show when focused if there's text
+    searchInput.addEventListener('focus', () => {
+      if (searchInput.value) {
+        searchResults.classList.remove('hidden');
+      }
+    });
+  }
+
+  // Basic Lang selector persistence
+  if (langSelector) {
+    const savedLang = localStorage.getItem('pokecraft_lang') || 'en';
+    langSelector.value = savedLang;
+    
+    langSelector.addEventListener('change', (e) => {
+      localStorage.setItem('pokecraft_lang', (e.target as HTMLSelectElement).value);
+      // We'll manage translations later
+    });
+  }
+</script>
