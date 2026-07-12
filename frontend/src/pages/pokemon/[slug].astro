@@ -893,7 +893,15 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
 
   /* Moves Table */
   .moves-table-container {
-    overflow-x: auto;
+    position: relative;
+    z-index: 10;
+    overflow-x: visible;
+  }
+
+  @media (max-width: 768px) {
+    .moves-table-container {
+      overflow-x: auto;
+    }
   }
 
   .moves-table {

@@ -7,10 +7,12 @@ Pouvoir choisir des altérations de stats pour le pokémon attaqué ET le pokém
 
 Features/pages :
     - ~~Pokédex~~
-    - ~~Équipes~~ (avec la possibilité de créer des équipes), "sauvegarder" les équipes des utilisateurs dans des cookies, pas de système de création de compte. Possibilité d'exporter au format .png ou .pdf ET d'importer à nouveau ces fichiers.
-    - Calculateur d'EV (avec une interface visuelle et intuitive) comme sur Champions
+    - Équipes ~~(avec la possibilité de créer des équipes), "sauvegarder" les équipes des utilisateurs dans des cookies, pas de système de création de compte. Possibilité d'exporter au format .png ou .pdf~~ ET d'importer à nouveau ces fichiers.
+    - ~~Calculateur d'EV (avec une interface visuelle et intuitive) comme sur Champions~~
     - Simulateur de dégâts / combat
     - Générer un tableau de faiblesses et résistances en fonction des types
     - Générer ue page qui liste tous les items présents dans le jeu ainsi que leurs descriptions et leurs icons
 
 - Faire la traduction FR
+- Changer le favicon
+
