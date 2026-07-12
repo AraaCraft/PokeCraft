@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Slashes the foe with sharp claws.",
+    "description_fr": "Le lanceur lacère l’ennemi de ses grandes griffes aiguisées.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

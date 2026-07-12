@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "The user attacks by swinging its tail as if it were a vicious wave in a raging storm. ",
+    "description_fr": "Le lanceur attaque en balançant sa queue comme une lame de fond en pleine tempête.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "A powdery attack that may raise abilities.",
+    "description_fr": "Vent qui projette des écailles poudreuses sur l’ennemi. Peut aussi monter toutes les stats du lanceur.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

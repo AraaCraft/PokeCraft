@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "Bounces up, then down the next turn. May paralyze.",
+    "description_fr": "Le lanceur bondit très haut et plonge sur l’ennemi au 2è tour. Peut aussi paralyser l’ennemi.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "Jabs the target 2-5 times.",
+    "description_fr": "Frappe l’ennemi 2 à 5 fois d’affilée avec un bec ou une corne.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

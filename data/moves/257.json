@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "special",
     "description_en": "Exhales a hot breath on the foe. May inflict a burn.",
+    "description_fr": "Le lanceur provoque une vague de chaleur. Peut aussi brûler l’ennemi.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

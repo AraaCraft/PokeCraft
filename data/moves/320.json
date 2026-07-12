@@ -2,6 +2,7 @@
     "accuracy": 55,
     "damage_class": "status",
     "description_en": "Lulls the foe into sleep with a pleasant melody.",
+    "description_fr": "Le lanceur joue une douce mélodie qui plonge l’ennemi dans un profond sommeil.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

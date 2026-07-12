@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user swings its tough tail wildly and attacks opposing Pokémon. This also lowers their Attack stats.",
+    "description_fr": "Le lanceur balaie violemment le camp adverse avec son immense queue. Baisse l’Attaque de la cible.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks by hurling a blizzard-cloaked icicle lance at opposing Pokémon.",
+    "description_fr": "Le lanceur attaque l’ennemi avec une lance de glace entourée d’un blizzard.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Lays roots that restore HP. The user can’t switch out.",
+    "description_fr": "Le lanceur plante ses racines et récupère des PV à chaque tour. Une fois enraciné, il ne peut plus fuir.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

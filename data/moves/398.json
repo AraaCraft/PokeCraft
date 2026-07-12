@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The foe is stabbed with a tentacle or arm steeped in poison. It may also poison the foe.",
+    "description_fr": "Attaque l’ennemi avec un tentacule ou un bras plein de poison. Peut aussi l’empoisonner.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

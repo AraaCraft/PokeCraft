@@ -14,6 +14,7 @@ move_to_register = {
     "accuracy":None,
     "damage_class":None,
     "description_en":None,
+    "description_fr":None,
     "effect_chance":None,
     "effect_changes":None,
     "effect_entries":None,
@@ -73,12 +74,12 @@ for move in moves:
         move_to_register["meta"]["min_turns"] = move_details["meta"]["min_turns"]
         move_to_register["meta"]["stat_chance"] = move_details["meta"]["stat_chance"]
 
-    # Extract English description
+    # Extract descriptions
     for entry in move_details.get("flavor_text_entries", []):
-        if entry.get("language", {}).get("name") == "en":
-            # Remove newlines and form feeds
+        if entry.get("language", {}).get("name") == "en" and move_to_register.get("description_en") is None:
             move_to_register["description_en"] = entry["flavor_text"].replace("\n", " ").replace("\f", " ")
-            break
+        if entry.get("language", {}).get("name") == "fr" and move_to_register.get("description_fr") is None:
+            move_to_register["description_fr"] = entry["flavor_text"].replace("\n", " ").replace("\f", " ")
 
     move_to_register["shortname"] = move_details["name"]
     for name in move_details["names"]:
@@ -102,6 +103,7 @@ for move in moves:
         "accuracy":None,
         "damage_class":None,
         "description_en":None,
+    "description_fr":None,
         "effect_chance":None,
         "effect_changes":None,
         "effect_entries":None,

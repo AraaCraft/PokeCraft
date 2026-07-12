@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks everything around it with the destructive power of a terrible, explosive sound.",
+    "description_fr": "Attaque les Pokémon alentour grâce à une onde sonore assourdissante qui détruit tout sur son passage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

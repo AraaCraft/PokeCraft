@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "The user swings and hits with its strong, heavy fist. It lowers the user’s Speed, however.",
+    "description_fr": "Le lanceur donne un puissant coup de poing à l’ennemi. Réduit la Vitesse du lanceur.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

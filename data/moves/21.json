@@ -2,6 +2,7 @@
     "accuracy": 75,
     "damage_class": "physical",
     "description_en": "Slams the foe with a tail, vine, etc.",
+    "description_fr": "Fouette l’ennemi avec la queue, une liane, etc. pour infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks the target with unpleasant sound waves. For two turns, the target is prevented from recovering HP through moves, Abilities, or held items.",
+    "description_fr": "Le lanceur attaque avec des ondes sonores dissonantes. Cela empêche la cible de récupérer des PV à l'aide de capacités, talents ou objets tenus pendant 2 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

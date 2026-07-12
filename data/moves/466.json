@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user creates a gust of repulsive wind. It may also raise all the user’s stats at once.",
+    "description_fr": "Le lanceur crée une violente bourrasque. Peut aussi augmenter toutes ses stats.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

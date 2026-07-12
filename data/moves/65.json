@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A strong, spin­ ning-peck attack.",
+    "description_fr": "Une attaque utilisant le bec comme une perceuse.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats on the next turn.",
+    "description_fr": "Le lanceur absorbe de l’énergie au premier tour et augmente fortement son Attaque Spéciale, sa Défense Spéciale et sa Vitesse au second.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

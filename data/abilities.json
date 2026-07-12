@@ -1,0 +1,2986 @@
+{
+  "ice-body": {
+    "id": 115,
+    "name": "ice-body",
+    "name_fr": "Corps Gel",
+    "name_en": "Ice Body",
+    "description_fr": "R\u00e9cup\u00e8re des PV lors des temp\u00eates de gr\u00eale.",
+    "description_en": "The Pok\u00e9mon regains HP in a hailstorm."
+  },
+  "sandpit": {
+    "id": 10019,
+    "name": "sandpit",
+    "name_fr": "Sandpit",
+    "name_en": "Sandpit",
+    "description_fr": null,
+    "description_en": null
+  },
+  "vessel-of-ruin": {
+    "id": 284,
+    "name": "vessel-of-ruin",
+    "name_fr": "Urne du Fl\u00e9au",
+    "name_en": "Vessel of Ruin",
+    "description_fr": "Le pouvoir de l\u2019urne qui appelle le fl\u00e9au affaiblit\\nl\u2019Attaque Sp\u00e9ciale de tous les autres Pok\u00e9mon.",
+    "description_en": "The power of the Pok\u00e9mon's ruinous vessel lowers the Sp. Atk stats of all Pok\u00e9mon except itself."
+  },
+  "overcoat": {
+    "id": 142,
+    "name": "overcoat",
+    "name_fr": "Envelocape",
+    "name_en": "Overcoat",
+    "description_fr": "Neutralise les d\u00e9g\u00e2ts dus \u00e0 la m\u00e9t\u00e9o.",
+    "description_en": "Protects the Pok\u00e9mon from damage from weather."
+  },
+  "sharpness": {
+    "id": 292,
+    "name": "sharpness",
+    "name_fr": "Incisif",
+    "name_en": "Sharpness",
+    "description_fr": "Augmente la puissance des capacit\u00e9s tranchantes.",
+    "description_en": "Powers up slicing moves."
+  },
+  "justified": {
+    "id": 154,
+    "name": "justified",
+    "name_fr": "C\u0153ur Noble",
+    "name_en": "Justified",
+    "description_fr": "Monte l\u2019Attaque si une att. T\u00e9n\u00e8bres le touche.",
+    "description_en": "Raises Attack when hit by a Dark-type move."
+  },
+  "shackle": {
+    "id": 10058,
+    "name": "shackle",
+    "name_fr": "Shackle",
+    "name_en": "Shackle",
+    "description_fr": null,
+    "description_en": null
+  },
+  "klutz": {
+    "id": 103,
+    "name": "klutz",
+    "name_fr": "Maladresse",
+    "name_en": "Klutz",
+    "description_fr": "Le Pok\u00e9mon ne peut utiliser aucun objet tenu.",
+    "description_en": "The Pok\u00e9mon can\u2019t use any held items."
+  },
+  "screen-cleaner": {
+    "id": 251,
+    "name": "screen-cleaner",
+    "name_fr": "Brise-Barri\u00e8re",
+    "name_en": "Screen Cleaner",
+    "description_fr": "Quand le Pok\u00e9mon entre au combat, les effets de Mur Lumi\u00e8re, Protection et Voile Aurore disparaissent pour les alli\u00e9s comme pour les ennemis.",
+    "description_en": "When the Pok\u00e9mon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pok\u00e9mon."
+  },
+  "lunchbox": {
+    "id": 10023,
+    "name": "lunchbox",
+    "name_fr": "Lunchbox",
+    "name_en": "Lunchbox",
+    "description_fr": null,
+    "description_en": null
+  },
+  "shields-down": {
+    "id": 197,
+    "name": "shields-down",
+    "name_fr": "Bouclier-Carcan",
+    "name_en": "Shields Down",
+    "description_fr": "Lorsque le Pok\u00e9mon perd la moiti\u00e9 de ses PV, son enveloppe se brise, mais son Attaque et son Attaque Sp\u00e9ciale augmentent.",
+    "description_en": "When its HP becomes half or less, the Pok\u00e9mon\u2019s shell breaks and it becomes aggressive."
+  },
+  "mega-launcher": {
+    "id": 178,
+    "name": "mega-launcher",
+    "name_fr": "M\u00e9ga Blaster",
+    "name_en": "Mega Launcher",
+    "description_fr": "Augmente la puissance de certaines capacit\u00e9s de type aura.",
+    "description_en": "Powers up aura and pulse moves."
+  },
+  "own-tempo": {
+    "id": 20,
+    "name": "own-tempo",
+    "name_fr": "Tempo Perso",
+    "name_en": "Own Tempo",
+    "description_fr": "Emp\u00eache la confusion.",
+    "description_en": "Prevents confusion."
+  },
+  "galvanize": {
+    "id": 206,
+    "name": "galvanize",
+    "name_fr": "Peau \u00c9lectrique",
+    "name_en": "Galvanize",
+    "description_fr": "Les capacit\u00e9s de type Normal deviennent de type \u00c9lectrik. Leur puissance augmente l\u00e9g\u00e8rement.",
+    "description_en": "Normal-type moves become Electric-type moves. The power of those moves is boosted a little."
+  },
+  "magic-guard": {
+    "id": 98,
+    "name": "magic-guard",
+    "name_fr": "Garde Magik",
+    "name_en": "Magic Guard",
+    "description_fr": "Seule une attaque directe peut blesser le Pok\u00e9mon.",
+    "description_en": "The Pok\u00e9mon only takes damage from attacks."
+  },
+  "tangled-feet": {
+    "id": 77,
+    "name": "tangled-feet",
+    "name_fr": "Pieds Confus",
+    "name_en": "Tangled Feet",
+    "description_fr": "Augmente l'esquive si le Pok\u00e9mon est confus.",
+    "description_en": "Raises evasion if the Pok\u00e9mon is confused."
+  },
+  "battle-bond": {
+    "id": 210,
+    "name": "battle-bond",
+    "name_fr": "Synergie",
+    "name_en": "Battle Bond",
+    "description_fr": "En battant un ennemi, ce Pok\u00e9mon renforce ses liens avec son Dresseur. Il prend alors sa Forme Sacha et ses Sheauriken gagnent en puissance.",
+    "description_en": "Defeating an opposing Pok\u00e9mon strengthens the Pok\u00e9mon\u2019s bond with its Trainer, and it becomes Ash-Greninja. Water Shuriken gets more powerful."
+  },
+  "harvest": {
+    "id": 139,
+    "name": "harvest",
+    "name_fr": "R\u00e9colte",
+    "name_en": "Harvest",
+    "description_fr": "Les Baies utilis\u00e9es peuvent repousser.",
+    "description_en": "May create another Berry after one is used."
+  },
+  "shed-skin": {
+    "id": 61,
+    "name": "shed-skin",
+    "name_fr": "Mue",
+    "name_en": "Shed Skin",
+    "description_fr": "Mue pour se soigner.",
+    "description_en": "Heals the body by shedding."
+  },
+  "ripen": {
+    "id": 247,
+    "name": "ripen",
+    "name_fr": "M\u00fbrissement",
+    "name_en": "Ripen",
+    "description_fr": "Le Pok\u00e9mon fait m\u00fbrir la Baie qu\u2019il tient et double ainsi son effet.",
+    "description_en": "Ripens Berries and doubles their effect."
+  },
+  "toxic-chain": {
+    "id": 302,
+    "name": "toxic-chain",
+    "name_fr": "Cha\u00eene Toxique",
+    "name_en": "Toxic Chain",
+    "description_fr": "Gr\u00e2ce aux pouvoirs de sa cha\u00eene impr\u00e9gn\u00e9e de toxines,\\nle Pok\u00e9mon peut empoisonner gravement sa cible\\nen la touchant avec une capacit\u00e9.",
+    "description_en": "The power of the Pok\u00e9mon's toxic chain may badly poison any target the Pok\u00e9mon hits with a move"
+  },
+  "celebrate": {
+    "id": 10035,
+    "name": "celebrate",
+    "name_fr": "Celebrate",
+    "name_en": "Celebrate",
+    "description_fr": null,
+    "description_en": null
+  },
+  "tough-claws": {
+    "id": 181,
+    "name": "tough-claws",
+    "name_fr": "Griffe Dure",
+    "name_en": "Tough Claws",
+    "description_fr": "Augmente la puissance des attaques directes.",
+    "description_en": "Powers up moves that make direct contact."
+  },
+  "trace": {
+    "id": 36,
+    "name": "trace",
+    "name_fr": "Calque",
+    "name_en": "Trace",
+    "description_fr": "Imite la capacit\u00e9 sp\u00e9ciale.",
+    "description_en": "Copies special ability."
+  },
+  "frisk": {
+    "id": 119,
+    "name": "frisk",
+    "name_fr": "Fouille",
+    "name_en": "Frisk",
+    "description_fr": "Permet de conna\u00eetre l'objet tenu par l'ennemi.",
+    "description_en": "The Pok\u00e9mon can check the foe\u2019s held item."
+  },
+  "water-veil": {
+    "id": 41,
+    "name": "water-veil",
+    "name_fr": "Ignifu-Voile",
+    "name_en": "Water Veil",
+    "description_fr": "Emp\u00eache les br\u00fblures.",
+    "description_en": "Prevents burns."
+  },
+  "confidence": {
+    "id": 10042,
+    "name": "confidence",
+    "name_fr": "Confidence",
+    "name_en": "Confidence",
+    "description_fr": null,
+    "description_en": null
+  },
+  "full-metal-body": {
+    "id": 230,
+    "name": "full-metal-body",
+    "name_fr": "M\u00e9tallo-Garde",
+    "name_en": "Full Metal Body",
+    "description_fr": "Emp\u00eache les stats du Pok\u00e9mon de baisser \u00e0 cause d\u2019une capacit\u00e9 ou d\u2019un talent.",
+    "description_en": "Prevents other Pok\u00e9mon\u2019s moves or Abilities from lowering the Pok\u00e9mon\u2019s stats."
+  },
+  "color-change": {
+    "id": 16,
+    "name": "color-change",
+    "name_fr": "Homochromie",
+    "name_en": "Color Change",
+    "description_fr": "Le Pok\u00e9mon adopte le type de la capacit\u00e9 ennemie.",
+    "description_en": "Changes type to foe\u2019s move."
+  },
+  "orichalcum-pulse": {
+    "id": 288,
+    "name": "orichalcum-pulse",
+    "name_fr": "Pouls Orichalque",
+    "name_en": "Orichalcum Pulse",
+    "description_fr": "Le Pok\u00e9mon invoque le soleil quand il rejoint le combat.\\nQuand le soleil brille, une pulsation primitive augmente\\nson Attaque.",
+    "description_en": "Turns the sunlight harsh when the Pok\u00e9mon enters a battle. The ancient pulse thrumming through the Pok\u00e9mon also boosts its Attack stat in harsh sunlight."
+  },
+  "spirit": {
+    "id": 10015,
+    "name": "spirit",
+    "name_fr": "Spirit",
+    "name_en": "Spirit",
+    "description_fr": null,
+    "description_en": null
+  },
+  "as-one-spectrier": {
+    "id": 267,
+    "name": "as-one-spectrier",
+    "name_fr": "Osmose \u00c9quine",
+    "name_en": "As One",
+    "description_fr": "Les talents Tension de Sylveroy et Sombre Ruade de Spectreval sont cumul\u00e9s.",
+    "description_en": "This Ability combines the effects of both Calyrex\u2019s Unnerve Ability and Spectrier\u2019s Grim Neigh Ability."
+  },
+  "prankster": {
+    "id": 158,
+    "name": "prankster",
+    "name_fr": "Farceur",
+    "name_en": "Prankster",
+    "description_fr": "Utilise les attaques de statut en premier.",
+    "description_en": "Gives priority to a status move."
+  },
+  "skater": {
+    "id": 10003,
+    "name": "skater",
+    "name_fr": "Skater",
+    "name_en": "Skater",
+    "description_fr": null,
+    "description_en": null
+  },
+  "anger-shell": {
+    "id": 271,
+    "name": "anger-shell",
+    "name_fr": "Courroupace",
+    "name_en": "Anger Shell",
+    "description_fr": "Le Pok\u00e9mon enrage s\u2019il a moins de la moiti\u00e9 de ses PV\\napr\u00e8s avoir subi une attaque. Sa D\u00e9f. et sa D\u00e9f. Sp\u00e9.\\nbaissent, et son Atq., son Atq. Sp\u00e9. et sa Vit. augmentent.",
+    "description_en": "When an attack causes its HP to drop to half or less, the Pok\u00e9mon gets angry. This lowers its Defense and Sp. Def stats but boosts its Attack, Sp. Atk, and Speed stats."
+  },
+  "plus": {
+    "id": 57,
+    "name": "plus",
+    "name_fr": "Plus",
+    "name_en": "Plus",
+    "description_fr": "Puissance + avec MINUS.",
+    "description_en": "Powers up with MINUS."
+  },
+  "flame-boost": {
+    "id": 10054,
+    "name": "flame-boost",
+    "name_fr": "Flame Boost",
+    "name_en": "Flame Boost",
+    "description_fr": null,
+    "description_en": null
+  },
+  "electric-surge": {
+    "id": 226,
+    "name": "electric-surge",
+    "name_fr": "Cr\u00e9a-\u00c9lec",
+    "name_en": "Electric Surge",
+    "description_fr": "Le Pok\u00e9mon cr\u00e9e un Champ \u00c9lectrifi\u00e9 au moment o\u00f9 il entre au combat.",
+    "description_en": "Turns the ground into Electric Terrain when the Pok\u00e9mon enters a battle."
+  },
+  "refrigerate": {
+    "id": 174,
+    "name": "refrigerate",
+    "name_fr": "Peau Gel\u00e9e",
+    "name_en": "Refrigerate",
+    "description_fr": "Les capacit\u00e9s de type Normal deviennent de type Glace.",
+    "description_en": "Normal-type moves become Ice-type moves."
+  },
+  "solar-power": {
+    "id": 94,
+    "name": "solar-power",
+    "name_fr": "Force Soleil",
+    "name_en": "Solar Power",
+    "description_fr": "Augmente l'Atq. Sp\u00e9. mais baisse les PV au soleil.",
+    "description_en": "Boosts Sp. Atk, but lowers HP in sunshine."
+  },
+  "bad-dreams": {
+    "id": 123,
+    "name": "bad-dreams",
+    "name_fr": "Mauvais R\u00eave",
+    "name_en": "Bad Dreams",
+    "description_fr": "R\u00e9duit les PV d'un ennemi endormi.",
+    "description_en": "Reduces a sleeping foe\u2019s HP."
+  },
+  "gluttony": {
+    "id": 82,
+    "name": "gluttony",
+    "name_fr": "Gloutonnerie",
+    "name_en": "Gluttony",
+    "description_fr": "Encourage l'utilisation d'une Baie tenue.",
+    "description_en": "Encourages the early use of a held Berry."
+  },
+  "damp": {
+    "id": 6,
+    "name": "damp",
+    "name_fr": "Moiteur",
+    "name_en": "Damp",
+    "description_fr": "Emp\u00eache auto-destruction.",
+    "description_en": "Prevents self-destruction."
+  },
+  "light-metal": {
+    "id": 135,
+    "name": "light-metal",
+    "name_fr": "Light Metal",
+    "name_en": "Light Metal",
+    "description_fr": "Divise par deux le poids du Pok\u00e9mon.",
+    "description_en": "Halves the Pok\u00e9mon\u2019s weight."
+  },
+  "victory-star": {
+    "id": 162,
+    "name": "victory-star",
+    "name_fr": "Victorieux",
+    "name_en": "Victory Star",
+    "description_fr": "Monte la Pr\u00e9cision des Pok\u00e9mon de l\u2019\u00e9quipe.",
+    "description_en": "Boosts the accuracy of its allies and itself."
+  },
+  "frighten": {
+    "id": 10039,
+    "name": "frighten",
+    "name_fr": "Frighten",
+    "name_en": "Frighten",
+    "description_fr": null,
+    "description_en": null
+  },
+  "daze": {
+    "id": 10038,
+    "name": "daze",
+    "name_fr": "Daze",
+    "name_en": "Daze",
+    "description_fr": null,
+    "description_en": null
+  },
+  "turboblaze": {
+    "id": 163,
+    "name": "turboblaze",
+    "name_fr": "Turbo Brasier",
+    "name_en": "Turboblaze",
+    "description_fr": "Les cap. sp\u00e9. adverses ne bloquent pas ses cap.",
+    "description_en": "Moves can be used regardless of Abilities."
+  },
+  "limber": {
+    "id": 7,
+    "name": "limber",
+    "name_fr": "\u00c9chauffement",
+    "name_en": "Limber",
+    "description_fr": "Emp\u00eache la paralysie.",
+    "description_en": "Prevents paralysis."
+  },
+  "anger-point": {
+    "id": 83,
+    "name": "anger-point",
+    "name_fr": "Col\u00e9rique",
+    "name_en": "Anger Point",
+    "description_fr": "Monte l\u2019Attaque au max apr\u00e8s un coup critique.",
+    "description_en": "Raises Attack upon taking a critical hit."
+  },
+  "heavy-metal": {
+    "id": 134,
+    "name": "heavy-metal",
+    "name_fr": "Heavy Metal",
+    "name_en": "Heavy Metal",
+    "description_fr": "Double le poids du Pok\u00e9mon.",
+    "description_en": "Doubles the Pok\u00e9mon\u2019s weight."
+  },
+  "quick-feet": {
+    "id": 95,
+    "name": "quick-feet",
+    "name_fr": "Pied V\u00e9loce",
+    "name_en": "Quick Feet",
+    "description_fr": "Augmente la Vitesse en cas de probl\u00e8me de statut.",
+    "description_en": "Boosts Speed if there is a status problem."
+  },
+  "flower-gift": {
+    "id": 122,
+    "name": "flower-gift",
+    "name_fr": "Don Floral",
+    "name_en": "Flower Gift",
+    "description_fr": "Pok\u00e9mon de l'\u00e9quipe plus puissants au soleil.",
+    "description_en": "Powers up party Pok\u00e9mon when it is sunny."
+  },
+  "sweet-veil": {
+    "id": 175,
+    "name": "sweet-veil",
+    "name_fr": "Gluco-Voile",
+    "name_en": "Sweet Veil",
+    "description_fr": "Les Pok\u00e9mon de l\u2019\u00e9quipe ne peuvent pas s\u2019endormir.",
+    "description_en": "Prevents itself and ally Pok\u00e9mon from falling asleep."
+  },
+  "aqua-boost": {
+    "id": 10055,
+    "name": "aqua-boost",
+    "name_fr": "Aqua Boost",
+    "name_en": "Aqua Boost",
+    "description_fr": null,
+    "description_en": null
+  },
+  "psychic-surge": {
+    "id": 227,
+    "name": "psychic-surge",
+    "name_fr": "Cr\u00e9a-Psy",
+    "name_en": "Psychic Surge",
+    "description_fr": "Le Pok\u00e9mon cr\u00e9e un Champ Psychique au moment o\u00f9 il entre au combat.",
+    "description_en": "Turns the ground into Psychic Terrain when the Pok\u00e9mon enters a battle."
+  },
+  "cute-charm": {
+    "id": 56,
+    "name": "cute-charm",
+    "name_fr": "Joli Sourire",
+    "name_en": "Cute Charm",
+    "description_fr": "S\u00e9duit quand touch\u00e9.",
+    "description_en": "Infatuates on contact."
+  },
+  "wave-rider": {
+    "id": 10002,
+    "name": "wave-rider",
+    "name_fr": "Wave Rider",
+    "name_en": "Wave Rider",
+    "description_fr": null,
+    "description_en": null
+  },
+  "thermal-exchange": {
+    "id": 270,
+    "name": "thermal-exchange",
+    "name_fr": "Thermodynamique",
+    "name_en": "Thermal Exchange",
+    "description_fr": "Lorsque le Pok\u00e9mon est touch\u00e9 par une capacit\u00e9 de type\\nFeu, son Attaque augmente. Il ne peut pas \u00eatre br\u00fbl\u00e9.",
+    "description_en": "Boosts the Attack stat when the Pok\u00e9mon is hit by a Fire-type move. The Pok\u00e9mon also cannot be burned."
+  },
+  "sand-force": {
+    "id": 159,
+    "name": "sand-force",
+    "name_fr": "Force Sable",
+    "name_en": "Sand Force",
+    "description_fr": "Renforce des capacit\u00e9s en cas de temp\u00eate de sable.",
+    "description_en": "Boosts certain moves\u2019 power in a sandstorm."
+  },
+  "hadron-engine": {
+    "id": 289,
+    "name": "hadron-engine",
+    "name_fr": "Moteur \u00e0 Hadrons",
+    "name_en": "Hadron Engine",
+    "description_fr": "Le Pok\u00e9mon cr\u00e9e un champ \u00e9lectrifi\u00e9 quand il rejoint\\nle combat. Une machine du futur fait monter son Attaque\\nSp\u00e9ciale si un champ \u00e9lectrifi\u00e9 est actif.",
+    "description_en": "Turns the ground into Electric Terrain when the Pok\u00e9mon enters a battle. The futuristic engine within the Pok\u00e9mon also boosts its Sp. Atk stat on Electric Terrain."
+  },
+  "power-nap": {
+    "id": 10014,
+    "name": "power-nap",
+    "name_fr": "Power Nap",
+    "name_en": "Power Nap",
+    "description_fr": null,
+    "description_en": null
+  },
+  "as-one-glastrier": {
+    "id": 266,
+    "name": "as-one-glastrier",
+    "name_fr": "Osmose \u00c9quine",
+    "name_en": "As One",
+    "description_fr": "Les talents Tension de Sylveroy et Blanche Ruade de Blizzeval sont cumul\u00e9s.",
+    "description_en": "This Ability combines the effects of both Calyrex\u2019s Unnerve Ability and Glastrier\u2019s Chilling Neigh Ability."
+  },
+  "immunity": {
+    "id": 17,
+    "name": "immunity",
+    "name_fr": "Vaccin",
+    "name_en": "Immunity",
+    "description_fr": "Emp\u00eache l'empoisonnement.",
+    "description_en": "Prevents poisoning."
+  },
+  "fortune": {
+    "id": 10043,
+    "name": "fortune",
+    "name_fr": "Fortune",
+    "name_en": "Fortune",
+    "description_fr": null,
+    "description_en": null
+  },
+  "shadow-shield": {
+    "id": 231,
+    "name": "shadow-shield",
+    "name_fr": "Spectro-Bouclier",
+    "name_en": "Shadow Shield",
+    "description_fr": "Le Pok\u00e9mon re\u00e7oit moins de d\u00e9g\u00e2ts quand ses PV sont au maximum.",
+    "description_en": "Reduces the amount of damage the Pok\u00e9mon takes while its HP is full."
+  },
+  "honey-gather": {
+    "id": 118,
+    "name": "honey-gather",
+    "name_fr": "Cherche Miel",
+    "name_en": "Honey Gather",
+    "description_fr": "Le Pok\u00e9mon peut parfois trouver du Miel.",
+    "description_en": "The Pok\u00e9mon may gather Honey from somewhere."
+  },
+  "magma-armor": {
+    "id": 40,
+    "name": "magma-armor",
+    "name_fr": "Armumagma",
+    "name_en": "Magma Armor",
+    "description_fr": "Emp\u00eache le gel.",
+    "description_en": "Prevents freezing."
+  },
+  "symbiosis": {
+    "id": 180,
+    "name": "symbiosis",
+    "name_fr": "Symbiose",
+    "name_en": "Symbiosis",
+    "description_fr": "Permet aux alli\u00e9s d\u2019utiliser l\u2019objet port\u00e9 par ce Pok\u00e9mon.",
+    "description_en": "The Pok\u00e9mon can pass an item to an ally."
+  },
+  "huge-power": {
+    "id": 37,
+    "name": "huge-power",
+    "name_fr": "Coloforce",
+    "name_en": "Huge Power",
+    "description_fr": "Augmente ATTAQUE.",
+    "description_en": "Raises ATTACK."
+  },
+  "ice-scales": {
+    "id": 246,
+    "name": "ice-scales",
+    "name_fr": "\u00c9cailles Glac\u00e9es",
+    "name_en": "Ice Scales",
+    "description_fr": "Le Pok\u00e9mon est prot\u00e9g\u00e9 par des \u00e9cailles de glace. Les d\u00e9g\u00e2ts qu\u2019il subit par des capacit\u00e9s sp\u00e9ciales sont divis\u00e9s par deux.",
+    "description_en": "The Pok\u00e9mon is protected by ice scales, which halve the damage taken from special moves."
+  },
+  "embody-aspect": {
+    "id": 303,
+    "name": "embody-aspect",
+    "name_fr": "Force M\u00e9morielle",
+    "name_en": "Embody Aspect",
+    "description_fr": "Le Pok\u00e9mon fait briller le Masque en puisant dans ses souvenirs, ce qui augmente ses stats.",
+    "description_en": "The Pok\u00e9mon's heart fills with memories, causing the Mask to shine and one of the Pok\u00e9mon's stats to be boosted."
+  },
+  "grass-cloak": {
+    "id": 10034,
+    "name": "grass-cloak",
+    "name_fr": "Grass Cloak",
+    "name_en": "Grass Cloak",
+    "description_fr": null,
+    "description_en": null
+  },
+  "flare-boost": {
+    "id": 138,
+    "name": "flare-boost",
+    "name_fr": "Rage Br\u00fblure",
+    "name_en": "Flare Boost",
+    "description_fr": "Booste les att. sp\u00e9ciales si le statut est br\u00fblure.",
+    "description_en": "Powers up special attacks when burned."
+  },
+  "sticky-hold": {
+    "id": 60,
+    "name": "sticky-hold",
+    "name_fr": "Glu",
+    "name_en": "Sticky Hold",
+    "description_fr": "Emp\u00eache le vol d'objets.",
+    "description_en": "Prevents item theft."
+  },
+  "power-construct": {
+    "id": 211,
+    "name": "power-construct",
+    "name_fr": "Rassemblement",
+    "name_en": "Power Construct",
+    "description_fr": "Lorsque le Pok\u00e9mon perd la moiti\u00e9 de ses PV, ses Cellules se rassemblent pour l\u2019encourager, ce qui lui permet de prendre sa Forme Parfaite.",
+    "description_en": "Other Cells gather to aid when its HP becomes half or less. Then the Pok\u00e9mon changes its form to Complete Forme."
+  },
+  "no-guard": {
+    "id": 99,
+    "name": "no-guard",
+    "name_fr": "Annule Garde",
+    "name_en": "No Guard",
+    "description_fr": "Attaques du Pok\u00e9mon et de l'ennemi r\u00e9ussissent.",
+    "description_en": "Ensures the Pok\u00e9mon and its foe\u2019s attacks land."
+  },
+  "air-lock": {
+    "id": 76,
+    "name": "air-lock",
+    "name_fr": "Air Lock",
+    "name_en": "Air Lock",
+    "description_fr": "Ignore les effets du climat.",
+    "description_en": "Negates weather effects."
+  },
+  "surge-surfer": {
+    "id": 207,
+    "name": "surge-surfer",
+    "name_fr": "Surf Caudal",
+    "name_en": "Surge Surfer",
+    "description_fr": "La Vitesse du Pok\u00e9mon est doubl\u00e9e sur un Champ \u00c9lectrifi\u00e9.",
+    "description_en": "Doubles the Pok\u00e9mon\u2019s Speed stat on Electric Terrain."
+  },
+  "merciless": {
+    "id": 196,
+    "name": "merciless",
+    "name_fr": "Cruaut\u00e9",
+    "name_en": "Merciless",
+    "description_fr": "Lorsque le Pok\u00e9mon attaque un adversaire empoisonn\u00e9, le coup sera forc\u00e9ment critique.",
+    "description_en": "The Pok\u00e9mon\u2019s attacks become critical hits if the target is poisoned."
+  },
+  "grass-pelt": {
+    "id": 179,
+    "name": "grass-pelt",
+    "name_fr": "Toison Herbue",
+    "name_en": "Grass Pelt",
+    "description_fr": "Augmente la D\u00e9fense si Champ Herbu est actif.",
+    "description_en": "Boosts the Defense stat in Grassy Terrain."
+  },
+  "suction-cups": {
+    "id": 21,
+    "name": "suction-cups",
+    "name_fr": "Ventouse",
+    "name_en": "Suction Cups",
+    "description_fr": "Fixe solidement le corps.",
+    "description_en": "Firmly anchors the body."
+  },
+  "mimicry": {
+    "id": 250,
+    "name": "mimicry",
+    "name_fr": "Mim\u00e9tisme",
+    "name_en": "Mimicry",
+    "description_fr": "Le Pok\u00e9mon adopte le m\u00eame type que le terrain lorsqu\u2019un champ est actif.",
+    "description_en": "Changes the Pok\u00e9mon\u2019s type depending on the terrain."
+  },
+  "life-force": {
+    "id": 10022,
+    "name": "life-force",
+    "name_fr": "Life Force",
+    "name_en": "Life Force",
+    "description_fr": null,
+    "description_en": null
+  },
+  "leaf-guard": {
+    "id": 102,
+    "name": "leaf-guard",
+    "name_fr": "Feuille Garde",
+    "name_en": "Leaf Guard",
+    "description_fr": "Emp\u00eache les probl\u00e8mes de statut au soleil.",
+    "description_en": "Prevents status problems in sunny weather."
+  },
+  "decoy": {
+    "id": 10059,
+    "name": "decoy",
+    "name_fr": "Decoy",
+    "name_en": "Decoy",
+    "description_fr": null,
+    "description_en": null
+  },
+  "rattled": {
+    "id": 155,
+    "name": "rattled",
+    "name_fr": "Phobique",
+    "name_en": "Rattled",
+    "description_fr": "Sa peur de certains types augmente sa Vitesse.",
+    "description_en": "Some move types scare it and boost its Speed."
+  },
+  "supreme-overlord": {
+    "id": 293,
+    "name": "supreme-overlord",
+    "name_fr": "G\u00e9n\u00e9ral Supr\u00eame",
+    "name_en": "Supreme Overlord",
+    "description_fr": "Quand le Pok\u00e9mon entre sur le terrain, son Attaque\\net son Attaque Sp\u00e9ciale augmentent l\u00e9g\u00e8rement\\npour chaque alli\u00e9 mis K.O. auparavant.",
+    "description_en": "When the Pok\u00e9mon enters a battle, its Attack and Sp. Atk stats are slightly boosted for each of the allies in its party that have already been defeated."
+  },
+  "poison-touch": {
+    "id": 143,
+    "name": "poison-touch",
+    "name_fr": "Toxitouche",
+    "name_en": "Poison Touch",
+    "description_fr": "Peut empoisonner l\u2019ennemi par simple contact.",
+    "description_en": "May poison targets when a Pok\u00e9mon makes contact."
+  },
+  "herbivore": {
+    "id": 10018,
+    "name": "herbivore",
+    "name_fr": "Herbivore",
+    "name_en": "Herbivore",
+    "description_fr": null,
+    "description_en": null
+  },
+  "sword-of-ruin": {
+    "id": 285,
+    "name": "sword-of-ruin",
+    "name_fr": "\u00c9p\u00e9e du Fl\u00e9au",
+    "name_en": "Sword of Ruin",
+    "description_fr": "Le pouvoir de l\u2019\u00e9p\u00e9e qui appelle le fl\u00e9au affaiblit\\nla D\u00e9fense de tous les autres Pok\u00e9mon.",
+    "description_en": "The power of the Pok\u00e9mon's ruinous sword lowers the Defense stats of all Pok\u00e9mon except itself."
+  },
+  "storm-drain": {
+    "id": 114,
+    "name": "storm-drain",
+    "name_fr": "Lavabo",
+    "name_en": "Storm Drain",
+    "description_fr": "Attire les attaques Eau visant un Pok\u00e9mon.",
+    "description_en": "The Pok\u00e9mon draws in all Water-type moves."
+  },
+  "thick-fat": {
+    "id": 47,
+    "name": "thick-fat",
+    "name_fr": "Isograisse",
+    "name_en": "Thick Fat",
+    "description_fr": "Contre chaleur et froid.",
+    "description_en": "Heat-and-cold protection."
+  },
+  "bonanza": {
+    "id": 10044,
+    "name": "bonanza",
+    "name_fr": "Bonanza",
+    "name_en": "Bonanza",
+    "description_fr": null,
+    "description_en": null
+  },
+  "libero": {
+    "id": 236,
+    "name": "libero",
+    "name_fr": "Lib\u00e9ro",
+    "name_en": "Libero",
+    "description_fr": "Le Pok\u00e9mon prend le type de la capacit\u00e9 qu\u2019il utilise.",
+    "description_en": "Changes the Pok\u00e9mon\u2019s type to the type of the move it\u2019s about to use."
+  },
+  "analytic": {
+    "id": 148,
+    "name": "analytic",
+    "name_fr": "Analyste",
+    "name_en": "Analytic",
+    "description_fr": "Booste les capacit\u00e9s s\u2019il attaque en dernier.",
+    "description_en": "Boosts move power when the Pok\u00e9mon moves last."
+  },
+  "volt-absorb": {
+    "id": 10,
+    "name": "volt-absorb",
+    "name_fr": "Absorbe-Volt",
+    "name_en": "Volt Absorb",
+    "description_fr": "Change l'\u00e9lectricit\u00e9 en PV.",
+    "description_en": "Turns electricity into HP."
+  },
+  "deep-sleep": {
+    "id": 10013,
+    "name": "deep-sleep",
+    "name_fr": "Deep Sleep",
+    "name_en": "Deep Sleep",
+    "description_fr": null,
+    "description_en": null
+  },
+  "curious-medicine": {
+    "id": 261,
+    "name": "curious-medicine",
+    "name_fr": "Breuvage Suspect",
+    "name_en": "Curious Medicine",
+    "description_fr": "Quand il entre au combat, le Pok\u00e9mon r\u00e9pand une substance qui annule les changements de stats de ses alli\u00e9s.",
+    "description_en": "When the Pok\u00e9mon enters a battle, it scatters medicine from its shell, which removes all stat changes from allies."
+  },
+  "mycelium-might": {
+    "id": 298,
+    "name": "mycelium-might",
+    "name_fr": "Force Fongique",
+    "name_en": "Mycelium Might",
+    "description_fr": "Le Pok\u00e9mon agit toujours plus lentement quand il utilise\\nune capacit\u00e9 de statut, mais il ignore les talents adverses.",
+    "description_en": "The Pok\u00e9mon will always act more slowly when using status moves, but these moves will be unimpeded by the Ability of the target."
+  },
+  "perception": {
+    "id": 10005,
+    "name": "perception",
+    "name_fr": "Perception",
+    "name_en": "Perception",
+    "description_fr": null,
+    "description_en": null
+  },
+  "wind-power": {
+    "id": 277,
+    "name": "wind-power",
+    "name_fr": "Turbine \u00c9olienne",
+    "name_en": "Wind Power",
+    "description_fr": "Si le Pok\u00e9mon est touch\u00e9 par une capacit\u00e9 faisant appel\\nau vent, il se charge en \u00e9lectricit\u00e9.",
+    "description_en": "The Pok\u00e9mon becomes charged when it is hit by a wind move, boosting the power of the next Electric-type move the Pok\u00e9mon uses."
+  },
+  "unaware": {
+    "id": 109,
+    "name": "unaware",
+    "name_fr": "Inconscient",
+    "name_en": "Unaware",
+    "description_fr": "Ignore les changements de stats de l'ennemi.",
+    "description_en": "Ignores any change in ability by the foe."
+  },
+  "keen-eye": {
+    "id": 51,
+    "name": "keen-eye",
+    "name_fr": "Regard Vif",
+    "name_en": "Keen Eye",
+    "description_fr": "Emp\u00eache perte de pr\u00e9cision.",
+    "description_en": "Prevents loss of accuracy."
+  },
+  "high-rise": {
+    "id": 10052,
+    "name": "high-rise",
+    "name_fr": "High-rise",
+    "name_en": "High-rise",
+    "description_fr": null,
+    "description_en": null
+  },
+  "soul-heart": {
+    "id": 220,
+    "name": "soul-heart",
+    "name_fr": "Animac\u0153ur",
+    "name_en": "Soul-Heart",
+    "description_fr": "Augmente l\u2019Attaque Sp\u00e9ciale du Pok\u00e9mon lorsqu\u2019un autre Pok\u00e9mon est mis K.O.",
+    "description_en": "Boosts its Sp. Atk stat every time a Pok\u00e9mon faints."
+  },
+  "competitive": {
+    "id": 172,
+    "name": "competitive",
+    "name_fr": "Battant",
+    "name_en": "Competitive",
+    "description_fr": "Monte l\u2019Attaque quand une stat est baiss\u00e9e par l\u2019adversaire.",
+    "description_en": "Boosts the Sp. Atk stat when a stat is lowered."
+  },
+  "last-bastion": {
+    "id": 10029,
+    "name": "last-bastion",
+    "name_fr": "Last Bastion",
+    "name_en": "Last Bastion",
+    "description_fr": null,
+    "description_en": null
+  },
+  "skill-link": {
+    "id": 92,
+    "name": "skill-link",
+    "name_fr": "Multi-Coups",
+    "name_en": "Skill Link",
+    "description_fr": "Augmente la fr\u00e9quence des attaques multiples.",
+    "description_en": "Increases the frequency of multi-strike moves."
+  },
+  "sheer-force": {
+    "id": 125,
+    "name": "sheer-force",
+    "name_fr": "Sans Limite",
+    "name_en": "Sheer Force",
+    "description_fr": "Frappe plus fort mais annule les effets cumul\u00e9s.",
+    "description_en": "Removes added effects to increase move damage."
+  },
+  "unburden": {
+    "id": 84,
+    "name": "unburden",
+    "name_fr": "D\u00e9lestage",
+    "name_en": "Unburden",
+    "description_fr": "Augmente la Vit. si l'objet tenu est utilis\u00e9 ou perdu.",
+    "description_en": "Raises Speed if a held item is used."
+  },
+  "weak-armor": {
+    "id": 133,
+    "name": "weak-armor",
+    "name_fr": "Armurouill\u00e9e",
+    "name_en": "Weak Armor",
+    "description_fr": "Un coup physique baisse la D\u00e9fense, monte la Vitesse.",
+    "description_en": "Physical attacks lower Defense and raise Speed."
+  },
+  "teravolt": {
+    "id": 164,
+    "name": "teravolt",
+    "name_fr": "T\u00e9ra-Voltage",
+    "name_en": "Teravolt",
+    "description_fr": "Les cap. sp\u00e9. adverses ne bloquent pas ses cap.",
+    "description_en": "Moves can be used regardless of Abilities."
+  },
+  "piercing-drill": {
+    "id": 308,
+    "name": "piercing-drill",
+    "name_fr": "Transperceuse",
+    "name_en": "Piercing Drill",
+    "description_fr": null,
+    "description_en": "When the Pok\u00e9mon uses contact moves, it can hit even targets that are protecting themselves, dealing 1/4 of the damage that the move would otherwise deal. Everything aside from the target's protective effects is still triggered."
+  },
+  "black-hole": {
+    "id": 10048,
+    "name": "black-hole",
+    "name_fr": "Black Hole",
+    "name_en": "Black Hole",
+    "description_fr": null,
+    "description_en": null
+  },
+  "scrappy": {
+    "id": 113,
+    "name": "scrappy",
+    "name_fr": "Querelleur",
+    "name_en": "Scrappy",
+    "description_fr": "Les capacit\u00e9s touchent les Pok\u00e9mon Spectre.",
+    "description_en": "Enables moves to hit Ghost-type foes."
+  },
+  "quark-drive": {
+    "id": 282,
+    "name": "quark-drive",
+    "name_fr": "Charge Quantique",
+    "name_en": "Quark Drive",
+    "description_fr": "Quand un champ \u00e9lectrifi\u00e9 est actif ou que le Pok\u00e9mon\\ntient une capsule d\u2019\u00c9nergie Booster, sa stat la plus \u00e9lev\u00e9e\\naugmente.",
+    "description_en": "Boosts the Pok\u00e9mon's most proficient stat on Electric Terrain or if the Pok\u00e9mon is holding Booster Energy."
+  },
+  "regenerator": {
+    "id": 144,
+    "name": "regenerator",
+    "name_fr": "R\u00e9g\u00e9-Force",
+    "name_en": "Regenerator",
+    "description_fr": "Restaure un peu de PV si le Pok\u00e9mon est retir\u00e9.",
+    "description_en": "Restores a little HP when withdrawn from battle."
+  },
+  "jagged-edge": {
+    "id": 10009,
+    "name": "jagged-edge",
+    "name_fr": "Jagged Edge",
+    "name_en": "Jagged Edge",
+    "description_fr": null,
+    "description_en": null
+  },
+  "costar": {
+    "id": 294,
+    "name": "costar",
+    "name_fr": "Collab",
+    "name_en": "Costar",
+    "description_fr": "Quand le Pok\u00e9mon entre sur le terrain, il copie\\nles changements de stats de son alli\u00e9.",
+    "description_en": "When the Pok\u00e9mon enters a battle, it copies an ally's stat changes."
+  },
+  "mummy": {
+    "id": 152,
+    "name": "mummy",
+    "name_fr": "Momie",
+    "name_en": "Mummy",
+    "description_fr": "Momifie la cap. sp\u00e9. de l\u2019ennemi qui le touche.",
+    "description_en": "Contact with this Pok\u00e9mon spreads this Ability."
+  },
+  "super-luck": {
+    "id": 105,
+    "name": "super-luck",
+    "name_fr": "Chanceux",
+    "name_en": "Super Luck",
+    "description_fr": "Augmente la fr\u00e9quence des coups critiques.",
+    "description_en": "Heightens the critical-hit ratios of moves."
+  },
+  "pastel-veil": {
+    "id": 257,
+    "name": "pastel-veil",
+    "name_fr": "Voile Pastel",
+    "name_en": "Pastel Veil",
+    "description_fr": "Prot\u00e8ge le Pok\u00e9mon et ses alli\u00e9s contre toutes les alt\u00e9rations de statut li\u00e9es \u00e0 l\u2019empoisonnement.",
+    "description_en": "Protects the Pok\u00e9mon and its ally Pok\u00e9mon from being poisoned."
+  },
+  "eelevate": {
+    "id": 312,
+    "name": "eelevate",
+    "name_fr": "Eelevate",
+    "name_en": "Eelevate",
+    "description_fr": null,
+    "description_en": "The Pok\u00e9mon floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses. When the Pok\u00e9mon knocks out a target with an attack, its highest stat is boosted by 1 stage."
+  },
+  "melee": {
+    "id": 10025,
+    "name": "melee",
+    "name_fr": "Melee",
+    "name_en": "Melee",
+    "description_fr": null,
+    "description_en": null
+  },
+  "delta-stream": {
+    "id": 191,
+    "name": "delta-stream",
+    "name_fr": "Souffle Delta",
+    "name_en": "Delta Stream",
+    "description_fr": "Alt\u00e8re les conditions m\u00e9t\u00e9o et annule les faiblesses du type Vol.",
+    "description_en": "Affects weather and eliminates all of the Flying type\u2019s weaknesses."
+  },
+  "levitate": {
+    "id": 26,
+    "name": "levitate",
+    "name_fr": "L\u00e9vitation",
+    "name_en": "Levitate",
+    "description_fr": "Immunise contre toutes les capacit\u00e9s de type Sol.",
+    "description_en": "Not hit by GROUND attacks."
+  },
+  "steelworker": {
+    "id": 200,
+    "name": "steelworker",
+    "name_fr": "Expert Acier",
+    "name_en": "Steelworker",
+    "description_fr": "Augmente la puissance des attaques de type Acier.",
+    "description_en": "Powers up Steel-type moves."
+  },
+  "defeatist": {
+    "id": 129,
+    "name": "defeatist",
+    "name_fr": "D\u00e9faitiste",
+    "name_en": "Defeatist",
+    "description_fr": "Baisse les stats quand les PV tombent \u00e0 la moiti\u00e9.",
+    "description_en": "Lowers stats when HP becomes half or less."
+  },
+  "arena-trap": {
+    "id": 71,
+    "name": "arena-trap",
+    "name_fr": "Pi\u00e8ge Sable",
+    "name_en": "Arena Trap",
+    "description_fr": "Emp\u00eache la fuite.",
+    "description_en": "Prevents fleeing."
+  },
+  "dancer": {
+    "id": 216,
+    "name": "dancer",
+    "name_fr": "Danseuse",
+    "name_en": "Dancer",
+    "description_fr": "Si n\u2019importe quel Pok\u00e9mon utilise une capacit\u00e9 dansante, ce Pok\u00e9mon peut se mettre aussi \u00e0 danser.",
+    "description_en": "When another Pok\u00e9mon uses a dance move, it can use a dance move following it regardless of its Speed."
+  },
+  "download": {
+    "id": 88,
+    "name": "download",
+    "name_fr": "T\u00e9l\u00e9charge",
+    "name_en": "Download",
+    "description_fr": "Ajuste la puissance selon l'ennemi.",
+    "description_en": "Adjusts power according to the foe\u2019s ability."
+  },
+  "torrent": {
+    "id": 67,
+    "name": "torrent",
+    "name_fr": "Torrent",
+    "name_en": "Torrent",
+    "description_fr": "Augmente attaques EAU.",
+    "description_en": "Ups WATER moves in a pinch."
+  },
+  "gulp-missile": {
+    "id": 241,
+    "name": "gulp-missile",
+    "name_fr": "D\u00e9gobage",
+    "name_en": "Gulp Missile",
+    "description_fr": "Quand le Pok\u00e9mon utilise Surf ou Plong\u00e9e, il revient avec une proie. Lorsqu\u2019il subit des d\u00e9g\u00e2ts par la suite, il attaque en recrachant sa proie.",
+    "description_en": "When the Pok\u00e9mon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack."
+  },
+  "sequence": {
+    "id": 10033,
+    "name": "sequence",
+    "name_fr": "Sequence",
+    "name_en": "Sequence",
+    "description_fr": null,
+    "description_en": null
+  },
+  "tera-shift": {
+    "id": 304,
+    "name": "tera-shift",
+    "name_fr": "T\u00e9ramorphose",
+    "name_en": "Tera Shift",
+    "description_fr": "Quand le Pok\u00e9mon rejoint le combat, il absorbe\\nl\u2019\u00e9nergie alentour et prend sa Forme T\u00e9racristal.",
+    "description_en": "When the Pok\u00e9mon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form."
+  },
+  "fairy-aura": {
+    "id": 187,
+    "name": "fairy-aura",
+    "name_fr": "Aura F\u00e9\u00e9rique",
+    "name_en": "Fairy Aura",
+    "description_fr": "Renforce les attaques de type F\u00e9e de tous les Pok\u00e9mon.",
+    "description_en": "Powers up each Pok\u00e9mon\u2019s Fairy-type moves."
+  },
+  "protean": {
+    "id": 168,
+    "name": "protean",
+    "name_fr": "Prot\u00e9en",
+    "name_en": "Protean",
+    "description_fr": "Le Pok\u00e9mon prend le type de sa derni\u00e8re capacit\u00e9 lanc\u00e9e.",
+    "description_en": "Changes the Pok\u00e9mon\u2019s type to the type of the move it\u2019s using."
+  },
+  "natural-cure": {
+    "id": 30,
+    "name": "natural-cure",
+    "name_fr": "M\u00e9dic Nature",
+    "name_en": "Natural Cure",
+    "description_fr": "Soigne POK\u00e9MON changeant.",
+    "description_en": "Heals upon switching out."
+  },
+  "dark-aura": {
+    "id": 186,
+    "name": "dark-aura",
+    "name_fr": "Aura T\u00e9n\u00e9breuse",
+    "name_en": "Dark Aura",
+    "description_fr": "Renforce les attaques de type T\u00e9n\u00e8bres de tous les Pok\u00e9mon.",
+    "description_en": "Powers up each Pok\u00e9mon\u2019s Dark-type moves."
+  },
+  "fur-coat": {
+    "id": 169,
+    "name": "fur-coat",
+    "name_fr": "Toison \u00c9paisse",
+    "name_en": "Fur Coat",
+    "description_fr": "Divise les d\u00e9g\u00e2ts des attaques physiques par deux.",
+    "description_en": "Halves damage from physical moves."
+  },
+  "lightning-rod": {
+    "id": 31,
+    "name": "lightning-rod",
+    "name_fr": "Paratonnerre",
+    "name_en": "Lightning Rod",
+    "description_fr": "Attire l\u2019\u00e9lectricit\u00e9 et augmente l\u2019Atq. Sp\u00e9.",
+    "description_en": "Draws electrical moves."
+  },
+  "mirror-armor": {
+    "id": 240,
+    "name": "mirror-armor",
+    "name_fr": "Armure Miroir",
+    "name_en": "Mirror Armor",
+    "description_fr": "Le Pok\u00e9mon renvoie les effets r\u00e9ducteurs de stats qu\u2019il re\u00e7oit.",
+    "description_en": "Bounces back only the stat-lowering effects that the Pok\u00e9mon receives."
+  },
+  "nomad": {
+    "id": 10032,
+    "name": "nomad",
+    "name_fr": "Nomad",
+    "name_en": "Nomad",
+    "description_fr": null,
+    "description_en": null
+  },
+  "tera-shell": {
+    "id": 305,
+    "name": "tera-shell",
+    "name_fr": "T\u00e9ra-Carapace",
+    "name_en": "Tera Shell",
+    "description_fr": "Gr\u00e2ce \u00e0 sa carapace qui renferme l\u2019\u00e9nergie de tous\\nles types, les capacit\u00e9s subies par ce Pok\u00e9mon quand\\nses PV sont au maximum ne sont pas tr\u00e8s efficaces.",
+    "description_en": "The Pok\u00e9mon's shell contains the powers of each type. All damage-dealing moves that hit the Pok\u00e9mon when its HP is full will not be very effective."
+  },
+  "iron-fist": {
+    "id": 89,
+    "name": "iron-fist",
+    "name_fr": "Poing de Fer",
+    "name_en": "Iron Fist",
+    "description_fr": "Augmente la puissance des capacit\u00e9s coups de poing.",
+    "description_en": "Boosts the power of punching moves."
+  },
+  "blaze": {
+    "id": 66,
+    "name": "blaze",
+    "name_fr": "Brasier",
+    "name_en": "Blaze",
+    "description_fr": "Augmente attaques feu.",
+    "description_en": "Ups FIRE moves in a pinch."
+  },
+  "battery": {
+    "id": 217,
+    "name": "battery",
+    "name_fr": "Batterie",
+    "name_en": "Battery",
+    "description_fr": "Augmente la puissance des capacit\u00e9s sp\u00e9ciales des alli\u00e9s.",
+    "description_en": "Powers up ally Pok\u00e9mon\u2019s special moves."
+  },
+  "defiant": {
+    "id": 128,
+    "name": "defiant",
+    "name_fr": "Acharn\u00e9",
+    "name_en": "Defiant",
+    "description_fr": "Monte l'Attaque quand les stats baissent.",
+    "description_en": "When its stats are lowered its Attack increases."
+  },
+  "drought": {
+    "id": 70,
+    "name": "drought",
+    "name_fr": "S\u00e9cheresse",
+    "name_en": "Drought",
+    "description_fr": "Invoque le soleil.",
+    "description_en": "Summons sunlight in battle."
+  },
+  "berserk": {
+    "id": 201,
+    "name": "berserk",
+    "name_fr": "Folle Furie",
+    "name_en": "Berserk",
+    "description_fr": "Augmente l'Attaque Sp\u00e9ciale du Pok\u00e9mon lorsqu'il tombe \u00e0 la moiti\u00e9 de ses PV \u00e0 cause d'une attaque.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Sp. Atk stat when it takes a  hit that causes its HP to become half or less."
+  },
+  "desolate-land": {
+    "id": 190,
+    "name": "desolate-land",
+    "name_fr": "Terre Finale",
+    "name_en": "Desolate Land",
+    "description_fr": "Alt\u00e8re les conditions m\u00e9t\u00e9o et rend inefficaces les attaques Eau.",
+    "description_en": "Affects weather and nullifies any Water-type attacks."
+  },
+  "effect-spore": {
+    "id": 27,
+    "name": "effect-spore",
+    "name_fr": "Pose Spore",
+    "name_en": "Effect Spore",
+    "description_fr": "Laisse spores si touch\u00e9.",
+    "description_en": "Leaves spores on contact."
+  },
+  "neutralizing-gas": {
+    "id": 256,
+    "name": "neutralizing-gas",
+    "name_fr": "Gaz Inhibiteur",
+    "name_en": "Neutralizing Gas",
+    "description_fr": "Si un Pok\u00e9mon avec Gaz Inhibiteur est sur le terrain, les effets des talents de tous les autres Pok\u00e9mon sont annul\u00e9s.",
+    "description_en": "If the Pok\u00e9mon with Neutralizing Gas is in the battle, the effects of all Pok\u00e9mon\u2019s Abilities will be nullified or will not be triggered."
+  },
+  "fire-mane": {
+    "id": 313,
+    "name": "fire-mane",
+    "name_fr": "Fire Mane",
+    "name_en": "Fire Mane",
+    "description_fr": null,
+    "description_en": "Boosts the power of the Pok\u00e9mon's Fire-type moves by 50%."
+  },
+  "nurse": {
+    "id": 10024,
+    "name": "nurse",
+    "name_fr": "Nurse",
+    "name_en": "Nurse",
+    "description_fr": null,
+    "description_en": null
+  },
+  "mold-breaker": {
+    "id": 104,
+    "name": "mold-breaker",
+    "name_fr": "Brise Moule",
+    "name_en": "Mold Breaker",
+    "description_fr": "Cap. utilisables quelles que soient les cap. sp\u00e9.",
+    "description_en": "Moves can be used regardless of abilities."
+  },
+  "moxie": {
+    "id": 153,
+    "name": "moxie",
+    "name_fr": "Impudence",
+    "name_en": "Moxie",
+    "description_fr": "Monte l\u2019Attaque quand il met un ennemi K.O.",
+    "description_en": "Boosts Attack after knocking out any Pok\u00e9mon."
+  },
+  "dodge": {
+    "id": 10008,
+    "name": "dodge",
+    "name_fr": "Dodge",
+    "name_en": "Dodge",
+    "description_fr": null,
+    "description_en": null
+  },
+  "toxic-debris": {
+    "id": 295,
+    "name": "toxic-debris",
+    "name_fr": "D\u00e9p\u00f4t Toxique",
+    "name_en": "Toxic Debris",
+    "description_fr": "Quand le Pok\u00e9mon est touch\u00e9 par une capacit\u00e9\\nphysique, il r\u00e9pand des pics toxiques dans le camp\\nadverse.",
+    "description_en": "Scatters poison spikes at the feet of the opposing team when the Pok\u00e9mon takes damage from physical moves."
+  },
+  "big-pecks": {
+    "id": 145,
+    "name": "big-pecks",
+    "name_fr": "C\u0153ur de Coq",
+    "name_en": "Big Pecks",
+    "description_fr": "Emp\u00eache la D\u00e9f. de baisser \u00e0 cause d\u2019attaques.",
+    "description_en": "Protects the Pok\u00e9mon from Defense-lowering attacks."
+  },
+  "good-as-gold": {
+    "id": 283,
+    "name": "good-as-gold",
+    "name_fr": "Corps en Or",
+    "name_en": "Good as Gold",
+    "description_fr": "Le corps en or pur et robuste du Pok\u00e9mon l\u2019immunise\\ncontre les capacit\u00e9s de statut des autres Pok\u00e9mon.",
+    "description_en": "A body of pure, solid gold gives the Pok\u00e9mon full immunity to other Pok\u00e9mon's status moves."
+  },
+  "slow-start": {
+    "id": 112,
+    "name": "slow-start",
+    "name_fr": "D\u00e9but Calme",
+    "name_en": "Slow Start",
+    "description_fr": "Divise temporairement Vitesse et Attaque par 2.",
+    "description_en": "Temporarily halves Attack and Speed."
+  },
+  "shadow-dash": {
+    "id": 10049,
+    "name": "shadow-dash",
+    "name_fr": "Shadow Dash",
+    "name_en": "Shadow Dash",
+    "description_fr": null,
+    "description_en": null
+  },
+  "dragonize": {
+    "id": 309,
+    "name": "dragonize",
+    "name_fr": "Peau Draconique",
+    "name_en": "Dragonize",
+    "description_fr": null,
+    "description_en": "The Pok\u00e9mon's Normal-type moves become Dragon-type moves and their power is boosted by 20%."
+  },
+  "aroma-veil": {
+    "id": 165,
+    "name": "aroma-veil",
+    "name_fr": "Aroma-Voile",
+    "name_en": "Aroma Veil",
+    "description_fr": "Prot\u00e8ge l\u2019\u00e9quipe des attaques limitant le choix des capacit\u00e9s.",
+    "description_en": "Protects allies from attacks that limit their move choices."
+  },
+  "stench": {
+    "id": 1,
+    "name": "stench",
+    "name_fr": "Puanteur",
+    "name_en": "Stench",
+    "description_fr": "Repousse POK\u00e9MON sauvage.",
+    "description_en": "Helps repel wild POK\u00e9MON."
+  },
+  "heatproof": {
+    "id": 85,
+    "name": "heatproof",
+    "name_fr": "Ignifug\u00e9",
+    "name_en": "Heatproof",
+    "description_fr": "R\u00e9duit la puissance des capacit\u00e9s de type Feu.",
+    "description_en": "Weakens the power of Fire-type moves."
+  },
+  "friend-guard": {
+    "id": 132,
+    "name": "friend-guard",
+    "name_fr": "Garde-Ami",
+    "name_en": "Friend Guard",
+    "description_fr": "Diminue les d\u00e9g\u00e2ts subis par les alli\u00e9s.",
+    "description_en": "Reduces damage done to allies."
+  },
+  "hydration": {
+    "id": 93,
+    "name": "hydration",
+    "name_fr": "Hydratation",
+    "name_en": "Hydration",
+    "description_fr": "Soigne les probl\u00e8mes de statut s'il pleut.",
+    "description_en": "Heals status problems if it is raining."
+  },
+  "pickpocket": {
+    "id": 124,
+    "name": "pickpocket",
+    "name_fr": "Pickpocket",
+    "name_en": "Pickpocket",
+    "description_fr": "Vole l\u2019objet de l\u2019ennemi si son attaque touche.",
+    "description_en": "Steals an item when hit by another Pok\u00e9mon."
+  },
+  "hero": {
+    "id": 10028,
+    "name": "hero",
+    "name_fr": "Hero",
+    "name_en": "Hero",
+    "description_fr": null,
+    "description_en": null
+  },
+  "strong-jaw": {
+    "id": 173,
+    "name": "strong-jaw",
+    "name_fr": "Prognathe",
+    "name_en": "Strong Jaw",
+    "description_fr": "Gr\u00e2ce \u00e0 une puissante m\u00e2choire, les morsures sont plus fortes.",
+    "description_en": "The Pok\u00e9mon\u2019s strong jaw gives it tremendous biting power."
+  },
+  "climber": {
+    "id": 10053,
+    "name": "climber",
+    "name_fr": "Climber",
+    "name_en": "Climber",
+    "description_fr": null,
+    "description_en": null
+  },
+  "tangling-hair": {
+    "id": 221,
+    "name": "tangling-hair",
+    "name_fr": "M\u00e8che Rebelle",
+    "name_en": "Tangling Hair",
+    "description_fr": "Baisse la Vitesse de l\u2019attaquant lorsque le Pok\u00e9mon subit une attaque directe.",
+    "description_en": "Contact with the Pok\u00e9mon lowers the attacker\u2019s Speed stat."
+  },
+  "forewarn": {
+    "id": 108,
+    "name": "forewarn",
+    "name_fr": "Pr\u00e9diction",
+    "name_en": "Forewarn",
+    "description_fr": "D\u00e9couvre la capacit\u00e9 ennemie la plus puissante.",
+    "description_en": "Determines what moves the foe has."
+  },
+  "run-away": {
+    "id": 50,
+    "name": "run-away",
+    "name_fr": "Fuite",
+    "name_en": "Run Away",
+    "description_fr": "Am\u00e9liore chances de fuite.",
+    "description_en": "Makes escaping easier."
+  },
+  "minds-eye": {
+    "id": 299,
+    "name": "minds-eye",
+    "name_fr": "\u0152il R\u00e9v\u00e9lateur",
+    "name_en": "Mind\u2019s Eye",
+    "description_fr": "Le Pok\u00e9mon ignore les changements d\u2019Esquive des cibles\\net peut toucher les Pok\u00e9mon Spectre avec des capacit\u00e9s\\nNormal ou Combat. Sa Pr\u00e9cision ne peut pas baisser.",
+    "description_en": "The Pok\u00e9mon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal-type and Fighting-type moves"
+  },
+  "thrust": {
+    "id": 10004,
+    "name": "thrust",
+    "name_fr": "Thrust",
+    "name_en": "Thrust",
+    "description_fr": null,
+    "description_en": null
+  },
+  "rocky-payload": {
+    "id": 276,
+    "name": "rocky-payload",
+    "name_fr": "Porte-Roche",
+    "name_en": "Rocky Payload",
+    "description_fr": "Augmente la puissance des capacit\u00e9s de type Roche.",
+    "description_en": "Powers up Rock-type moves."
+  },
+  "pride": {
+    "id": 10012,
+    "name": "pride",
+    "name_fr": "Pride",
+    "name_en": "Pride",
+    "description_fr": null,
+    "description_en": null
+  },
+  "unseen-fist": {
+    "id": 260,
+    "name": "unseen-fist",
+    "name_fr": "Poing Invisible",
+    "name_en": "Unseen Fist",
+    "description_fr": "Si le Pok\u00e9mon utilise une attaque directe, celle-ci pourra passer outre les protections de la cible.",
+    "description_en": "If the Pok\u00e9mon uses moves that make direct contact, it can attack the target even if the target protects itself."
+  },
+  "illusion": {
+    "id": 149,
+    "name": "illusion",
+    "name_fr": "Illusion",
+    "name_en": "Illusion",
+    "description_fr": "Prend l\u2019apparence du der- nier Pok\u00e9mon de l\u2019\u00e9quipe.",
+    "description_en": "Comes out disguised as the Pok\u00e9mon in back."
+  },
+  "water-absorb": {
+    "id": 11,
+    "name": "water-absorb",
+    "name_fr": "Absorbe-Eau",
+    "name_en": "Water Absorb",
+    "description_fr": "Change l'eau en PV.",
+    "description_en": "Changes water into HP."
+  },
+  "explode": {
+    "id": 10045,
+    "name": "explode",
+    "name_fr": "Explode",
+    "name_en": "Explode",
+    "description_fr": null,
+    "description_en": null
+  },
+  "ball-fetch": {
+    "id": 237,
+    "name": "ball-fetch",
+    "name_fr": "Ramasse Ball",
+    "name_en": "Ball Fetch",
+    "description_fr": "Si le Pok\u00e9mon ne tient aucun objet, il ramassera la Pok\u00e9 Ball lors du premier lancer rat\u00e9 du combat.",
+    "description_en": "If the Pok\u00e9mon is not holding an item, it will fetch the Pok\u00e9 Ball from the first failed throw of the battle."
+  },
+  "pressure": {
+    "id": 46,
+    "name": "pressure",
+    "name_fr": "Pression",
+    "name_en": "Pressure",
+    "description_fr": "Force l\u2019ennemi \u00e0 d\u00e9penser plus de PP.",
+    "description_en": "Raises foe\u2019s PP usage."
+  },
+  "flower-veil": {
+    "id": 166,
+    "name": "flower-veil",
+    "name_fr": "Flora-Voile",
+    "name_en": "Flower Veil",
+    "description_fr": "Emp\u00eache les alli\u00e9s de type Plante de subir des diminutions de stats.",
+    "description_en": "Prevents lowering of ally Grass-type Pok\u00e9mon\u2019s stats."
+  },
+  "primordial-sea": {
+    "id": 189,
+    "name": "primordial-sea",
+    "name_fr": "Mer Primaire",
+    "name_en": "Primordial Sea",
+    "description_fr": "Alt\u00e8re les conditions m\u00e9t\u00e9o et rend inefficaces les attaques Feu.",
+    "description_en": "Affects weather and nullifies any Fire-type attacks."
+  },
+  "fluffy": {
+    "id": 218,
+    "name": "fluffy",
+    "name_fr": "Boule de Poils",
+    "name_en": "Fluffy",
+    "description_fr": "Divise par deux les d\u00e9g\u00e2ts des attaques directes subies par le Pok\u00e9mon, mais double les d\u00e9g\u00e2ts des capacit\u00e9s de type Feu.",
+    "description_en": "Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves."
+  },
+  "rock-head": {
+    "id": 69,
+    "name": "rock-head",
+    "name_fr": "T\u00eate de Roc",
+    "name_en": "Rock Head",
+    "description_fr": "Emp\u00eache d\u00e9g\u00e2ts du recul.",
+    "description_en": "Prevents recoil damage."
+  },
+  "healer": {
+    "id": 131,
+    "name": "healer",
+    "name_fr": "C\u0153ur Soin",
+    "name_en": "Healer",
+    "description_fr": "Gu\u00e9rit parfois le statut des alli\u00e9s alentour.",
+    "description_en": "May heal an ally\u2019s status conditions."
+  },
+  "drizzle": {
+    "id": 2,
+    "name": "drizzle",
+    "name_fr": "Crachin",
+    "name_en": "Drizzle",
+    "description_fr": "Le Pok\u00e9mon invoque la pluie quand il entre au combat.",
+    "description_en": "Summons rain in battle."
+  },
+  "simple": {
+    "id": 86,
+    "name": "simple",
+    "name_fr": "Simple",
+    "name_en": "Simple",
+    "description_fr": "Le Pok\u00e9mon est sujet \u00e0 des variations de stats.",
+    "description_en": "The Pok\u00e9mon is prone to wild stat changes."
+  },
+  "unnerve": {
+    "id": 127,
+    "name": "unnerve",
+    "name_fr": "Tension",
+    "name_en": "Unnerve",
+    "description_fr": "L\u2019ennemi stresse et ne peut plus manger de Baies.",
+    "description_en": "Makes the foe nervous and unable to eat Berries."
+  },
+  "poison-heal": {
+    "id": 90,
+    "name": "poison-heal",
+    "name_fr": "Soin Poison",
+    "name_en": "Poison Heal",
+    "description_fr": "Restaure des PV si le Pok\u00e9mon est empoisonn\u00e9.",
+    "description_en": "Restores HP if the Pok\u00e9mon is poisoned."
+  },
+  "quick-draw": {
+    "id": 259,
+    "name": "quick-draw",
+    "name_fr": "Tir Vif",
+    "name_en": "Quick Draw",
+    "description_fr": "Permet parfois au Pok\u00e9mon d\u2019agir en premier.",
+    "description_en": "Enables the Pok\u00e9mon to move first occasionally."
+  },
+  "synchronize": {
+    "id": 28,
+    "name": "synchronize",
+    "name_fr": "Synchro",
+    "name_en": "Synchronize",
+    "description_fr": "Transf\u00e8re statuts.",
+    "description_en": "Passes on status problems."
+  },
+  "magician": {
+    "id": 170,
+    "name": "magician",
+    "name_fr": "Magicien",
+    "name_en": "Magician",
+    "description_fr": "Les capacit\u00e9s volent aussi l\u2019objet tenu par la cible.",
+    "description_en": "The Pok\u00e9mon steals the held item of a Pok\u00e9mon it hits with a move."
+  },
+  "receiver": {
+    "id": 222,
+    "name": "receiver",
+    "name_fr": "Receveur",
+    "name_en": "Receiver",
+    "description_fr": "Le Pok\u00e9mon re\u00e7oit le talent d\u2019un alli\u00e9 mis K.O.",
+    "description_en": "The Pok\u00e9mon copies the Ability of a defeated ally."
+  },
+  "sprint": {
+    "id": 10050,
+    "name": "sprint",
+    "name_fr": "Sprint",
+    "name_en": "Sprint",
+    "description_fr": null,
+    "description_en": null
+  },
+  "pickup": {
+    "id": 53,
+    "name": "pickup",
+    "name_fr": "Ramassage",
+    "name_en": "Pickup",
+    "description_fr": "Permet parfois au Pok\u00e9mon de ramasser des objets.",
+    "description_en": "May pick up items."
+  },
+  "guard-dog": {
+    "id": 275,
+    "name": "guard-dog",
+    "name_fr": "Chien de Garde",
+    "name_en": "Guard Dog",
+    "description_fr": "L\u2019Attaque du Pok\u00e9mon augmente s\u2019il subit l\u2019effet du\\ntalent Intimidation. Les capacit\u00e9s ou objets qui font\\nchanger de Pok\u00e9mon n\u2019ont aucun effet sur lui.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Attack stat if intimidated. Moves and items that would force the Pok\u00e9mon to switch out also fail to work."
+  },
+  "instinct": {
+    "id": 10007,
+    "name": "instinct",
+    "name_fr": "Instinct",
+    "name_en": "Instinct",
+    "description_fr": null,
+    "description_en": null
+  },
+  "dragons-maw": {
+    "id": 263,
+    "name": "dragons-maw",
+    "name_fr": "Dent de Dragon",
+    "name_en": "Dragon\u2019s Maw",
+    "description_fr": "Augmente la puissance des attaques de type Dragon.",
+    "description_en": "Powers up Dragon-type moves."
+  },
+  "tenacity": {
+    "id": 10011,
+    "name": "tenacity",
+    "name_fr": "Tenacity",
+    "name_en": "Tenacity",
+    "description_fr": null,
+    "description_en": null
+  },
+  "oblivious": {
+    "id": 12,
+    "name": "oblivious",
+    "name_fr": "Ben\u00eat",
+    "name_en": "Oblivious",
+    "description_fr": "Emp\u00eache l'attirance.",
+    "description_en": "Prevents attraction."
+  },
+  "intrepid-sword": {
+    "id": 234,
+    "name": "intrepid-sword",
+    "name_fr": "Lame Indomptable",
+    "name_en": "Intrepid Sword",
+    "description_fr": "Augmente l\u2019Attaque du Pok\u00e9mon quand il entre au combat.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Attack stat when the Pok\u00e9mon enters a battle."
+  },
+  "omnipotent": {
+    "id": 10046,
+    "name": "omnipotent",
+    "name_fr": "Omnipotent",
+    "name_en": "Omnipotent",
+    "description_fr": null,
+    "description_en": null
+  },
+  "sand-stream": {
+    "id": 45,
+    "name": "sand-stream",
+    "name_fr": "Sable Volant",
+    "name_en": "Sand Stream",
+    "description_fr": "Lance une temp\u00eate de sable.",
+    "description_en": "Summons a sandstorm."
+  },
+  "serene-grace": {
+    "id": 32,
+    "name": "serene-grace",
+    "name_fr": "S\u00e9r\u00e9nit\u00e9",
+    "name_en": "Serene Grace",
+    "description_fr": "Favorise le cumul d'effet.",
+    "description_en": "Promotes added effects."
+  },
+  "parental-bond": {
+    "id": 185,
+    "name": "parental-bond",
+    "name_fr": "Amour Filial",
+    "name_en": "Parental Bond",
+    "description_fr": "Attaque en famille.",
+    "description_en": "Parent and child attack together."
+  },
+  "teraform-zero": {
+    "id": 306,
+    "name": "teraform-zero",
+    "name_fr": "T\u00e9raformation 0",
+    "name_en": "Teraform Zero",
+    "description_fr": "Lorsque Terapagos prend sa Forme Stellaire, il utilise\\nson pouvoir enfoui pour annuler les effets de la m\u00e9t\u00e9o\\net des champs actifs.",
+    "description_en": "When Terapagos changes into its Stellar Form, it uses its hidden powers to eliminate all effects of weather and terrain, reducing them to zero."
+  },
+  "vanguard": {
+    "id": 10031,
+    "name": "vanguard",
+    "name_fr": "Vanguard",
+    "name_en": "Vanguard",
+    "description_fr": null,
+    "description_en": null
+  },
+  "steam-engine": {
+    "id": 243,
+    "name": "steam-engine",
+    "name_fr": "Turbine",
+    "name_en": "Steam Engine",
+    "description_fr": "Lorsque le Pok\u00e9mon est touch\u00e9 par des capacit\u00e9s de type Eau ou Feu, sa Vitesse augmente \u00e9norm\u00e9ment.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Speed stat drastically if hit by a Fire- or Water-type move."
+  },
+  "overgrow": {
+    "id": 65,
+    "name": "overgrow",
+    "name_fr": "Engrais",
+    "name_en": "Overgrow",
+    "description_fr": "Augmente attaques PLANTE.",
+    "description_en": "Ups GRASS moves in a pinch."
+  },
+  "queenly-majesty": {
+    "id": 214,
+    "name": "queenly-majesty",
+    "name_fr": "Prestance Royale",
+    "name_en": "Queenly Majesty",
+    "description_fr": "L\u2019adversaire est impressionn\u00e9 par la majest\u00e9 du Pok\u00e9mon et ne peut pas le viser avec une attaque prioritaire.",
+    "description_en": "Its majesty pressures the opposing Pok\u00e9mon, making it unable to attack using priority moves."
+  },
+  "white-smoke": {
+    "id": 73,
+    "name": "white-smoke",
+    "name_fr": "\u00c9cran Fum\u00e9e",
+    "name_en": "White Smoke",
+    "description_fr": "Emp\u00eache r\u00e9duction des cap.",
+    "description_en": "Prevents ability reduction."
+  },
+  "slush-rush": {
+    "id": 202,
+    "name": "slush-rush",
+    "name_fr": "Chasse-Neige",
+    "name_en": "Slush Rush",
+    "description_fr": "Augmente la Vitesse du Pok\u00e9mon quand il gr\u00eale.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Speed stat in a hailstorm."
+  },
+  "rough-skin": {
+    "id": 24,
+    "name": "rough-skin",
+    "name_fr": "Peau Dure",
+    "name_en": "Rough Skin",
+    "description_fr": "Blesse quand touch\u00e9.",
+    "description_en": "Hurts to touch."
+  },
+  "wimp-out": {
+    "id": 193,
+    "name": "wimp-out",
+    "name_fr": "Escampette",
+    "name_en": "Wimp Out",
+    "description_fr": "Le Pok\u00e9mon perd confiance quand ses PV tombent \u00e0 la moiti\u00e9 et s\u2019enfuit dans sa Pok\u00e9 Ball.",
+    "description_en": "The Pok\u00e9mon cowardly switches out when its HP becomes half or less."
+  },
+  "bodyguard": {
+    "id": 10027,
+    "name": "bodyguard",
+    "name_fr": "Bodyguard",
+    "name_en": "Bodyguard",
+    "description_fr": null,
+    "description_en": null
+  },
+  "mega-sol": {
+    "id": 310,
+    "name": "mega-sol",
+    "name_fr": "M\u00e9ga-Soleil",
+    "name_en": "Mega Sol",
+    "description_fr": null,
+    "description_en": "Even when the sunlight has not turned harsh, the Pok\u00e9mon can use its moves as if the weather were harsh sunlight."
+  },
+  "gorilla-tactics": {
+    "id": 255,
+    "name": "gorilla-tactics",
+    "name_fr": "Ent\u00eatement",
+    "name_en": "Gorilla Tactics",
+    "description_fr": "Augmente l\u2019Attaque, mais emp\u00eache d\u2019utiliser toute autre capacit\u00e9 que celle utilis\u00e9e en premier par le Pok\u00e9mon.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Attack stat but only allows the use of the first selected move."
+  },
+  "anticipation": {
+    "id": 107,
+    "name": "anticipation",
+    "name_fr": "Anticipation",
+    "name_en": "Anticipation",
+    "description_fr": "Pr\u00e9voit les capacit\u00e9s ennemies dangereuses.",
+    "description_en": "Senses the foe\u2019s dangerous moves."
+  },
+  "imposter": {
+    "id": 150,
+    "name": "imposter",
+    "name_fr": "Imposteur",
+    "name_en": "Imposter",
+    "description_fr": "Adopte l\u2019apparence du Pok\u00e9mon adverse.",
+    "description_en": "It transforms itself into the Pok\u00e9mon it is facing."
+  },
+  "commander": {
+    "id": 279,
+    "name": "commander",
+    "name_fr": "Commandant",
+    "name_en": "Commander",
+    "description_fr": "Si un Oyacata alli\u00e9 est sur le terrain quand ce Pok\u00e9mon\\nrejoint le combat, ce dernier entre dans sa bouche et\\ndevient son commandant.",
+    "description_en": "When the Pok\u00e9mon enters a battle, it goes inside the mouth of an ally Dondozo if one is on the field. The Pok\u00e9mon then issues commands from there."
+  },
+  "armor-tail": {
+    "id": 296,
+    "name": "armor-tail",
+    "name_fr": "Armure Caudale",
+    "name_en": "Armor Tail",
+    "description_fr": "Une \u00e9trange queue recouvre la t\u00eate du Pok\u00e9mon,\\nce qui emp\u00eache ce dernier et ses alli\u00e9s d\u2019\u00eatre vis\u00e9s\\npar une capacit\u00e9 prioritaire.",
+    "description_en": "The mysterious tail covering the Pok\u00e9mon's head makes opponents unable to use priority moves against the Pok\u00e9mon or its allies."
+  },
+  "sand-rush": {
+    "id": 146,
+    "name": "sand-rush",
+    "name_fr": "Baigne Sable",
+    "name_en": "Sand Rush",
+    "description_fr": "Augmente la Vitesse lors des temp\u00eates de sable.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Speed in a sandstorm."
+  },
+  "electromorphosis": {
+    "id": 280,
+    "name": "electromorphosis",
+    "name_fr": "Grecharge",
+    "name_en": "Electromorphosis",
+    "description_fr": "Si le Pok\u00e9mon subit des d\u00e9g\u00e2ts, il se charge\\nen \u00e9lectricit\u00e9.",
+    "description_en": "The Pok\u00e9mon becomes charged when it takes damage, boosting the power of the next Electric-type move the Pok\u00e9mon uses."
+  },
+  "flame-body": {
+    "id": 49,
+    "name": "flame-body",
+    "name_fr": "Corps Ardent",
+    "name_en": "Flame Body",
+    "description_fr": "Br\u00fble l'ennemi quand touch\u00e9.",
+    "description_en": "Burns the foe on contact."
+  },
+  "filter": {
+    "id": 111,
+    "name": "filter",
+    "name_fr": "Filtre",
+    "name_en": "Filter",
+    "description_fr": "Affaiblit les capacit\u00e9s \u201csuper efficaces\u201d.",
+    "description_en": "Powers down super\u00ad effective moves."
+  },
+  "cotton-down": {
+    "id": 238,
+    "name": "cotton-down",
+    "name_fr": "Effilochage",
+    "name_en": "Cotton Down",
+    "description_fr": "Quand le Pok\u00e9mon est touch\u00e9 par une attaque, il diss\u00e9mine des aigrettes qui diminuent la Vitesse de tout le monde, sauf la sienne.",
+    "description_en": "When the Pok\u00e9mon is hit by an attack, it scatters cotton fluff around and lowers the Speed stat of all Pok\u00e9mon except itself."
+  },
+  "propeller-tail": {
+    "id": 239,
+    "name": "propeller-tail",
+    "name_fr": "Propulseur",
+    "name_en": "Propeller Tail",
+    "description_fr": "Permet d\u2019ignorer l\u2019effet des capacit\u00e9s ou des talents qui attirent les capacit\u00e9s.",
+    "description_en": "Ignores the effects of opposing Pok\u00e9mon\u2019s Abilities and moves that draw in moves."
+  },
+  "early-bird": {
+    "id": 48,
+    "name": "early-bird",
+    "name_fr": "Matinal",
+    "name_en": "Early Bird",
+    "description_fr": "Se r\u00e9veille rapidement.",
+    "description_en": "Awakens quickly from sleep."
+  },
+  "tinted-lens": {
+    "id": 110,
+    "name": "tinted-lens",
+    "name_fr": "Lentiteint\u00e9e",
+    "name_en": "Tinted Lens",
+    "description_fr": "Am\u00e9liore les capacit\u00e9s \u201cpas tr\u00e8s efficaces\u201d.",
+    "description_en": "Powers up \u201cnot very effective\u201d moves."
+  },
+  "protosynthesis": {
+    "id": 281,
+    "name": "protosynthesis",
+    "name_fr": "Pal\u00e9osynth\u00e8se",
+    "name_en": "Protosynthesis",
+    "description_fr": "Quand le soleil brille ou que le Pok\u00e9mon tient\\nune capsule d\u2019\u00c9nergie Booster, sa stat la plus \u00e9lev\u00e9e\\naugmente.",
+    "description_en": "Boosts the Pok\u00e9mon's most proficient stat in harsh sunlight or if the Pok\u00e9mon is holding Booster Energy."
+  },
+  "wonder-skin": {
+    "id": 147,
+    "name": "wonder-skin",
+    "name_fr": "Peau Miracle",
+    "name_en": "Wonder Skin",
+    "description_fr": "Son corps r\u00e9siste mieux aux attaques de statut.",
+    "description_en": "Makes status-changing moves more likely to miss."
+  },
+  "zero-to-hero": {
+    "id": 278,
+    "name": "zero-to-hero",
+    "name_fr": "Supermutation",
+    "name_en": "Zero to Hero",
+    "description_fr": "Le Pok\u00e9mon prend sa Forme Super en quittant\\nle combat.",
+    "description_en": "The Pok\u00e9mon transforms into its Hero Form when it switches out."
+  },
+  "earth-eater": {
+    "id": 297,
+    "name": "earth-eater",
+    "name_fr": "Absorbe-Terre",
+    "name_en": "Earth Eater",
+    "description_fr": "Si le Pok\u00e9mon est touch\u00e9 par une capacit\u00e9 de type Sol,\\nil regagne des PV au lieu de subir des d\u00e9g\u00e2ts.",
+    "description_en": "If hit by a Ground-type move, the Pok\u00e9mon has its HP restored instead of taking damage."
+  },
+  "infiltrator": {
+    "id": 151,
+    "name": "infiltrator",
+    "name_fr": "Infiltration",
+    "name_en": "Infiltrator",
+    "description_fr": "Traverse les barri\u00e8res de l\u2019ennemi pour attaquer.",
+    "description_en": "Passes through the foe\u2019s barrier and strikes."
+  },
+  "aftermath": {
+    "id": 106,
+    "name": "aftermath",
+    "name_fr": "Boom Final",
+    "name_en": "Aftermath",
+    "description_fr": "Blesse l'ennemi qui porte le coup de gr\u00e2ce.",
+    "description_en": "Damages the foe landing the finishing hit."
+  },
+  "sponge": {
+    "id": 10026,
+    "name": "sponge",
+    "name_fr": "Sponge",
+    "name_en": "Sponge",
+    "description_fr": null,
+    "description_en": null
+  },
+  "spicy-spray": {
+    "id": 311,
+    "name": "spicy-spray",
+    "name_fr": "Haban\u00e9ruption",
+    "name_en": "Spicy Spray",
+    "description_fr": null,
+    "description_en": "When the Pok\u00e9mon takes damage from a move, it burns the attacker."
+  },
+  "wandering-spirit": {
+    "id": 254,
+    "name": "wandering-spirit",
+    "name_fr": "\u00c2me Vagabonde",
+    "name_en": "Wandering Spirit",
+    "description_fr": "Lorsque le Pok\u00e9mon est directement touch\u00e9 par une attaque, il \u00e9change son talent avec celui de l\u2019assaillant.",
+    "description_en": "The Pok\u00e9mon exchanges Abilities with a Pok\u00e9mon that hits it with a move that makes direct contact."
+  },
+  "wonder-guard": {
+    "id": 25,
+    "name": "wonder-guard",
+    "name_fr": "Garde Mystik",
+    "name_en": "Wonder Guard",
+    "description_fr": "Re\u00e7oit seul. \"sup. eff.\".",
+    "description_en": "\u201cSuper effective\u201d hits."
+  },
+  "stamina": {
+    "id": 192,
+    "name": "stamina",
+    "name_fr": "Endurance",
+    "name_en": "Stamina",
+    "description_fr": "Augmente la D\u00e9fense du Pok\u00e9mon lorsqu\u2019il subit une attaque.",
+    "description_en": "Boosts the Defense stat when hit by an attack."
+  },
+  "long-reach": {
+    "id": 203,
+    "name": "long-reach",
+    "name_fr": "Longue Port\u00e9e",
+    "name_en": "Long Reach",
+    "description_fr": "Le Pok\u00e9mon est capable d\u2019utiliser toutes ses capacit\u00e9s sans entrer en contact direct avec sa cible.",
+    "description_en": "The Pok\u00e9mon uses its moves without making contact with the target."
+  },
+  "vital-spirit": {
+    "id": 72,
+    "name": "vital-spirit",
+    "name_fr": "Esprit Vital",
+    "name_en": "Vital Spirit",
+    "description_fr": "Emp\u00eache le sommeil.",
+    "description_en": "Prevents sleep."
+  },
+  "innards-out": {
+    "id": 215,
+    "name": "innards-out",
+    "name_fr": "Expuls\u2019Organes",
+    "name_en": "Innards Out",
+    "description_fr": "Le Pok\u00e9mon inflige \u00e0 l\u2019adversaire l\u2019ayant mis K.O. des d\u00e9g\u00e2ts \u00e9gaux au nombre de PV qu\u2019il lui restait avant le coup de gr\u00e2ce.",
+    "description_en": "Damages the attacker landing the finishing hit by the amount equal to its last HP."
+  },
+  "liquid-ooze": {
+    "id": 64,
+    "name": "liquid-ooze",
+    "name_fr": "Suintement",
+    "name_en": "Liquid Ooze",
+    "description_fr": "Blesse quand drain\u00e9.",
+    "description_en": "Draining causes injury."
+  },
+  "poison-puppeteer": {
+    "id": 307,
+    "name": "poison-puppeteer",
+    "name_fr": "Emprise Toxique",
+    "name_en": "Poison Puppeteer",
+    "description_fr": "Lorsque P\u00eachaminus empoisonne un Pok\u00e9mon gr\u00e2ce\\n\u00e0 l\u2019une de ses capacit\u00e9s, ce dernier devient \u00e9galement\\nconfus.",
+    "description_en": "Pok\u00e9mon poisoned by Pecharunt's moves will also become confused."
+  },
+  "stealth": {
+    "id": 10030,
+    "name": "stealth",
+    "name_fr": "Stealth",
+    "name_en": "Stealth",
+    "description_fr": null,
+    "description_en": null
+  },
+  "stalwart": {
+    "id": 242,
+    "name": "stalwart",
+    "name_fr": "Nerfs d\u2019Acier",
+    "name_en": "Stalwart",
+    "description_fr": "Permet d\u2019ignorer l\u2019effet des capacit\u00e9s ou des talents qui attirent les capacit\u00e9s.",
+    "description_en": "Ignores the effects of opposing Pok\u00e9mon\u2019s Abilities and moves that draw in moves."
+  },
+  "swift-swim": {
+    "id": 33,
+    "name": "swift-swim",
+    "name_fr": "Glissade",
+    "name_en": "Swift Swim",
+    "description_fr": "Monte VITESSE s'il pleut.",
+    "description_en": "Raises SPEED in rain."
+  },
+  "aerilate": {
+    "id": 184,
+    "name": "aerilate",
+    "name_fr": "Peau C\u00e9leste",
+    "name_en": "Aerilate",
+    "description_fr": "Les capacit\u00e9s de type Normal deviennent de type Vol.",
+    "description_en": "Normal-type moves become Flying-type moves."
+  },
+  "rain-dish": {
+    "id": 44,
+    "name": "rain-dish",
+    "name_fr": "Cuvette",
+    "name_en": "Rain Dish",
+    "description_fr": "Gagne quelques PV si pluie.",
+    "description_en": "Slight HP recovery in rain."
+  },
+  "dauntless-shield": {
+    "id": 235,
+    "name": "dauntless-shield",
+    "name_fr": "\u00c9gide Inflexible",
+    "name_en": "Dauntless Shield",
+    "description_fr": "Augmente la D\u00e9fense du Pok\u00e9mon quand il entre au combat.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Defense stat when the Pok\u00e9mon enters a battle."
+  },
+  "share": {
+    "id": 10047,
+    "name": "share",
+    "name_fr": "Share",
+    "name_en": "Share",
+    "description_fr": null,
+    "description_en": null
+  },
+  "cloud-nine": {
+    "id": 13,
+    "name": "cloud-nine",
+    "name_fr": "Ciel Gris",
+    "name_en": "Cloud Nine",
+    "description_fr": "Ignore les effets du climat.",
+    "description_en": "Negates weather effects."
+  },
+  "transistor": {
+    "id": 262,
+    "name": "transistor",
+    "name_fr": "Transistor",
+    "name_en": "Transistor",
+    "description_fr": "Augmente la puissance des attaques de type \u00c9lectrik.",
+    "description_en": "Powers up Electric-type moves."
+  },
+  "frostbite": {
+    "id": 10010,
+    "name": "frostbite",
+    "name_fr": "Frostbite",
+    "name_en": "Frostbite",
+    "description_fr": null,
+    "description_en": null
+  },
+  "wind-rider": {
+    "id": 274,
+    "name": "wind-rider",
+    "name_fr": "A\u00e9roport\u00e9",
+    "name_en": "Wind Rider",
+    "description_fr": "L\u2019Attaque du Pok\u00e9mon augmente si un vent arri\u00e8re souffle\\nou s\u2019il est touch\u00e9 par une capacit\u00e9 faisant appel au vent.\\nDans ce dernier cas, il ne subit aucun d\u00e9g\u00e2t.",
+    "description_en": "Boosts the Pok\u00e9mon's Attack stat if Tailwind takes effect or if the Pok\u00e9mon is hit by a wind move. The Pok\u00e9mon also takes no damage from wind moves."
+  },
+  "parry": {
+    "id": 10006,
+    "name": "parry",
+    "name_fr": "Parry",
+    "name_en": "Parry",
+    "description_fr": null,
+    "description_en": null
+  },
+  "hyper-cutter": {
+    "id": 52,
+    "name": "hyper-cutter",
+    "name_fr": "Hyper Cutter",
+    "name_en": "Hyper Cutter",
+    "description_fr": "Emp\u00eache r\u00e9duction ATTAQUE.",
+    "description_en": "Prevents ATTACK reduction."
+  },
+  "power-of-alchemy": {
+    "id": 223,
+    "name": "power-of-alchemy",
+    "name_fr": "Osmose",
+    "name_en": "Power of Alchemy",
+    "description_fr": "Le Pok\u00e9mon acquiert le talent d\u2019un alli\u00e9 mis K.O.",
+    "description_en": "The Pok\u00e9mon copies the Ability of a defeated ally."
+  },
+  "disgust": {
+    "id": 10051,
+    "name": "disgust",
+    "name_fr": "Disgust",
+    "name_en": "Disgust",
+    "description_fr": null,
+    "description_en": null
+  },
+  "clear-body": {
+    "id": 29,
+    "name": "clear-body",
+    "name_fr": "Corps Sain",
+    "name_en": "Clear Body",
+    "description_fr": "Emp\u00eache r\u00e9duction de cap.",
+    "description_en": "Prevents ability reduction."
+  },
+  "bulletproof": {
+    "id": 171,
+    "name": "bulletproof",
+    "name_fr": "Pare-Balles",
+    "name_en": "Bulletproof",
+    "description_fr": "Prot\u00e8ge de certaines capacit\u00e9s projetant des bombes, balles\u2026",
+    "description_en": "Protects the Pok\u00e9mon from some ball and bomb moves."
+  },
+  "hunger-switch": {
+    "id": 258,
+    "name": "hunger-switch",
+    "name_fr": "D\u00e9clic Fringale",
+    "name_en": "Hunger Switch",
+    "description_fr": "\u00c0 la fin de chaque tour, le Pok\u00e9mon alterne entre ses formes Mode Rassasi\u00e9 et Mode Affam\u00e9.",
+    "description_en": "The Pok\u00e9mon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of each turn."
+  },
+  "contrary": {
+    "id": 126,
+    "name": "contrary",
+    "name_fr": "Contestation",
+    "name_en": "Contrary",
+    "description_fr": "Inverse les variations de stats.",
+    "description_en": "Makes stat changes have an opposite effect."
+  },
+  "adaptability": {
+    "id": 91,
+    "name": "adaptability",
+    "name_fr": "Adaptabilit\u00e9",
+    "name_en": "Adaptability",
+    "description_fr": "Augmente la puissance des capacit\u00e9s de m\u00eame type.",
+    "description_en": "Powers up moves of the same type."
+  },
+  "swarm": {
+    "id": 68,
+    "name": "swarm",
+    "name_fr": "Essaim",
+    "name_en": "Swarm",
+    "description_fr": "Augmente attaques INSECT.",
+    "description_en": "Ups BUG moves in a pinch."
+  },
+  "cursed-body": {
+    "id": 130,
+    "name": "cursed-body",
+    "name_fr": "Corps Maudit",
+    "name_en": "Cursed Body",
+    "description_fr": "Peut emp\u00eacher l\u2019ennemi de r\u00e9utiliser une attaque.",
+    "description_en": "May disable a move used on the Pok\u00e9mon."
+  },
+  "dry-skin": {
+    "id": 87,
+    "name": "dry-skin",
+    "name_fr": "Peau S\u00e8che",
+    "name_en": "Dry Skin",
+    "description_fr": "Perd des PV \u00e0 la chaleur. L'eau les restaure.",
+    "description_en": "Reduces HP if it is hot. Water restores HP."
+  },
+  "speed-boost": {
+    "id": 3,
+    "name": "speed-boost",
+    "name_fr": "Turbo",
+    "name_en": "Speed Boost",
+    "description_fr": "Am\u00e9liore la VITESSE.",
+    "description_en": "Gradually boosts SPEED."
+  },
+  "dazzling": {
+    "id": 219,
+    "name": "dazzling",
+    "name_fr": "Corps Color\u00e9",
+    "name_en": "Dazzling",
+    "description_fr": "L\u2019adversaire est abasourdi par le Pok\u00e9mon et ne peut pas le viser avec une capacit\u00e9 prioritaire.",
+    "description_en": "Surprises the opposing Pok\u00e9mon, making it unable to attack using priority moves."
+  },
+  "cheek-pouch": {
+    "id": 167,
+    "name": "cheek-pouch",
+    "name_fr": "Bajoues",
+    "name_en": "Cheek Pouch",
+    "description_fr": "Rend des PV lorsque le Pok\u00e9mon consomme une Baie.",
+    "description_en": "Restores HP as well when the Pok\u00e9mon eats a Berry."
+  },
+  "aura-break": {
+    "id": 188,
+    "name": "aura-break",
+    "name_fr": "Aura Invers\u00e9e",
+    "name_en": "Aura Break",
+    "description_fr": "L\u2019effet des auras est invers\u00e9.",
+    "description_en": "The effects of \u201cAura\u201d Abilities are reversed."
+  },
+  "chlorophyll": {
+    "id": 34,
+    "name": "chlorophyll",
+    "name_fr": "Chlorophylle",
+    "name_en": "Chlorophyll",
+    "description_fr": "Augmente vitesse au soleil.",
+    "description_en": "Raises SPEED in sunshine."
+  },
+  "gooey": {
+    "id": 183,
+    "name": "gooey",
+    "name_fr": "Poisseux",
+    "name_en": "Gooey",
+    "description_fr": "Diminue la Vitesse de l\u2019attaquant qui le touche.",
+    "description_en": "Contact with the Pok\u00e9mon lowers the attacker\u2019s Speed stat."
+  },
+  "calming": {
+    "id": 10037,
+    "name": "calming",
+    "name_fr": "Calming",
+    "name_en": "Calming",
+    "description_fr": null,
+    "description_en": null
+  },
+  "supersweet-syrup": {
+    "id": 300,
+    "name": "supersweet-syrup",
+    "name_fr": "Nectar Mielleux",
+    "name_en": "Supersweet Syrup",
+    "description_fr": "La premi\u00e8re fois que le Pok\u00e9mon entre au combat,\\nune odeur de nectar sucr\u00e9 se r\u00e9pand sur le terrain,\\nce qui baisse l\u2019Esquive de l\u2019adversaire.",
+    "description_en": "Lowers the evasion of opposing Pok\u00e9mon by 1 stage when first sent into battle"
+  },
+  "sand-spit": {
+    "id": 245,
+    "name": "sand-spit",
+    "name_fr": "Expul\u2019Sable",
+    "name_en": "Sand Spit",
+    "description_fr": "Le Pok\u00e9mon d\u00e9clenche une temp\u00eate de sable quand il subit une attaque.",
+    "description_en": "The Pok\u00e9mon creates a sandstorm when it\u2019s hit by an attack."
+  },
+  "marvel-scale": {
+    "id": 63,
+    "name": "marvel-scale",
+    "name_fr": "\u00c9caille Sp\u00e9ciale",
+    "name_en": "Marvel Scale",
+    "description_fr": "Augmente DEF. quand bless\u00e9.",
+    "description_en": "Ups DEFENSE if suffering."
+  },
+  "sand-veil": {
+    "id": 8,
+    "name": "sand-veil",
+    "name_fr": "Voile Sable",
+    "name_en": "Sand Veil",
+    "description_fr": "Evasion si temp\u00eate sable.",
+    "description_en": "Ups evasion in a sandstorm."
+  },
+  "shield": {
+    "id": 10060,
+    "name": "shield",
+    "name_fr": "Shield",
+    "name_en": "Shield",
+    "description_fr": null,
+    "description_en": null
+  },
+  "corrosion": {
+    "id": 212,
+    "name": "corrosion",
+    "name_fr": "Corrosion",
+    "name_en": "Corrosion",
+    "description_fr": "Permet d\u2019empoisonner les Pok\u00e9mon de type Acier ou Poison.",
+    "description_en": "The Pok\u00e9mon can poison the target even if it\u2019s a Steel or Poison type."
+  },
+  "shell-armor": {
+    "id": 75,
+    "name": "shell-armor",
+    "name_fr": "Coque Armure",
+    "name_en": "Shell Armor",
+    "description_fr": "Bloque les coups critiques.",
+    "description_en": "Blocks critical hits."
+  },
+  "liquid-voice": {
+    "id": 204,
+    "name": "liquid-voice",
+    "name_fr": "Hydrata-Son",
+    "name_en": "Liquid Voice",
+    "description_fr": "Toutes les attaques sonores du Pok\u00e9mon prennent le type Eau.",
+    "description_en": "All sound-based moves become Water-type moves."
+  },
+  "intimidate": {
+    "id": 22,
+    "name": "intimidate",
+    "name_fr": "Intimidation",
+    "name_en": "Intimidate",
+    "description_fr": "Baisse l'ATTAQUE ennemie.",
+    "description_en": "Lowers the foe\u2019s ATTACK."
+  },
+  "water-compaction": {
+    "id": 195,
+    "name": "water-compaction",
+    "name_fr": "Sable Humide",
+    "name_en": "Water Compaction",
+    "description_fr": "Augmente beaucoup la D\u00e9fense du Pok\u00e9mon quand il subit une capacit\u00e9 de type Eau.",
+    "description_en": "Boosts the Pok\u00e9mon\u2019s Defense stat sharply when hit by a Water-type move."
+  },
+  "medic": {
+    "id": 10021,
+    "name": "medic",
+    "name_fr": "Medic",
+    "name_en": "Medic",
+    "description_fr": null,
+    "description_en": null
+  },
+  "perish-body": {
+    "id": 253,
+    "name": "perish-body",
+    "name_fr": "Corps Condamn\u00e9",
+    "name_en": "Perish Body",
+    "description_fr": "Lorsque le Pok\u00e9mon est directement touch\u00e9 par une attaque, l\u2019assaillant et lui tomberont K.O. dans trois tours, \u00e0 moins qu\u2019ils ne soient remplac\u00e9s entre temps.",
+    "description_en": "When hit by a move that makes direct contact, the Pok\u00e9mon and the attacker will faint after three turns unless they switch out of battle."
+  },
+  "forecast": {
+    "id": 59,
+    "name": "forecast",
+    "name_fr": "M\u00e9t\u00e9o",
+    "name_en": "Forecast",
+    "description_fr": "Change selon le climat.",
+    "description_en": "Changes with the weather."
+  },
+  "technician": {
+    "id": 101,
+    "name": "technician",
+    "name_fr": "Technicien",
+    "name_en": "Technician",
+    "description_fr": "Augmente la puissance des capacit\u00e9s les plus faibles.",
+    "description_en": "Powers up the Pok\u00e9mon\u2019s weaker moves."
+  },
+  "misty-surge": {
+    "id": 228,
+    "name": "misty-surge",
+    "name_fr": "Cr\u00e9a-Brume",
+    "name_en": "Misty Surge",
+    "description_fr": "Le Pok\u00e9mon cr\u00e9e un Champ Brumeux au moment o\u00f9 il entre au combat.",
+    "description_en": "Turns the ground into Misty Terrain when the Pok\u00e9mon enters a battle."
+  },
+  "magic-bounce": {
+    "id": 156,
+    "name": "magic-bounce",
+    "name_fr": "Miroir Magik",
+    "name_en": "Magic Bounce",
+    "description_fr": "Renvoie les attaques de statut.",
+    "description_en": "Reflects status- changing moves."
+  },
+  "opportunist": {
+    "id": 290,
+    "name": "opportunist",
+    "name_fr": "Opportuniste",
+    "name_en": "Opportunist",
+    "description_fr": "Quand les stats de l\u2019ennemi augmentent, le Pok\u00e9mon\\nen profite pour augmenter ses stats de la m\u00eame mani\u00e8re.",
+    "description_en": "If an opponent's stat is boosted, the Pok\u00e9mon seizes the opportunity to boost the same stat for itself."
+  },
+  "flash-fire": {
+    "id": 18,
+    "name": "flash-fire",
+    "name_fr": "Torche",
+    "name_en": "Flash Fire",
+    "description_fr": "Puissance monte si br\u00fbl\u00e9.",
+    "description_en": "Powers up if hit by fire."
+  },
+  "telepathy": {
+    "id": 140,
+    "name": "telepathy",
+    "name_fr": "T\u00e9l\u00e9pathe",
+    "name_en": "Telepathy",
+    "description_fr": "Anticipe et \u00e9vite les attaques de ses alli\u00e9s.",
+    "description_en": "Anticipates an ally\u2019s attack and dodges it."
+  },
+  "seed-sower": {
+    "id": 269,
+    "name": "seed-sower",
+    "name_fr": "Semencier",
+    "name_en": "Seed Sower",
+    "description_fr": "Le Pok\u00e9mon cr\u00e9e un champ herbu quand\\nil subit une attaque.",
+    "description_en": "Turns the ground into Grassy Terrain when the Pok\u00e9mon is hit by an attack."
+  },
+  "tablets-of-ruin": {
+    "id": 286,
+    "name": "tablets-of-ruin",
+    "name_fr": "Bois du Fl\u00e9au",
+    "name_en": "Tablets of Ruin",
+    "description_fr": "Le pouvoir du bois qui appelle le fl\u00e9au affaiblit\\nl\u2019Attaque de tous les autres Pok\u00e9mon.",
+    "description_en": "The power of the Pok\u00e9mon's ruinous wooden tablets lowers the Attack stats of all Pok\u00e9mon except itself."
+  },
+  "snow-warning": {
+    "id": 117,
+    "name": "snow-warning",
+    "name_fr": "Alerte Neige",
+    "name_en": "Snow Warning",
+    "description_fr": "D\u00e9clenche une temp\u00eate de gr\u00eale pendant un combat.",
+    "description_en": "The Pok\u00e9mon summons a hailstorm in battle."
+  },
+  "power-spot": {
+    "id": 249,
+    "name": "power-spot",
+    "name_fr": "Cercle d\u2019\u00c9nergie",
+    "name_en": "Power Spot",
+    "description_fr": "Augmente la puissance des capacit\u00e9s des Pok\u00e9mon qui se trouvent \u00e0 proximit\u00e9.",
+    "description_en": "Just being next to the Pok\u00e9mon powers up moves."
+  },
+  "poison-point": {
+    "id": 38,
+    "name": "poison-point",
+    "name_fr": "Point Poison",
+    "name_en": "Poison Point",
+    "description_fr": "Empoisonne quand touch\u00e9.",
+    "description_en": "Poisons foe on contact."
+  },
+  "iron-barbs": {
+    "id": 160,
+    "name": "iron-barbs",
+    "name_fr": "\u00c9pine de Fer",
+    "name_en": "Iron Barbs",
+    "description_fr": "Blesse l\u2019ennemi au moindre contact.",
+    "description_en": "Inflicts damage to the Pok\u00e9mon on contact."
+  },
+  "toxic-boost": {
+    "id": 137,
+    "name": "toxic-boost",
+    "name_fr": "Rage Poison",
+    "name_en": "Toxic Boost",
+    "description_fr": "Booste les att. physiques si le statut est poison.",
+    "description_en": "Powers up physical attacks when poisoned."
+  },
+  "battle-armor": {
+    "id": 4,
+    "name": "battle-armor",
+    "name_fr": "Armurbaston",
+    "name_en": "Battle Armor",
+    "description_fr": "Bloque les coups critiques.",
+    "description_en": "Blocks critical hits."
+  },
+  "steadfast": {
+    "id": 80,
+    "name": "steadfast",
+    "name_fr": "Impassible",
+    "name_en": "Steadfast",
+    "description_fr": "Augmente la Vitesse quand le Pok\u00e9mon a peur.",
+    "description_en": "Raises Speed each time the Pok\u00e9mon flinches."
+  },
+  "schooling": {
+    "id": 208,
+    "name": "schooling",
+    "name_fr": "Banc",
+    "name_en": "Schooling",
+    "description_fr": "Le Pok\u00e9mon se rassemble avec ses cong\u00e9n\u00e8res quand ses PV sont \u00e9lev\u00e9s. Plus ses PV baissent, plus le banc s\u2019amenuise.",
+    "description_en": "When it has a lot of HP, the Pok\u00e9mon forms a powerful school. It stops schooling when its HP is low."
+  },
+  "rivalry": {
+    "id": 79,
+    "name": "rivalry",
+    "name_fr": "Rivalit\u00e9",
+    "name_en": "Rivalry",
+    "description_fr": "Augmente l'Attaque si l'ennemi est du m\u00eame sexe.",
+    "description_en": "Raises Attack if the foe is of the same gender."
+  },
+  "multitype": {
+    "id": 121,
+    "name": "multitype",
+    "name_fr": "Multi-Type",
+    "name_en": "Multitype",
+    "description_fr": "Modifie le type en fonction de la Plaque tenue.",
+    "description_en": "Changes type to match the held Plate."
+  },
+  "normalize": {
+    "id": 96,
+    "name": "normalize",
+    "name_fr": "Normalise",
+    "name_en": "Normalize",
+    "description_fr": "Toutes les capacit\u00e9s sont de type Normal.",
+    "description_en": "All the Pok\u00e9mon\u2019s moves become the Normal type."
+  },
+  "stance-change": {
+    "id": 176,
+    "name": "stance-change",
+    "name_fr": "D\u00e9clic Tactique",
+    "name_en": "Stance Change",
+    "description_fr": "Change de forme selon la fa\u00e7on dont le Pok\u00e9mon se bat.",
+    "description_en": "The Pok\u00e9mon changes form depending on how it battles."
+  },
+  "water-bubble": {
+    "id": 199,
+    "name": "water-bubble",
+    "name_fr": "Aquabulle",
+    "name_en": "Water Bubble",
+    "description_fr": "R\u00e9duit les d\u00e9g\u00e2ts des capacit\u00e9s de type Feu subies par le Pok\u00e9mon. Il est \u00e9galement immunis\u00e9 contre les br\u00fblures.",
+    "description_en": "Lowers the power of Fire-type moves done to the Pok\u00e9mon and prevents the Pok\u00e9mon from getting a burn."
+  },
+  "beast-boost": {
+    "id": 224,
+    "name": "beast-boost",
+    "name_fr": "Boost Chim\u00e8re",
+    "name_en": "Beast Boost",
+    "description_fr": "Augmente la stat la plus \u00e9lev\u00e9e du Pok\u00e9mon s\u2019il met K.O. un autre Pok\u00e9mon pendant son tour.",
+    "description_en": "The Pok\u00e9mon boosts its most proficient stat each time it knocks out a Pok\u00e9mon."
+  },
+  "run-up": {
+    "id": 10056,
+    "name": "run-up",
+    "name_fr": "Run Up",
+    "name_en": "Run Up",
+    "description_fr": null,
+    "description_en": null
+  },
+  "hustle": {
+    "id": 55,
+    "name": "hustle",
+    "name_fr": "Agitation",
+    "name_en": "Hustle",
+    "description_fr": "Substitue pr\u00e9c. par puiss.",
+    "description_en": "Trades accuracy for power."
+  },
+  "well-baked-body": {
+    "id": 273,
+    "name": "well-baked-body",
+    "name_fr": "Bien Cuit",
+    "name_en": "Well-Baked Body",
+    "description_fr": "Si le Pok\u00e9mon est touch\u00e9 par une capacit\u00e9 de type Feu,\\nil ne subit aucun d\u00e9g\u00e2t et sa D\u00e9fense augmente\\nbeaucoup.",
+    "description_en": "The Pok\u00e9mon takes no damage when hit by Fire-type moves. Instead, its Defense stat is sharply boosted."
+  },
+  "mountaineer": {
+    "id": 10001,
+    "name": "mountaineer",
+    "name_fr": "Mountaineer",
+    "name_en": "Mountaineer",
+    "description_fr": null,
+    "description_en": null
+  },
+  "grim-neigh": {
+    "id": 265,
+    "name": "grim-neigh",
+    "name_fr": "Sombre Ruade",
+    "name_en": "Grim Neigh",
+    "description_fr": "Quand le Pok\u00e9mon met un ennemi K.O., il \u00e9met un hennissement terrifiant qui augmente son Attaque Sp\u00e9ciale.",
+    "description_en": "When the Pok\u00e9mon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat."
+  },
+  "gulp": {
+    "id": 10017,
+    "name": "gulp",
+    "name_fr": "Gulp",
+    "name_en": "Gulp",
+    "description_fr": null,
+    "description_en": null
+  },
+  "compound-eyes": {
+    "id": 14,
+    "name": "compound-eyes",
+    "name_fr": "\u0152il Compos\u00e9",
+    "name_en": "Compound Eyes",
+    "description_fr": "Augmente la pr\u00e9cision.",
+    "description_en": "Raises accuracy."
+  },
+  "prism-armor": {
+    "id": 232,
+    "name": "prism-armor",
+    "name_fr": "Prisme-Armure",
+    "name_en": "Prism Armor",
+    "description_fr": "R\u00e9duit les d\u00e9g\u00e2ts subis lorsque le Pok\u00e9mon est touch\u00e9 par une capacit\u00e9 super efficace.",
+    "description_en": "Reduces the power of supereffective attacks taken."
+  },
+  "interference": {
+    "id": 10040,
+    "name": "interference",
+    "name_fr": "Interference",
+    "name_en": "Interference",
+    "description_fr": null,
+    "description_en": null
+  },
+  "soundproof": {
+    "id": 43,
+    "name": "soundproof",
+    "name_fr": "Anti-Bruit",
+    "name_en": "Soundproof",
+    "description_fr": "Prot\u00e8ge de toutes les capacit\u00e9s sonores.",
+    "description_en": "Avoids sound-based moves."
+  },
+  "magnet-pull": {
+    "id": 42,
+    "name": "magnet-pull",
+    "name_fr": "Magn\u00e9pi\u00e8ge",
+    "name_en": "Magnet Pull",
+    "description_fr": "Pi\u00e8ge les POK\u00e9MON ACIER.",
+    "description_en": "Traps STEEL-type POK\u00e9MON."
+  },
+  "neuroforce": {
+    "id": 233,
+    "name": "neuroforce",
+    "name_fr": "C\u00e9r\u00e9bro-Force",
+    "name_en": "Neuroforce",
+    "description_fr": "Augmente encore plus les d\u00e9g\u00e2ts inflig\u00e9s par les attaques super efficaces.",
+    "description_en": "Powers up moves that are super effective."
+  },
+  "mood-maker": {
+    "id": 10041,
+    "name": "mood-maker",
+    "name_fr": "Mood Maker",
+    "name_en": "Mood Maker",
+    "description_fr": null,
+    "description_en": null
+  },
+  "insomnia": {
+    "id": 15,
+    "name": "insomnia",
+    "name_fr": "Insomnia",
+    "name_en": "Insomnia",
+    "description_fr": "Emp\u00eache de s'endormir.",
+    "description_en": "Prevents sleep."
+  },
+  "chilling-neigh": {
+    "id": 264,
+    "name": "chilling-neigh",
+    "name_fr": "Blanche Ruade",
+    "name_en": "Chilling Neigh",
+    "description_fr": "Quand le Pok\u00e9mon met un ennemi K.O., il \u00e9met un hennissement gla\u00e7ant, ce qui augmente son Attaque.",
+    "description_en": "When the Pok\u00e9mon knocks out a target, it utters a chilling neigh, which boosts its Attack stat."
+  },
+  "warm-blanket": {
+    "id": 10016,
+    "name": "warm-blanket",
+    "name_fr": "Warm Blanket",
+    "name_en": "Warm Blanket",
+    "description_fr": null,
+    "description_en": null
+  },
+  "purifying-salt": {
+    "id": 272,
+    "name": "purifying-salt",
+    "name_fr": "Sel Purificateur",
+    "name_en": "Purifying Salt",
+    "description_fr": "Le sel pur immunise le Pok\u00e9mon contre les alt\u00e9rations\\nde statut, et diminue de moiti\u00e9 les d\u00e9g\u00e2ts des capacit\u00e9s\\nde type Spectre.",
+    "description_en": "The Pok\u00e9mon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves."
+  },
+  "truant": {
+    "id": 54,
+    "name": "truant",
+    "name_fr": "Absent\u00e9isme",
+    "name_en": "Truant",
+    "description_fr": "Frappe tous les 2 tours.",
+    "description_en": "Moves only every two turns."
+  },
+  "rks-system": {
+    "id": 225,
+    "name": "rks-system",
+    "name_fr": "Syst\u00e8me Alpha",
+    "name_en": "RKS System",
+    "description_fr": "Change le type du Pok\u00e9mon en fonction de la ROM \u00e9quip\u00e9e.",
+    "description_en": "Changes the Pok\u00e9mon\u2019s type to match the memory disc it holds."
+  },
+  "conqueror": {
+    "id": 10057,
+    "name": "conqueror",
+    "name_fr": "Conqueror",
+    "name_en": "Conqueror",
+    "description_fr": null,
+    "description_en": null
+  },
+  "gale-wings": {
+    "id": 177,
+    "name": "gale-wings",
+    "name_fr": "Ailes Bourrasque",
+    "name_en": "Gale Wings",
+    "description_fr": "Les attaques de type Vol sont prioritaires.",
+    "description_en": "Gives priority to Flying-type moves."
+  },
+  "stakeout": {
+    "id": 198,
+    "name": "stakeout",
+    "name_fr": "Filature",
+    "name_en": "Stakeout",
+    "description_fr": "Lorsque le Pok\u00e9mon attaque une cible qui vient d\u2019entrer sur le terrain en remplacement d\u2019un autre Pok\u00e9mon, les d\u00e9g\u00e2ts inflig\u00e9s sont doubl\u00e9s.",
+    "description_en": "Doubles the damage dealt to the target\u2019s replacement if the target switches out."
+  },
+  "motor-drive": {
+    "id": 78,
+    "name": "motor-drive",
+    "name_fr": "Motoris\u00e9",
+    "name_en": "Motor Drive",
+    "description_fr": "Augmente la Vit. si touch\u00e9 par une cap. \u00c9lectrik.",
+    "description_en": "Raises Speed if hit by an Electric-type move."
+  },
+  "reckless": {
+    "id": 120,
+    "name": "reckless",
+    "name_fr": "T\u00e9m\u00e9raire",
+    "name_en": "Reckless",
+    "description_fr": "Booste les cap. ayant des d\u00e9g\u00e2ts de contrecoups.",
+    "description_en": "Powers up moves that have recoil damage."
+  },
+  "sniper": {
+    "id": 97,
+    "name": "sniper",
+    "name_fr": "Sniper",
+    "name_en": "Sniper",
+    "description_fr": "Booste les capacit\u00e9s qui sont des coups critiques.",
+    "description_en": "Powers up moves if they become critical hits."
+  },
+  "disguise": {
+    "id": 209,
+    "name": "disguise",
+    "name_fr": "Fant\u00f4masque",
+    "name_en": "Disguise",
+    "description_fr": "Le d\u00e9guisement qui recouvre le corps du Pok\u00e9mon est capable de le prot\u00e9ger d\u2019une attaque.",
+    "description_en": "Once per battle, the shroud that covers the Pok\u00e9mon can protect it from an attack."
+  },
+  "multiscale": {
+    "id": 136,
+    "name": "multiscale",
+    "name_fr": "Multi\u00e9caille",
+    "name_en": "Multiscale",
+    "description_fr": "Re\u00e7oit moins de d\u00e9g\u00e2ts si les PV sont au maximum.",
+    "description_en": "Reduces damage when HP is full."
+  },
+  "snow-cloak": {
+    "id": 81,
+    "name": "snow-cloak",
+    "name_fr": "Rideau Neige",
+    "name_en": "Snow Cloak",
+    "description_fr": "Augmente l'Esquive durant les temp\u00eates de gr\u00eale.",
+    "description_en": "Raises evasion in a hailstorm."
+  },
+  "sturdy": {
+    "id": 5,
+    "name": "sturdy",
+    "name_fr": "Fermet\u00e9",
+    "name_en": "Sturdy",
+    "description_fr": "Prot\u00e8ge des capacit\u00e9s mettant K.O. en un coup.",
+    "description_en": "Negates 1-hit KO attacks."
+  },
+  "inner-focus": {
+    "id": 39,
+    "name": "inner-focus",
+    "name_fr": "Attention",
+    "name_en": "Inner Focus",
+    "description_fr": "Emp\u00eache la peur.",
+    "description_en": "Prevents flinching."
+  },
+  "zen-mode": {
+    "id": 161,
+    "name": "zen-mode",
+    "name_fr": "Mode Transe",
+    "name_en": "Zen Mode",
+    "description_fr": "Transforme le Pok\u00e9mon dans les moments d\u00e9licats.",
+    "description_en": "Changes the Pok\u00e9mon\u2019s shape when HP is halved."
+  },
+  "ice-face": {
+    "id": 248,
+    "name": "ice-face",
+    "name_fr": "T\u00eate de Gel",
+    "name_en": "Ice Face",
+    "description_fr": "Le gla\u00e7on sur sa t\u00eate encaisse les attaques physiques \u00e0 la place du Pok\u00e9mon, mais sa destruction modifie son apparence. Le gla\u00e7on se reforme quand il gr\u00eale.",
+    "description_en": "The Pok\u00e9mon\u2019s ice head can take a physical attack as a substitute, but the attack also changes the Pok\u00e9mon\u2019s appearance. The ice will be restored when it hails."
+  },
+  "solid-rock": {
+    "id": 116,
+    "name": "solid-rock",
+    "name_fr": "Solide Roc",
+    "name_en": "Solid Rock",
+    "description_fr": "Affaiblit les capacit\u00e9s \u201csuper efficaces\u201d.",
+    "description_en": "Powers down super\u00ad effective moves."
+  },
+  "lingering-aroma": {
+    "id": 268,
+    "name": "lingering-aroma",
+    "name_fr": "Odeur Tenace",
+    "name_en": "Lingering Aroma",
+    "description_fr": "Lorsque le Pok\u00e9mon subit une attaque directe, le talent\\nde l\u2019attaquant est remplac\u00e9 par Odeur Tenace.",
+    "description_en": "Contact with the Pok\u00e9mon changes the attacker's Ability to Lingering Aroma."
+  },
+  "beads-of-ruin": {
+    "id": 287,
+    "name": "beads-of-ruin",
+    "name_fr": "Perles du Fl\u00e9au",
+    "name_en": "Beads of Ruin",
+    "description_fr": "Le pouvoir des perles qui appellent le fl\u00e9au affaiblit\\nla D\u00e9fense Sp\u00e9ciale de tous les autres Pok\u00e9mon.",
+    "description_en": "The power of the Pok\u00e9mon's ruinous beads lowers the Sp. Def stats of all Pok\u00e9mon except itself."
+  },
+  "shield-dust": {
+    "id": 19,
+    "name": "shield-dust",
+    "name_fr": "\u00c9cran Poudre",
+    "name_en": "Shield Dust",
+    "description_fr": "Emp\u00eache le cumul d'effets.",
+    "description_en": "Prevents added effects."
+  },
+  "moody": {
+    "id": 141,
+    "name": "moody",
+    "name_fr": "Lunatique",
+    "name_en": "Moody",
+    "description_fr": "Monte une stat tout en en baissant une autre.",
+    "description_en": "Raises one stat and lowers another."
+  },
+  "cud-chew": {
+    "id": 291,
+    "name": "cud-chew",
+    "name_fr": "Ruminant",
+    "name_en": "Cud Chew",
+    "description_fr": "Quand le Pok\u00e9mon mange une Baie, il la r\u00e9gurgite\\n\u00e0 la fin du tour suivant et la mange une nouvelle fois.",
+    "description_en": "When the Pok\u00e9mon eats a Berry, it will regurgitate that Berry at the end of the next turn and eat it one more time."
+  },
+  "sap-sipper": {
+    "id": 157,
+    "name": "sap-sipper",
+    "name_fr": "Herbivore",
+    "name_en": "Sap Sipper",
+    "description_fr": "Augmente l\u2019Attaque apr\u00e8s une attaque Plante.",
+    "description_en": "Boosts Attack when hit by a Grass-type move."
+  },
+  "grassy-surge": {
+    "id": 229,
+    "name": "grassy-surge",
+    "name_fr": "Cr\u00e9a-Herbe",
+    "name_en": "Grassy Surge",
+    "description_fr": "Le Pok\u00e9mon cr\u00e9e un Champ Herbu au moment o\u00f9 il entre au combat.",
+    "description_en": "Turns the ground into Grassy Terrain when the Pok\u00e9mon enters a battle."
+  },
+  "minus": {
+    "id": 58,
+    "name": "minus",
+    "name_fr": "Moins",
+    "name_en": "Minus",
+    "description_fr": "Puissance + avec PLUS.",
+    "description_en": "Powers up with PLUS."
+  },
+  "stall": {
+    "id": 100,
+    "name": "stall",
+    "name_fr": "Frein",
+    "name_en": "Stall",
+    "description_fr": "Attaque toujours apr\u00e8s l'ennemi, m\u00eame plus lent.",
+    "description_en": "The Pok\u00e9mon moves after even slower foes."
+  },
+  "hot-blooded": {
+    "id": 10020,
+    "name": "hot-blooded",
+    "name_fr": "Hot Blooded",
+    "name_en": "Hot Blooded",
+    "description_fr": null,
+    "description_en": null
+  },
+  "steely-spirit": {
+    "id": 252,
+    "name": "steely-spirit",
+    "name_fr": "Boost Acier",
+    "name_en": "Steely Spirit",
+    "description_fr": "Augmente la puissance d\u2019Attaque des capacit\u00e9s de type Acier des Pok\u00e9mon alli\u00e9s.",
+    "description_en": "Powers up ally Pok\u00e9mon\u2019s Steel-type moves."
+  },
+  "shadow-tag": {
+    "id": 23,
+    "name": "shadow-tag",
+    "name_fr": "Marque Ombre",
+    "name_en": "Shadow Tag",
+    "description_fr": "Emp\u00eache le Pok\u00e9mon ennemi de quitter le combat.",
+    "description_en": "Prevents the foe\u2019s escape."
+  },
+  "emergency-exit": {
+    "id": 194,
+    "name": "emergency-exit",
+    "name_fr": "Repli Tactique",
+    "name_en": "Emergency Exit",
+    "description_fr": "Le Pok\u00e9mon \u00e9vite les situations inutilement dangereuses. Quand ses PV tombent \u00e0 la moiti\u00e9, il se r\u00e9fugie dans sa Pok\u00e9 Ball.",
+    "description_en": "The Pok\u00e9mon, sensing danger, switches out when its HP becomes half or less."
+  },
+  "triage": {
+    "id": 205,
+    "name": "triage",
+    "name_fr": "Priogu\u00e9rison",
+    "name_en": "Triage",
+    "description_fr": "Toutes les capacit\u00e9s qui soignent le Pok\u00e9mon directement deviennent prioritaires.",
+    "description_en": "Gives priority to a healing move."
+  },
+  "pure-power": {
+    "id": 74,
+    "name": "pure-power",
+    "name_fr": "Force Pure",
+    "name_en": "Pure Power",
+    "description_fr": "Augmente l'ATTAQUE.",
+    "description_en": "Raises ATTACK."
+  },
+  "comatose": {
+    "id": 213,
+    "name": "comatose",
+    "name_fr": "Hypersommeil",
+    "name_en": "Comatose",
+    "description_fr": "Le Pok\u00e9mon r\u00eave en permanence et ne se r\u00e9veille jamais. Il est capable d\u2019attaquer normalement tout en dormant.",
+    "description_en": "It\u2019s always drowsing and will never wake up. It can attack without waking up."
+  },
+  "guts": {
+    "id": 62,
+    "name": "guts",
+    "name_fr": "Cran",
+    "name_en": "Guts",
+    "description_fr": "Augmente ATT. quand bless\u00e9.",
+    "description_en": "Ups ATTACK if suffering."
+  },
+  "static": {
+    "id": 9,
+    "name": "static",
+    "name_fr": "Statik",
+    "name_en": "Static",
+    "description_fr": "Paralyse au toucher.",
+    "description_en": "Paralyzes on contact."
+  },
+  "lullaby": {
+    "id": 10036,
+    "name": "lullaby",
+    "name_fr": "Lullaby",
+    "name_en": "Lullaby",
+    "description_fr": null,
+    "description_en": null
+  },
+  "hospitality": {
+    "id": 301,
+    "name": "hospitality",
+    "name_fr": "Aux Petits Soins",
+    "name_en": "Hospitality",
+    "description_fr": "Quand il rejoint le combat, ce Pok\u00e9mon est aux petits\\nsoins avec son alli\u00e9 et restaure quelques PV.",
+    "description_en": "When the Pok\u00e9mon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP"
+  },
+  "punk-rock": {
+    "id": 244,
+    "name": "punk-rock",
+    "name_fr": "Punk Rock",
+    "name_en": "Punk Rock",
+    "description_fr": "Augmente la puissance des capacit\u00e9s bas\u00e9es sur le son. Le Pok\u00e9mon ne subit que la moiti\u00e9 des d\u00e9g\u00e2ts quand il est touch\u00e9 par ce genre de capacit\u00e9s.",
+    "description_en": "Boosts the power of sound-based moves. The Pok\u00e9mon also takes half the damage from these kinds of moves."
+  },
+  "illuminate": {
+    "id": 35,
+    "name": "illuminate",
+    "name_fr": "Lumiattirance",
+    "name_en": "Illuminate",
+    "description_fr": "Augmente les rencontres.",
+    "description_en": "Encounter rate increases."
+  },
+  "pixilate": {
+    "id": 182,
+    "name": "pixilate",
+    "name_fr": "Peau F\u00e9\u00e9rique",
+    "name_en": "Pixilate",
+    "description_fr": "Les capacit\u00e9s de type Normal deviennent de type F\u00e9e.",
+    "description_en": "Normal-type moves become Fairy-type moves."
+  }
+}

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks the target with stored power. The more the user’s stats are raised, the greater the damage.",
+    "description_fr": "Le lanceur attaque l’ennemi avec une force accumulée. Plus les stats du lanceur sont augmentées, plus le coup est efficace.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

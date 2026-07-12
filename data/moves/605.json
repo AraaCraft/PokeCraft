@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user damages opposing Pokémon by emitting a powerful flash.",
+    "description_fr": "Libère une puissante décharge lumineuse qui inflige des dégâts à l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

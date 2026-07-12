@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack that may shock the foe into flinching.",
+    "description_fr": "Le lanceur attaque l’ennemi en poussant un cri terrifiant. Peut aussi l’apeurer.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

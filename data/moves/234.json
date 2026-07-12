@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Restores HP (varies by time).",
+    "description_fr": "Un soin qui restaure des PV au lanceur. Son efficacité varie en fonction de la météo.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

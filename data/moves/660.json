@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Although this move has great power, it only works the first turn the user is in battle.",
+    "description_fr": "Une capacité très puissante, mais qui ne fonctionne qu’au premier tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

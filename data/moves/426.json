@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "special",
     "description_en": "The user launches a hard-packed mud ball to attack. It may also lower the target’s accuracy.",
+    "description_fr": "Le lanceur attaque à l’aide d’une boule de boue solidifiée. Peut aussi baisser la Précision de l’ennemi.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

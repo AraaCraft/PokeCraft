@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Stronger if the user's HP is low.",
+    "description_fr": "Le lanceur ne retient plus ses coups. Plus ses PV sont bas et plus l’attaque est puissante.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

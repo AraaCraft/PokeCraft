@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks with electric voltage rising from the ground. This move’s power doubles when the target is on Electric Terrain.",
+    "description_fr": "Des éclairs surgissent du sol et frappent l’ennemi. La puissance de cette attaque est doublée si la cible est sur un Champ Électrifié.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

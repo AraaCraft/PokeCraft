@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "physical",
     "description_en": "The user electrifies its body and drops onto the target to inflict damage. If this move misses, the user takes damage instead.",
+    "description_fr": "Le lanceur se charge en électricité et fond sur la cible. S'il échoue, le lanceur se blesse.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

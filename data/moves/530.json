@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "The user attacks its target by hitting it with brutal strikes. The target is hit twice in a row.",
+    "description_fr": "Le lanceur frappe l’ennemi deux fois d’affilée avec les parties les plus robustes de son corps.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

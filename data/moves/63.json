@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "special",
     "description_en": "1st turn: Attack 2nd turn: Rest",
+    "description_fr": "Projette un puissant rayon sur l’ennemi. Le lanceur doit se reposer au tour suivant.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

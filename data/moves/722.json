@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks a target with a pillar of light. This move inflicts Attack or Sp. Atk damage—whichever stat is higher for the user.",
+    "description_fr": "Le lanceur fait jaillir un pilier de lumière. Compare l’Attaque et l’Attaque Spéciale, et utilise celle qui infligera le plus de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

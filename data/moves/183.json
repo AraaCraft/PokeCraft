@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A fast punch that lands first.",
+    "description_fr": "Coup de poing fulgurant. Frappe en premier.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

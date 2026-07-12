@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The higher the user’s HP, the more damage caused.",
+    "description_fr": "Le lanceur laisse exploser sa colère. Plus ses PV sont bas et moins l’attaque est puissante.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

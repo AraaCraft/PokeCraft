@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user unleashes a strong beam from its core. This move deals twice the damage if the target is Dynamaxed.",
+    "description_fr": "Le lanceur attaque en émettant un laser depuis son noyau. Cette capacité inflige deux fois plus de dégâts si l’adversaire est un Pokémon Dynamax.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

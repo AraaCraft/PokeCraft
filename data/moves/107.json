@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Heightens evasive­ ness.",
+    "description_fr": "Le lanceur comprime son corps pour se faire tout petit et augmenter fortement son Esquive.",
     "effect_chance": null,
     "effect_changes": [
         {

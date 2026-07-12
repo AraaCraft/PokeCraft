@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack with variable power.",
+    "description_fr": "Une étrange onde d’énergie chaude frappe l’ennemi. Cette attaque est d’intensité variable.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

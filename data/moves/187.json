@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Reduces own HP to maximize ATTACK.",
+    "description_fr": "Améliore l’Attaque au maximum en sacrifiant la moitié des PV max.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

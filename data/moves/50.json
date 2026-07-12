@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Disables the foe's most recent move.",
+    "description_fr": "Empêche l’ennemi d’employer à nouveau sa dernière attaque. Dure quatre tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

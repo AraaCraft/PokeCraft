@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user sharply raises the target’s Attack and Sp. Atk stats by decorating the target.",
+    "description_fr": "Le lanceur augmente beaucoup l’Attaque et l’Attaque Spéciale de la cible en la nappant de glaçage.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

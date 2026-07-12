@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user shoots a beam of light to inflict damage. Sometimes all the user's heads shoot beams in unison, doubling the move's power.",
+    "description_fr": "Le lanceur attaque en tirant un rayon lumineux. Il arrive parfois que toutes les têtes agissent ensemble, ce qui double la puissance de la capacité.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

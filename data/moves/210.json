@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "physical",
     "description_en": "Successive hits raise power.",
+    "description_fr": "Un coup de faux ou de griffe dont la force augmente quand il touche plusieurs fois d’affilée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

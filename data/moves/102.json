@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Copies a move used by the foe.",
+    "description_fr": "Le lanceur copie la dernière capacité utilisée par la cible et la conserve tant qu’il reste au combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

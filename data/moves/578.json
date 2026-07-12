@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user protects itself and its allies from status moves with a mysterious power. This does not stop moves that do damage.",
+    "description_fr": "Utilise une force mystérieuse pour protéger l’équipe des attaques de statut. Ne protège pas des autres capacités.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

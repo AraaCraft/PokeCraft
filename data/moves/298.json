@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Confuses all POKéMON on the scene.",
+    "description_fr": "Danse qui rend confus tous les Pokémon autour du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

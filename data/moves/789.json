@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks the target with so much force that it could break the target’s spirit. This also lowers the target’s Sp. Atk stat.",
+    "description_fr": "Le lanceur attaque son adversaire avec une telle force que ce dernier peut s’en retrouver profondément troublé. Baisse l’Attaque Spéciale de la cible.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

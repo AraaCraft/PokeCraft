@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks by shooting water bubbles at the target. It then absorbs water and restores its HP by half the damage taken by the target.",
+    "description_fr": "Évoli frappe l’adversaire avec des bulles d’eau qu’il absorbe ensuite pour récupérer un nombre de PV égal à la moitié des dégâts infligés à l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "special",
     "description_en": "Powerful, but leaves the user immobile the next turn.",
+    "description_fr": "Un violent coup de racines s’abat sur l’ennemi. Immobilise le lanceur au tour suivant.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

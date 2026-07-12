@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Foils attack that turn. It may fail.",
+    "description_fr": "Le lanceur esquive toutes les attaques. Plus la capacité est utilisée de fois à la suite, plus elle risque d’échouer.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

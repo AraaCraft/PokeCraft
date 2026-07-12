@@ -2,6 +2,7 @@
     "accuracy": 75,
     "damage_class": "physical",
     "description_en": "The user tackles the foe while exhibiting overwhelming menace. It may also make the target flinch.",
+    "description_fr": "Le lanceur frappe l’ennemi d’un air menaçant. Peut aussi apeurer l’ennemi.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

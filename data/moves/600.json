@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "The user covers the target in a powder that explodes and damages the target if it uses a Fire-type move.",
+    "description_fr": "L’ennemi est pris dans un nuage de poudre. S’il utilise une capacité de type Feu lors du même tour, le nuage explose et lui inflige des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

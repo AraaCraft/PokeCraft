@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user lays a trap of poison spikes at the foe’s feet. They poison foes that switch into battle.",
+    "description_fr": "Lance des pics autour de l’ennemi. Ils empoisonnent les ennemis qui entrent au combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

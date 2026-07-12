@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Makes a decoy with 1/4 user's max HP.",
+    "description_fr": "Le lanceur fait une copie de lui-même en sacrifiant quelques PV. La copie sert de leurre.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

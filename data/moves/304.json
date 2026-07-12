@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "A loud attack that uses sound waves to injure.",
+    "description_fr": "Le lanceur pousse un cri dont l’écho terrifiant a le pouvoir d’infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

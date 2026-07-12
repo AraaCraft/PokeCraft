@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user snares the foe with grass and trips it. The heavier the foe, the greater the damage.",
+    "description_fr": "L’ennemi est piégé dans de l’herbe qui le fait trébucher. Plus il est lourd, plus il subit de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

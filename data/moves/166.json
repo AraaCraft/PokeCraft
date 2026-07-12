@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Copies the foe's move permanently.",
+    "description_fr": "Le lanceur apprend le dernier coup utilisé par la cible. Gribouille disparaît après utilisation.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

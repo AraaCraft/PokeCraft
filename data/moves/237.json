@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The power varies with the POKéMON.",
+    "description_fr": "Attaque dont la puissance et le type dépendent du Pokémon qui l’utilise.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

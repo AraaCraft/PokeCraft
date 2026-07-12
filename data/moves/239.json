@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Whips up a tornado to attack.",
+    "description_fr": "Déclenche un terrible ouragan sur l’ennemi. Peut aussi l’apeurer.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

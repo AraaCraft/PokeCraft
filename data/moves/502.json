@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user teleports using a strange power and switches its place with one of its allies.",
+    "description_fr": "Le lanceur se téléporte à l’aide d’un pouvoir mystérieux. Il échange sa place avec celle d’un allié sur le terrain.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

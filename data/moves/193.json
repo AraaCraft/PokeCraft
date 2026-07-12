@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Negates accuracy reduction moves.",
+    "description_fr": "Permet de toucher un Pokémon Spectre avec n’importe quelle capacité et de toucher un ennemi insaisissable.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user becomes a gigantic shield and slams into the target. This move deals twice the damage if the target is Dynamaxed.",
+    "description_fr": "Le lanceur se transforme en un immense bouclier et charge son adversaire. Inflige le double de dégâts aux Pokémon Dynamax.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

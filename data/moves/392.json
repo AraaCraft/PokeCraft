@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user envelops itself in a veil made of water. It regains some HP on every turn.",
+    "description_fr": "Un voile liquide enveloppe le lanceur. Il récupère des PV à chaque tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

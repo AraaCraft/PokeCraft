@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "With its mysterious power, the user swaps the effects on either side of the field.",
+    "description_fr": "Une force mystérieuse intervertit les effets affectant chaque côté du terrain.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

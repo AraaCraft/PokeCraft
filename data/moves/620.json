@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "After soaring upward, the user attacks its target by dropping out of the sky at high speeds, although it lowers its own Defense and Sp. Def in the process.",
+    "description_fr": "Le Pokémon s’abat à toute vitesse sur la cible depuis les hautes couches de l’atmosphère. Baisse la Défense et la Défense Spéciale du lanceur. ",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

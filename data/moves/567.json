@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "The user takes the target trick-or-treating. This adds Ghost type to the target’s type.",
+    "description_fr": "Insuffle à la cible l’esprit d’Halloween, et ajoute le type Spectre à ses types actuels.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

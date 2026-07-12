@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "special",
     "description_en": "The user sets off an explosion of sticky candy syrup, which coats the target and causes the target's Speed stat to drop each turn for three turns.",
+    "description_fr": "Le lanceur jette une bombe qui recouvre la cible de sirop gluant et fait progressivement baisser la Vitesse de la cible pendant trois tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

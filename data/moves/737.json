@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "special",
     "description_en": "The user acts bad and attacks the target. A wondrous wall of light is put up to weaken the power of the opposing Pokémon’s physical moves.",
+    "description_fr": "Évoli fait appel à son côté sombre pour attaquer l’adversaire et créer un mur fabuleux qui réduit les dégâts causés par les attaques physiques de l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

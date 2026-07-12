@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks the target’s throat, and the resultant suffering prevents the target from using moves that emit sound for two turns.",
+    "description_fr": "Inflige une douleur tellement violente à la cible qu’elle ne peut plus émettre de sons pendant deux tours.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

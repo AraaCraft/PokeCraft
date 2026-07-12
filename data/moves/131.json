@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Fires spikes to hit 2-5 times.",
+    "description_fr": "Envoie une rafale de dards.  Peut toucher de 2 à 5 fois.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

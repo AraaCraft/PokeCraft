@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "A move for fleeing from battle.",
+    "description_fr": "Permet de fuir un Pokémon sauvage. Permet aussi de revenir au dernier Centre Pokémon visité.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

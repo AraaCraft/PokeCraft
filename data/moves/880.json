@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user creates a substitute for itself using its own HP before switching places with a party Pokémon in waiting.",
+    "description_fr": "Le lanceur crée un clone en sacrifiant des PV, puis il revient et échange sa place avec un Pokémon de l'équipe prêt à combattre.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "An attack that hits 2-5 times.",
+    "description_fr": "Le lanceur frappe l’ennemi 2 à 5 fois avec un os.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

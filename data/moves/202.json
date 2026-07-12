@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Steals 1/2 of the damage inflicted.",
+    "description_fr": "Une attaque qui convertit la moitié des dégâts infligés en PV.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

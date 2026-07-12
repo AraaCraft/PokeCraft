@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks the target with an echoing voice. If this move is used every turn, it does greater damage.",
+    "description_fr": "Un cri retentissant blesse l’ennemi. Si le lanceur ou d’autres Pokémon l’utilisent à chaque tour, l’effet augmente.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

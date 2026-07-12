@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Steals the effects of the move the foe uses next.",
+    "description_fr": "Le lanceur vole l’effet des capacités de soin ou de changement de stats utilisées par la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Gains power if the user’s HP is lower than the foe’s HP.",
+    "description_fr": "Une attaque qui réduit les PV de l’ennemi au niveau des PV du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

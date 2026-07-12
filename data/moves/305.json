@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A sharp-fanged attack. May badly poison the foe.",
+    "description_fr": "Le lanceur mord l’ennemi de ses crocs toxiques. Peut aussi l’empoisonner gravement.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

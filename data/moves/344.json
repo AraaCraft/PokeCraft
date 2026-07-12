@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A life-risking tackle that slightly hurts the user.",
+    "description_fr": "Le lanceur électrifie son corps avant de charger. Le choc blesse aussi beaucoup le lanceur et peut paralyser l’ennemi.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

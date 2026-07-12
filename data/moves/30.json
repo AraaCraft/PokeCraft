@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack using a horn to jab.",
+    "description_fr": "Frappe l’ennemi d’un coup de corne pointue pour infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

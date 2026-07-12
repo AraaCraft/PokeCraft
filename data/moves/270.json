@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Boosts the power of the recipient’s moves.",
+    "description_fr": "Une capacité qui augmente la puissance d’attaque de l’allié pendant un tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

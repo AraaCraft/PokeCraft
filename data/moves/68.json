@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Returns a physical blow double.",
+    "description_fr": "Une riposte qui répond à toute attaque physique en infligeant le double de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

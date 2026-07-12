@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user slams a barrage of hard- shelled seeds down on the foe from above.",
+    "description_fr": "Le lanceur fait pleuvoir un déluge de graines solides sur l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

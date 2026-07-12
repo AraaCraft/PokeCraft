@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "A sleeper loses 1/4 HP every turn.",
+    "description_fr": "Un cauchemar qui inflige des dégâts à chaque tour à un ennemi endormi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

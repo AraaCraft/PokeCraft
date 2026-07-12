@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A high-speed spinning attack.",
+    "description_fr": "Une attaque tournoyante pouvant aussi annuler par ex. Étreinte, Ligotage, Vampigraine ou Picots.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

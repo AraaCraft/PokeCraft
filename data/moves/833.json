@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user rampages and spews vicious flames to inflict damage on the target, then becomes fixated on using this move.",
+    "description_fr": "Le lanceur attaque en déchaînant de violentes flammes, et devient obsédé par la capacité.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

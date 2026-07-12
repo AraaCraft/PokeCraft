@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "This is a Flying-type attack Dynamax Pokémon use. This raises ally Pokémon’s Speed stats.",
+    "description_fr": "Une attaque de type Vol que seuls les Pokémon Dynamax peuvent utiliser. Augmente la Vitesse des alliés.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

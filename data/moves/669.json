@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "In this two-turn attack, the user gathers light and fills a blade with the light’s energy, attacking the target on the next turn.",
+    "description_fr": "Le lanceur absorbe la lumière au premier tour et attaque au second tour en libérant cette énergie sous forme de lames.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

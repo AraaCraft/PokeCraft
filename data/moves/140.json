@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "Throws orbs to hit 2-5 times.",
+    "description_fr": "Projette de deux à cinq grosses boules sur l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

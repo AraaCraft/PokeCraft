@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Makes the foe re­ peat 2-6 times.",
+    "description_fr": "Oblige l’ennemi à répéter la dernière capacité utilisée durant 3 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

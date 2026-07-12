@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user shrouds itself in water and slams into the target with its whole body to inflict damage. This also damages the user and raises the user’s action speed.",
+    "description_fr": "Le lanceur se recouvre entièrement d'eau avant de charger sa cible. Blesse aussi le lanceur, mais avance sa position dans l'ordre d'action.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

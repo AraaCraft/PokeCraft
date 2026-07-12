@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "While resisting, the user attacks the opposing Pokémon. The targets’ Sp. Atk stat is reduced.",
+    "description_fr": "Le lanceur se débat de toutes ses forces, et baisse l’Attaque Spéciale de l’ennemi.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

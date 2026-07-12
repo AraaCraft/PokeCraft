@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "special",
     "description_en": "The fewer PP this move has, the greater its power.",
+    "description_fr": "Moins cette capacité possède de PP, plus elle est puissante.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

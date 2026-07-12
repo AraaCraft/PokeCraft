@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user salt cures the target, inflicting damage every turn. Steel and Water types are more strongly affected by this move.",
+    "description_fr": "Le lanceur couvre la cible de sel, ce qui lui inflige des dégâts à chaque tour. Si la cible est de type Acier ou Eau, ces dégâts sont plus élevés.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

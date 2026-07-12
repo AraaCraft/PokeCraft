@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack that may lower SPCL.DEF.",
+    "description_fr": "Le lanceur mord l’ennemi de ses crocs pointus. Peut aussi baisser sa Défense.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

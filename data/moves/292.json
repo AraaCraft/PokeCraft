@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Straight-arm punches that strike the foe 2 to 5 times.",
+    "description_fr": "Un déluge de coups adressés avec la paume qui frappe de 2 à 5 fois d’affilée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

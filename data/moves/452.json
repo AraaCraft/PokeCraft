@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user slams its rugged body into the foe to attack. The user also sustains serious damage.",
+    "description_fr": "Le lanceur heurte l’ennemi de son corps robuste. Inflige de sérieux dégâts au lanceur aussi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

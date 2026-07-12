@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks with its tremendous psychic power. This also removes 3 PP from the target’s last move.",
+    "description_fr": "Le lanceur attaque avec de puissants pouvoirs psychiques et retire 3 PP de la dernière capacité de l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

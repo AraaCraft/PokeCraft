@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "The user violently whirls its vines or tentacles to harshly lash the foe. ",
+    "description_fr": "Le lanceur fait virevolter violemment ses lianes ou ses tentacules pour fouetter l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

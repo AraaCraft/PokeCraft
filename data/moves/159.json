@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "A move that raises the user's ATTACK.",
+    "description_fr": "Le lanceur réduit son nombre de polygones pour accentuer ses angles et augmenter son Attaque.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

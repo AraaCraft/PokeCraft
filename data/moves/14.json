@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "A dance that in­ creases ATTACK.",
+    "description_fr": "Danse frénétique qui exalte l’esprit combatif. Augmente beaucoup l’Attaque du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

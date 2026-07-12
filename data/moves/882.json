@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user tidies up and removes the effects of Spikes, Stealth Rock, Sticky Web, Toxic Spikes, and Substitute. This also boosts the user’s Attack and Speed stats.",
+    "description_fr": "Le lanceur fait le ménage sur le terrain, ce qui annule les effets de Picots, Piège de Roc, Toile Gluante, Pics Toxik, et Clonage. Augmente l'Attaque et la Vitesse du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

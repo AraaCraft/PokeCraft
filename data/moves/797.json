@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks the target with its psychic power. This move’s power goes up and damages all opposing Pokémon on Psychic Terrain.",
+    "description_fr": "Le lanceur attaque la cible avec ses pouvoirs psychiques. Si un Champ Psychique est actif, la puissance de cette capacité augmente et elle touche tous les ennemis.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

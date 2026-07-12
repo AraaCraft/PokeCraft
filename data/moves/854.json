@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks to avenge its allies. The more defeated allies there are in the user's party, the greater the move's power.",
+    "description_fr": "Le lanceur attaque pour venger ses alliés. Plus le nombre de Pokémon alliés mis K.O. est élevé, plus la puissance de cette capacité augmente.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

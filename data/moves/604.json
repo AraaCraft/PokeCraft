@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user electrifies the ground under everyone’s feet for five turns. Pokémon on the ground no longer fall asleep.",
+    "description_fr": "Pendant cinq tours, le terrain aux pieds du lanceur se charge d’électricité. Les Pokémon au sol ne peuvent pas s’endormir.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

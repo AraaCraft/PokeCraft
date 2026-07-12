@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "special",
     "description_en": "The user launches its amassed chlorophyll to inflict damage on the target. This also damages the user and lowers the user's action speed.",
+    "description_fr": "Le lanceur tire un concentré de chlorophylle sur l'ennemi. Blesse aussi le lanceur, et recule sa position dans l'ordre d'action.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

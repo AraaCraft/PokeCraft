@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user employs its psychic power to switch its Attack with its Defense stat.",
+    "description_fr": "Le lanceur utilise ses pouvoirs psychiques pour échanger sa stat Défense et sa stat Attaque.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

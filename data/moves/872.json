@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user toys with the target and attacks it using light and fluid dance steps. This also boosts the user's Speed stat.",
+    "description_fr": "Le lanceur se joue de la cible et lui inflige des dégâts avec ses pas de danse gracieux et légers. Cette capacité augmente la Vitesse du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

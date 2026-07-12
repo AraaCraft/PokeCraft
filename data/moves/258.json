@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Summons a hailstorm that strikes every turn.",
+    "description_fr": "Invoque une tempête de grêle qui dure 5 tours. Ne blesse pas les Pokémon de type Glace.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

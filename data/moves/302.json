@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Attacks with thorny arms. May cause flinching.",
+    "description_fr": "Le lanceur attaque en fouettant l’ennemi de ses bras épineux. Peut aussi l’apeurer.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

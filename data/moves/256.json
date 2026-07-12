@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Absorbs stockpiled power and restores HP.",
+    "description_fr": "Le lanceur absorbe la puissance accumulée avec Stockage pour restaurer ses PV.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

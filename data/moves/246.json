@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack that may raise all stats.",
+    "description_fr": "Une attaque préhistorique qui peut augmenter toutes les stats du lanceur d’un seul coup.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

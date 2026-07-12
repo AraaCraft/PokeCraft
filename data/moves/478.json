@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user creates a bizarre area in which Pokémon’s held items lose their effects for five turns.",
+    "description_fr": "Le lanceur crée une zone étrange. Pendant 5 tours, les objets tenus par tous les Pokémon n’ont plus aucun effet.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Tricks the foe into trading held items.",
+    "description_fr": "Le lanceur prend la cible au dépourvu et l’oblige à échanger son objet contre le sien.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

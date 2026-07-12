@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "1st turn: Burrow 2nd turn: Attack",
+    "description_fr": "Le lanceur creuse au 1er tour et frappe au 2è. Permet aussi de s’échapper d’un donjon.",
     "effect_chance": null,
     "effect_changes": [
         {

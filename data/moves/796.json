@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "special",
     "description_en": "The user fires a beam of steel that it collected from its entire body. This also damages the user.",
+    "description_fr": "Le lanceur concentre du métal issu de tout son corps en un rayon qu’il projette violemment sur sa cible. Il subit aussi des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

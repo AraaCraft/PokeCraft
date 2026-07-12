@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user retaliates with much greater force against the opponent that last inflicted damage on it.",
+    "description_fr": "Le lanceur contre-attaque avec un coup infligeant des dégâts supérieurs à ceux de la dernière capacité qui l'a blessé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

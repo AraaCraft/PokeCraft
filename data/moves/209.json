@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack that may cause paralysis.",
+    "description_fr": "Lance une charge électrique sur l’ennemi. Peut aussi le paralyser.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

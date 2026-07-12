@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack that may inflict a burn.",
+    "description_fr": "L’ennemi est attaqué par de faibles flammes. Peut aussi le brûler.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

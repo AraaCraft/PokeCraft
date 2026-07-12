@@ -2,6 +2,7 @@
     "accuracy": 70,
     "damage_class": "special",
     "description_en": "An attack that may poison the foe.",
+    "description_fr": "Le lanceur attaque à l’aide d’une éruption de gaz répugnants. Peut aussi empoisonner l’ennemi.",
     "effect_chance": 40,
     "effect_changes": [],
     "effect_entries": null,

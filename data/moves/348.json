@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Slashes with a sharp leaf. High critical-hit ratio.",
+    "description_fr": "Une feuille coupante comme une lame entaille l’ennemi. Taux de critiques élevé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

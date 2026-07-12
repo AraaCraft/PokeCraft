@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user, having mastered the Water style, strikes the target with a flowing motion three times in a row. This attack always results in a critical hit.",
+    "description_fr": "Le lanceur assène trois coups fluides à l’ennemi. Cette technique qui inflige toujours un coup critique est réservée à ceux qui maîtrisent la puissance de l’Eau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

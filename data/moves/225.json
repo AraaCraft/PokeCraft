@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "A strong breath attack.",
+    "description_fr": "Le lanceur souffle fort sur l’ennemi pour infliger des dégâts. Peut aussi le paralyser.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

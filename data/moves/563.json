@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Tilling the soil, the user makes it easier for plants to grow. This raises the Attack and Sp. Atk stats of Grass-type Pokémon.",
+    "description_fr": "Laboure le sol et le rend plus fertile. Augmente l’Attaque et l’Attaque Spéciale des Pokémon de type Plante.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

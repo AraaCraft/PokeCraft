@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user turns the target’s power against it. The higher the target’s Attack stat, the greater the damage.",
+    "description_fr": "Le lanceur utilise la force de l’ennemi. Plus l’Attaque de l’ennemi est élevée, plus le lanceur inflige de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "A column of grass hits opposing Pokémon. When used with its water equivalent, its damage increases into a vast swamp.",
+    "description_fr": "Une masse végétale s’abat sur l’ennemi. En l’utilisant avec Aire d’Eau, l’effet augmente et un marécage apparaît.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

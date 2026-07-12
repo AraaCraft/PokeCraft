@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A powerful first- strike move.",
+    "description_fr": "Le lanceur charge à une vitesse renversante. Cette attaque a toujours l’initiative.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "An uppercut thrown as if leaping into the sky.",
+    "description_fr": "Le lanceur attaque avec un uppercut. Il envoie son poing vers le ciel de toutes ses forces.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

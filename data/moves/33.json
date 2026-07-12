@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A full-body charge attack.",
+    "description_fr": "Le lanceur charge l’ennemi et le percute de tout son corps.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

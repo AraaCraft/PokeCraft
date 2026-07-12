@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The foe is attacked with a shock wave. It may also leave the target paralyzed. ",
+    "description_fr": "Une onde de choc frappe l’ennemi. Peut aussi paralyser la cible.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

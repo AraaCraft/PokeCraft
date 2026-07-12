@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "A powerful punch thrown very hard.",
+    "description_fr": "L’ennemi reçoit un coup de poing d’une puissance incroyable.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

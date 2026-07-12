@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "This move enables the user to protect itself from all attacks. Its chance of failing rises if it is used in succession. Direct contact harshly lowers the attacker’s Defense stat.",
+    "description_fr": "Le lanceur se protège de toutes les attaques. Peut échouer si utilisée plusieurs fois de suite. Baisse beaucoup la Défense de l’assaillant s’il utilise une attaque directe.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "special",
     "description_en": "The more Pikachu loves its Trainer, the greater the move’s power. It never misses.",
+    "description_fr": "Une attaque électrique dont la puissance est proportionnelle à l’amour que Pikachu vous porte. Touche à coup sûr.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

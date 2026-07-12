@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "The user soars up with its Z-Power and plummets toward the target at full speed. The power varies, depending on the original move.",
+    "description_fr": "Le Pokémon utilise la Force Z pour s’envoler très haut dans le ciel avant de plonger sur l’adversaire. La puissance varie selon celle de la capacité originale.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

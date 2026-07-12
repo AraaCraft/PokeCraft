@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack that may lower SPCL.DEF.",
+    "description_fr": "Projette une grande ombre sur l’ennemi. Peut aussi faire baisser sa Défense Spéciale.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

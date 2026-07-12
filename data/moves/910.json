@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user wields the light that has accumulated atop its head to cleave the target. This move hits even if the target protects itself.",
+    "description_fr": "Le lanceur pourfend la cible avec la lumière accumulée sur sa tête. Cette attaque passe outre les protections.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

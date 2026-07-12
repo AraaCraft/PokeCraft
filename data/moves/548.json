@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user cuts with its long horn. The odd power contained in the horn does physical damage to the target.",
+    "description_fr": "L’ennemi est lacéré par une longue lame. Le pouvoir mystérieux de la lame inflige des dégâts physiques.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

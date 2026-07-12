@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "The user slams the target with its wings. The target is hit twice in a row.",
+    "description_fr": "Le lanceur frappe l’ennemi avec ses ailes deux fois d’affilée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

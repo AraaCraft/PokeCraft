@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user coils up and concentrates. This raises its Attack and Defense stats as well as its accuracy.",
+    "description_fr": "Le lanceur s’enroule sur lui-même et se concentre. Son Attaque, sa Défense et sa Précision augmentent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

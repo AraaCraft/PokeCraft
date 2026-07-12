@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A powerful loyalty attack. The user flinches if hit.",
+    "description_fr": "Le lanceur se concentre avant d’attaquer. Échoue s’il est touché avant d’avoir frappé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

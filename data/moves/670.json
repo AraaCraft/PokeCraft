@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks by pelting the target with leaves.",
+    "description_fr": "Le lanceur attaque l’ennemi avec des feuilles.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

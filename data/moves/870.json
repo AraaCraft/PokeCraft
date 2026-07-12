@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "The user throws a rigged bouquet of flowers at the target. This attack never misses and always lands a critical hit.",
+    "description_fr": "Le lanceur attaque en jetant un bouquet de fleurs piégé sur la cible. N'échoue jamais et inflige toujours un coup critique.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

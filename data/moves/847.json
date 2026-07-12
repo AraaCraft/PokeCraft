@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "special",
     "description_en": "The user summons a thunderous tempest and savagely attacks with lightning and wind. This may also leave the target with paralysis.",
+    "description_fr": "Le lanceur déclenche un violent typhon orageux dont les rafales et la foudre frappent l'ennemi. Peut aussi paralyser la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

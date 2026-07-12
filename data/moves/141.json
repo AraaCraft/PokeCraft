@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Steals 1/2 of the damage inflicted.",
+    "description_fr": "Une attaque qui aspire le sang de l’ennemi. La moitié des dégâts sont convertis en PV pour le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

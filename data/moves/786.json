@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks opposing Pokémon by twanging a guitar or bass guitar, causing a huge echo and strong vibration.",
+    "description_fr": "Le lanceur gratte ses cordes de guitare ou de basse pour créer de violentes vibrations sonores qui blessent la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user brings down a giant flame. This attack does greater damage when influenced by an enormous thunderbolt.",
+    "description_fr": "Projette une boule de feu gigantesque. L’effet augmente sous l’influence d’Éclair Croix.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

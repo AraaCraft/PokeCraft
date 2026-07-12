@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "special",
     "description_en": "After obtaining Z-Power, the user, Alolan Raichu, attacks the target with full force. This move leaves the target with paralysis.",
+    "description_fr": "Le Raichu de la région d’Alola utilise la Force Z pour frapper la cible et la paralyser.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

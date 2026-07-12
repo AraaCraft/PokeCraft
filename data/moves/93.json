@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "A psychic attack that may cause confusion.",
+    "description_fr": "Une faible vague télékinésique frappe l’ennemi. Peut aussi le plonger dans la confusion.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

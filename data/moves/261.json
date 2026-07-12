@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "status",
     "description_en": "Inflicts a burn on the foe with intense fire.",
+    "description_fr": "Lance une sinistre flamme violette à l’ennemi pour lui infliger une brûlure.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

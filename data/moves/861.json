@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user covers its feet in thin ice and twirls around, slamming into the target. This move's spinning motion also destroys the terrain.",
+    "description_fr": "Le lanceur enveloppe ses jambes d'une fine couche de glace et heurte la cible en tournant sur lui-même. Ses rotations détruisent le champ actif sur le terrain.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

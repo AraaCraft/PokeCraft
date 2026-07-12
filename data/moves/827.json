@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user lashes out at the target with ruinous claws, aiming to land a critical hit. This may also leave the target poisoned, paralyzed, or drowsy.",
+    "description_fr": "Le lanceur attaque avec des griffes destructrices en visant les points faibles. La cible peut aussi être empoisonnée, paralysée, ou prise de somnolence.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

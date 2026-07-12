@@ -2,6 +2,7 @@
     "accuracy": 75,
     "damage_class": "status",
     "description_en": "May cause the foe to fall asleep.",
+    "description_fr": "Le lanceur fait un bisou à l’ennemi en prenant une mine effrayante. Endort l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

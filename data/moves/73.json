@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "status",
     "description_en": "Steals HP from the foe on every turn.",
+    "description_fr": "Une graine est semée sur l’ennemi. À chaque tour, elle lui dérobe des PV que le lanceur récupère.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

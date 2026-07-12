@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks the target’s legs swiftly, reducing the target’s Speed stat.",
+    "description_fr": "Un coup rapide qui vise les pieds de l’ennemi et diminue sa Vitesse.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

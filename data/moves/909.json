@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "This move enables the user to attack first with a jolt of electricity. This move fails if the target is not readying an attack.",
+    "description_fr": "Permet au lanceur d'attaquer la cible en priorité avec une décharge électrique. Échoue si la cible ne prépare pas une attaque.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

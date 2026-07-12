@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "This is a Rock-type attack Dynamax Pokémon use. The user summons a sandstorm lasting five turns.",
+    "description_fr": "Une attaque de type Roche que seuls les Pokémon Dynamax peuvent utiliser. Invoque une tempête de sable qui dure cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

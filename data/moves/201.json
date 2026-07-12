@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Inflicts damage every turn.",
+    "description_fr": "Une tempête de sable de 5 tours qui blesse tous les Pokémon sauf les types Roche, Sol et Acier.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

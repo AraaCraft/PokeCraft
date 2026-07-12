@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user stirs up a violent petal blizzard and attacks everything around it.",
+    "description_fr": "Déclenche une violente tempête de fleurs qui inflige des dégâts à tous les Pokémon alentour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

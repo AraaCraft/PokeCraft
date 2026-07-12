@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user bestows a loving blessing, reviving a party Pokémon that has fainted and restoring half that Pokémon's max HP.",
+    "description_fr": "Dans un élan de compassion, le lanceur adresse une prière afin de ranimer un Pokémon de l'équipe K.O. en lui rendant la moitié de ses PV.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Blinds the foe to reduce accuracy.",
+    "description_fr": "Explosion lumineuse qui fait baisser la Précision de l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The type of attack varies depending on the location.",
+    "description_fr": "Une attaque qui tire sa force de la nature. Son type varie selon le terrain.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

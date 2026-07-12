@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Prevents fleeing or switching.",
+    "description_fr": "Le lanceur enserre l’ennemi à l’aide d’une fine soie gluante pour l’empêcher de fuir le combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

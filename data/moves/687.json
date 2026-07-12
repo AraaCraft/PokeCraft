@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "If the Pokémon the user has inflicted damage on have already used their moves, this move eliminates the effect of the target’s Ability.",
+    "description_fr": "La cible subit des dégâts et, si elle a déjà agi à ce tour, elle perd aussi son talent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

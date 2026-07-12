@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user charges its head into its target, using its powerful guard hair. It also damages the user a little.",
+    "description_fr": "Le lanceur donne un coup avec sa tête couronnée d’une fière crinière. Blesse aussi légèrement le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

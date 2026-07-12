@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Converting its life-force into power, the user attacks opposing Pokémon. The lower the user’s HP, the lower the move’s power.",
+    "description_fr": "Le lanceur utilise son énergie vitale pour attaquer l’ennemi. Moins il a de PV, moins l’attaque est puissante.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

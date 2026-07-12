@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user materializes an odd psychic wave to attack the target. This attack does physical damage.",
+    "description_fr": "Le lanceur matérialise des ondes mystérieuses qu’il projette sur l’ennemi. Inflige des dégâts physiques.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

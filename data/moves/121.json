@@ -2,6 +2,7 @@
     "accuracy": 75,
     "damage_class": "physical",
     "description_en": "Eggs are hurled at the foe.",
+    "description_fr": "De toutes ses forces, le lanceur jette un gros œuf sur l’ennemi pour lui infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

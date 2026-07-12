@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user performs a dance to usher in victory. This raises the user’s offensive and defensive stats and increases the damage dealt by the user’s moves by 50 percent.",
+    "description_fr": "Le lanceur danse pour invoquer la victoire. Augmente la puissance offensive et la puissance défensive du lanceur et multiplie par 1,5 les dégâts des capacités.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

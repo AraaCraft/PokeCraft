@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "physical",
     "description_en": "Quickly scratches 2-5 times.",
+    "description_fr": "L’ennemi est lacéré par des faux ou des griffes de 2 à 5 fois.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user delivers an axe kick, then fires three arrows. This raises the chance of its future attacks landing critical hits and also lowers the target's defensive stats.",
+    "description_fr": "Le lanceur frappe du talon et tire trois flèches simultanément. Augmente son taux de critiques. Baisse la puissance défensive de l'ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

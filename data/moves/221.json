@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "physical",
     "description_en": "An attack that may inflict a burn.",
+    "description_fr": "Un feu mystique d’une intensité redoutable attaque l’ennemi. Peut aussi le brûler.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

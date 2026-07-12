@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks the target by showering it with water that's so cold it saps the target's power. This also lowers the target's Attack stat.",
+    "description_fr": "Le lanceur attaque la cible en l'arrosant d'une eau si froide qu'elle détériore son esprit combatif. Baisse l'Attaque de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

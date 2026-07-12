@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user retaliates against the foe that last inflicted damage on it with much greater power.",
+    "description_fr": "Le lanceur attaque le dernier ennemi l’ayant blessé durant le même tour en frappant plus fort.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

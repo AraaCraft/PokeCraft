@@ -27,15 +27,19 @@ const allMovesFiles = import.meta.glob('../../../data/moves/*.json', { eager: tr
 const movesNameMap = {};
 Object.values(allMovesFiles).forEach((file: any) => {
   const moveData = file.default;
-  movesNameMap[moveData.id] = moveData.name_en || moveData.name;
+  movesNameMap[moveData.id] = {
+    en: moveData.name_en || moveData.name,
+    fr: moveData.name_fr || moveData.name
+  };
 });
 
 import naturesData from '../../public/data/natures.json';
 import itemsData from '../../public/data/items.json';
+import abilitiesData from '../../public/data/abilities.json';
 ---
 
 <Layout title="My Team | Pokédex">
-  <div class="team-page" id="team-page-container" data-moves={encodeURIComponent(JSON.stringify(movesNameMap))} data-natures={encodeURIComponent(JSON.stringify(naturesData))} data-items={encodeURIComponent(JSON.stringify(itemsData))}>
+  <div class="team-page" id="team-page-container" data-moves={encodeURIComponent(JSON.stringify(movesNameMap))} data-natures={encodeURIComponent(JSON.stringify(naturesData))} data-items={encodeURIComponent(JSON.stringify(itemsData))} data-abilities={encodeURIComponent(JSON.stringify(abilitiesData))}>
     <header class="page-header">
       <h1>My Pokémon Team</h1>
       <p>Create and manage your dream teams! (Maximum 6 Pokémon per team)</p>
@@ -62,7 +66,7 @@ import itemsData from '../../public/data/items.json';
       </main>
 
       <div class="stats-toggle-container hidden" id="stats-toggle-container">
-        <button id="toggle-stats-btn" class="toggle-stats-btn glass-panel">
+        <button id="toggle-stats-btn" class="toggle-stats-btn glass-panel" data-i18n="show_stats">
           Show statistics ▼
         </button>
       </div>
@@ -78,7 +82,7 @@ import itemsData from '../../public/data/items.json';
     </div>
 
     <div class="team-pokedex-section">
-      <h2 class="section-title">Add Pokémon</h2>
+      <h2 class="section-title" data-i18n="add_pokemon">Add Pokémon</h2>
       
       <div class="pokedex-filters">
         <div class="type-filter-buttons" id="pokedex-type-filter">
@@ -123,29 +127,29 @@ import itemsData from '../../public/data/items.json';
           <input type="hidden" id="config-pokemon-form" />
 
           <div class="config-section">
-            <h3>Nature</h3>
+            <h3 data-i18n="nature">Nature</h3>
             <select id="config-nature" class="config-select has-tooltip" data-tooltip="">
               <!-- Populated by JS -->
             </select>
           </div>
 
           <div class="config-section">
-            <h3>Ability</h3>
+            <h3 data-i18n="abilities">Ability</h3>
             <select id="config-ability" class="config-select">
               <!-- Populated by JS -->
             </select>
           </div>
 
           <div class="config-section">
-            <h3>Held Item</h3>
+            <h3 data-i18n="held_item">Held Item</h3>
             <select id="config-item" class="config-select has-tooltip" data-tooltip="">
-              <option value="">-- No Item --</option>
+              <option value="" data-i18n="no_item">-- No Item --</option>
               <!-- Populated by JS -->
             </select>
           </div>
 
           <div class="config-section">
-            <h3>Moves (Max 4)</h3>
+            <h3 data-i18n="moves">Moves (Max 4)</h3>
             <div class="moves-grid">
               <select id="config-move-1" class="config-select"><option value="">-- Select Move 1 --</option></select>
               <select id="config-move-2" class="config-select"><option value="">-- Select Move 2 --</option></select>
@@ -186,7 +190,7 @@ import itemsData from '../../public/data/items.json';
           </div>
         </div>
         <div class="modal-footer">
-          <button id="save-config-btn" class="save-btn glass-panel">Save Configuration</button>
+          <button id="save-config-btn" class="save-btn glass-panel" data-i18n="save">Save Configuration</button>
         </div>
       </div>
     </div>
@@ -213,6 +217,7 @@ import itemsData from '../../public/data/items.json';
 
   <script>
     import { getAllTeams, getActiveTeam, setActiveTeam, createTeam, deleteTeam, removeFromTeam, renameActiveTeam, updatePokemonConfig, getActiveTeamId } from '../scripts/teamStore.js';
+    import { getLang, translateDOM, t } from '../scripts/langStore.js';
     import html2canvas from 'html2canvas';
     import { jsPDF } from 'jspdf';
 
@@ -236,7 +241,14 @@ import itemsData from '../../public/data/items.json';
     const globalMovesNameMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.moves || '{}'));
     const globalNaturesMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.natures || '{}'));
     const globalItemsMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.items || '{}'));
+    const globalAbilitiesMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.abilities || '{}'));
     const sortedItems = Object.values(globalItemsMap).sort((a: any, b: any) => a.name_en.localeCompare(b.name_en));
+
+    // Handle translations
+    window.addEventListener('lang-changed', () => {
+      translateDOM();
+      renderUI();
+    });
 
     function renderTeamList() {
       const teams = getAllTeams();
@@ -315,7 +327,9 @@ import itemsData from '../../public/data/items.json';
 
       teamGrid.innerHTML = team.map(pokemon => {
         const primaryType = pokemon.types[0] || 'normal';
-        let displayName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+        const currentLang = getLang();
+        const baseName = currentLang === 'fr' ? (pokemon.name_fr || pokemon.name) : (pokemon.name_en || pokemon.name);
+        let displayName = baseName.charAt(0).toUpperCase() + baseName.slice(1);
         if (pokemon.form !== pokemon.name) {
           displayName += ' (' + pokemon.form.replace(`${pokemon.name}-`, '').replace('-', ' ').toUpperCase() + ')';
         }
@@ -345,7 +359,9 @@ import itemsData from '../../public/data/items.json';
       if (teamStatsGrid) {
         teamStatsGrid.innerHTML = team.map(pokemon => {
           const primaryType = pokemon.types[0] || 'normal';
-          let displayName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+          const currentLang = getLang();
+          const baseName = currentLang === 'fr' ? (pokemon.name_fr || pokemon.name) : (pokemon.name_en || pokemon.name);
+          let displayName = baseName.charAt(0).toUpperCase() + baseName.slice(1);
           if (pokemon.form !== pokemon.name) {
             displayName += ' (' + pokemon.form.replace(`${pokemon.name}-`, '').replace('-', ' ').toUpperCase() + ')';
           }
@@ -385,19 +401,32 @@ import itemsData from '../../public/data/items.json';
 
           let natureStr = '';
           if (natureData) {
+            const natureName = currentLang === 'fr' ? (natureData.name_fr || natureData.name_en) : natureData.name_en;
             if (natureData.id !== '25' && natureData.increased_stat && natureData.decreased_stat) {
                const incName = natureData.increased_stat.replace('-', ' ');
                const decName = natureData.decreased_stat.replace('-', ' ');
                const incFmt = incName.charAt(0).toUpperCase() + incName.slice(1);
                const decFmt = decName.charAt(0).toUpperCase() + decName.slice(1);
-               natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureData.name_en} (<span style="color:#38d9a9;">+ ${incFmt}</span> / <span style="color:#ff8787;">- ${decFmt}</span>)</div>`;
+               natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureName} (<span style="color:#38d9a9;">+ ${incFmt}</span> / <span style="color:#ff8787;">- ${decFmt}</span>)</div>`;
             } else {
-               natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureData.name_en}</div>`;
+               natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureName}</div>`;
             }
           }
-          const abilityStr = pokemon.ability ? `<div class="config-badge ability-badge">${pokemon.ability.charAt(0).toUpperCase() + pokemon.ability.slice(1)}</div>` : '';
+          
+          let abilityName = pokemon.ability;
+          if (pokemon.ability && globalAbilitiesMap[pokemon.ability]) {
+            const abData = globalAbilitiesMap[pokemon.ability];
+            abilityName = currentLang === 'fr' ? (abData.name_fr || abData.name_en) : abData.name_en;
+          } else if (pokemon.ability) {
+            abilityName = pokemon.ability.charAt(0).toUpperCase() + pokemon.ability.slice(1);
+          }
+          const abilityStr = abilityName ? `<div class="config-badge ability-badge">${abilityName}</div>` : '';
+          
           const movesHtml = pokemon.moves ? pokemon.moves.filter(m => m).map(m => {
-            const mName = globalMovesNameMap[String(m)] || String(m);
+            let mName = String(m);
+            if (globalMovesNameMap[m]) {
+              mName = currentLang === 'fr' ? globalMovesNameMap[m].fr : globalMovesNameMap[m].en;
+            }
             return `<div class="config-badge move-badge">${mName.charAt(0).toUpperCase() + mName.slice(1)}</div>`;
           }).join('') : '';
           
@@ -419,9 +448,11 @@ import itemsData from '../../public/data/items.json';
           let itemHtml = '';
           if (pokemon.item && globalItemsMap[pokemon.item]) {
             const itmData = globalItemsMap[pokemon.item];
-            itemHtml = `<div class="config-badge item-badge has-tooltip" data-tooltip="${itmData.effect_en ? itmData.effect_en.replace(/"/g, '&quot;') : itmData.name_en}" style="display:inline-flex; align-items:center; gap:0.25rem; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1);">
-              <img src="${itmData.sprite}" alt="${itmData.name_en}" style="width:20px; height:20px; image-rendering: pixelated; margin:-4px 0;" />
-              <span>${itmData.name_en}</span>
+            const iName = currentLang === 'fr' ? (itmData.name_fr || itmData.name_en) : itmData.name_en;
+            const iEffect = currentLang === 'fr' ? (itmData.effect_fr || itmData.effect_en) : itmData.effect_en;
+            itemHtml = `<div class="config-badge item-badge has-tooltip" data-tooltip="${iEffect ? iEffect.replace(/"/g, '&quot;') : iName}" style="display:inline-flex; align-items:center; gap:0.25rem; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1);">
+              <img src="${itmData.sprite}" alt="${iName}" style="width:20px; height:20px; image-rendering: pixelated; margin:-4px 0;" />
+              <span>${iName}</span>
             </div>`;
           }
 
@@ -480,10 +511,10 @@ import itemsData from '../../public/data/items.json';
       toggleStatsBtn.addEventListener('click', () => {
         teamStatsGrid.classList.toggle('hidden-collapsible');
         if (teamStatsGrid.classList.contains('hidden-collapsible')) {
-          toggleStatsBtn.innerHTML = 'Show statistics ▼';
+          toggleStatsBtn.innerHTML = t('show_stats') + ' ▼';
           teamStatsGrid.style.overflow = 'hidden';
         } else {
-          toggleStatsBtn.innerHTML = 'Hide statistics ▲';
+          toggleStatsBtn.innerHTML = t('show_stats').replace('Show', 'Hide').replace('Afficher', 'Masquer') + ' ▲';
           setTimeout(() => {
             if (!teamStatsGrid.classList.contains('hidden-collapsible')) {
               teamStatsGrid.style.overflow = 'visible';
@@ -617,8 +648,9 @@ import itemsData from '../../public/data/items.json';
       (document.getElementById('config-pokemon-id') as HTMLInputElement).value = id.toString();
       (document.getElementById('config-pokemon-form') as HTMLInputElement).value = form;
       
-      document.getElementById('config-ability')!.innerHTML = '<option value="">-- Select Ability --</option>';
-      document.getElementById('config-item')!.innerHTML = '<option value="">-- No Item --</option>';
+      const currentLang = getLang();
+      document.getElementById('config-ability')!.innerHTML = `<option value="">-- Select Ability --</option>`;
+      document.getElementById('config-item')!.innerHTML = `<option value="" data-i18n="no_item">${t('no_item')}</option>`;
       for (let i = 1; i <= 4; i++) {
         document.getElementById(`config-move-${i}`)!.innerHTML = `<option value="">-- Select Move ${i} --</option>`;
       }
@@ -635,7 +667,12 @@ import itemsData from '../../public/data/items.json';
           data.abilities.forEach((ab: any) => {
             const opt = document.createElement('option');
             opt.value = ab.ability.name;
-            opt.textContent = ab.ability.name.charAt(0).toUpperCase() + ab.ability.name.slice(1);
+            const abData = globalAbilitiesMap[ab.ability.name];
+            let abName = ab.ability.name;
+            if (abData) {
+               abName = currentLang === 'fr' ? (abData.name_fr || abData.name_en) : abData.name_en;
+            }
+            opt.textContent = abName.charAt(0).toUpperCase() + abName.slice(1);
             abilitySelect.appendChild(opt);
           });
         }
@@ -647,7 +684,10 @@ import itemsData from '../../public/data/items.json';
         for (let i = 1; i <= 4; i++) {
           const moveSelect = document.getElementById(`config-move-${i}`) as HTMLSelectElement;
           uniqueMoveIds.forEach(mId => {
-            const mName = movesNameMap[String(mId)] || String(mId);
+            let mName = String(mId);
+            if (movesNameMap[mId]) {
+               mName = currentLang === 'fr' ? movesNameMap[mId].fr : movesNameMap[mId].en;
+            }
             const opt = document.createElement('option');
             opt.value = String(mId);
             opt.textContent = mName.charAt(0).toUpperCase() + mName.slice(1);
@@ -663,7 +703,8 @@ import itemsData from '../../public/data/items.json';
         Object.values(globalNaturesMap).forEach((nat: any) => {
           const opt = document.createElement('option');
           opt.value = String(nat.id);
-          opt.textContent = `${nat.name_en} (+ ${nat.increased_stat ? nat.increased_stat.charAt(0).toUpperCase() + nat.increased_stat.slice(1) : 'None'} / - ${nat.decreased_stat ? nat.decreased_stat.charAt(0).toUpperCase() + nat.decreased_stat.slice(1) : 'None'})`;
+          const natureName = currentLang === 'fr' ? (nat.name_fr || nat.name_en) : nat.name_en;
+          opt.textContent = `${natureName} (+ ${nat.increased_stat ? nat.increased_stat.charAt(0).toUpperCase() + nat.increased_stat.slice(1) : 'None'} / - ${nat.decreased_stat ? nat.decreased_stat.charAt(0).toUpperCase() + nat.decreased_stat.slice(1) : 'None'})`;
           opt.dataset.increased = nat.increased_stat || '';
           opt.dataset.decreased = nat.decreased_stat || '';
           natureSelect.appendChild(opt);
@@ -673,8 +714,8 @@ import itemsData from '../../public/data/items.json';
         sortedItems.forEach((itm: any) => {
           const opt = document.createElement('option');
           opt.value = itm.id;
-          opt.textContent = itm.name_en;
-          opt.dataset.desc = itm.effect_en || '';
+          opt.textContent = currentLang === 'fr' ? (itm.name_fr || itm.name_en) : itm.name_en;
+          opt.dataset.desc = currentLang === 'fr' ? (itm.effect_fr || itm.effect_en || '') : (itm.effect_en || '');
           itemSelect.appendChild(opt);
         });
 
@@ -1467,10 +1508,10 @@ import itemsData from '../../public/data/items.json';
     max-height: 2000px;
     position: relative;
     z-index: 10; /* arbitrary large value for transition */
-    overflow: hidden;
   }
 
   .team-stats-grid.hidden-collapsible {
+    overflow: hidden;
     opacity: 0;
     max-height: 0;
     padding-top: 0;

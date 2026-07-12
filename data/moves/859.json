@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user spins furiously by straining its legs, inflicting damage on the target. This also harshly lowers the user's Speed stat.",
+    "description_fr": "Le lanceur met tout son poids sur ses pattes et effectue de violentes rotations, ce qui inflige des dégâts à la cible, mais baisse beaucoup la Vitesse du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

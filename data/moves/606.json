@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The Pokémon congratulates you on your special day!",
+    "description_fr": "Le Pokémon vous souhaite plein de bonnes choses pour cet événement spécial.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

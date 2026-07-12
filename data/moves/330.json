@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "special",
     "description_en": "Attacks with muddy water. May lower accuracy.",
+    "description_fr": "Le lanceur attaque en projetant de l’eau boueuse. Peut aussi réduire la Précision de l’ennemi.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

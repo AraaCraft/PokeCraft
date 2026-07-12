@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user inflicts damage by dropping an apple from high above. This also lowers the target’s Defense stat.",
+    "description_fr": "Le lanceur attaque son adversaire avec une pomme qu’il fait tomber de très haut. Baisse la Défense de la cible.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

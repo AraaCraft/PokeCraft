@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user smashes into the target in a full-body tackle. This also lowers the user’s defensive stats.",
+    "description_fr": "Le lanceur charge l'ennemi de toutes ses forces. Baisse la puissance défensive du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

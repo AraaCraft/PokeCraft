@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "The user raises all its stats by using some of its HP.",
+    "description_fr": "Le lanceur sacrifie une partie de ses PV pour augmenter toutes ses stats.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

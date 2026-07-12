@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack with effects that vary by location.",
+    "description_fr": "Les effets de cette attaque varient en fonction de l’environnement.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

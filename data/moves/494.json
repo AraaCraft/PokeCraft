@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "The user dances with an odd rhythm that compels the target to mimic it, making the target’s Ability the same as the user’s.",
+    "description_fr": "Le lanceur danse sur un rythme étrange. Il force sa cible à l’imiter, ce qui lui fait adopter sa capacité spéciale.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

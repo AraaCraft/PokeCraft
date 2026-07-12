@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user turns the ground under everyone’s feet to grass for five turns. This restores the HP of Pokémon on the ground a little every turn.",
+    "description_fr": "Pendant cinq tours, le terrain aux pieds du lanceur se transforme en gazon. Les Pokémon au sol récupèrent des PV à chaque tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

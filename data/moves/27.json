@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "A fast, spinning kick.",
+    "description_fr": "Le lanceur effectue un coup de pied tournoyant et extrêmement rapide. Peut apeurer l’ennemi.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

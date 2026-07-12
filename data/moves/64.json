@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Jabs the foe with a beak, etc.",
+    "description_fr": "Frappe l’ennemi d’un bec pointu ou d’une corne pour infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

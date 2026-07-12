@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user draws power to attack by using its held Berry. The Berry determines its type and power.",
+    "description_fr": "Avant d’attaquer, le lanceur rassemble ses forces grâce à sa Baie. Elle détermine le type et la puissance.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

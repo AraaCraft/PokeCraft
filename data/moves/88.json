@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "Drops rocks on the enemy.",
+    "description_fr": "Le lanceur lâche une pierre sur l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

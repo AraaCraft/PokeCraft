@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "The user grows a gigantic stalk that scatters seeds to attack the target. The seeds drain the target’s HP every turn.",
+    "description_fr": "Une liane géante surgit du sol et bombarde l’adversaire de graines qui lui dérobent des PV à chaque tour. Ces PV sont ensuite absorbés par Évoli.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

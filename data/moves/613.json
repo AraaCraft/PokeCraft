@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user absorbs its target’s HP. The user’s HP is restored by over half of the damage taken by the target.",
+    "description_fr": "Vole l’énergie de la cible. Rend au lanceur un nombre de PV supérieur ou égal à la moitié des dégâts infligés.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

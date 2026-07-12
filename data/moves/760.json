@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "This is a Normal-type attack Dynamax Pokémon use. This lowers the target’s Speed stat.",
+    "description_fr": "Une attaque de type Normal que seuls les Pokémon Dynamax peuvent utiliser. Baisse la Vitesse de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

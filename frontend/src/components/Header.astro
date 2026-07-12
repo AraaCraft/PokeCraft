@@ -10,14 +10,14 @@
       <div class="search-container">
         <div class="search-input-wrapper">
           <span class="search-icon">🔍</span>
-          <input type="text" id="pokemon-search" placeholder="Search for a Pokémon..." autocomplete="off" />
+          <input type="text" id="pokemon-search" data-i18n="search_placeholder" placeholder="Search for a Pokémon..." autocomplete="off" />
         </div>
         <ul id="search-results" class="search-results hidden">
           <!-- Populated by JS -->
         </ul>
       </div>
 
-      <a href="/team" class="team-link">My Team (<span id="team-count">0</span>)</a>
+      <a href="/team" class="team-link"><span data-i18n="my_team">My Team</span> (<span id="team-count">0</span>)</a>
 
       <div class="lang-selector-container">
         <select class="lang-selector" id="lang-selector">
@@ -257,6 +257,7 @@
 
 <script>
   import { getActiveTeam } from '../scripts/teamStore.js';
+  import { getLang, setLang } from '../scripts/langStore.js';
 
   let searchIndex = [];
   const searchInput = document.getElementById('pokemon-search') as HTMLInputElement;
@@ -301,11 +302,13 @@
     }
 
     const q = query.toLowerCase().trim();
+    const currentLang = getLang();
     
     // Filter matches
     const matches = searchIndex.filter(p => {
       // match name
-      if (p.name.toLowerCase().includes(q)) return true;
+      if (p.name_en && p.name_en.toLowerCase().includes(q)) return true;
+      if (p.name_fr && p.name_fr.toLowerCase().includes(q)) return true;
       // match id
       if (String(p.id).includes(q)) return true;
       // match forms
@@ -322,7 +325,7 @@
 
     searchResults.innerHTML = matches.map(p => {
       const formattedId = String(p.id).padStart(4, '0');
-      let displayName = p.name;
+      let displayName = currentLang === 'fr' ? (p.name_fr || p.name_en) : (p.name_en || p.name);
       
       return `
         <li class="search-result-item">
@@ -359,12 +362,14 @@
 
   // Basic Lang selector persistence
   if (langSelector) {
-    const savedLang = localStorage.getItem('pokecraft_lang') || 'en';
-    langSelector.value = savedLang;
+    langSelector.value = getLang();
     
     langSelector.addEventListener('change', (e) => {
-      localStorage.setItem('pokecraft_lang', (e.target as HTMLSelectElement).value);
-      // We'll manage translations later
+      setLang((e.target as HTMLSelectElement).value);
+      // Re-render search results if open
+      if (searchInput && searchInput.value) {
+        renderResults(searchInput.value);
+      }
     });
   }
 </script>

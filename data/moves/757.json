@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "This is a Fire-type attack Dynamax Pokémon use. The user intensifies the sun for five turns.",
+    "description_fr": "Une attaque de type Feu que seuls les Pokémon Dynamax peuvent utiliser. Fait briller le soleil pendant cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

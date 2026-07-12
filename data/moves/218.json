@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack based on lack of loyalty.",
+    "description_fr": "Moins le Pokémon aime son Dresseur, plus cette attaque est puissante.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

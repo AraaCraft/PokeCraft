@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "special",
     "description_en": "The user attacks by wrapping the target in fierce winds brimming with love and hate. This move’s additional effects depend on the user’s form.",
+    "description_fr": "Le lanceur déclenche un violent typhon mêlé de haine et d'amour qui s'abat sur l'ennemi. Les effets additionnels changent en fonction de la forme du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack that may cause freezing.",
+    "description_fr": "Le lanceur projette de la neige poudreuse. Peut aussi geler l’ennemi.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

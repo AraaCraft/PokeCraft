@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "The user charges at the foe using every bit of its power. The user must rest on the next turn.",
+    "description_fr": "Le lanceur charge l’ennemi de toute sa puissance. Il doit ensuite se reposer au tour suivant.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

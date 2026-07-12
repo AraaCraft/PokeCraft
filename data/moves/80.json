@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Works 2-3 turns and confuses user.",
+    "description_fr": "Le lanceur attaque en projetant des pétales pendant 2 à 3 tours avant de céder à la confusion.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

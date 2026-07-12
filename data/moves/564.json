@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user weaves a sticky net around the opposing team, which lowers their Speed stat upon switching into battle.",
+    "description_fr": "Déploie une toile visqueuse autour de l’ennemi qui ralentit la Vitesse de tout adversaire entrant au combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

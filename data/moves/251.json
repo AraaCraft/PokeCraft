@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Party POKéMON join in the attack. ",
+    "description_fr": "Le lanceur appelle tous les Pokémon de son équipe à attaquer. Plus ils sont nombreux, plus il y a d’attaques.",
     "effect_chance": null,
     "effect_changes": [
         {

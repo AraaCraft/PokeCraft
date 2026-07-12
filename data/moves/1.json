@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Pounds with fore­ legs or tail.",
+    "description_fr": "Écrase l’ennemi avec les pattes avant, la queue, etc.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

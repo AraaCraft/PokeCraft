@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "The user hurls up its stomach acids on the foe. The fluid eliminates the effect of the foe’s ability.",
+    "description_fr": "Le lanceur répand ses sucs digestifs sur l’ennemi. Le fluide neutralise la capacité spéciale de l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

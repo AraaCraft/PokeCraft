@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "physical",
     "description_en": "1st turn: Fly 2nd turn: Attack",
+    "description_fr": "Le lanceur s’envole au 1er tour et frappe au 2è. Permet aussi de voler jusqu’à une ville déjà visitée.",
     "effect_chance": null,
     "effect_changes": [
         {

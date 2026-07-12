@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "A consecutive three-kick attack that becomes more powerful with each successful hit.",
+    "description_fr": "Une salve composée de un à trois coups de pied dont la puissance augmente à chaque coup porté.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

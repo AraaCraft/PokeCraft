@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A full-power attack that grows more powerful the more the user likes its Trainer.",
+    "description_fr": "Une attaque furieuse dont la puissance augmente quand le Pokémon apprécie son Dresseur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

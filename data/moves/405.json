@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user vibrates its wings to generate a damaging sound wave. It may also lower the foe’s Sp. Def stat.",
+    "description_fr": "Le lanceur fait vibrer ses ailes pour lancer une vague sonique. Peut aussi baisser la Défense Spéciale de l’ennemi.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

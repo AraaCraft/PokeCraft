@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Confuses the foe, but raises its SP. ATK.",
+    "description_fr": "Rend la cible confuse, mais augmente son Attaque Spéciale.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

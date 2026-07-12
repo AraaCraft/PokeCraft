@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks by slamming its body into the target. The higher the user’s Defense, the more damage it can inflict on the target.",
+    "description_fr": "Le lanceur utilise son corps pour attaquer sa cible. Plus la Défense du lanceur est élevée, plus les dégâts infligés sont importants.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "physical",
     "description_en": "The user shoots filthy garbage at the foe to attack. It may also poison the target.",
+    "description_fr": "Le lanceur envoie des détritus sur l’ennemi. Peut aussi l’empoisonner.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

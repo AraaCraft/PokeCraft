@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user overwhelms the target with lightning-like movement before delivering a kick. This also lowers the target’s Defense stat.",
+    "description_fr": "Le lanceur assène un coup de pied à la cible à la vitesse de l’éclair. Baisse aussi la Défense de la cible.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

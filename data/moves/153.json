@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Very powerful but makes user faint.",
+    "description_fr": "Le lanceur explose et inflige des dégâts à tous les Pokémon autour de lui. Met K.O. le lanceur.",
     "effect_chance": null,
     "effect_changes": [
         {

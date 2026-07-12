@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "This is an Electric-type attack Dynamax Pokémon use. The user turns the ground into Electric Terrain for five turns.",
+    "description_fr": "Une attaque de type Électrik que seuls les Pokémon Dynamax peuvent utiliser. Crée un Champ Électrifié qui dure cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

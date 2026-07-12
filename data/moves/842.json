@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user makes its skin as hard as an iron shield, raising its defensive stats. Incoming moves also become more likely to miss.",
+    "description_fr": "Rend la peau du lanceur dure comme un mur de fer. Augmente sa puissance défensive. Les attaques de la cible deviennent plus faciles à esquiver.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

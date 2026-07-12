@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Taunts the foe into only using attack moves.",
+    "description_fr": "Provoque l’ennemi. L’oblige à n’utiliser que des attaques pendant 3 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

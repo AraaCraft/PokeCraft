@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "Used only if all PP are exhausted.",
+    "description_fr": "Une attaque désespérée, lancée quand le lanceur n’a plus de PP. Le blesse aussi légèrement.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -2,6 +2,7 @@
     "accuracy": 60,
     "damage_class": "status",
     "description_en": "May put the foe to sleep.",
+    "description_fr": "Le lanceur hypnotise l’ennemi pour le plonger dans un profond sommeil.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

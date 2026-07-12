@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "The user’s fellows gather in droves to perform a combo attack that hits the target one to ten times in a row.",
+    "description_fr": "Le lanceur et ses congénères prolifèrent en masse et attaquent ensemble d'une à dix fois d'affilée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

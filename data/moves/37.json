@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Works 2-3 turns and confuses user.",
+    "description_fr": "Une attaque furieuse qui dure de 2 à 3 tours. Le lanceur devient confus.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

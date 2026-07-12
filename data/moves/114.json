@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Eliminates all stat changes.",
+    "description_fr": "Un brouillard qui annule les changements de stats de tous les Pokémon au combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

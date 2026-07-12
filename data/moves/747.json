@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user eats its held Berry, then sharply raises its Defense stat.",
+    "description_fr": "Le lanceur mange la Baie qu’il tient, ce qui augmente beaucoup sa Défense.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

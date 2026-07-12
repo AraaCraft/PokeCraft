@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Prevents all status problems.",
+    "description_fr": "Champ protecteur empêchant tous les problèmes de statut pendant 5 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

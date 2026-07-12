@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack that may reduce SPEED.",
+    "description_fr": "Des bulles frappent l’ennemi. Peut réduire sa Vitesse.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

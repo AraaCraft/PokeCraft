@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Striking opponents over and over makes the user’s fists harder. Hitting a target raises the Attack stat.",
+    "description_fr": "À force de frapper, les poings deviennent plus durs. Augmente l’Attaque du lanceur si l’ennemi est touché.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

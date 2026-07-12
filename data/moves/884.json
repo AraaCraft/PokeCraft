@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks by pouncing on the target. This also lowers the target's Speed stat.",
+    "description_fr": "Le lanceur attaque en bondissant sur la cible, ce qui baisse la Vitesse de celle-ci.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

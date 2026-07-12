@@ -91,7 +91,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
 
 <Layout title={`${formattedName} #${formattedId}`}>
   <div class="pokemon-detail" id="pokemon-detail-container" data-pokemon={pokemonJson} data-moves={pokemonMovesJson} data-abilities={pokemonAbilitiesJson}>
-    <a href="/" class="back-link">← Back to Pokédex</a>
+    <a href="/" class="back-link" data-i18n="back_to_pokedex">← Back to Pokédex</a>
     
     <div class="detail-container">
       <div class="glass-panel detail-card" id="detail-card" style="position: relative; z-index: 10;">
@@ -104,7 +104,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
             </button>
           </div>
           <div class="team-actions" style="position: absolute; top: 0; right: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem;">
-            <button id="team-btn" class="team-btn" style="margin: 0; font-size: 0.85rem; padding: 0.4rem 0.8rem;">Add to team</button>
+            <button id="team-btn" class="team-btn" style="margin: 0; font-size: 0.85rem; padding: 0.4rem 0.8rem;" data-i18n="add_to_team">Add to team</button>
             <div id="team-msg" class="team-msg" style="margin: 0; font-size: 0.8rem; height: auto;"></div>
           </div>
         </header>
@@ -117,17 +117,17 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
           <div class="stats-section">
             <div class="info-grid">
               <div class="info-item">
-                <span class="label">Weight</span>
-                <span class="value" id="pokemon-weight">{pokemon.weight / 10} kg</span>
+                <span class="label" data-i18n="weight">Weight</span>
+                <span class="value" id="pokemon-weight">${pokemon.weight / 10} kg</span>
               </div>
               <div class="info-item">
-                <span class="label">Abilities</span>
+                <span class="label" data-i18n="abilities">Abilities</span>
                 <span class="value" id="pokemon-abilities"></span>
               </div>
             </div>
 
             <div class="types-container">
-              <h3>Types</h3>
+              <h3 data-i18n="types">Types</h3>
               <div class="types" id="pokemon-types">
                 <!-- Populated by JS -->
               </div>
@@ -137,7 +137,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
 
         {allForms.length > 1 && (
           <div class="forms-selector">
-            <h3>Forms :</h3>
+            <h3 data-i18n="forms">Forms :</h3>
             <div class="forms-buttons">
               {allForms.map((f: any) => {
                 const isActive = f.form === pokemon.form;
@@ -160,7 +160,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
       <!-- Right Column: Effectiveness Card -->
       <div class="glass-panel effectiveness-card" id="effectiveness-card">
         <div class="base-stats-section-top">
-          <h2>Base Stats</h2>
+          <h2 data-i18n="base_stats">Base Stats</h2>
           <p style="font-size: 0.8em; margin-top: -0.5rem; margin-bottom: 1rem; color: var(--text-color); opacity: 0.8; font-style: italic;">(Stats applied in Pokémon Champions)</p>
           <div class="stats-list" id="pokemon-stats">
             <!-- Populated by JS -->
@@ -168,7 +168,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
         </div>
 
         <div class="type-defenses-section">
-          <h2>Type Defenses</h2>
+          <h2 data-i18n="type_defenses">Type Defenses</h2>
           <div id="type-effectiveness-content">
             <p>Calculating...</p>
           </div>
@@ -177,22 +177,22 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
     </div>
     
     <!-- Moves Block -->
-    <div class="glass-panel moves-card">
+    <div class="glass-panel moves-card" style="position: relative; z-index: 20;">
       <div class="moves-header">
-        <h2>Moves (Champions)</h2>
+        <h2 data-i18n="moves_champions">Moves (Champions)</h2>
         <div class="moves-filters">
           <select id="filter-type">
-            <option value="all">All types</option>
+            <option value="all" data-i18n="all_types">All types</option>
           </select>
           <select id="filter-category">
-            <option value="all">All categories</option>
-            <option value="physical">Physical</option>
-            <option value="special">Special</option>
-            <option value="status">Status</option>
+            <option value="all" data-i18n="all_categories">All categories</option>
+            <option value="physical" data-i18n="physical">Physical</option>
+            <option value="special" data-i18n="special">Special</option>
+            <option value="status" data-i18n="status">Status</option>
           </select>
           <select id="sort-order">
-            <option value="asc">A-Z Order</option>
-            <option value="desc">Z-A Order</option>
+            <option value="asc" data-i18n="az_order">A-Z Order</option>
+            <option value="desc" data-i18n="za_order">Z-A Order</option>
           </select>
         </div>
       </div>
@@ -204,7 +204,9 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
 
   <script>
     import { addToTeam, removeFromTeam, isInTeam } from '../../scripts/teamStore.js';
+    import { getLang, translateDOM, t } from '../../scripts/langStore.js';
     window.teamStore = { addToTeam, removeFromTeam, isInTeam };
+    window.langStore = { getLang, translateDOM, t };
   </script>
 
   <!-- Store data for the client script -->
@@ -229,8 +231,15 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
       
       let currentAudio = null;
       let currentMovesData = [];
+      const { getLang, translateDOM, t } = window.langStore;
+
+      window.addEventListener('lang-changed', () => {
+        translateDOM();
+        updateUI();
+      });
 
       function renderMoves() {
+        const currentLang = getLang();
         const movesEl = container.querySelector('#pokemon-moves-content');
         if (!currentMovesData || currentMovesData.length === 0) {
            movesEl.innerHTML = '<p>No moves learned in Champions.</p>';
@@ -259,7 +268,9 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
       if (sortOrderEl) {
         const sortDir = sortOrderEl.value;
         moves.sort((a, b) => {
-          const res = (a.name_en || '').localeCompare(b.name_en || '');
+          const aName = currentLang === 'fr' ? (a.name_fr || a.name_en || '') : (a.name_en || '');
+          const bName = currentLang === 'fr' ? (b.name_fr || b.name_en || '') : (b.name_en || '');
+          const res = aName.localeCompare(bName);
           return sortDir === 'asc' ? res : -res;
         });
       }
@@ -274,23 +285,23 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
             <table class="moves-table">
               <thead>
                 <tr>
-                  <th>MOVE</th>
-                  <th style="text-align:center;">TYPE</th>
-                  <th style="text-align:center;">CATEGORY</th>
-                  <th style="text-align:center;">POWER</th>
-                  <th style="text-align:center;">ACCURACY</th>
+                  <th data-i18n="move">MOVE</th>
+                  <th style="text-align:center;" data-i18n="type">TYPE</th>
+                  <th style="text-align:center;" data-i18n="category">CATEGORY</th>
+                  <th style="text-align:center;" data-i18n="power">POWER</th>
+                  <th style="text-align:center;" data-i18n="accuracy">ACCURACY</th>
                 </tr>
               </thead>
               <tbody>
                 ${moves.map((m) => {
                   const catIcon = m.damage_class === 'physical' ? '💥' : m.damage_class === 'special' ? '🔮' : '🛡️';
-                  const catText = m.damage_class === 'physical' ? 'Physical' : m.damage_class === 'special' ? 'Special' : 'Status';
+                  const catText = m.damage_class === 'physical' ? t('physical') : m.damage_class === 'special' ? t('special') : t('status');
                   const typeCapitalized = m.type_name.charAt(0).toUpperCase() + m.type_name.slice(1);
                   return `
                   <tr>
                     <td>
-                      <span class="move-name has-tooltip" data-tooltip="${m.description_en || 'No description available.'}">
-                        <strong>${m.name_en || '-'}</strong>
+                      <span class="move-name has-tooltip" data-tooltip="${(currentLang === 'fr' ? (m.description_fr || m.description_en) : (m.description_en || 'No description available.')).replace(/"/g, '&quot;')}">
+                        <strong>${currentLang === 'fr' ? (m.name_fr || m.name_en || '-') : (m.name_en || '-')}</strong>
                       </span>
                     </td>
                     <td style="text-align:center;">
@@ -320,6 +331,20 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
       function updateUI() {
         if (!p.id) return;
         
+        const currentLang = getLang();
+        
+        const baseName = currentLang === 'fr' ? (p.name_fr || p.name) : (p.name_en || p.name);
+        let formattedName = baseName.charAt(0).toUpperCase() + baseName.slice(1);
+        if (p.form && p.form !== p.name) {
+          let formPart = p.form;
+          if (formPart.startsWith(p.name + '-')) {
+            formPart = formPart.substring(p.name.length + 1);
+          }
+          formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+          formattedName = `${formattedName} (${formPart})`;
+        }
+        document.getElementById('pokemon-name').textContent = formattedName;
+
         // Setup audio
         if (playCryBtn) {
           playCryBtn.onclick = () => {
@@ -374,26 +399,30 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
           const parts = a.ability.url.split('/');
           const aId = parts[parts.length - 2];
           const abilityData = pokemonAbilitiesMap[aId];
-          const name = (abilityData?.name_en || a.ability.name).replace('-', ' ').toUpperCase();
-          const desc = abilityData?.description_en || (a.is_hidden ? 'Hidden Ability' : 'Normal Ability');
+          const abilityName = currentLang === 'fr' ? (abilityData?.name_fr || abilityData?.name_en || a.ability.name) : (abilityData?.name_en || a.ability.name);
+          const name = abilityName.replace('-', ' ').toUpperCase();
+          const hiddenText = currentLang === 'fr' ? 'Talent caché' : 'Hidden Ability';
+          const normalText = currentLang === 'fr' ? 'Talent normal' : 'Normal Ability';
+          const abilityDesc = currentLang === 'fr' ? (abilityData?.description_fr || abilityData?.description_en) : abilityData?.description_en;
+          const desc = abilityDesc || (a.is_hidden ? hiddenText : normalText);
           return `<span class="has-tooltip" data-tooltip="${desc.replace(/"/g, '&quot;')}" style="cursor: help; border-bottom: 1px dotted rgba(255,255,255,0.5);">${name}</span>`;
         }).join(', ');
 
         const inTeam = window.teamStore.isInTeam(p.id, p.form);
         if (inTeam) {
-          teamBtn.textContent = 'Remove from team';
+          teamBtn.textContent = t('remove_from_team');
           teamBtn.classList.add('remove-btn');
         } else {
-          teamBtn.textContent = 'Add to team';
+          teamBtn.textContent = t('add_to_team');
           teamBtn.classList.remove('remove-btn');
         }
 
         teamBtn.onclick = () => {
           if (window.teamStore.isInTeam(p.id, p.form)) {
             window.teamStore.removeFromTeam(p.id, p.form);
-            teamBtn.textContent = 'Add to team';
+            teamBtn.textContent = t('add_to_team');
             teamBtn.classList.remove('remove-btn');
-            teamMsg.textContent = 'Removed from team!';
+            teamMsg.textContent = t('removed_from_team');
             teamMsg.style.color = '#ff6b6b';
           } else {
             const pokemonObj = {
@@ -404,9 +433,9 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
             };
             const res = window.teamStore.addToTeam(pokemonObj);
             if (res.success) {
-              teamBtn.textContent = 'Remove from team';
+              teamBtn.textContent = t('remove_from_team');
               teamBtn.classList.add('remove-btn');
-              teamMsg.textContent = 'Added to team!';
+              teamMsg.textContent = t('added_to_team');
               teamMsg.style.color = '#4ade80';
             } else {
               teamMsg.textContent = res.message;

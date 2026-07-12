@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user applies pressure to stress points, sharply boosting one of its stats.",
+    "description_fr": "Le lanceur effectue des pressions pour augmenter fortement l’une de ses stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

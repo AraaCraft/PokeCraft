@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack that may cause paralysis.",
+    "description_fr": "Une décharge électrique tombe sur l’ennemi. Peut aussi le paralyser.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Has a high critical-hit ratio. May also poison.",
+    "description_fr": "Attaque à taux de critiques élevé. Peut aussi empoisonner l’ennemi.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

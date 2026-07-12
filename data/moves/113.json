@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Ups SPCL.DEF with a wall of light.",
+    "description_fr": "Un fabuleux mur de lumière qui réduit les dégâts causés par les attaques spéciales durant 5 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user tells a chillingly bad joke before switching places with a party Pokémon in waiting. This summons a snowstorm lasting five turns.",
+    "description_fr": "Le lanceur fait un si mauvais jeu de mots qu'il jette un froid et échange sa place avec un Pokémon de l'équipe prêt à combattre. La neige tombe pendant cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

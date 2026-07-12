@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Switches while keeping effects.",
+    "description_fr": "Le lanceur échange sa place et tout changement de stat avec un Pokémon de l’équipe.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

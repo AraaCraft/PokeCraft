@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Destroys barriers such as REFLECT and causes damage.",
+    "description_fr": "Une attaque avec le tranchant de la main. Permet aussi de  briser les barrières comme Mur Lumière et Protection.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Enables the user to hit a Ghost type with any type of move. It also enables the user to hit an evasive foe.",
+    "description_fr": "Permet de toucher un Pokémon Ténèbres avec toute capacité et de toucher un ennemi insaisissable.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Powerful against paralyzed foes, but also heals them.",
+    "description_fr": "Cette attaque est doublement efficace sur les Pokémon paralysés, mais elle soigne leur paralysie.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

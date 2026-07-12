@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "The user attacks opposing Pokémon by manifesting the power of the land in fearsome blades of stone.",
+    "description_fr": "Le Pokémon transforme la puissance de la terre et attaque la cible avec une lame acérée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

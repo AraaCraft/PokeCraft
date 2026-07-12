@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "special",
     "description_en": "A powerful water- type attack.",
+    "description_fr": "Un puissant jet d’eau est dirigé sur l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

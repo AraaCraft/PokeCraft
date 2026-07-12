@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An icy punch. May cause freezing.",
+    "description_fr": "Un coup de poing glacé vient frapper l’ennemi. Peut le geler.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

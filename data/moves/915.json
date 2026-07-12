@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Spurred by desperation, the user attacks the target. This move's power is doubled if the user's previous move failed.",
+    "description_fr": "Le lanceur utilise la force de son dépit pour attaquer. S'il a utilisé une capacité qui a échoué au tour précédent, la puissance d'Indignition est doublée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

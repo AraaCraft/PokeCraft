@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user reacts to the target's movement and strikes with the heel of its palm, making the target flinch. This move fails if the target is not readying a priority move.",
+    "description_fr": "Le lanceur réagit instinctivement au moindre mouvement et donne un coup de paume qui apeure la cible. Échoue si cette dernière n'a pas utilisé une attaque prioritaire.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

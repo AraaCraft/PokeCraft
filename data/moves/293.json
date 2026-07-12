@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Alters the POKéMON’s type depending on the location.",
+    "description_fr": "Modifie le type du lanceur en fonction du terrain, comme une berge, une grotte, l’herbe, etc.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

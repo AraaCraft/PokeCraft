@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack that may cause flinching.",
+    "description_fr": "Écrase l’ennemi avec un énorme pied. Peut aussi l’apeurer.",
     "effect_chance": 30,
     "effect_changes": [
         {

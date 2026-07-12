@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Whips the foe with slender vines.",
+    "description_fr": "Fouette l’ennemi avec de fines lianes pour infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

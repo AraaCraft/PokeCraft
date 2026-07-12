@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "physical",
     "description_en": "The user fiercely attacks the target using its entire body.",
+    "description_fr": "Le lanceur attaque violemment en utilisant tout son poids.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

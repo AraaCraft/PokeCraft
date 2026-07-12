@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack useable only while asleep.",
+    "description_fr": "Une attaque qui ne fonctionne que si le lanceur est endormi. Le boucan peut aussi apeurer l’ennemi.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

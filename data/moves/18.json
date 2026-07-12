@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Blows away the foe & ends battle.",
+    "description_fr": "Éjecte le Pokémon ennemi et le remplace par un autre. Dans la nature, met fin au combat.",
     "effect_chance": null,
     "effect_changes": [
         {

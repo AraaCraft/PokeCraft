@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Using an odd shock wave, the user inflicts damage on any Pokémon of the same type in the area around it.",
+    "description_fr": "Des ondes mystérieuses blessent tous les Pokémon alentour qui sont du même type que le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

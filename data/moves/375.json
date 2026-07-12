@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Using its psychic power of suggestion, the user transfers its status problems to the target.",
+    "description_fr": "Le lanceur transfère ses problèmes de statut à l’ennemi grâce à son pouvoir de suggestion.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

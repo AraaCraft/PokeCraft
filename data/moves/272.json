@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Mimics the target and copies its special ability.",
+    "description_fr": "Imite la cible et copie son talent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

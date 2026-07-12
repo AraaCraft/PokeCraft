@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Boosts ATTACK when burned, paralyzed, or poisoned.",
+    "description_fr": "Une attaque dont la puissance double lorsque le lanceur est empoisonné, paralysé ou brûlé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

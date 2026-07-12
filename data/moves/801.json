@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "This move inflicts physical or special damage, whichever will be more effective. This may also poison the target.",
+    "description_fr": "Une attaque physique ou spéciale, en fonction de ce qui est le plus efficace contre la cible. Peut aussi empoisonner.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

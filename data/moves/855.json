@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks by unleashing a peculiar light that even affects the mind. This also harshly lowers the target's Sp. Def stat.",
+    "description_fr": "Le lanceur attaque en émettant une étrange lumière qui ébranle l'esprit de la cible. Cela baisse beaucoup la Défense Spéciale de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

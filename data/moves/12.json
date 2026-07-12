@@ -2,6 +2,7 @@
     "accuracy": 30,
     "damage_class": "physical",
     "description_en": "A one-hit KO, pincer attack.",
+    "description_fr": "De méchantes pinces lacèrent l’ennemi, le mettant K.O. sur le coup s’il est touché.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

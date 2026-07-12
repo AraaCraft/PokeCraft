@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user cloaks itself with flame and attacks. Building up more power, it raises the user’s Speed stat.",
+    "description_fr": "Le lanceur s’entoure de flammes pour attaquer l’ennemi. Il se concentre et sa Vitesse augmente.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

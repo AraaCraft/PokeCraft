@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Change user's type to a move's type.",
+    "description_fr": "Le lanceur change de type pour prendre celui de la première capacité de sa liste.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

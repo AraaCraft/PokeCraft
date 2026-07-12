@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "special",
     "description_en": "The user hits the target with the force of nature. It halves the target’s HP.",
+    "description_fr": "Le lanceur déchaîne toute la colère de la nature pour baisser les PV de la cible de moitié.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

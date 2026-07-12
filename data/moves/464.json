@@ -2,6 +2,7 @@
     "accuracy": 50,
     "damage_class": "status",
     "description_en": "The foe is dragged into a world of total darkness that puts it to sleep. ",
+    "description_fr": "L’ennemi est plongé dans les ténèbres. Il tombe dans un profond sommeil.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

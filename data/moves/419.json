@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.",
+    "description_fr": "Une attaque deux fois plus puissante si le lanceur a été blessé par l’ennemi durant le tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

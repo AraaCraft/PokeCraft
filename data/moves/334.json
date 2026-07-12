@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Hardens the body’s surface to sharply raise DEFENSE.",
+    "description_fr": "L’épiderme du lanceur devient dur comme du fer, ce qui augmente considérablement sa Défense.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

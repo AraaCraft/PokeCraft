@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Steals HP from a sleeping victim.",
+    "description_fr": "Le lanceur mange le rêve de l’ennemi endormi. Le lanceur récupère en PV la moitié des dégâts infligés.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

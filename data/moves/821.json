@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user shoots its psychic power from its eyes to attack. This may also leave the target frozen.",
+    "description_fr": "Les yeux du lanceur tirent des rayons psychiques. Peut aussi geler l’ennemi.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

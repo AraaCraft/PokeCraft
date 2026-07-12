@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks with a wave that crawls along the ground. Those hit can’t flee from battle.",
+    "description_fr": "Attaque avec des vagues glissant au sol. L’ennemi pris dedans ne peut pas s’échapper.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

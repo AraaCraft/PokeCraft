@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An attack that hits on 3rd turn.",
+    "description_fr": "De l’énergie psychique vient frapper l’ennemi 2 tours après l’utilisation de cette capacité.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

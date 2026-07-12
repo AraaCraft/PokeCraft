@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "physical",
     "description_en": "An attack that al­ so hurts the user.",
+    "description_fr": "Le lanceur agrippe l’ennemi et l’écrase au sol. Blesse aussi légèrement le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

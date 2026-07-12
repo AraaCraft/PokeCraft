@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user scatters a cloud of irritating powder to draw attention to itself. Opponents aim only at the user.",
+    "description_fr": "Le lanceur s’asperge d’une poudre irritante pour attirer l’attention. Il attire toutes les attaques ennemies.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

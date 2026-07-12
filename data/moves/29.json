@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack that may make foe flinch.",
+    "description_fr": "Le lanceur donne un coup de tête. Peut apeurer l’ennemi. ",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

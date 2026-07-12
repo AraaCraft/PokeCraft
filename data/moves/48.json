@@ -2,6 +2,7 @@
     "accuracy": 55,
     "damage_class": "status",
     "description_en": "Sound waves that cause confusion.",
+    "description_fr": "Le lanceur produit d’étranges ondes sonores qui rendent confus.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

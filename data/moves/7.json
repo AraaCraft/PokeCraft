@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A fiery punch. May cause a burn.",
+    "description_fr": "Un coup de poing enflammé vient frapper l’ennemi. Peut le brûler.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

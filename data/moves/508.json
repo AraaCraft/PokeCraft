@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user rotates its gears, raising its Attack and sharply raising its Speed.",
+    "description_fr": "Le lanceur fait tourner ses engrenages. Ceci augmente son Attaque et augmente fortement sa Vitesse.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

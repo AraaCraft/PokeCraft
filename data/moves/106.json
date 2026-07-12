@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Raises the user's DEFENSE.",
+    "description_fr": "Le lanceur contracte tous ses muscles pour augmenter sa Défense.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

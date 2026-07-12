@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user heals the target’s status condition. If the move succeeds, it also restores the user’s own HP.",
+    "description_fr": "Le lanceur soigne les altérations de statut de la cible, ce qui lui permet de regagner des PV.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

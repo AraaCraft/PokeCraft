@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "special",
     "description_en": "Always inflicts 20HP damage.",
+    "description_fr": "Une onde de choc destructrice qui inflige toujours 20 PV de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

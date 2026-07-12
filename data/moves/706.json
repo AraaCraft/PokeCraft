@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect.",
+    "description_fr": "Le lanceur mord la cible avec ses pouvoirs psychiques. Brise aussi les barrières comme Mur Lumière et Protection.",
     "effect_chance": null,
     "effect_changes": [
         {

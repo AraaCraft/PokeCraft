@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "special",
     "description_en": "Traps the foe for 2-5 turns.",
+    "description_fr": "Piège l’ennemi dans une trombe d’eau pendant 4 à 5 tours.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Scratches with sharp claws.",
+    "description_fr": "Lacère l’ennemi avec des griffes acérées pour lui infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

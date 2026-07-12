@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "The user surrounds everything around it with highly acidic gas and melts away items they hold.",
+    "description_fr": "Un gaz corrosif qui enveloppe tous les Pokémon alentour et qui dissout les objets qu’ils tiennent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 0,
     "damage_class": "special",
     "description_en": "The user attacks by launching particle blades at the target twice in a row. This attack never misses.",
+    "description_fr": "Le lanceur concentre des particules élémentaires pour créer une lame qui inflige des dégâts à la cible deux fois d'affilée. N'échoue jamais.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

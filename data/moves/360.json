@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user tackles the foe with a high-speed spin. The slower the user, the greater the damage.",
+    "description_fr": "Le lanceur effectue une rotation et frappe l’ennemi. Plus le lanceur est lent, plus il fait de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

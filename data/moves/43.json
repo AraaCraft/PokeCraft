@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Reduces the foe's DEFENSE.",
+    "description_fr": "Le lanceur fait les gros yeux à l’ennemi pour l’intimider et baisser sa Défense.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

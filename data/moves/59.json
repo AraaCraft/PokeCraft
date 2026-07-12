@@ -2,6 +2,7 @@
     "accuracy": 70,
     "damage_class": "special",
     "description_en": "An attack that may freeze the foe.",
+    "description_fr": "Une violente tempête de neige est déclenchée sur l’ennemi. Peut aussi le geler.",
     "effect_chance": 10,
     "effect_changes": [
         {

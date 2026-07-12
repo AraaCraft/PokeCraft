@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user rends the target with an ethereal blade. This move's power is boosted by 50 percent if the user is on Electric Terrain.",
+    "description_fr": "Le lanceur lacère la cible à l'aide d'une lame intangible. S'il se trouve dans un champ électrifié, la puissance de cette capacité augmente de 50 %.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

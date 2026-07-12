@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack that may cause a burn.",
+    "description_fr": "Le lanceur s’entoure de feu et charge l’ennemi. Peut aussi brûler l’ennemi.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "The user attacks by throwing two steel gears at its target.",
+    "description_fr": "Le lanceur jette deux écrous d’acier qui frappent l’ennemi deux fois d’affilée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

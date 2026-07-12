@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The foe slams the target with its steel-hard head. It may also make the target flinch.",
+    "description_fr": "Le lanceur heurte l’ennemi avec sa tête dure comme de l’acier. Peut aussi apeurer l’ennemi.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

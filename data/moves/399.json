@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user releases a horrible aura imbued with dark thoughts. It may also make the target flinch.",
+    "description_fr": "Le lanceur dégage une horrible aura chargée d’idées noires. Peut aussi apeurer l’ennemi.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

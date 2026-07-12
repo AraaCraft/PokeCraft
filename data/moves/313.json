@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Feigns crying to sharply lower the foe’s SP. DEF.",
+    "description_fr": "Le lanceur fait semblant de pleurer pour troubler l’ennemi et baisser fortement sa Défense Spéciale.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

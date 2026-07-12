@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "The user launches a huge boulder at the foe to attack. It must rest on the next turn, however.",
+    "description_fr": "Le lanceur attaque en projetant un gros rocher sur l’ennemi. Il doit se reposer au tour suivant.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

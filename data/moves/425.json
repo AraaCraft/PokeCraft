@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user extends its shadow and attacks the foe from behind. This move always goes first.",
+    "description_fr": "Le lanceur étend son ombre pour frapper par-derrière. Frappe en priorité.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

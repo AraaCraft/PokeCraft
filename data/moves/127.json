@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An aquatic charge attack.",
+    "description_fr": "Le lanceur charge l’ennemi à une vitesse remarquable, ce qui peut l’apeurer. Permet aussi de franchir une cascade.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

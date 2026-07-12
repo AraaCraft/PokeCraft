@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks everything around it and faints upon using this move. This move’s power is increased on Misty Terrain.",
+    "description_fr": "Le lanceur frappe tous les Pokémon autour de lui en explosant, ce qui le met K.O. La puissance de cette attaque augmente si un Champ Brumeux est actif.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

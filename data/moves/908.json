@@ -2,6 +2,7 @@
     "accuracy": 0,
     "damage_class": "status",
     "description_en": "The user's intensely hot fur protects it from attacks and also burns any attacker that makes direct contact with it.",
+    "description_fr": "Le lanceur se protège contre les attaques grâce à son pelage incandescent, et si un assaillant utilise une attaque directe contre lui, il le brûle.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

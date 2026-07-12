@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Tough but useless vs. flying foes.",
+    "description_fr": "Le lanceur provoque un tremblement de terre touchant tous les Pokémon autour de lui.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user swings its whole body around to attack with its huge hammer. This move can't be used twice in a row.",
+    "description_fr": "Le lanceur met tout son corps à contribution pour attaquer la cible avec un immense marteau. Cette capacité ne peut pas être utilisée deux fois d'affilée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

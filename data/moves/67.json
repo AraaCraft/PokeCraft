@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack that may cause flinching.",
+    "description_fr": "Un puissant coup de pied bas qui fauche l’ennemi. Il est plus efficace contre les ennemis lourds.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

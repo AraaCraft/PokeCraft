@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Envelops the foe with down to sharply reduce ATTACK.",
+    "description_fr": "Une montagne de plumes ensevelit l’ennemi et réduit considérablement son Attaque.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

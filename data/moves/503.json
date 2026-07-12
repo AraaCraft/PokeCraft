@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user shoots boiling hot water at its target. It may also leave the target with a burn.",
+    "description_fr": "L’ennemi est attaqué par un jet d’eau bouillante. Peut aussi le brûler.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

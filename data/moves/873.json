@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user performs a tackle like a raging bull. This move's type depends on the user's form. It can also break barriers, such as Light Screen and Reflect.",
+    "description_fr": "Le lanceur effectue un plaquage comme un taureau enragé. Le type de cette capacité dépend de la forme du lanceur. Peut aussi briser les barrières comme Mur Lumière et Protection.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

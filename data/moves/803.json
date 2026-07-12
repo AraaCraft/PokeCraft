@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Gliding on the ground, the user attacks the target. This move always goes first on Grassy Terrain.",
+    "description_fr": "Le lanceur attaque l’ennemi en glissant sur le terrain. Frappe toujours en priorité si un Champ Herbu est actif.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Releases stockpiled power (the more the better).",
+    "description_fr": "Libère dans une attaque la puissance précédemment accumulée avec Stockage.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

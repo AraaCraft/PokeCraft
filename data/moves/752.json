@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user has teatime with all the Pokémon in the battle. Each Pokémon eats its held Berry.",
+    "description_fr": "Le lanceur invite tous les Pokémon sur le terrain à prendre le goûter autour d’une tasse de thé. Ceux qui tiennent une Baie la mangent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

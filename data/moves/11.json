@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Grips with power­ ful pincers.",
+    "description_fr": "L’ennemi est attrapé et compressé par les côtés.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

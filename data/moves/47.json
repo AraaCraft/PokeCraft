@@ -2,6 +2,7 @@
     "accuracy": 55,
     "damage_class": "status",
     "description_en": "May cause the foe to fall asleep.",
+    "description_fr": "Une berceuse plonge l’ennemi dans un profond sommeil.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

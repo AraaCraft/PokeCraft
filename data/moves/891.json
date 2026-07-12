@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user focuses its bitter feelings toward the world of the living into a slashing attack. The user's HP is restored by up to half the damage taken by the target.",
+    "description_fr": "Le lanceur concentre son amertume du monde des vivants dans la pointe de ses épées et tranche la cible. La moitié des dégâts infligés sont convertis en PV pour le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

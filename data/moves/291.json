@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Dives underwater the first turn and strikes next turn.",
+    "description_fr": "Le lanceur plonge sous l’eau au 1er tour et frappe au 2è. Permet aussi de plonger au fond de l’eau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

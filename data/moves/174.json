@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Works differently for ghost-types.",
+    "description_fr": "Une capacité à l’effet différent selon que le lanceur est un Pokémon Spectre ou non.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

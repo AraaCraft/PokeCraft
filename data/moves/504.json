@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user breaks its shell, lowering its Defense and Sp. Def stats but sharply raising Attack, Sp. Atk, and Speed stats.",
+    "description_fr": "Le lanceur brise sa coquille. Il baisse sa Défense et Déf. Spé., mais augmente forte- ment son Attaque, Atq. Spé. et Vitesse.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

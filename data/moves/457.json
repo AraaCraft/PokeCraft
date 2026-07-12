@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "physical",
     "description_en": "The user delivers a life-endangering head butt at full power. The user also takes terrible damage.",
+    "description_fr": "Le lanceur assène un coup de tête désespéré. Blesse aussi gravement le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

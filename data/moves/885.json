@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks suddenly as if leaping out from tall grass. The user's nimble footwork boosts its Speed stat.",
+    "description_fr": "Le lanceur surgit des hautes herbes pour attaquer la cible. Les mouvements agiles du lanceur augmentent sa Vitesse.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

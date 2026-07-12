@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "Using its many arms, the user unleashes a barrage of attacks that ignore the effects of moves like Protect and Detect. This attack lowers the user’s Defense.",
+    "description_fr": "Le Pokémon utilise sa multitude de bras pour infliger  une nuée de coups qui ignorent les capacités telles  qu’Abri ou Détection. Baisse la Défense du lanceur. ",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

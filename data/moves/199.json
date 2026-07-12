@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Ensures the next attack will hit.",
+    "description_fr": "Verrouille l’ennemi pour ne pas le rater au tour suivant.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Heals all status problems with a soothing scent.",
+    "description_fr": "Le lanceur libère un parfum apaisant qui guérit tous les problèmes de statut de l’équipe.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

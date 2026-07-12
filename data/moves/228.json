@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Heavily strikes switching POKéMON.",
+    "description_fr": "Une attaque qui inflige deux fois plus de dégâts à un ennemi qui quitte le combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

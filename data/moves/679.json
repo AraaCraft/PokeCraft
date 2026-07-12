@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user makes a lunge at the target, attacking with full force. This also lowers the target’s Attack stat.",
+    "description_fr": "Le lanceur se jette sur la cible de toutes ses forces pour lui infliger des dégâts et baisser son Attaque.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

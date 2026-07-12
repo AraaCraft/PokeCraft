@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user chants an incantation toward the sky, preventing the foe from landing critical hits.",
+    "description_fr": "Le lanceur envoie une incantation vers le ciel pour empêcher l’ennemi d’effectuer des coups critiques.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

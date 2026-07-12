@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "physical",
     "description_en": "Has a high criti­ cal hit ratio.",
+    "description_fr": "Des feuilles aiguisées comme des rasoirs entaillent l’ennemi. Taux de critiques élevé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

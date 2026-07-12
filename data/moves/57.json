@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "A strong water- type attack.",
+    "description_fr": "Une énorme vague s’abat sur le champ de bataille. Permet aussi de voyager sur l’eau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

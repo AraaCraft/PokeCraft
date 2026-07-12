@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user creates a bizarre area in which slower Pokémon get to move first for five turns.",
+    "description_fr": "Le lanceur crée une zone étrange où les Pokémon les plus lents frappent en 1er pendant 5 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

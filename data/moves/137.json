@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "A move that may cause paralysis.",
+    "description_fr": "Le lanceur intimide l’ennemi grâce à son regard terrifiant pour le paralyser.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

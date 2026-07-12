@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user shoots powerful lasers using the power of a prism. The user can’t move on the next turn.",
+    "description_fr": "Le lanceur utilise la puissance d’un prisme pour envoyer un laser destructeur, mais il doit se reposer au tour suivant.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

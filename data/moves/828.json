@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "Cloaking itself in psychic energy, the user slams into the target. This may also raise the user’s defensive stats.",
+    "description_fr": "Le lanceur s'enveloppe d'énergie psychique et frappe sa cible de plein fouet. Peut aussi augmenter la puissance défensive du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Reduces the foe's accuracy.",
+    "description_fr": "Le lanceur envoie de la boue au visage de l’ennemi pour infliger des dégâts et baisser sa Précision.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

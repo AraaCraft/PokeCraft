@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An inferno of scarlet flames washes over all Pokémon in battle. It may also inflict burns.",
+    "description_fr": "Des boules de feu s’abattent sur tous les Pokémon autour du lanceur. Peut aussi brûler.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

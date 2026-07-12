@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user plays its drum, controlling the drum’s roots to attack the target. This also lowers the target’s Speed stat.",
+    "description_fr": "Le lanceur bat son tambour pour en diriger les racines sur la cible, l’attaquer, et baisser sa Vitesse.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

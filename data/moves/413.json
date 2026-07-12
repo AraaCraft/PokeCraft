@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user tucks in its wings and charges from a low altitude. The user also takes serious damage.",
+    "description_fr": "Le lanceur replie ses ailes et charge en rase-mottes. Le lanceur subit aussi de graves dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

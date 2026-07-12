@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Has a high criti­ cal hit ratio.",
+    "description_fr": "L’ennemi est tranché violemment. Taux de critiques élevé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

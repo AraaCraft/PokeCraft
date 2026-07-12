@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Makes the opposite gender infatuated.",
+    "description_fr": "Si l’ennemi est du sexe opposé, il tombe amoureux et rechigne alors à attaquer.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

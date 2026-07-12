@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Raises DEFENSE with a barrier.",
+    "description_fr": "Un fabuleux mur de lumière qui réduit les dégâts causés par les attaques physiques durant 5 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

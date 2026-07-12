@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user becomes one with the jungle, restoring HP and healing any status conditions of itself and its ally Pokémon in battle.",
+    "description_fr": "Le lanceur fait appel au pouvoir de la jungle pour restaurer les PV et soigner les altérations d’état de ses alliés et de lui-même.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -13,10 +13,14 @@ for f in pokemon_files:
         
         pid = data['id']
         name = data['name'].capitalize()
+        name_fr = data.get('name_fr', name).capitalize()
+        name_en = data.get('name_en', name).capitalize()
         if pid not in search_index:
             search_index[pid] = {
                 'id': pid,
-                'name': name,
+                'name': name_en,
+                'name_fr': name_fr,
+                'name_en': name_en,
                 'base_form': data['name'],
                 'forms': []
             }

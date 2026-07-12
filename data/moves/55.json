@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Squirts water to attack.",
+    "description_fr": "De l’eau est projetée sur l’ennemi en arc de cercle.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

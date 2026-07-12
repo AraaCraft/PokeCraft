@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks by slicing with its long horns. The target’s stat changes don’t affect this attack’s damage.",
+    "description_fr": "Un coup de lame violent qui lacère l’ennemi et lui inflige des dégâts quels que soient ses changements de stats.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

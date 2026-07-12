@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "An attack that may cause confusion.",
+    "description_fr": "Un enchaînement de coups de poing cadencés. Peut aussi rendre confus.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

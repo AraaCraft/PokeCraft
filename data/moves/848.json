@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "special",
     "description_en": "The user attacks by wrapping the target in fierce winds and searingly hot sand. This also leaves the target with a burn.",
+    "description_fr": "Le lanceur déclenche un violent typhon mêlé à du sable ardent qui s'abat sur l'ennemi. Brûle la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

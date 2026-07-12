@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "This attack’s power increases the more the foe has powered up with stat changes. ",
+    "description_fr": "Plus l’ennemi a utilisé des augmentations de stats et plus cette capacité est puissante.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

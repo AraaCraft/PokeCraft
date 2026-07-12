@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks twice using Dreepy. If there are two targets, this move hits each target once.",
+    "description_fr": "Le lanceur attaque en propulsant deux Fantyrm. S’il y a deux adversaires, chacun d’entre eux est frappé par un Fantyrm.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

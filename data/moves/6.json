@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Throws coins. Gets them back later.",
+    "description_fr": "Des pièces sont lancées sur l’ennemi. Permet d’obtenir de l’argent à la fin du combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

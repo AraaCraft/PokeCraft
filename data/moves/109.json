@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "A move that causes confusion.",
+    "description_fr": "Un rayon sinistre qui plonge l’ennemi dans un état de confusion.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

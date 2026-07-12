@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "If the user can use this attack after the foe attacks, its power is doubled. ",
+    "description_fr": "Le lanceur charge son énergie, puis attaque. La puissance est doublée si le lanceur agit après l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

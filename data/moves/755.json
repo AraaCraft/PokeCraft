@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user rends the target with its hard gills. If the user attacks before the target, the power of this move is doubled.",
+    "description_fr": "Le lanceur mord sa cible avec ses solides branchies. Si cette capacité est lancée avant que la cible n’attaque, elle infligera deux fois plus de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

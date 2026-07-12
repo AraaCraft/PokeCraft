@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "A powerful charge attack.",
+    "description_fr": "Le lanceur utilise ses gigantesques cornes pour charger l’ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

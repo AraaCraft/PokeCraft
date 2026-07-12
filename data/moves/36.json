@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "A tackle that also hurts the user.",
+    "description_fr": "Une charge violente qui blesse aussi légèrement le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user swings its body around violently to inflict damage on everything in its vicinity.",
+    "description_fr": "Le lanceur pivote pour prendre de l’élan et infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

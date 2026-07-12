@@ -2,6 +2,7 @@
     "accuracy": 50,
     "damage_class": "special",
     "description_en": "The user attacks by engulfing the target in an intense fire. It leaves the target with a burn.",
+    "description_fr": "L’ennemi est entouré d’un torrent de flammes ardentes qui le brûlent.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

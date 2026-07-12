@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "1st turn: Prepare 2nd turn: Attack",
+    "description_fr": "Une attaque en 2 tours au taux de critiques élevé. Peut aussi apeurer l’ennemi.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

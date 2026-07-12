@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Lets the user get in the first hit.",
+    "description_fr": "Le lanceur fonce sur l’ennemi si rapidement qu’on parvient à peine à le discerner. Frappe en premier.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user covers the ground under everyone’s feet with mist for five turns. This protects Pokémon on the ground from status conditions.",
+    "description_fr": "Pendant cinq tours, le terrain aux pieds du lanceur se couvre de brume. Les Pokémon au sol ne peuvent pas subir d’altération de statut.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

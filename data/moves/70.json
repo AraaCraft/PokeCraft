@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "A powerful physi­ cal attack.",
+    "description_fr": "Le lanceur cogne l’ennemi de toutes ses forces. Permet aussi de déplacer des rochers.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

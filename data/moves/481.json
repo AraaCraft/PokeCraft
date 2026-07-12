@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks the target with a bursting flame. The bursting flame damages Pokémon next to the target as well.",
+    "description_fr": "Quand l’attaque atteint sa cible, elle projette des flammes qui touchent tout ennemi situé à côté.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

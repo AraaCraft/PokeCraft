@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "The user faints and lowers the foe’s abilities.",
+    "description_fr": "Le lanceur est mis K.O., mais l’Attaque et l’Attaque Spéciale de l’ennemi baissent beaucoup.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "physical",
     "description_en": "This is a Bug-type attack Dynamax Pokémon use. This lowers the target’s Sp. Atk stat.",
+    "description_fr": "Une attaque de type Insecte que seuls les Pokémon Dynamax peuvent utiliser. Baisse l’Attaque Spéciale de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

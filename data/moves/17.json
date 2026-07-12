@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Strikes the target with wings.",
+    "description_fr": "L’ennemi est frappé par de larges ailes déployées pour infliger des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

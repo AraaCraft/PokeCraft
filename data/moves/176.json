@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user's type is made resistant.",
+    "description_fr": "Le lanceur change de type pour être résistant au type de la dernière attaque lancée par sa cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

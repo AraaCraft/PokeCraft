@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "A bomb that may restore HP.",
+    "description_fr": "Le lanceur attaque en offrant un cadeau piégé à la cible. Peut à l’inverse restaurer certains de ses PV.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

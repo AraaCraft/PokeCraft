@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user blows out raging flames as if singing a song, scorching the target. This also boosts the user's Sp. Atk stat.",
+    "description_fr": "Le lanceur carbonise la cible en projetant sur elle de vives flammes créées par un chant. Cette capacité augmente l'Attaque Spéciale du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

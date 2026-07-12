@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Jabs the foe twice using stingers.",
+    "description_fr": "Un double coup de dard qui transperce l’ennemi 2 fois d’affilée. Peut aussi l’empoisonner.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

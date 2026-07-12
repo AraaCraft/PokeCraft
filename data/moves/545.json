@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "An inferno of scarlet flames torches everything around the user. It may leave targets with a burn.",
+    "description_fr": "Des flammes rougeoyantes s’abattent sur tous les Pokémon autour du lanceur. Peut aussi brûler.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

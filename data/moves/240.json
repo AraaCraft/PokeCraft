@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Boosts water-type moves for 5 turns.",
+    "description_fr": "Invoque de fortes pluies qui durent 5 tours et améliorent les capacités de type Eau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

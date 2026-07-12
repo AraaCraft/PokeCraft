@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user shoots its own armor out as blazing projectiles. This also lowers the user’s Defense and Sp. Def stats.",
+    "description_fr": "Le lanceur tire un boulet de canon ardent provenant de sa propre armure sur la cible. Cela baisse la Défense et la Défense Spéciale du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

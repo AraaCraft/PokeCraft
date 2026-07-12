@@ -2,6 +2,7 @@
     "accuracy": 30,
     "damage_class": "special",
     "description_en": "A chilling attack that causes fainting if it hits.",
+    "description_fr": "Une vague de froid glacial frappe l’ennemi. S’il est touché, il est mis K.O. sur le coup.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

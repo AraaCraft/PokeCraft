@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "Blocks the foe’s way to prevent escape.",
+    "description_fr": "Le lanceur bloque la route de l’ennemi pour empêcher sa fuite.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

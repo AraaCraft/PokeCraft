@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user and the target become friends, and the target loses its will to fight. This lowers the target’s Attack stat.",
+    "description_fr": "L’ennemi se lie d’amitié avec le lanceur et perd sa combativité, diminuant son Attaque.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user slashes the target with aura-enriched wings. This also raises the user's action speed. This move has a heightened chance of landing a critical hit.",
+    "description_fr": "Le lanceur entaille l'ennemi avec ses ailes renforcées par une aura psychique. Taux de critiques élevé. Avance la position du lanceur dans l'ordre d'action.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

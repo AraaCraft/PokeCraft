@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user expels pressurized water to cut at the target like a blade. This move has a heightened chance of landing a critical hit.",
+    "description_fr": "Le lanceur projette de l'eau pressurisée qui entaille la cible comme une lame. Taux de critiques élevé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

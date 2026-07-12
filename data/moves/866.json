@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user performs a spin attack that can also eliminate the effects of such moves as Bind, Wrap, and Leech Seed. This also poisons opposing Pokémon.",
+    "description_fr": "Le lanceur attaque en tournant sur lui-même et empoisonne la cible. Il se libère également des effets de capacités comme Étreinte, Ligotage ou Vampigraine.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

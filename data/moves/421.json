@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user slashes with a sharp claw made from shadows. It has a high critical-hit ratio.",
+    "description_fr": "Attaque avec une griffe puissante faite d’ombres. Taux de critiques élevé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

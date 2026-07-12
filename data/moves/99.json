@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "Raises ATTACK if the user is hit.",
+    "description_fr": "Une fois activée, cette capacité augmente l’Attaque du lanceur à mesure que celui-ci subit des attaques.",
     "effect_chance": null,
     "effect_changes": [
         {

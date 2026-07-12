@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "Hurls boulders at the foe 2 to 5 times in a row.",
+    "description_fr": "Le lanceur projette un rocher sur l’ennemi de 2 à 5 fois d’affilée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

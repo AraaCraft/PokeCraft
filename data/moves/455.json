@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user calls out its underlings to make a living shield, raising its Defense and Sp. Def stats.",
+    "description_fr": "Le lanceur appelle ses sous-fifres pour former un bouclier qui augmente sa Défense et sa Défense Spéciale.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

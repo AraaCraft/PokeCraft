@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "To inflict massive damage, the user burns itself out. After using this move, the user will no longer be Fire type.",
+    "description_fr": "Le Pokémon se consume et les flammes de son corps infligent des dégâts élevés à la cible. Le lanceur perd le type Feu.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

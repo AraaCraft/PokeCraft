@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user helps the target and makes it use its move right after the user.",
+    "description_fr": "S’il est le premier à agir, le lanceur permet à sa cible d’utiliser une capacité juste après lui.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

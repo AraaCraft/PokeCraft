@@ -2,6 +2,7 @@
     "accuracy": 80,
     "damage_class": "physical",
     "description_en": "Has a high criti­ cal hit ratio.",
+    "description_fr": "Le lanceur délivre un coup double en croisant les avant-bras. Taux de critiques élevé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

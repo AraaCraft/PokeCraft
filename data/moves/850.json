@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "The user lifts its spirits, healing its own status conditions and raising its offensive and defensive stats.",
+    "description_fr": "Le lanceur fait preuve de bravoure pour soigner ses altérations de statut et augmenter sa puissance offensive et défensive.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

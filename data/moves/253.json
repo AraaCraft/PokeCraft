@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "Causes an uproar for 2 to 5 turns and prevents sleep.",
+    "description_fr": "Le lanceur attaque en rugissant durant 3 tours. Pendant ce temps, personne ne peut s’endormir.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user discharges all the electricity from its body to perform a high-damage attack. After using this move, the user will no longer be Electric type.",
+    "description_fr": "Le lanceur libère toute l'électricité contenue dans son corps pour infliger des dégâts élevés à la cible. Le lanceur perd le type Électrik.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

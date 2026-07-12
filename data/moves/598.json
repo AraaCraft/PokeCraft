@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "The user’s body generates an eerie impulse. Exposing the target to it harshly lowers the target’s Sp. Atk stat.",
+    "description_fr": "Le corps du lanceur produit des ondes anormales qui enveloppent l’ennemi et diminuent fortement son Attaque Spéciale.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

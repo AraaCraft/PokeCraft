@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "This attack inflicts high damage on a sleeping foe. It also wakes the foe up, however.",
+    "description_fr": "Cette attaque inflige d’importants dégâts à un Pokémon endormi. Mais elle le réveille également.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

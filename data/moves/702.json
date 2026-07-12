@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "After obtaining Z-Power, the user, Eevee, gets energy from its evolved friends and boosts its stats sharply.",
+    "description_fr": "Évoli utilise la Force Z pour emprunter la puissance de tous ses amis évolués et beaucoup augmenter toutes ses stats.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

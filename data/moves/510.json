@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user attacks the target with fire. If the target is holding a Berry, the Berry becomes burnt up and unusable.",
+    "description_fr": "Des flammes calcinent l’ennemi. S’il tient une Baie, elle est brûlée et devient inutilisable.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

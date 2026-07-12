@@ -2,6 +2,7 @@
     "accuracy": 85,
     "damage_class": "physical",
     "description_en": "The user hurls giant chunks of ice at the target to inflict damage.",
+    "description_fr": "Le lanceur envoie un bloc de glace de la taille d'un iceberg sur l'ennemi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

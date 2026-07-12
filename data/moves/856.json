@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user attacks with elegant poise. If the user has a Tatsugiri in its mouth, this move boosts one of the user's stats based on the Tatsugiri's form.",
+    "description_fr": "Le lanceur attaque avec grâce et élégance. Si le lanceur a un Nigirigon dans sa bouche, cette capacité augmente une des statistiques du lanceur selon la forme du Nigirigon.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

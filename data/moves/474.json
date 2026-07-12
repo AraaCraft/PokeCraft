@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "special",
     "description_en": "The user drenches the target in a special poisonous liquid. Its power is doubled if the target is poisoned.",
+    "description_fr": "Le lanceur inocule un poison spécial à l’ennemi. L’effet est doublé si l’ennemi est déjà empoisonné.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

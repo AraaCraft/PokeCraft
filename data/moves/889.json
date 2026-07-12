@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "physical",
     "description_en": "The user converts its rage into energy to attack. The more times the user has been hit by attacks, the greater the move's power.",
+    "description_fr": "Le lanceur transforme sa colère en énergie pour attaquer. Plus il a subi d'attaques, plus la puissance de cette capacité augmente.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": null,
+    "description_fr": null,
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

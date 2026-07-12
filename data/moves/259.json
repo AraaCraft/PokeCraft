@@ -2,6 +2,7 @@
     "accuracy": 100,
     "damage_class": "status",
     "description_en": "Torments the foe and stops successive use of a move.",
+    "description_fr": "Le lanceur irrite l’ennemi pour l’empêcher d’utiliser la même capacité 2 fois de suite.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

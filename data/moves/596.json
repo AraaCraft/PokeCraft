@@ -2,6 +2,7 @@
     "accuracy": null,
     "damage_class": "status",
     "description_en": "In addition to protecting the user from attacks, this move also damages any attacker who makes direct contact.",
+    "description_fr": "Protège des attaques, et diminue les PV de tout attaquant qui entre en contact avec le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

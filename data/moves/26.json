@@ -2,6 +2,7 @@
     "accuracy": 95,
     "damage_class": "physical",
     "description_en": "May miss, damaging the user.",
+    "description_fr": "Le lanceur s’envole pour décocher un coup de pied sauté. S’il échoue, le lanceur se blesse.",
     "effect_chance": null,
     "effect_changes": [
         {

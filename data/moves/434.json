@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "special",
     "description_en": "Comets are summoned down from the sky. The attack’s recoil sharply reduces the user’s Sp. Atk stat.",
+    "description_fr": "Le lanceur invoque des comètes. Le contrecoup réduit fortement son Attaque Spéciale.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -2,6 +2,7 @@
     "accuracy": 90,
     "damage_class": "physical",
     "description_en": "A kick with a high critical- hit ratio. May cause a burn.",
+    "description_fr": "Le lanceur envoie un coup de pied au taux de critiques élevé. Peut aussi brûler la cible.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,
