@@ -1,17 +1,22 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import PokemonCard from '../components/PokemonCard.astro';
+import Layout from "../layouts/Layout.astro";
+import PokemonCard from "../components/PokemonCard.astro";
 
 // Fetch all local JSON files
-const pokemonFiles = import.meta.glob('../../../data/champions/pokemon/**/*.json', { eager: true });
+const pokemonFiles = import.meta.glob(
+	"../../../data/champions/pokemon/**/*.json",
+	{ eager: true },
+);
 
 // Extract the default export (which is the JSON content)
-const allPokemons = Object.values(pokemonFiles).map((file: any) => file.default);
+const allPokemons = Object.values(pokemonFiles).map(
+	(file: any) => file.default,
+);
 
 // Filter out G-Max and unwanted Pikachu forms
-const validPokemons = allPokemons.filter(p => {
-	if (p.form.includes('-gmax')) return false;
-	if (p.id === 25 && p.form !== 'pikachu') return false; // Pikachu forms exclusion
+const validPokemons = allPokemons.filter((p) => {
+	if (p.form.includes("-gmax")) return false;
+	if (p.id === 25 && p.form !== "pikachu") return false; // Pikachu forms exclusion
 	return true;
 });
 
@@ -34,18 +39,113 @@ let pokemons = Array.from(uniquePokemonsMap.values());
 pokemons.sort((a, b) => a.id - b.id);
 ---
 
-<Layout title="Pokédex Champions">
+<Layout title="Pokédex | PokeCraft">
 	<header class="page-header">
-		<h1>Pokédex Champions</h1>
-		<p>Welcome to the static Pokédex generated from your local data!</p>
+		<h1>Pokédex</h1>
+		<p>
+			Explore all the {pokemons.length} Pokémon on Pokemon Champions!
+		</p>
 	</header>
 
-	<main class="pokemon-grid">
-		{pokemons.map((pokemon) => (
-			<PokemonCard pokemon={pokemon} />
-		))}
+	<div class="pokedex-filters">
+		<div class="type-filter-buttons" id="pokedex-type-filter">
+			<button class="type-btn active" data-type="all">All</button>
+			<button class="type-btn bg-normal" data-type="normal">Normal</button
+			>
+			<button class="type-btn bg-fire" data-type="fire">Fire</button>
+			<button class="type-btn bg-water" data-type="water">Water</button>
+			<button class="type-btn bg-grass" data-type="grass">Grass</button>
+			<button class="type-btn bg-electric" data-type="electric"
+				>Electric</button
+			>
+			<button class="type-btn bg-ice" data-type="ice">Ice</button>
+			<button class="type-btn bg-fighting" data-type="fighting"
+				>Fighting</button
+			>
+			<button class="type-btn bg-poison" data-type="poison">Poison</button
+			>
+			<button class="type-btn bg-ground" data-type="ground">Ground</button
+			>
+			<button class="type-btn bg-flying" data-type="flying">Flying</button
+			>
+			<button class="type-btn bg-psychic" data-type="psychic"
+				>Psychic</button
+			>
+			<button class="type-btn bg-bug" data-type="bug">Bug</button>
+			<button class="type-btn bg-rock" data-type="rock">Rock</button>
+			<button class="type-btn bg-ghost" data-type="ghost">Ghost</button>
+			<button class="type-btn bg-dragon" data-type="dragon">Dragon</button
+			>
+			<button class="type-btn bg-dark" data-type="dark">Dark</button>
+			<button class="type-btn bg-steel" data-type="steel">Steel</button>
+			<button class="type-btn bg-fairy" data-type="fairy">Fairy</button>
+		</div>
+	</div>
+
+	<main class="pokemon-grid" id="main-pokedex-grid">
+		{pokemons.map((pokemon) => <PokemonCard pokemon={pokemon} />)}
 	</main>
 </Layout>
+
+<script>
+	const typeButtons = document.querySelectorAll(".type-btn");
+	const pokedexCards = document.querySelectorAll(
+		"#main-pokedex-grid .pokemon-card",
+	);
+	let activeTypes = new Set(["all"]);
+
+	const btnAll = Array.from(typeButtons).find(
+		(b) => (b as HTMLElement).dataset.type === "all",
+	);
+
+	typeButtons.forEach((btn) => {
+		btn.addEventListener("click", () => {
+			const type = (btn as HTMLElement).dataset.type!;
+
+			if (type === "all") {
+				activeTypes.clear();
+				activeTypes.add("all");
+				typeButtons.forEach((b) => b.classList.remove("active"));
+				btn.classList.add("active");
+			} else {
+				activeTypes.delete("all");
+				btnAll?.classList.remove("active");
+
+				if (activeTypes.has(type)) {
+					activeTypes.delete(type);
+					btn.classList.remove("active");
+				} else {
+					activeTypes.add(type);
+					btn.classList.add("active");
+				}
+
+				if (activeTypes.size === 0) {
+					activeTypes.add("all");
+					btnAll?.classList.add("active");
+				}
+			}
+
+			filterPokedex();
+		});
+	});
+
+	function filterPokedex() {
+		pokedexCards.forEach((card) => {
+			const btn = card.querySelector(".quick-add-btn") as HTMLElement;
+			if (!btn) return;
+			const types = btn.dataset.types!.split(",");
+
+			let matchType =
+				activeTypes.has("all") || types.some((t) => activeTypes.has(t));
+
+			if (matchType) {
+				(card as HTMLElement).style.display = "";
+			} else {
+				(card as HTMLElement).style.display = "none";
+			}
+		});
+	}
+</script>
 
 <style>
 	.page-header {
@@ -53,9 +153,56 @@ pokemons.sort((a, b) => a.id - b.id);
 		margin-bottom: 3rem;
 		padding-top: 2rem;
 	}
-	
+
 	.page-header p {
 		color: var(--text-muted);
 		font-size: 1.1rem;
+	}
+
+	/* Filters */
+	.pokedex-filters {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.type-filter-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5rem;
+		max-width: 900px;
+	}
+
+	.type-btn {
+		padding: 0.4rem 1rem;
+		border-radius: 20px;
+		border: 2px solid transparent;
+		color: white;
+		font-weight: 700;
+		font-size: 0.85rem;
+		text-transform: uppercase;
+		cursor: pointer;
+		opacity: 0.6;
+		transition: all 0.2s;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+	}
+
+	.type-btn[data-type="all"] {
+		background-color: var(--surface-color-light);
+		border: 1px solid var(--glass-border);
+		color: white;
+	}
+
+	.type-btn:hover {
+		opacity: 0.9;
+		transform: scale(1.05);
+	}
+
+	.type-btn.active {
+		opacity: 1;
+		border-color: white;
+		transform: scale(1.05);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 	}
 </style>

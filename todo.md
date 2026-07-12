@@ -5,7 +5,8 @@ Pouvoir choisir des altérations de stats pour le pokémon attaqué ET le pokém
 
 - Faire un menu dans le header avec les liens vers les différentes pages :
     - Pokédex
-    - Équipes (avec la possibilité de créer des équipes), "sauvegarder" les équipes des utilisateurs dans des cookies, pas de système de création de compte. Possibilité d'exporter au format .png ou .pdf
+    - Équipes (avec la possibilité de créer des équipes), "sauvegarder" les équipes des utilisateurs dans des cookies, pas de système de création de compte. Possibilité d'exporter au format .png ou .pdf ET d'importer à nouveau ces fichiers.
     - Calculateur d'EV (avec une interface visuelle et intuitive) comme sur Champions
     - Simulateur de dégâts / combat
 
+- A corriger : voir les formes alternatives directement dans le pokédex car quand je filtre par type pour Roigada de Galar par exemple, je ne le trouve pas puisqu'il est accessible uniquement depuis la page de Roidaga classique

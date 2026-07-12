@@ -81,6 +81,8 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
               🔊
             </button>
           </div>
+          <button id="team-btn" class="team-btn">Add to team</button>
+          <div id="team-msg" class="team-msg"></div>
         </header>
 
         {forms.length > 1 && (
@@ -137,7 +139,7 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
         </div>
 
         <div class="type-defenses-section">
-          <h2>Infos Types</h2>
+          <h2>Type Defenses</h2>
           <div id="type-effectiveness-content">
             <p>Calculating...</p>
           </div>
@@ -151,17 +153,17 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
         <h2>Moves (Champions)</h2>
         <div class="moves-filters">
           <select id="filter-type">
-            <option value="all">Tous les types</option>
+            <option value="all">All types</option>
           </select>
           <select id="filter-category">
-            <option value="all">Toutes les catégories</option>
-            <option value="physical">Physique</option>
-            <option value="special">Spécial</option>
-            <option value="status">Statut</option>
+            <option value="all">All categories</option>
+            <option value="physical">Physical</option>
+            <option value="special">Special</option>
+            <option value="status">Status</option>
           </select>
           <select id="sort-order">
-            <option value="asc">Ordre A-Z</option>
-            <option value="desc">Ordre Z-A</option>
+            <option value="asc">A-Z Order</option>
+            <option value="desc">Z-A Order</option>
           </select>
         </div>
       </div>
@@ -170,6 +172,11 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
       </div>
     </div>
   </div>
+
+  <script>
+    import { addToTeam, removeFromTeam, isInTeam } from '../../scripts/teamStore.js';
+    window.teamStore = { addToTeam, removeFromTeam, isInTeam };
+  </script>
 
   <!-- Store data for the client script -->
   <script is:inline define:vars={{ forms, pokemonMovesMap }}>
@@ -186,6 +193,8 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
     const filterTypeEl = document.getElementById('filter-type');
     const filterCategoryEl = document.getElementById('filter-category');
     const sortOrderEl = document.getElementById('sort-order');
+    const teamBtn = document.getElementById('team-btn');
+    const teamMsg = document.getElementById('team-msg');
     
     let currentAudio = null;
     let currentMovesData = [];
@@ -225,7 +234,7 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
       }
 
       if (moves.length === 0) {
-         movesEl.innerHTML = '<p style="padding: 1rem; color: #a0a0a0;">Aucune capacité ne correspond à ces critères.</p>';
+         movesEl.innerHTML = '<p style="padding: 1rem; color: #a0a0a0;">No moves match these criteria.</p>';
          return;
       }
 
@@ -242,9 +251,9 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
               </tr>
             </thead>
             <tbody>
-              ${moves.map(m => {
+              ${moves.map((m) => {
                 const catIcon = m.damage_class === 'physical' ? '💥' : m.damage_class === 'special' ? '🔮' : '🛡️';
-                const catText = m.damage_class === 'physical' ? 'Physique' : m.damage_class === 'special' ? 'Spécial' : 'Statut';
+                const catText = m.damage_class === 'physical' ? 'Physical' : m.damage_class === 'special' ? 'Special' : 'Status';
                 const typeCapitalized = m.type_name.charAt(0).toUpperCase() + m.type_name.slice(1);
                 return `
                 <tr>
@@ -472,7 +481,7 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
       if (filterTypeEl) {
         const uniqueTypes = [...new Set(currentMovesData.map(m => m.type_name))].sort();
         const currentSelectedType = filterTypeEl.value;
-        filterTypeEl.innerHTML = '<option value="all">Tous les types</option>' + 
+        filterTypeEl.innerHTML = '<option value="all">All types</option>' + 
           uniqueTypes.map(t => `<option value="${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</option>`).join('');
         if (uniqueTypes.includes(currentSelectedType)) {
           filterTypeEl.value = currentSelectedType;
@@ -480,6 +489,48 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
       }
       
       renderMoves();
+
+      // Team logic update
+      if (window.teamStore && teamBtn) {
+         const isInTeam = window.teamStore.isInTeam(p.id, p.form);
+         if (isInTeam) {
+            teamBtn.textContent = 'Remove from team';
+            teamBtn.classList.add('in-team');
+         } else {
+            teamBtn.textContent = 'Add to team';
+            teamBtn.classList.remove('in-team');
+         }
+         teamMsg.textContent = '';
+
+         teamBtn.onclick = () => {
+            if (window.teamStore.isInTeam(p.id, p.form)) {
+               window.teamStore.removeFromTeam(p.id, p.form);
+               teamBtn.textContent = 'Add to team';
+               teamBtn.classList.remove('in-team');
+               teamMsg.textContent = 'Removed from team.';
+               teamMsg.style.color = '#ff6b6b';
+            } else {
+               const res = window.teamStore.addToTeam({
+                  id: p.id,
+                  form: p.form,
+                  name: p.name,
+                  types: p.types.map(t => t.type.name),
+               });
+               if (res.success) {
+                  teamBtn.textContent = 'Remove from team';
+                  teamBtn.classList.add('in-team');
+                  teamMsg.style.color = '#51cf66';
+               } else {
+                  teamMsg.style.color = '#ff6b6b';
+               }
+               teamMsg.textContent = res.message;
+            }
+            setTimeout(() => teamMsg.textContent = '', 3000);
+         };
+      } else if (!window.teamStore) {
+         // Fallback if teamStore is not loaded yet
+         setTimeout(() => updateUI(formIndex), 100);
+      }
     }
 
     // Initialize with first form
@@ -596,6 +647,38 @@ const pokemonMovesJson = JSON.stringify(pokemonMovesMap);
     font-weight: 700;
     color: white;
     text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  }
+
+  .team-btn {
+    background: var(--surface-color-light);
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .team-btn:hover {
+    background: rgba(255,255,255,0.1);
+  }
+
+  .team-btn.in-team {
+    background: #e03131;
+    border-color: #e03131;
+  }
+
+  .team-btn.in-team:hover {
+    background: #c92a2a;
+  }
+
+  .team-msg {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    min-height: 1.2em;
   }
 
   .forms-selector {

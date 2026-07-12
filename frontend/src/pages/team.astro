@@ -1,0 +1,1020 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PokemonCard from '../components/PokemonCard.astro';
+
+// Fetch all local JSON files
+const pokemonFiles = import.meta.glob('../../../data/champions/pokemon/**/*.json', { eager: true });
+const allPokemons = Object.values(pokemonFiles).map((file: any) => file.default);
+const validPokemons = allPokemons.filter(p => {
+	if (p.form.includes('-gmax')) return false;
+	if (p.id === 25 && p.form !== 'pikachu') return false; // Pikachu forms exclusion
+	return true;
+});
+const uniquePokemonsMap = new Map();
+for (const p of validPokemons) {
+	if (!uniquePokemonsMap.has(p.id)) {
+		uniquePokemonsMap.set(p.id, p);
+	} else {
+		if (p.form === p.name) {
+			uniquePokemonsMap.set(p.id, p);
+		}
+	}
+}
+let pokemons = Array.from(uniquePokemonsMap.values());
+pokemons.sort((a, b) => a.id - b.id);
+
+const statsMap = {};
+for (const p of validPokemons) {
+	statsMap[`${p.id}_${p.form}`] = p.stats;
+}
+---
+
+<Layout title="My Team | Pokédex">
+  <div class="team-page">
+    <header class="page-header">
+      <h1>My Pokémon Team</h1>
+      <p>Create and manage your dream teams! (Maximum 6 Pokémon per team)</p>
+    </header>
+
+    <!-- Multiple Teams Selector -->
+    <div class="team-selector-container">
+      <div id="team-list" class="team-list">
+        <!-- Populated by JS -->
+      </div>
+      <button id="create-team-btn" class="create-team-btn glass-panel" title="Create new team">
+        <span>+</span>
+      </button>
+    </div>
+
+    <div class="team-container-wrapper" id="capture-area">
+      <div class="export-header hidden" id="export-header">
+        <h2 id="export-team-name">My Champion Team</h2>
+        <div class="export-logo">PokeCraft</div>
+      </div>
+
+      <main class="team-circle-grid" id="team-grid">
+        <!-- Populated by JS -->
+      </main>
+
+      <div class="stats-toggle-container hidden" id="stats-toggle-container">
+        <button id="toggle-stats-btn" class="toggle-stats-btn glass-panel">
+          Show statistics ▼
+        </button>
+      </div>
+
+      <div id="team-stats-grid" class="team-stats-grid hidden-collapsible">
+        <!-- Populated by JS -->
+      </div>
+      
+      <div id="empty-state" class="empty-state hidden">
+        <h2>Your team is empty!</h2>
+        <p>Add your favorite Pokémon from the list below.</p>
+      </div>
+    </div>
+
+    <div class="team-pokedex-section">
+      <h2 class="section-title">Add Pokémon</h2>
+      
+      <div class="pokedex-filters">
+        <div class="type-filter-buttons" id="pokedex-type-filter">
+          <button class="type-btn active" data-type="all">All</button>
+          <button class="type-btn bg-normal" data-type="normal">Normal</button>
+          <button class="type-btn bg-fire" data-type="fire">Fire</button>
+          <button class="type-btn bg-water" data-type="water">Water</button>
+          <button class="type-btn bg-grass" data-type="grass">Grass</button>
+          <button class="type-btn bg-electric" data-type="electric">Electric</button>
+          <button class="type-btn bg-ice" data-type="ice">Ice</button>
+          <button class="type-btn bg-fighting" data-type="fighting">Fighting</button>
+          <button class="type-btn bg-poison" data-type="poison">Poison</button>
+          <button class="type-btn bg-ground" data-type="ground">Ground</button>
+          <button class="type-btn bg-flying" data-type="flying">Flying</button>
+          <button class="type-btn bg-psychic" data-type="psychic">Psychic</button>
+          <button class="type-btn bg-bug" data-type="bug">Bug</button>
+          <button class="type-btn bg-rock" data-type="rock">Rock</button>
+          <button class="type-btn bg-ghost" data-type="ghost">Ghost</button>
+          <button class="type-btn bg-dragon" data-type="dragon">Dragon</button>
+          <button class="type-btn bg-dark" data-type="dark">Dark</button>
+          <button class="type-btn bg-steel" data-type="steel">Steel</button>
+          <button class="type-btn bg-fairy" data-type="fairy">Fairy</button>
+        </div>
+      </div>
+
+      <div class="pokemon-grid">
+        {pokemons.map((pokemon) => (
+          <PokemonCard pokemon={pokemon} />
+        ))}
+      </div>
+    </div>
+
+    <!-- Export Menu -->
+    <div class="export-menu-container">
+      <div id="export-options" class="export-options hidden">
+        <button id="export-png-btn" class="export-btn png-btn" title="Export as PNG">
+          <span>📸</span> PNG
+        </button>
+        <button id="export-pdf-btn" class="export-btn pdf-btn" title="Export as PDF">
+          <span>📄</span> PDF
+        </button>
+      </div>
+      <button id="export-main-btn" class="export-main-btn">
+        EXPORT
+      </button>
+    </div>
+  </div>
+
+  <script is:inline define:vars={{ statsMap }}>
+    window.pokemonStatsMap = statsMap;
+  </script>
+
+  <script>
+    import { getAllTeams, getActiveTeam, setActiveTeam, createTeam, deleteTeam, removeFromTeam, renameActiveTeam } from '../scripts/teamStore.js';
+    import html2canvas from 'html2canvas';
+    import { jsPDF } from 'jspdf';
+
+    const teamGrid = document.getElementById('team-grid');
+    const teamStatsGrid = document.getElementById('team-stats-grid');
+    const toggleStatsBtn = document.getElementById('toggle-stats-btn');
+    const statsToggleContainer = document.getElementById('stats-toggle-container');
+    const emptyState = document.getElementById('empty-state');
+    const captureArea = document.getElementById('capture-area');
+    const exportHeader = document.getElementById('export-header');
+    const exportTeamName = document.getElementById('export-team-name');
+    const teamListEl = document.getElementById('team-list');
+    const createTeamBtn = document.getElementById('create-team-btn');
+
+    const btnExportMain = document.getElementById('export-main-btn');
+    const exportOptions = document.getElementById('export-options');
+    const btnPng = document.getElementById('export-png-btn');
+    const btnPdf = document.getElementById('export-pdf-btn');
+
+    function renderTeamList() {
+      const teams = getAllTeams();
+      const activeTeam = getActiveTeam();
+
+      if (!teamListEl) return;
+
+      teamListEl.innerHTML = teams.map(team => {
+        const isActive = team.id === activeTeam.id;
+        return `
+          <div class="team-tab ${isActive ? 'active' : ''}" data-id="${team.id}">
+            <span class="team-name">${team.name}</span>
+            <button class="rename-team-btn" data-id="${team.id}" title="Rename team">✏️</button>
+            <span class="team-count">(${team.members.length}/6)</span>
+            ${teams.length > 1 ? `<button class="delete-team-btn" data-id="${team.id}" title="Delete team">×</button>` : ''}
+          </div>
+        `;
+      }).join('');
+
+      // Add listeners for tabs
+      document.querySelectorAll('.team-tab').forEach(tab => {
+        tab.addEventListener('click', (e) => {
+          if ((e.target as HTMLElement).closest('button')) return; // Ignore clicks on buttons inside tab
+          const id = (e.currentTarget as HTMLElement).dataset.id;
+          setActiveTeam(id);
+          renderUI();
+        });
+      });
+
+      // Add listeners for rename buttons
+      document.querySelectorAll('.rename-team-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const id = (e.currentTarget as HTMLElement).dataset.id;
+          const team = teams.find(t => t.id === id);
+          if (team) {
+            const newName = prompt("New team name:", team.name);
+            if (newName && newName.trim() !== "" && newName.trim() !== team.name) {
+              setActiveTeam(id);
+              renameActiveTeam(newName.trim());
+              renderUI();
+            }
+          }
+        });
+      });
+
+      // Add listeners for delete buttons
+      document.querySelectorAll('.delete-team-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = (e.target as HTMLElement).dataset.id;
+          if (confirm('Are you sure you want to delete this team?')) {
+            deleteTeam(id);
+            renderUI();
+          }
+        });
+      });
+    }
+
+    function renderTeamGrid() {
+      if (!teamGrid) return;
+      const activeTeam = getActiveTeam();
+      const team = activeTeam.members;
+      
+      if (team.length === 0) {
+        teamGrid.innerHTML = '';
+        if (teamStatsGrid) teamStatsGrid.innerHTML = '';
+        teamGrid.classList.add('hidden');
+        if (statsToggleContainer) statsToggleContainer.classList.add('hidden');
+        if (emptyState) emptyState.classList.remove('hidden');
+        if (btnExportMain) btnExportMain.style.display = 'none';
+        return;
+      }
+
+      if (emptyState) emptyState.classList.add('hidden');
+      teamGrid.classList.remove('hidden');
+      if (statsToggleContainer) statsToggleContainer.classList.remove('hidden');
+      if (btnExportMain) btnExportMain.style.display = 'block';
+
+      teamGrid.innerHTML = team.map(pokemon => {
+        const primaryType = pokemon.types[0] || 'normal';
+        let displayName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+        if (pokemon.form !== pokemon.name) {
+          displayName += ' (' + pokemon.form.replace(`${pokemon.name}-`, '').replace('-', ' ').toUpperCase() + ')';
+        }
+
+        return `
+          <div class="team-circle glass-panel" style="--accent-color: var(--type-${primaryType})">
+            <button class="remove-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" aria-label="Remove" title="Remove from team">×</button>
+            <a href="/pokemon/${pokemon.id}" class="circle-link">
+              <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName}" loading="lazy" crossorigin="anonymous" />
+            </a>
+            <div class="name-badge">${displayName}</div>
+          </div>
+        `;
+      }).join('');
+
+      if (teamStatsGrid) {
+        teamStatsGrid.innerHTML = team.map(pokemon => {
+          const primaryType = pokemon.types[0] || 'normal';
+          let displayName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+          if (pokemon.form !== pokemon.name) {
+            displayName += ' (' + pokemon.form.replace(`${pokemon.name}-`, '').replace('-', ' ').toUpperCase() + ')';
+          }
+
+          const stats = window.pokemonStatsMap[`${pokemon.id}_${pokemon.form}`] || [];
+          
+          let statsHtml = stats.map((s: any) => `
+            <div class="stat-row">
+              <span class="stat-name">${s.stat.name.replace('-', ' ')}</span>
+              <span class="stat-val">${s.base_stat}</span>
+              <div class="stat-bar-bg">
+                <div class="stat-bar-fill" style="width: ${Math.min((s.base_stat / 255) * 100, 100)}%; background-color: var(--accent-color);"></div>
+              </div>
+            </div>
+          `).join('');
+
+          return `
+            <div class="stat-card glass-panel" style="--accent-color: var(--type-${primaryType})">
+              <div class="stat-card-header">
+                <h3>${displayName}</h3>
+                <div class="types" style="display:flex; gap:0.5rem; justify-content:center; align-items:center;">
+                  ${pokemon.types.map((t: string) => `<span class="type-badge bg-${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</span>`).join('')}
+                </div>
+              </div>
+              <div class="stat-card-body" style="margin-top:1rem;">
+                ${statsHtml}
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // Add remove listeners
+      document.querySelectorAll('.team-circle .remove-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = parseInt((e.target as HTMLElement).dataset.id);
+          const form = (e.target as HTMLElement).dataset.form;
+          removeFromTeam(id, form);
+          renderUI();
+        });
+      });
+    }
+
+    function renderUI() {
+      renderTeamList();
+      renderTeamGrid();
+    }
+
+    if (createTeamBtn) {
+      createTeamBtn.addEventListener('click', () => {
+        createTeam();
+        renderUI();
+      });
+    }
+
+    if (toggleStatsBtn && teamStatsGrid) {
+      toggleStatsBtn.addEventListener('click', () => {
+        teamStatsGrid.classList.toggle('hidden-collapsible');
+        if (teamStatsGrid.classList.contains('hidden-collapsible')) {
+          toggleStatsBtn.innerHTML = 'Show statistics ▼';
+        } else {
+          toggleStatsBtn.innerHTML = 'Hide statistics ▲';
+        }
+      });
+    }
+
+    if (btnExportMain && exportOptions) {
+      btnExportMain.addEventListener('click', () => {
+        exportOptions.classList.toggle('hidden');
+      });
+    }
+
+    renderUI();
+    window.addEventListener('team-data-updated', renderUI);
+
+    // Pokedex Filter Logic
+    const typeButtons = document.querySelectorAll('.type-btn');
+    const pokedexCards = document.querySelectorAll('.team-pokedex-section .pokemon-card');
+    let activeTypes = new Set(['all']);
+
+    const btnAll = Array.from(typeButtons).find(b => (b as HTMLElement).dataset.type === 'all');
+
+    typeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const type = (btn as HTMLElement).dataset.type!;
+        
+        if (type === 'all') {
+          activeTypes.clear();
+          activeTypes.add('all');
+          typeButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        } else {
+          activeTypes.delete('all');
+          btnAll?.classList.remove('active');
+
+          if (activeTypes.has(type)) {
+            activeTypes.delete(type);
+            btn.classList.remove('active');
+          } else {
+            activeTypes.add(type);
+            btn.classList.add('active');
+          }
+
+          if (activeTypes.size === 0) {
+            activeTypes.add('all');
+            btnAll?.classList.add('active');
+          }
+        }
+
+        filterPokedex();
+      });
+    });
+
+    function filterPokedex() {
+      pokedexCards.forEach(card => {
+        const btn = card.querySelector('.quick-add-btn') as HTMLElement;
+        if (!btn) return;
+        const types = btn.dataset.types!.split(',');
+
+        let matchType = activeTypes.has('all') || types.some(t => activeTypes.has(t));
+
+        if (matchType) {
+          (card as HTMLElement).style.display = '';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    }
+
+    // Export Logic
+    async function captureTeam() {
+      const activeTeam = getActiveTeam();
+      if (exportTeamName) exportTeamName.textContent = activeTeam.name;
+
+      if (exportHeader) exportHeader.classList.remove('hidden');
+      document.querySelectorAll('.team-circle .remove-btn').forEach(b => (b as HTMLElement).style.display = 'none');
+      if (captureArea) {
+        captureArea.style.padding = '2rem';
+        captureArea.style.background = '#121416';
+        captureArea.style.borderRadius = '16px';
+      }
+
+      try {
+        const canvas = await html2canvas(captureArea, {
+          backgroundColor: '#121416',
+          useCORS: true,
+          scale: 2
+        });
+        return canvas;
+      } finally {
+        if (exportHeader) exportHeader.classList.add('hidden');
+        document.querySelectorAll('.team-circle .remove-btn').forEach(b => (b as HTMLElement).style.display = '');
+        if (captureArea) {
+          captureArea.style.padding = '';
+          captureArea.style.background = '';
+          captureArea.style.borderRadius = '';
+        }
+      }
+    }
+
+    if (btnPng) {
+      btnPng.addEventListener('click', async () => {
+        const ogText = btnPng.innerHTML;
+        btnPng.innerHTML = '<span>⏳</span> Exporting...';
+        btnPng.classList.add('loading');
+        
+        try {
+          const canvas = await captureTeam();
+          const link = document.createElement('a');
+          link.download = `team-${getActiveTeam().name.toLowerCase().replace(/\s+/g, '-')}.png`;
+          link.href = canvas.toDataURL('image/png');
+          link.click();
+        } catch (e) {
+          console.error("Export PNG Error:", e);
+          alert("Error during PNG export.");
+        } finally {
+          btnPng.innerHTML = ogText;
+          btnPng.classList.remove('loading');
+        }
+      });
+    }
+
+    if (btnPdf) {
+      btnPdf.addEventListener('click', async () => {
+        const ogText = btnPdf.innerHTML;
+        btnPdf.innerHTML = '<span>⏳</span> Exporting...';
+        btnPdf.classList.add('loading');
+        
+        try {
+          const canvas = await captureTeam();
+          const imgData = canvas.toDataURL('image/png');
+          
+          const pdf = new jsPDF({
+            orientation: 'landscape',
+            unit: 'mm',
+            format: 'a4'
+          });
+
+          const pdfWidth = pdf.internal.pageSize.getWidth();
+          const pdfHeight = pdf.internal.pageSize.getHeight();
+
+          const imgWidth = canvas.width;
+          const imgHeight = canvas.height;
+          const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+          
+          const finalWidth = imgWidth * ratio;
+          const finalHeight = imgHeight * ratio;
+          
+          const marginX = (pdfWidth - finalWidth) / 2;
+          const marginY = (pdfHeight - finalHeight) / 2;
+
+          pdf.addImage(imgData, 'PNG', marginX, marginY, finalWidth, finalHeight);
+          pdf.save(`team-${getActiveTeam().name.toLowerCase().replace(/\s+/g, '-')}.pdf`);
+        } catch (e) {
+          console.error("Export PDF Error:", e);
+          alert("Error during PDF export.");
+        } finally {
+          btnPdf.innerHTML = ogText;
+          btnPdf.classList.remove('loading');
+        }
+      });
+    }
+  </script>
+</Layout>
+
+<style is:global>
+  .team-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+
+  .page-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .export-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+  }
+
+  .export-btn:hover:not(.loading) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .export-btn:active:not(.loading) {
+    transform: translateY(0);
+  }
+
+  .export-btn.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  .png-btn {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  }
+
+  .pdf-btn {
+    background: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
+  }
+
+  /* Export Floating Menu */
+  .export-menu-container {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .export-main-btn {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 1.5rem 0.5rem;
+    border-radius: 10px 0 0 10px;
+    background: var(--primary-color, #ff5350);
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background 0.2s;
+    letter-spacing: 2px;
+  }
+
+  .export-main-btn:hover {
+    background: #e03131;
+    transform: translateX(-5px);
+  }
+
+  .export-options {
+    position: absolute;
+    right: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 1rem;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .export-options.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(20px);
+  }
+
+  .export-options .export-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+
+  /* Team Selector */
+  .team-selector-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .team-list {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0.5rem;
+  }
+
+  .team-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .team-tab:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+
+  .team-tab.active {
+    background: rgba(255, 83, 80, 0.2);
+    border-color: var(--primary-color, #ff5350);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(255, 83, 80, 0.2);
+  }
+
+  .delete-team-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 0 0.2rem;
+  }
+
+  .delete-team-btn:hover {
+    opacity: 1;
+    color: #ff6b6b;
+  }
+
+  .rename-team-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 0 0.2rem;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  
+  .rename-team-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  .create-team-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px dashed var(--glass-border);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .create-team-btn:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+  }
+
+  /* Capture Area */
+  .team-container-wrapper {
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .export-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .export-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .export-logo {
+    font-size: 1.2rem;
+    color: var(--primary-color, #ff5350);
+    font-weight: 800;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  /* Empty State */
+  .empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 16px;
+    border: 1px dashed var(--glass-border);
+  }
+
+  .empty-state h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .empty-state p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .primary-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--primary-color, #ff5350);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.2s;
+  }
+
+  .primary-btn:hover {
+    background: #e03131;
+  }
+
+  /* Custom styles for the team page */
+  .team-pokedex-section {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  /* Circular team grid */
+  .team-circle-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 1rem; /* Added horizontal padding to fit the close btn */
+  }
+
+  @media (min-width: 1024px) {
+    .team-circle-grid {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .team-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 4px solid var(--accent-color);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    flex-shrink: 0;
+  }
+
+  .team-circle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+  }
+
+  .circle-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .circle-link img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 5px 8px rgba(0,0,0,0.6));
+    transition: transform 0.2s;
+  }
+  
+  .team-circle:hover .circle-link img {
+    transform: scale(1.1);
+  }
+
+  .team-circle .name-badge {
+    position: absolute;
+    bottom: -15px;
+    background: var(--surface-color);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 2px solid var(--accent-color);
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    z-index: 2;
+  }
+
+  /* Filters */
+  .pokedex-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .type-filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 900px;
+  }
+
+  .type-btn {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.2s;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  }
+
+  .type-btn[data-type="all"] {
+    background-color: var(--surface-color-light);
+    border: 1px solid var(--glass-border);
+    color: white;
+  }
+
+  .type-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+
+  .type-btn.active {
+    opacity: 1;
+    border-color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+
+  .remove-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--surface-color-light);
+    color: #ff6b6b;
+    border: 2px solid var(--glass-border);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+    transition: all 0.2s;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .remove-btn:hover {
+    background: #ff6b6b;
+    color: white;
+    border-color: #ff6b6b;
+    transform: scale(1.1);
+  }
+
+  /* Stats Toggle */
+  .stats-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .toggle-stats-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .toggle-stats-btn:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Stats Grid */
+  .team-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    max-height: 2000px; /* arbitrary large value for transition */
+    overflow: hidden;
+  }
+
+  .team-stats-grid.hidden-collapsible {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    pointer-events: none;
+  }
+
+  @media (min-width: 768px) {
+    .team-stats-grid {
+      grid-template-columns: 1fr 1fr; /* 2 columns */
+    }
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 4px solid var(--accent-color);
+  }
+
+  .stat-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+  }
+
+  .stat-card-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-name {
+    width: 100px;
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .stat-val {
+    width: 35px;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .stat-bar-bg {
+    flex: 1;
+    height: 6px;
+    background-color: var(--surface-color-light);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .stat-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease-out;
+  }
+</style>

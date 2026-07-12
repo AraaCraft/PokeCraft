@@ -17,6 +17,8 @@
         </ul>
       </div>
 
+      <a href="/team" class="team-link">Mon Équipe (<span id="team-count">0</span>)</a>
+
       <div class="lang-selector-container">
         <select class="lang-selector" id="lang-selector">
           <option value="en">EN</option>
@@ -220,6 +222,22 @@
     background: var(--surface-color);
   }
 
+  .team-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 83, 80, 0.2);
+    border: 1px solid var(--primary-color, #ff5350);
+    border-radius: 20px;
+    transition: all 0.2s;
+  }
+
+  .team-link:hover {
+    background: var(--primary-color, #ff5350);
+  }
+
   @media (max-width: 768px) {
     .header-content {
       flex-direction: column;
@@ -238,10 +256,29 @@
 </style>
 
 <script>
+  import { getActiveTeam } from '../scripts/teamStore.js';
+
   let searchIndex = [];
   const searchInput = document.getElementById('pokemon-search') as HTMLInputElement;
   const searchResults = document.getElementById('search-results');
   const langSelector = document.getElementById('lang-selector') as HTMLSelectElement;
+  const teamCountEl = document.getElementById('team-count');
+
+  // Update team count
+  function updateTeamCount() {
+    if (teamCountEl) {
+      const activeTeam = getActiveTeam();
+      teamCountEl.textContent = activeTeam.members.length.toString();
+    }
+  }
+  
+  updateTeamCount();
+  // Listen for storage events (if changed in another tab)
+  window.addEventListener('storage', updateTeamCount);
+  // Also we might want to poll or just rely on page loads, since cookies don't trigger storage events cross-tab usually, 
+  // but let's poll every 1s just for UI consistency within the same page if a component changes it.
+  setInterval(updateTeamCount, 1000);
+  window.addEventListener('team-data-updated', updateTeamCount);
 
   // Load search index
   async function loadSearchIndex() {
