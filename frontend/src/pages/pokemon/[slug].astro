@@ -161,6 +161,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
       <div class="glass-panel effectiveness-card" id="effectiveness-card">
         <div class="base-stats-section-top">
           <h2>Base Stats</h2>
+          <p style="font-size: 0.8em; margin-top: -0.5rem; margin-bottom: 1rem; color: var(--text-color); opacity: 0.8; font-style: italic;">(Stats applied in Pokémon Champions)</p>
           <div class="stats-list" id="pokemon-stats">
             <!-- Populated by JS -->
           </div>
@@ -345,9 +346,12 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
         statsEl.innerHTML = '';
         p.stats.forEach(s => {
           const statName = s.stat.name.replace('-', ' ').toUpperCase();
-          const statValue = s.base_stat;
+          
+          const additiveBonus = s.stat.name === 'hp' ? 75 : 20;
+          const statValue = s.base_stat + additiveBonus;
+          
           const statMax = 255;
-          const percentage = (statValue / statMax) * 100;
+          const percentage = Math.min((statValue / statMax) * 100, 100);
           
           let colorVar = 'var(--stat-good)';
           if (statValue < 50) colorVar = 'var(--stat-poor)';

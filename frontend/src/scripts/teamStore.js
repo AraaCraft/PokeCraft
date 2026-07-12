@@ -158,14 +158,15 @@ export function addToTeam(pokemon) {
     return { success: false, message: 'Your team is full (max 6 Pokémon)!' };
   }
   
-  const isDuplicate = activeTeam.members.some(p => p.id === pokemon.id && p.form === pokemon.form);
+  const isDuplicate = activeTeam.members.some(p => p.id === pokemon.id);
   if (isDuplicate) {
-    return { success: false, message: 'This Pokémon is already in your team.' };
+    return { success: false, message: 'You already have this Pokémon (or another form of it) in your team.' };
   }
 
   activeTeam.members.push({
     ...pokemon,
     ability: pokemon.ability || null,
+    nature: pokemon.nature || '25',
     moves: pokemon.moves || [null, null, null, null],
     evs: pokemon.evs || {
       hp: 0,
@@ -187,7 +188,8 @@ export function removeFromTeam(id, form) {
   
   if (!activeTeam) return false;
 
-  const index = activeTeam.members.findIndex(p => p.id === id && p.form === form);
+  // Form is intentionally ignored to treat all forms of the same Pokémon as mutually exclusive
+  const index = activeTeam.members.findIndex(p => p.id === id);
   if (index !== -1) {
     activeTeam.members.splice(index, 1);
     saveTeamData(data);
@@ -199,7 +201,8 @@ export function removeFromTeam(id, form) {
 // Check if a pokemon is in the ACTIVE team
 export function isInTeam(id, form) {
   const activeTeam = getActiveTeam();
-  return activeTeam.members.some(p => p.id === id && p.form === form);
+  // Form is intentionally ignored
+  return activeTeam.members.some(p => p.id === id);
 }
 
 // Update pokemon config in the ACTIVE team

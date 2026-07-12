@@ -29,10 +29,12 @@ Object.values(allMovesFiles).forEach((file: any) => {
   const moveData = file.default;
   movesNameMap[moveData.id] = moveData.name_en || moveData.name;
 });
+
+import naturesData from '../../public/data/natures.json';
 ---
 
 <Layout title="My Team | Pokédex">
-  <div class="team-page" id="team-page-container" data-moves={encodeURIComponent(JSON.stringify(movesNameMap))}>
+  <div class="team-page" id="team-page-container" data-moves={encodeURIComponent(JSON.stringify(movesNameMap))} data-natures={encodeURIComponent(JSON.stringify(naturesData))}>
     <header class="page-header">
       <h1>My Pokémon Team</h1>
       <p>Create and manage your dream teams! (Maximum 6 Pokémon per team)</p>
@@ -120,6 +122,13 @@ Object.values(allMovesFiles).forEach((file: any) => {
           <input type="hidden" id="config-pokemon-form" />
 
           <div class="config-section">
+            <h3>Nature</h3>
+            <select id="config-nature" class="config-select has-tooltip" data-tooltip="">
+              <!-- Populated by JS -->
+            </select>
+          </div>
+
+          <div class="config-section">
             <h3>Ability</h3>
             <select id="config-ability" class="config-select">
               <!-- Populated by JS -->
@@ -141,27 +150,27 @@ Object.values(allMovesFiles).forEach((file: any) => {
             <p class="ev-hint">Max 32 points per stat.</p>
             <div class="ev-sliders">
               <div class="ev-row">
-                <label>HP (<span id="ev-val-hp">0</span>)</label>
+                <label>HP (<span id="ev-val-hp">0</span>)<span id="ev-final-hp" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-hp" class="ev-slider" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Attack (<span id="ev-val-attack">0</span>)</label>
+                <label>Attack (<span id="ev-val-attack">0</span>)<span id="ev-final-attack" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-attack" class="ev-slider" data-stat="attack" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Defense (<span id="ev-val-defense">0</span>)</label>
+                <label>Defense (<span id="ev-val-defense">0</span>)<span id="ev-final-defense" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-defense" class="ev-slider" data-stat="defense" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Sp. Atk (<span id="ev-val-special-attack">0</span>)</label>
+                <label>Sp. Atk (<span id="ev-val-special-attack">0</span>)<span id="ev-final-special-attack" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-special-attack" class="ev-slider" data-stat="special-attack" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Sp. Def (<span id="ev-val-special-defense">0</span>)</label>
+                <label>Sp. Def (<span id="ev-val-special-defense">0</span>)<span id="ev-final-special-defense" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-special-defense" class="ev-slider" data-stat="special-defense" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Speed (<span id="ev-val-speed">0</span>)</label>
+                <label>Speed (<span id="ev-val-speed">0</span>)<span id="ev-final-speed" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-speed" class="ev-slider" data-stat="speed" min="0" max="32" value="0" />
               </div>
             </div>
@@ -216,6 +225,7 @@ Object.values(allMovesFiles).forEach((file: any) => {
 
     const pageContainer = document.getElementById('team-page-container');
     const globalMovesNameMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.moves || '{}'));
+    const globalNaturesMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.natures || '{}'));
 
     function renderTeamList() {
       const teams = getAllTeams();
@@ -331,16 +341,49 @@ Object.values(allMovesFiles).forEach((file: any) => {
 
           const stats = window.pokemonStatsMap[`${pokemon.id}_${pokemon.form}`] || [];
           
-          let statsHtml = stats.map((s: any) => `
+          const natureId = pokemon.nature || '25';
+          const natureData = globalNaturesMap[natureId];
+          const incStat = natureData?.increased_stat;
+          const decStat = natureData?.decreased_stat;
+          
+          let statsHtml = stats.map((s: any) => {
+            let colorStyle = '';
+            
+            const additiveBonus = s.stat.name === 'hp' ? 75 : 20;
+            const evBonus = (pokemon.evs && pokemon.evs[s.stat.name]) ? pokemon.evs[s.stat.name] : 0;
+            let finalVal = s.base_stat + additiveBonus + evBonus;
+
+            if (s.stat.name === incStat) {
+               colorStyle = 'color: #38d9a9;';
+               finalVal = Math.floor(finalVal * 1.1);
+            }
+            else if (s.stat.name === decStat) {
+               colorStyle = 'color: #ff8787;';
+               finalVal = Math.floor(finalVal * 0.9);
+            }
+            
+            return `
             <div class="stat-row">
-              <span class="stat-name">${s.stat.name.replace('-', ' ')}</span>
-              <span class="stat-val">${s.base_stat}</span>
+              <span class="stat-name" style="${colorStyle}">${s.stat.name.replace('-', ' ')}</span>
+              <span class="stat-val" style="${colorStyle}">${finalVal}</span>
               <div class="stat-bar-bg">
-                <div class="stat-bar-fill" style="width: ${Math.min((s.base_stat / 255) * 100, 100)}%; background-color: var(--accent-color);"></div>
+                <div class="stat-bar-fill" style="width: ${Math.min((finalVal / 255) * 100, 100)}%; background-color: var(--accent-color);"></div>
               </div>
             </div>
-          `).join('');
+          `}).join('');
 
+          let natureStr = '';
+          if (natureData) {
+            if (natureData.id !== '25' && natureData.increased_stat && natureData.decreased_stat) {
+               const incName = natureData.increased_stat.replace('-', ' ');
+               const decName = natureData.decreased_stat.replace('-', ' ');
+               const incFmt = incName.charAt(0).toUpperCase() + incName.slice(1);
+               const decFmt = decName.charAt(0).toUpperCase() + decName.slice(1);
+               natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureData.name_en} (<span style="color:#38d9a9;">+ ${incFmt}</span> / <span style="color:#ff8787;">- ${decFmt}</span>)</div>`;
+            } else {
+               natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureData.name_en}</div>`;
+            }
+          }
           const abilityStr = pokemon.ability ? `<div class="config-badge ability-badge">${pokemon.ability.charAt(0).toUpperCase() + pokemon.ability.slice(1)}</div>` : '';
           const movesHtml = pokemon.moves ? pokemon.moves.filter(m => m).map(m => {
             const mName = globalMovesNameMap[String(m)] || String(m);
@@ -365,13 +408,17 @@ Object.values(allMovesFiles).forEach((file: any) => {
           return `
             <div class="team-stat-card glass-panel" style="--accent-color: var(--type-${primaryType})">
               <div class="stat-card-header">
-                <h3>${displayName}</h3>
-                <div class="types" style="display:flex; gap:0.5rem; justify-content:center; align-items:center;">
+                <div style="display:flex; align-items:center; gap: 0.5rem; justify-content:center;">
+                  <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName} icon" style="width: 48px; height: 48px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); margin-top: -10px; margin-bottom: -10px;" />
+                  <h3>${displayName}</h3>
+                </div>
+                <div class="types" style="display:flex; gap:0.5rem; justify-content:center; align-items:center; margin-top: 0.5rem;">
                   ${pokemon.types.map((t: string) => `<span class="type-badge bg-${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</span>`).join('')}
                 </div>
               </div>
-              ${abilityStr || movesHtml ? `
+              ${abilityStr || movesHtml || natureStr ? `
               <div class="stat-card-config">
+                ${natureStr}
                 ${abilityStr}
                 <div class="moves-container">${movesHtml}</div>
                 ${evsHtml}
@@ -435,6 +482,39 @@ Object.values(allMovesFiles).forEach((file: any) => {
     
     let currentEvs = { hp: 0, attack: 0, defense: 0, 'special-attack': 0, 'special-defense': 0, speed: 0 };
     
+    function updateModalFinalStats() {
+      const pId = (document.getElementById('config-pokemon-id') as HTMLInputElement).value;
+      const pForm = (document.getElementById('config-pokemon-form') as HTMLInputElement).value;
+      if (!pId || !pForm) return;
+      const stats = window.pokemonStatsMap[`${pId}_${pForm}`] || [];
+      const natureSelect = document.getElementById('config-nature') as HTMLSelectElement;
+      const natureOpt = natureSelect.options[natureSelect.selectedIndex];
+      const incStat = natureOpt?.dataset.increased;
+      const decStat = natureOpt?.dataset.decreased;
+
+      ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'].forEach(statName => {
+        const baseStatObj = stats.find((s: any) => s.stat.name === statName);
+        if (!baseStatObj) return;
+        let baseVal = baseStatObj.base_stat;
+        if (statName === 'hp') baseVal += 75;
+        else baseVal += 20;
+
+        const evVal = currentEvs[statName as keyof typeof currentEvs] || 0;
+        let total = baseVal + evVal;
+        
+        if (statName === incStat) total = Math.floor(total * 1.1);
+        else if (statName === decStat) total = Math.floor(total * 0.9);
+        
+        const finalSpan = document.getElementById(`ev-final-${statName}`);
+        if (finalSpan) {
+           finalSpan.textContent = ` ➞ ${total}`;
+           finalSpan.style.color = '#ffd43b';
+           finalSpan.style.fontWeight = 'bold';
+           finalSpan.style.marginLeft = '4px';
+        }
+      });
+    }
+    
     evSliders.forEach(slider => {
       const s = slider as HTMLInputElement;
       const statName = s.id === 'ev-hp' ? 'hp' : s.dataset.stat!;
@@ -458,6 +538,7 @@ Object.values(allMovesFiles).forEach((file: any) => {
         
         totalEvs = Object.values(currentEvs).reduce((a, b) => a + b, 0);
         evTotalEl!.textContent = totalEvs.toString();
+        updateModalFinalStats();
       });
     });
 
@@ -474,6 +555,7 @@ Object.values(allMovesFiles).forEach((file: any) => {
         const teamId = getActiveTeamId();
         
         const ability = (document.getElementById('config-ability') as HTMLInputElement).value;
+        const nature = (document.getElementById('config-nature') as HTMLInputElement).value;
         const moves = [
           (document.getElementById('config-move-1') as HTMLInputElement).value,
           (document.getElementById('config-move-2') as HTMLInputElement).value,
@@ -483,6 +565,7 @@ Object.values(allMovesFiles).forEach((file: any) => {
 
         updatePokemonConfig(pId, pForm, {
           ability: ability || null,
+          nature: nature || '25',
           moves: moves,
           evs: { ...currentEvs }
         });
@@ -543,13 +626,95 @@ Object.values(allMovesFiles).forEach((file: any) => {
         const activeTeam = getActiveTeam();
         const pokemon = activeTeam.members.find((p: any) => p.id === id && p.form === form);
         
+        const natureSelect = document.getElementById('config-nature') as HTMLSelectElement;
+        natureSelect.innerHTML = '';
+        Object.values(globalNaturesMap).forEach((nat: any) => {
+          const opt = document.createElement('option');
+          opt.value = nat.id;
+          
+          if (nat.id !== '25' && nat.increased_stat && nat.decreased_stat) {
+             const incName = nat.increased_stat.replace('-', ' ');
+             const decName = nat.decreased_stat.replace('-', ' ');
+             const incFmt = incName.charAt(0).toUpperCase() + incName.slice(1);
+             const decFmt = decName.charAt(0).toUpperCase() + decName.slice(1);
+             opt.textContent = `${nat.name_en} (+ ${incFmt} / - ${decFmt})`;
+          } else {
+             opt.textContent = nat.name_en;
+          }
+          
+          opt.dataset.increased = nat.increased_stat || 'null';
+          opt.dataset.decreased = nat.decreased_stat || 'null';
+          natureSelect.appendChild(opt);
+        });
+        
+        const updateNatureTooltip = () => {
+          const opt = natureSelect.options[natureSelect.selectedIndex];
+          if (!opt) return;
+          const inc = opt.dataset.increased;
+          const dec = opt.dataset.decreased;
+          let tooltipText = "";
+          if (inc && dec && inc !== "null" && dec !== "null") {
+             tooltipText = `Increases ${inc} by 10%, decreases ${dec} by 10%`;
+          } else {
+             tooltipText = `Neutral nature (No stat changes)`;
+          }
+          natureSelect.setAttribute('data-tooltip', tooltipText);
+          
+          // Color the EV slider labels
+          const statNames = ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'];
+          statNames.forEach(stat => {
+            const labelEl = document.querySelector(`div.ev-row:has(#ev-slider-${stat}) label, div.ev-row:has(#ev-${stat}) label`);
+            if (labelEl) {
+               if (stat === inc) {
+                 (labelEl as HTMLElement).style.color = '#38d9a9'; // Greenish
+               } else if (stat === dec) {
+                 (labelEl as HTMLElement).style.color = '#ff8787'; // Reddish
+               } else {
+                 (labelEl as HTMLElement).style.color = 'var(--text-color)';
+               }
+            }
+          });
+          updateModalFinalStats();
+        };
+        natureSelect.addEventListener('change', updateNatureTooltip);
+
+        const updateMoveSelects = () => {
+          const selectedMoves: string[] = [];
+          for (let i = 1; i <= 4; i++) {
+            const val = (document.getElementById(`config-move-${i}`) as HTMLSelectElement).value;
+            if (val) selectedMoves.push(val);
+          }
+          for (let i = 1; i <= 4; i++) {
+            const select = document.getElementById(`config-move-${i}`) as HTMLSelectElement;
+            Array.from(select.options).forEach(opt => {
+              if (opt.value !== "" && opt.value !== select.value && selectedMoves.includes(opt.value)) {
+                opt.disabled = true;
+              } else {
+                opt.disabled = false;
+              }
+            });
+          }
+        };
+
+        for (let i = 1; i <= 4; i++) {
+          const moveSelect = document.getElementById(`config-move-${i}`) as HTMLSelectElement;
+          if (moveSelect) {
+            moveSelect.onchange = updateMoveSelects;
+          }
+        }
+
         if (pokemon) {
+          if (pokemon.nature) natureSelect.value = pokemon.nature;
+          else natureSelect.value = '25';
+          updateNatureTooltip();
+          
           if (pokemon.ability) abilitySelect.value = pokemon.ability;
           if (pokemon.moves) {
             pokemon.moves.forEach((m: string, idx: number) => {
               if (m && idx < 4) (document.getElementById(`config-move-${idx+1}`) as HTMLInputElement).value = m;
             });
           }
+          updateMoveSelects();
           if (pokemon.evs) {
             currentEvs = { ...pokemon.evs };
             Object.entries(currentEvs).forEach(([stat, val]) => {
@@ -561,6 +726,7 @@ Object.values(allMovesFiles).forEach((file: any) => {
             const total = Object.values(currentEvs).reduce((a, b) => a + (b as number), 0);
             evTotalEl!.textContent = total.toString();
           }
+          updateModalFinalStats();
         }
       } catch (err) {
         console.error("Error loading config data:", err);

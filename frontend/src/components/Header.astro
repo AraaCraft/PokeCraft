@@ -10,14 +10,14 @@
       <div class="search-container">
         <div class="search-input-wrapper">
           <span class="search-icon">🔍</span>
-          <input type="text" id="pokemon-search" placeholder="Rechercher un Pokémon..." autocomplete="off" />
+          <input type="text" id="pokemon-search" placeholder="Search for a Pokémon..." autocomplete="off" />
         </div>
         <ul id="search-results" class="search-results hidden">
           <!-- Populated by JS -->
         </ul>
       </div>
 
-      <a href="/team" class="team-link">Mon Équipe (<span id="team-count">0</span>)</a>
+      <a href="/team" class="team-link">My Team (<span id="team-count">0</span>)</a>
 
       <div class="lang-selector-container">
         <select class="lang-selector" id="lang-selector">
@@ -315,7 +315,7 @@
     }).slice(0, 10); // Limit to 10 results
 
     if (matches.length === 0) {
-      searchResults.innerHTML = '<li style="padding: 1rem; color: #a0a0a0; text-align: center; font-size: 0.9rem;">Aucun Pokémon trouvé</li>';
+      searchResults.innerHTML = '<li style="padding: 1rem; color: #a0a0a0; text-align: center; font-size: 0.9rem;">No Pokémon found</li>';
       searchResults.classList.remove('hidden');
       return;
     }
