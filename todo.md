@@ -14,5 +14,5 @@ Features/pages :
     - Générer ue page qui liste tous les items présents dans le jeu ainsi que leurs descriptions et leurs icons
 
 - Faire la traduction FR
-- Changer le favicon
+- ~~Changer le favicon~~
 
