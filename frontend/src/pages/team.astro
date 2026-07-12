@@ -10,27 +10,29 @@ const validPokemons = allPokemons.filter(p => {
 	if (p.id === 25 && p.form !== 'pikachu') return false; // Pikachu forms exclusion
 	return true;
 });
-const uniquePokemonsMap = new Map();
-for (const p of validPokemons) {
-	if (!uniquePokemonsMap.has(p.id)) {
-		uniquePokemonsMap.set(p.id, p);
-	} else {
-		if (p.form === p.name) {
-			uniquePokemonsMap.set(p.id, p);
-		}
-	}
-}
-let pokemons = Array.from(uniquePokemonsMap.values());
-pokemons.sort((a, b) => a.id - b.id);
+let pokemons = validPokemons;
+pokemons.sort((a, b) => {
+	if (a.id !== b.id) return a.id - b.id;
+	if (a.form === a.name) return -1;
+	if (b.form === b.name) return 1;
+	return a.form.localeCompare(b.form);
+});
 
 const statsMap = {};
 for (const p of validPokemons) {
 	statsMap[`${p.id}_${p.form}`] = p.stats;
 }
+
+const allMovesFiles = import.meta.glob('../../../data/moves/*.json', { eager: true });
+const movesNameMap = {};
+Object.values(allMovesFiles).forEach((file: any) => {
+  const moveData = file.default;
+  movesNameMap[moveData.id] = moveData.name_en || moveData.name;
+});
 ---
 
 <Layout title="My Team | Pokédex">
-  <div class="team-page">
+  <div class="team-page" id="team-page-container" data-moves={encodeURIComponent(JSON.stringify(movesNameMap))}>
     <header class="page-header">
       <h1>My Pokémon Team</h1>
       <p>Create and manage your dream teams! (Maximum 6 Pokémon per team)</p>
@@ -106,6 +108,71 @@ for (const p of validPokemons) {
       </div>
     </div>
 
+    <!-- Configuration Modal -->
+    <div id="config-modal" class="modal-overlay hidden">
+      <div class="modal-content glass-panel">
+        <div class="modal-header">
+          <h2 id="config-modal-title">Configure Pokémon</h2>
+          <button id="close-config-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="config-pokemon-id" />
+          <input type="hidden" id="config-pokemon-form" />
+
+          <div class="config-section">
+            <h3>Ability</h3>
+            <select id="config-ability" class="config-select">
+              <!-- Populated by JS -->
+            </select>
+          </div>
+
+          <div class="config-section">
+            <h3>Moves (Max 4)</h3>
+            <div class="moves-grid">
+              <select id="config-move-1" class="config-select"><option value="">-- Select Move 1 --</option></select>
+              <select id="config-move-2" class="config-select"><option value="">-- Select Move 2 --</option></select>
+              <select id="config-move-3" class="config-select"><option value="">-- Select Move 3 --</option></select>
+              <select id="config-move-4" class="config-select"><option value="">-- Select Move 4 --</option></select>
+            </div>
+          </div>
+
+          <div class="config-section">
+            <h3>EV Stats (Total: <span id="ev-total">0</span>/66)</h3>
+            <p class="ev-hint">Max 32 points per stat.</p>
+            <div class="ev-sliders">
+              <div class="ev-row">
+                <label>HP (<span id="ev-val-hp">0</span>)</label>
+                <input type="range" id="ev-hp" class="ev-slider" min="0" max="32" value="0" />
+              </div>
+              <div class="ev-row">
+                <label>Attack (<span id="ev-val-attack">0</span>)</label>
+                <input type="range" id="ev-slider-attack" class="ev-slider" data-stat="attack" min="0" max="32" value="0" />
+              </div>
+              <div class="ev-row">
+                <label>Defense (<span id="ev-val-defense">0</span>)</label>
+                <input type="range" id="ev-slider-defense" class="ev-slider" data-stat="defense" min="0" max="32" value="0" />
+              </div>
+              <div class="ev-row">
+                <label>Sp. Atk (<span id="ev-val-special-attack">0</span>)</label>
+                <input type="range" id="ev-slider-special-attack" class="ev-slider" data-stat="special-attack" min="0" max="32" value="0" />
+              </div>
+              <div class="ev-row">
+                <label>Sp. Def (<span id="ev-val-special-defense">0</span>)</label>
+                <input type="range" id="ev-slider-special-defense" class="ev-slider" data-stat="special-defense" min="0" max="32" value="0" />
+              </div>
+              <div class="ev-row">
+                <label>Speed (<span id="ev-val-speed">0</span>)</label>
+                <input type="range" id="ev-slider-speed" class="ev-slider" data-stat="speed" min="0" max="32" value="0" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="save-config-btn" class="save-btn glass-panel">Save Configuration</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Export Menu -->
     <div class="export-menu-container">
       <div id="export-options" class="export-options hidden">
@@ -127,7 +194,7 @@ for (const p of validPokemons) {
   </script>
 
   <script>
-    import { getAllTeams, getActiveTeam, setActiveTeam, createTeam, deleteTeam, removeFromTeam, renameActiveTeam } from '../scripts/teamStore.js';
+    import { getAllTeams, getActiveTeam, setActiveTeam, createTeam, deleteTeam, removeFromTeam, renameActiveTeam, updatePokemonConfig, getActiveTeamId } from '../scripts/teamStore.js';
     import html2canvas from 'html2canvas';
     import { jsPDF } from 'jspdf';
 
@@ -146,6 +213,9 @@ for (const p of validPokemons) {
     const exportOptions = document.getElementById('export-options');
     const btnPng = document.getElementById('export-png-btn');
     const btnPdf = document.getElementById('export-pdf-btn');
+
+    const pageContainer = document.getElementById('team-page-container');
+    const globalMovesNameMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.moves || '{}'));
 
     function renderTeamList() {
       const teams = getAllTeams();
@@ -175,7 +245,6 @@ for (const p of validPokemons) {
         });
       });
 
-      // Add listeners for rename buttons
       document.querySelectorAll('.rename-team-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -192,7 +261,6 @@ for (const p of validPokemons) {
         });
       });
 
-      // Add listeners for delete buttons
       document.querySelectorAll('.delete-team-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
           const id = (e.target as HTMLElement).dataset.id;
@@ -232,15 +300,26 @@ for (const p of validPokemons) {
         }
 
         return `
-          <div class="team-circle glass-panel" style="--accent-color: var(--type-${primaryType})">
-            <button class="remove-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" aria-label="Remove" title="Remove from team">×</button>
-            <a href="/pokemon/${pokemon.id}" class="circle-link">
-              <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName}" loading="lazy" crossorigin="anonymous" />
-            </a>
-            <div class="name-badge">${displayName}</div>
+          <div class="team-member-container">
+            <div class="team-circle glass-panel" style="--accent-color: var(--type-${primaryType})">
+              <button class="remove-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" aria-label="Remove" title="Remove from team">×</button>
+              <a href="/pokemon/${pokemon.id}-${pokemon.form}" class="circle-link">
+                <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName}" loading="lazy" crossorigin="anonymous" />
+              </a>
+              <div class="name-badge">${displayName}</div>
+            </div>
+            <button class="config-btn text-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" data-name="${displayName}">Repartition stats</button>
           </div>
         `;
       }).join('');
+
+      // Add listeners for config buttons
+      document.querySelectorAll('.config-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const t = e.currentTarget as HTMLElement;
+          openConfigModal(parseInt(t.dataset.id!), t.dataset.form!, t.dataset.name!);
+        });
+      });
 
       if (teamStatsGrid) {
         teamStatsGrid.innerHTML = team.map(pokemon => {
@@ -262,14 +341,41 @@ for (const p of validPokemons) {
             </div>
           `).join('');
 
+          const abilityStr = pokemon.ability ? `<div class="config-badge ability-badge">${pokemon.ability.charAt(0).toUpperCase() + pokemon.ability.slice(1)}</div>` : '';
+          const movesHtml = pokemon.moves ? pokemon.moves.filter(m => m).map(m => {
+            const mName = globalMovesNameMap[String(m)] || String(m);
+            return `<div class="config-badge move-badge">${mName.charAt(0).toUpperCase() + mName.slice(1)}</div>`;
+          }).join('') : '';
+          
+          let evsHtml = '';
+          if (pokemon.evs) {
+            const evs = pokemon.evs;
+            const evList = [];
+            if (evs.hp > 0) evList.push(`HP: ${evs.hp}`);
+            if (evs.attack > 0) evList.push(`Atk: ${evs.attack}`);
+            if (evs.defense > 0) evList.push(`Def: ${evs.defense}`);
+            if (evs['special-attack'] > 0) evList.push(`SpA: ${evs['special-attack']}`);
+            if (evs['special-defense'] > 0) evList.push(`SpD: ${evs['special-defense']}`);
+            if (evs.speed > 0) evList.push(`Spe: ${evs.speed}`);
+            if (evList.length > 0) {
+              evsHtml = `<div class="evs-summary">${evList.join(' | ')}</div>`;
+            }
+          }
+
           return `
-            <div class="stat-card glass-panel" style="--accent-color: var(--type-${primaryType})">
+            <div class="team-stat-card glass-panel" style="--accent-color: var(--type-${primaryType})">
               <div class="stat-card-header">
                 <h3>${displayName}</h3>
                 <div class="types" style="display:flex; gap:0.5rem; justify-content:center; align-items:center;">
                   ${pokemon.types.map((t: string) => `<span class="type-badge bg-${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</span>`).join('')}
                 </div>
               </div>
+              ${abilityStr || movesHtml ? `
+              <div class="stat-card-config">
+                ${abilityStr}
+                <div class="moves-container">${movesHtml}</div>
+                ${evsHtml}
+              </div>` : ''}
               <div class="stat-card-body" style="margin-top:1rem;">
                 ${statsHtml}
               </div>
@@ -278,11 +384,10 @@ for (const p of validPokemons) {
         }).join('');
       }
 
-      // Add remove listeners
       document.querySelectorAll('.team-circle .remove-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
-          const id = parseInt((e.target as HTMLElement).dataset.id);
-          const form = (e.target as HTMLElement).dataset.form;
+          const id = parseInt((e.target as HTMLElement).dataset.id!);
+          const form = (e.target as HTMLElement).dataset.form!;
           removeFromTeam(id, form);
           renderUI();
         });
@@ -321,7 +426,147 @@ for (const p of validPokemons) {
     renderUI();
     window.addEventListener('team-data-updated', renderUI);
 
-    // Pokedex Filter Logic
+    // --- Configuration Modal Logic ---
+    const configModal = document.getElementById('config-modal');
+    const closeConfigBtn = document.getElementById('close-config-btn');
+    const saveConfigBtn = document.getElementById('save-config-btn');
+    const evSliders = document.querySelectorAll('.ev-slider');
+    const evTotalEl = document.getElementById('ev-total');
+    
+    let currentEvs = { hp: 0, attack: 0, defense: 0, 'special-attack': 0, 'special-defense': 0, speed: 0 };
+    
+    evSliders.forEach(slider => {
+      const s = slider as HTMLInputElement;
+      const statName = s.id === 'ev-hp' ? 'hp' : s.dataset.stat!;
+      s.addEventListener('input', (e) => {
+        const newVal = parseInt((e.target as HTMLInputElement).value) || 0;
+        const oldVal = currentEvs[statName as keyof typeof currentEvs];
+        let diff = newVal - oldVal;
+        
+        let totalEvs = Object.values(currentEvs).reduce((a, b) => a + b, 0);
+        
+        if (totalEvs + diff > 66) {
+          const allowedDiff = 66 - totalEvs;
+          const cappedVal = oldVal + allowedDiff;
+          s.value = cappedVal.toString();
+          currentEvs[statName as keyof typeof currentEvs] = cappedVal;
+        } else {
+          currentEvs[statName as keyof typeof currentEvs] = newVal;
+        }
+        
+        document.getElementById(`ev-val-${statName}`)!.textContent = currentEvs[statName as keyof typeof currentEvs].toString();
+        
+        totalEvs = Object.values(currentEvs).reduce((a, b) => a + b, 0);
+        evTotalEl!.textContent = totalEvs.toString();
+      });
+    });
+
+    if (closeConfigBtn) {
+      closeConfigBtn.addEventListener('click', () => {
+        configModal!.classList.add('hidden');
+      });
+    }
+
+    if (saveConfigBtn) {
+      saveConfigBtn.addEventListener('click', () => {
+        const pId = parseInt((document.getElementById('config-pokemon-id') as HTMLInputElement).value);
+        const pForm = (document.getElementById('config-pokemon-form') as HTMLInputElement).value;
+        const teamId = getActiveTeamId();
+        
+        const ability = (document.getElementById('config-ability') as HTMLInputElement).value;
+        const moves = [
+          (document.getElementById('config-move-1') as HTMLInputElement).value,
+          (document.getElementById('config-move-2') as HTMLInputElement).value,
+          (document.getElementById('config-move-3') as HTMLInputElement).value,
+          (document.getElementById('config-move-4') as HTMLInputElement).value
+        ].filter(m => m !== '');
+
+        updatePokemonConfig(pId, pForm, {
+          ability: ability || null,
+          moves: moves,
+          evs: { ...currentEvs }
+        });
+        
+        saveConfigBtn.textContent = 'Saved!';
+        saveConfigBtn.style.backgroundColor = '#4ade80';
+        setTimeout(() => {
+          configModal!.classList.add('hidden');
+          saveConfigBtn.textContent = 'Save Configuration';
+          saveConfigBtn.style.backgroundColor = '';
+          renderUI();
+        }, 1000);
+      });
+    }
+
+    async function openConfigModal(id: number, form: string, displayName: string) {
+      document.getElementById('config-modal-title')!.textContent = `Configure ${displayName}`;
+      (document.getElementById('config-pokemon-id') as HTMLInputElement).value = id.toString();
+      (document.getElementById('config-pokemon-form') as HTMLInputElement).value = form;
+      
+      document.getElementById('config-ability')!.innerHTML = '<option value="">-- Select Ability --</option>';
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById(`config-move-${i}`)!.innerHTML = `<option value="">-- Select Move ${i} --</option>`;
+      }
+      
+      configModal!.classList.remove('hidden');
+
+      try {
+        const res = await fetch(`/data/champions/pokemon/${id}/${form}.json`);
+        if (!res.ok) throw new Error("Could not fetch data");
+        const data = await res.json();
+        
+        const abilitySelect = document.getElementById('config-ability') as HTMLSelectElement;
+        if (data.abilities && data.abilities.length > 0) {
+          data.abilities.forEach((ab: any) => {
+            const opt = document.createElement('option');
+            opt.value = ab.ability.name;
+            opt.textContent = ab.ability.name.charAt(0).toUpperCase() + ab.ability.name.slice(1);
+            abilitySelect.appendChild(opt);
+          });
+        }
+        
+        const pageContainer = document.getElementById('team-page-container');
+        const movesNameMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.moves || '{}'));
+
+        const uniqueMoveIds = [...new Set(data.moves)];
+        for (let i = 1; i <= 4; i++) {
+          const moveSelect = document.getElementById(`config-move-${i}`) as HTMLSelectElement;
+          uniqueMoveIds.forEach(mId => {
+            const mName = movesNameMap[String(mId)] || String(mId);
+            const opt = document.createElement('option');
+            opt.value = String(mId);
+            opt.textContent = mName.charAt(0).toUpperCase() + mName.slice(1);
+            moveSelect.appendChild(opt);
+          });
+        }
+        
+        const activeTeam = getActiveTeam();
+        const pokemon = activeTeam.members.find((p: any) => p.id === id && p.form === form);
+        
+        if (pokemon) {
+          if (pokemon.ability) abilitySelect.value = pokemon.ability;
+          if (pokemon.moves) {
+            pokemon.moves.forEach((m: string, idx: number) => {
+              if (m && idx < 4) (document.getElementById(`config-move-${idx+1}`) as HTMLInputElement).value = m;
+            });
+          }
+          if (pokemon.evs) {
+            currentEvs = { ...pokemon.evs };
+            Object.entries(currentEvs).forEach(([stat, val]) => {
+              const slider = stat === 'hp' ? document.getElementById('ev-hp') : document.getElementById(`ev-slider-${stat}`);
+              if (slider) (slider as HTMLInputElement).value = (val as number).toString();
+              const valLabel = document.getElementById(`ev-val-${stat}`);
+              if (valLabel) valLabel.textContent = (val as number).toString();
+            });
+            const total = Object.values(currentEvs).reduce((a, b) => a + (b as number), 0);
+            evTotalEl!.textContent = total.toString();
+          }
+        }
+      } catch (err) {
+        console.error("Error loading config data:", err);
+      }
+    }
+
     const typeButtons = document.querySelectorAll('.type-btn');
     const pokedexCards = document.querySelectorAll('.team-pokedex-section .pokemon-card');
     let activeTypes = new Set(['all']);
@@ -790,6 +1035,7 @@ for (const p of validPokemons) {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     flex-shrink: 0;
+    margin-bottom: 25px;
   }
 
   .team-circle:hover {
@@ -933,6 +1179,72 @@ for (const p of validPokemons) {
   }
 
   /* Stats Grid */
+  /* Team Stats Cards */
+  .team-stat-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    background: rgba(0,0,0,0.4);
+    margin-bottom: 1rem;
+    border-top: 3px solid var(--accent-color);
+  }
+
+  .stat-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .stat-card-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .stat-card-config {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .moves-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .config-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .ability-badge {
+    background: rgba(77, 171, 247, 0.2);
+    color: #4dabf7;
+    border: 1px solid rgba(77, 171, 247, 0.4);
+    align-self: flex-start;
+  }
+
+  .move-badge {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .evs-summary {
+    font-size: 0.85rem;
+    color: var(--stat-excel);
+    font-weight: 500;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed rgba(255,255,255,0.1);
+  }
+
   .team-stats-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -953,6 +1265,218 @@ for (const p of validPokemons) {
     padding-bottom: 0;
     margin-bottom: 0;
     pointer-events: none;
+  }
+
+  .team-member-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Configuration Button */
+  .config-btn.text-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted, rgba(255, 255, 255, 0.7));
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+    padding: 0.2rem 0.5rem;
+    margin-top: 0.2rem;
+  }
+
+  .config-btn.text-btn:hover {
+    color: white;
+  }
+
+  /* Configuration Modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.3s;
+  }
+
+  .modal-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal-content {
+    background: var(--surface-color);
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 1rem;
+  }
+
+  .modal-header h2 {
+    margin: 0;
+    color: var(--primary-color);
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+
+  .close-btn:hover {
+    color: #ff6b6b;
+  }
+
+  .config-section {
+    margin-bottom: 2rem;
+  }
+
+  .config-section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  .config-select {
+    width: 100%;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .config-select option {
+    background: var(--bg-color);
+    color: white;
+  }
+
+  .moves-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .ev-hint {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .ev-sliders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .ev-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .ev-row label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+
+  .ev-slider {
+    width: 100%;
+    accent-color: var(--primary-color);
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  .save-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .save-btn:hover {
+    background: #e03131;
+    transform: translateY(-2px);
+  }
+
+  /* Stats Grid Config Badges */
+  .stat-card-config {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+
+  .config-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.2rem;
+  }
+
+  .ability-badge {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffd43b;
+    border: 1px solid rgba(255, 212, 59, 0.3);
+  }
+
+  .moves-container {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .move-badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: #a5d8ff;
+    border: 1px solid rgba(165, 216, 255, 0.3);
+  }
+
+  .evs-summary {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #ffc9c9;
+    font-family: monospace;
   }
 
   @media (min-width: 768px) {

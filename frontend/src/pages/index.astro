@@ -20,23 +20,15 @@ const validPokemons = allPokemons.filter((p) => {
 	return true;
 });
 
-// Keep only one card per Pokemon (the base form)
-const uniquePokemonsMap = new Map();
-for (const p of validPokemons) {
-	if (!uniquePokemonsMap.has(p.id)) {
-		uniquePokemonsMap.set(p.id, p);
-	} else {
-		// Prefer the exact name match for the base form
-		if (p.form === p.name) {
-			uniquePokemonsMap.set(p.id, p);
-		}
-	}
-}
+let pokemons = validPokemons;
 
-let pokemons = Array.from(uniquePokemonsMap.values());
-
-// Sort by ID
-pokemons.sort((a, b) => a.id - b.id);
+// Sort by ID, then by Form to ensure base form is before alternate forms
+pokemons.sort((a, b) => {
+	if (a.id !== b.id) return a.id - b.id;
+	if (a.form === a.name) return -1;
+	if (b.form === b.name) return 1;
+	return a.form.localeCompare(b.form);
+});
 ---
 
 <Layout title="Pokédex | PokeCraft">

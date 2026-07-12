@@ -74,7 +74,7 @@ export function getAllTeams() {
 
 export function getActiveTeam() {
   const data = getTeamData();
-  return data.teams.find(t => t.id === data.activeTeamId) || data.teams[0];
+  return data.teams.find(t => t.id === data.activeTeamId) || null;
 }
 
 export function getActiveTeamId() {
@@ -84,6 +84,23 @@ export function getActiveTeamId() {
 // Legacy alias to keep components from breaking until they are fully migrated
 export function getTeam() {
   return getActiveTeam().members;
+}
+
+// Ensure the store is globally available
+if (typeof window !== 'undefined') {
+  window.teamStore = {
+    getTeamData,
+    saveTeamData,
+    createTeam,
+    deleteTeam,
+    setActiveTeam,
+    renameActiveTeam,
+    addToTeam,
+    removeFromTeam,
+    isInTeam,
+    getActiveTeam,
+    updatePokemonConfig
+  };
 }
 
 export function createTeam() {
@@ -146,7 +163,19 @@ export function addToTeam(pokemon) {
     return { success: false, message: 'This Pokémon is already in your team.' };
   }
 
-  activeTeam.members.push(pokemon);
+  activeTeam.members.push({
+    ...pokemon,
+    ability: pokemon.ability || null,
+    moves: pokemon.moves || [null, null, null, null],
+    evs: pokemon.evs || {
+      hp: 0,
+      attack: 0,
+      defense: 0,
+      'special-attack': 0,
+      'special-defense': 0,
+      speed: 0
+    }
+  });
   saveTeamData(data);
   return { success: true, message: 'Pokémon added to team!' };
 }
@@ -171,4 +200,23 @@ export function removeFromTeam(id, form) {
 export function isInTeam(id, form) {
   const activeTeam = getActiveTeam();
   return activeTeam.members.some(p => p.id === id && p.form === form);
+}
+
+// Update pokemon config in the ACTIVE team
+export function updatePokemonConfig(id, form, config) {
+  const data = getTeamData();
+  const activeTeam = data.teams.find(t => t.id === data.activeTeamId);
+  
+  if (!activeTeam) return false;
+
+  const index = activeTeam.members.findIndex(p => p.id === id && p.form === form);
+  if (index !== -1) {
+    activeTeam.members[index] = {
+      ...activeTeam.members[index],
+      ...config
+    };
+    saveTeamData(data);
+    return true;
+  }
+  return false;
 }

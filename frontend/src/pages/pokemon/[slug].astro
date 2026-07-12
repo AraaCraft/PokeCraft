@@ -1,0 +1,968 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const pokemonFiles = import.meta.glob('../../../../data/champions/pokemon/**/*.json', { eager: true });
+  
+  const allPokemons = Object.values(pokemonFiles).map((file: any) => file.default);
+  
+  // Filter out unwanted forms
+  const validPokemons = allPokemons.filter(p => {
+    if (p.form.includes('-gmax')) return false;
+    if (p.id === 25 && p.form !== 'pikachu') return false;
+    return true;
+  });
+
+  // Group by ID to pass siblings to the page for navigation
+  const grouped = new Map();
+  for (const p of validPokemons) {
+    if (!grouped.has(p.id)) {
+      grouped.set(p.id, []);
+    }
+    grouped.get(p.id).push(p);
+  }
+
+  const paths = [];
+  for (const [id, forms] of grouped.entries()) {
+    forms.sort((a, b) => {
+      if (a.form === a.name) return -1;
+      if (b.form === b.name) return 1;
+      return a.form.localeCompare(b.form);
+    });
+
+    for (const form of forms) {
+      paths.push({
+        params: { slug: `${form.id}-${form.form}` },
+        props: { pokemon: form, allForms: forms },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { slug } = Astro.params;
+const { pokemon, allForms } = Astro.props;
+
+let formattedName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+if (pokemon.form && pokemon.form !== pokemon.name) {
+  let formPart = pokemon.form;
+  if (formPart.startsWith(pokemon.name + '-')) {
+    formPart = formPart.substring(pokemon.name.length + 1);
+  }
+  formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+  formattedName = `${formattedName} (${formPart})`;
+}
+const formattedId = String(pokemon.id).padStart(4, '0');
+
+// We serialize the single form to pass it to the client-side script
+const pokemonJson = encodeURIComponent(JSON.stringify(pokemon));
+
+// Extract only the moves used by this pokemon
+const usedMoveIds = new Set(pokemon.moves.map((mId: string | number) => String(mId)));
+
+const allMovesFiles = import.meta.glob('../../../../data/moves/*.json', { eager: true });
+const pokemonMovesMap: Record<string, any> = {};
+Object.values(allMovesFiles).forEach((file: any) => {
+  const moveData = file.default;
+  const moveId = String(moveData.id);
+  if (usedMoveIds.has(moveId)) {
+    pokemonMovesMap[moveId] = moveData;
+  }
+});
+const pokemonMovesJson = encodeURIComponent(JSON.stringify(pokemonMovesMap));
+
+const usedAbilityIds = new Set(pokemon.abilities.map((a: any) => {
+  const parts = a.ability.url.split('/');
+  return parts[parts.length - 2];
+}));
+
+const allAbilitiesFiles = import.meta.glob('../../../../data/abilities/*.json', { eager: true });
+const pokemonAbilitiesMap: Record<string, any> = {};
+Object.values(allAbilitiesFiles).forEach((file: any) => {
+  const abilityData = file.default;
+  const abilityId = String(abilityData.id);
+  if (usedAbilityIds.has(abilityId)) {
+    pokemonAbilitiesMap[abilityId] = abilityData;
+  }
+});
+const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesMap));
+---
+
+<Layout title={`${formattedName} #${formattedId}`}>
+  <div class="pokemon-detail" id="pokemon-detail-container" data-pokemon={pokemonJson} data-moves={pokemonMovesJson} data-abilities={pokemonAbilitiesJson}>
+    <a href="/" class="back-link">← Back to Pokédex</a>
+    
+    <div class="detail-container">
+      <div class="glass-panel detail-card" id="detail-card" style="position: relative; z-index: 10;">
+        <header class="detail-header">
+          <span class="pokemon-id">#{formattedId}</span>
+          <div class="header-title-container">
+            <h1 id="pokemon-name">{formattedName}</h1>
+            <button id="play-cry-btn" class="cry-btn" aria-label="Play cry" title="Play cry">
+              🔊
+            </button>
+          </div>
+          <div class="team-actions" style="position: absolute; top: 0; right: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem;">
+            <button id="team-btn" class="team-btn" style="margin: 0; font-size: 0.85rem; padding: 0.4rem 0.8rem;">Add to team</button>
+            <div id="team-msg" class="team-msg" style="margin: 0; font-size: 0.8rem; height: auto;"></div>
+          </div>
+        </header>
+
+        <div class="content-wrapper">
+          <div class="image-section">
+            <img id="pokemon-image" src={`/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedName} />
+          </div>
+          
+          <div class="stats-section">
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="label">Weight</span>
+                <span class="value" id="pokemon-weight">{pokemon.weight / 10} kg</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Abilities</span>
+                <span class="value" id="pokemon-abilities"></span>
+              </div>
+            </div>
+
+            <div class="types-container">
+              <h3>Types</h3>
+              <div class="types" id="pokemon-types">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {allForms.length > 1 && (
+          <div class="forms-selector">
+            <h3>Forms :</h3>
+            <div class="forms-buttons">
+              {allForms.map((f: any) => {
+                const isActive = f.form === pokemon.form;
+                const formLabel = f.form.replace(`${f.name}-`, '').replace('-', ' ').toUpperCase() || 'BASE';
+                return (
+                  <a 
+                    href={`/pokemon/${f.id}-${f.form}`}
+                    class={`form-btn ${isActive ? 'active' : ''}`} 
+                    style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"
+                  >
+                    {formLabel}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
+
+      <!-- Right Column: Effectiveness Card -->
+      <div class="glass-panel effectiveness-card" id="effectiveness-card">
+        <div class="base-stats-section-top">
+          <h2>Base Stats</h2>
+          <div class="stats-list" id="pokemon-stats">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="type-defenses-section">
+          <h2>Type Defenses</h2>
+          <div id="type-effectiveness-content">
+            <p>Calculating...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Moves Block -->
+    <div class="glass-panel moves-card">
+      <div class="moves-header">
+        <h2>Moves (Champions)</h2>
+        <div class="moves-filters">
+          <select id="filter-type">
+            <option value="all">All types</option>
+          </select>
+          <select id="filter-category">
+            <option value="all">All categories</option>
+            <option value="physical">Physical</option>
+            <option value="special">Special</option>
+            <option value="status">Status</option>
+          </select>
+          <select id="sort-order">
+            <option value="asc">A-Z Order</option>
+            <option value="desc">Z-A Order</option>
+          </select>
+        </div>
+      </div>
+      <div id="pokemon-moves-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { addToTeam, removeFromTeam, isInTeam } from '../../scripts/teamStore.js';
+    window.teamStore = { addToTeam, removeFromTeam, isInTeam };
+  </script>
+
+  <!-- Store data for the client script -->
+  <script>
+    (function initPokemonDetail() {
+      const container = document.getElementById('pokemon-detail-container');
+      if (!container) return;
+
+      const p = JSON.parse(decodeURIComponent(container.dataset.pokemon || '{}'));
+      const pokemonMovesMap = JSON.parse(decodeURIComponent(container.dataset.moves || '%7B%7D'));
+      const pokemonAbilitiesMap = JSON.parse(decodeURIComponent(container.dataset.abilities || '%7B%7D'));
+
+      const typesEl = container.querySelector('#pokemon-types');
+      const statsEl = container.querySelector('#pokemon-stats');
+      const abilitiesEl = container.querySelector('#pokemon-abilities');
+      const playCryBtn = container.querySelector('#play-cry-btn');
+      const filterTypeEl = container.querySelector('#filter-type');
+      const filterCategoryEl = container.querySelector('#filter-category');
+      const sortOrderEl = container.querySelector('#sort-order');
+      const teamBtn = container.querySelector('#team-btn');
+      const teamMsg = container.querySelector('#team-msg');
+      
+      let currentAudio = null;
+      let currentMovesData = [];
+
+      function renderMoves() {
+        const movesEl = container.querySelector('#pokemon-moves-content');
+        if (!currentMovesData || currentMovesData.length === 0) {
+           movesEl.innerHTML = '<p>No moves learned in Champions.</p>';
+           return;
+        }
+
+        let moves = [...currentMovesData];
+
+      // Filter by Type
+      if (filterTypeEl) {
+        const typeFilter = filterTypeEl.value;
+        if (typeFilter !== 'all') {
+          moves = moves.filter(m => m.type_name === typeFilter);
+        }
+      }
+
+      // Filter by Category
+      if (filterCategoryEl) {
+        const catFilter = filterCategoryEl.value;
+        if (catFilter !== 'all') {
+          moves = moves.filter(m => m.damage_class === catFilter);
+        }
+      }
+
+      // Sort
+      if (sortOrderEl) {
+        const sortDir = sortOrderEl.value;
+        moves.sort((a, b) => {
+          const res = (a.name_en || '').localeCompare(b.name_en || '');
+          return sortDir === 'asc' ? res : -res;
+        });
+      }
+
+      if (moves.length === 0) {
+         movesEl.innerHTML = '<p style="padding: 1rem; color: #a0a0a0;">No moves match these criteria.</p>';
+         return;
+      }
+
+        const movesHtml = `
+          <div class="moves-table-container">
+            <table class="moves-table">
+              <thead>
+                <tr>
+                  <th>MOVE</th>
+                  <th style="text-align:center;">TYPE</th>
+                  <th style="text-align:center;">CATEGORY</th>
+                  <th style="text-align:center;">POWER</th>
+                  <th style="text-align:center;">ACCURACY</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${moves.map((m) => {
+                  const catIcon = m.damage_class === 'physical' ? '💥' : m.damage_class === 'special' ? '🔮' : '🛡️';
+                  const catText = m.damage_class === 'physical' ? 'Physical' : m.damage_class === 'special' ? 'Special' : 'Status';
+                  const typeCapitalized = m.type_name.charAt(0).toUpperCase() + m.type_name.slice(1);
+                  return `
+                  <tr>
+                    <td>
+                      <span class="move-name has-tooltip" data-tooltip="${m.description_en || 'No description available.'}">
+                        <strong>${m.name_en || '-'}</strong>
+                      </span>
+                    </td>
+                    <td style="text-align:center;">
+                       <span class="type-badge bg-${m.type_name}">${typeCapitalized}</span>
+                    </td>
+                    <td style="text-align:center;">
+                       <span class="category-indicator">
+                         ${catIcon} ${catText}
+                       </span>
+                    </td>
+                    <td style="text-align:center; font-weight: 600;">${m.power || '-'}</td>
+                    <td style="text-align:center; font-weight: 600;">${m.accuracy ? m.accuracy + '%' : '-'}</td>
+                  </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          </div>
+        `;
+        movesEl.innerHTML = movesHtml;
+      }
+
+      [filterTypeEl, filterCategoryEl, sortOrderEl].forEach(el => {
+        if (el) el.addEventListener('change', renderMoves);
+      });
+
+      function updateUI() {
+        if (!p.id) return;
+        
+        // Setup audio
+        if (playCryBtn) {
+          playCryBtn.onclick = () => {
+            if (currentAudio) {
+              currentAudio.pause();
+              currentAudio.currentTime = 0;
+            }
+            // Use local cry based on form
+            currentAudio = new Audio(`/data/champions/pokemon/${p.id}/${p.form}.ogg`);
+            currentAudio.volume = 0.5;
+            currentAudio.play().catch(e => console.error("Audio play failed", e));
+          };
+        }
+
+        typesEl.innerHTML = '';
+        p.types.forEach(t => {
+          const tName = t.type.name;
+          const span = document.createElement('span');
+          span.className = `type-badge bg-${tName}`;
+          span.textContent = tName;
+          typesEl.appendChild(span);
+        });
+
+        statsEl.innerHTML = '';
+        p.stats.forEach(s => {
+          const statName = s.stat.name.replace('-', ' ').toUpperCase();
+          const statValue = s.base_stat;
+          const statMax = 255;
+          const percentage = (statValue / statMax) * 100;
+          
+          let colorVar = 'var(--stat-good)';
+          if (statValue < 50) colorVar = 'var(--stat-poor)';
+          else if (statValue < 80) colorVar = 'var(--stat-avg)';
+          else if (statValue > 110) colorVar = 'var(--stat-excel)';
+          
+          const row = document.createElement('div');
+          row.className = 'stat-row';
+          row.innerHTML = `
+            <span class="stat-name">${statName}</span>
+            <span class="stat-value">${statValue}</span>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" style="width: ${percentage}%; background-color: ${colorVar};"></div>
+            </div>
+          `;
+          statsEl.appendChild(row);
+        });
+
+        abilitiesEl.innerHTML = p.abilities.map(a => {
+          const parts = a.ability.url.split('/');
+          const aId = parts[parts.length - 2];
+          const abilityData = pokemonAbilitiesMap[aId];
+          const name = (abilityData?.name_en || a.ability.name).replace('-', ' ').toUpperCase();
+          const desc = abilityData?.description_en || (a.is_hidden ? 'Hidden Ability' : 'Normal Ability');
+          return `<span class="has-tooltip" data-tooltip="${desc.replace(/"/g, '&quot;')}" style="cursor: help; border-bottom: 1px dotted rgba(255,255,255,0.5);">${name}</span>`;
+        }).join(', ');
+
+        const inTeam = window.teamStore.isInTeam(p.id, p.form);
+        if (inTeam) {
+          teamBtn.textContent = 'Remove from team';
+          teamBtn.classList.add('remove-btn');
+        } else {
+          teamBtn.textContent = 'Add to team';
+          teamBtn.classList.remove('remove-btn');
+        }
+
+        teamBtn.onclick = () => {
+          if (window.teamStore.isInTeam(p.id, p.form)) {
+            window.teamStore.removeFromTeam(p.id, p.form);
+            teamBtn.textContent = 'Add to team';
+            teamBtn.classList.remove('remove-btn');
+            teamMsg.textContent = 'Removed from team!';
+            teamMsg.style.color = '#ff6b6b';
+          } else {
+            const pokemonObj = {
+              id: p.id,
+              form: p.form,
+              name: p.name,
+              types: p.types.map(t => t.type.name)
+            };
+            const res = window.teamStore.addToTeam(pokemonObj);
+            if (res.success) {
+              teamBtn.textContent = 'Remove from team';
+              teamBtn.classList.add('remove-btn');
+              teamMsg.textContent = 'Added to team!';
+              teamMsg.style.color = '#4ade80';
+            } else {
+              teamMsg.textContent = res.message;
+              teamMsg.style.color = '#ff6b6b';
+            }
+          }
+          
+          teamMsg.classList.add('show');
+          setTimeout(() => {
+            teamMsg.classList.remove('show');
+          }, 2000);
+          
+          window.dispatchEvent(new CustomEvent('team-data-updated'));
+        };
+
+        // Populate moves
+        currentMovesData = p.moves
+          .filter(mId => pokemonMovesMap[mId])
+          .map(mId => pokemonMovesMap[mId]);
+          
+        if (filterTypeEl) {
+           const types = new Set(currentMovesData.map(m => m.type_name));
+           const typesArr = Array.from(types).sort();
+           
+           while(filterTypeEl.options.length > 1) { filterTypeEl.remove(1); }
+           
+           typesArr.forEach(t => {
+              const opt = document.createElement('option');
+              opt.value = t;
+              opt.textContent = t.charAt(0).toUpperCase() + t.slice(1);
+              filterTypeEl.appendChild(opt);
+           });
+        }
+          
+        renderMoves();
+        calculateEffectiveness(p.types.map(t => t.type.name));
+      }
+
+      function calculateEffectiveness(types) {
+        const effContent = container.querySelector('#type-effectiveness-content');
+        effContent.innerHTML = '<p>Loading type matchups...</p>';
+
+        const typeChart = {
+          normal: { fighting: 2, ghost: 0 },
+          fire: { water: 2, ground: 2, rock: 2, fire: 0.5, grass: 0.5, ice: 0.5, bug: 0.5, steel: 0.5, fairy: 0.5 },
+          water: { electric: 2, grass: 2, fire: 0.5, water: 0.5, ice: 0.5, steel: 0.5 },
+          electric: { ground: 2, electric: 0.5, flying: 0.5, steel: 0.5 },
+          grass: { fire: 2, ice: 2, poison: 2, flying: 2, bug: 2, water: 0.5, electric: 0.5, grass: 0.5, ground: 0.5 },
+          ice: { fire: 2, fighting: 2, rock: 2, steel: 2, ice: 0.5 },
+          fighting: { flying: 2, psychic: 2, fairy: 2, bug: 0.5, rock: 0.5, dark: 0.5 },
+          poison: { ground: 2, psychic: 2, fighting: 0.5, poison: 0.5, bug: 0.5, grass: 0.5, fairy: 0.5 },
+          ground: { water: 2, grass: 2, ice: 2, poison: 0.5, rock: 0.5, electric: 0 },
+          flying: { electric: 2, ice: 2, rock: 2, grass: 0.5, fighting: 0.5, bug: 0.5, ground: 0 },
+          psychic: { bug: 2, ghost: 2, dark: 2, fighting: 0.5, psychic: 0.5 },
+          bug: { fire: 2, flying: 2, rock: 2, fighting: 0.5, ground: 0.5, grass: 0.5 },
+          rock: { water: 2, grass: 2, fighting: 2, ground: 2, steel: 2, normal: 0.5, fire: 0.5, poison: 0.5, flying: 0.5 },
+          ghost: { ghost: 2, dark: 2, poison: 0.5, bug: 0.5, normal: 0, fighting: 0 },
+          dragon: { ice: 2, dragon: 2, fairy: 2, fire: 0.5, water: 0.5, electric: 0.5, grass: 0.5 },
+          dark: { fighting: 2, bug: 2, fairy: 2, ghost: 0.5, dark: 0.5, psychic: 0 },
+          steel: { fire: 2, fighting: 2, ground: 2, normal: 0.5, grass: 0.5, ice: 0.5, flying: 0.5, psychic: 0.5, bug: 0.5, rock: 0.5, dragon: 0.5, steel: 0.5, fairy: 0.5, poison: 0 },
+          fairy: { poison: 2, steel: 2, fighting: 0.5, bug: 0.5, dark: 0.5, dragon: 0 }
+        };
+
+        const multipliers = {};
+        Object.keys(typeChart).forEach(t => multipliers[t] = 1);
+
+        types.forEach(defType => {
+          if (typeChart[defType]) {
+            Object.entries(typeChart[defType]).forEach(([atkType, multi]) => {
+              multipliers[atkType] *= multi;
+            });
+          }
+        });
+
+        const weaknesses = [];
+        const resistances = [];
+        const immunities = [];
+
+        Object.entries(multipliers).forEach(([t, m]) => {
+          if (m > 1) weaknesses.push({ type: t, multi: m });
+          else if (m === 0) immunities.push({ type: t, multi: m });
+          else if (m < 1) resistances.push({ type: t, multi: m });
+        });
+
+        let html = '';
+        const renderBadge = (t, text) => `<span class="type-badge bg-${t}">${t} ${text}</span>`;
+        
+        if (weaknesses.length > 0) {
+          html += `<div class="eff-group">
+            <h4 style="color: #ff6b6b; margin-bottom: 0.5rem; font-size: 0.9rem;">Weak to:</h4>
+            <div class="eff-badges">${weaknesses.map(w => renderBadge(w.type, `x${w.multi}`)).join('')}</div>
+          </div>`;
+        }
+
+        if (resistances.length > 0) {
+          html += `<div class="eff-group">
+            <h4 style="color: #4ade80; margin-bottom: 0.5rem; font-size: 0.9rem; margin-top: 1rem;">Resists:</h4>
+            <div class="eff-badges">${resistances.map(w => renderBadge(w.type, `x${w.multi}`)).join('')}</div>
+          </div>`;
+        }
+
+        if (immunities.length > 0) {
+          html += `<div class="eff-group">
+            <h4 style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.9rem; margin-top: 1rem;">Immune to:</h4>
+            <div class="eff-badges">${immunities.map(w => renderBadge(w.type, `x0`)).join('')}</div>
+          </div>`;
+        }
+
+        effContent.innerHTML = html;
+      }
+
+      // Initialize
+      updateUI();
+    })();
+  </script>
+</Layout>
+
+<style is:global>
+  /* Base Layout Styles */
+  .detail-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    .detail-container {
+      grid-template-columns: 1fr 400px;
+    }
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: var(--primary-color);
+  }
+
+  .detail-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Header Styles */
+  .detail-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .pokemon-id {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  .header-title-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .header-title-container h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    margin: 0;
+  }
+
+  .cry-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .cry-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+
+  .cry-btn:active {
+    transform: scale(0.95);
+  }
+
+  .team-btn {
+    margin-top: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1rem;
+  }
+
+  .team-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 83, 80, 0.4);
+  }
+
+  .team-btn.remove-btn {
+    background: #4a4a4a;
+  }
+
+  .team-btn.remove-btn:hover {
+    background: #ff6b6b;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+  }
+
+  .team-msg {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-weight: 600;
+  }
+
+  .team-msg.show {
+    opacity: 1;
+  }
+
+  /* Forms Selector */
+  .forms-selector {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .forms-selector h3 {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .forms-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .form-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+
+  .form-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .form-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(255, 83, 80, 0.4);
+  }
+
+  /* Content Wrapper (Image + Stats) */
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .content-wrapper {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  /* Image Section */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+  }
+
+  .image-section img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
+    image-rendering: pixelated;
+  }
+
+  /* Info Grid */
+  .stats-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .info-item {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .info-item .label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-item .value {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+
+  /* Types Container */
+  .types-container h3 {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .types {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  /* Effectiveness Card (Right Column) */
+  .effectiveness-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .effectiveness-card h2 {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.8rem;
+  }
+
+  /* Base Stats Graph */
+  .stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .stat-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .stat-name {
+    width: 60px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  .stat-value {
+    width: 30px;
+    text-align: right;
+    font-weight: 700;
+    color: white;
+  }
+
+  .stat-bar-bg {
+    flex: 1;
+    height: 8px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .stat-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+  }
+
+  /* Type Defenses */
+  .eff-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Moves Section */
+  .moves-card {
+    padding: 2rem;
+    margin-top: 0;
+  }
+
+  .moves-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .moves-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .moves-header h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+  }
+
+  .moves-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .moves-filters select {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .moves-filters select:focus {
+    border-color: var(--primary-color);
+  }
+
+  /* Moves Table */
+  .moves-table-container {
+    overflow-x: auto;
+  }
+
+  .moves-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+
+  .moves-table th {
+    text-align: left;
+    padding: 1rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .moves-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+  }
+
+  .moves-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .category-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+  }
+
+  /* Tooltip for Move Descriptions */
+  .has-tooltip {
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted rgba(255,255,255,0.5);
+  }
+
+  .has-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    width: max-content;
+    max-width: 300px;
+    white-space: normal;
+    z-index: 100;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* Type Badges */
+  .type-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+    display: inline-block;
+  }
+</style>

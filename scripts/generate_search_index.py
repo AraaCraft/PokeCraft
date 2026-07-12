@@ -17,6 +17,7 @@ for f in pokemon_files:
             search_index[pid] = {
                 'id': pid,
                 'name': name,
+                'base_form': data['name'],
                 'forms': []
             }
         

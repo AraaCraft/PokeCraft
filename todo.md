@@ -4,8 +4,8 @@
 Pouvoir choisir des altérations de stats pour le pokémon attaqué ET le pokémon attaquant. Pouvoir choisir les IV/EV/Nature/talent/objet pour le pokémon attaqué ET le pokémon attaquant.
 
 - Faire un menu dans le header avec les liens vers les différentes pages :
-    - Pokédex
-    - Équipes (avec la possibilité de créer des équipes), "sauvegarder" les équipes des utilisateurs dans des cookies, pas de système de création de compte. Possibilité d'exporter au format .png ou .pdf ET d'importer à nouveau ces fichiers.
+    - ~~Pokédex~~
+    - ~~Équipes~~ (avec la possibilité de créer des équipes), "sauvegarder" les équipes des utilisateurs dans des cookies, pas de système de création de compte. Possibilité d'exporter au format .png ou .pdf ET d'importer à nouveau ces fichiers.
     - Calculateur d'EV (avec une interface visuelle et intuitive) comme sur Champions
     - Simulateur de dégâts / combat
 

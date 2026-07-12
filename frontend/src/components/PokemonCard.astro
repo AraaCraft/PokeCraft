@@ -8,7 +8,15 @@ interface Props {
 }
 
 const { pokemon } = Astro.props;
-const formattedName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+let formattedName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+if (pokemon.form && pokemon.form !== pokemon.name) {
+  let formPart = pokemon.form;
+  if (formPart.startsWith(pokemon.name + '-')) {
+    formPart = formPart.substring(pokemon.name.length + 1);
+  }
+  formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+  formattedName = `${formattedName} (${formPart})`;
+}
 const formattedId = String(pokemon.id).padStart(4, '0');
 
 // Types to comma-separated string for display
@@ -18,7 +26,7 @@ const typeNames = pokemon.types.map(t => t.type.name).join(', ');
 const primaryType = pokemon.types[0]?.type.name || 'normal';
 ---
 
-<a href={`/pokemon/${pokemon.id}`} class="pokemon-card glass-panel" style={`--accent-color: var(--type-${primaryType})`}>
+<a href={`/pokemon/${pokemon.id}-${pokemon.form}`} class="pokemon-card glass-panel" style={`--accent-color: var(--type-${primaryType})`}>
   <div class="card-header">
     <span class="pokemon-id">#{formattedId}</span>
     <button class="quick-add-btn" data-id={pokemon.id} data-form={pokemon.form} data-name={pokemon.name} data-types={pokemon.types.map(t=>t.type.name).join(',')} aria-label="Add to team" title="Add to team">+</button>
