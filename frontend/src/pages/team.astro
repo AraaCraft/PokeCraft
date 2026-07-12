@@ -31,10 +31,11 @@ Object.values(allMovesFiles).forEach((file: any) => {
 });
 
 import naturesData from '../../public/data/natures.json';
+import itemsData from '../../public/data/items.json';
 ---
 
 <Layout title="My Team | Pokédex">
-  <div class="team-page" id="team-page-container" data-moves={encodeURIComponent(JSON.stringify(movesNameMap))} data-natures={encodeURIComponent(JSON.stringify(naturesData))}>
+  <div class="team-page" id="team-page-container" data-moves={encodeURIComponent(JSON.stringify(movesNameMap))} data-natures={encodeURIComponent(JSON.stringify(naturesData))} data-items={encodeURIComponent(JSON.stringify(itemsData))}>
     <header class="page-header">
       <h1>My Pokémon Team</h1>
       <p>Create and manage your dream teams! (Maximum 6 Pokémon per team)</p>
@@ -136,6 +137,14 @@ import naturesData from '../../public/data/natures.json';
           </div>
 
           <div class="config-section">
+            <h3>Held Item</h3>
+            <select id="config-item" class="config-select has-tooltip" data-tooltip="">
+              <option value="">-- No Item --</option>
+              <!-- Populated by JS -->
+            </select>
+          </div>
+
+          <div class="config-section">
             <h3>Moves (Max 4)</h3>
             <div class="moves-grid">
               <select id="config-move-1" class="config-select"><option value="">-- Select Move 1 --</option></select>
@@ -226,6 +235,8 @@ import naturesData from '../../public/data/natures.json';
     const pageContainer = document.getElementById('team-page-container');
     const globalMovesNameMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.moves || '{}'));
     const globalNaturesMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.natures || '{}'));
+    const globalItemsMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.items || '{}'));
+    const sortedItems = Object.values(globalItemsMap).sort((a: any, b: any) => a.name_en.localeCompare(b.name_en));
 
     function renderTeamList() {
       const teams = getAllTeams();
@@ -405,8 +416,17 @@ import naturesData from '../../public/data/natures.json';
             }
           }
 
+          let itemHtml = '';
+          if (pokemon.item && globalItemsMap[pokemon.item]) {
+            const itmData = globalItemsMap[pokemon.item];
+            itemHtml = `<div class="config-badge item-badge has-tooltip" data-tooltip="${itmData.effect_en ? itmData.effect_en.replace(/"/g, '&quot;') : itmData.name_en}" style="display:inline-flex; align-items:center; gap:0.25rem; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1);">
+              <img src="${itmData.sprite}" alt="${itmData.name_en}" style="width:20px; height:20px; image-rendering: pixelated; margin:-4px 0;" />
+              <span>${itmData.name_en}</span>
+            </div>`;
+          }
+
           return `
-            <div class="team-stat-card glass-panel" style="--accent-color: var(--type-${primaryType})">
+            <div class="team-stat-card glass-panel" style="--accent-color: var(--type-${primaryType}); position: relative;">
               <div class="stat-card-header">
                 <div style="display:flex; align-items:center; gap: 0.5rem; justify-content:center;">
                   <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName} icon" style="width: 48px; height: 48px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); margin-top: -10px; margin-bottom: -10px;" />
@@ -416,10 +436,13 @@ import naturesData from '../../public/data/natures.json';
                   ${pokemon.types.map((t: string) => `<span class="type-badge bg-${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</span>`).join('')}
                 </div>
               </div>
-              ${abilityStr || movesHtml || natureStr ? `
+              ${abilityStr || movesHtml || natureStr || itemHtml ? `
               <div class="stat-card-config">
                 ${natureStr}
-                ${abilityStr}
+                <div style="display:flex; gap:0.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:0.25rem;">
+                  ${abilityStr}
+                  ${itemHtml}
+                </div>
                 <div class="moves-container">${movesHtml}</div>
                 ${evsHtml}
               </div>` : ''}
@@ -458,8 +481,14 @@ import naturesData from '../../public/data/natures.json';
         teamStatsGrid.classList.toggle('hidden-collapsible');
         if (teamStatsGrid.classList.contains('hidden-collapsible')) {
           toggleStatsBtn.innerHTML = 'Show statistics ▼';
+          teamStatsGrid.style.overflow = 'hidden';
         } else {
           toggleStatsBtn.innerHTML = 'Hide statistics ▲';
+          setTimeout(() => {
+            if (!teamStatsGrid.classList.contains('hidden-collapsible')) {
+              teamStatsGrid.style.overflow = 'visible';
+            }
+          }, 400);
         }
       });
     }
@@ -556,6 +585,7 @@ import naturesData from '../../public/data/natures.json';
         
         const ability = (document.getElementById('config-ability') as HTMLInputElement).value;
         const nature = (document.getElementById('config-nature') as HTMLInputElement).value;
+        const item = (document.getElementById('config-item') as HTMLInputElement).value;
         const moves = [
           (document.getElementById('config-move-1') as HTMLInputElement).value,
           (document.getElementById('config-move-2') as HTMLInputElement).value,
@@ -566,6 +596,7 @@ import naturesData from '../../public/data/natures.json';
         updatePokemonConfig(pId, pForm, {
           ability: ability || null,
           nature: nature || '25',
+          item: item || null,
           moves: moves,
           evs: { ...currentEvs }
         });
@@ -587,6 +618,7 @@ import naturesData from '../../public/data/natures.json';
       (document.getElementById('config-pokemon-form') as HTMLInputElement).value = form;
       
       document.getElementById('config-ability')!.innerHTML = '<option value="">-- Select Ability --</option>';
+      document.getElementById('config-item')!.innerHTML = '<option value="">-- No Item --</option>';
       for (let i = 1; i <= 4; i++) {
         document.getElementById(`config-move-${i}`)!.innerHTML = `<option value="">-- Select Move ${i} --</option>`;
       }
@@ -630,22 +662,32 @@ import naturesData from '../../public/data/natures.json';
         natureSelect.innerHTML = '';
         Object.values(globalNaturesMap).forEach((nat: any) => {
           const opt = document.createElement('option');
-          opt.value = nat.id;
-          
-          if (nat.id !== '25' && nat.increased_stat && nat.decreased_stat) {
-             const incName = nat.increased_stat.replace('-', ' ');
-             const decName = nat.decreased_stat.replace('-', ' ');
-             const incFmt = incName.charAt(0).toUpperCase() + incName.slice(1);
-             const decFmt = decName.charAt(0).toUpperCase() + decName.slice(1);
-             opt.textContent = `${nat.name_en} (+ ${incFmt} / - ${decFmt})`;
-          } else {
-             opt.textContent = nat.name_en;
-          }
-          
-          opt.dataset.increased = nat.increased_stat || 'null';
-          opt.dataset.decreased = nat.decreased_stat || 'null';
+          opt.value = String(nat.id);
+          opt.textContent = `${nat.name_en} (+ ${nat.increased_stat ? nat.increased_stat.charAt(0).toUpperCase() + nat.increased_stat.slice(1) : 'None'} / - ${nat.decreased_stat ? nat.decreased_stat.charAt(0).toUpperCase() + nat.decreased_stat.slice(1) : 'None'})`;
+          opt.dataset.increased = nat.increased_stat || '';
+          opt.dataset.decreased = nat.decreased_stat || '';
           natureSelect.appendChild(opt);
         });
+
+        const itemSelect = document.getElementById('config-item') as HTMLSelectElement;
+        sortedItems.forEach((itm: any) => {
+          const opt = document.createElement('option');
+          opt.value = itm.id;
+          opt.textContent = itm.name_en;
+          opt.dataset.desc = itm.effect_en || '';
+          itemSelect.appendChild(opt);
+        });
+
+        const updateItemTooltip = () => {
+          const selectedOption = itemSelect.options[itemSelect.selectedIndex];
+          const desc = selectedOption?.dataset.desc;
+          if (desc) {
+            itemSelect.setAttribute('data-tooltip', desc);
+          } else {
+            itemSelect.removeAttribute('data-tooltip');
+          }
+        };
+        itemSelect.addEventListener('change', updateItemTooltip);
         
         const updateNatureTooltip = () => {
           const opt = natureSelect.options[natureSelect.selectedIndex];
@@ -653,7 +695,7 @@ import naturesData from '../../public/data/natures.json';
           const inc = opt.dataset.increased;
           const dec = opt.dataset.decreased;
           let tooltipText = "";
-          if (inc && dec && inc !== "null" && dec !== "null") {
+          if (inc && dec && inc !== "null" && dec !== "null" && inc !== "" && dec !== "") {
              tooltipText = `Increases ${inc} by 10%, decreases ${dec} by 10%`;
           } else {
              tooltipText = `Neutral nature (No stat changes)`;
@@ -706,7 +748,9 @@ import naturesData from '../../public/data/natures.json';
         if (pokemon) {
           if (pokemon.nature) natureSelect.value = pokemon.nature;
           else natureSelect.value = '25';
+          if (pokemon.item) itemSelect.value = pokemon.item;
           updateNatureTooltip();
+          updateItemTooltip();
           
           if (pokemon.ability) abilitySelect.value = pokemon.ability;
           if (pokemon.moves) {
@@ -1420,7 +1464,9 @@ import naturesData from '../../public/data/natures.json';
     margin: 0 auto;
     transition: all 0.4s ease-in-out;
     opacity: 1;
-    max-height: 2000px; /* arbitrary large value for transition */
+    max-height: 2000px;
+    position: relative;
+    z-index: 10; /* arbitrary large value for transition */
     overflow: hidden;
   }
 
@@ -1706,5 +1752,30 @@ import naturesData from '../../public/data/natures.json';
     height: 100%;
     border-radius: 4px;
     transition: width 1s ease-out;
+  }
+
+  .has-tooltip {
+    position: relative;
+    cursor: help;
+  }
+
+  .has-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    width: max-content;
+    max-width: 300px;
+    white-space: normal;
+    z-index: 1000;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
   }
 </style>

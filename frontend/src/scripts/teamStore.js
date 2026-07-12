@@ -166,6 +166,7 @@ export function addToTeam(pokemon) {
   activeTeam.members.push({
     ...pokemon,
     ability: pokemon.ability || null,
+    item: pokemon.item || null,
     nature: pokemon.nature || '25',
     moves: pokemon.moves || [null, null, null, null],
     evs: pokemon.evs || {
