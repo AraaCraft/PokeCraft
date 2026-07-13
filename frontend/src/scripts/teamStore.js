@@ -1,8 +1,20 @@
-// Cookie management for Pokémon Team
-const TEAM_COOKIE_NAME = 'pokecraft_team';
+// LocalStorage management for Pokémon Team
+const TEAM_STORAGE_KEY = 'pokecraft_team_data';
 const MAX_TEAM_SIZE = 6;
 
-// Helper to get cookie value by name
+// Helper to get data
+function getStoredData(key) {
+  if (typeof window === 'undefined') return null;
+  return window.localStorage.getItem(key);
+}
+
+// Helper to set data
+function setStoredData(key, value) {
+  if (typeof window === 'undefined') return;
+  window.localStorage.setItem(key, value);
+}
+
+// Helper to get cookie value by name (for migration)
 function getCookie(name) {
   if (typeof document === 'undefined') return null;
   const value = `; ${document.cookie}`;
@@ -11,13 +23,9 @@ function getCookie(name) {
   return null;
 }
 
-// Helper to set cookie value
-function setCookie(name, value, days = 365) {
+function clearCookie(name) {
   if (typeof document === 'undefined') return;
-  const date = new Date();
-  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-  const expires = `expires=${date.toUTCString()}`;
-  document.cookie = `${name}=${value};${expires};path=/`;
+  document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
 }
 
 import { t } from './langStore.js';
@@ -26,32 +34,55 @@ function generateId() {
   return Math.random().toString(36).substring(2, 9);
 }
 
-// Get the master team object from cookies
+// Get the master team object from storage
 export function getTeamData() {
-  const cookieVal = getCookie(TEAM_COOKIE_NAME);
+  // Return default state if in SSR environment
+  if (typeof window === 'undefined') {
+    const defaultTeamId = generateId();
+    return {
+      activeTeamId: defaultTeamId,
+      teams: [
+        { id: defaultTeamId, name: `${t('team_default')} 1`, members: [] }
+      ]
+    };
+  }
+
+  // 1. Try to get from localStorage
+  const storedVal = getStoredData(TEAM_STORAGE_KEY);
+  if (storedVal) {
+    try {
+      return JSON.parse(storedVal);
+    } catch (e) {
+      console.error('Failed to parse team localStorage:', e);
+    }
+  }
+
+  // 2. Migration from old cookie
+  const cookieVal = getCookie('pokecraft_team');
   if (cookieVal) {
     try {
       const parsed = JSON.parse(decodeURIComponent(cookieVal));
       
+      let migratedData = parsed;
       // Migration: if it's a flat array (legacy format), wrap it in the new format
       if (Array.isArray(parsed)) {
-        const migratedData = {
+        migratedData = {
           activeTeamId: 'legacy-team',
           teams: [
             { id: 'legacy-team', name: `${t('team_default')} 1`, members: parsed }
           ]
         };
-        saveTeamData(migratedData);
-        return migratedData;
       }
       
-      return parsed;
+      saveTeamData(migratedData);
+      clearCookie('pokecraft_team');
+      return migratedData;
     } catch (e) {
       console.error('Failed to parse team cookie:', e);
     }
   }
   
-  // Default fresh state
+  // 3. Default fresh state
   const defaultTeamId = generateId();
   return {
     activeTeamId: defaultTeamId,
@@ -63,7 +94,7 @@ export function getTeamData() {
 
 // Save the master team object
 function saveTeamData(data) {
-  setCookie(TEAM_COOKIE_NAME, encodeURIComponent(JSON.stringify(data)));
+  setStoredData(TEAM_STORAGE_KEY, JSON.stringify(data));
   // Dispatch global event when data is saved to sync multiple components
   if (typeof window !== 'undefined') {
     window.dispatchEvent(new CustomEvent('team-data-updated'));

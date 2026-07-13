@@ -16,3 +16,31 @@ Features/pages :
 - ~~Faire la traduction FR~~
 - ~~Changer le favicon~~
 
+Corrections à faire :
+    - Bouton "Répartition" du le teambuilding à rendre + visible ou à mettre ailleurs
+    - Mettre les noms de MEGA à la ligne, exemple :
+            Dracaufeu (Mega
+                        X)
+        Deviendra :
+            Dracaufeu
+            (Mega X)
+
+    - "Your team is empty! Add your favorite Pokémon from the list below." est en anglais sur la version FR
+
+    - COLORATION CHANGEMENT DE STATS NATURE :
+        - Sur le choix de la nature, colorer également ici en vert la stat qui augmente et en rouge la stat qui diminue.
+        - Couleur bleu pour la stat qui baisse, rouge pour celle qui augmente.
+
+    - Info-bulle avec description du talent
+    - ITEMS/OBJETS :
+        - Améliorer l'affichage de la liste des objets (ordre alphabétique?)
+        - Trier car il y a des trucs dans la liste qui n'ont rien à faire là
+        - Certains ont leur nom EN sur la version FR
+        - Faire des catégories comme : Méga-Gemmes / Baies / Objets tenues / ...
+        - Barre de recherche
+    - MOVES / ATTAQUES (menu déroulant dans la répartiton) :
+        - Organiser la liste par types des attaques avec une indication visuelle (couleur du type)
+        - Barre de recherche
+
+    - Sauvegarde des équipes :
+        - Passer par du localStorage au lieux des cookies
