@@ -13,6 +13,6 @@ Features/pages :
     - Générer un tableau de faiblesses et résistances en fonction des types
     - Générer ue page qui liste tous les items présents dans le jeu ainsi que leurs descriptions et leurs icons
 
-- Faire la traduction FR
+- ~~Faire la traduction FR~~
 - ~~Changer le favicon~~
 

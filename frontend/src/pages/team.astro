@@ -36,13 +36,20 @@ Object.values(allMovesFiles).forEach((file: any) => {
 import naturesData from '../../public/data/natures.json';
 import itemsData from '../../public/data/items.json';
 import abilitiesData from '../../public/data/abilities.json';
+const pokemonNameMap = {};
+validPokemons.forEach(p => {
+  pokemonNameMap[`${p.id}-${p.form}`] = { 
+    name_en: p.name_en || p.name, 
+    name_fr: p.name_fr || p.name_en || p.name 
+  };
+});
 ---
 
 <Layout title="My Team | Pokédex">
-  <div class="team-page" id="team-page-container" data-moves={encodeURIComponent(JSON.stringify(movesNameMap))} data-natures={encodeURIComponent(JSON.stringify(naturesData))} data-items={encodeURIComponent(JSON.stringify(itemsData))} data-abilities={encodeURIComponent(JSON.stringify(abilitiesData))}>
+  <div class="team-page" id="team-page-container" data-pokemon-names={encodeURIComponent(JSON.stringify(pokemonNameMap))} data-moves={encodeURIComponent(JSON.stringify(movesNameMap))} data-natures={encodeURIComponent(JSON.stringify(naturesData))} data-items={encodeURIComponent(JSON.stringify(itemsData))} data-abilities={encodeURIComponent(JSON.stringify(abilitiesData))}>
     <header class="page-header">
-      <h1>My Pokémon Team</h1>
-      <p>Create and manage your dream teams! (Maximum 6 Pokémon per team)</p>
+      <h1 data-i18n="my_team">My Pokémon Team</h1>
+      <p data-i18n="create_manage_teams">Create and manage your dream teams! (Maximum 6 Pokémon per team)</p>
     </header>
 
     <!-- Multiple Teams Selector -->
@@ -50,7 +57,7 @@ import abilitiesData from '../../public/data/abilities.json';
       <div id="team-list" class="team-list">
         <!-- Populated by JS -->
       </div>
-      <button id="create-team-btn" class="create-team-btn glass-panel" title="Create new team">
+      <button id="create-team-btn" class="create-team-btn glass-panel" data-i18n-title="create_new_team" title="Create new team">
         <span>+</span>
       </button>
     </div>
@@ -86,25 +93,25 @@ import abilitiesData from '../../public/data/abilities.json';
       
       <div class="pokedex-filters">
         <div class="type-filter-buttons" id="pokedex-type-filter">
-          <button class="type-btn active" data-type="all">All</button>
-          <button class="type-btn bg-normal" data-type="normal">Normal</button>
-          <button class="type-btn bg-fire" data-type="fire">Fire</button>
-          <button class="type-btn bg-water" data-type="water">Water</button>
-          <button class="type-btn bg-grass" data-type="grass">Grass</button>
-          <button class="type-btn bg-electric" data-type="electric">Electric</button>
-          <button class="type-btn bg-ice" data-type="ice">Ice</button>
-          <button class="type-btn bg-fighting" data-type="fighting">Fighting</button>
-          <button class="type-btn bg-poison" data-type="poison">Poison</button>
-          <button class="type-btn bg-ground" data-type="ground">Ground</button>
-          <button class="type-btn bg-flying" data-type="flying">Flying</button>
-          <button class="type-btn bg-psychic" data-type="psychic">Psychic</button>
-          <button class="type-btn bg-bug" data-type="bug">Bug</button>
-          <button class="type-btn bg-rock" data-type="rock">Rock</button>
-          <button class="type-btn bg-ghost" data-type="ghost">Ghost</button>
-          <button class="type-btn bg-dragon" data-type="dragon">Dragon</button>
-          <button class="type-btn bg-dark" data-type="dark">Dark</button>
-          <button class="type-btn bg-steel" data-type="steel">Steel</button>
-          <button class="type-btn bg-fairy" data-type="fairy">Fairy</button>
+          <button class="type-btn active" data-type="all" data-i18n="all_types">All</button>
+          <button class="type-btn bg-normal" data-type="normal" data-i18n="type_normal">Normal</button>
+          <button class="type-btn bg-fire" data-type="fire" data-i18n="type_fire">Fire</button>
+          <button class="type-btn bg-water" data-type="water" data-i18n="type_water">Water</button>
+          <button class="type-btn bg-grass" data-type="grass" data-i18n="type_grass">Grass</button>
+          <button class="type-btn bg-electric" data-type="electric" data-i18n="type_electric">Electric</button>
+          <button class="type-btn bg-ice" data-type="ice" data-i18n="type_ice">Ice</button>
+          <button class="type-btn bg-fighting" data-type="fighting" data-i18n="type_fighting">Fighting</button>
+          <button class="type-btn bg-poison" data-type="poison" data-i18n="type_poison">Poison</button>
+          <button class="type-btn bg-ground" data-type="ground" data-i18n="type_ground">Ground</button>
+          <button class="type-btn bg-flying" data-type="flying" data-i18n="type_flying">Flying</button>
+          <button class="type-btn bg-psychic" data-type="psychic" data-i18n="type_psychic">Psychic</button>
+          <button class="type-btn bg-bug" data-type="bug" data-i18n="type_bug">Bug</button>
+          <button class="type-btn bg-rock" data-type="rock" data-i18n="type_rock">Rock</button>
+          <button class="type-btn bg-ghost" data-type="ghost" data-i18n="type_ghost">Ghost</button>
+          <button class="type-btn bg-dragon" data-type="dragon" data-i18n="type_dragon">Dragon</button>
+          <button class="type-btn bg-dark" data-type="dark" data-i18n="type_dark">Dark</button>
+          <button class="type-btn bg-steel" data-type="steel" data-i18n="type_steel">Steel</button>
+          <button class="type-btn bg-fairy" data-type="fairy" data-i18n="type_fairy">Fairy</button>
         </div>
       </div>
 
@@ -151,39 +158,39 @@ import abilitiesData from '../../public/data/abilities.json';
           <div class="config-section">
             <h3 data-i18n="moves">Moves (Max 4)</h3>
             <div class="moves-grid">
-              <select id="config-move-1" class="config-select"><option value="">-- Select Move 1 --</option></select>
-              <select id="config-move-2" class="config-select"><option value="">-- Select Move 2 --</option></select>
-              <select id="config-move-3" class="config-select"><option value="">-- Select Move 3 --</option></select>
-              <select id="config-move-4" class="config-select"><option value="">-- Select Move 4 --</option></select>
+              <select id="config-move-1" class="config-select"><option value="" data-i18n="select_move_1">-- Select Move 1 --</option></select>
+              <select id="config-move-2" class="config-select"><option value="" data-i18n="select_move_2">-- Select Move 2 --</option></select>
+              <select id="config-move-3" class="config-select"><option value="" data-i18n="select_move_3">-- Select Move 3 --</option></select>
+              <select id="config-move-4" class="config-select"><option value="" data-i18n="select_move_4">-- Select Move 4 --</option></select>
             </div>
           </div>
 
           <div class="config-section">
-            <h3>EV Stats (Total: <span id="ev-total">0</span>/66)</h3>
-            <p class="ev-hint">Max 32 points per stat.</p>
+            <h3><span data-i18n="ev_stats">EV Stats</span> (Total: <span id="ev-total">0</span>/66)</h3>
+            <p class="ev-hint" data-i18n="ev_hint">Max 32 points per stat.</p>
             <div class="ev-sliders">
               <div class="ev-row">
-                <label>HP (<span id="ev-val-hp">0</span>)<span id="ev-final-hp" class="ev-final-stat"></span></label>
+                <label><span data-i18n="stat_hp">HP</span> (<span id="ev-val-hp">0</span>)<span id="ev-final-hp" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-hp" class="ev-slider" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Attack (<span id="ev-val-attack">0</span>)<span id="ev-final-attack" class="ev-final-stat"></span></label>
+                <label><span data-i18n="stat_attack">Attack</span> (<span id="ev-val-attack">0</span>)<span id="ev-final-attack" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-attack" class="ev-slider" data-stat="attack" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Defense (<span id="ev-val-defense">0</span>)<span id="ev-final-defense" class="ev-final-stat"></span></label>
+                <label><span data-i18n="stat_defense">Defense</span> (<span id="ev-val-defense">0</span>)<span id="ev-final-defense" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-defense" class="ev-slider" data-stat="defense" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Sp. Atk (<span id="ev-val-special-attack">0</span>)<span id="ev-final-special-attack" class="ev-final-stat"></span></label>
+                <label><span data-i18n="stat_special-attack">Sp. Atk</span> (<span id="ev-val-special-attack">0</span>)<span id="ev-final-special-attack" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-special-attack" class="ev-slider" data-stat="special-attack" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Sp. Def (<span id="ev-val-special-defense">0</span>)<span id="ev-final-special-defense" class="ev-final-stat"></span></label>
+                <label><span data-i18n="stat_special-defense">Sp. Def</span> (<span id="ev-val-special-defense">0</span>)<span id="ev-final-special-defense" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-special-defense" class="ev-slider" data-stat="special-defense" min="0" max="32" value="0" />
               </div>
               <div class="ev-row">
-                <label>Speed (<span id="ev-val-speed">0</span>)<span id="ev-final-speed" class="ev-final-stat"></span></label>
+                <label><span data-i18n="stat_speed">Speed</span> (<span id="ev-val-speed">0</span>)<span id="ev-final-speed" class="ev-final-stat"></span></label>
                 <input type="range" id="ev-slider-speed" class="ev-slider" data-stat="speed" min="0" max="32" value="0" />
               </div>
             </div>
@@ -205,7 +212,7 @@ import abilitiesData from '../../public/data/abilities.json';
           <span>📄</span> PDF
         </button>
       </div>
-      <button id="export-main-btn" class="export-main-btn">
+      <button id="export-main-btn" class="export-main-btn" data-i18n="export">
         EXPORT
       </button>
     </div>
@@ -238,6 +245,7 @@ import abilitiesData from '../../public/data/abilities.json';
     const btnPdf = document.getElementById('export-pdf-btn');
 
     const pageContainer = document.getElementById('team-page-container');
+    const globalPokemonNamesMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.pokemonNames || '{}'));
     const globalMovesNameMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.moves || '{}'));
     const globalNaturesMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.natures || '{}'));
     const globalItemsMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.items || '{}'));
@@ -261,7 +269,7 @@ import abilitiesData from '../../public/data/abilities.json';
         return `
           <div class="team-tab ${isActive ? 'active' : ''}" data-id="${team.id}">
             <span class="team-name">${team.name}</span>
-            <button class="rename-team-btn" data-id="${team.id}" title="Rename team">✏️</button>
+            <button class="rename-team-btn" data-id="${team.id}" data-i18n-title="rename_team" title="${t('rename_team')}">✏️</button>
             <span class="team-count">(${team.members.length}/6)</span>
             ${teams.length > 1 ? `<button class="delete-team-btn" data-id="${team.id}" title="Delete team">×</button>` : ''}
           </div>
@@ -328,22 +336,36 @@ import abilitiesData from '../../public/data/abilities.json';
       teamGrid.innerHTML = team.map(pokemon => {
         const primaryType = pokemon.types[0] || 'normal';
         const currentLang = getLang();
-        const baseName = currentLang === 'fr' ? (pokemon.name_fr || pokemon.name) : (pokemon.name_en || pokemon.name);
-        let displayName = baseName.charAt(0).toUpperCase() + baseName.slice(1);
-        if (pokemon.form !== pokemon.name) {
-          displayName += ' (' + pokemon.form.replace(`${pokemon.name}-`, '').replace('-', ' ').toUpperCase() + ')';
+        
+        const names = globalPokemonNamesMap[`${pokemon.id}-${pokemon.form}`] || {};
+        const nameEn = names.name_en || pokemon.name_en || pokemon.name;
+        const nameFr = names.name_fr || pokemon.name_fr || nameEn;
+        
+        let formattedNameEn = nameEn.charAt(0).toUpperCase() + nameEn.slice(1);
+        let formattedNameFr = nameFr.charAt(0).toUpperCase() + nameFr.slice(1);
+        
+        if (pokemon.form && pokemon.form !== pokemon.name) {
+          let formPart = pokemon.form;
+          if (formPart.startsWith(pokemon.name + '-')) {
+            formPart = formPart.substring(pokemon.name.length + 1);
+          }
+          formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+          formattedNameEn += ` (${formPart})`;
+          formattedNameFr += ` (${formPart})`;
         }
+
+        const displayName = currentLang === 'fr' ? formattedNameFr : formattedNameEn;
 
         return `
           <div class="team-member-container">
             <div class="team-circle glass-panel" style="--accent-color: var(--type-${primaryType})">
-              <button class="remove-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" aria-label="Remove" title="Remove from team">×</button>
+              <button class="remove-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" aria-label="Remove" data-i18n-title="remove" title="${t('remove')}">×</button>
               <a href="/pokemon/${pokemon.id}-${pokemon.form}" class="circle-link">
                 <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName}" loading="lazy" crossorigin="anonymous" />
               </a>
-              <div class="name-badge">${displayName}</div>
+              <div class="name-badge" data-name-en="${formattedNameEn.replace(/"/g, '&quot;')}" data-name-fr="${formattedNameFr.replace(/"/g, '&quot;')}">${displayName}</div>
             </div>
-            <button class="config-btn text-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" data-name="${displayName}">Repartition stats</button>
+            <button class="config-btn text-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" data-name="${displayName}" data-i18n="repartition">${t('repartition')}</button>
           </div>
         `;
       }).join('');
@@ -360,11 +382,25 @@ import abilitiesData from '../../public/data/abilities.json';
         teamStatsGrid.innerHTML = team.map(pokemon => {
           const primaryType = pokemon.types[0] || 'normal';
           const currentLang = getLang();
-          const baseName = currentLang === 'fr' ? (pokemon.name_fr || pokemon.name) : (pokemon.name_en || pokemon.name);
-          let displayName = baseName.charAt(0).toUpperCase() + baseName.slice(1);
-          if (pokemon.form !== pokemon.name) {
-            displayName += ' (' + pokemon.form.replace(`${pokemon.name}-`, '').replace('-', ' ').toUpperCase() + ')';
+          
+          const names = globalPokemonNamesMap[`${pokemon.id}-${pokemon.form}`] || {};
+          const nameEn = names.name_en || pokemon.name_en || pokemon.name;
+          const nameFr = names.name_fr || pokemon.name_fr || nameEn;
+          
+          let formattedNameEn = nameEn.charAt(0).toUpperCase() + nameEn.slice(1);
+          let formattedNameFr = nameFr.charAt(0).toUpperCase() + nameFr.slice(1);
+          
+          if (pokemon.form && pokemon.form !== pokemon.name) {
+            let formPart = pokemon.form;
+            if (formPart.startsWith(pokemon.name + '-')) {
+              formPart = formPart.substring(pokemon.name.length + 1);
+            }
+            formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+            formattedNameEn += ` (${formPart})`;
+            formattedNameFr += ` (${formPart})`;
           }
+
+          const displayName = currentLang === 'fr' ? formattedNameFr : formattedNameEn;
 
           const stats = window.pokemonStatsMap[`${pokemon.id}_${pokemon.form}`] || [];
           
@@ -391,7 +427,7 @@ import abilitiesData from '../../public/data/abilities.json';
             
             return `
             <div class="stat-row">
-              <span class="stat-name" style="${colorStyle}">${s.stat.name.replace('-', ' ')}</span>
+              <span class="stat-name" style="${colorStyle}" data-i18n="stat_${s.stat.name}">${t('stat_' + s.stat.name)}</span>
               <span class="stat-val" style="${colorStyle}">${finalVal}</span>
               <div class="stat-bar-bg">
                 <div class="stat-bar-fill" style="width: ${Math.min((finalVal / 255) * 100, 100)}%; background-color: var(--accent-color);"></div>
@@ -403,10 +439,8 @@ import abilitiesData from '../../public/data/abilities.json';
           if (natureData) {
             const natureName = currentLang === 'fr' ? (natureData.name_fr || natureData.name_en) : natureData.name_en;
             if (natureData.id !== '25' && natureData.increased_stat && natureData.decreased_stat) {
-               const incName = natureData.increased_stat.replace('-', ' ');
-               const decName = natureData.decreased_stat.replace('-', ' ');
-               const incFmt = incName.charAt(0).toUpperCase() + incName.slice(1);
-               const decFmt = decName.charAt(0).toUpperCase() + decName.slice(1);
+               const incFmt = t('stat_' + natureData.increased_stat);
+               const decFmt = t('stat_' + natureData.decreased_stat);
                natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureName} (<span style="color:#38d9a9;">+ ${incFmt}</span> / <span style="color:#ff8787;">- ${decFmt}</span>)</div>`;
             } else {
                natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureName}</div>`;
@@ -434,12 +468,12 @@ import abilitiesData from '../../public/data/abilities.json';
           if (pokemon.evs) {
             const evs = pokemon.evs;
             const evList = [];
-            if (evs.hp > 0) evList.push(`HP: ${evs.hp}`);
-            if (evs.attack > 0) evList.push(`Atk: ${evs.attack}`);
-            if (evs.defense > 0) evList.push(`Def: ${evs.defense}`);
-            if (evs['special-attack'] > 0) evList.push(`SpA: ${evs['special-attack']}`);
-            if (evs['special-defense'] > 0) evList.push(`SpD: ${evs['special-defense']}`);
-            if (evs.speed > 0) evList.push(`Spe: ${evs.speed}`);
+            if (evs.hp > 0) evList.push(`${t('ev_hp')}: ${evs.hp}`);
+            if (evs.attack > 0) evList.push(`${t('ev_attack')}: ${evs.attack}`);
+            if (evs.defense > 0) evList.push(`${t('ev_defense')}: ${evs.defense}`);
+            if (evs['special-attack'] > 0) evList.push(`${t('ev_special-attack')}: ${evs['special-attack']}`);
+            if (evs['special-defense'] > 0) evList.push(`${t('ev_special-defense')}: ${evs['special-defense']}`);
+            if (evs.speed > 0) evList.push(`${t('ev_speed')}: ${evs.speed}`);
             if (evList.length > 0) {
               evsHtml = `<div class="evs-summary">${evList.join(' | ')}</div>`;
             }
@@ -461,10 +495,10 @@ import abilitiesData from '../../public/data/abilities.json';
               <div class="stat-card-header">
                 <div style="display:flex; align-items:center; gap: 0.5rem; justify-content:center;">
                   <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName} icon" style="width: 48px; height: 48px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); margin-top: -10px; margin-bottom: -10px;" />
-                  <h3>${displayName}</h3>
+                  <h3 data-name-en="${formattedNameEn.replace(/"/g, '&quot;')}" data-name-fr="${formattedNameFr.replace(/"/g, '&quot;')}">${displayName}</h3>
                 </div>
                 <div class="types" style="display:flex; gap:0.5rem; justify-content:center; align-items:center; margin-top: 0.5rem;">
-                  ${pokemon.types.map((t: string) => `<span class="type-badge bg-${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</span>`).join('')}
+                  ${pokemon.types.map((t_str: string) => `<span class="type-badge bg-${t_str}" data-i18n="type_${t_str}">${t('type_' + t_str)}</span>`).join('')}
                 </div>
               </div>
               ${abilityStr || movesHtml || natureStr || itemHtml ? `
@@ -644,15 +678,15 @@ import abilitiesData from '../../public/data/abilities.json';
     }
 
     async function openConfigModal(id: number, form: string, displayName: string) {
-      document.getElementById('config-modal-title')!.textContent = `Configure ${displayName}`;
+      document.getElementById('config-modal-title')!.textContent = `${t('configure')} ${displayName}`;
       (document.getElementById('config-pokemon-id') as HTMLInputElement).value = id.toString();
       (document.getElementById('config-pokemon-form') as HTMLInputElement).value = form;
       
       const currentLang = getLang();
-      document.getElementById('config-ability')!.innerHTML = `<option value="">-- Select Ability --</option>`;
+      document.getElementById('config-ability')!.innerHTML = `<option value="" data-i18n="select_ability">${t('select_ability')}</option>`;
       document.getElementById('config-item')!.innerHTML = `<option value="" data-i18n="no_item">${t('no_item')}</option>`;
       for (let i = 1; i <= 4; i++) {
-        document.getElementById(`config-move-${i}`)!.innerHTML = `<option value="">-- Select Move ${i} --</option>`;
+        document.getElementById(`config-move-${i}`)!.innerHTML = `<option value="" data-i18n="select_move_${i}">${t('select_move_' + i)}</option>`;
       }
       
       configModal!.classList.remove('hidden');
@@ -704,7 +738,9 @@ import abilitiesData from '../../public/data/abilities.json';
           const opt = document.createElement('option');
           opt.value = String(nat.id);
           const natureName = currentLang === 'fr' ? (nat.name_fr || nat.name_en) : nat.name_en;
-          opt.textContent = `${natureName} (+ ${nat.increased_stat ? nat.increased_stat.charAt(0).toUpperCase() + nat.increased_stat.slice(1) : 'None'} / - ${nat.decreased_stat ? nat.decreased_stat.charAt(0).toUpperCase() + nat.decreased_stat.slice(1) : 'None'})`;
+          const incStat = nat.increased_stat ? t('stat_' + nat.increased_stat) : (currentLang === 'fr' ? 'Aucune' : 'None');
+          const decStat = nat.decreased_stat ? t('stat_' + nat.decreased_stat) : (currentLang === 'fr' ? 'Aucune' : 'None');
+          opt.textContent = `${natureName} (+ ${incStat} / - ${decStat})`;
           opt.dataset.increased = nat.increased_stat || '';
           opt.dataset.decreased = nat.decreased_stat || '';
           natureSelect.appendChild(opt);

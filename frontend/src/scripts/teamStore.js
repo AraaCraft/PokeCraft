@@ -20,8 +20,10 @@ function setCookie(name, value, days = 365) {
   document.cookie = `${name}=${value};${expires};path=/`;
 }
 
+import { t } from './langStore.js';
+
 function generateId() {
-  return 'team-' + Math.random().toString(36).substring(2, 9);
+  return Math.random().toString(36).substring(2, 9);
 }
 
 // Get the master team object from cookies
@@ -36,7 +38,7 @@ export function getTeamData() {
         const migratedData = {
           activeTeamId: 'legacy-team',
           teams: [
-            { id: 'legacy-team', name: 'Team 1', members: parsed }
+            { id: 'legacy-team', name: `${t('team_default')} 1`, members: parsed }
           ]
         };
         saveTeamData(migratedData);
@@ -54,7 +56,7 @@ export function getTeamData() {
   return {
     activeTeamId: defaultTeamId,
     teams: [
-      { id: defaultTeamId, name: 'Team 1', members: [] }
+      { id: defaultTeamId, name: `${t('team_default')} 1`, members: [] }
     ]
   };
 }
@@ -107,7 +109,7 @@ export function createTeam() {
   const data = getTeamData();
   const newTeam = {
     id: generateId(),
-    name: `Team ${data.teams.length + 1}`,
+    name: `${t('team_default')} ${data.teams.length + 1}`,
     members: []
   };
   data.teams.push(newTeam);

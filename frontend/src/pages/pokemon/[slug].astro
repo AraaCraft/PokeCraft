@@ -44,14 +44,23 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { pokemon, allForms } = Astro.props;
 
-let formattedName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+const nameEn = pokemon.name_en || pokemon.name;
+const nameFr = pokemon.name_fr || nameEn;
+
+let formattedNameEn = nameEn.charAt(0).toUpperCase() + nameEn.slice(1);
+let formattedNameFr = nameFr.charAt(0).toUpperCase() + nameFr.slice(1);
+
+let formattedName = formattedNameEn; // fallback for layout title
+
 if (pokemon.form && pokemon.form !== pokemon.name) {
   let formPart = pokemon.form;
   if (formPart.startsWith(pokemon.name + '-')) {
     formPart = formPart.substring(pokemon.name.length + 1);
   }
   formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
-  formattedName = `${formattedName} (${formPart})`;
+  formattedNameEn = `${formattedNameEn} (${formPart})`;
+  formattedNameFr = `${formattedNameFr} (${formPart})`;
+  formattedName = formattedNameEn;
 }
 const formattedId = String(pokemon.id).padStart(4, '0');
 
@@ -98,7 +107,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
         <header class="detail-header">
           <span class="pokemon-id">#{formattedId}</span>
           <div class="header-title-container">
-            <h1 id="pokemon-name">{formattedName}</h1>
+            <h1 id="pokemon-name" data-name-en={formattedNameEn} data-name-fr={formattedNameFr}>{formattedNameEn}</h1>
             <button id="play-cry-btn" class="cry-btn" aria-label="Play cry" title="Play cry">
               🔊
             </button>
@@ -118,7 +127,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
             <div class="info-grid">
               <div class="info-item">
                 <span class="label" data-i18n="weight">Weight</span>
-                <span class="value" id="pokemon-weight">${pokemon.weight / 10} kg</span>
+                <span class="value" id="pokemon-weight">{pokemon.weight / 10} kg</span>
               </div>
               <div class="info-item">
                 <span class="label" data-i18n="abilities">Abilities</span>
@@ -141,14 +150,25 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
             <div class="forms-buttons">
               {allForms.map((f: any) => {
                 const isActive = f.form === pokemon.form;
-                const formLabel = f.form.replace(`${f.name}-`, '').replace('-', ' ').toUpperCase() || 'BASE';
+                
+                let formLabelEn = (f.name_en || f.name).toUpperCase();
+                let formLabelFr = (f.name_fr || f.name_en || f.name).toUpperCase();
+                
+                if (f.form !== f.name) {
+                  const subForm = f.form.replace(`${f.name}-`, '').replace('-', ' ').toUpperCase();
+                  formLabelEn = subForm;
+                  formLabelFr = subForm;
+                }
+                
                 return (
                   <a 
                     href={`/pokemon/${f.id}-${f.form}`}
                     class={`form-btn ${isActive ? 'active' : ''}`} 
                     style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"
+                    data-name-en={formLabelEn}
+                    data-name-fr={formLabelFr}
                   >
-                    {formLabel}
+                    {formLabelEn}
                   </a>
                 );
               })}
@@ -161,7 +181,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
       <div class="glass-panel effectiveness-card" id="effectiveness-card">
         <div class="base-stats-section-top">
           <h2 data-i18n="base_stats">Base Stats</h2>
-          <p style="font-size: 0.8em; margin-top: -0.5rem; margin-bottom: 1rem; color: var(--text-color); opacity: 0.8; font-style: italic;">(Stats applied in Pokémon Champions)</p>
+          <p style="font-size: 0.8em; margin-top: -0.5rem; margin-bottom: 1rem; color: var(--text-color); opacity: 0.8; font-style: italic;" data-i18n="stats_applied">(Stats applied in Pokémon Champions)</p>
           <div class="stats-list" id="pokemon-stats">
             <!-- Populated by JS -->
           </div>
@@ -186,9 +206,9 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
           </select>
           <select id="filter-category">
             <option value="all" data-i18n="all_categories">All categories</option>
-            <option value="physical" data-i18n="physical">Physical</option>
-            <option value="special" data-i18n="special">Special</option>
-            <option value="status" data-i18n="status">Status</option>
+            <option value="physical" data-i18n="move_physical">Physical</option>
+            <option value="special" data-i18n="move_special">Special</option>
+            <option value="status" data-i18n="move_status">Status</option>
           </select>
           <select id="sort-order">
             <option value="asc" data-i18n="az_order">A-Z Order</option>
@@ -295,7 +315,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
               <tbody>
                 ${moves.map((m) => {
                   const catIcon = m.damage_class === 'physical' ? '💥' : m.damage_class === 'special' ? '🔮' : '🛡️';
-                  const catText = m.damage_class === 'physical' ? t('physical') : m.damage_class === 'special' ? t('special') : t('status');
+                  const catText = m.damage_class === 'physical' ? t('move_physical') : m.damage_class === 'special' ? t('move_special') : t('move_status');
                   const typeCapitalized = m.type_name.charAt(0).toUpperCase() + m.type_name.slice(1);
                   return `
                   <tr>
@@ -305,7 +325,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
                       </span>
                     </td>
                     <td style="text-align:center;">
-                       <span class="type-badge bg-${m.type_name}">${typeCapitalized}</span>
+                       <span class="type-badge bg-${m.type_name}" data-i18n="type_${m.type_name}">${typeCapitalized}</span>
                     </td>
                     <td style="text-align:center;">
                        <span class="category-indicator">
@@ -360,11 +380,12 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
         }
 
         typesEl.innerHTML = '';
-        p.types.forEach(t => {
-          const tName = t.type.name;
+        p.types.forEach(t_obj => {
+          const tName = t_obj.type.name;
           const span = document.createElement('span');
           span.className = `type-badge bg-${tName}`;
-          span.textContent = tName;
+          span.setAttribute('data-i18n', `type_${tName}`);
+          span.textContent = t(`type_${tName}`);
           typesEl.appendChild(span);
         });
 
@@ -386,7 +407,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
           const row = document.createElement('div');
           row.className = 'stat-row';
           row.innerHTML = `
-            <span class="stat-name">${statName}</span>
+            <span class="stat-name" data-i18n="stat_${s.stat.name}">${t('stat_' + s.stat.name)}</span>
             <span class="stat-value">${statValue}</span>
             <div class="stat-bar-bg">
               <div class="stat-bar-fill" style="width: ${percentage}%; background-color: ${colorVar};"></div>
@@ -521,25 +542,25 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
         });
 
         let html = '';
-        const renderBadge = (t, text) => `<span class="type-badge bg-${t}">${t} ${text}</span>`;
+        const renderBadge = (t_str, text) => `<span class="type-badge bg-${t_str}">${t('type_' + t_str)} ${text}</span>`;
         
         if (weaknesses.length > 0) {
           html += `<div class="eff-group">
-            <h4 style="color: #ff6b6b; margin-bottom: 0.5rem; font-size: 0.9rem;">Weak to:</h4>
+            <h4 style="color: #ff6b6b; margin-bottom: 0.5rem; font-size: 0.9rem;" data-i18n="weak_to">${t('weak_to')}:</h4>
             <div class="eff-badges">${weaknesses.map(w => renderBadge(w.type, `x${w.multi}`)).join('')}</div>
           </div>`;
         }
 
         if (resistances.length > 0) {
           html += `<div class="eff-group">
-            <h4 style="color: #4ade80; margin-bottom: 0.5rem; font-size: 0.9rem; margin-top: 1rem;">Resists:</h4>
+            <h4 style="color: #4ade80; margin-bottom: 0.5rem; font-size: 0.9rem; margin-top: 1rem;" data-i18n="resists">${t('resists')}:</h4>
             <div class="eff-badges">${resistances.map(w => renderBadge(w.type, `x${w.multi}`)).join('')}</div>
           </div>`;
         }
 
         if (immunities.length > 0) {
           html += `<div class="eff-group">
-            <h4 style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.9rem; margin-top: 1rem;">Immune to:</h4>
+            <h4 style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.9rem; margin-top: 1rem;" data-i18n="immune_to">${t('immune_to')}:</h4>
             <div class="eff-badges">${immunities.map(w => renderBadge(w.type, `x0`)).join('')}</div>
           </div>`;
         }

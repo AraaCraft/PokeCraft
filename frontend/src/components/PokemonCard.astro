@@ -8,14 +8,21 @@ interface Props {
 }
 
 const { pokemon } = Astro.props;
-let formattedName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+
+const nameEn = pokemon.name_en || pokemon.name;
+const nameFr = pokemon.name_fr || nameEn;
+
+let formattedNameEn = nameEn.charAt(0).toUpperCase() + nameEn.slice(1);
+let formattedNameFr = nameFr.charAt(0).toUpperCase() + nameFr.slice(1);
+
 if (pokemon.form && pokemon.form !== pokemon.name) {
   let formPart = pokemon.form;
   if (formPart.startsWith(pokemon.name + '-')) {
     formPart = formPart.substring(pokemon.name.length + 1);
   }
   formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
-  formattedName = `${formattedName} (${formPart})`;
+  formattedNameEn = `${formattedNameEn} (${formPart})`;
+  formattedNameFr = `${formattedNameFr} (${formPart})`;
 }
 const formattedId = String(pokemon.id).padStart(4, '0');
 
@@ -34,14 +41,14 @@ const primaryType = pokemon.types[0]?.type.name || 'normal';
   
   <div class="pokemon-image">
     <!-- Fetching the local sprite downloaded by the Python script -->
-    <img src={`/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedName} loading="lazy" />
+    <img src={`/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedNameEn} loading="lazy" />
   </div>
 
   <div class="card-info">
-    <h2>{formattedName}</h2>
+    <h2 class="pokemon-name" data-name-en={formattedNameEn} data-name-fr={formattedNameFr}>{formattedNameEn}</h2>
     <div class="types">
       {pokemon.types.map((t) => (
-        <span class={`type-badge bg-${t.type.name}`}>{t.type.name}</span>
+        <span class={`type-badge bg-${t.type.name}`} data-i18n={`type_${t.type.name}`}>{t.type.name.charAt(0).toUpperCase() + t.type.name.slice(1)}</span>
       ))}
     </div>
   </div>
