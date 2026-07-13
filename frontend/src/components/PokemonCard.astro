@@ -33,7 +33,7 @@ const typeNames = pokemon.types.map(t => t.type.name).join(', ');
 const primaryType = pokemon.types[0]?.type.name || 'normal';
 ---
 
-<a href={`/pokemon/${pokemon.id}-${pokemon.form}`} class="pokemon-card glass-panel" style={`--accent-color: var(--type-${primaryType})`}>
+<a href={`${import.meta.env.BASE_URL}pokemon/${pokemon.id}-${pokemon.form}`} class="pokemon-card glass-panel" style={`--accent-color: var(--type-${primaryType})`}>
   <div class="card-header">
     <span class="pokemon-id">#{formattedId}</span>
     <button class="quick-add-btn" data-id={pokemon.id} data-form={pokemon.form} data-name={pokemon.name} data-types={pokemon.types.map(t=>t.type.name).join(',')} aria-label="Add to team" title="Add to team">+</button>
@@ -41,7 +41,7 @@ const primaryType = pokemon.types[0]?.type.name || 'normal';
   
   <div class="pokemon-image">
     <!-- Fetching the local sprite downloaded by the Python script -->
-    <img src={`/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedNameEn} loading="lazy" />
+    <img src={`${import.meta.env.BASE_URL}data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedNameEn} loading="lazy" />
   </div>
 
   <div class="card-info">

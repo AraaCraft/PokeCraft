@@ -103,7 +103,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
 
 <Layout title={`${formattedName} #${formattedId}`}>
   <div class="pokemon-detail" id="pokemon-detail-container" data-pokemon={pokemonJson} data-moves={pokemonMovesJson} data-abilities={pokemonAbilitiesJson}>
-    <a href="/" class="back-link" data-i18n="back_to_pokedex">← Back to Pokédex</a>
+    <a href={import.meta.env.BASE_URL} class="back-link" data-i18n="back_to_pokedex">← Back to Pokédex</a>
     
     <div class="detail-container">
       <div class="glass-panel detail-card" id="detail-card" style="position: relative; z-index: 10;">
@@ -123,7 +123,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
 
         <div class="content-wrapper" style="flex-direction: column; align-items: center;">
           <div class="image-section" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-            <img id="pokemon-image" src={`/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedName} />
+            <img id="pokemon-image" src={`${import.meta.env.BASE_URL}data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedName} />
             
             <div class="types-container" style="text-align: center; margin-top: -1rem;">
               <div class="types" id="pokemon-types" style="justify-content: center;">
@@ -151,7 +151,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
                 
                 return (
                   <a 
-                    href={`/pokemon/${f.id}-${f.form}`}
+                    href={`${import.meta.env.BASE_URL}pokemon/${f.id}-${f.form}`}
                     class={`form-btn ${isActive ? 'active' : ''}`} 
                     style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;"
                     data-name-en={formLabelEn}
@@ -375,7 +375,7 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
               currentAudio.currentTime = 0;
             }
             // Use local cry based on form
-            currentAudio = new Audio(`/data/champions/pokemon/${p.id}/${p.form}.ogg`);
+            currentAudio = new Audio(`${import.meta.env.BASE_URL}data/champions/pokemon/${p.id}/${p.form}.ogg`);
             currentAudio.volume = 0.5;
             currentAudio.play().catch(e => console.error("Audio play failed", e));
           };

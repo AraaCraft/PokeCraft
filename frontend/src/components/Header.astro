@@ -2,8 +2,8 @@
 ---
 <header class="global-header glass-panel">
   <div class="header-content">
-    <a href="/" class="logo">
-      <img src="/favicon.svg" alt="PokeCraft Logo" style="height: 32px; width: 32px; margin-right: 8px;" />
+    <a href={import.meta.env.BASE_URL} class="logo">
+      <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="PokeCraft Logo" style="height: 32px; width: 32px; margin-right: 8px;" />
       <span class="poke">Poke</span><span class="craft">Craft</span>
     </a>
     
@@ -18,7 +18,7 @@
         </ul>
       </div>
 
-      <a href="/team" class="team-link"><span data-i18n="my_team">My Team</span> (<span id="team-count">0</span>)</a>
+      <a href={`${import.meta.env.BASE_URL}team`} class="team-link"><span data-i18n="my_team">My Team</span> (<span id="team-count">0</span>)</a>
 
       <div class="lang-selector-container">
         <select class="lang-selector" id="lang-selector">
@@ -285,7 +285,7 @@
   // Load search index
   async function loadSearchIndex() {
     try {
-      const res = await fetch('/data/search_index.json');
+      const res = await fetch(import.meta.env.BASE_URL + 'data/search_index.json');
       if (res.ok) {
         searchIndex = await res.json();
       }
@@ -330,7 +330,7 @@
       
       return `
         <li class="search-result-item">
-          <a href="/pokemon/${p.id}-${p.base_form}" class="search-result-link">
+          <a href="${import.meta.env.BASE_URL}pokemon/${p.id}-${p.base_form}" class="search-result-link">
             <span class="search-result-id">#${formattedId}</span>
             <span class="search-result-name">${displayName}</span>
           </a>

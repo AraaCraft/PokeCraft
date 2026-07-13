@@ -364,8 +364,8 @@ validPokemons.forEach(p => {
           <div class="team-member-container">
             <div class="team-circle glass-panel" style="--accent-color: var(--type-${primaryType})">
               <button class="remove-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" aria-label="Remove" data-i18n-title="remove" title="${t('remove')}">×</button>
-              <a href="/pokemon/${pokemon.id}-${pokemon.form}" class="circle-link">
-                <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName}" loading="lazy" crossorigin="anonymous" />
+              <a href="${import.meta.env.BASE_URL}pokemon/${pokemon.id}-${pokemon.form}" class="circle-link">
+                <img src="${import.meta.env.BASE_URL}data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName}" loading="lazy" crossorigin="anonymous" />
               </a>
               <div class="name-badge" data-name-en="${formattedNameEn.replace(/"/g, '&quot;')}" data-name-fr="${formattedNameFr.replace(/"/g, '&quot;')}">${displayName}</div>
             </div>
@@ -498,7 +498,7 @@ validPokemons.forEach(p => {
             <div class="team-stat-card glass-panel" style="--accent-color: var(--type-${primaryType}); position: relative;">
               <div class="stat-card-header">
                 <div style="display:flex; align-items:center; gap: 0.5rem; justify-content:center;">
-                  <img src="/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName} icon" style="width: 48px; height: 48px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); margin-top: -10px; margin-bottom: -10px;" />
+                  <img src="${import.meta.env.BASE_URL}data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png" alt="${displayName} icon" style="width: 48px; height: 48px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3)); margin-top: -10px; margin-bottom: -10px;" />
                   <h3 data-name-en="${formattedNameEn.replace(/"/g, '&quot;')}" data-name-fr="${formattedNameFr.replace(/"/g, '&quot;')}">${displayName}</h3>
                 </div>
                 <div class="types" style="display:flex; gap:0.5rem; justify-content:center; align-items:center; margin-top: 0.5rem;">
@@ -696,7 +696,7 @@ validPokemons.forEach(p => {
       configModal!.classList.remove('hidden');
 
       try {
-        const res = await fetch(`/data/champions/pokemon/${id}/${form}.json`);
+        const res = await fetch(`${import.meta.env.BASE_URL}data/champions/pokemon/${id}/${form}.json`);
         if (!res.ok) throw new Error("Could not fetch data");
         const data = await res.json();
         
