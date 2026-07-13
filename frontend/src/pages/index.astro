@@ -13,9 +13,12 @@ const allPokemons = Object.values(pokemonFiles).map(
 	(file: any) => file.default,
 );
 
+import excludedForms from "../../../data/excluded_forms.json";
+
 // Filter out G-Max and unwanted Pikachu forms
 const validPokemons = allPokemons.filter((p) => {
 	if (p.form.includes("-gmax")) return false;
+	if (excludedForms.includes(p.form)) return false;
 	if (p.id === 25 && p.form !== "pikachu") return false; // Pikachu forms exclusion
 	return true;
 });
@@ -60,6 +63,7 @@ pokemons.sort((a, b) => {
 			<button class="type-btn bg-dark" data-type="dark" data-i18n="type_dark">Dark</button>
 			<button class="type-btn bg-steel" data-type="steel" data-i18n="type_steel">Steel</button>
 			<button class="type-btn bg-fairy" data-type="fairy" data-i18n="type_fairy">Fairy</button>
+			<button class="type-btn bg-dark" style="background: linear-gradient(135deg, #a040a0 0%, #303030 100%); color: white;" data-type="mega">MEGA</button>
 		</div>
 	</div>
 
@@ -116,8 +120,11 @@ pokemons.sort((a, b) => {
 			if (!btn) return;
 			const types = btn.dataset.types!.split(",");
 
+			const form = card.querySelector(".pokemon-name")?.textContent?.toLowerCase() || "";
+			const isMega = form.includes("mega");
+
 			let matchType =
-				activeTypes.has("all") || types.some((t) => activeTypes.has(t));
+				activeTypes.has("all") || (activeTypes.has("mega") ? isMega : types.some((t) => activeTypes.has(t)));
 
 			if (matchType) {
 				(card as HTMLElement).style.display = "";

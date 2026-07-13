@@ -1,14 +1,17 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
+import excludedForms from '../../../../data/excluded_forms.json';
+
 export async function getStaticPaths() {
   const pokemonFiles = import.meta.glob('../../../../data/champions/pokemon/**/*.json', { eager: true });
   
   const allPokemons = Object.values(pokemonFiles).map((file: any) => file.default);
-  
+
   // Filter out unwanted forms
   const validPokemons = allPokemons.filter(p => {
     if (p.form.includes('-gmax')) return false;
+    if (excludedForms.includes(p.form)) return false;
     if (p.id === 25 && p.form !== 'pikachu') return false;
     return true;
   });
@@ -118,26 +121,12 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
           </div>
         </header>
 
-        <div class="content-wrapper">
-          <div class="image-section">
+        <div class="content-wrapper" style="flex-direction: column; align-items: center;">
+          <div class="image-section" style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
             <img id="pokemon-image" src={`/data/champions/pokemon/${pokemon.id}/${pokemon.form}-front_default.png`} alt={formattedName} />
-          </div>
-          
-          <div class="stats-section">
-            <div class="info-grid">
-              <div class="info-item">
-                <span class="label" data-i18n="weight">Weight</span>
-                <span class="value" id="pokemon-weight">{pokemon.weight / 10} kg</span>
-              </div>
-              <div class="info-item">
-                <span class="label" data-i18n="abilities">Abilities</span>
-                <span class="value" id="pokemon-abilities"></span>
-              </div>
-            </div>
-
-            <div class="types-container">
-              <h3 data-i18n="types">Types</h3>
-              <div class="types" id="pokemon-types">
+            
+            <div class="types-container" style="text-align: center; margin-top: -1rem;">
+              <div class="types" id="pokemon-types" style="justify-content: center;">
                 <!-- Populated by JS -->
               </div>
             </div>
@@ -175,6 +164,19 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
             </div>
           </div>
         )}
+
+        <div class="stats-section" style="margin-top: 1rem;">
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="label" data-i18n="weight">Weight</span>
+              <span class="value" id="pokemon-weight">{pokemon.weight / 10} kg</span>
+            </div>
+            <div class="info-item">
+              <span class="label" data-i18n="abilities">Abilities</span>
+              <span class="value" id="pokemon-abilities"></span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Right Column: Effectiveness Card -->

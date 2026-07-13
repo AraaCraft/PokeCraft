@@ -2,6 +2,9 @@ import json
 import glob
 import os
 
+with open('data/excluded_forms.json', 'r') as f:
+    EXCLUDED_FORMS = json.load(f)
+
 pokemon_files = glob.glob('data/champions/pokemon/**/*.json', recursive=True)
 search_index = {}
 
@@ -9,6 +12,7 @@ for f in pokemon_files:
     with open(f, 'r') as file:
         data = json.load(file)
         if '-gmax' in data['form']: continue
+        if data['form'] in EXCLUDED_FORMS: continue
         if data['id'] == 25 and data['form'] != 'pikachu': continue
         
         pid = data['id']
