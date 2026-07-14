@@ -89,8 +89,8 @@ validPokemons.forEach(p => {
       </div>
       
       <div id="empty-state" class="empty-state hidden">
-        <h2>Your team is empty!</h2>
-        <p>Add your favorite Pokémon from the list below.</p>
+        <h2 data-i18n="empty_team_title">Your team is empty!</h2>
+        <p data-i18n="empty_team_desc">Add your favorite Pokémon from the list below.</p>
       </div>
     </div>
 
@@ -142,9 +142,20 @@ validPokemons.forEach(p => {
 
           <div class="config-section">
             <h3 data-i18n="nature">Nature</h3>
-            <select id="config-nature" class="config-select has-tooltip" data-tooltip="">
-              <!-- Populated by JS -->
-            </select>
+            <div class="custom-select-wrapper" id="nature-select-wrapper">
+              <div class="custom-select-trigger" id="nature-select-trigger">
+                <div id="nature-select-display" class="item-select-display">
+                  <span>-- Select Nature --</span>
+                </div>
+                <span class="custom-select-arrow">▼</span>
+              </div>
+              <div class="custom-select-dropdown hidden" id="nature-select-dropdown">
+                <div class="custom-select-options" id="nature-options-list">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+            </div>
+            <input type="hidden" id="config-nature-hidden" value="25">
           </div>
 
           <div class="config-section">
@@ -437,8 +448,8 @@ validPokemons.forEach(p => {
             formPart = formPart.substring(pokemon.name.length + 1);
           }
           formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
-          formattedNameEn += ` (${formPart})`;
-          formattedNameFr += ` (${formPart})`;
+          formattedNameEn += `\n(${formPart})`;
+          formattedNameFr += `\n(${formPart})`;
         }
 
         const displayName = currentLang === 'fr' ? formattedNameFr : formattedNameEn;
@@ -452,7 +463,7 @@ validPokemons.forEach(p => {
               </a>
               <div class="name-badge" data-name-en="${formattedNameEn.replace(/"/g, '&quot;')}" data-name-fr="${formattedNameFr.replace(/"/g, '&quot;')}">${displayName}</div>
             </div>
-            <button class="config-btn text-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" data-name="${displayName}" data-i18n="repartition">${t('repartition')}</button>
+            <button class="config-btn action-btn" data-id="${pokemon.id}" data-form="${pokemon.form}" data-name="${displayName}" data-i18n="repartition">${t('repartition')}</button>
           </div>
         `;
       }).join('');
@@ -483,8 +494,8 @@ validPokemons.forEach(p => {
               formPart = formPart.substring(pokemon.name.length + 1);
             }
             formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
-            formattedNameEn += ` (${formPart})`;
-            formattedNameFr += ` (${formPart})`;
+            formattedNameEn += `\n(${formPart})`;
+            formattedNameFr += `\n(${formPart})`;
           }
 
           const displayName = currentLang === 'fr' ? formattedNameFr : formattedNameEn;
@@ -504,11 +515,11 @@ validPokemons.forEach(p => {
             let finalVal = s.base_stat + additiveBonus + evBonus;
 
             if (s.stat.name === incStat) {
-               colorStyle = 'color: #38d9a9;';
+               colorStyle = 'color: #ff8787;';
                finalVal = Math.floor(finalVal * 1.1);
             }
             else if (s.stat.name === decStat) {
-               colorStyle = 'color: #ff8787;';
+               colorStyle = 'color: #74c0fc;';
                finalVal = Math.floor(finalVal * 0.9);
             }
             
@@ -528,7 +539,7 @@ validPokemons.forEach(p => {
             if (natureData.id !== '25' && natureData.increased_stat && natureData.decreased_stat) {
                const incFmt = t('stat_' + natureData.increased_stat);
                const decFmt = t('stat_' + natureData.decreased_stat);
-               natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureName} (<span style="color:#38d9a9;">+ ${incFmt}</span> / <span style="color:#ff8787;">- ${decFmt}</span>)</div>`;
+               natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureName} (<span style="color:#ff8787;">+ ${incFmt}</span> / <span style="color:#74c0fc;">- ${decFmt}</span>)</div>`;
             } else {
                natureStr = `<div class="config-badge nature-badge" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3);">${natureName}</div>`;
             }
@@ -761,10 +772,10 @@ validPokemons.forEach(p => {
       const pForm = (document.getElementById('config-pokemon-form') as HTMLInputElement).value;
       if (!pId || !pForm) return;
       const stats = window.pokemonStatsMap[`${pId}_${pForm}`] || [];
-      const natureSelect = document.getElementById('config-nature') as HTMLSelectElement;
-      const natureOpt = natureSelect.options[natureSelect.selectedIndex];
-      const incStat = natureOpt?.dataset.increased;
-      const decStat = natureOpt?.dataset.decreased;
+      const natureHidden = (document.getElementById('config-nature-hidden') as HTMLInputElement).value;
+      const natData = globalNaturesMap[natureHidden];
+      const incStat = natData?.increased_stat;
+      const decStat = natData?.decreased_stat;
 
       ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'].forEach(statName => {
         const baseStatObj = stats.find((s: any) => s.stat.name === statName);
@@ -776,13 +787,19 @@ validPokemons.forEach(p => {
         const evVal = currentEvs[statName as keyof typeof currentEvs] || 0;
         let total = baseVal + evVal;
         
-        if (statName === incStat) total = Math.floor(total * 1.1);
-        else if (statName === decStat) total = Math.floor(total * 0.9);
+        let statColor = '#ffd43b';
+        if (statName === incStat) {
+           total = Math.floor(total * 1.1);
+           statColor = '#ff8787';
+        } else if (statName === decStat) {
+           total = Math.floor(total * 0.9);
+           statColor = '#74c0fc';
+        }
         
         const finalSpan = document.getElementById(`ev-final-${statName}`);
         if (finalSpan) {
            finalSpan.textContent = ` ➞ ${total}`;
-           finalSpan.style.color = '#ffd43b';
+           finalSpan.style.color = statColor;
            finalSpan.style.fontWeight = 'bold';
            finalSpan.style.marginLeft = '4px';
         }
@@ -829,7 +846,7 @@ validPokemons.forEach(p => {
         const teamId = getActiveTeamId();
         
         const ability = (document.getElementById('config-ability-hidden') as HTMLInputElement).value;
-        const nature = (document.getElementById('config-nature') as HTMLInputElement).value;
+        const nature = (document.getElementById('config-nature-hidden') as HTMLInputElement).value;
         const item = (document.getElementById('config-item-hidden') as HTMLInputElement).value;
         const moves = [
           (document.getElementById('config-move-1-hidden') as HTMLInputElement).value,
@@ -1019,18 +1036,99 @@ validPokemons.forEach(p => {
           });
         }
         
-        const natureSelect = document.getElementById('config-nature') as HTMLSelectElement;
-        natureSelect.innerHTML = '';
-        Object.values(globalNaturesMap).forEach((nat: any) => {
-          const opt = document.createElement('option');
-          opt.value = String(nat.id);
+        const natureOptionsList = document.getElementById('nature-options-list')!;
+        const natureSelectDisplay = document.getElementById('nature-select-display')!;
+        const natureHiddenInput = document.getElementById('config-nature-hidden') as HTMLInputElement;
+        
+        natureOptionsList.innerHTML = '';
+        
+        const sortedNatures = Object.values(globalNaturesMap).sort((a: any, b: any) => {
+          const nameA = currentLang === 'fr' ? (a.name_fr || a.name_en) : a.name_en;
+          const nameB = currentLang === 'fr' ? (b.name_fr || b.name_en) : b.name_en;
+          return nameA.localeCompare(nameB);
+        });
+
+        sortedNatures.forEach((nat: any) => {
+          const opt = document.createElement('div');
+          opt.className = 'custom-option';
+          opt.dataset.value = String(nat.id);
+          
           const natureName = currentLang === 'fr' ? (nat.name_fr || nat.name_en) : nat.name_en;
           const incStat = nat.increased_stat ? t('stat_' + nat.increased_stat) : (currentLang === 'fr' ? 'Aucune' : 'None');
           const decStat = nat.decreased_stat ? t('stat_' + nat.decreased_stat) : (currentLang === 'fr' ? 'Aucune' : 'None');
-          opt.textContent = `${natureName} (+ ${incStat} / - ${decStat})`;
-          opt.dataset.increased = nat.increased_stat || '';
-          opt.dataset.decreased = nat.decreased_stat || '';
-          natureSelect.appendChild(opt);
+          
+          let tooltipText = "";
+          if (nat.increased_stat && nat.decreased_stat) {
+             tooltipText = currentLang === 'fr' 
+               ? `Augmente ${incStat} de 10%, diminue ${decStat} de 10%` 
+               : `Increases ${incStat} by 10%, decreases ${decStat} by 10%`;
+          } else {
+             tooltipText = currentLang === 'fr' 
+               ? `Nature neutre (Aucun changement de stat)` 
+               : `Neutral nature (No stat changes)`;
+          }
+          opt.dataset.tooltip = tooltipText;
+
+          if (nat.increased_stat && nat.decreased_stat) {
+            opt.innerHTML = `
+              <div class="custom-option-name">
+                ${natureName} 
+                <span style="color: #ff8787; font-size: 0.85em; margin-left: 0.3rem;">(+ ${incStat})</span> 
+                <span style="color: #74c0fc; font-size: 0.85em; margin-left: 0.3rem;">(- ${decStat})</span>
+              </div>
+            `;
+          } else {
+            opt.innerHTML = `<div class="custom-option-name">${natureName}</div>`;
+          }
+          
+          opt.addEventListener('click', () => {
+            natureHiddenInput.value = opt.dataset.value!;
+            natureSelectDisplay.innerHTML = `<span>${opt.innerHTML}</span>`;
+            document.getElementById('nature-select-dropdown')?.classList.add('hidden');
+            
+            const trigger = document.getElementById('nature-select-trigger');
+            if (opt.dataset.tooltip) {
+               trigger?.setAttribute('data-tooltip', opt.dataset.tooltip);
+               trigger?.classList.add('has-tooltip');
+            } else {
+               trigger?.removeAttribute('data-tooltip');
+               trigger?.classList.remove('has-tooltip');
+            }
+            
+            // Color EV labels
+            const inc = nat.increased_stat;
+            const dec = nat.decreased_stat;
+            const statNames = ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'];
+            statNames.forEach(stat => {
+              const labelEl = document.querySelector(`div.ev-row:has(#ev-slider-${stat}) label, div.ev-row:has(#ev-${stat}) label`);
+              if (labelEl) {
+                 if (stat === inc) {
+                   (labelEl as HTMLElement).style.color = '#ff8787'; // Reddish
+                 } else if (stat === dec) {
+                   (labelEl as HTMLElement).style.color = '#74c0fc'; // Blueish
+                 } else {
+                   (labelEl as HTMLElement).style.color = 'var(--text-color)';
+                 }
+              }
+            });
+
+            updateModalFinalStats();
+          });
+          
+          natureOptionsList.appendChild(opt);
+        });
+
+        // Initialize nature custom select trigger
+        document.getElementById('nature-select-trigger')?.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const dropdown = document.getElementById('nature-select-dropdown');
+          const isHidden = dropdown?.classList.contains('hidden');
+          
+          document.querySelectorAll('.custom-select-dropdown').forEach(el => el.classList.add('hidden'));
+          
+          if (isHidden) {
+             dropdown?.classList.remove('hidden');
+          }
         });
 
         // --- Populate custom item select ---
@@ -1148,36 +1246,7 @@ validPokemons.forEach(p => {
           });
         });
         
-        const updateNatureTooltip = () => {
-          const opt = natureSelect.options[natureSelect.selectedIndex];
-          if (!opt) return;
-          const inc = opt.dataset.increased;
-          const dec = opt.dataset.decreased;
-          let tooltipText = "";
-          if (inc && dec && inc !== "null" && dec !== "null" && inc !== "" && dec !== "") {
-             tooltipText = `Increases ${inc} by 10%, decreases ${dec} by 10%`;
-          } else {
-             tooltipText = `Neutral nature (No stat changes)`;
-          }
-          natureSelect.setAttribute('data-tooltip', tooltipText);
-          
-          // Color the EV slider labels
-          const statNames = ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'];
-          statNames.forEach(stat => {
-            const labelEl = document.querySelector(`div.ev-row:has(#ev-slider-${stat}) label, div.ev-row:has(#ev-${stat}) label`);
-            if (labelEl) {
-               if (stat === inc) {
-                 (labelEl as HTMLElement).style.color = '#38d9a9'; // Greenish
-               } else if (stat === dec) {
-                 (labelEl as HTMLElement).style.color = '#ff8787'; // Reddish
-               } else {
-                 (labelEl as HTMLElement).style.color = 'var(--text-color)';
-               }
-            }
-          });
-          updateModalFinalStats();
-        };
-        natureSelect.addEventListener('change', updateNatureTooltip);
+
 
         const updateMoveSelects = () => {
           const selectedMoves: string[] = [];
@@ -1205,10 +1274,13 @@ validPokemons.forEach(p => {
         }
 
         if (pokemon) {
-          if (pokemon.nature) natureSelect.value = pokemon.nature;
-          else natureSelect.value = '25';
+          const natureHiddenInput = document.getElementById('config-nature-hidden') as HTMLInputElement;
+          const targetNat = pokemon.nature ? pokemon.nature : '25';
+          natureHiddenInput.value = targetNat;
+          const optToClick = document.querySelector(`#nature-options-list .custom-option[data-value="${targetNat}"]`) as HTMLElement;
+          if (optToClick) optToClick.click();
+          
           if (pokemon.item) itemSelect.value = pokemon.item;
-          updateNatureTooltip();
           updateItemTooltip();
           
           if (pokemon.ability) {
@@ -1878,12 +1950,14 @@ validPokemons.forEach(p => {
     bottom: -15px;
     background: var(--surface-color);
     color: white;
-    padding: 0.3rem 1rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 700;
     border: 2px solid var(--accent-color);
-    white-space: nowrap;
+    white-space: pre-line;
+    text-align: center;
+    line-height: 1.1;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     z-index: 2;
   }
@@ -2085,20 +2159,28 @@ validPokemons.forEach(p => {
   }
 
   /* Configuration Button */
-  .config-btn.text-btn {
-    background: none;
-    border: none;
-    color: var(--text-muted, rgba(255, 255, 255, 0.7));
+  .config-btn.action-btn {
+    background: linear-gradient(135deg, rgba(56, 217, 169, 0.1), rgba(21, 163, 117, 0.1));
+    border: 1px solid rgba(56, 217, 169, 0.3);
+    color: #38d9a9;
     font-size: 0.85rem;
+    font-weight: 600;
     cursor: pointer;
-    text-decoration: underline;
-    transition: color 0.2s;
-    padding: 0.2rem 0.5rem;
-    margin-top: 0.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+    width: 100%;
   }
 
-  .config-btn.text-btn:hover {
-    color: white;
+  .config-btn.action-btn:hover {
+    background: linear-gradient(135deg, rgba(56, 217, 169, 0.3), rgba(21, 163, 117, 0.3));
+    border-color: rgba(56, 217, 169, 0.6);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(56, 217, 169, 0.2);
   }
 
   /* Configuration Modal */
