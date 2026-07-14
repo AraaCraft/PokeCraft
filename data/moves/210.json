@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "Successive hits raise power.",
-    "description_fr": "Un coup de faux ou de griffe dont la force augmente quand il touche plusieurs fois d’affilée.",
+    "description_en": "Power doubles every turn this move is used in succession after the first, maxing out after five turns.",
+    "description_fr": "La puissance double à chaque tour où cette capacité est utilisée avec succès après le premier, est maximisée après cinq tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

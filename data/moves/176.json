@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user's type is made resistant.",
-    "description_fr": "Le lanceur change de type pour être résistant au type de la dernière attaque lancée par sa cible.",
+    "description_en": "Changes the user’s type to a random type either resistant or immune to the last move used against it.",
+    "description_fr": "Change le type du lanceur en un type aléatoire soit résistant ou immunisé à la dernière capacité utilisée contre lui.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

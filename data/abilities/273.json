@@ -3,6 +3,6 @@
     "name": "well-baked-body",
     "name_fr": "Bien Cuit",
     "name_en": "Well-Baked Body",
-    "description_fr": "Si le Pokémon est touché par une capacité de type Feu,\\nil ne subit aucun dégât et sa Défense augmente\\nbeaucoup.",
+    "description_fr": "Le Pokémon ne subit pas de dégât quand il est frappé par des capacités de type Feu. À la place, sa stat de Défense augmente beaucoup.",
     "description_en": "The Pokémon takes no damage when hit by Fire-type moves. Instead, its Defense stat is sharply boosted."
 }

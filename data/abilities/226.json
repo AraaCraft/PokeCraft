@@ -3,6 +3,6 @@
     "name": "electric-surge",
     "name_fr": "Créa-Élec",
     "name_en": "Electric Surge",
-    "description_fr": "Le Pokémon crée un Champ Électrifié au moment où il entre au combat.",
-    "description_en": "Turns the ground into Electric Terrain when the Pokémon enters a battle."
+    "description_fr": "Quand ce Pokémon entre au combat, il change le terrain en Champ Électrifié.",
+    "description_en": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
 }

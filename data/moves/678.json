@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "This protects Pokémon on the ground from priority moves and powers up Psychic-type moves for five turns.",
-    "description_fr": "Pendant cinq tours, les Pokémon au sol ne peuvent plus subir d’attaques prioritaires et la puissance des capacités de type Psy augmente.",
+    "description_en": "Protects Pokémon on the ground from priority moves and increases the power of their  Psychic moves by 50%.",
+    "description_fr": "Protège les Pokémon au sol des capacités prioritaires et augmente la puissance de leurs capacités Psy de 50%.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Boosts the power of the recipient’s moves.",
-    "description_fr": "Une capacité qui augmente la puissance d’attaque de l’allié pendant un tour.",
+    "description_en": "Ally’s next move inflicts half more damage.",
+    "description_fr": "La prochaine capacité de l'allié inflige la moitié des dégâts supplémentaires.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

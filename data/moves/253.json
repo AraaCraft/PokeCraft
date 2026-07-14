@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Causes an uproar for 2 to 5 turns and prevents sleep.",
-    "description_fr": "Le lanceur attaque en rugissant durant 3 tours. Pendant ce temps, personne ne peut s’endormir.",
+    "description_en": "Forced to use this move for several turns.  Pokémon cannot fall asleep in that time.",
+    "description_fr": "Force à utiliser cette capacité pendant plusieurs tours.  Les Pokémon ne peuvent pas s'endormir pendant ce temps.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

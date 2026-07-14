@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Has a high criti­ cal hit ratio.",
-    "description_fr": "Un coup de griffe ou autre tranche l’ennemi. Taux de critiques élevé.",
+    "description_en": "Has an increased chance for a critical hit.",
+    "description_fr": "A une chance augmentée de coup critique.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

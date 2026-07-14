@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "A column of fire hits opposing Pokémon. When used with its Grass equivalent, its damage increases into a vast sea of fire.",
-    "description_fr": "Une masse de feu s’abat sur l’ennemi. En l’utilisant avec Aire d’Herbe, l’effet augmente et une mer de feu apparaît.",
+    "description_en": "With Water Pledge, doubles the effect chance of friendly Pokémon’s moves for four turns.",
+    "description_fr": "Avec Aire d'Eau, double les chances d'effet chance des capacités des Pokémon alliés pendant quatre tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

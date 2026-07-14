@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Gravity is intensified for five turns, making moves involving flying unusable and negating Levitation.",
-    "description_fr": "La gravité augmente pendant 5 tours, ce qui empêche les capacités volantes et annule Lévitation.",
+    "description_en": "Disables moves and immunities that involve flying or levitating for five turns.",
+    "description_fr": "Empêche l'utilisation des capacités et immunités qui impliquent le vol ou la lévitation pendant cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

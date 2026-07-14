@@ -3,6 +3,6 @@
     "name": "pure-power",
     "name_fr": "Force Pure",
     "name_en": "Pure Power",
-    "description_fr": "Augmente l'ATTAQUE.",
-    "description_en": "Raises ATTACK."
+    "description_fr": "L'Attaque de ce Pokémon est doublée au combat.  Ce bonus ne compte pas comme une modification de stat.  Ce talent fonctionne de la même manière que Coloforce.",
+    "description_en": "This Pokémon's Attack is doubled in battle.  This bonus does not count as a stat modifier.  This ability functions identically to Huge Power."
 }

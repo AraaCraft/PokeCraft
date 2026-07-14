@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "The user suppresses the target and makes its move go last.",
-    "description_fr": "Retient la cible de force, l’obligeant à agir en dernier.",
+    "description_en": "Makes the target act last this turn.",
+    "description_fr": "Fait agir la cible en dernier ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

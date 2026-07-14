@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user becomes soaked to raise resistance to fire.",
-    "description_fr": "Le lanceur s’asperge d’eau. Affaiblit les capacités Feu quand le lanceur est au combat.",
+    "description_en": "Halves all Fire-type damage.",
+    "description_fr": "Divise par deux tous les dégâts de type Feu.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

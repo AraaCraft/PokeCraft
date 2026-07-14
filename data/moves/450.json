@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user bites the foe. If the foe is holding a Berry, the user eats it and gains its effect.",
-    "description_fr": "Le lanceur pique l’ennemi. Si ce dernier tient une Baie, le lanceur la dévore et obtient son effet.",
+    "description_en": "If target has a berry, inflicts double damage and uses the berry.",
+    "description_fr": "Si la cible a une baie, inflige le double de dégâts et utilise la baie.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

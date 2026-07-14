@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "Stiff wings strike the foe.",
-    "description_fr": "Le lanceur frappe l’ennemi avec des ailes d’acier. Peut aussi augmenter la Défense du lanceur.",
+    "description_en": "Has a chance to raise the user’s Defense by one stage.",
+    "description_fr": "A une chance d'augmenter la Défense du lanceur d'un niveau.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

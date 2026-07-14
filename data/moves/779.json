@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user snares the target in a snap trap for four to five turns.",
-    "description_fr": "Le lanceur piège sa cible dans son Troquenard d’acier et lui inflige des dégâts pendant quatre ou cinq tours.",
+    "description_en": "Prevents the target from fleeing and inflicts damage for 2-5 turns.",
+    "description_fr": "Empêche la cible de fuir et inflige des dégâts pendant 2-5 tours.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

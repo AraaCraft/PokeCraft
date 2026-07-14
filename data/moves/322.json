@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Raises DEFENSE and SP. DEF with a mystic power.",
-    "description_fr": "Le lanceur absorbe un pouvoir mystique spatial qui augmente sa Défense et sa Défense Spéciale.",
+    "description_en": "Raises the user’s Defense and Special Defense by one stage.",
+    "description_fr": "Augmente la Défense et la Défense Spéciale du lanceur d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

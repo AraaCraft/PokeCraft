@@ -3,6 +3,6 @@
     "name": "big-pecks",
     "name_fr": "Cœur de Coq",
     "name_en": "Big Pecks",
-    "description_fr": "Empêche la Déf. de baisser à cause d’attaques.",
-    "description_en": "Protects the Pokémon from Defense-lowering attacks."
+    "description_fr": "La Défense de ce Pokémon ne peut pas être baissée par un autre Pokémon.  Ce Pokémon peut toujours recevoir des modifications négatives de Défense via Permucœur ou Permugarde.",
+    "description_en": "This Pokémon's Defense cannot be lowered by other Pokémon.  This Pokémon can still be passed negative Defense modifiers through Heart Swap or Guard Swap."
 }

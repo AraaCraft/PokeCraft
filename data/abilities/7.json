@@ -3,6 +3,6 @@
     "name": "limber",
     "name_fr": "Échauffement",
     "name_en": "Limber",
-    "description_fr": "Empêche la paralysie.",
-    "description_en": "Prevents paralysis."
+    "description_fr": "Ce Pokémon ne peut pas être paralysé.  Si un Pokémon paralysé gagne ce talent, sa paralysie est soignée; également en regagnant un talent perdu en quittant le combat.",
+    "description_en": "This Pokémon cannot be paralyzed.  If a Pokémon is paralyzed and acquires this ability, its paralysis is healed; this includes when regaining a lost ability upon leaving battle."
 }

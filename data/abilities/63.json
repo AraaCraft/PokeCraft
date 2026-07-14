@@ -3,6 +3,6 @@
     "name": "marvel-scale",
     "name_fr": "Écaille Spéciale",
     "name_en": "Marvel Scale",
-    "description_fr": "Augmente DEF. quand blessé.",
-    "description_en": "Ups DEFENSE if suffering."
+    "description_fr": "Quand ce Pokémon a une altération majeure de statut, il a 1.5× sa Défense.  Ce bonus ne compte pas comme une modification de stat.",
+    "description_en": "Whenever this Pokémon has a major status ailment, it has 1.5× its Defense.  This bonus does not count as a stat modifier."
 }

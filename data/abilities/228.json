@@ -3,6 +3,6 @@
     "name": "misty-surge",
     "name_fr": "Créa-Brume",
     "name_en": "Misty Surge",
-    "description_fr": "Le Pokémon crée un Champ Brumeux au moment où il entre au combat.",
-    "description_en": "Turns the ground into Misty Terrain when the Pokémon enters a battle."
+    "description_fr": "Quand ce Pokémon entre au combat, il change le terrain en Champ Brumeux.",
+    "description_en": "When this Pokémon enters battle, it changes the terrain to Misty Terrain."
 }

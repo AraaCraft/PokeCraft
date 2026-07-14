@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "An attack that may confuse the foe.",
-    "description_fr": "Un étrange rayon frappe l’ennemi. Peut aussi le rendre confus.",
+    "description_en": "Has a chance to confuse the target.",
+    "description_fr": "A une chance de rendre la cible confuse.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

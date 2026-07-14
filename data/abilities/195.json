@@ -3,6 +3,6 @@
     "name": "water-compaction",
     "name_fr": "Sable Humide",
     "name_en": "Water Compaction",
-    "description_fr": "Augmente beaucoup la Défense du Pokémon quand il subit une capacité de type Eau.",
-    "description_en": "Boosts the Pokémon’s Defense stat sharply when hit by a Water-type move."
+    "description_fr": "Augmente la Défense de ce Pokémon de deux niveaux quand il est frappé par une capacité Eau.",
+    "description_en": "Raises this Pokémon's Defense by two stages when it's hit by a Water move."
 }

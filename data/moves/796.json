@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "special",
-    "description_en": "The user fires a beam of steel that it collected from its entire body. This also damages the user.",
-    "description_fr": "Le lanceur concentre du métal issu de tout son corps en un rayon qu’il projette violemment sur sa cible. Il subit aussi des dégâts.",
+    "description_en": "Inflicts damage, and the user takes damage equal to half of its max HP, rounded up.",
+    "description_fr": "Inflige des dégâts, et le lanceur prend des dégâts égaux à la moitié de ses PV max, arrondis à l'unité supérieure.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

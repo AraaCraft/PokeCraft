@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "An attack that gains power if injured by the foe.",
-    "description_fr": "Une attaque deux fois plus puissante si le lanceur a été blessé par l’ennemi durant ce tour.",
+    "description_en": "Inflicts double damage if the user takes damage before attacking this turn.",
+    "description_fr": "Inflige le double des dégâts si le lanceur a subi des dégâts avant d'attaquer ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

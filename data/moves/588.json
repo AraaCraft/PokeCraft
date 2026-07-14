@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user takes a defensive stance while it protects itself from damage. It also harshly lowers the Attack stat of any attacker who makes direct contact.",
-    "description_fr": "Prend une posture défensive pour bloquer les dégâts. Diminue fortement l’Attaque de tout Pokémon qui entre en contact avec le lanceur.",
+    "description_en": "Blocks damaging attacks and lowers attacking Pokémon’s Attack by two stages on contact.  Switches Aegislash to Shield Forme.",
+    "description_fr": "Bloque les attaques offensives et diminue l'Attaque du Pokémon attaquant de deux niveaux au contact.   Change Exagide en Forme Parade.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

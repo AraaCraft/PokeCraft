@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user attacks with electrically charged fists. This move changes Normal-type moves to Electric-type moves.",
-    "description_fr": "Le lanceur attaque en projetant de l’électricité avec ses poings. Convertit les capacités de type Normal en type Électrik.",
+    "description_en": "After inflicting damage, causes all Normal-type moves to become Electric-type for the remainder of the turn.",
+    "description_fr": "Après avoir infligé des dégâts, change toutes les capacités Normal en Électrik pour le reste du tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

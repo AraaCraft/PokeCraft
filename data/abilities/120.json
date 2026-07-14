@@ -3,6 +3,6 @@
     "name": "reckless",
     "name_fr": "Téméraire",
     "name_en": "Reckless",
-    "description_fr": "Booste les cap. ayant des dégâts de contrecoups.",
-    "description_en": "Powers up moves that have recoil damage."
+    "description_fr": "Les capacités à contrecoup de ce Pokémon et capacités d’écrasement ont 1.2× leur puissance de base.  Lutte n’est pas affecté.  Les \"capacités d’écrasement\" sont les capacités qui infligent des dégâts au lanceur quand ils manquent leur cible: Pied Sauté et Pied Voltige.",
+    "description_en": "This Pokémon's recoil moves and crash moves have 1.2× their base power.  Struggle is unaffected.  The \"crash moves\" are the moves that damage the user upon missing: Jump Kick and High Jump Kick."
 }

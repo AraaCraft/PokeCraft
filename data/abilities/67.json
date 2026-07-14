@@ -3,6 +3,6 @@
     "name": "torrent",
     "name_fr": "Torrent",
     "name_en": "Torrent",
-    "description_fr": "Augmente attaques EAU.",
-    "description_en": "Ups WATER moves in a pinch."
+    "description_fr": "Quand ce Pokémon a 1/3 de ses PV restants ou moins, ses capacités de type Eau infligent 1.5× plus de dégâts réguliers.",
+    "description_en": "When this Pokémon has 1/3 or less of its HP remaining, its Water-type moves inflict 1.5× as much regular damage."
 }

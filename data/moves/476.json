@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user scatters a cloud of irritating powder to draw attention to itself. Opponents aim only at the user.",
-    "description_fr": "Le lanceur s’asperge d’une poudre irritante pour attirer l’attention. Il attire toutes les attaques ennemies.",
+    "description_en": "Redirects the target’s single-target effects to the user for this turn.",
+    "description_fr": "Redirige les effets de l'attaque à cible unique de la cible sur le lanceur pendant ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

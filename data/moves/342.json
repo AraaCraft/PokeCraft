@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Has a high critical-hit ratio. May also poison.",
-    "description_fr": "Attaque à taux de critiques élevé. Peut aussi empoisonner l’ennemi.",
+    "description_en": "Has an increased chance for a critical hit and a chance to poison the target.",
+    "description_fr": "A une chance augmentée de coup critique et une chance d'empoisonner la cible.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

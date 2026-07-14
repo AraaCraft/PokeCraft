@@ -3,6 +3,6 @@
     "name": "justified",
     "name_fr": "Cœur Noble",
     "name_en": "Justified",
-    "description_fr": "Monte l’Attaque si une att. Ténèbres le touche.",
-    "description_en": "Raises Attack when hit by a Dark-type move."
+    "description_fr": "Quand une capacité de type Ténèbres frappe ce Pokémon, son Attaque augmente d’un niveau.  La capacité n’est en aucun cas annulée.",
+    "description_en": "Whenever a Dark-type move hits this Pokémon, its Attack rises one stage.  The move is not negated in any way."
 }

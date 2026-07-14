@@ -3,6 +3,6 @@
     "name": "adaptability",
     "name_fr": "Adaptabilité",
     "name_en": "Adaptability",
-    "description_fr": "Augmente la puissance des capacités de même type.",
-    "description_en": "Powers up moves of the same type."
+    "description_fr": "Ce Pokémon inflige deux fois plus de dégâts avec des capacités dont le type correspond au sien, plutôt que le STAB habituel de 1.5×.",
+    "description_en": "This Pokémon inflicts twice as much damage with moves whose types match its own, rather than the usual same-type attack bonus of 1.5×."
 }

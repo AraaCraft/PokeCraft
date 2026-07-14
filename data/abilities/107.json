@@ -3,6 +3,6 @@
     "name": "anticipation",
     "name_fr": "Anticipation",
     "name_en": "Anticipation",
-    "description_fr": "Prévoit les capacités ennemies dangereuses.",
-    "description_en": "Senses the foe’s dangerous moves."
+    "description_fr": "Quand ce Pokémon entre au combat, si l’un de ses adversaires a une capacité qui est super efficace contre lui, Destruction, Explosion, ou une capacité OHKO, tous les dresseurs participants sont notifiés.  La capacité elle-même n’est pas révélée; seulement qu’il y a une telle capacité.  Les capacités qui infligent des dégâts sans type, telles que Prescience, et les capacités de type variable, telles que Puissance Cachée, comptent comme leur type indiqué.  Riposte, Fulmifer, Voile Miroir, et les capacités OHKO desquelles ce Pokémon est immunisés ne déclenchent pas ce talent.",
+    "description_en": "When this Pokémon enters battle, if one of its opponents has a move that is super effective against it, Self-Destruct, Explosion, or a one-hit knockout move, all participating trainers are notified.  The move itself is not revealed; only that there is such a move.  Moves that inflict typeless damage, such as Future Sight, and moves of variable type, such as Hidden Power, count as their listed types.  Counter, Metal Burst, Mirror Coat, and one-hit KO moves to which this Pokémon is immune do not trigger this ability."
 }

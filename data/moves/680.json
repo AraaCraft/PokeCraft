@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user strikes the target with a burning lash. This also lowers the target’s Defense stat.",
-    "description_fr": "Frappe la cible avec un fouet incandescent et baisse sa Défense.",
+    "description_en": "Lowers the target’s Defense by one stage after inflicting damage.",
+    "description_fr": "Diminue la Défense de la cible d'un niveau après avoir infligé des dégâts.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

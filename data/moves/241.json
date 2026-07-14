@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Boosts fire-type moves for 5 turns.",
-    "description_fr": "Fait briller le soleil pendant 5 tours et améliore les capacités de type Feu.",
+    "description_en": "Changes the weather to sunny for five turns.",
+    "description_fr": "Change la météo en soleil pendant cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

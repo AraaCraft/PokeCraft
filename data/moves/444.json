@@ -1,8 +1,8 @@
 {
     "accuracy": 80,
     "damage_class": "physical",
-    "description_en": "The user stabs the foe with a sharpened stone. It has a high critical-hit ratio. ",
-    "description_fr": "Fait surgir des pierres aiguisées sous l’ennemi. Taux de critiques élevé.",
+    "description_en": "Has an increased chance for a critical hit.",
+    "description_fr": "A une chance augmentée de coup critique.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

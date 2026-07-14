@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user assumes the foe's guise.",
-    "description_fr": "Le lanceur devient une copie de sa cible et obtient la même palette de capacités.",
+    "description_en": "User becomes a copy of the target until it leaves battle.",
+    "description_fr": "Le lanceur devient une copie de la cible jusqu'à ce qu'il quitte le combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "download",
     "name_fr": "Télécharge",
     "name_en": "Download",
-    "description_fr": "Ajuste la puissance selon l'ennemi.",
-    "description_en": "Adjusts power according to the foe’s ability."
+    "description_fr": "Quand ce Pokémon entre au combat, son Attaque ou Attaque Spéciale, celle qui correspond à la plus faible stat défensive totale des adversaires, augmente d’un niveau.  En cas d’égalité, l’Attaque spéciale est augmentée.  Ce talent s’active aussi quand acquis au combat.",
+    "description_en": "When this Pokémon enters battle, its Attack or Special Attack, whichever corresponds to its opponents' weaker total defensive stat, rises one stage.  In the event of a tie, Special Attack is raised.  This ability also takes effect when acquired during a battle."
 }

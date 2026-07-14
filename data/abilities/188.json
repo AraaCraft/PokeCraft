@@ -3,6 +3,6 @@
     "name": "aura-break",
     "name_fr": "Aura Inversée",
     "name_en": "Aura Break",
-    "description_fr": "L’effet des auras est inversé.",
-    "description_en": "The effects of “Aura” Abilities are reversed."
+    "description_fr": "Tant que ce Pokémon est sur le terrain, Aura Ténébreuse et Aura Féérique affaiblissent les capacités de leur type respectif à 2/3 de leur puissance, au lieu de les renforcer.",
+    "description_en": "While this Pokémon is on the field, Dark Aura and Fairy Aura weaken moves of their respective types to 2/3 their power, rather than strengthening them."
 }

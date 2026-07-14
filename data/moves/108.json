@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Lowers the foe's accuracy.",
-    "description_fr": "Le lanceur disperse un nuage d’encre ou de fumée. Réduit la Précision de l’ennemi.",
+    "description_en": "Lowers the target’s accuracy by one stage.",
+    "description_fr": "Diminue la précision de la cible d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

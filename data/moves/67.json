@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "An attack that may cause flinching.",
-    "description_fr": "Un puissant coup de pied bas qui fauche l’ennemi. Il est plus efficace contre les ennemis lourds.",
+    "description_en": "Inflicts more damage to heavier targets, with a maximum of 120 power.",
+    "description_fr": "Inflige plus de dégâts aux cibles plus lourdes, avec un maximum de 120 de puissance.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

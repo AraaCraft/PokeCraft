@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "A strong electric blast crashes down on the target, giving it an electric shock. This may also make the target flinch.",
-    "description_fr": "Le lanceur fonce sur la cible et lui envoie un puissant choc électrique. Peut aussi l’effrayer.",
+    "description_en": "Has a chance to make the target flinch.",
+    "description_fr": "A une chance d'apeurer la cible.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

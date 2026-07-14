@@ -3,6 +3,6 @@
     "name": "color-change",
     "name_fr": "Homochromie",
     "name_en": "Color Change",
-    "description_fr": "Le Pokémon adopte le type de la capacité ennemie.",
-    "description_en": "Changes type to foe’s move."
+    "description_fr": "Lorsque ce Pokémon subit des dommages d'une capacité, le type du Pokémon devient celui de la capacité.  Si le Pokémon a deux types, les deux sont écrasés.  Le Pokémon doit subit des dommages directs ; par exemple, les capacités bloquées par Clonage ne déclenchent pas ce talent, ni les capacités qui infligent des dommages indirects, comme Picots.  Ce talent s'active seulement sur le dernier coup d'une capacité multi-coups.  Dans Pokémon Colosseum et XD: Le Souffle des ténèbres, ce talent n'affecte pas les capacités Spectre.",
+    "description_en": "Whenever this Pokémon takes damage from a move, the Pokémon's type changes to match the move.  If the Pokémon has two types, both are overridden.  The Pokémon must directly take damage; for example, moves blocked by a Substitute will not trigger this ability, nor will moves that deal damage indirectly, such as Spikes.  This ability takes effect on only the last hit of a multiple-hit attack.  In Pokémon Colosseum and XD: Gale of Darkness, this ability does not take effect on Shadow-type moves."
 }

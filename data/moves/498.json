@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Looking for an opening, the user strikes continually. The target’s stat changes don’t affect this attack’s damage.",
-    "description_fr": "Une attaque puissante quand l’ennemi baisse sa garde. Inflige des dégâts sans tenir compte des changements de stats.",
+    "description_en": "Ignores the target’s stat modifiers.",
+    "description_fr": "Ignore les modifications de stat de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

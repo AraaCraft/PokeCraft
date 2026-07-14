@@ -3,6 +3,6 @@
     "name": "liquid-voice",
     "name_fr": "Hydrata-Son",
     "name_en": "Liquid Voice",
-    "description_fr": "Toutes les attaques sonores du Pokémon prennent le type Eau.",
-    "description_en": "All sound-based moves become Water-type moves."
+    "description_fr": "Quand ce Pokémon utilise une capacité qui est basée sur le son, le type de cette capacité est Eau.",
+    "description_en": "When this Pokémon uses a move that is sound-based, that move's type is Water."
 }

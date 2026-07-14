@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "special",
-    "description_en": "Hurls mud at the foe and reduces SPEED.",
-    "description_fr": "Le lanceur attaque en projetant de la boue sur l’ennemi. Réduit aussi la Vitesse de la cible.",
+    "description_en": "Has a chance to lower the target’s Speed by one stage.",
+    "description_fr": "A une chance de diminuer la Vitesse de la cible d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

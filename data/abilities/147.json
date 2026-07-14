@@ -3,6 +3,6 @@
     "name": "wonder-skin",
     "name_fr": "Peau Miracle",
     "name_en": "Wonder Skin",
-    "description_fr": "Son corps résiste mieux aux attaques de statut.",
-    "description_en": "Makes status-changing moves more likely to miss."
+    "description_fr": "Les capacités non offensives ont exactement 50% de précision de base contre ce Pokémon.",
+    "description_en": "Non-damaging moves have exactly 50% base accuracy against this Pokémon."
 }

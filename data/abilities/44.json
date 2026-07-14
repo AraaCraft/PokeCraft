@@ -3,6 +3,6 @@
     "name": "rain-dish",
     "name_fr": "Cuvette",
     "name_en": "Rain Dish",
-    "description_fr": "Gagne quelques PV si pluie.",
-    "description_en": "Slight HP recovery in rain."
+    "description_fr": "Ce Pokémon soigne 1/16 de ses PV maximum après chaque tour sous pluie.",
+    "description_en": "This Pokémon heals for 1/16 of its maximum HP after each turn during rain."
 }

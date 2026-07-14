@@ -3,6 +3,6 @@
     "name": "technician",
     "name_fr": "Technicien",
     "name_en": "Technician",
-    "description_fr": "Augmente la puissance des capacités les plus faibles.",
-    "description_en": "Powers up the Pokémon’s weaker moves."
+    "description_fr": "Les capacités de ce Pokémon ont 1.5× leur puissance si leur puissance de base est 60 ou moins.  Ceci inclut les capacités de puissance variable, telles que Puissance Cachée et Ampleur, quand leur puissance est 60 ou moins.  Le boost de puissance de Coup d’Main est pris en compte pour n’importe quelle capacité, comme le boost de puissance de Boul’Armure pour Roulade.",
+    "description_en": "This Pokémon's moves have 1.5× their power if their base power is 60 or less.  This includes moves of variable power, such as Hidden Power and Magnitude, when their power is 60 or less.  Helping Hand's power boost is taken into account for any move, as is Defense Curl's power boost for Rollout."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "A seed that causes worry is planted on the foe. It prevents sleep by making its ability Insomnia.",
-    "description_fr": "Plante sur la cible une graine qui la rend soucieuse et remplace sa capacité spéciale par Insomnia, l’empêchant ainsi de dormir.",
+    "description_en": "Changes the target’s ability to Insomnia.",
+    "description_fr": "Change le talent de la cible en Insomnia.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

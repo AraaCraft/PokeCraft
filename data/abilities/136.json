@@ -3,6 +3,6 @@
     "name": "multiscale",
     "name_fr": "Multiécaille",
     "name_en": "Multiscale",
-    "description_fr": "Reçoit moins de dégâts si les PV sont au maximum.",
-    "description_en": "Reduces damage when HP is full."
+    "description_fr": "Ce Pokémon subit deux fois moins de dégâts quand il est touché en ayant tous ses PV.",
+    "description_en": "This Pokémon takes half as much damage when it is hit having full HP."
 }

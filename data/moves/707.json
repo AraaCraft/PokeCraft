@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Driven by frustration, the user attacks the target. If the user’s previous move has failed, the power of this move doubles.",
-    "description_fr": "Le lanceur attaque en utilisant sa frustration. S’il a utilisé une capacité qui a échoué au tour précédent, la puissance de Trépignement est doublée.",
+    "description_en": "Has double power if the user’s last move failed.",
+    "description_fr": "A une puissance double si la dernière capacité du lanceur a échoué.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "The user restores its HP by the same amount as the target’s Attack stat. It also lowers the target’s Attack stat.",
-    "description_fr": "Rend au lanceur une quantité de PV équivalente à la stat d’Attaque de la cible, puis baisse celle-ci.",
+    "description_en": "Heals the user by the target’s current Attack stat and lowers the target’s Attack by one stage.",
+    "description_fr": "Soigne le lanceur de la stat d'Attaque actuelle de la cible et diminue l'Attaque de la cible d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

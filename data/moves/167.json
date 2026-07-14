@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "Hits three times with rising power.",
-    "description_fr": "Une salve de 1 à 3 coups de pied dont la puissance augmente à chaque coup porté.",
+    "description_en": "Hits three times, increasing power by 100% with each successful hit.",
+    "description_fr": "Touche trois fois, augmentant la puissance de 100% à chaque coup réussi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

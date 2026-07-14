@@ -3,6 +3,6 @@
     "name": "tough-claws",
     "name_fr": "Griffe Dure",
     "name_en": "Tough Claws",
-    "description_fr": "Augmente la puissance des attaques directes.",
-    "description_en": "Powers up moves that make direct contact."
+    "description_fr": "La puissance des capacités provoquant un contact physique entre le lanceur et l’adversaires est augmentée de 1.33×.",
+    "description_en": "Strengthens moves that make contact to 1.33× their power."
 }

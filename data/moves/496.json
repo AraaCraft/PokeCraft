@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user attacks the target with a song. Others can join in the Round and make the attack do greater damage.",
-    "description_fr": "Le lanceur attaque l’ennemi en chantant. Si plusieurs Pokémon déclenchent cette attaque à la suite, l’effet augmente.",
+    "description_en": "Has double power if it’s used more than once per turn.",
+    "description_fr": "A une puissance double si utilisé plus d'une fois par tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

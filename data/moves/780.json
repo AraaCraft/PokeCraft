@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user attacks by igniting a small stone and launching it as a fiery ball at the target. This may also leave the target with a burn.",
-    "description_fr": "Le lanceur attaque avec un ballon fait à partir d’un caillou enflammé. Peut aussi brûler la cible.",
+    "description_en": "Has a chance to burn the target.",
+    "description_fr": "A une chance de brûler la cible.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

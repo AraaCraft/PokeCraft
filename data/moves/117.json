@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "physical",
-    "description_en": "Waits 2-3 turns & hits back double.",
-    "description_fr": "Le lanceur encaisse les coups durant 2 tours et réplique en infligeant le double des dégâts subis.",
+    "description_en": "User waits for two turns, then hits back for twice the damage it took.",
+    "description_fr": "Le lanceur attend deux tours, puis inflige en retour le double des dégâts qu'il a subi.",
     "effect_chance": null,
     "effect_changes": [
         {

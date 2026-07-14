@@ -3,6 +3,6 @@
     "name": "prism-armor",
     "name_fr": "Prisme-Armure",
     "name_en": "Prism Armor",
-    "description_fr": "Réduit les dégâts subis lorsque le Pokémon est touché par une capacité super efficace.",
-    "description_en": "Reduces the power of supereffective attacks taken."
+    "description_fr": "Les dégâts super efficaces que ce Pokémon subit sont réduits à 0.75×.  Ce Talent ne peut pas être transmis par Brise Moule, Téra-Voltage, ou Turbo Brasier.",
+    "description_en": "Super-effective damage this Pokémon takes is reduced to 0.75×.  This Ability is not bypassed by Mold Breaker, Teravolt, or Turboblaze."
 }

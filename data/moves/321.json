@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Makes the foe laugh to lower ATTACK and DEFENSE.",
-    "description_fr": "Le lanceur chatouille l’ennemi, ce qui baisse son Attaque et sa Défense.",
+    "description_en": "Lowers the target’s Attack and Defense by one stage.",
+    "description_fr": "Diminue l'Attaque et la Défense du lanceur de la cible d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

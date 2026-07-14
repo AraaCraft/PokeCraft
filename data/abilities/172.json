@@ -3,6 +3,6 @@
     "name": "competitive",
     "name_fr": "Battant",
     "name_en": "Competitive",
-    "description_fr": "Monte l’Attaque quand une stat est baissée par l’adversaire.",
-    "description_en": "Boosts the Sp. Atk stat when a stat is lowered."
+    "description_fr": "Si ce Pokémon subit une baisse de stat, son Attaque Spéciale augmente de deux niveaux.  Cet effet se déclenche à chaque baisse de stat, quelque soit son importance.",
+    "description_en": "Raises Special Attack by two stages upon having any stat lowered."
 }

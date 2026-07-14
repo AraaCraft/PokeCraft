@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "physical",
-    "description_en": "The user creates a very charming space using its Z-Power and totally toys with the target. The power varies, depending on the original move.",
-    "description_fr": "Le Pokémon utilise la Force Z pour créer une dimension irréelle où l’adversaire est à sa merci. La puissance varie selon celle de la capacité originale.",
+    "description_en": "Inflicts regular damage with no additional effect.",
+    "description_fr": "Inflige des dégâts réguliers avec aucun effet additionnel.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Absorbs stockpiled power and restores HP.",
-    "description_fr": "Le lanceur absorbe la puissance accumulée avec Stockage pour restaurer ses PV.",
+    "description_en": "Recovers 1/4 HP after one Stockpile, 1/2 HP after two Stockpiles, or full HP after three Stockpiles.",
+    "description_fr": "Récupère 1/4 des PV après un Stockage, 1/2 PV après deux Stockages, ou tous les PV après trois Stockages.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

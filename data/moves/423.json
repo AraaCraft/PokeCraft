@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "The user bites with cold-infused fangs. It may also make the foe flinch or freeze. ",
-    "description_fr": "Le lanceur utilise une morsure glaciale. Peut aussi geler ou apeurer l’ennemi.",
+    "description_en": "Has a chance to freeze the target and a chance to make the target flinch.",
+    "description_fr": "A une chance de geler la cible et une chance d'apeurer la cible.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

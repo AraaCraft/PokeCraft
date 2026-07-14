@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "The user shoots a torrent of water at the target and changes the target’s type to Water.",
-    "description_fr": "Le lanceur projette beaucoup d’eau sur sa cible, qui devient de type Eau.",
+    "description_en": "Changes the target’s type to Water.",
+    "description_fr": "Change le type de la cible en Eau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

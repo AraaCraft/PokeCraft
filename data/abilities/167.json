@@ -3,6 +3,6 @@
     "name": "cheek-pouch",
     "name_fr": "Bajoues",
     "name_en": "Cheek Pouch",
-    "description_fr": "Rend des PV lorsque le Pokémon consomme une Baie.",
-    "description_en": "Restores HP as well when the Pokémon eats a Berry."
+    "description_fr": "Ce Pokémon regagne 1/3 de ses PV max en mangeant une baie en plus des bénéfices normaux de celle-ci.",
+    "description_en": "Restores HP upon eating a Berry, in addition to the Berry's effect."
 }

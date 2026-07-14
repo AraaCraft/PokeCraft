@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user tries to cut ahead of the foe to steal and use the foe’s intended move with greater power.",
-    "description_fr": "Le lanceur vole la capacité prévue par l’ennemi et l’utilise en faisant plus de dégâts. Il doit frapper en premier.",
+    "description_en": "Uses the target’s move against it before it attacks, with power increased by half.",
+    "description_fr": "Utilise la capacité de la cible contre elle avant qu'elle attaque, avec une puissance augmentée de moitié.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

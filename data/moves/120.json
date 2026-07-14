@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Powerful but makes the user faint.",
-    "description_fr": "Le lanceur explose en blessant tous les Pokémon autour de lui. Le lanceur tombe K.O.",
+    "description_en": "User faints.",
+    "description_fr": "Le lanceur est mis KO.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user emits a healing pulse which restores the target’s HP by up to half of its max HP.",
-    "description_fr": "Une aura de bien-être fait récupérer la moitié de ses PV max à la cible.",
+    "description_en": "Heals the target for half its max HP.",
+    "description_fr": "Soigne la cible de la moitié de ses PV.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

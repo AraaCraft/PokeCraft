@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Attacks with a flurry of down. May lower SP. ATK.",
-    "description_fr": "Une bulle de brume inflige des dégâts à l’ennemi. Peut aussi réduire son Attaque Spéciale.",
+    "description_en": "Has a chance to lower the target’s Special Attack by one stage.",
+    "description_fr": "A une chance de diminuer l'Attaque Spéciale de la cible d'un niveau.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

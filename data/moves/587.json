@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "By locking down the battlefield, the user keeps all Pokémon from fleeing during the next turn.",
-    "description_fr": "Des chaînes entourent la zone de combat, empêchant tous les Pokémon de fuir au prochain tour.",
+    "description_en": "Prevents all Pokémon from fleeing or switching out during the next turn.",
+    "description_fr": "Empêche tous les Pokémon de fuir ou se retirer pendant le prochain tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "steadfast",
     "name_fr": "Impassible",
     "name_en": "Steadfast",
-    "description_fr": "Augmente la Vitesse quand le Pokémon a peur.",
-    "description_en": "Raises Speed each time the Pokémon flinches."
+    "description_fr": "Quand ce Pokémon est apeuré, sa Vitesse augmente d'un niveau.",
+    "description_en": "Whenever this Pokémon flinches, its Speed rises one stage."
 }

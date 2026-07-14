@@ -3,6 +3,6 @@
     "name": "anger-shell",
     "name_fr": "Courroupace",
     "name_en": "Anger Shell",
-    "description_fr": "Le Pokémon enrage s’il a moins de la moitié de ses PV\\naprès avoir subi une attaque. Sa Déf. et sa Déf. Spé.\\nbaissent, et son Atq., son Atq. Spé. et sa Vit. augmentent.",
+    "description_fr": "Quand une attaque fait tomber les PV sous la moitié ou moins, le Pokémon se fâche. Ceci baisse ses stats de Défense et Déf Spé mais booste ses stats d'Attaque, Atk Spé et Vitesse.",
     "description_en": "When an attack causes its HP to drop to half or less, the Pokémon gets angry. This lowers its Defense and Sp. Def stats but boosts its Attack, Sp. Atk, and Speed stats."
 }

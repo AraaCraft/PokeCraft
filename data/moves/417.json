@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user stimulates its brain by thinking bad thoughts. It sharply raises the user’s Sp. Atk.",
-    "description_fr": "Stimule l’esprit par de mauvaises pensées. Augmente fortement l’Attaque Spéciale du lanceur.",
+    "description_en": "Raises the user’s Special Attack by two stages.",
+    "description_fr": "Augmente l'Attaque Spéciale du lanceur de deux niveaux.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

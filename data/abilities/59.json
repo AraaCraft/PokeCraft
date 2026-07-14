@@ -3,6 +3,6 @@
     "name": "forecast",
     "name_fr": "Météo",
     "name_en": "Forecast",
-    "description_fr": "Change selon le climat.",
-    "description_en": "Changes with the weather."
+    "description_fr": "Sous pluie, soleil intense, ou grêle, le type de ce Pokémon change en Eau, Feu, ou Glace, respectivement, et sa forme change pour correspondre.  Ce talent n'a pas d'effet sur un autre Pokémon que Morphéo.  Si la météo prend fin ou devient quoi que ce soit qui ne déclenche pas ce talent, ou un Pokémon avec Air Lock ou Ciel Gris entre au combat, le type et forme de ce Pokémon reviennent à leur état initial.  Si ce talent est perdu ou désactivé, ce Pokémon ne peut pas changer son type et forme actuels jusqu'à ce qu'il regagne ce talent.",
+    "description_en": "During rain, strong sunlight, or hail, this Pokémon's type changes to Water, Fire, or Ice, respectively, and its form changes to match.  This ability has no effect for any Pokémon other than Castform.  If the weather ends or becomes anything that does not trigger this ability, or a Pokémon with Air Lock or Cloud Nine enters battle, this Pokémon's type and form revert to their default.  If this ability is lost or disabled, this Pokémon cannot change its current type and form until it regains its ability."
 }

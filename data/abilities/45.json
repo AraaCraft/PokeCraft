@@ -3,6 +3,6 @@
     "name": "sand-stream",
     "name_fr": "Sable Volant",
     "name_en": "Sand Stream",
-    "description_fr": "Lance une tempête de sable.",
-    "description_en": "Summons a sandstorm."
+    "description_fr": "La météo change en une tempête de sable quand ce Pokémon entre au combat et ne prend pas fin à moins d'être annulée par une autre condition météo.  Si plusieurs Pokémon avec ce talent, Crachin, Sécheresse, ou Alerte Neige sont envoyés au combat en même temps, les talents s'activent dans l'ordre de Vitesse, en respectant Distorsion.  Chaque météo de talent annulera la météo précédente, et seulement la météo invoquée par le Pokémon le plus lent restera.  Monde extérieur: Si le Pokémon de tête a ce talent, le taux de rencontre sauvage est divisé par deux dans une tempête de sable.",
+    "description_en": "The weather changes to a sandstorm when this Pokémon enters battle and does not end unless cancelled by another weather condition.  If multiple Pokémon with this ability, Drizzle, Drought, or Snow Warning are sent out at the same time, the abilities will activate in order of Speed, respecting Trick Room.  Each ability's weather will cancel the previous weather, and only the weather summoned by the slowest of the Pokémon will stay.  Overworld: If the lead Pokémon has this ability, the wild encounter rate is halved in a sandstorm."
 }

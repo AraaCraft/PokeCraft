@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user stomps down on the ground and attacks everything in the area. Hit Pokémon’s Speed stat is reduced.",
-    "description_fr": "Le lanceur piétine le sol et inflige des dégâts à tous les Pokémon autour de lui. Baisse aussi la Vitesse.",
+    "description_en": "Has a chance to lower the target’s Speed by one stage.",
+    "description_fr": "A une chance de diminuer la Vitesse de la cible d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

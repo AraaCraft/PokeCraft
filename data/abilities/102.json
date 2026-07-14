@@ -3,6 +3,6 @@
     "name": "leaf-guard",
     "name_fr": "Feuille Garde",
     "name_en": "Leaf Guard",
-    "description_fr": "Empêche les problèmes de statut au soleil.",
-    "description_en": "Prevents status problems in sunny weather."
+    "description_fr": "Ce Pokémon ne peut pas recevoir d’altération majeure de statut sous soleil intense.  Ce talent ne soigne pas les altérations de statut précédentes.  Repos échouera complètement avec ce talent activé.  Bâillement échouera immédiatement si utilisé sur ce Pokémon sous soleil intense, et un Bâillement déjà utilisé échouera si la météo devient un soleil intense pendant ce entretemps.",
+    "description_en": "This Pokémon cannot be given a major status ailment during strong sunlight.  This ability does not heal prior status ailments.  Rest will fail altogether with this ability in effect.  Yawn will immediately fail if used on this Pokémon during strong sunlight, and an already-used Yawn will fail if the weather turns to strong sunlight in the meantime."
 }

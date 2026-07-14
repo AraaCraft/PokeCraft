@@ -3,6 +3,6 @@
     "name": "commander",
     "name_fr": "Commandant",
     "name_en": "Commander",
-    "description_fr": "Si un Oyacata allié est sur le terrain quand ce Pokémon\\nrejoint le combat, ce dernier entre dans sa bouche et\\ndevient son commandant.",
+    "description_fr": "Quand le Pokémon entre au combat, il va à l'intérieur de la bouche d'un Oyacata allié s'il y en a un sur le terrain. Le Pokémon commande depuis là.",
     "description_en": "When the Pokémon enters a battle, it goes inside the mouth of an ally Dondozo if one is on the field. The Pokémon then issues commands from there."
 }

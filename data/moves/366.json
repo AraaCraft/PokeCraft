@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user whips up a turbulent whirlwind that ups the Speed of all party Pokémon for three turns.",
-    "description_fr": "Génère une rafale de vent qui augmente la Vitesse des Pokémon de l’équipe pendant 4 tours.",
+    "description_en": "For three turns, friendly Pokémon have doubled Speed.",
+    "description_fr": "Pendant trois tours, les Pokémon alliés ont une Vitesse doublée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

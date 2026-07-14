@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "special",
-    "description_en": "Attacks with a strange leaf that cannot be evaded.",
-    "description_fr": "Le lanceur disperse d’étranges feuilles qui poursuivent l’ennemi. N’échoue jamais.",
+    "description_en": "Never misses.",
+    "description_fr": "N'échoue jamais.",
     "effect_chance": null,
     "effect_changes": [
         {

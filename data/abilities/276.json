@@ -3,6 +3,6 @@
     "name": "rocky-payload",
     "name_fr": "Porte-Roche",
     "name_en": "Rocky Payload",
-    "description_fr": "Augmente la puissance des capacités de type Roche.",
-    "description_en": "Powers up Rock-type moves."
+    "description_fr": "Augmente la puissance des capacités de type Roche utilisée par ce Pokémon de 50%.",
+    "description_en": "Increases the power of Rock-type moves used by this Pokémon by 50%."
 }

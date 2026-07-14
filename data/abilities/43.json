@@ -3,6 +3,6 @@
     "name": "soundproof",
     "name_fr": "Anti-Bruit",
     "name_en": "Soundproof",
-    "description_fr": "Protège de toutes les capacités sonores.",
-    "description_en": "Avoids sound-based moves."
+    "description_fr": "Ce Pokémon est immunisé aux capacités marquées comme basées sur le son.  Glas de Soin n'est pas affecté.  Brouhaha empêche toujours ce Pokémon de dormir.  Ce Pokémon peut encore recevoir un compteur de Requiem via Relais, et gardera un compter de Requiem s'il acquiet ce talent après que Requiem est utilisée.  Grondement, Hurle-Temps, Sonic Boom, et Bâillement ne sont pas marquées comme basées sur le son.",
+    "description_en": "This Pokémon is immune to moves flagged as being sound-based.  Heal Bell is unaffected.  Uproar still prevents this Pokémon from sleeping.  This Pokémon can still receive a Perish Song counter through Baton Pass, and will retain a Perish Song counter if it acquires this ability after Perish Song is used.  Howl, Roar of Time, Sonic Boom, and Yawn are not flagged as sound-based."
 }

@@ -3,6 +3,6 @@
     "name": "cursed-body",
     "name_fr": "Corps Maudit",
     "name_en": "Cursed Body",
-    "description_fr": "Peut empêcher l’ennemi de réutiliser une attaque.",
-    "description_en": "May disable a move used on the Pokémon."
+    "description_fr": "Les capacités qui frappent ce Pokémon ont 30% de chances d'être Entravées après.",
+    "description_en": "Moves that hit this Pokémon have a 30% chance of being Disabled afterward."
 }

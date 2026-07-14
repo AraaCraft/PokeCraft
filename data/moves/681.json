@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user boasts its strength and attacks the target. The more the user’s stats are raised, the greater the move’s power.",
-    "description_fr": "Ivre de puissance, le lanceur attaque de toutes ses forces. Plus ses stats ont été augmentées, plus la puissance de l’attaque est élevée.",
+    "description_en": "Power is higher the more the user’s stats have been raised, to a maximum of 31×.",
+    "description_fr": "La puissance est plus grande plus les stats du lanceur ont été augmentée, jusqu'à un maximum de 31×.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Returns a physical blow double.",
-    "description_fr": "Une riposte qui répond à toute attaque physique en infligeant le double de dégâts.",
+    "description_en": "Inflicts twice the damage the user received from the last physical hit it took.",
+    "description_fr": "Inflige le double des dégâts que le lanceur a reçu de la dernière attaque physique qu'il a subi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 30,
     "damage_class": "physical",
-    "description_en": "A one-hit KO, drill attack.",
-    "description_fr": "Un coup de corne en vrille qui empale l’ennemi, le mettant K.O. sur le coup s’il est touché.",
+    "description_en": "Causes a one-hit KO.",
+    "description_fr": "Provoque un KO en un coup.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

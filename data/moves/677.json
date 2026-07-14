@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user entangles the target with its anchor chain while attacking. The target becomes unable to flee.",
-    "description_fr": "Le lanceur jette son ancre sur la cible pour l’attaquer. Une fois accrochée, elle l’empêche de s’enfuir.",
+    "description_en": "Traps the target.",
+    "description_fr": "Piège la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

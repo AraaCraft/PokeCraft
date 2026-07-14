@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user rotates, centering the hex nut in its chest, and then strikes with its arms twice in a row. This may also make the target flinch.",
-    "description_fr": "Le lanceur fait pivoter l’écrou de sa poitrine deux fois d’affilée pour frapper l’adversaire avec ses bras. Peut apeurer l’ennemi.",
+    "description_en": "Hits twice in one turn.",
+    "description_fr": "Touche deux fois en un tour.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

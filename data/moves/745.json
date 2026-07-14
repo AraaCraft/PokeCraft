@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user ignores the effects of opposing Pokémon’s moves and Abilities that draw in moves, allowing this move to hit the chosen target.",
-    "description_fr": "Le lanceur parvient toujours à viser la cible voulue, en ignorant l’effet des talents et des capacités capables de détourner les attaques.",
+    "description_en": "The user ignores the effects of opposing Pokémon's moves and Abilities that draw in moves, allowing this move to hit the chosen target.",
+    "description_fr": "Le lanceur parvient toujours à viser la cible voulue, en ignorant l'effet des talents et des capacités capables de détourner les attaques.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

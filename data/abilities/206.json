@@ -3,6 +3,6 @@
     "name": "galvanize",
     "name_fr": "Peau Électrique",
     "name_en": "Galvanize",
-    "description_fr": "Les capacités de type Normal deviennent de type Électrik. Leur puissance augmente légèrement.",
-    "description_en": "Normal-type moves become Electric-type moves. The power of those moves is boosted a little."
+    "description_fr": "Quand ce Pokémon utilise des capacités Normal, cette capacité est Électrik et sa puissance est 1.2×.",
+    "description_en": "When this Pokémon uses a Normal moves, that move is Electric its power is 1.2×."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": 75,
     "damage_class": "status",
-    "description_en": "May cause the foe to fall asleep.",
-    "description_fr": "Le lanceur répand une poudre soporifique qui endort la cible.",
+    "description_en": "Puts the target to sleep.",
+    "description_fr": "Endort la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

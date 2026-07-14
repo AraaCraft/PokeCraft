@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Prevents stat reduction.",
-    "description_fr": "Une brume blanche enveloppe l’équipe du lanceur et empêche la réduction des stats pour 5 tours.",
+    "description_en": "Protects the user’s stats from being changed by enemy moves.",
+    "description_fr": "Protège les stats du lanceur d'être changées par des capacités ennemies.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

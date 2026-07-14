@@ -3,6 +3,6 @@
     "name": "magic-bounce",
     "name_fr": "Miroir Magik",
     "name_en": "Magic Bounce",
-    "description_fr": "Renvoie les attaques de statut.",
-    "description_en": "Reflects status- changing moves."
+    "description_fr": "Quand ce Pokémon est ciblé par une capacité marquée comme étant réflechissable, la capacité est redirigée sur son lanceur.  Toutes les capacités réflechissables sont non offensives, et la plupart des capacités non offensives qui ciblent d’autres Pokémon sont réflechissables.  Un capacité réflechie par ce talent ou Reflet Magik ne peut pas être réflechie à nouveau.",
+    "description_en": "When this Pokémon is targeted by a move flagged as being reflectable, the move is redirected to its user.  All reflectable moves are non-damaging, and most non-damaging moves that target other Pokémon are reflectable.  A move reflected by this ability or Magic Coat cannot be reflected back."
 }

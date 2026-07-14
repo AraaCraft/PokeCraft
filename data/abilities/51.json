@@ -3,6 +3,6 @@
     "name": "keen-eye",
     "name_fr": "Regard Vif",
     "name_en": "Keen Eye",
-    "description_fr": "Empêche perte de précision.",
-    "description_en": "Prevents loss of accuracy."
+    "description_fr": "Ce Pokémon ne peut pas avoir sa précision baissée.  Ce talent n'empêche pas les pertes de précisions autres que les modifications de stat, telles que la baisse de précision du brouillard; n'empêche pas non plus l'esquive des autres Pokémon de rendre les capacités de ce Pokémon moins précises.  Ce Pokémon peut toujours recevoir des modifications de précision négatives via Permucœur.  Monde extérieur: Si le premier Pokémon de l'équipe a ce talent, n'importe quelle rencontre sauvage avec un Pokémon de cinq niveaux ou moins a 50% de chances d'être passée.",
+    "description_en": "This Pokémon cannot have its accuracy lowered.  This ability does not prevent any accuracy losses other than stat modifiers, such as the accuracy cut from fog; nor does it prevent other Pokémon's evasion from making this Pokémon's moves less accurate.  This Pokémon can still be passed negative accuracy modifiers through Heart Swap.  Overworld: If the first Pokémon in the party has this ability, any random encounter with a Pokémon five or more levels lower than it has a 50% chance of being skipped."
 }

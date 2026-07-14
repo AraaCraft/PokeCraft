@@ -3,6 +3,6 @@
     "name": "iron-fist",
     "name_fr": "Poing de Fer",
     "name_en": "Iron Fist",
-    "description_fr": "Augmente la puissance des capacités coups de poing.",
-    "description_en": "Boosts the power of punching moves."
+    "description_fr": "Les capacités marquées comme à base de coups de poings ont 1.2× leur puissance de base pour ce Pokémon.  Coup Bas n’est pas marquée comme à base de coup de poings; son nom original, Japonais signifie seulement \"attaque surprise\".",
+    "description_en": "Moves flagged as being punch-based have 1.2× their base power for this Pokémon.  Sucker Punch is not flagged as punch-based; its original, Japanese name only means \"surprise attack\"."
 }

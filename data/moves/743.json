@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "This move enables the user to protect itself from all attacks. Its chance of failing rises if it is used in succession.",
-    "description_fr": "Le lanceur se protège de toutes les attaques. Peut échouer si utilisée plusieurs fois de suite.",
+    "description_en": "Prevents any moves from hitting the user this turn.",
+    "description_fr": "Empêche n'importe quelle capacité de frapper le lanceur ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

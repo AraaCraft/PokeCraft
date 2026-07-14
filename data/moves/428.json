@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user focuses its willpower to its head and rams the foe. It may also make the target flinch.",
-    "description_fr": "Le lanceur concentre sa volonté et donne un coup de tête. Peut aussi apeurer l’ennemi.",
+    "description_en": "Has a chance to make the target flinch.",
+    "description_fr": "A une chance d'apeurer la cible.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "full-metal-body",
     "name_fr": "Métallo-Garde",
     "name_en": "Full Metal Body",
-    "description_fr": "Empêche les stats du Pokémon de baisser à cause d’une capacité ou d’un talent.",
-    "description_en": "Prevents other Pokémon’s moves or Abilities from lowering the Pokémon’s stats."
+    "description_fr": "Les stats de ce Pokémon's ne peuvent pas être baissées par d'autres capacités ou talents de Pokémon.  Cet effet s'applique seulement sur les modifications de stat normales et pas sur des effets plus exotiques tels que Renversement ou Permuforce.  Ce Talent ne peut pas être transmis par Brise Moule, Téra-Voltage, ou Turbo Brasier.",
+    "description_en": "This Pokémon's stats cannot be lowered by other Pokémon's moves or abilities.  This effect only applies to normal stat modifications and not more exotic effects such as Topsy-Turvy or Power Swap.  This Ability is not bypassed by Mold Breaker, Teravolt, or Turboblaze."
 }

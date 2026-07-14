@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The target is infested and attacked for four to five turns. The target can’t flee during this time.",
-    "description_fr": "Cette attaque perdure pendant quatre à cinq tours. L’ennemi ne peut pas fuir au cours de cette période.",
+    "description_en": "Prevents the target from fleeing and inflicts damage for 2-5 turns.",
+    "description_fr": "Empêche la cible de fuir et inflige des dégâts pendant 2-5 tours.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

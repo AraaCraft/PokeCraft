@@ -3,6 +3,6 @@
     "name": "stench",
     "name_fr": "Puanteur",
     "name_en": "Stench",
-    "description_fr": "Repousse POKéMON sauvage.",
-    "description_en": "Helps repel wild POKéMON."
+    "description_fr": "Les capacités offensives de ce Pokémon ont 10% de chances d'apeurer la cible à chaque coup si elles n'ont pas déjà causé l'apeurement en tant qu'effet additionnel.  Ce talent ne s'accumule pas avec un objet porté.  Monde extérieur: Le taux de rencontre sauvage est divisé par deux tant que ce Pokémon est en tête d'équipe.",
+    "description_en": "This Pokémon's damaging moves have a 10% chance to make the target flinch with each hit if they do not already cause flinching as a secondary effect.  This ability does not stack with a held item.  Overworld: The wild encounter rate is halved while this Pokémon is first in the party."
 }

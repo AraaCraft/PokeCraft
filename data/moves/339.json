@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Bulks up the body to boost both ATTACK and DEFENSE.",
-    "description_fr": "Le lanceur tend ses muscles pour se gonfler, ce qui booste son Attaque et sa Défense.",
+    "description_en": "Raises the user’s Attack and Defense by one stage.",
+    "description_fr": "Augmente l'Attaque et la Défense du lanceur d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

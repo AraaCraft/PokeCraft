@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user disappears, then strikes the foe on the second turn. It hits even if the foe used Protect.",
-    "description_fr": "Le lanceur disparaît et frappe l’ennemi au second tour. Fonctionne même si l’ennemi se protège.",
+    "description_en": "User vanishes, dodging all attacks, and hits next turn.  Hits through Protect and Detect.",
+    "description_fr": "Le lanceur disparaît, évitant toutes les attaques, et frappe au prochain tour.  Touche à travers Abri et Détection.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

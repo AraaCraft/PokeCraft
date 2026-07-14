@@ -1,8 +1,8 @@
 {
     "accuracy": 60,
     "damage_class": "physical",
-    "description_en": null,
-    "description_fr": null,
+    "description_en": "User receives 1/2 its HP in recoil.",
+    "description_fr": "Le lanceur reçoit 1/2 de ses PV en contrecoup.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

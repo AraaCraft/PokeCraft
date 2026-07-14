@@ -3,6 +3,6 @@
     "name": "infiltrator",
     "name_fr": "Infiltration",
     "name_en": "Infiltrator",
-    "description_fr": "Traverse les barrières de l’ennemi pour attaquer.",
-    "description_en": "Passes through the foe’s barrier and strikes."
+    "description_fr": "Les capacités de ce Pokémon ignorent Mur Lumière, Protection, et Rune Protect.",
+    "description_en": "This Pokémon's moves ignore Light Screen, Reflect, and Safeguard."
 }

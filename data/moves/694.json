@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "This move reduces damage from physical and special moves for five turns. This can be used only in a hailstorm.",
-    "description_fr": "Réduit les dégâts causés par les capacités physiques et spéciales durant cinq tours. Ne peut être utilisé que lorsqu’il grêle.",
+    "description_en": "Reduces damage five turns, but must be used during hail.",
+    "description_fr": "Réduit les dégâts pendant cinq tours, mais doit être utilisé pendant la grêle.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

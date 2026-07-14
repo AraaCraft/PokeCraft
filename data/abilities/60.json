@@ -3,6 +3,6 @@
     "name": "sticky-hold",
     "name_fr": "Glu",
     "name_en": "Sticky Hold",
-    "description_fr": "Empêche le vol d'objets.",
-    "description_en": "Prevents item theft."
+    "description_fr": "L'objet tenu de ce Pokémon ne peut pas être supprimé par un autre Pokémon.  Les capacités offensives qui supprimeraient l'objet de ce Pokémon peuvent toujours infliger des dégâts contre ce Pokémon, e.g. Sabotage ou Picore.  Ce Pokémon peut toujours utiliser des capacités qui impliquent la perte de son propre objet, e.g. Dégommage ou Tour de Magie.  Monde extérieur: Si le Pokémon de tête a ce talent, le taux de rencontre en pêchant est augmenté.",
+    "description_en": "This Pokémon's hold item cannot be removed by other Pokémon.  Damaging moves that would remove this Pokémon's item can still inflict damage against this Pokémon, e.g. Knock Off or Pluck.  This Pokémon can still use moves that involve the loss of its own item, e.g. Fling or Trick.  Overworld: If the lead Pokémon has this ability, the encounter rate while fishing is increased."
 }

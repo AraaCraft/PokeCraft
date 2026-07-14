@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Randomly attacks while asleep.",
-    "description_fr": "Le lanceur utilise un de ses coups au hasard pendant qu’il dort.",
+    "description_en": "Randomly uses one of the user’s other three moves.  Only works if the user is sleeping.",
+    "description_fr": "Utilise aléatoirement l'une des trois autres capacités du lanceur.  Ne fonctionne que si le lanceur dort.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

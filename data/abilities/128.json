@@ -3,6 +3,6 @@
     "name": "defiant",
     "name_fr": "Acharné",
     "name_en": "Defiant",
-    "description_fr": "Monte l'Attaque quand les stats baissent.",
-    "description_en": "When its stats are lowered its Attack increases."
+    "description_fr": "Quand n’importe quelle stat de ce Pokémon est baissée, son Attaque augmente de deux niveaux.  Si plusieurs stats sont baissées d’un coup, ce talent s’active avec chaque stat baissée.",
+    "description_en": "When any of this Pokémon's stats are lowered, its Attack rises by two stages.  If multiple stats are lowered at once, this ability takes effect with each stat lowered."
 }

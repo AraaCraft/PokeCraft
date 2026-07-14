@@ -3,6 +3,6 @@
     "name": "protean",
     "name_fr": "Protéen",
     "name_en": "Protean",
-    "description_fr": "Le Pokémon prend le type de sa dernière capacité lancée.",
-    "description_en": "Changes the Pokémon’s type to the type of the move it’s using."
+    "description_fr": "Change le type du porteur pour correspondre à chaque capacité qu'il utilise.  Le changement de type a lieu juste avant que la capacité est utilisée.",
+    "description_en": "Changes the bearer's type to match each move it uses.  The type change takes place just before the move is used."
 }

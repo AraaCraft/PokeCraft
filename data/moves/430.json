@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user gathers all its light energy and releases it at once. It may also lower the foe’s Sp. Def stat.",
-    "description_fr": "Le lanceur concentre son énergie lumineuse et la fait exploser. Peut aussi baisser la Défense Spéciale de l’ennemi.",
+    "description_en": "Has a chance to lower the target’s Special Defense by one stage.",
+    "description_fr": "A une chance de diminuer la Défense Spéciale de la cible d'un niveau.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

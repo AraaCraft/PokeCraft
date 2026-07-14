@@ -3,6 +3,6 @@
     "name": "hydration",
     "name_fr": "Hydratation",
     "name_en": "Hydration",
-    "description_fr": "Soigne les problèmes de statut s'il pleut.",
-    "description_en": "Heals status problems if it is raining."
+    "description_fr": "Ce Pokémon est soigné de n'importe quelle altération majeure de statut après chaque tour sous pluie.",
+    "description_en": "This Pokémon is cured of any major status ailment after each turn during rain."
 }

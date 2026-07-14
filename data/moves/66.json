@@ -1,8 +1,8 @@
 {
     "accuracy": 80,
     "damage_class": "physical",
-    "description_en": "An attack that al­ so hurts the user.",
-    "description_fr": "Le lanceur agrippe l’ennemi et l’écrase au sol. Blesse aussi légèrement le lanceur.",
+    "description_en": "User receives 1/4 the damage it inflicts in recoil.",
+    "description_fr": "Le lanceur reçoit 1/4 des dégâts qu'il inflige en contrecoup.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

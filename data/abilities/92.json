@@ -3,6 +3,6 @@
     "name": "skill-link",
     "name_fr": "Multi-Coups",
     "name_en": "Skill Link",
-    "description_fr": "Augmente la fréquence des attaques multiples.",
-    "description_en": "Increases the frequency of multi-strike moves."
+    "description_fr": "Ce Pokémon frappe toujours cinq fois avec les capacités à deux à cinq coups, telles que Stalactite.  Il ignore aussi les vérifications de précision des deuxièmes et troisièmes coups de Triple Pied.",
+    "description_en": "This Pokémon always hits five times with two-to-five-hit moves, such as Icicle Spear.  It also bypasses the accuracy checks on Triple Kick's second and third hits."
 }

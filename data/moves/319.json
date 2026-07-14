@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "status",
-    "description_en": "Emits a horrible screech that sharply lowers SP. DEF.",
-    "description_fr": "Un cri horrible tel un crissement métallique qui réduit fortement la Défense Spéciale de l’ennemi.",
+    "description_en": "Lowers the target’s Special Defense by two stages.",
+    "description_fr": "Diminue la Défense Spéciale de la cible de deux niveaux.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

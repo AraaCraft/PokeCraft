@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "Fires a meteor-like punch. May raise ATTACK.",
-    "description_fr": "Un coup de poing lancé à la vitesse d’un météore. Peut aussi augmenter l’Attaque du lanceur.",
+    "description_en": "Has a chance to raise the user’s Attack by one stage.",
+    "description_fr": "A une chance d'augmenter l'Attaque du lanceur d'un niveau.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

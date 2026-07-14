@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Counters a SPCL. ATK. move double.",
-    "description_fr": "Une riposte qui contre n’importe quelle attaque spéciale en infligeant le double des dégâts subis.",
+    "description_en": "Inflicts twice the damage the user received from the last special hit it took.",
+    "description_fr": "Inflige le double des dégâts que le lanceur a reçu de la dernière attaque spéciale qu'il a subi.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

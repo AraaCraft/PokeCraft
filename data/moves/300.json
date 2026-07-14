@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Covers the user in mud to raise electrical resistance.",
-    "description_fr": "Le lanceur se couvre de boue pour affaiblir les capacités Électrik quand il combat.",
+    "description_en": "Halves all Electric-type damage.",
+    "description_fr": "Divise par deux tous les dégâts de type Électrik.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

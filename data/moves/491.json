@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user spits fluid that works to melt the target. This harshly reduces the target’s Sp. Def stat.",
-    "description_fr": "Un liquide acide qui fait fondre l’ennemi. Sa Défense Spéciale diminue beaucoup.",
+    "description_en": "Lowers the target’s Special Defense by two stages.",
+    "description_fr": "Diminue la Défense Spéciale de la cible de deux niveaux.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

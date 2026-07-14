@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "An attack with variable power.",
-    "description_fr": "Une étrange onde d’énergie chaude frappe l’ennemi. Cette attaque est d’intensité variable.",
+    "description_en": "Inflicts damage between 50% and 150% of the user’s level.",
+    "description_fr": "Inflige des dégâts entre 50% et 150% du niveau du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

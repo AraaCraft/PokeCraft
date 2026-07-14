@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "An attack that may lower SPCL.DEF.",
-    "description_fr": "Une puissante force télékinésique frappe l’ennemi. Peut aussi faire baisser sa Défense Spéciale.",
+    "description_en": "Has a chance to lower the target’s Special Defense by one stage.",
+    "description_fr": "A une chance de diminuer la Défense Spéciale de la cible d'un niveau.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

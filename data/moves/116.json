@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Raises the criti­ cal hit ratio.",
-    "description_fr": "Le lanceur prend une profonde inspiration et se concentre pour augmenter son taux de critiques.",
+    "description_en": "Increases the user’s chance to score a critical hit.",
+    "description_fr": "Augmente la chance du lanceur de réaliser un coup critique.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

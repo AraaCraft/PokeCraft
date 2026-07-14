@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user attacks by harshly dropping an icicle onto the target. It may also make the target flinch.",
-    "description_fr": "Envoie de gros blocs de glace sur l’ennemi pour lui infliger des dégâts. Peut aussi l’apeurer.",
+    "description_en": "Has a chance to make the target flinch.",
+    "description_fr": "A une chance d'apeurer la cible.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

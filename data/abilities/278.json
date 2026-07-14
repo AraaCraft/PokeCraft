@@ -3,6 +3,6 @@
     "name": "zero-to-hero",
     "name_fr": "Supermutation",
     "name_en": "Zero to Hero",
-    "description_fr": "Le Pokémon prend sa Forme Super en quittant\\nle combat.",
+    "description_fr": "Le Pokémon prend sa Forme Super quand il se retire.",
     "description_en": "The Pokémon transforms into its Hero Form when it switches out."
 }

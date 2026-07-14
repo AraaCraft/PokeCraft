@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
-    "description_en": "Traps and hurts the foe in quicksand for 2 to 5 turns.",
-    "description_fr": "Le lanceur emprisonne l’ennemi dans une tempête de sable terrifiante qui dure de 4 à 5 tours.",
+    "description_en": "Prevents the target from fleeing and inflicts damage for 2-5 turns.",
+    "description_fr": "Empêche la cible de fuir et inflige des dégâts pendant 2-5 tours.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "parental-bond",
     "name_fr": "Amour Filial",
     "name_en": "Parental Bond",
-    "description_fr": "Attaque en famille.",
-    "description_en": "Parent and child attack together."
+    "description_fr": "Quand ce Pokémon lance une capacité, cette dernière se lance deux fois d'affilée.  La deuxième capacité est cependant deux fois moins puissante que la première, mais conserve les mêmes effets.",
+    "description_en": "Lets the bearer hit twice with damaging moves.  The second hit has half power."
 }

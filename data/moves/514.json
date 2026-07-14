@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user gets revenge for a fainted ally. If an ally fainted in the previous turn, this attack’s damage increases.",
-    "description_fr": "Venge un Pokémon de l’équipe mis K.O. Si un Pokémon de l’équipe a été mis K.O. au tour d’avant, l’effet augmente.",
+    "description_en": "Has double power if a friendly Pokémon fainted last turn.",
+    "description_fr": "A une puissance double si un Pokémon allié a été mis KO au dernier tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

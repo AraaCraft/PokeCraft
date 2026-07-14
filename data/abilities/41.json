@@ -3,6 +3,6 @@
     "name": "water-veil",
     "name_fr": "Ignifu-Voile",
     "name_en": "Water Veil",
-    "description_fr": "Empêche les brûlures.",
-    "description_en": "Prevents burns."
+    "description_fr": "Ce Pokémon ne peut pas être brûlé.  Si un Pokémon est brûlé et acquiert ce talent, sa brûlure est soignée; ceci inclut la récupération de talent perdu en quittant le combat.",
+    "description_en": "This Pokémon cannot be burned.  If a Pokémon is burned and acquires this ability, its burn is healed; this includes when regaining a lost ability upon leaving battle."
 }

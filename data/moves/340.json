@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
-    "description_en": "Bounces up, then down the next turn. May paralyze.",
-    "description_fr": "Le lanceur bondit très haut et plonge sur l’ennemi au 2è tour. Peut aussi paralyser l’ennemi.",
+    "description_en": "User bounces high into the air, dodging all attacks, and hits next turn.",
+    "description_fr": "Le lanceur bondit dans les air",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

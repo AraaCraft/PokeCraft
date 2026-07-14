@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Inflicts more damage if the user’s HP is high.",
-    "description_fr": "Le lanceur attaque avec un jet d’eau. Moins il a de PV et moins l’attaque est puissante.",
+    "description_en": "Inflicts more damage when the user has more HP remaining, with a maximum of 150 power.",
+    "description_fr": "Inflige plus de dégâts quand le lanceur a plus de PV restants, avec un maximum de 150 de puissance.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

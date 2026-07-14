@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "An attack with effects that vary by location.",
-    "description_fr": "Les effets de cette attaque varient en fonction de l’environnement.",
+    "description_en": "Has a chance to inflict a status effect which depends upon the terrain.",
+    "description_fr": "A une chance d'infliger un effet de statut qui dépend du terrain.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user raises the Defense stat of all Grass-type Pokémon in battle with a mysterious power.",
-    "description_fr": "Grâce à une force mystérieuse, la Défense de tous les Pokémon Plante au combat augmente.",
+    "description_en": "Raises the Defense of all Grass Pokémon in battle.",
+    "description_fr": "Augmente la Défense de tous les Pokémon Plante au combat.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

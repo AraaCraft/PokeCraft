@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "This move can be used only after the user has used all the other moves it knows in the battle.",
-    "description_fr": "Cette capacité ne peut être utilisée qu’après que le lanceur a utilisé toutes les autres.",
+    "description_en": "Can only be used after all of the user’s other moves have been used.",
+    "description_fr": "Ne peut être utilisé qu'après que toutes les autres capacités du lanceur ont été utilisées.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

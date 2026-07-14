@@ -3,6 +3,6 @@
     "name": "receiver",
     "name_fr": "Receveur",
     "name_en": "Receiver",
-    "description_fr": "Le Pokémon reçoit le talent d’un allié mis K.O.",
-    "description_en": "The Pokémon copies the Ability of a defeated ally."
+    "description_fr": "Quand un allié est mis KO, ce Pokémon gagne son Talent.",
+    "description_en": "When an ally faints, this Pokémon gains its Ability."
 }

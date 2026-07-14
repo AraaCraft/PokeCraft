@@ -3,6 +3,6 @@
     "name": "queenly-majesty",
     "name_fr": "Prestance Royale",
     "name_en": "Queenly Majesty",
-    "description_fr": "L’adversaire est impressionné par la majesté du Pokémon et ne peut pas le viser avec une attaque prioritaire.",
-    "description_en": "Its majesty pressures the opposing Pokémon, making it unable to attack using priority moves."
+    "description_fr": "Quand un Pokémon adverse tente d'utiliser une capacité qui cible ce Pokémon ou un allié, et que cette capacité a une priorité, elle échouera.",
+    "description_en": "When an opposing Pokémon attempts to use a move that targets this Pokémon or an ally, and that move has priority, it will fail."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "physical",
-    "description_en": "After obtaining Z-Power, the user, Lycanroc, attacks the target with full force. This move negates the effect on the battlefield.",
-    "description_fr": "Lougaroc utilise la Force Z pour attaquer la cible de toutes ses forces. Efface aussi tout Champ existant.",
+    "description_en": "Inflicts damage and removes any terrain present on the battlefield.",
+    "description_fr": "Inflige des dégâts et supprime n'importe quel champ présent sur le combat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

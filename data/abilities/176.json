@@ -3,6 +3,6 @@
     "name": "stance-change",
     "name_fr": "Déclic Tactique",
     "name_en": "Stance Change",
-    "description_fr": "Change de forme selon la façon dont le Pokémon se bat.",
-    "description_en": "The Pokémon changes form depending on how it battles."
+    "description_fr": "Permet à Exagide de changer de forme selon les capacités qu'il utilise.  Ainsi, Exagide arrivant toujours sur le terrain en Forme Parade, les capacités offensives lui permettent de passer sous sa Forme Assaut.   Les capacités de statut n'ont pas d'influence (le Pokémon ne change pas de forme), et la capacité Bouclier Royal lui permet de passer sous sa Forme Parade. ",
+    "description_en": "Changes Aegislash to Blade Forme before using a damaging move, or Shield Forme before using King’s Shield."
 }

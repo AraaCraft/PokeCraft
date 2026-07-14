@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user attacks the enemy with a pollen puff that explodes. If the target is an ally, it gives the ally a pollen puff that restores its HP instead.",
-    "description_fr": "Utilisé sur l’ennemi, envoie une boule explosive qui fait des dégâts ; sur un allié, donne du bon pollen nutritif qui fait récupérer des PV.",
+    "description_en": "Damages opponents, but heals allies for 50% of their max HP.",
+    "description_fr": "Inflige des dégâts aux adversaires, mais soigne les alliés de 50% de leurs PV max.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

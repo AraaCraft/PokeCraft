@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": null,
-    "description_fr": null,
+    "description_en": "Halves HP of all Pokémon on the field.  Must recharge",
+    "description_fr": "Divise par deux les PV de tous les Pokémon sur le terrain.  Doit se recharger.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

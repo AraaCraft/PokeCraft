@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Throws coins. Gets them back later.",
-    "description_fr": "Des pièces sont lancées sur l’ennemi. Permet d’obtenir de l’argent à la fin du combat.",
+    "description_en": "Scatters money on the ground worth five times the user’s level.",
+    "description_fr": "Éparpille de l'argent sur le sol d'une valeur équivalente à cinq fois le niveau du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

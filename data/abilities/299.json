@@ -3,6 +3,6 @@
     "name": "minds-eye",
     "name_fr": "Œil Révélateur",
     "name_en": "Mind’s Eye",
-    "description_fr": "Le Pokémon ignore les changements d’Esquive des cibles\\net peut toucher les Pokémon Spectre avec des capacités\\nNormal ou Combat. Sa Précision ne peut pas baisser.",
-    "description_en": "The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal-type and Fighting-type moves"
+    "description_fr": "Œil Révélateur permet au Pokémon doté de ce Talent de frapper les Pokémon de type Spectre avec des capacités de type Normal et Combat. Elle empêche également les autres Pokémon de réduire la précision du Pokémon et ignore les changements d'esquive des adversaires.",
+    "description_en": "Mind's Eye enables the Pokémon with this Ability to hit Ghost-type Pokémon with damage-dealing Normal- and Fighting-type moves. It also prevents other Pokémon from lowering the Pokémon's accuracy and ignores changes to the opponents' evasion."
 }

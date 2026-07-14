@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "An attack that may poison the target.",
-    "description_fr": "Un dard toxique qui transperce l’ennemi. Peut aussi l’empoisonner.",
+    "description_en": "Has a chance to poison the target.",
+    "description_fr": "A une chance d'empoisonner la cible.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Borrowing the power of the moon, the user attacks the target. This may also lower the target’s Sp. Atk stat.",
-    "description_fr": "Attaque l’ennemi grâce au pouvoir de la lune. Peut diminuer son Attaque Spéciale.",
+    "description_en": "Has a chance to lower the target’s Special Attack by one stage.",
+    "description_fr": "A une chance de diminuer l'Attaque Spéciale de la cible d'un niveau.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "analytic",
     "name_fr": "Analyste",
     "name_en": "Analytic",
-    "description_fr": "Booste les capacités s’il attaque en dernier.",
-    "description_en": "Boosts move power when the Pokémon moves last."
+    "description_fr": "Les capacités de ce Pokémon ont 1.3× leur puissance quand il agit en dernier dans un tour.  Prescience et Vœu Destructeur ne sont pas affectés.",
+    "description_en": "This Pokémon's moves have 1.3× their power when it moves last in a turn.  Future Sight and Doom Desire are unaffected."
 }

@@ -3,6 +3,6 @@
     "name": "victory-star",
     "name_fr": "Victorieux",
     "name_en": "Victory Star",
-    "description_fr": "Monte la Précision des Pokémon de l’équipe.",
-    "description_en": "Boosts the accuracy of its allies and itself."
+    "description_fr": "Toutes les capacités des Pokémon alliés, incluant les propres capacités de ce Pokémon, ont 1.1× leur précision habituelle tant que ce Pokémon est au combat.",
+    "description_en": "All friendly Pokémon's moves, including this Pokémon's own moves, have 1.1× their usual accuracy while this Pokémon is in battle."
 }

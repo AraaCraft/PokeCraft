@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Charges up power for up to 3 turns.",
-    "description_fr": "Le lanceur accumule de la puissance et augmente sa Défense et sa Défense Spéciale. Peut être utilisé 3 fois.",
+    "description_en": "Stores energy up to three times for use with Spit Up and Swallow.",
+    "description_fr": "Stocke de l'énergie jusqu'à trois fois pour utilisation avec Relâche et Avale.",
     "effect_chance": null,
     "effect_changes": [
         {

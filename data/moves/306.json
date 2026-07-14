@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "Tears at the foe with sharp claws. May lower DEFENSE.",
-    "description_fr": "Lacère l’ennemi avec des griffes solides et aiguisées. Peut aussi baisser sa Défense.",
+    "description_en": "Has a chance to lower the target’s Defense by one stage.",
+    "description_fr": "A une chance de diminuer la Défense de la cible d'un niveau.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

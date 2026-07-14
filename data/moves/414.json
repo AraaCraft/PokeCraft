@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user makes the ground under the foe erupt with power. It may also lower the target’s Sp. Def.",
-    "description_fr": "Des éruptions volcaniques ont lieu sous l’ennemi. Peut aussi baisser la Défense Spéciale de l’ennemi.",
+    "description_en": "Has a chance to lower the target’s Special Defense by one stage.",
+    "description_fr": "A une chance de diminuer la Défense Spéciale de la cible d'un niveau.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

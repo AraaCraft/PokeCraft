@@ -3,6 +3,6 @@
     "name": "grass-pelt",
     "name_fr": "Toison Herbue",
     "name_en": "Grass Pelt",
-    "description_fr": "Augmente la Défense si Champ Herbu est actif.",
-    "description_en": "Boosts the Defense stat in Grassy Terrain."
+    "description_fr": "Ce Pokémon voit sa Défense augmenter de 50 % tant qu'un Champ Herbu est actif. ",
+    "description_en": "Boosts Defense while Grassy Terrain is in effect."
 }

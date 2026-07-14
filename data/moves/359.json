@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user swings and hits with its strong and heavy fist. It lowers the user’s Speed, however.",
-    "description_fr": "Le lanceur lâche un puissant coup de poing sur l’ennemi. Réduit la vitesse du lanceur.",
+    "description_en": "Lowers user’s Speed by one stage.",
+    "description_fr": "Diminue la Vitesse du lanceur d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

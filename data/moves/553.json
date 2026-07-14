@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "On the second turn, the user hits the target with electrically charged ice. It may leave the target with paralysis.",
-    "description_fr": "Projette un bloc de glace électrifié sur l’ennemi au second tour. Peut aussi le paralyser.",
+    "description_en": "Requires a turn to charge before attacking.  Has a chance to paralyze the target.",
+    "description_fr": "Requiert un tour de charge avant d'attaquer.  A une chance de paralyser la cible.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

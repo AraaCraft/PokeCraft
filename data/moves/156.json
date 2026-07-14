@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Sleep for 2 turns to fully recover.",
-    "description_fr": "Le lanceur dort pendant 2 tours. Il regagne tous ses PV et n’a plus de problèmes de statut.",
+    "description_en": "User sleeps for two turns, completely healing itself.",
+    "description_fr": "Le lanceur dort pendant deux tours, se soignant complètement",
     "effect_chance": null,
     "effect_changes": [
         {

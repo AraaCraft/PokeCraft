@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user slams the foe with a tail, etc. The target is hit twice in a row. ",
-    "description_fr": "Un coup de queue ou de liane qui frappe l’ennemi deux fois d’affilée.",
+    "description_en": "Hits twice in one turn.",
+    "description_fr": "Touche deux fois en un tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

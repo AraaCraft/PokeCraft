@@ -3,6 +3,6 @@
     "name": "stall",
     "name_fr": "Frein",
     "name_en": "Stall",
-    "description_fr": "Attaque toujours après l'ennemi, même plus lent.",
-    "description_en": "The Pokémon moves after even slower foes."
+    "description_fr": "Les capacités de ce Pokémon agissent en dernier pour une même priorité.  Plusieurs Pokémon avec ce talent agissent dans l'ordre des Vitesses entre eux.  Les Encens Plein et Ralentiqueue prennent la priorité sur ce talent; c’est-à-dire que, les Pokémon avec ces objets agissent après le Pokémon avec ce talent.  Les Pokémon avec ce talent et l’un de ces objets sont retardés comme s’ils avaient seulement l’objet.  Ce talent fonctionne normalement sous Distorsion: les Pokémon avec ce talent agiront dans l’ordre inverse de Vitesse après les Pokémon sans.",
+    "description_en": "This Pokémon moves last within its priority bracket.  Multiple Pokémon with this ability move in order of Speed amongst themselves.  The Full Incense and Lagging Tail take precedence over this ability; that is, Pokémon with these items move after Pokémon with this ability.  Pokémon with both this ability and one of these items are delayed as much as if they had only the item.  This ability works as usual during Trick Room: Pokémon with this ability will move in reverse order of Speed after Pokémon without it."
 }

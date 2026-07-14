@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "An attack that hits 2-5 times.",
-    "description_fr": "Le lanceur frappe l’ennemi 2 à 5 fois avec un os.",
+    "description_en": "Hits 2-5 times in one turn.",
+    "description_fr": "Touche 2-5 fois en un tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

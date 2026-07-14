@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user breaks its shell, lowering its Defense and Sp. Def stats but sharply raising Attack, Sp. Atk, and Speed stats.",
-    "description_fr": "Le lanceur brise sa coquille. Il baisse sa Défense et Déf. Spé., mais augmente forte- ment son Attaque, Atq. Spé. et Vitesse.",
+    "description_en": "Raises user’s Attack, Special Attack, and Speed by two stages.  Lower user’s Defense and Special Defense by one stage.",
+    "description_fr": "Augmente l'Attaque, Attaque Spéciale, et Vitesse du lanceur de deux niveaux.  Diminue la Défense et Défense Spéciale du lanceur d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

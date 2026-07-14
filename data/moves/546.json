@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user fires a beam of light at its target. The type changes depending on the Drive the user holds.",
-    "description_fr": "Le lanceur projette un rayon lumineux sur l’ennemi. Le type varie selon le Module que tient le lanceur.",
+    "description_en": "If the user is holding a appropriate plate or drive, the damage inflicted will match it.",
+    "description_fr": "Si le lanceur tient une plaque ou module approprié, les dégâts infligés y correspondent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

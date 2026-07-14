@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user first heats up its beak, and then it attacks the target. Making direct contact with the Pokémon while it’s heating up its beak results in a burn.",
-    "description_fr": "Le lanceur fait chauffer son bec avant d’attaquer. S’il subit une attaque directe pendant la montée en température, l’attaquant sera brûlé.",
+    "description_en": "Inflicts a burn on any Pokémon that makes contact before the attack.",
+    "description_fr": "Inflige une brûlure à n'importe quel Pokémon qui a un contact avec le lanceur avant l'attaque.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

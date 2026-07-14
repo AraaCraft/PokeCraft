@@ -3,6 +3,6 @@
     "name": "propeller-tail",
     "name_fr": "Propulseur",
     "name_en": "Propeller Tail",
-    "description_fr": "Permet d’ignorer l’effet des capacités ou des talents qui attirent les capacités.",
+    "description_fr": "Ignore les effets des Talents des Pokémon adverses et capacités qui attirent les capacités.",
     "description_en": "Ignores the effects of opposing Pokémon’s Abilities and moves that draw in moves."
 }

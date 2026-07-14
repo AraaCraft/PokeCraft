@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user takes the target into the sky, then drops it during the next turn. The target cannot attack while in the sky.",
-    "description_fr": "Le lanceur emmène l’ennemi dans les airs au 1er tour et le lâche dans le vide au 2è. L’ennemi saisi ne peut pas attaquer.",
+    "description_en": "Carries the target high into the air, dodging all attacks against either, and drops it next turn.",
+    "description_fr": "Emporte la cible dans les airs, évitant toutes les attaques contre eux, et la lâche au prochain tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

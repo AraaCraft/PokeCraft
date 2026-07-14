@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user strikes with a tough punch as fast as a bullet. This move always goes first.",
-    "description_fr": "Le lanceur envoie des coups de poing aussi rapides que des balles de revolver. Frappe toujours en premier.",
+    "description_en": "Inflicts regular damage with no additional effect.",
+    "description_fr": "Inflige des dégâts réguliers avec aucun effet additionnel.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

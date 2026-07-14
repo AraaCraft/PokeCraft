@@ -3,6 +3,6 @@
     "name": "moody",
     "name_fr": "Lunatique",
     "name_en": "Moody",
-    "description_fr": "Monte une stat tout en en baissant une autre.",
-    "description_en": "Raises one stat and lowers another."
+    "description_fr": "Après chaque tour, une des stats au hasard de ce Pokémon augmente de deux niveaux, et une autre chute d’un niveau.  Si une stat est déjà aux niveaux 6 ou -6, elle ne sera pas choisie pour être augmentée ou diminuée, respectivement.",
+    "description_en": "After each turn, one of this Pokémon's stats at random rises two stages, and another falls one stage.  If a stat is already at 6 or -6 stages, it will not be chosen to be increased or decreased, respectively."
 }

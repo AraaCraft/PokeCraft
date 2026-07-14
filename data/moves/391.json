@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user employs its psychic power to switch stat changes with the foe. ",
-    "description_fr": "Le lanceur utilise un pouvoir psychique pour échanger ses changements de stats avec la cible.",
+    "description_en": "User and target swap stat changes.",
+    "description_fr": "Le lanceur et la cible échangent leurs changements de stat.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "special",
-    "description_en": "Powerful, but leaves the user immobile the next turn.",
-    "description_fr": "Un violent coup de racines s’abat sur l’ennemi. Immobilise le lanceur au tour suivant.",
+    "description_en": "User foregoes its next turn to recharge.",
+    "description_fr": "Le lanceur passe son prochain tour pour se recharger.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

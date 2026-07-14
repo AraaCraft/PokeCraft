@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Charges power to boost the electric move used next.",
-    "description_fr": "Le lanceur concentre sa puissance pour sa prochaine attaque Électrik. Augmente sa Défense Spéciale.",
+    "description_en": "Raises the user’s Special Defense by one stage.  User’s Electric moves have doubled power next turn.",
+    "description_fr": "Augmente la Défense Spéciale du lanceur d'un niveau.   Les capacités Électrik du lanceur ont leur puissance doublée au prochain tour.",
     "effect_chance": null,
     "effect_changes": [
         {

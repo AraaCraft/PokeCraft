@@ -3,6 +3,6 @@
     "name": "intimidate",
     "name_fr": "Intimidation",
     "name_en": "Intimidate",
-    "description_fr": "Baisse l'ATTAQUE ennemie.",
-    "description_en": "Lowers the foe’s ATTACK."
+    "description_fr": "Quand ce Pokémon entre au combat, l'Attaque de l'adversaire est diminuée d'un niveau.  Dans un combat double, les deux adversaires sont affectés.    Ce talent prend aussi effet quand acquis durant un combat, mais ne prendre pas effet a nouveau si perdu et récupéré sans quitter le combat.    Ce talent n'a pas d'effet sur un adversaire qui a un Clonage.    Monde extérieur: Si le premier Pokémon de l'équipe a ce talent, n'importe quelle rencontre aléatoire avec un Pokémon de cinq niveaux ou moins que lui a 50% de chances d'être passée.",
+    "description_en": "When this Pokémon enters battle, the opponent's Attack is lowered by one stage.  In a double battle, both opponents are affected.  This ability also takes effect when acquired during a battle, but will not take effect again if lost and reobtained without leaving battle.  This ability has no effect on an opponent that has a Substitute.  Overworld: If the first Pokémon in the party has this ability, any random encounter with a Pokémon five or more levels lower than it has a 50% chance of being skipped."
 }

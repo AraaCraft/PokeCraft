@@ -3,6 +3,6 @@
     "name": "unnerve",
     "name_fr": "Tension",
     "name_en": "Unnerve",
-    "description_fr": "L’ennemi stresse et ne peut plus manger de Baies.",
-    "description_en": "Makes the foe nervous and unable to eat Berries."
+    "description_fr": "Les Pokémon adverses ne peuvent pas tenir de Baies tant que ce Pokémon est au combat.  Les Pokémon affectés peuvent toujours utiliser Piqûre ou Picore pour manger la Baie d’une cible.",
+    "description_en": "Opposing Pokémon cannot eat held Berries while this Pokémon is in battle.  Affected Pokémon can still use Bug Bite or Pluck to eat a target's Berry."
 }

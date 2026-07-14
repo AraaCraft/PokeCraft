@@ -3,6 +3,6 @@
     "name": "poison-puppeteer",
     "name_fr": "Emprise Toxique",
     "name_en": "Poison Puppeteer",
-    "description_fr": "Lorsque Pêchaminus empoisonne un Pokémon grâce\\nà l’une de ses capacités, ce dernier devient également\\nconfus.",
-    "description_en": "Pokémon poisoned by Pecharunt's moves will also become confused."
+    "description_fr": "Quand un Pokémon est empoisonné par n'importe quelle capacité de Pêchaminus, il sera aussi confus.",
+    "description_en": "When a Pokémon is poisoned by any of Pecharunt's moves, it will also become confused."
 }

@@ -32,7 +32,10 @@ Object.values(allMovesFiles).forEach((file: any) => {
   const moveData = file.default;
   movesNameMap[moveData.id] = {
     en: moveData.name_en || moveData.name,
-    fr: moveData.name_fr || moveData.name
+    fr: moveData.name_fr || moveData.name,
+    type: moveData.type_name || 'normal',
+    desc_en: moveData.description_en || '',
+    desc_fr: moveData.description_fr || ''
   };
 });
 
@@ -146,26 +149,106 @@ validPokemons.forEach(p => {
 
           <div class="config-section">
             <h3 data-i18n="abilities">Ability</h3>
-            <select id="config-ability" class="config-select">
-              <!-- Populated by JS -->
-            </select>
+            <div class="custom-select-wrapper" id="ability-select-wrapper">
+              <div class="custom-select-trigger" id="ability-select-trigger">
+                <div id="ability-select-display" class="item-select-display">
+                  <span>-- Select Ability --</span>
+                </div>
+                <span class="custom-select-arrow">▼</span>
+              </div>
+              <div class="custom-select-dropdown hidden" id="ability-select-dropdown">
+                <div class="custom-select-options" id="ability-options-list">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+            </div>
+            <input type="hidden" id="config-ability-hidden" value="">
           </div>
 
           <div class="config-section">
             <h3 data-i18n="held_item">Held Item</h3>
-            <select id="config-item" class="config-select has-tooltip" data-tooltip="">
-              <option value="" data-i18n="no_item">-- No Item --</option>
-              <!-- Populated by JS -->
-            </select>
+            <div class="custom-select-wrapper" id="item-select-wrapper">
+              <div class="custom-select-trigger" id="item-select-trigger">
+                <div id="item-select-display" class="item-select-display">
+                  <span data-i18n="no_item">-- No Item --</span>
+                </div>
+                <span class="custom-select-arrow">▼</span>
+              </div>
+              <div class="custom-select-dropdown hidden" id="item-select-dropdown">
+                <div class="custom-select-search">
+                  <input type="text" id="item-search-input" data-i18n-placeholder="search_item" placeholder="Search item..." autocomplete="off">
+                </div>
+                <div class="custom-select-options" id="item-options-list">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+            </div>
+            <input type="hidden" id="config-item-hidden" value="">
           </div>
 
           <div class="config-section">
             <h3 data-i18n="moves">Moves (Max 4)</h3>
             <div class="moves-grid">
-              <select id="config-move-1" class="config-select"><option value="" data-i18n="select_move_1">-- Select Move 1 --</option></select>
-              <select id="config-move-2" class="config-select"><option value="" data-i18n="select_move_2">-- Select Move 2 --</option></select>
-              <select id="config-move-3" class="config-select"><option value="" data-i18n="select_move_3">-- Select Move 3 --</option></select>
-              <select id="config-move-4" class="config-select"><option value="" data-i18n="select_move_4">-- Select Move 4 --</option></select>
+              <div class="custom-select-wrapper" id="move-select-wrapper-1">
+                <div class="custom-select-trigger" id="move-select-trigger-1" data-index="1">
+                  <div id="move-select-display-1" class="item-select-display">
+                    <span data-i18n="select_move_1">-- Select Move 1 --</span>
+                  </div>
+                  <span class="custom-select-arrow">▼</span>
+                </div>
+                <div class="custom-select-dropdown hidden" id="move-select-dropdown-1">
+                  <div class="custom-select-search">
+                    <input type="text" id="move-search-input-1" data-i18n-placeholder="search_move" placeholder="Search move..." autocomplete="off">
+                  </div>
+                  <div class="custom-select-options" id="move-options-list-1"></div>
+                </div>
+                <input type="hidden" id="config-move-1-hidden" value="">
+              </div>
+              <div class="custom-select-wrapper" id="move-select-wrapper-2">
+                <div class="custom-select-trigger" id="move-select-trigger-2" data-index="2">
+                  <div id="move-select-display-2" class="item-select-display">
+                    <span data-i18n="select_move_2">-- Select Move 2 --</span>
+                  </div>
+                  <span class="custom-select-arrow">▼</span>
+                </div>
+                <div class="custom-select-dropdown hidden" id="move-select-dropdown-2">
+                  <div class="custom-select-search">
+                    <input type="text" id="move-search-input-2" data-i18n-placeholder="search_move" placeholder="Search move..." autocomplete="off">
+                  </div>
+                  <div class="custom-select-options" id="move-options-list-2"></div>
+                </div>
+                <input type="hidden" id="config-move-2-hidden" value="">
+              </div>
+              <div class="custom-select-wrapper" id="move-select-wrapper-3">
+                <div class="custom-select-trigger" id="move-select-trigger-3" data-index="3">
+                  <div id="move-select-display-3" class="item-select-display">
+                    <span data-i18n="select_move_3">-- Select Move 3 --</span>
+                  </div>
+                  <span class="custom-select-arrow">▼</span>
+                </div>
+                <div class="custom-select-dropdown hidden" id="move-select-dropdown-3">
+                  <div class="custom-select-search">
+                    <input type="text" id="move-search-input-3" data-i18n-placeholder="search_move" placeholder="Search move..." autocomplete="off">
+                  </div>
+                  <div class="custom-select-options" id="move-options-list-3"></div>
+                </div>
+                <input type="hidden" id="config-move-3-hidden" value="">
+              </div>
+              <div class="custom-select-wrapper" id="move-select-wrapper-4">
+                <div class="custom-select-trigger" id="move-select-trigger-4" data-index="4">
+                  <div id="move-select-display-4" class="item-select-display">
+                    <span data-i18n="select_move_4">-- Select Move 4 --</span>
+                  </div>
+                  <span class="custom-select-arrow">▼</span>
+                </div>
+                <div class="custom-select-dropdown hidden" id="move-select-dropdown-4">
+                  <div class="custom-select-search">
+                    <input type="text" id="move-search-input-4" data-i18n-placeholder="search_move" placeholder="Search move..." autocomplete="off">
+                  </div>
+                  <div class="custom-select-options" id="move-options-list-4"></div>
+                </div>
+                <input type="hidden" id="config-move-4-hidden" value="">
+              </div>
             </div>
           </div>
 
@@ -254,7 +337,7 @@ validPokemons.forEach(p => {
     const globalNaturesMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.natures || '{}'));
     const globalItemsMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.items || '{}'));
     const globalAbilitiesMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.abilities || '{}'));
-    const sortedItems = Object.values(globalItemsMap).sort((a: any, b: any) => a.name_en.localeCompare(b.name_en));
+    const validItems = Object.values(globalItemsMap).filter((itm: any) => itm.sprite || itm.effect_en);
 
     // Handle translations
     window.addEventListener('lang-changed', () => {
@@ -452,20 +535,26 @@ validPokemons.forEach(p => {
           }
           
           let abilityName = pokemon.ability;
+          let abilityDesc = '';
           if (pokemon.ability && globalAbilitiesMap[pokemon.ability]) {
             const abData = globalAbilitiesMap[pokemon.ability];
             abilityName = currentLang === 'fr' ? (abData.name_fr || abData.name_en) : abData.name_en;
+            abilityDesc = currentLang === 'fr' ? (abData.description_fr || abData.description_en) : abData.description_en;
           } else if (pokemon.ability) {
             abilityName = pokemon.ability.charAt(0).toUpperCase() + pokemon.ability.slice(1);
           }
-          const abilityStr = abilityName ? `<div class="config-badge ability-badge">${abilityName}</div>` : '';
+          const safeAbDesc = abilityDesc ? abilityDesc.replace(/"/g, '&quot;') : '';
+          const abilityStr = abilityName ? `<div class="config-badge ability-badge has-tooltip" data-tooltip="${safeAbDesc}">${abilityName}</div>` : '';
           
           const movesHtml = pokemon.moves ? pokemon.moves.filter(m => m).map(m => {
             let mName = String(m);
+            let mDesc = '';
             if (globalMovesNameMap[m]) {
               mName = currentLang === 'fr' ? globalMovesNameMap[m].fr : globalMovesNameMap[m].en;
+              mDesc = currentLang === 'fr' ? globalMovesNameMap[m].desc_fr : globalMovesNameMap[m].desc_en;
             }
-            return `<div class="config-badge move-badge">${mName.charAt(0).toUpperCase() + mName.slice(1)}</div>`;
+            const safeDesc = mDesc ? mDesc.replace(/"/g, '&quot;') : '';
+            return `<div class="config-badge move-badge has-tooltip" data-tooltip="${safeDesc}">${mName.charAt(0).toUpperCase() + mName.slice(1)}</div>`;
           }).join('') : '';
           
           let evsHtml = '';
@@ -571,6 +660,93 @@ validPokemons.forEach(p => {
     renderUI();
     window.addEventListener('team-data-updated', renderUI);
 
+    // --- Global Tooltip Logic ---
+    const globalTooltip = document.createElement('div');
+    globalTooltip.className = 'global-tooltip hidden';
+    document.body.appendChild(globalTooltip);
+
+    document.addEventListener('mouseover', (e) => {
+      const target = (e.target as HTMLElement).closest('.has-tooltip') as HTMLElement;
+      if (target && target.dataset.tooltip) {
+        globalTooltip.innerHTML = target.dataset.tooltip;
+        globalTooltip.classList.remove('hidden');
+      }
+    });
+    
+    document.addEventListener('mousemove', (e) => {
+      if (!globalTooltip.classList.contains('hidden')) {
+        const tooltipRect = globalTooltip.getBoundingClientRect();
+        let top = e.clientY + 15;
+        let left = e.clientX + 15;
+        if (left + tooltipRect.width > window.innerWidth) {
+            left = e.clientX - tooltipRect.width - 15;
+        }
+        if (top + tooltipRect.height > window.innerHeight) {
+            top = e.clientY - tooltipRect.height - 15;
+        }
+        globalTooltip.style.left = left + 'px';
+        globalTooltip.style.top = top + 'px';
+      }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      const target = (e.target as HTMLElement).closest('.has-tooltip');
+      if (target) {
+        globalTooltip.classList.add('hidden');
+      }
+    });
+
+    // --- Custom Select Dropdown Logic ---
+    document.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+      
+      // Close all ability dropdowns if clicking outside
+      const abilityWrapper = document.getElementById('ability-select-wrapper');
+      if (abilityWrapper && !abilityWrapper.contains(target)) {
+        document.getElementById('ability-select-dropdown')?.classList.add('hidden');
+      }
+      
+      // Close all item dropdowns if clicking outside
+      const itemWrapper = document.getElementById('item-select-wrapper');
+      if (itemWrapper && !itemWrapper.contains(target)) {
+        document.getElementById('item-select-dropdown')?.classList.add('hidden');
+      }
+      
+      // Close all move dropdowns if clicking outside
+      for (let i = 1; i <= 4; i++) {
+        const moveWrapper = document.getElementById(`move-select-wrapper-${i}`);
+        if (moveWrapper && !moveWrapper.contains(target)) {
+          document.getElementById(`move-select-dropdown-${i}`)?.classList.add('hidden');
+        }
+      }
+      
+      // Toggle ability dropdown
+      if (target.closest('#ability-select-trigger')) {
+         const dropdown = document.getElementById('ability-select-dropdown');
+         dropdown?.classList.toggle('hidden');
+      }
+      
+      // Toggle item dropdown
+      if (target.closest('#item-select-trigger')) {
+         const dropdown = document.getElementById('item-select-dropdown');
+         dropdown?.classList.toggle('hidden');
+         if (!dropdown?.classList.contains('hidden')) {
+            document.getElementById('item-search-input')?.focus();
+         }
+      }
+      
+      // Toggle move dropdowns
+      const moveTrigger = target.closest('.custom-select-trigger[id^="move-select-trigger-"]');
+      if (moveTrigger) {
+         const i = (moveTrigger as HTMLElement).dataset.index;
+         const dropdown = document.getElementById(`move-select-dropdown-${i}`);
+         dropdown?.classList.toggle('hidden');
+         if (!dropdown?.classList.contains('hidden')) {
+            document.getElementById(`move-search-input-${i}`)?.focus();
+         }
+      }
+    });
+
     // --- Configuration Modal Logic ---
     const configModal = document.getElementById('config-modal');
     const closeConfigBtn = document.getElementById('close-config-btn');
@@ -652,14 +828,14 @@ validPokemons.forEach(p => {
         const pForm = (document.getElementById('config-pokemon-form') as HTMLInputElement).value;
         const teamId = getActiveTeamId();
         
-        const ability = (document.getElementById('config-ability') as HTMLInputElement).value;
+        const ability = (document.getElementById('config-ability-hidden') as HTMLInputElement).value;
         const nature = (document.getElementById('config-nature') as HTMLInputElement).value;
-        const item = (document.getElementById('config-item') as HTMLInputElement).value;
+        const item = (document.getElementById('config-item-hidden') as HTMLInputElement).value;
         const moves = [
-          (document.getElementById('config-move-1') as HTMLInputElement).value,
-          (document.getElementById('config-move-2') as HTMLInputElement).value,
-          (document.getElementById('config-move-3') as HTMLInputElement).value,
-          (document.getElementById('config-move-4') as HTMLInputElement).value
+          (document.getElementById('config-move-1-hidden') as HTMLInputElement).value,
+          (document.getElementById('config-move-2-hidden') as HTMLInputElement).value,
+          (document.getElementById('config-move-3-hidden') as HTMLInputElement).value,
+          (document.getElementById('config-move-4-hidden') as HTMLInputElement).value
         ].filter(m => m !== '');
 
         updatePokemonConfig(pId, pForm, {
@@ -687,10 +863,10 @@ validPokemons.forEach(p => {
       (document.getElementById('config-pokemon-form') as HTMLInputElement).value = form;
       
       const currentLang = getLang();
-      document.getElementById('config-ability')!.innerHTML = `<option value="" data-i18n="select_ability">${t('select_ability')}</option>`;
-      document.getElementById('config-item')!.innerHTML = `<option value="" data-i18n="no_item">${t('no_item')}</option>`;
+      // document.getElementById('config-item') is removed since we use custom select
       for (let i = 1; i <= 4; i++) {
-        document.getElementById(`config-move-${i}`)!.innerHTML = `<option value="" data-i18n="select_move_${i}">${t('select_move_' + i)}</option>`;
+        document.getElementById(`move-select-display-${i}`)!.innerHTML = `<span data-i18n="select_move_${i}">${t('select_move_' + i)}</span>`;
+        (document.getElementById(`config-move-${i}-hidden`) as HTMLInputElement).value = '';
       }
       
       configModal!.classList.remove('hidden');
@@ -700,41 +876,148 @@ validPokemons.forEach(p => {
         if (!res.ok) throw new Error("Could not fetch data");
         const data = await res.json();
         
-        const abilitySelect = document.getElementById('config-ability') as HTMLSelectElement;
+        const abilityOptionsList = document.getElementById('ability-options-list')!;
         if (data.abilities && data.abilities.length > 0) {
-          data.abilities.forEach((ab: any) => {
-            const opt = document.createElement('option');
-            opt.value = ab.ability.name;
+          let abilityHtml = data.abilities.map((ab: any) => {
             const abData = globalAbilitiesMap[ab.ability.name];
             let abName = ab.ability.name;
+            let desc = '';
             if (abData) {
                abName = currentLang === 'fr' ? (abData.name_fr || abData.name_en) : abData.name_en;
+               desc = currentLang === 'fr' ? (abData.description_fr || abData.description_en) : abData.description_en;
             }
-            opt.textContent = abName.charAt(0).toUpperCase() + abName.slice(1);
-            abilitySelect.appendChild(opt);
+            const safeDesc = desc ? desc.replace(/"/g, '&quot;') : '';
+            const hiddenText = currentLang === 'fr' ? ' (Caché)' : ' (Hidden)';
+            const normalText = '';
+            const displayName = abName.charAt(0).toUpperCase() + abName.slice(1) + (ab.is_hidden ? hiddenText : normalText);
+            return `<div class="custom-option has-tooltip" data-value="${ab.ability.name}" data-name="${displayName.replace(/"/g, '&quot;')}" data-tooltip="${safeDesc}">
+                      <span>${displayName}</span>
+                    </div>`;
+          }).join('');
+          abilityOptionsList.innerHTML = abilityHtml;
+          
+          const abilityNodes = abilityOptionsList.querySelectorAll('.custom-option');
+          abilityNodes.forEach(opt => {
+            opt.addEventListener('click', (e) => {
+              const target = e.currentTarget as HTMLElement;
+              document.getElementById('config-ability-hidden')!.value = target.dataset.value || '';
+              document.getElementById('ability-select-display')!.innerHTML = `<span>${target.dataset.name}</span>`;
+              document.getElementById('ability-select-dropdown')!.classList.add('hidden');
+              
+              if (target.dataset.tooltip) {
+                 document.getElementById('ability-select-trigger')?.setAttribute('data-tooltip', target.dataset.tooltip);
+                 document.getElementById('ability-select-trigger')?.classList.add('has-tooltip');
+              } else {
+                 document.getElementById('ability-select-trigger')?.removeAttribute('data-tooltip');
+                 document.getElementById('ability-select-trigger')?.classList.remove('has-tooltip');
+              }
+            });
           });
         }
-        
         const pageContainer = document.getElementById('team-page-container');
         const movesNameMap = JSON.parse(decodeURIComponent(pageContainer?.dataset.moves || '{}'));
 
-        const uniqueMoveIds = [...new Set(data.moves)];
-        for (let i = 1; i <= 4; i++) {
-          const moveSelect = document.getElementById(`config-move-${i}`) as HTMLSelectElement;
-          uniqueMoveIds.forEach(mId => {
-            let mName = String(mId);
-            if (movesNameMap[mId]) {
-               mName = currentLang === 'fr' ? movesNameMap[mId].fr : movesNameMap[mId].en;
-            }
-            const opt = document.createElement('option');
-            opt.value = String(mId);
-            opt.textContent = mName.charAt(0).toUpperCase() + mName.slice(1);
-            moveSelect.appendChild(opt);
-          });
-        }
-        
         const activeTeam = getActiveTeam();
         const pokemon = activeTeam.members.find((p: any) => p.id === id && p.form === form);
+        
+        const uniqueMoveIds = [...new Set(data.moves)];
+        
+        // Group by type
+        const movesByType: { [key: string]: any[] } = {};
+        
+        uniqueMoveIds.forEach(mId => {
+           let mName = String(mId);
+           let mType = 'normal';
+           let mDesc = '';
+           if (movesNameMap[mId]) {
+              mName = currentLang === 'fr' ? movesNameMap[mId].fr : movesNameMap[mId].en;
+              mType = movesNameMap[mId].type || 'normal';
+              mDesc = currentLang === 'fr' ? movesNameMap[mId].desc_fr : movesNameMap[mId].desc_en;
+           }
+           if (!movesByType[mType]) movesByType[mType] = [];
+           movesByType[mType].push({ id: mId, name: mName, type: mType, desc: mDesc });
+        });
+        
+        // Sort types alphabetically, then moves alphabetically within types
+        const sortedTypes = Object.keys(movesByType).sort();
+        sortedTypes.forEach(t => {
+           movesByType[t].sort((a, b) => a.name.localeCompare(b.name));
+        });
+
+        // Generate HTML options
+        let movesHtml = '';
+        sortedTypes.forEach(type => {
+           const typeStr = t('type_' + type) || type.toUpperCase();
+           movesHtml += `<div class="custom-optgroup bg-${type}" style="background-color: var(--type-${type}, rgba(0,0,0,0.3)); color: white; display: flex; align-items: center; gap: 6px;"><span class="type-icon-dot" style="background-color: white; width: 8px; height: 8px; border-radius: 50%;"></span>${typeStr}</div>`;
+           movesByType[type].forEach(m => {
+              const safeDesc = m.desc ? m.desc.replace(/"/g, '&quot;') : '';
+              movesHtml += `
+                <div class="custom-option move-option has-tooltip" data-value="${m.id}" data-name="${m.name.replace(/"/g, '&quot;')}" data-type="${m.type}" data-tooltip="${safeDesc}">
+                   <span class="move-type-indicator bg-${m.type}" style="width: 12px; height: 12px; border-radius: 50%; display: inline-block; background-color: var(--type-${m.type}); margin-right: 8px; border: 1px solid rgba(255,255,255,0.3);"></span>
+                   <span>${m.name.charAt(0).toUpperCase() + m.name.slice(1)}</span>
+                </div>
+              `;
+           });
+        });
+
+        for (let i = 1; i <= 4; i++) {
+          const list = document.getElementById(`move-options-list-${i}`)!;
+          list.innerHTML = `<div class="custom-option move-option" data-value="" data-name="${t('select_move_' + i)}"><span style="margin-left:20px;">-- ${t('select_move_' + i)} --</span></div>` + movesHtml;
+          
+          const search = document.getElementById(`move-search-input-${i}`) as HTMLInputElement;
+          search.value = '';
+          
+          // Initial selection
+          const currentMove = pokemon?.moves?.[i-1];
+          if (currentMove) {
+             (document.getElementById(`config-move-${i}-hidden`) as HTMLInputElement).value = String(currentMove);
+             let mName = String(currentMove);
+             let mType = 'normal';
+             if (movesNameMap[currentMove]) {
+                mName = currentLang === 'fr' ? movesNameMap[currentMove].fr : movesNameMap[currentMove].en;
+                mType = movesNameMap[currentMove].type || 'normal';
+             }
+             document.getElementById(`move-select-display-${i}`)!.innerHTML = `<span class="move-type-indicator bg-${mType}" style="width: 12px; height: 12px; border-radius: 50%; display: inline-block; background-color: var(--type-${mType}); margin-right: 8px; border: 1px solid rgba(255,255,255,0.3);"></span><span>${mName.charAt(0).toUpperCase() + mName.slice(1)}</span>`;
+          }
+
+          // Attach listeners for options
+          const optionsNodes = list.querySelectorAll('.move-option');
+          optionsNodes.forEach(opt => {
+            opt.addEventListener('click', (e) => {
+               const target = e.currentTarget as HTMLElement;
+               (document.getElementById(`config-move-${i}-hidden`) as HTMLInputElement).value = target.dataset.value || '';
+               document.getElementById(`move-select-display-${i}`)!.innerHTML = target.innerHTML;
+               document.getElementById(`move-select-dropdown-${i}`)!.classList.add('hidden');
+            });
+          });
+
+          // Search filtering
+          search.addEventListener('input', (e) => {
+            const val = (e.target as HTMLInputElement).value.toLowerCase();
+            optionsNodes.forEach(opt => {
+              const name = (opt as HTMLElement).dataset.name || '';
+              if (name.toLowerCase().includes(val)) {
+                (opt as HTMLElement).style.display = 'flex';
+              } else {
+                (opt as HTMLElement).style.display = 'none';
+              }
+            });
+            // Hide empty optgroups
+            const groups = list.querySelectorAll('.custom-optgroup');
+            groups.forEach(group => {
+              let next = group.nextElementSibling;
+              let hasVisible = false;
+              while (next && next.classList.contains('move-option')) {
+                if ((next as HTMLElement).style.display !== 'none') {
+                  hasVisible = true;
+                  break;
+                }
+                next = next.nextElementSibling;
+              }
+              (group as HTMLElement).style.display = hasVisible ? 'flex' : 'none';
+            });
+          });
+        }
         
         const natureSelect = document.getElementById('config-nature') as HTMLSelectElement;
         natureSelect.innerHTML = '';
@@ -750,25 +1033,120 @@ validPokemons.forEach(p => {
           natureSelect.appendChild(opt);
         });
 
-        const itemSelect = document.getElementById('config-item') as HTMLSelectElement;
-        sortedItems.forEach((itm: any) => {
-          const opt = document.createElement('option');
-          opt.value = itm.id;
-          opt.textContent = currentLang === 'fr' ? (itm.name_fr || itm.name_en) : itm.name_en;
-          opt.dataset.desc = currentLang === 'fr' ? (itm.effect_fr || itm.effect_en || '') : (itm.effect_en || '');
-          itemSelect.appendChild(opt);
+        // --- Populate custom item select ---
+        const itemOptionsList = document.getElementById('item-options-list')!;
+        const itemSearchInput = document.getElementById('item-search-input') as HTMLInputElement;
+        const itemSelectDisplay = document.getElementById('item-select-display')!;
+        const itemHiddenInput = document.getElementById('config-item-hidden') as HTMLInputElement;
+        
+        itemOptionsList.innerHTML = '';
+        itemSearchInput.value = '';
+        
+        // Categorize items
+        const categories = {
+          megas: { title: currentLang === 'fr' ? 'Méga-Gemmes' : 'Mega Stones', items: [] as any[] },
+          berries: { title: currentLang === 'fr' ? 'Baies' : 'Berries', items: [] as any[] },
+          held: { title: currentLang === 'fr' ? 'Objets Tenus' : 'Held Items', items: [] as any[] }
+        };
+
+        validItems.forEach((itm: any) => {
+          const nameEn = (itm.name_en || '').toLowerCase();
+          itm.displayName = currentLang === 'fr' ? (itm.name_fr || itm.name_en) : itm.name_en;
+          itm.displayEffect = currentLang === 'fr' ? (itm.effect_fr || itm.effect_en || '') : (itm.effect_en || '');
+          
+          if (nameEn.includes('berry')) {
+            categories.berries.items.push(itm);
+          } else if ((nameEn.includes('ite') || nameEn.endsWith('ite') || nameEn.includes('ite x') || nameEn.includes('ite y')) && !nameEn.includes('eviolite') && !nameEn.includes('white') && !nameEn.includes('meteorite')) {
+            categories.megas.items.push(itm);
+          } else {
+            categories.held.items.push(itm);
+          }
         });
 
-        const updateItemTooltip = () => {
-          const selectedOption = itemSelect.options[itemSelect.selectedIndex];
-          const desc = selectedOption?.dataset.desc;
-          if (desc) {
-            itemSelect.setAttribute('data-tooltip', desc);
-          } else {
-            itemSelect.removeAttribute('data-tooltip');
-          }
-        };
-        itemSelect.addEventListener('change', updateItemTooltip);
+        // Sort items in each category
+        Object.values(categories).forEach(cat => {
+          cat.items.sort((a, b) => a.displayName.localeCompare(b.displayName));
+        });
+
+        // Generate HTML for options
+        let itemHtml = `<div class="custom-option" data-value="" data-name="${t('no_item')}">
+                          <span style="margin-left: 28px;">${t('no_item')}</span>
+                        </div>`;
+
+        Object.values(categories).forEach(cat => {
+          if (cat.items.length === 0) return;
+          itemHtml += `<div class="custom-optgroup">${cat.title}</div>`;
+          cat.items.forEach(itm => {
+             const effectSafe = itm.displayEffect ? itm.displayEffect.replace(/"/g, '&quot;') : '';
+             itemHtml += `
+               <div class="custom-option has-tooltip" data-value="${itm.id}" data-name="${itm.displayName.replace(/"/g, '&quot;')}" data-tooltip="${effectSafe}">
+                 <img src="${itm.sprite || ''}" class="custom-option-icon" alt="" onerror="this.style.display='none'" />
+                 <span>${itm.displayName}</span>
+               </div>
+             `;
+          });
+        });
+        itemOptionsList.innerHTML = itemHtml;
+
+        // Set initial selected item
+        const selectedItem = pokemon?.item;
+        itemHiddenInput.value = selectedItem || '';
+        if (selectedItem && globalItemsMap[selectedItem]) {
+          const itmData = globalItemsMap[selectedItem];
+          const iName = currentLang === 'fr' ? (itmData.name_fr || itmData.name_en) : itmData.name_en;
+          itemSelectDisplay.innerHTML = `<img src="${itmData.sprite}" class="custom-option-icon" style="margin-right:8px;" alt=""/><span>${iName}</span>`;
+          
+          const iEffect = currentLang === 'fr' ? (itmData.effect_fr || itmData.effect_en) : itmData.effect_en;
+          if (iEffect) document.getElementById('item-select-trigger')?.setAttribute('data-tooltip', iEffect);
+          else document.getElementById('item-select-trigger')?.removeAttribute('data-tooltip');
+        } else {
+          itemSelectDisplay.innerHTML = `<span>${t('no_item')}</span>`;
+          document.getElementById('item-select-trigger')?.removeAttribute('data-tooltip');
+        }
+
+        // Attach event listeners for custom select options
+        const optionsNodes = itemOptionsList.querySelectorAll('.custom-option');
+        optionsNodes.forEach(opt => {
+          opt.addEventListener('click', (e) => {
+            const target = e.currentTarget as HTMLElement;
+            itemHiddenInput.value = target.dataset.value || '';
+            itemSelectDisplay.innerHTML = target.innerHTML;
+            document.getElementById('item-select-dropdown')!.classList.add('hidden');
+            
+            if (target.dataset.tooltip) {
+               document.getElementById('item-select-trigger')?.setAttribute('data-tooltip', target.dataset.tooltip);
+            } else {
+               document.getElementById('item-select-trigger')?.removeAttribute('data-tooltip');
+            }
+          });
+        });
+
+        // Search filtering
+        itemSearchInput.addEventListener('input', (e) => {
+          const val = (e.target as HTMLInputElement).value.toLowerCase();
+          optionsNodes.forEach(opt => {
+            const name = (opt as HTMLElement).dataset.name || '';
+            if (name.toLowerCase().includes(val)) {
+              (opt as HTMLElement).style.display = 'flex';
+            } else {
+              (opt as HTMLElement).style.display = 'none';
+            }
+          });
+          // Hide empty optgroups
+          const groups = itemOptionsList.querySelectorAll('.custom-optgroup');
+          groups.forEach(group => {
+            let next = group.nextElementSibling;
+            let hasVisible = false;
+            while (next && next.classList.contains('custom-option')) {
+              if ((next as HTMLElement).style.display !== 'none') {
+                hasVisible = true;
+                break;
+              }
+              next = next.nextElementSibling;
+            }
+            (group as HTMLElement).style.display = hasVisible ? 'block' : 'none';
+          });
+        });
         
         const updateNatureTooltip = () => {
           const opt = natureSelect.options[natureSelect.selectedIndex];
@@ -833,7 +1211,32 @@ validPokemons.forEach(p => {
           updateNatureTooltip();
           updateItemTooltip();
           
-          if (pokemon.ability) abilitySelect.value = pokemon.ability;
+          if (pokemon.ability) {
+             const abHiddenInput = document.getElementById('config-ability-hidden') as HTMLInputElement;
+             abHiddenInput.value = pokemon.ability;
+             const abOpt = document.querySelector(`#ability-options-list .custom-option[data-value="${pokemon.ability}"]`) as HTMLElement;
+             if (abOpt) {
+                document.getElementById('ability-select-display')!.innerHTML = `<span>${abOpt.dataset.name}</span>`;
+                if (abOpt.dataset.tooltip) {
+                    document.getElementById('ability-select-trigger')?.setAttribute('data-tooltip', abOpt.dataset.tooltip);
+                    document.getElementById('ability-select-trigger')?.classList.add('has-tooltip');
+                } else {
+                    document.getElementById('ability-select-trigger')?.removeAttribute('data-tooltip');
+                    document.getElementById('ability-select-trigger')?.classList.remove('has-tooltip');
+                }
+             }
+          } else {
+             // Fallback to first ability if none is set
+             const firstAbOpt = document.querySelector('#ability-options-list .custom-option') as HTMLElement;
+             if (firstAbOpt) {
+                (document.getElementById('config-ability-hidden') as HTMLInputElement).value = firstAbOpt.dataset.value || '';
+                document.getElementById('ability-select-display')!.innerHTML = `<span>${firstAbOpt.dataset.name}</span>`;
+                if (firstAbOpt.dataset.tooltip) {
+                    document.getElementById('ability-select-trigger')?.setAttribute('data-tooltip', firstAbOpt.dataset.tooltip);
+                    document.getElementById('ability-select-trigger')?.classList.add('has-tooltip');
+                }
+             }
+          }
           if (pokemon.moves) {
             pokemon.moves.forEach((m: string, idx: number) => {
               if (m && idx < 4) (document.getElementById(`config-move-${idx+1}`) as HTMLInputElement).value = m;
@@ -1011,6 +1414,117 @@ validPokemons.forEach(p => {
 </Layout>
 
 <style is:global>
+  /* Custom Select Component styles */
+  .custom-select-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+  
+  .custom-select-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  
+  .custom-select-trigger:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .item-select-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .custom-select-arrow {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .custom-select-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1a1a24;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    margin-top: 4px;
+    z-index: 100;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    overflow: hidden;
+  }
+  
+  .custom-select-search {
+    padding: 0.5rem;
+    background: rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .custom-select-search input {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+  }
+  
+  .custom-select-search input:focus {
+    border-color: var(--primary-color, #ff5350);
+  }
+  
+  .custom-select-options {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .custom-option {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: white;
+    transition: background 0.1s;
+  }
+  
+  .custom-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .custom-option-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    image-rendering: pixelated;
+  }
+  
+  .custom-optgroup {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--text-muted, #aaa);
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 2px;
+  }
+
   .team-page {
     max-width: 1200px;
     margin: 0 auto;
@@ -1843,23 +2357,21 @@ validPokemons.forEach(p => {
     cursor: help;
   }
 
-  .has-tooltip:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.9);
+  .global-tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.95);
     color: white;
     padding: 0.8rem;
     border-radius: 8px;
     font-size: 0.85rem;
     width: max-content;
     max-width: 300px;
-    white-space: normal;
-    z-index: 1000;
-    margin-bottom: 8px;
+    z-index: 999999;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    pointer-events: none;
+  }
+  .global-tooltip.hidden {
+    display: none;
   }
 </style>

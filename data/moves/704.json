@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user sets a shell trap. If the user is hit by a physical move, the trap will explode and inflict damage on the opposing Pokémon.",
-    "description_fr": "Pose une carapace piégée. Si l’adversaire utilise une capacité physique, la carapace explose et lui inflige des dégâts.",
+    "description_en": "Only inflicts damage if the user was hit by a physical move this turn.",
+    "description_fr": "Inflige des dégâts seulement si le lanceur a été touché par une capacité physique ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

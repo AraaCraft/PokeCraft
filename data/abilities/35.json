@@ -3,6 +3,6 @@
     "name": "illuminate",
     "name_fr": "Lumiattirance",
     "name_en": "Illuminate",
-    "description_fr": "Augmente les rencontres.",
-    "description_en": "Encounter rate increases."
+    "description_fr": "Monde extérieur: Si le Pokémon de tête a ce talent, le taux de rencontre sauvage est doublé.  Ce talent n'a pas d'effet au combat.",
+    "description_en": "Overworld: If the lead Pokémon has this ability, the wild encounter rate is doubled.  This ability has no effect in battle."
 }

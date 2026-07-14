@@ -3,6 +3,6 @@
     "name": "guts",
     "name_fr": "Cran",
     "name_en": "Guts",
-    "description_fr": "Augmente ATT. quand blessé.",
-    "description_en": "Ups ATTACK if suffering."
+    "description_fr": "Quand ce Pokémon est endormi, brûlé, paralysé, ou empoisonné, il a 1.5× son Attaque.  Ce Pokémon n'est pas affecté par les baisses d'Attaque habituelles de la brûlure.  Ce bonus ne compte pas comme une modification de stat.",
+    "description_en": "Whenever this Pokémon is asleep, burned, paralyzed, or poisoned, it has 1.5× its Attack.  This Pokémon is not affected by the usual Attack cut from a burn.  This bonus does not count as a stat modifier."
 }

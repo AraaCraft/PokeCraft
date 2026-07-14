@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user attacks by shooting scales two to five times in a row. This move boosts the user’s Speed stat but lowers its Defense stat.",
-    "description_fr": "Le lanceur projette des écailles sur la cible de deux à cinq fois d’affilée. Augmente la Vitesse, mais diminue la Défense.",
+    "description_en": "Boosts the user’s Speed and lowers their Defense by one stage after inflicting damage two to five times in a row.",
+    "description_fr": "Booste la Vitesse du lanceur et diminue ses Défenses d'un niveau après avoir infligé des dégâts deux à cinq fois de suite.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

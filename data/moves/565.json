@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "When the user knocks out a target with this move, the user’s Attack stat rises sharply.",
-    "description_fr": "Augmente fortement l’Attaque du lanceur si un ennemi est mis K.O. avec cette capacité.",
+    "description_en": "Raises the user’s Attack by two stages if it KOs the target.",
+    "description_fr": "Augmente l'Attaque du lanceur de deux niveaux s'il met KO la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

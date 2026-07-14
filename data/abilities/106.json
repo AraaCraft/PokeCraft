@@ -3,6 +3,6 @@
     "name": "aftermath",
     "name_fr": "Boom Final",
     "name_en": "Aftermath",
-    "description_fr": "Blesse l'ennemi qui porte le coup de grâce.",
-    "description_en": "Damages the foe landing the finishing hit."
+    "description_fr": "Quand ce Pokémon est mis KO par une capacité qui réalise un contact, le lanceur de la capacité subit 1/4 de ses PV maximum en dégâts.",
+    "description_en": "When this Pokémon is knocked out by a move that makes contact, the move's user takes 1/4 its maximum HP in damage."
 }

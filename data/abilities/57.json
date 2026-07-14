@@ -3,6 +3,6 @@
     "name": "plus",
     "name_fr": "Plus",
     "name_en": "Plus",
-    "description_fr": "Puissance + avec MINUS.",
-    "description_en": "Powers up with MINUS."
+    "description_fr": "Ce Pokémon a 1.5× son Attaque Spéciale si n'importe quel Pokémon allié a Plus ou Moins.  Ce bonus ne compte pas comme une modification de stat.  Si l'un des talents est désactivé par Suc Digestif, les deux perdent leur effet.",
+    "description_en": "This Pokémon has 1.5× its Special Attack if any friendly Pokémon has Plus or Minus.  This bonus does not count as a stat modifier.  If either ability is disabled by Gastro Acid, both lose their effect."
 }

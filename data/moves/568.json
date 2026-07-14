@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Letting out a noble roar, the user intimidates the target and lowers its Attack and Sp. Atk stats.",
-    "description_fr": "Le lanceur pousse un rugissement qui intimide l’ennemi et diminue son Attaque et son Attaque Spéciale.",
+    "description_en": "Lowers the target’s Attack and Special Attack by one stage.",
+    "description_fr": "Diminue l'Attaque et Attaque Spéciale de la cible d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

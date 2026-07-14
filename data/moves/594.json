@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user hits the target with throwing stars two to five times in a row. This move always goes first.",
-    "description_fr": "Attaque l’ennemi avec des shuriken de mucus. Frappe deux à cinq fois d’affilée en un tour, et toujours en premier.",
+    "description_en": "Hits 2–5 times.",
+    "description_fr": "Touche 2-5 fois.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

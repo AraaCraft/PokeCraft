@@ -3,6 +3,6 @@
     "name": "gluttony",
     "name_fr": "Gloutonnerie",
     "name_en": "Gluttony",
-    "description_fr": "Encourage l'utilisation d'une Baie tenue.",
-    "description_en": "Encourages the early use of a held Berry."
+    "description_fr": "Ce Pokémon mange n'importe quelle Baie déclenchée par des PV bas quand il tombe sous 50% de ses PV, peu importe le seuil habituel de la Baie.",
+    "description_en": "This Pokémon eats any held Berry triggered by low HP when it falls below 50% of its HP, regardless of the Berry's usual threshold."
 }

@@ -3,6 +3,6 @@
     "name": "libero",
     "name_fr": "Libéro",
     "name_en": "Libero",
-    "description_fr": "Le Pokémon prend le type de la capacité qu’il utilise.",
-    "description_en": "Changes the Pokémon’s type to the type of the move it’s about to use."
+    "description_fr": "Change le type du Pokémon en le type de la capacité qu'il est sur le point d'utiliser.  Cela fonctionne seulement une fois à chaque fois que le Pokémon entre au combat.",
+    "description_en": "Changes the Pokémon’s type to the type of the move it’s about to use. This works only once each time the Pokémon enters battle."
 }

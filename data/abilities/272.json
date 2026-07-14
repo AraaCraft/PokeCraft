@@ -3,6 +3,6 @@
     "name": "purifying-salt",
     "name_fr": "Sel Purificateur",
     "name_en": "Purifying Salt",
-    "description_fr": "Le sel pur immunise le Pokémon contre les altérations\\nde statut, et diminue de moitié les dégâts des capacités\\nde type Spectre.",
-    "description_en": "The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves."
+    "description_fr": "Le sel pur du Pokémon le protège des conditions de statut et divise par deux les dégâts subis par les capacités de type Spectre.",
+    "description_en": "The Pokémon’s pure salt protects it from status conditions and halves the damage taken from Ghost-type moves."
 }

@@ -3,6 +3,6 @@
     "name": "toxic-boost",
     "name_fr": "Rage Poison",
     "name_en": "Toxic Boost",
-    "description_fr": "Booste les att. physiques si le statut est poison.",
-    "description_en": "Powers up physical attacks when poisoned."
+    "description_fr": "Ce Pokémon a 1.5× son Attaque quand empoisonné.",
+    "description_en": "This Pokémon has 1.5× its Attack when poisoned."
 }

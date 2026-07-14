@@ -3,6 +3,6 @@
     "name": "chlorophyll",
     "name_fr": "Chlorophylle",
     "name_en": "Chlorophyll",
-    "description_fr": "Augmente vitesse au soleil.",
-    "description_en": "Raises SPEED in sunshine."
+    "description_fr": "La Vitesse de ce Pokémon est doublée sous soleil intense.  Ce bonus ne compte pas comme une modification de stat.",
+    "description_en": "This Pokémon's Speed is doubled during strong sunlight.  This bonus does not count as a stat modifier."
 }

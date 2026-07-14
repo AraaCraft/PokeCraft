@@ -3,6 +3,6 @@
     "name": "rattled",
     "name_fr": "Phobique",
     "name_en": "Rattled",
-    "description_fr": "Sa peur de certains types augmente sa Vitesse.",
-    "description_en": "Some move types scare it and boost its Speed."
+    "description_fr": "La Vitesse de ce Pokémon augmente d'un niveau avec chaque frappe d'une capacité offensive de type Ténèbres, Spectre, ou Insecte.",
+    "description_en": "This Pokémon's Speed rises one stage with each hit from a damaging Dark-, Ghost-, or Bug-type move."
 }

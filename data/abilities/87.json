@@ -3,6 +3,6 @@
     "name": "dry-skin",
     "name_fr": "Peau Sèche",
     "name_en": "Dry Skin",
-    "description_fr": "Perd des PV à la chaleur. L'eau les restaure.",
-    "description_en": "Reduces HP if it is hot. Water restores HP."
+    "description_fr": "Ce Pokémon subit 1/8 de ses PV maximum en dégâts après chaque tour sous soleil intense, mais il se soigne d'1/8 de ses PV à chaque tour sous pluie.  Ce Pokémon subit 1.25× dégâts des capacités de type Feu, mais quand une capacité Eau le frappe, il se soigne d'1/4 de ses PV maximum à la place.",
+    "description_en": "This Pokémon takes 1/8 of its maximum HP in damage after each turn during strong sunlight, but it heals for 1/8 of its HP each turn during rain.  This Pokémon takes 1.25× as much damage from Fire-type moves, but whenever a Water move hits it, it heals for 1/4 its maximum HP instead."
 }

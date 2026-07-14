@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "An attack that may inflict a burn.",
-    "description_fr": "Un feu mystique d’une intensité redoutable attaque l’ennemi. Peut aussi le brûler.",
+    "description_en": "Has a chance to burn the target.  Lets frozen Pokémon thaw themselves.",
+    "description_fr": "A une chance de brûler la cible.  Laisse les Pokémon gelés se dégeler.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

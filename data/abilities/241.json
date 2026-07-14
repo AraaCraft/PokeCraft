@@ -3,6 +3,6 @@
     "name": "gulp-missile",
     "name_fr": "Dégobage",
     "name_en": "Gulp Missile",
-    "description_fr": "Quand le Pokémon utilise Surf ou Plongée, il revient avec une proie. Lorsqu’il subit des dégâts par la suite, il attaque en recrachant sa proie.",
+    "description_fr": "Quand le Pokémon utilise Surf ou Plongée, il reviendra avec une proie. Quand il subit des dégâts, il recrachera la proie pour attaquer.",
     "description_en": "When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack."
 }

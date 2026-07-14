@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user faints. In return, the Pokémon taking its place will have its HP restored and status cured.",
-    "description_fr": "Le lanceur tombe K.O. pour soigner les PV et le statut du Pokémon qui passe après lui.",
+    "description_en": "User faints.  Its replacement has its HP fully restored and any major status effect removed.",
+    "description_fr": "Le lanceur est mis KO.  Son remplaçant a ses PV complètement restaurés et ses altérations majeures de statut sont supprimées.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

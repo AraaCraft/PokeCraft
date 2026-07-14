@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Steals HP from a sleeping victim.",
-    "description_fr": "Le lanceur mange le rêve de l’ennemi endormi. Le lanceur récupère en PV la moitié des dégâts infligés.",
+    "description_en": "Only works on sleeping Pokémon.  Drains half the damage inflicted to heal the user.",
+    "description_fr": "Ne fonctionne que sur les Pokémon endormis.  Draine la moitié des dégâts infligés pour soigner le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

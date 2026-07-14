@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The move’s type and power change with the weather.",
-    "description_fr": "Une attaque dont la puissance et le type varient en fonction du temps qu’il fait.",
+    "description_en": "If there be weather, this move has doubled power and the weather’s type.",
+    "description_fr": "S'il y a une météo, cette capacité a une puissance doublée et prend le type de la météo.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

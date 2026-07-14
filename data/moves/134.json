@@ -1,8 +1,8 @@
 {
     "accuracy": 80,
     "damage_class": "status",
-    "description_en": "Reduces the foe's accuracy.",
-    "description_fr": "Le lanceur distrait l’ennemi en pliant une cuiller, ce qui baisse sa Précision.",
+    "description_en": "Lowers the target’s accuracy by one stage.",
+    "description_fr": "Diminue la précision de la cible d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

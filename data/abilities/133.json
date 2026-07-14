@@ -3,6 +3,6 @@
     "name": "weak-armor",
     "name_fr": "Armurouillée",
     "name_en": "Weak Armor",
-    "description_fr": "Un coup physique baisse la Défense, monte la Vitesse.",
-    "description_en": "Physical attacks lower Defense and raise Speed."
+    "description_fr": "Quand une capacité physique frappe ce Pokémon, sa Vitesse augmente d’un niveau et sa Défense chute d’un niveau.  Ce talent se déclenche à chaque coup d’une capacité multicoups.",
+    "description_en": "Whenever a physical move hits this Pokémon, its Speed rises one stage and its Defense falls one stage.  This ability triggers on every hit of a multiple-hit move."
 }

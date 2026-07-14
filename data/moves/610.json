@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user holds back when it attacks and the target is left with at least 1 HP.",
-    "description_fr": "Le lanceur attaque avec retenue, et laisse l’ennemi à 1 PV.",
+    "description_en": "Cannot lower the target’s HP below 1.",
+    "description_fr": "Ne peut pas baisser les PV de la cible en dessous de 1.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

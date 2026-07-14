@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "special",
-    "description_en": "This attack inflicts Attack or Sp. Atk damage— whichever stat is higher for the user, Necrozma.  This move ignores the target’s Ability.",
-    "description_fr": "Compare l’Attaque et l’Attaque Spéciale, et utilise celle qui infligera le plus de dégâts. Ignore le talent de la cible.",
+    "description_en": "Inflicts damage using either Attack or Special Attack stat, whichever is higher.",
+    "description_fr": "Inflige des dégâts en utilisant soit la stat d'Attaque ou Attaque Spéciale, celle qui est la plus élevée.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

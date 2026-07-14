@@ -3,6 +3,6 @@
     "name": "poison-touch",
     "name_fr": "Toxitouche",
     "name_en": "Poison Touch",
-    "description_fr": "Peut empoisonner l’ennemi par simple contact.",
-    "description_en": "May poison targets when a Pokémon makes contact."
+    "description_fr": "Les capacités à contact de ce Pokémon ont 30% de chances d’empoisonner la cible avec chaque frappe.  Ceci compte comme un effet additionnel aux fins de Écran Poudre.  Ce talent s’active avant Momie.",
+    "description_en": "This Pokémon's contact moves have a 30% chance of poisoning the target with each hit.  This counts as an extra effect for the purposes of Shield Dust.  This ability takes effect before Mummy."
 }

@@ -3,6 +3,6 @@
     "name": "sweet-veil",
     "name_fr": "Gluco-Voile",
     "name_en": "Sweet Veil",
-    "description_fr": "Les Pokémon de l’équipe ne peuvent pas s’endormir.",
-    "description_en": "Prevents itself and ally Pokémon from falling asleep."
+    "description_fr": "Les Pokémon alliés ne peuvent pas s'endormir pendant le combat.",
+    "description_en": "Prevents friendly Pokémon from sleeping."
 }

@@ -3,6 +3,6 @@
     "name": "mummy",
     "name_fr": "Momie",
     "name_en": "Mummy",
-    "description_fr": "Momifie la cap. spé. de l’ennemi qui le touche.",
-    "description_en": "Contact with this Pokémon spreads this Ability."
+    "description_fr": "Quand une capacité de contact touche ce Pokémon, le talent du Pokémon attaquant change en Momie.  Multi-Type n’est pas affecté.  Si un Pokémon avec Impudence met ce Pokémon KO, le talent du premier changera sans prendre effet.",
+    "description_en": "Whenever a contact move hits this Pokémon, the attacking Pokémon's ability changes to Mummy.  Multitype is unaffected.  If a Pokémon with Moxie knocks this Pokémon out, the former's ability will change without taking effect."
 }

@@ -3,6 +3,6 @@
     "name": "gale-wings",
     "name_fr": "Ailes Bourrasque",
     "name_en": "Gale Wings",
-    "description_fr": "Les attaques de type Vol sont prioritaires.",
-    "description_en": "Gives priority to Flying-type moves."
+    "description_fr": "Les capacités de type Vol de ce Pokémon voient leur priorité augmentée de 1.",
+    "description_en": "Raises Flying moves' priority by one stage."
 }

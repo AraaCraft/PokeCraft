@@ -3,6 +3,6 @@
     "name": "shadow-tag",
     "name_fr": "Marque Ombre",
     "name_en": "Shadow Tag",
-    "description_fr": "Empêche le Pokémon ennemi de quitter le combat.",
-    "description_en": "Prevents the foe’s escape."
+    "description_fr": "Tant que ce Pokémon est au combat, les Pokémon adverses ne peuvent pas fuir ou se retirer.  Les autres Pokémon avec ce talent ne sont pas affectés.  Les Pokémon avec Fuite peuvent toujours fuir.  Les Pokémon peuvent toujours se retirer avec l'utilisation d'une capacité ou d'un objet.",
+    "description_en": "While this Pokémon is in battle, opposing Pokémon cannot flee or switch out.  Other Pokémon with this ability are unaffected.  Pokémon with Run Away can still flee.  Pokémon can still switch out with the use of a move or item."
 }

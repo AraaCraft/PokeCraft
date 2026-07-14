@@ -3,6 +3,6 @@
     "name": "damp",
     "name_fr": "Moiteur",
     "name_en": "Damp",
-    "description_fr": "Empêche auto-destruction.",
-    "description_en": "Prevents self-destruction."
+    "description_fr": "Quand ce Pokémon est au combat, Destruction et Explosion échouent et Boom Final ne s’activera pas.",
+    "description_en": "While this Pokémon is in battle, Self-Destruct and Explosion will fail and Aftermath will not take effect."
 }

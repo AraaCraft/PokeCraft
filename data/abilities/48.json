@@ -3,6 +3,6 @@
     "name": "early-bird",
     "name_fr": "Matinal",
     "name_en": "Early Bird",
-    "description_fr": "Se réveille rapidement.",
-    "description_en": "Awakens quickly from sleep."
+    "description_fr": "Le compteur de tours restants en sommeil de ce Pokémon chute de 2 plutôt qu'1.  Si le compteur de sommeir de ce Pokémon est à 1, il tombera à 0 et le Pokémon se réveillera.",
+    "description_en": "This Pokémon's remaining sleep turn count falls by 2 rather than 1.  If this Pokémon's sleep counter is at 1, it will fall to 0 and then the Pokémon will wake up."
 }

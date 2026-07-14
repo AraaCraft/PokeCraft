@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user employs its psychic power to switch changes to its Defense and Sp. Def with the foe.",
-    "description_fr": "Pouvoir qui échange les modifications de la Défense Spéciale et de la Défense avec la cible.",
+    "description_en": "User swaps Defense and Special Defense changes with the target.",
+    "description_fr": "Le lanceur échange ses changements de Défense et Défense Spéciale avec la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

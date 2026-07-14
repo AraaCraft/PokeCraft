@@ -3,6 +3,6 @@
     "name": "trace",
     "name_fr": "Calque",
     "name_en": "Trace",
-    "description_fr": "Imite la capacité spéciale.",
-    "description_en": "Copies special ability."
+    "description_fr": "Quand ce Pokémon entre au combat, il copie un talent adverse aléatoire.  Ce talent ne peut pas copier Don Floral, Météo, Illusion, Imposteur, Multi-Type, Calque, Garde Mystik, ou Mode Transe.",
+    "description_en": "When this Pokémon enters battle, it copies a random opponent's ability.  This ability cannot copy Flower Gift, Forecast, Illusion, Imposter, Multitype, Trace, Wonder Guard, or Zen Mode."
 }

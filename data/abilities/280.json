@@ -3,6 +3,6 @@
     "name": "electromorphosis",
     "name_fr": "Grecharge",
     "name_en": "Electromorphosis",
-    "description_fr": "Si le Pokémon subit des dégâts, il se charge\\nen électricité.",
+    "description_fr": "Le Pokémon se charge quand il subit des dégâts, boostant la puissance de la prochaine capacité de type Électrik que le Pokémon utilise.",
     "description_en": "The Pokémon becomes charged when it takes damage, boosting the power of the next Electric-type move the Pokémon uses."
 }

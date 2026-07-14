@@ -3,6 +3,6 @@
     "name": "desolate-land",
     "name_fr": "Terre Finale",
     "name_en": "Desolate Land",
-    "description_fr": "Altère les conditions météo et rend inefficaces les attaques Eau.",
-    "description_en": "Affects weather and nullifies any Water-type attacks."
+    "description_fr": "Quand ce Pokémon entre au combat ou gagne ce talent, la météo devient un soleil extrêmement intense.  Le soleil extrêmement intense a les mêmes propriétés que Zénith et fait aussi échouer les capacités offensives Eau.  Le soleil extrêmement intense prend fin quand ce Pokémon quitte le combat ou perd son talent, ou quand ce talent est annulé.  La météo ne peut pas être changée autrement sauf par les effets de Souffle Delta et Mer Primaire.  Air Lock et Ciel Gris empêcheront les effets du soleil extrêmement intense, incluant l’autorisation aux capacités Eau de fonctionner, mais ne permettront pas à la météo d’être changée.",
+    "description_en": "When this Pokémon enters battle or gains this ability, the weather becomes extremely harsh sunlight.  Extremely harsh sunlight has all the properties of Sunny Day and also causes damaging Water moves to fail.  Extremely harsh sunlight ends when this Pokémon leaves battle or loses this ability, or when this ability is nullified.  The weather cannot otherwise be changed except by the effects of Delta Stream and Primordial Sea.  Air Lock and Cloud Nine will prevent the effects of extremely harsh sunlight, including allowing Water moves to work, but will not allow the weather to be changed."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user shines a spotlight on the target so that only the target will be attacked during the turn.",
-    "description_fr": "Met un Pokémon sous le feu des projecteurs et force tout le monde à le viser.",
+    "description_en": "Forces the target’s opponents to aim at the target for the rest of the turn.",
+    "description_fr": "Force les adversaires de la cible à la cibler pour le reste du tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "schooling",
     "name_fr": "Banc",
     "name_en": "Schooling",
-    "description_fr": "Le Pokémon se rassemble avec ses congénères quand ses PV sont élevés. Plus ses PV baissent, plus le banc s’amenuise.",
-    "description_en": "When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low."
+    "description_fr": "Si ce Pokémon est un Froussardine et niveau 20 ou plus, alors quand il entre au combat et au début de chaque tour, il prend la Forme Banc si ses PV sont à 25% ou plus et Forme Solitaire sinon.  Ce talent ne peut pas être remplacé, copié, ou annulé.",
+    "description_en": "If this Pokémon is a Wishiwashi and level 20 or above, then when it enters battle and at the start of each turn, it becomes Schooling Form if its HP is 25% or higher and Solo Form otherwise.  This ability cannot be replaced, copied, or nullified."
 }

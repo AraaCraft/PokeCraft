@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "Stops the foe from moving with rocks and cuts SPEED.",
-    "description_fr": "Des rochers frappent l’ennemi. Réduit aussi sa Vitesse en l’empêchant de se déplacer.",
+    "description_en": "Has a chance to lower the target’s Speed by one stage.",
+    "description_fr": "A une chance de diminuer la Vitesse de la cible d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

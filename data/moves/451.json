@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "special",
-    "description_en": "The user fires a concentrated bundle of electricity. It may also raise the user’s Sp. Atk stat.",
-    "description_fr": "Le lanceur tire un rayon chargé d’électricité. Peut aussi augmenter son Attaque Spéciale.",
+    "description_en": "Has a chance to raise the user’s Special Attack by one stage.",
+    "description_fr": "A une chance d'augmenter l'Attaque Spéciale du lanceur d'un niveau.",
     "effect_chance": 70,
     "effect_changes": [],
     "effect_entries": null,

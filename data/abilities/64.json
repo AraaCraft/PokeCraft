@@ -3,6 +3,6 @@
     "name": "liquid-ooze",
     "name_fr": "Suintement",
     "name_en": "Liquid Ooze",
-    "description_fr": "Blesse quand drainé.",
-    "description_en": "Draining causes injury."
+    "description_fr": "Quand un Pokémon devrait se soigner après avoir frappé ce Pokémon avec une capacité de drainage comme Vole-Vie, il perdrait autant de PV qu'il devrait gagner à la place.  Dévorêve n'est pas affecté.",
+    "description_en": "Whenever a Pokémon would heal after hitting this Pokémon with a leeching move like Absorb, it instead loses as many HP as it would usually gain.  Dream Eater is unaffected."
 }

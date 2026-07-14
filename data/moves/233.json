@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "physical",
-    "description_en": "A 2nd-strike move that never misses.",
-    "description_fr": "Le lanceur porte son coup en dernier. En échange, cette capacité n’échoue jamais.",
+    "description_en": "Never misses.",
+    "description_fr": "N'échoue jamais.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

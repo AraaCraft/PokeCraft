@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Recycles a used item for one more use.",
-    "description_fr": "Recycle un objet tenu à usage unique déjà utilisé lors du combat pour pouvoir l’utiliser à nouveau.",
+    "description_en": "User recovers the item it last used up.",
+    "description_fr": "Le lanceur récupère le dernier objet qu'il a utilisé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Always leaves at least 1HP.",
-    "description_fr": "Le lanceur résiste aux attaques avec 1 PV. Peut échouer si utilisée plusieurs fois de suite.",
+    "description_en": "Prevents the user’s HP from lowering below 1 this turn.",
+    "description_fr": "Empêche les PV du lanceur de descendre sous 1 ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

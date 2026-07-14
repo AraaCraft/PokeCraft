@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user throws down a giant thunderbolt. This attack does greater damage when influenced by an enormous flame.",
-    "description_fr": "Projette un orbe électrique gigantesque. L’effet augmente sous l’influence de Flamme Croix.",
+    "description_en": "With Fusion Flare, inflicts double damage.",
+    "description_fr": "Avec Flamme Croix, inflige le double de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

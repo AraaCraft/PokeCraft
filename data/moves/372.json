@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "If the foe has already taken some damage in the same turn, this attack’s power is doubled.",
-    "description_fr": "Cette attaque est deux fois plus efficace si l’ennemi a déjà été blessé durant ce tour.",
+    "description_en": "Power is doubled if the target has already received damage this turn.",
+    "description_fr": "La puissance est doublée si la cible a déjà reçu des dégâts ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

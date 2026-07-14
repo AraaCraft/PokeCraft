@@ -3,6 +3,6 @@
     "name": "sap-sipper",
     "name_fr": "Herbivore",
     "name_en": "Sap Sipper",
-    "description_fr": "Augmente l’Attaque après une attaque Plante.",
-    "description_en": "Boosts Attack when hit by a Grass-type move."
+    "description_fr": "Quand une capacité de type Plante frappe ce Pokémon, son Attaque augmente d'un niveau, annulant n'importe quel autre effet sur lui.",
+    "description_en": "Whenever a Grass-type move hits this Pokémon, its Attack rises one stage, negating any other effect on it."
 }

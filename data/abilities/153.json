@@ -3,6 +3,6 @@
     "name": "moxie",
     "name_fr": "Impudence",
     "name_en": "Moxie",
-    "description_fr": "Monte l’Attaque quand il met un ennemi K.O.",
-    "description_en": "Boosts Attack after knocking out any Pokémon."
+    "description_fr": "L’Attaque de ce Pokémon augmente d’un niveau en mettant KO un autre Pokémon, même un Pokémon allié.  Ce talent ne s’active pas quand le Pokémon met KO un autre Pokémon indirectement, e.g. via le poison ou Picots.  Si ce Pokémon met KO un Pokémon avec Momie, le talent du premier changera sans prendre effet.",
+    "description_en": "This Pokémon's Attack rises one stage upon knocking out another Pokémon, even a friendly Pokémon.  This ability does not take effect when the Pokémon indirectly causes another Pokémon to faint, e.g. through poison or Spikes.  If this Pokémon knocks out a Pokémon with Mummy, the former's ability will change without taking effect."
 }

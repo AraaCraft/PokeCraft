@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Knocks down the foe’s held item to prevent its use.",
-    "description_fr": "Le lanceur fait tomber l’objet tenu par l’ennemi pour le rendre inutilisable durant le combat.",
+    "description_en": "Target drops its held item.",
+    "description_fr": "La cible laisse tomber son objet tenu.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

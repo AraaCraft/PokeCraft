@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Switches while keeping effects.",
-    "description_fr": "Le lanceur échange sa place et tout changement de stat avec un Pokémon de l’équipe.",
+    "description_en": "Allows the trainer to switch out the user and pass effects along to its replacement.",
+    "description_fr": "Permet au dresseur de retirer le lanceur et transmet ses effets pendant son remplacement.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

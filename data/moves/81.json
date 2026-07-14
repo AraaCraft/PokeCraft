@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "status",
-    "description_en": "A move that lowers the foe's SPEED.",
-    "description_fr": "Le lanceur crache de la soie pour ligoter l’ennemi et baisser sa Vitesse.",
+    "description_en": "Lowers the target’s Speed by two stages.",
+    "description_fr": "Diminue la Vitesse de la cible de deux niveaux.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

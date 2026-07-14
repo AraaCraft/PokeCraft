@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user attacks by swinging its tail as if it were a vicious wave in a raging storm. ",
-    "description_fr": "Le lanceur attaque en balançant sa queue comme une lame de fond en pleine tempête.",
+    "description_en": "Inflicts regular damage with no additional effect.",
+    "description_fr": "Inflige des dégâts réguliers avec aucun effet additionnel.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,
