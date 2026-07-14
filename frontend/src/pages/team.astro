@@ -5,6 +5,7 @@ import PokemonCard from '../components/PokemonCard.astro';
 // Fetch all local JSON files
 const pokemonFiles = import.meta.glob('../../../data/champions/pokemon/**/*.json', { eager: true });
 const allPokemons = Object.values(pokemonFiles).map((file: any) => file.default);
+import hiddenForms from "../../../data/hidden_forms.json";
 import excludedForms from '../../../data/excluded_forms.json';
 
 const validPokemons = allPokemons.filter(p => {
