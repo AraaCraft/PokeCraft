@@ -17,6 +17,8 @@ const translations = {
     "added_to_team": "Added to Team!",
     "removed_from_team": "Removed from Team!",
     "team_full": "Team is full (Max 6)!",
+    "empty_team_title": "Your team is empty!",
+    "empty_team_desc": "Add your favorite Pokémon from the list below.",
     "team_limit": "Max 6 Pokémon per team.",
     "nature": "Nature",
     "held_item": "Held Item",
@@ -120,6 +122,8 @@ const translations = {
   fr: {
     "search_placeholder": "Rechercher un Pokémon...",
     "my_team": "Mon Équipe",
+    "empty_team_title": "Votre équipe est vide !",
+    "empty_team_desc": "Ajoutez vos Pokémon préférés depuis la liste ci-dessous.",
     "show_stats": "Afficher les statistiques",
     "nature": "Nature",
     "held_item": "Objet Tenu",
@@ -271,7 +275,7 @@ export function translateDOM() {
       const lang = getLang();
       const text = el.getAttribute(`data-name-${lang}`);
       if (text) {
-        el.textContent = text;
+        el.innerHTML = text.replace(/\n/g, "<br>");
       }
     });
   }

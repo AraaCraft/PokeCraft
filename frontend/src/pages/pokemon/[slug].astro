@@ -61,8 +61,8 @@ if (pokemon.form && pokemon.form !== pokemon.name) {
     formPart = formPart.substring(pokemon.name.length + 1);
   }
   formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
-  formattedNameEn = `${formattedNameEn} (${formPart})`;
-  formattedNameFr = `${formattedNameFr} (${formPart})`;
+  formattedNameEn = `${formattedNameEn}\n(${formPart})`;
+  formattedNameFr = `${formattedNameFr}\n(${formPart})`;
   formattedName = formattedNameEn;
 }
 const formattedId = String(pokemon.id).padStart(4, '0');
