@@ -1,28 +1,28 @@
 {
-    "id": 745,
-    "name": "lycanroc",
-    "form": "lycanroc-midday",
+    "id": 711,
+    "name": "gourgeist",
+    "form": "gourgeist",
     "abilities": [
         {
             "ability": {
-                "name": "keen-eye",
-                "url": "https://pokeapi.co/api/v2/ability/51/"
+                "name": "pickup",
+                "url": "https://pokeapi.co/api/v2/ability/53/"
             },
             "is_hidden": false,
             "slot": 1
         },
         {
             "ability": {
-                "name": "sand-rush",
-                "url": "https://pokeapi.co/api/v2/ability/146/"
+                "name": "frisk",
+                "url": "https://pokeapi.co/api/v2/ability/119/"
             },
             "is_hidden": false,
             "slot": 2
         },
         {
             "ability": {
-                "name": "steadfast",
-                "url": "https://pokeapi.co/api/v2/ability/80/"
+                "name": "insomnia",
+                "url": "https://pokeapi.co/api/v2/ability/15/"
             },
             "is_hidden": true,
             "slot": 3
@@ -30,7 +30,7 @@
     ],
     "stats": [
         {
-            "base_stat": 75,
+            "base_stat": 65,
             "effort": 0,
             "stat": {
                 "name": "hp",
@@ -38,23 +38,23 @@
             }
         },
         {
-            "base_stat": 115,
-            "effort": 2,
+            "base_stat": 90,
+            "effort": 0,
             "stat": {
                 "name": "attack",
                 "url": "https://pokeapi.co/api/v2/stat/2/"
             }
         },
         {
-            "base_stat": 65,
-            "effort": 0,
+            "base_stat": 122,
+            "effort": 2,
             "stat": {
                 "name": "defense",
                 "url": "https://pokeapi.co/api/v2/stat/3/"
             }
         },
         {
-            "base_stat": 55,
+            "base_stat": 58,
             "effort": 0,
             "stat": {
                 "name": "special-attack",
@@ -62,7 +62,7 @@
             }
         },
         {
-            "base_stat": 65,
+            "base_stat": 75,
             "effort": 0,
             "stat": {
                 "name": "special-defense",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "base_stat": 112,
+            "base_stat": 84,
             "effort": 0,
             "stat": {
                 "name": "speed",
@@ -82,72 +82,81 @@
         {
             "slot": 1,
             "type": {
-                "name": "rock",
-                "url": "https://pokeapi.co/api/v2/type/6/"
+                "name": "ghost",
+                "url": "https://pokeapi.co/api/v2/type/8/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "grass",
+                "url": "https://pokeapi.co/api/v2/type/12/"
             }
         }
     ],
-    "weight": 250,
+    "weight": 125,
     "moves": [
-        "14",
-        "34",
-        "37",
-        "38",
-        "44",
-        "46",
-        "91",
-        "97",
-        "98",
-        "104",
+        "50",
+        "53",
+        "63",
+        "73",
+        "76",
+        "94",
+        "95",
+        "109",
+        "113",
+        "120",
+        "126",
+        "153",
         "156",
         "157",
         "164",
+        "168",
         "173",
+        "174",
         "182",
         "184",
-        "189",
-        "201",
+        "188",
+        "194",
+        "202",
         "203",
-        "204",
+        "213",
         "214",
-        "231",
+        "219",
+        "220",
         "241",
-        "242",
+        "247",
+        "261",
         "263",
-        "269",
-        "270",
-        "280",
-        "283",
-        "304",
-        "317",
-        "334",
-        "336",
-        "339",
-        "350",
-        "370",
-        "372",
-        "387",
-        "389",
-        "414",
+        "271",
+        "285",
+        "286",
+        "331",
+        "360",
+        "388",
+        "399",
+        "402",
+        "411",
+        "412",
         "416",
-        "422",
-        "424",
-        "428",
-        "442",
-        "444",
-        "446",
+        "417",
+        "425",
+        "433",
+        "438",
+        "447",
+        "492",
         "496",
-        "501",
-        "523",
-        "529",
-        "541",
-        "555",
-        "583",
-        "706",
-        "707",
-        "709",
-        "885"
+        "502",
+        "506",
+        "566",
+        "567",
+        "585",
+        "595",
+        "693",
+        "803",
+        "806",
+        "809"
     ],
-    "name_fr": "Lougaroc",
-    "name_en": "Lycanroc"
+    "name_fr": "Banshitrouye",
+    "name_en": "Gourgeist"
 }

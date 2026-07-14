@@ -1,12 +1,12 @@
 {
-    "id": 877,
-    "name": "morpeko",
-    "form": "morpeko-full-belly",
+    "id": 778,
+    "name": "mimikyu",
+    "form": "mimikyu",
     "abilities": [
         {
             "ability": {
-                "name": "hunger-switch",
-                "url": "https://pokeapi.co/api/v2/ability/258/"
+                "name": "disguise",
+                "url": "https://pokeapi.co/api/v2/ability/209/"
             },
             "is_hidden": false,
             "slot": 1
@@ -14,7 +14,7 @@
     ],
     "stats": [
         {
-            "base_stat": 58,
+            "base_stat": 55,
             "effort": 0,
             "stat": {
                 "name": "hp",
@@ -22,7 +22,7 @@
             }
         },
         {
-            "base_stat": 95,
+            "base_stat": 90,
             "effort": 0,
             "stat": {
                 "name": "attack",
@@ -30,7 +30,7 @@
             }
         },
         {
-            "base_stat": 58,
+            "base_stat": 80,
             "effort": 0,
             "stat": {
                 "name": "defense",
@@ -38,7 +38,7 @@
             }
         },
         {
-            "base_stat": 70,
+            "base_stat": 50,
             "effort": 0,
             "stat": {
                 "name": "special-attack",
@@ -46,16 +46,16 @@
             }
         },
         {
-            "base_stat": 58,
-            "effort": 0,
+            "base_stat": 105,
+            "effort": 2,
             "stat": {
                 "name": "special-defense",
                 "url": "https://pokeapi.co/api/v2/stat/5/"
             }
         },
         {
-            "base_stat": 97,
-            "effort": 2,
+            "base_stat": 96,
+            "effort": 0,
             "stat": {
                 "name": "speed",
                 "url": "https://pokeapi.co/api/v2/stat/6/"
@@ -66,86 +66,81 @@
         {
             "slot": 1,
             "type": {
-                "name": "electric",
-                "url": "https://pokeapi.co/api/v2/type/13/"
+                "name": "ghost",
+                "url": "https://pokeapi.co/api/v2/type/8/"
             }
         },
         {
             "slot": 2,
             "type": {
-                "name": "dark",
-                "url": "https://pokeapi.co/api/v2/type/17/"
+                "name": "fairy",
+                "url": "https://pokeapi.co/api/v2/type/18/"
             }
         }
     ],
-    "weight": 30,
+    "weight": 7,
     "moves": [
-        "9",
-        "37",
-        "38",
-        "44",
+        "14",
+        "63",
         "85",
         "86",
         "87",
-        "97",
-        "98",
+        "94",
+        "101",
+        "103",
+        "104",
+        "109",
+        "113",
+        "141",
         "156",
-        "162",
         "164",
         "168",
         "173",
-        "179",
+        "174",
         "180",
         "182",
-        "184",
-        "200",
+        "194",
+        "202",
         "203",
-        "207",
+        "204",
         "214",
-        "226",
-        "229",
-        "242",
-        "252",
-        "253",
-        "259",
-        "260",
+        "219",
+        "220",
+        "240",
+        "241",
+        "244",
+        "247",
+        "251",
+        "261",
         "263",
-        "268",
         "269",
-        "280",
-        "282",
-        "283",
-        "313",
-        "321",
-        "331",
+        "271",
+        "339",
         "371",
-        "372",
         "374",
+        "383",
         "399",
-        "402",
-        "417",
-        "422",
-        "423",
-        "424",
-        "451",
-        "486",
-        "492",
+        "400",
+        "404",
+        "409",
+        "416",
+        "421",
+        "425",
+        "433",
+        "452",
+        "478",
         "496",
-        "511",
-        "521",
-        "527",
-        "528",
-        "555",
-        "575",
-        "598",
-        "604",
-        "681",
-        "706",
-        "707",
-        "783",
-        "804",
-        "808"
+        "506",
+        "566",
+        "577",
+        "581",
+        "583",
+        "605",
+        "608",
+        "807",
+        "884",
+        "885"
     ],
-    "name_fr": "Morpeko",
-    "name_en": "Morpeko"
+    "name_fr": "Mimiqui",
+    "name_en": "Mimikyu"
 }

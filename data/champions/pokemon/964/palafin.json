@@ -1,36 +1,28 @@
 {
-    "id": 670,
-    "name": "floette",
-    "form": "floette-eternal",
+    "id": 964,
+    "name": "palafin",
+    "form": "palafin",
     "abilities": [
         {
             "ability": {
-                "name": "flower-veil",
-                "url": "https://pokeapi.co/api/v2/ability/166/"
+                "name": "zero-to-hero",
+                "url": "https://pokeapi.co/api/v2/ability/278/"
             },
             "is_hidden": false,
             "slot": 1
-        },
-        {
-            "ability": {
-                "name": "symbiosis",
-                "url": "https://pokeapi.co/api/v2/ability/180/"
-            },
-            "is_hidden": true,
-            "slot": 3
         }
     ],
     "stats": [
         {
-            "base_stat": 74,
-            "effort": 0,
+            "base_stat": 100,
+            "effort": 2,
             "stat": {
                 "name": "hp",
                 "url": "https://pokeapi.co/api/v2/stat/1/"
             }
         },
         {
-            "base_stat": 65,
+            "base_stat": 70,
             "effort": 0,
             "stat": {
                 "name": "attack",
@@ -38,7 +30,7 @@
             }
         },
         {
-            "base_stat": 67,
+            "base_stat": 72,
             "effort": 0,
             "stat": {
                 "name": "defense",
@@ -46,7 +38,7 @@
             }
         },
         {
-            "base_stat": 125,
+            "base_stat": 53,
             "effort": 0,
             "stat": {
                 "name": "special-attack",
@@ -54,15 +46,15 @@
             }
         },
         {
-            "base_stat": 128,
-            "effort": 2,
+            "base_stat": 62,
+            "effort": 0,
             "stat": {
                 "name": "special-defense",
                 "url": "https://pokeapi.co/api/v2/stat/5/"
             }
         },
         {
-            "base_stat": 92,
+            "base_stat": 100,
             "effort": 0,
             "stat": {
                 "name": "speed",
@@ -74,55 +66,72 @@
         {
             "slot": 1,
             "type": {
-                "name": "fairy",
-                "url": "https://pokeapi.co/api/v2/type/18/"
+                "name": "water",
+                "url": "https://pokeapi.co/api/v2/type/11/"
             }
         }
     ],
-    "weight": 9,
+    "weight": 602,
     "moves": [
+        "8",
+        "34",
+        "56",
+        "57",
+        "58",
+        "59",
         "63",
-        "76",
-        "80",
-        "94",
-        "113",
+        "68",
+        "97",
+        "114",
+        "116",
+        "127",
         "156",
         "164",
+        "179",
         "182",
-        "202",
+        "196",
+        "200",
         "203",
         "204",
         "214",
-        "219",
-        "226",
-        "235",
+        "227",
         "240",
-        "241",
+        "244",
+        "250",
         "263",
+        "264",
+        "269",
         "270",
-        "271",
-        "273",
         "283",
-        "285",
-        "347",
-        "383",
-        "402",
-        "412",
+        "291",
+        "304",
+        "321",
+        "339",
+        "340",
+        "352",
+        "370",
+        "374",
+        "396",
+        "401",
+        "409",
+        "411",
+        "416",
+        "428",
+        "442",
         "447",
-        "500",
-        "572",
+        "453",
+        "458",
+        "512",
         "577",
-        "580",
-        "581",
-        "585",
-        "605",
-        "617",
-        "676",
-        "715",
-        "885",
+        "586",
+        "675",
+        "710",
+        "812",
+        "834",
+        "857",
         "886",
-        "914"
+        "912"
     ],
-    "name_fr": "Floette",
-    "name_en": "Floette"
+    "name_fr": "Superdofin",
+    "name_en": "Palafin"
 }

@@ -1,28 +1,28 @@
 {
-    "id": 711,
-    "name": "gourgeist",
-    "form": "gourgeist-average",
+    "id": 925,
+    "name": "maushold",
+    "form": "maushold",
     "abilities": [
         {
             "ability": {
-                "name": "pickup",
-                "url": "https://pokeapi.co/api/v2/ability/53/"
+                "name": "friend-guard",
+                "url": "https://pokeapi.co/api/v2/ability/132/"
             },
             "is_hidden": false,
             "slot": 1
         },
         {
             "ability": {
-                "name": "frisk",
-                "url": "https://pokeapi.co/api/v2/ability/119/"
+                "name": "cheek-pouch",
+                "url": "https://pokeapi.co/api/v2/ability/167/"
             },
             "is_hidden": false,
             "slot": 2
         },
         {
             "ability": {
-                "name": "insomnia",
-                "url": "https://pokeapi.co/api/v2/ability/15/"
+                "name": "technician",
+                "url": "https://pokeapi.co/api/v2/ability/101/"
             },
             "is_hidden": true,
             "slot": 3
@@ -30,7 +30,7 @@
     ],
     "stats": [
         {
-            "base_stat": 65,
+            "base_stat": 74,
             "effort": 0,
             "stat": {
                 "name": "hp",
@@ -38,7 +38,7 @@
             }
         },
         {
-            "base_stat": 90,
+            "base_stat": 75,
             "effort": 0,
             "stat": {
                 "name": "attack",
@@ -46,15 +46,15 @@
             }
         },
         {
-            "base_stat": 122,
-            "effort": 2,
+            "base_stat": 70,
+            "effort": 0,
             "stat": {
                 "name": "defense",
                 "url": "https://pokeapi.co/api/v2/stat/3/"
             }
         },
         {
-            "base_stat": 58,
+            "base_stat": 65,
             "effort": 0,
             "stat": {
                 "name": "special-attack",
@@ -70,8 +70,8 @@
             }
         },
         {
-            "base_stat": 84,
-            "effort": 0,
+            "base_stat": 111,
+            "effort": 2,
             "stat": {
                 "name": "speed",
                 "url": "https://pokeapi.co/api/v2/stat/6/"
@@ -82,81 +82,64 @@
         {
             "slot": 1,
             "type": {
-                "name": "ghost",
-                "url": "https://pokeapi.co/api/v2/type/8/"
-            }
-        },
-        {
-            "slot": 2,
-            "type": {
-                "name": "grass",
-                "url": "https://pokeapi.co/api/v2/type/12/"
+                "name": "normal",
+                "url": "https://pokeapi.co/api/v2/type/1/"
             }
         }
     ],
-    "weight": 125,
+    "weight": 28,
     "moves": [
-        "50",
-        "53",
+        "38",
+        "44",
         "63",
-        "73",
-        "76",
-        "94",
-        "95",
-        "109",
-        "113",
-        "120",
-        "126",
-        "153",
+        "67",
+        "86",
+        "91",
+        "97",
         "156",
-        "157",
+        "162",
         "164",
         "168",
-        "173",
-        "174",
         "182",
-        "184",
-        "188",
-        "194",
-        "202",
+        "189",
         "203",
-        "213",
+        "204",
         "214",
-        "219",
-        "220",
+        "226",
+        "227",
+        "240",
         "241",
-        "247",
-        "261",
+        "242",
+        "251",
         "263",
-        "271",
-        "285",
-        "286",
+        "266",
+        "269",
+        "270",
+        "304",
+        "313",
+        "321",
         "331",
-        "360",
-        "388",
-        "399",
+        "332",
+        "341",
+        "352",
+        "364",
+        "369",
+        "383",
         "402",
-        "411",
-        "412",
+        "415",
         "416",
-        "417",
-        "425",
-        "433",
-        "438",
+        "421",
         "447",
-        "492",
-        "496",
-        "502",
-        "506",
-        "566",
-        "567",
-        "585",
-        "595",
-        "693",
-        "803",
-        "806",
-        "809"
+        "458",
+        "490",
+        "495",
+        "583",
+        "608",
+        "860",
+        "882",
+        "885",
+        "886"
     ],
-    "name_fr": "Banshitrouye",
-    "name_en": "Gourgeist"
+    "name_fr": "Famignol",
+    "name_en": "Maushold"
 }
