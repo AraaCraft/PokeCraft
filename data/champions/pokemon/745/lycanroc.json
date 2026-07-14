@@ -1,28 +1,28 @@
 {
-    "id": 925,
-    "name": "maushold",
-    "form": "maushold-family-of-four",
+    "id": 745,
+    "name": "lycanroc",
+    "form": "lycanroc",
     "abilities": [
         {
             "ability": {
-                "name": "friend-guard",
-                "url": "https://pokeapi.co/api/v2/ability/132/"
+                "name": "keen-eye",
+                "url": "https://pokeapi.co/api/v2/ability/51/"
             },
             "is_hidden": false,
             "slot": 1
         },
         {
             "ability": {
-                "name": "cheek-pouch",
-                "url": "https://pokeapi.co/api/v2/ability/167/"
+                "name": "sand-rush",
+                "url": "https://pokeapi.co/api/v2/ability/146/"
             },
             "is_hidden": false,
             "slot": 2
         },
         {
             "ability": {
-                "name": "technician",
-                "url": "https://pokeapi.co/api/v2/ability/101/"
+                "name": "steadfast",
+                "url": "https://pokeapi.co/api/v2/ability/80/"
             },
             "is_hidden": true,
             "slot": 3
@@ -30,7 +30,7 @@
     ],
     "stats": [
         {
-            "base_stat": 74,
+            "base_stat": 75,
             "effort": 0,
             "stat": {
                 "name": "hp",
@@ -38,15 +38,15 @@
             }
         },
         {
-            "base_stat": 75,
-            "effort": 0,
+            "base_stat": 115,
+            "effort": 2,
             "stat": {
                 "name": "attack",
                 "url": "https://pokeapi.co/api/v2/stat/2/"
             }
         },
         {
-            "base_stat": 70,
+            "base_stat": 65,
             "effort": 0,
             "stat": {
                 "name": "defense",
@@ -54,7 +54,7 @@
             }
         },
         {
-            "base_stat": 65,
+            "base_stat": 55,
             "effort": 0,
             "stat": {
                 "name": "special-attack",
@@ -62,7 +62,7 @@
             }
         },
         {
-            "base_stat": 75,
+            "base_stat": 65,
             "effort": 0,
             "stat": {
                 "name": "special-defense",
@@ -70,8 +70,8 @@
             }
         },
         {
-            "base_stat": 111,
-            "effort": 2,
+            "base_stat": 112,
+            "effort": 0,
             "stat": {
                 "name": "speed",
                 "url": "https://pokeapi.co/api/v2/stat/6/"
@@ -82,64 +82,72 @@
         {
             "slot": 1,
             "type": {
-                "name": "normal",
-                "url": "https://pokeapi.co/api/v2/type/1/"
+                "name": "rock",
+                "url": "https://pokeapi.co/api/v2/type/6/"
             }
         }
     ],
-    "weight": 28,
+    "weight": 250,
     "moves": [
+        "14",
+        "34",
+        "37",
         "38",
         "44",
-        "63",
-        "67",
-        "86",
+        "46",
         "91",
         "97",
+        "98",
+        "104",
         "156",
-        "162",
+        "157",
         "164",
-        "168",
+        "173",
         "182",
+        "184",
         "189",
+        "201",
         "203",
         "204",
         "214",
-        "226",
-        "227",
-        "240",
+        "231",
         "241",
         "242",
-        "251",
         "263",
-        "266",
         "269",
         "270",
+        "280",
+        "283",
         "304",
-        "313",
-        "321",
-        "331",
-        "332",
-        "341",
-        "352",
-        "364",
-        "369",
-        "383",
-        "402",
-        "415",
+        "317",
+        "334",
+        "336",
+        "339",
+        "350",
+        "370",
+        "372",
+        "387",
+        "389",
+        "414",
         "416",
-        "421",
-        "447",
-        "458",
-        "490",
-        "495",
+        "422",
+        "424",
+        "428",
+        "442",
+        "444",
+        "446",
+        "496",
+        "501",
+        "523",
+        "529",
+        "541",
+        "555",
         "583",
-        "608",
-        "860",
-        "882",
-        "885",
-        "886"
+        "706",
+        "707",
+        "709",
+        "885"
     ],
-    "name_fr": "Famignol",
-    "name_en": "Maushold"
+    "name_fr": "Lougaroc",
+    "name_en": "Lycanroc"
 }

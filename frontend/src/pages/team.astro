@@ -10,6 +10,7 @@ import excludedForms from '../../../data/excluded_forms.json';
 const validPokemons = allPokemons.filter(p => {
 	if (p.form.includes('-gmax')) return false;
 	if (excludedForms.includes(p.form)) return false;
+		if (hiddenForms.includes(p.form)) return false;
 	if (p.id === 25 && p.form !== 'pikachu') return false; // Pikachu forms exclusion
 	return true;
 });
@@ -22,7 +23,7 @@ pokemons.sort((a, b) => {
 });
 
 const statsMap = {};
-for (const p of validPokemons) {
+for (const p of allPokemons) {
 	statsMap[`${p.id}_${p.form}`] = p.stats;
 }
 
@@ -43,7 +44,7 @@ import naturesData from '../../public/data/natures.json';
 import itemsData from '../../public/data/items.json';
 import abilitiesData from '../../public/data/abilities.json';
 const pokemonNameMap = {};
-validPokemons.forEach(p => {
+allPokemons.forEach(p => {
   pokemonNameMap[`${p.id}-${p.form}`] = { 
     name_en: p.name_en || p.name, 
     name_fr: p.name_fr || p.name_en || p.name 
@@ -448,8 +449,31 @@ validPokemons.forEach(p => {
             formPart = formPart.substring(pokemon.name.length + 1);
           }
           formPart = formPart.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+          let formStrFr = formPart;
+          formStrFr = formStrFr.replace(/Male/g, "Mâle");
+          formStrFr = formStrFr.replace(/Female/g, "Femelle");
+          formStrFr = formStrFr.replace(/Family Of Four/g, "Famille de Quatre");
+          formStrFr = formStrFr.replace(/Family Of Three/g, "Famille de Trois");
+          formStrFr = formStrFr.replace(/Mega/g, "Méga");
+          formStrFr = formStrFr.replace(/Blade/g, "Lame");
+          formStrFr = formStrFr.replace(/Shield/g, "Parade");
+          formStrFr = formStrFr.replace(/Midnight/g, "Nocturne");
+          formStrFr = formStrFr.replace(/Dusk/g, "Crépusculaire");
+          formStrFr = formStrFr.replace(/Midday/g, "Diurne");
+          formStrFr = formStrFr.replace(/Fan/g, "Hélice");
+          formStrFr = formStrFr.replace(/Frost/g, "Froid");
+          formStrFr = formStrFr.replace(/Heat/g, "Chaleur");
+          formStrFr = formStrFr.replace(/Mow/g, "Tonte");
+          formStrFr = formStrFr.replace(/Wash/g, "Lavage");
+          formStrFr = formStrFr.replace(/Rainy/g, "Eau");
+          formStrFr = formStrFr.replace(/Snowy/g, "Neige");
+          formStrFr = formStrFr.replace(/Sunny/g, "Soleil");
+          formStrFr = formStrFr.replace(/Paldea Combat Breed/g, "Paldea Combat");
+          formStrFr = formStrFr.replace(/Paldea Blaze Breed/g, "Paldea Flamboyant");
+          formStrFr = formStrFr.replace(/Paldea Aqua Breed/g, "Paldea Aquatique");
+          
           formattedNameEn += `\n(${formPart})`;
-          formattedNameFr += `\n(${formPart})`;
+          formattedNameFr += `\n(${formStrFr})`;
         }
 
         const displayName = currentLang === 'fr' ? formattedNameFr : formattedNameEn;

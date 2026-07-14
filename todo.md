@@ -30,22 +30,22 @@
             (Mega X)
 
     ✅ - "Your team is empty! Add your favorite Pokémon from the list below." est en anglais sur la version FR
-    - Noms des formes de Motisma non traduites en version FR
-    - Image de Mistigris (Female Mega) cassée --> crée une erreur 404 sur la page de Mistigrix en localhost seulement
-    - Nomm des formes male et female de Mistigrix Mega sont en anglais en version FR
-    - Noms des formes de Exagide Blade et Shield sont en anglais en version FR
-    - Masquer Exagide forme Blade sur les liste mais la laisser accessible depuis la page de Exagide
-    - Les noms des formes de Lougaroc sont en anglais sur la version FR
-    - Masquer les formes Crépusculaire et Nocture de Lougaroc des listes mais les laisser accessible depuis la page de Lougaroc Diurne (la forme diurne deviendra la forme de base et on n'affiche pas (diurne))
-    - Masquer les formes météorologiques de Morphéo des listes mais laisser leurs formes accessibles depuis la page de Morphéo
-    - Mimiqui disguised devient juste Mimiqui
-    - Les formes de Morpeko ne sont pas traduites en FR
-    - Masquer la forme Hangry de Morpeko mais la laisser accessible depuis la page de Morpeko
-    - Morpeko Full Belly devient juste Morpeko
-    - Male et Female de Paragruel non traduis en Fr
-    - Famignol (Family Of Four) et (Family Of Three) ne sont pas traduis en FR
-    - Famignol (Family Of Four) devient Juste Famignol et la forme (Family Of Three) masquer des listes mais accessible depuis la page de Famignol
-    - Masquer Superdofin Hero des listes mais laisser accessible depuis la page Superdofin zero (qui se nommera juste Superdofin)
+    ✅ - Noms des formes de Motisma non traduites en version FR
+    ✅ - Image de Mistigris (Female Mega) cassée --> crée une erreur 404 sur la page de Mistigrix en localhost seulement
+    ✅ - Nomm des formes male et female de Mistigrix Mega sont en anglais en version FR
+    ✅ - Noms des formes de Exagide Blade et Shield sont en anglais en version FR
+    ✅ - Masquer Exagide forme Blade sur les liste mais la laisser accessible depuis la page de Exagide
+    ✅ - Les noms des formes de Lougaroc sont en anglais sur la version FR
+    ✅ - Masquer les formes Crépusculaire et Nocture de Lougaroc des listes mais les laisser accessible depuis la page de Lougaroc Diurne (la forme diurne deviendra la forme de base et on n'affiche pas (diurne))
+    ✅ - Masquer les formes météorologiques de Morphéo des listes mais laisser leurs formes accessibles depuis la page de Morphéo
+    ✅ - Mimiqui disguised devient juste Mimiqui
+    ✅ - Les formes de Morpeko ne sont pas traduites en FR
+    ✅ - Masquer la forme Hangry de Morpeko mais la laisser accessible depuis la page de Morpeko
+    ✅ - Morpeko Full Belly devient juste Morpeko
+    ✅ - Male et Female de Paragruel non traduis en Fr
+    ✅ - Famignol (Family Of Four) et (Family Of Three) ne sont pas traduis en FR
+    ✅ - Famignol (Family Of Four) devient Juste Famignol et la forme (Family Of Three) masquer des listes mais accessible depuis la page de Famignol
+    ✅ - Masquer Superdofin Hero des listes mais laisser accessible depuis la page Superdofin zero (qui se nommera juste Superdofin)
 
 ## COLORATION CHANGEMENT DE STATS NATURE :
         ✅ - Sur le choix de la nature, colorer également ici en vert la stat qui augmente et en rouge la stat qui diminue.
@@ -66,10 +66,10 @@
         ✅ - Passer par du localStorage au lieux des cookies
 
 ## Formes à ignorer :
-        - Malamamdre Totem
-        - Tarenbulle Totem
-        - Qwilfish d'Hisui
-        - Amphinobi (Ash) et Amphinobi (Battle Bond)
-        - Floette de forme de base (seule la forme éternelle est disponible)
-        - Banshitrouye forme super, large et small,  forme average devient la forme de base
-        - Mimiqui busted, busted totem, totem disguised
+        ✅ - Malamamdre Totem
+        ✅ - Tarenbulle Totem
+        ✅ - Qwilfish d'Hisui
+        ✅ - Amphinobi (Ash) et Amphinobi (Battle Bond)
+        ✅ - Floette de forme de base (seule la forme éternelle est disponible)
+        ✅ - Banshitrouye forme super, large et small,  forme average devient la forme de base
+        ✅ - Mimiqui busted, busted totem, totem disguised

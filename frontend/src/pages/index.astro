@@ -14,11 +14,13 @@ const allPokemons = Object.values(pokemonFiles).map(
 );
 
 import excludedForms from "../../../data/excluded_forms.json";
+import hiddenForms from "../../../data/hidden_forms.json";
 
 // Filter out G-Max and unwanted Pikachu forms
 const validPokemons = allPokemons.filter((p) => {
 	if (p.form.includes("-gmax")) return false;
 	if (excludedForms.includes(p.form)) return false;
+		if (hiddenForms.includes(p.form)) return false;
 	if (p.id === 25 && p.form !== "pikachu") return false; // Pikachu forms exclusion
 	return true;
 });
