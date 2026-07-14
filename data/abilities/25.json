@@ -3,6 +3,6 @@
     "name": "wonder-guard",
     "name_fr": "Garde Mystik",
     "name_en": "Wonder Guard",
-    "description_fr": "Reçoit seul. \"sup. eff.\".",
-    "description_en": "“Super effective” hits."
+    "description_fr": "Ce Pokémon est immunisé aux capacités offensives qui ne sont pas super efficaces contre lui.  Les capacités qui infligent des dégâts fixes, telles que Ombre Nocturne ou Frappe Atlas, sont considérées comme super efficaces si leurs types le sont.  Les dégâts non directement infligés par des capacités, tels que les dégâts de la météo, une altération de statut, ou Picots, ne sont pas empêchés.  Ce talent ne peut pas être copié avec Imitation ou échangé avec Échange, mais il peut être copié avec Calque, désactivé avec Suc Digestif, ou changé avec Soucigraine.  Ce Pokémon peut toujours utiliser Imitation lui-même pour perdre ce talent, mais pas Échange.  Si ce Pokémon a un Clonage, ce talent bloquera les capacités normalement et n'importe quelle capacité non bloquée réagira au Clonage normalement.",
+    "description_en": "This Pokémon is immune to damaging moves that are not super effective against it.  Moves that inflict fixed damage, such as Night Shade or Seismic Toss, are considered super effective if their types are.  Damage not directly dealt by moves, such as damage from weather, a status ailment, or Spikes, is not prevented.  This ability cannot be copied with Role Play or traded away with Skill Swap, but it can be copied with Trace, disabled with Gastro Acid, or changed with Worry Seed.  This Pokémon can still use Role Play itself to lose this ability, but not Skill Swap.  If this Pokémon has a Substitute, this ability will block moves as usual and any moves not blocked will react to the Substitute as usual."
 }

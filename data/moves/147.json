@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "A move that induces sleep.",
-    "description_fr": "Le lanceur répand un nuage de spores qui endort.",
+    "description_en": "Puts the target to sleep.",
+    "description_fr": "Endort la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

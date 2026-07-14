@@ -3,6 +3,6 @@
     "name": "merciless",
     "name_fr": "Cruauté",
     "name_en": "Merciless",
-    "description_fr": "Lorsque le Pokémon attaque un adversaire empoisonné, le coup sera forcément critique.",
-    "description_en": "The Pokémon’s attacks become critical hits if the target is poisoned."
+    "description_fr": "Les capacités de ce Pokémon réalisent des coups critiques contre les cibles empoisonnées.",
+    "description_en": "This Pokémon's moves critical hit against poisoned targets."
 }

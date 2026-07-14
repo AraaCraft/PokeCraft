@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Reflects special effects back to the attacker.",
-    "description_fr": "Une barrière qui renvoie les capacités comme Vampigraine et celles affectant le statut et les stats.",
+    "description_en": "Reflects back the first effect move used on the user this turn.",
+    "description_fr": "Renvoie la première capacité de statut utilisée sur le lanceur ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

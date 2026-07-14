@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "physical",
-    "description_en": "An attack that never misses.",
-    "description_fr": "Le lanceur s’approche l’air de rien avant de frapper par surprise. N’échoue jamais.",
+    "description_en": "Never misses.",
+    "description_fr": "N'échoue jamais.",
     "effect_chance": null,
     "effect_changes": [
         {

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user chants an incantation toward the sky, preventing the foe from landing critical hits.",
-    "description_fr": "Le lanceur envoie une incantation vers le ciel pour empêcher l’ennemi d’effectuer des coups critiques.",
+    "description_en": "Prevents the target from scoring critical hits for five turns.",
+    "description_fr": "Empêche la cible de réaliser des coups critiques pendant cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

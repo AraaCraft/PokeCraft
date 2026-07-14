@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "An uppercut thrown as if leaping into the sky.",
-    "description_fr": "Le lanceur attaque avec un uppercut. Il envoie son poing vers le ciel de toutes ses forces.",
+    "description_en": "Inflicts regular damage and can hit Bounce and Fly users.",
+    "description_fr": "Inflige des dégâts réguliers et peut frapper les utilisateurs de Rebond et Vol.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

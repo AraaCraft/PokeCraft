@@ -3,6 +3,6 @@
     "name": "imposter",
     "name_fr": "Imposteur",
     "name_en": "Imposter",
-    "description_fr": "Adopte l’apparence du Pokémon adverse.",
-    "description_en": "It transforms itself into the Pokémon it is facing."
+    "description_fr": "Ce Pokémon se transforme en un adversaire aléatoire en entrant au combat.  Cet effet est identique à la capacité Morphing.",
+    "description_en": "This Pokémon transforms into a random opponent upon entering battle.  This effect is identical to the move Transform."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "special",
-    "description_en": "The user attacks the target by wrapping it with a whirlwind of an overpowering scent. This also heals all status conditions of the user’s party.",
-    "description_fr": "Une attaque qui enserre l’adversaire dans un tourbillon de senteurs oppressantes. Guérit toutes les altérations de statut de l’équipe.",
+    "description_en": "Inflicts regular damage with no additional effect.",
+    "description_fr": "Inflige des dégâts réguliers avec aucun effet additionnel.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "triage",
     "name_fr": "Prioguérison",
     "name_en": "Triage",
-    "description_fr": "Toutes les capacités qui soignent le Pokémon directement deviennent prioritaires.",
-    "description_en": "Gives priority to a healing move."
+    "description_fr": "Les capacités soignantes de ce Pokémon ont leur priorité augmentée de 3.",
+    "description_en": "This Pokémon's healing moves have their priority increased by 3."
 }

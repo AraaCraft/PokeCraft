@@ -3,6 +3,6 @@
     "name": "rivalry",
     "name_fr": "Rivalité",
     "name_en": "Rivalry",
-    "description_fr": "Augmente l'Attaque si l'ennemi est du même sexe.",
-    "description_en": "Raises Attack if the foe is of the same gender."
+    "description_fr": "Ce Pokémon inflige 1.25× de dégâts réguliers contre les Pokémon du même genre et 0.75× de dégâts réguliers contre les Pokémon du genre opposé.  Si l’un des Pokémon est non genré, les dégâts ne sont pas affectés.",
+    "description_en": "This Pokémon inflicts 1.25× as much regular damage against Pokémon of the same gender and 0.75× as much regular damage against Pokémon of the opposite gender.  If either Pokémon is genderless, damage is unaffected."
 }

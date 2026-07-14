@@ -3,6 +3,6 @@
     "name": "snow-warning",
     "name_fr": "Alerte Neige",
     "name_en": "Snow Warning",
-    "description_fr": "Déclenche une tempête de grêle pendant un combat.",
-    "description_en": "The Pokémon summons a hailstorm in battle."
+    "description_fr": "La météo se change en grêle quand ce Pokémon entre au combat et ne prend pas fin à moins d’être annulée par une autre condition météo.  Si plusieurs Pokémon avec ce talent, Crachin, Sécheresse, ou Sable Volant sont envoyés en même temps, les talents s’activent dans l’ordre des Vitesses, respectant Distorsion.  Chaque météo de talent annulera la précédente météo, et seulement la météo invoquée par le Pokémon le plus lent restera.",
+    "description_en": "The weather changes to hail when this Pokémon enters battle and does not end unless cancelled by another weather condition.  If multiple Pokémon with this ability, Drizzle, Drought, or Sand Stream are sent out at the same time, the abilities will activate in order of Speed, respecting Trick Room.  Each ability's weather will cancel the previous weather, and only the weather summoned by the slowest of the Pokémon will stay."
 }

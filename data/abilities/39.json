@@ -3,6 +3,6 @@
     "name": "inner-focus",
     "name_fr": "Attention",
     "name_en": "Inner Focus",
-    "description_fr": "Empêche la peur.",
-    "description_en": "Prevents flinching."
+    "description_fr": "Ce Pokémon ne peut pas avoir peur.",
+    "description_en": "This Pokémon cannot flinch."
 }

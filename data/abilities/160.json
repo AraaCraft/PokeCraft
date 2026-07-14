@@ -3,6 +3,6 @@
     "name": "iron-barbs",
     "name_fr": "Épine de Fer",
     "name_en": "Iron Barbs",
-    "description_fr": "Blesse l’ennemi au moindre contact.",
-    "description_en": "Inflicts damage to the Pokémon on contact."
+    "description_fr": "Quand une capacité réalise un contact avec ce Pokémon, le lanceur de la capacité subit 1/8 de ses PV maximum en dégâts.  Ce talent fonctionne de la même manière que Peau Dure.",
+    "description_en": "Whenever a move makes contact with this Pokémon, the move's user takes 1/8 of its maximum HP in damage.  This ability functions identically to Rough Skin."
 }

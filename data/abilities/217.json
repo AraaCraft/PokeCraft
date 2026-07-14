@@ -3,6 +3,6 @@
     "name": "battery",
     "name_fr": "Batterie",
     "name_en": "Battery",
-    "description_fr": "Augmente la puissance des capacités spéciales des alliés.",
-    "description_en": "Powers up ally Pokémon’s special moves."
+    "description_fr": "Toutes les capacités des Pokémon alliés ont leur puissance augmentée de 1.3×.",
+    "description_en": "Ally Pokémon's moves have their power increased to 1.3×."
 }

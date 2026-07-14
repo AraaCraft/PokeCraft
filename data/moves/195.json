@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Both user and foe faint in 3 turns.",
-    "description_fr": "Tout Pokémon qui entend ce requiem est K.O. dans 3 tours à moins qu’il ne quitte le combat.",
+    "description_en": "User and target both faint after three turns.",
+    "description_fr": "Le lanceur et la cible seront mises KO tous les deux après trois tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "flower-veil",
     "name_fr": "Flora-Voile",
     "name_en": "Flower Veil",
-    "description_fr": "Empêche les alliés de type Plante de subir des diminutions de stats.",
-    "description_en": "Prevents lowering of ally Grass-type Pokémon’s stats."
+    "description_fr": "Protège les Pokémon alliés Plante sont immunisés aux baisses de stat causées par des capacités ou talents adverses.  Immunise également contre les altérations majeures de statut.",
+    "description_en": "Protects friendly Grass Pokémon from having their stats lowered by other Pokémon."
 }

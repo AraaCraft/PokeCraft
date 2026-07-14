@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user attacks everything around it. The user’s HP is restored by half the damage taken by those hit.",
-    "description_fr": "Inflige des dégâts à tous les Pokémon autour du lanceur. Il récupère en PV la moitié des dégâts infligés.",
+    "description_en": "Heals the user for half the total damage dealt to all targets.",
+    "description_fr": "Soigne le lanceur de la moitié des dégâts totaux infligés à toutes les cibles.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

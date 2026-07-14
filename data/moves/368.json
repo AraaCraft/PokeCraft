@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user retaliates against the foe that last inflicted damage on it with much greater power.",
-    "description_fr": "Le lanceur attaque le dernier ennemi l’ayant blessé durant le même tour en frappant plus fort.",
+    "description_en": "Strikes back at the last Pokémon to hit the user this turn with 1.5× the damage.",
+    "description_fr": "Frappe en retour le dernier Pokémon à avoir touché le lanceur ce tour avec 1.5× des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

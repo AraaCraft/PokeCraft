@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Sharply raises the user's SPCL.DEF.",
-    "description_fr": "Le lanceur fait le vide dans son esprit pour oublier ses soucis. Augmente fortement sa Défense Spéciale.",
+    "description_en": "Raises the user’s Special Defense by two stages.",
+    "description_fr": "Augmente la Défense Spéciale du lanceur de deux niveaux.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

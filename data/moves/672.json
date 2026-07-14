@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "The user shoots poisonous threads to poison the target and lower the target’s Speed stat.",
-    "description_fr": "Tisse un fil imprégné de venin. Empoisonne la cible et baisse sa Vitesse.",
+    "description_en": "Poisons the target and lowers its Speed by one stage.",
+    "description_fr": "Empoisonne la cible et diminue sa Vitesse d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

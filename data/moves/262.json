@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "The user faints and lowers the foe’s abilities.",
-    "description_fr": "Le lanceur est mis K.O., mais l’Attaque et l’Attaque Spéciale de l’ennemi baissent beaucoup.",
+    "description_en": "Lowers the target’s Attack and Special Attack by two stages.  User faints.",
+    "description_fr": "Diminue l'Attaque et l'Attaque Spéciale de la cible de deux niveaux.  Le lanceur est mis KO.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

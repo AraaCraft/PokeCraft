@@ -3,6 +3,6 @@
     "name": "motor-drive",
     "name_fr": "Motorisé",
     "name_en": "Motor Drive",
-    "description_fr": "Augmente la Vit. si touché par une cap. Électrik.",
-    "description_en": "Raises Speed if hit by an Electric-type move."
+    "description_fr": "Quand une capacité de type Électrik frappe ce Pokémon, sa Vitesse augmente d’un niveau, annulant n’importe quel autre effet sur lui.  Ce talent ne prendra pas effet si ce Pokémon est immunisé aux capacités Électrik.  Les capacités Électrik ignoreront le Clonage de ce Pokémon.  Cet effect inclut kes capacités non offensives, i.e. Cage Éclair.",
+    "description_en": "Whenever an Electric-type move hits this Pokémon, its Speed rises one stage, negating any other effect on it.  This ability will not take effect if this Pokémon is immune to Electric moves.  Electric moves will ignore this Pokémon's Substitute.  This effect includes non-damaging moves, i.e. Thunder Wave."
 }

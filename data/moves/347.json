@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Raises SP. ATK and SP. DEF by focusing the mind.",
-    "description_fr": "Le lanceur se concentre et fait le vide dans son esprit pour monter son Attaque Spéciale et sa Défense Spéciale.",
+    "description_en": "Raises the user’s Special Attack and Special Defense by one stage.",
+    "description_fr": "Augmente l'Attaque Spéciale et la Défense Spéciale du lanceur d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

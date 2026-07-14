@@ -3,6 +3,6 @@
     "name": "klutz",
     "name_fr": "Maladresse",
     "name_en": "Klutz",
-    "description_fr": "Le Pokémon ne peut utiliser aucun objet tenu.",
-    "description_en": "The Pokémon can’t use any held items."
+    "description_fr": "Au combat, ce Pokémon ne peut pas utiliser son objet tenu, et n’aura aucun effet passif sur le combat, positif ou négatif.  Ce Pokémon ne peut pas non plus utiliser Dégommage.  La baisse de Vitesse de la Balle Fer et les objets d’effort (le Bracelet Macho, Poids Pouvoir, Poignet Pouvoir, Ceinture Pouvoir, Lentille Pouvoir, Bandeau Pouvoir, et Chaîne Pouvoir) ne sont pas affectés.  Les objets qui n’affectent pas directement le combat, tels que le Multi Exp, la Pièce Rune, ou le Grelot Zen, fonctionnent normalement.  Tous les objets tenus fonctionnent normalement hors combat.  Les autres capacités qui utilisent l’objet tenu, telles que Don Naturel et Passe-Passe, fonctionnent normalement.",
+    "description_en": "In battle, this Pokémon cannot use its held item, nor will the item have any passive effect on the battle, positive or negative.  This Pokémon also cannot use Fling.  The Speed cut from the Iron Ball and the effort items (the Macho Brace, Power Weight, Power Bracer, Power Belt, Power Lens, Power Band, and Power Anklet) is unaffected.  Items that do not directly affect the battle, such as the Exp. Share, the Amulet Coin, or the Soothe Bell, work as usual.  All held items work as usual out of battle.  Other moves that use the held item, such as Natural Gift and Switcheroo, work as usual."
 }

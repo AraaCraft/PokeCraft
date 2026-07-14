@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "special",
-    "description_en": "The user attacks the target by emitting steam. This may also confuse the target.",
-    "description_fr": "Le lanceur émet de la vapeur pour attaquer sa cible. Peut aussi la rendre confuse.",
+    "description_en": "Has a chance to confuse the target.",
+    "description_fr": "A une chance de rendre la cible confuse.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

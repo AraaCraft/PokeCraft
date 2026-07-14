@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "The user cuts its target with sharp shells. This attack may also lower the target’s Defense stat.",
-    "description_fr": "Un coquillage aiguisé lacère l’ennemi. Peut aussi baisser sa Défense.",
+    "description_en": "Has a chance to lower the target’s Defense by one stage.",
+    "description_fr": "A une chance de diminuer la Défense de la cible d'un niveau.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

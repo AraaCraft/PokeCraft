@@ -3,6 +3,6 @@
     "name": "gooey",
     "name_fr": "Poisseux",
     "name_en": "Gooey",
-    "description_fr": "Diminue la Vitesse de l’attaquant qui le touche.",
-    "description_en": "Contact with the Pokémon lowers the attacker’s Speed stat."
+    "description_fr": "Quand ce Pokémon subit une capacité directe, il réduit de 1 cran la Vitesse de l'attaquant.",
+    "description_en": "Lowers attacking Pokémon's Speed by one stage on contact."
 }

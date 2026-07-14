@@ -3,6 +3,6 @@
     "name": "levitate",
     "name_fr": "Lévitation",
     "name_en": "Levitate",
-    "description_fr": "Immunise contre toutes les capacités de type Sol.",
-    "description_en": "Not hit by GROUND attacks."
+    "description_fr": "Ce Pokémon est immunisé aux capacités de type Sol, Picots, Pics Toxik, et Piège Sable.  Ce talent est désactivé sous Gravité ou Racines, ou en tenant une Balle Fer.  Ce talent n'est pas désactivé sous Atterrissage.",
+    "description_en": "This Pokémon is immune to Ground-type moves, Spikes, Toxic Spikes, and Arena Trap.  This ability is disabled during Gravity or Ingrain, or while holding an Iron Ball.  This ability is not disabled during Roost."
 }

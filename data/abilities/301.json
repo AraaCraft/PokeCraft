@@ -3,6 +3,6 @@
     "name": "hospitality",
     "name_fr": "Aux Petits Soins",
     "name_en": "Hospitality",
-    "description_fr": "Quand il rejoint le combat, ce Pokémon est aux petits\\nsoins avec son allié et restaure quelques PV.",
-    "description_en": "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP"
+    "description_fr": "Quand le Pokémon entre au combat, il comble son allié d'hospitalité, rendant une petite quantité des PV des alliés.",
+    "description_en": "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "This move enables the user to attack first. It fails if the foe is not readying an attack, however.",
-    "description_fr": "Permet au lanceur de frapper en premier. Échoue si l’ennemi ne prépare pas une attaque.",
+    "description_en": "Only works if the target is about to use a damaging move.",
+    "description_fr": "Ne fonctionne que si la cible est sur le point d'utiliser une capacité offensive.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

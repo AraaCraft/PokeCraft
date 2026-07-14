@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
-    "description_en": "The user attacks by striking the target with its hard tail. It hits the target two to five times in a row.",
-    "description_fr": "Le lanceur frappe l’ennemi de 2 à 5 fois d’affilée avec sa queue robuste.",
+    "description_en": "Hits 2-5 times in one turn.",
+    "description_fr": "Touche 2-5 fois en un tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

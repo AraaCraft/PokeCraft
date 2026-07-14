@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "The user prevents the foe from using any HP-recovery moves for five turns. ",
-    "description_fr": "Le lanceur empêche l’ennemi d’utiliser ses capacités, cap. spé. ou objets tenus pour récupérer des PV pendant 5 tours.",
+    "description_en": "Prevents target from restoring its HP for five turns.",
+    "description_fr": "Empêche la cible de restaurer ses PV pendant cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

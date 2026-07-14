@@ -3,6 +3,6 @@
     "name": "quick-draw",
     "name_fr": "Tir Vif",
     "name_en": "Quick Draw",
-    "description_fr": "Permet parfois au Pokémon d’agir en premier.",
-    "description_en": "Enables the Pokémon to move first occasionally."
+    "description_fr": "Si un Pokémon avec ce Talent sélectionne une capacité offensive, il a 30% de chances d'agir en premier dans son niveau de priorité.",
+    "description_en": "If a Pokémon with this Ability selects a damaging move, it has a 30% chance of going first in its priority bracket."
 }

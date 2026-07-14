@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user throws a stone or projectile to attack an opponent. A flying Pokémon will fall to the ground when hit.",
-    "description_fr": "Le lanceur jette toutes sortes de projectiles à un ennemi. Si ce dernier vole, il tombe au sol.",
+    "description_en": "Removes any immunity to Ground damage.",
+    "description_fr": "Supprime n'importe quelle immunité aux dégâts Sol.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "corrosion",
     "name_fr": "Corrosion",
     "name_en": "Corrosion",
-    "description_fr": "Permet d’empoisonner les Pokémon de type Acier ou Poison.",
-    "description_en": "The Pokémon can poison the target even if it’s a Steel or Poison type."
+    "description_fr": "Les capacités et objet de ce Pokémon ignorent l'immunité habituelle des Pokémon Poison et Acier en tentant d'infliger le poison.",
+    "description_en": "This Pokémon's moves and item ignore the usual immunity of Poison and Steel Pokémon when attempting to inflict poison."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Lays roots that restore HP. The user can’t switch out.",
-    "description_fr": "Le lanceur plante ses racines et récupère des PV à chaque tour. Une fois enraciné, il ne peut plus fuir.",
+    "description_en": "Prevents the user from leaving battle.  User regains 1/16 of its max HP every turn.",
+    "description_fr": "Empêche le lanceur de quitter le combat.  Le lanceur regagne 1/16 de ses PV max à chaque tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

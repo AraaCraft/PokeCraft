@@ -3,6 +3,6 @@
     "name": "power-of-alchemy",
     "name_fr": "Osmose",
     "name_en": "Power of Alchemy",
-    "description_fr": "Le Pokémon acquiert le talent d’un allié mis K.O.",
-    "description_en": "The Pokémon copies the Ability of a defeated ally."
+    "description_fr": "Quand un allié est mis KO, ce Pokémon gagne son Talent.",
+    "description_en": "When an ally faints, this Pokémon gains its Ability."
 }

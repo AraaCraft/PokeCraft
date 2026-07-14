@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Whips up a strong gust of wind.",
-    "description_fr": "Le lanceur bat des ailes pour générer une bourrasque qui blesse l’ennemi.",
+    "description_en": "Inflicts regular damage and can hit Pokémon in the air.",
+    "description_fr": "Inflige des dégâts réguliers et peut frapper les Pokémon dans les airs.",
     "effect_chance": null,
     "effect_changes": [
         {

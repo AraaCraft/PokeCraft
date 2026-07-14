@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "special",
-    "description_en": "Allows a full-power attack, but sharply lowers SP. ATK.",
-    "description_fr": "Attaque l’ennemi à pleine puissance. Le contrecoup baisse énormément l’Attaque Spéciale du lanceur.",
+    "description_en": "Lowers the user’s Special Attack by two stages after inflicting damage.",
+    "description_fr": "Diminue l'Attaque Spéciale du lanceur de deux niveaux après avoir infligé des dégâts.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

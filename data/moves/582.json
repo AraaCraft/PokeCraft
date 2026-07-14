@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "If the target is electrified before it uses a move during that turn, the target’s move becomes Electric type.",
-    "description_fr": "Si le lanceur attaque avant l’ennemi, les capacités de ce dernier seront de type Électrik jusqu’à la fin du tour.",
+    "description_en": "Changes the target’s move’s type to Electric if it hasn’t moved yet this turn.",
+    "description_fr": "Change le type de la capacité de la cible en Électrik si elle n'a pas encore agi ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

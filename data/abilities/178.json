@@ -3,6 +3,6 @@
     "name": "mega-launcher",
     "name_fr": "Méga Blaster",
     "name_en": "Mega Launcher",
-    "description_fr": "Augmente la puissance de certaines capacités de type aura.",
-    "description_en": "Powers up aura and pulse moves."
+    "description_fr": "Les capacités à aura ou vibrations de ce Pokémon voient leur puissance (ou les soins en ce qui concerne Vibra Soin) augmentée de 50 %. ",
+    "description_en": "Strengthens aura and pulse moves to 1.5× their power."
 }

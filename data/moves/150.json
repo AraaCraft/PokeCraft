@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Has no effect whatsoever.",
-    "description_fr": "Le lanceur barbote et éclabousse les environs. Cette capacité n’a aucun effet.",
+    "description_en": "Does nothing.",
+    "description_fr": "Ne fait rien.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

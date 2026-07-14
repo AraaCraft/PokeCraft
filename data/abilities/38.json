@@ -3,6 +3,6 @@
     "name": "poison-point",
     "name_fr": "Point Poison",
     "name_en": "Poison Point",
-    "description_fr": "Empoisonne quand touché.",
-    "description_en": "Poisons foe on contact."
+    "description_fr": "Quand une capacité réalise un contact avec ce Pokémon, le lanceur de la capacité a 30% de chances d'être empoisonné.",
+    "description_en": "Whenever a move makes contact with this Pokémon, the move's user has a 30% chance of being poisoned."
 }

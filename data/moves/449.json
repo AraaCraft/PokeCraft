@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user releases countless shots of light. Its type varies with the kind of Plate the user is holding.",
-    "description_fr": "Le lanceur libère une myriade de rayons de lumière. Le type varie selon la Plaque que tient le lanceur.",
+    "description_en": "If the user is holding a appropriate plate or drive, the damage inflicted will match it.",
+    "description_fr": "Si le lanceur tient une plaque ou module approprié, les dégâts infligés y correspondent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

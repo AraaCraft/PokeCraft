@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "special",
-    "description_en": "On the second turn, an ultracold, freezing wind surrounds the target. This may leave the target with a burn.",
-    "description_fr": "Au second tour, le lanceur projette un souffle de vent glacial dévastateur sur l’ennemi. Peut le brûler.",
+    "description_en": "Requires a turn to charge before attacking.  Has a chance to burn the target.",
+    "description_fr": "Requiert un tour de charge avant d'attaquer.  A une chance de burn la cible.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

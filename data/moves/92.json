@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "status",
-    "description_en": "A poison move with increasing damage.",
-    "description_fr": "Empoisonne gravement l’ennemi. Les dégâts dus au poison augmentent à chaque tour.",
+    "description_en": "Badly poisons the target, inflicting more damage every turn.",
+    "description_fr": "Empoisonne gravement la cible, infligeant plus de dégâts à chaque tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

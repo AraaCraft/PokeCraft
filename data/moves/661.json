@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "In addition to protecting the user from attacks, this move also poisons any attacker that makes direct contact.",
-    "description_fr": "Protège le lanceur contre les attaques de l’ennemi et empoisonne ce dernier s’il utilise une attaque directe sur le lanceur.",
+    "description_en": "Grants the user protection for the rest of the turn and poisons any Pokémon that tries to use a contact move on it.",
+    "description_fr": "Protège le lanceur pour le reste du tour et empoisonne n'importe quel Pokémon qui essaie d'utiliser une capacité de contact contre lui.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

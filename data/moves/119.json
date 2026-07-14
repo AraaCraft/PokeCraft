@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Counters with the same move.",
-    "description_fr": "Le lanceur riposte à l’attaque de l’ennemi avec la même attaque.",
+    "description_en": "Uses the target’s last used move.",
+    "description_fr": "Utilise la dernière capacité utilisée par la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

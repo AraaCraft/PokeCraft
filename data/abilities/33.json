@@ -3,6 +3,6 @@
     "name": "swift-swim",
     "name_fr": "Glissade",
     "name_en": "Swift Swim",
-    "description_fr": "Monte VITESSE s'il pleut.",
-    "description_en": "Raises SPEED in rain."
+    "description_fr": "La Vitesse de ce Pokémon est doublée sous pluie.  Ce bonus ne compte pas comme une modification de stat.",
+    "description_en": "This Pokémon's Speed is doubled during rain.  This bonus does not count as a stat modifier."
 }

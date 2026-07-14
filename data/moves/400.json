@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user slashes the foe the instant an opportunity arises. It has a high critical-hit ratio.",
-    "description_fr": "Le lanceur lacère l’ennemi à la première occasion. Taux de critiques élevé.",
+    "description_en": "Has an increased chance for a critical hit.",
+    "description_fr": "A une chance augmentée de coup critique.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

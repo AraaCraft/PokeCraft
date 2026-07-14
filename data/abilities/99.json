@@ -3,6 +3,6 @@
     "name": "no-guard",
     "name_fr": "Annule Garde",
     "name_en": "No Guard",
-    "description_fr": "Attaques du Pokémon et de l'ennemi réussissent.",
-    "description_en": "Ensures the Pokémon and its foe’s attacks land."
+    "description_fr": "Les capacités utilisées par ou contre ce Pokémon ne manquent jamais leur cible.  Les capacités OHKO ne sont pas affectées.  Les capacités affectées par ce talent peuvent frapper les Pokémon pendant le tour de préparation de capacités comme Tunnel ou Vol.  Monde extérieur: Si le Pokémon de tête a ce talent, le taux de rencontre sauvage est doublé.",
+    "description_en": "Moves used by or against this Pokémon never miss.  One-hit KO moves are unaffected.  Moves affected by this ability can hit Pokémon during the preparation turn of moves like Dig or Fly.  Overworld: If the lead Pokémon has this ability, the wild encounter rate is doubled."
 }

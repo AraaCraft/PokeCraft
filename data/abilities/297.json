@@ -3,6 +3,6 @@
     "name": "earth-eater",
     "name_fr": "Absorbe-Terre",
     "name_en": "Earth Eater",
-    "description_fr": "Si le Pokémon est touché par une capacité de type Sol,\\nil regagne des PV au lieu de subir des dégâts.",
+    "description_fr": "Si frappé par une capacité de type Sol, le Pokémon a ses PV restaurés au lieu de subir des dégâts.",
     "description_en": "If hit by a Ground-type move, the Pokémon has its HP restored instead of taking damage."
 }

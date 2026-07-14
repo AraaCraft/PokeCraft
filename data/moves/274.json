@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Attacks randomly with one of the partner’s moves.",
-    "description_fr": "Le lanceur se dépêche d’utiliser une capacité au hasard parmi celles des Pokémon de l’équipe.",
+    "description_en": "Randomly selects and uses one of the trainer’s other Pokémon’s moves.",
+    "description_fr": "Sélectionne et utilise aléatoirement une des capacités des autres Pokémon du dresseur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user bursts into song, emitting many bubbles. Any Pokémon suffering from a burn will be healed by the touch of these bubbles.",
-    "description_fr": "Le lanceur émet plusieurs bulles en chantant. Soigne les brûlures des Pokémon touchés par ces bulles.",
+    "description_en": "Cures the target of burns.",
+    "description_fr": "Soigne la cible de ses brûlures.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

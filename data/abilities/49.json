@@ -3,6 +3,6 @@
     "name": "flame-body",
     "name_fr": "Corps Ardent",
     "name_en": "Flame Body",
-    "description_fr": "Brûle l'ennemi quand touché.",
-    "description_en": "Burns the foe on contact."
+    "description_fr": "Quand une capacité réalise un contact avec ce Pokémon, le lanceur de cette capacité a 30% de chances d'être brûlé.  Monde extérieur: Si n'importe quel Pokémon de l'équipe a ce talent, chaque œuf de l'équipe a son compteur d'éclosion diminué de 2 (plutôt que 1) à chaque cycle de pas, faisant éclore les œufs environ deux fois plus rapidement.  Cet effet ne se cumule pas si plusieurs Pokémon ont ce talent ou Armumagma.",
+    "description_en": "Whenever a move makes contact with this Pokémon, the move's user has a 30% chance of being burned.  Overworld: If any Pokémon in the party has this ability, each egg in the party has its hatch counter decreased by 2 (rather than 1) each step cycle, making eggs hatch roughly twice as quickly.  This effect does not stack if multiple Pokémon have this ability or Magma Armor."
 }

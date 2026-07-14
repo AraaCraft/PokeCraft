@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user swings both arms and hits the target. The target’s stat changes don’t affect this attack’s damage.",
-    "description_fr": "Le Pokémon étend les bras et frappe l’adversaire en tournant violemment. Inflige des dégâts et ignore les changements de stats de la cible.",
+    "description_en": "Ignores the target’s stat modifiers.",
+    "description_fr": "Ignore les modifications de stat de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

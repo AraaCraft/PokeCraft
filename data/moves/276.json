@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Boosts strength sharply, but lowers abilities.",
-    "description_fr": "Une attaque puissante, mais qui baisse l’Attaque et la Défense du lanceur.",
+    "description_en": "Lowers the user’s Attack and Defense by one stage after inflicting damage.",
+    "description_fr": "Diminue l'Attaque et la Défense du lanceur d'un niveau après avoir infligé des dégâts.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

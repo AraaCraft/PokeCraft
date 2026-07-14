@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Prevents all status problems.",
-    "description_fr": "Champ protecteur empêchant tous les problèmes de statut pendant 5 tours.",
+    "description_en": "Protects the user’s field from major status ailments and confusion for five turns.",
+    "description_fr": "Protège le terrain du lanceur des altérations majeures de statut et de la confusion pendant cinq tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

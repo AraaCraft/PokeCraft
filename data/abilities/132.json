@@ -3,6 +3,6 @@
     "name": "friend-guard",
     "name_fr": "Garde-Ami",
     "name_en": "Friend Guard",
-    "description_fr": "Diminue les dégâts subis par les alliés.",
-    "description_en": "Reduces damage done to allies."
+    "description_fr": "Tous les Pokémon alliés subissent 0.75× de dégâts directs des capacités tant que ce Pokémon est au combat.  Cet effet se cumule si plusieurs Pokémon alliés l’ont.",
+    "description_en": "All friendly Pokémon take 0.75× as much direct damage from moves while this Pokémon is in battle.  This effect stacks if multiple allied Pokémon have it."
 }

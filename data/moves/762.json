@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "physical",
-    "description_en": "This is a Ghost-type attack Dynamax Pokémon use. This lowers the target’s Defense stat.",
-    "description_fr": "Une attaque de type Spectre que seuls les Pokémon Dynamax peuvent utiliser. Baisse la Défense de la cible.",
+    "description_en": "Inflicts regular damage with no additional effect.",
+    "description_fr": "Inflige des dégâts réguliers avec aucun effet additionnel.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

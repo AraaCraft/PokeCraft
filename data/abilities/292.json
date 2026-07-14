@@ -3,6 +3,6 @@
     "name": "sharpness",
     "name_fr": "Incisif",
     "name_en": "Sharpness",
-    "description_fr": "Augmente la puissance des capacités tranchantes.",
-    "description_en": "Powers up slicing moves."
+    "description_fr": "Augmente la puissance de toutes les capacités 'tranchantes' de 50%.",
+    "description_en": "Increases the power of all 'slicing' moves by 50%."
 }

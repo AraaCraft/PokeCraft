@@ -3,6 +3,6 @@
     "name": "lightning-rod",
     "name_fr": "Paratonnerre",
     "name_en": "Lightning Rod",
-    "description_fr": "Attire l’électricité et augmente l’Atq. Spé.",
-    "description_en": "Draws electrical moves."
+    "description_fr": "Toutes les capacités de type Électrik à cible unique des autres Pokémon sont redirigées sur ce Pokémon s'il est une cible éligible.  Les capacités Électrik des autres Pokémon augmentent l'Attaque Spéciale de ce Pokémon d'un niveau, annulant n'importe quel autre effet sur lui, et ne peut pas manquer sa cible.  Si la cible attendue de la capacité a aussi ce talent, la capacité n'est pas redirigée.  Quand plusieurs Pokémon avec ce talent sont des cibles possibles pour la redirection, la capacité est redirigée sur celui avec la plus grande stat de Vitesse, ou, en cas d'égalité, vers un Pokémon aléatoire de l'égalité.  Par Ici prend la priorité sur ce talent.  Si le Pokémon est un type Sol et ainsi immunisé aux capacités Électrik, son immunité empêche le boost d'Attaque Spéciale.",
+    "description_en": "All other Pokémon's single-target Electric-type moves are redirected to this Pokémon if it is an eligible target.  Other Pokémon's Electric moves raise this Pokémon's Special Attack one stage, negating any other effect on it, and cannot miss it.  If the move's intended target also has this ability, the move is not redirected.  When multiple Pokémon with this ability are possible targets for redirection, the move is redirected to the one with the highest Speed stat, or, in the case of a tie, to a random tied Pokémon.  Follow Me takes precedence over this ability.  If the Pokémon is a Ground-type and thus immune to Electric moves, its immunity prevents the Special Attack boost."
 }

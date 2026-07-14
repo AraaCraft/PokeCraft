@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "The user bites with flame-cloaked fangs. It may also make the foe flinch or sustain a burn.",
-    "description_fr": "Le lanceur utilise une morsure enflammée. Peut aussi brûler ou apeurer l’ennemi.",
+    "description_en": "Has a chance to burn the target and a chance to make the target flinch.",
+    "description_fr": "A une chance de brûler la cible et une chance d'apeurer la cible.",
     "effect_chance": 10,
     "effect_changes": [
         {

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Stronger if the user's HP is low.",
-    "description_fr": "Le lanceur fait tournoyer son fléau. Plus ses PV sont bas, plus l’attaque est puissante.",
+    "description_en": "Inflicts more damage when the user has less HP remaining, with a maximum of 200 power.",
+    "description_fr": "Inflige plus de dégâts quand le lanceur a moins de PV restants, avec une puissance maximum de 200.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

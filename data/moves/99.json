@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Raises ATTACK if the user is hit.",
-    "description_fr": "Une fois activée, cette capacité augmente l’Attaque du lanceur à mesure que celui-ci subit des attaques.",
+    "description_en": "If the user is hit after using this move, its Attack rises by one stage.",
+    "description_fr": "Si le lanceur est touché après avoir utilisé cette capacité, son Attaque augmente d'un niveau.",
     "effect_chance": null,
     "effect_changes": [
         {

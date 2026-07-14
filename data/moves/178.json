@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Sharply reduces the foe's SPEED.",
-    "description_fr": "Le lanceur libère des spores cotonneuses qui collent à l’ennemi et baissent fortement sa Vitesse.",
+    "description_en": "Lowers the target’s Speed by two stages.",
+    "description_fr": "Diminue la Vitesse de la cible de deux niveaux.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

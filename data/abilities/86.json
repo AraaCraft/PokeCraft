@@ -3,6 +3,6 @@
     "name": "simple",
     "name_fr": "Simple",
     "name_en": "Simple",
-    "description_fr": "Le Pokémon est sujet à des variations de stats.",
-    "description_en": "The Pokémon is prone to wild stat changes."
+    "description_fr": "Chaque niveau de modification de stat de ce Pokémon agit comme deux niveaux.  Ces niveaux doublés sont toujours limités à un minimum de -6 et un maximum de 6.  Ce Pokémon peut toujours accumuler moins de -3 ou plus de 3 niveaux de modifications de stat, bien que les supplémentaires n’ont aucun d’effet après avoir doublé.",
+    "description_en": "Each stage of this Pokémon's stat modifiers acts as two stages.  These doubled stages are still limited to a minimum of -6 and a maximum of 6.  This Pokémon can still accumulate less than -3 or more than 3 stages of stat modifiers, even though the extra ones have no effect after doubling."
 }

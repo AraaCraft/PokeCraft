@@ -1,8 +1,8 @@
 {
     "accuracy": 70,
     "damage_class": "special",
-    "description_en": "An attack that may cause paralysis.",
-    "description_fr": "La foudre tombe sur l’ennemi pour lui infliger des dégâts. Peut aussi le paralyser.",
+    "description_en": "Has a chance to paralyze the target.",
+    "description_fr": "A une chance de paralyser la cible.",
     "effect_chance": 30,
     "effect_changes": [
         {

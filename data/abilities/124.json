@@ -3,6 +3,6 @@
     "name": "pickpocket",
     "name_fr": "Pickpocket",
     "name_en": "Pickpocket",
-    "description_fr": "Vole l’objet de l’ennemi si son attaque touche.",
-    "description_en": "Steals an item when hit by another Pokémon."
+    "description_fr": "Quand une capacité réalise un contact avec ce Pokémon, s’il n’a pas d’objet tenu, il vote l’objet tenu de l’attaquant.  Ce Pokémon ne peut pas voler en étant mis KO.  Il peut voler si l’attaquant a un Clonage, mais ne peut pas voler quand son propre Clone est frappé.  Si une capacité frappe plusieurs fois, seul le dernier coup déclenche ce talent.  Si ce Pokémon est sauvage, il ne peut pas voler d’un Pokémon dressé.",
+    "description_en": "Whenever a move makes contact with this Pokémon, if it does not have a held item, it steals the attacker's held item.  This Pokémon cannot steal upon being knocked out.  It can steal if the attacker has a Substitute, but cannot steal when its own Substitute is hit.  If a move hits multiple times, only the last hit triggers this ability.  If this Pokémon is wild, it cannot steal from a trained Pokémon."
 }

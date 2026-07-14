@@ -1,8 +1,8 @@
 {
     "accuracy": 50,
     "damage_class": "physical",
-    "description_en": "An attack that always confuses.",
-    "description_fr": "Le lanceur rassemble ses forces et envoie un coup de poing à l’ennemi. S’il est touché, il est confus.",
+    "description_en": "Has a chance to confuse the target.",
+    "description_fr": "A une chance de rendre la cible confuse.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

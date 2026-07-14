@@ -3,6 +3,6 @@
     "name": "harvest",
     "name_fr": "Récolte",
     "name_en": "Harvest",
-    "description_fr": "Les Baies utilisées peuvent repousser.",
-    "description_en": "May create another Berry after one is used."
+    "description_fr": "Après chaque tour, si le dernier objet que ce Pokémon a consommé était une Baie et qu'il ne tient actuellement pas d'objet, il a 50% de chances de regagner cette Baie, ou 100% de chances sous soleil intense.",
+    "description_en": "After each turn, if the last item this Pokémon consumed was a Berry and it is not currently holding an item, it has a 50% chance of regaining that Berry, or a 100% chance during strong sunlight."
 }

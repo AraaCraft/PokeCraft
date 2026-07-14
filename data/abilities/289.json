@@ -3,6 +3,6 @@
     "name": "hadron-engine",
     "name_fr": "Moteur à Hadrons",
     "name_en": "Hadron Engine",
-    "description_fr": "Le Pokémon crée un champ électrifié quand il rejoint\\nle combat. Une machine du futur fait monter son Attaque\\nSpéciale si un champ électrifié est actif.",
+    "description_fr": "Change le sol en Champ Électrifié quand le Pokémon entre au combat. L'engin futuriste à l'intérieur du Pokémon booste aussi son sa stat d'Atk Spé sous un Champ Électrifié.",
     "description_en": "Turns the ground into Electric Terrain when the Pokémon enters a battle. The futuristic engine within the Pokémon also boosts its Sp. Atk stat on Electric Terrain."
 }

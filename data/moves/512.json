@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user nimbly strikes the target. If the user is not holding an item, this attack inflicts massive damage.",
-    "description_fr": "Attaque agile. Si le lanceur ne tient pas d’objet, l’attaque inflige davantage de dégâts.",
+    "description_en": "Has double power if the user has no held item.",
+    "description_fr": "A une puissance double si le lanceur n'a pas d'objet tenu.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

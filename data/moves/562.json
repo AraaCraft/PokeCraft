@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "special",
-    "description_en": "The user lets out a damaging belch at the target. The user must eat a held Berry to use this move.",
-    "description_fr": "Le lanceur se tourne vers l’ennemi et lui éructe dessus, infligeant des dégâts. Ne fonctionne que si le lanceur consomme la Baie qu’il tient.",
+    "description_en": "Can only be used after the user has eaten a berry.",
+    "description_fr": "Ne peut être utilisé qu'après que le lanceur a mangé une baie.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

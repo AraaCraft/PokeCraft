@@ -3,6 +3,6 @@
     "name": "frisk",
     "name_fr": "Fouille",
     "name_en": "Frisk",
-    "description_fr": "Permet de connaître l'objet tenu par l'ennemi.",
-    "description_en": "The Pokémon can check the foe’s held item."
+    "description_fr": "Quand ce Pokémon entre au combat, il révèle un objet tenu d’un Pokémon opposé à tous les dresseurs participants.  Dans un combat double, si un adversaire a un objet, ce Pokémon Fouillera ce Pokémon; si les deux ont un objet, il en Fouillera un au hasard.",
+    "description_en": "When this Pokémon enters battle, it reveals an opposing Pokémon's held item to all participating trainers.  In a double battle, if one opponent has an item, this Pokémon will Frisk that Pokémon; if both have an item, it will Frisk one at random."
 }

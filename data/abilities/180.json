@@ -3,6 +3,6 @@
     "name": "symbiosis",
     "name_fr": "Symbiose",
     "name_en": "Symbiosis",
-    "description_fr": "Permet aux alliés d’utiliser l’objet porté par ce Pokémon.",
-    "description_en": "The Pokémon can pass an item to an ally."
+    "description_fr": "Si un Pokémon allié consomme son objet tenu, comme une Baie, alors ce Pokémon lui donnera l'objet que lui-même tient. ",
+    "description_en": "Passes the bearer's held item to an ally when the ally uses up its item."
 }

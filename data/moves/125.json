@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
-    "description_en": "An attack that may cause flinching.",
-    "description_fr": "Le lanceur frappe l’ennemi à grands coups d’os. Peut aussi apeurer l’ennemi.",
+    "description_en": "Has a chance to make the target flinch.",
+    "description_fr": "A une chance d'apeurer la cible.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

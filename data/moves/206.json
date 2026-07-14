@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Leaves the foe with at least 1HP.",
-    "description_fr": "Le lanceur retient ses coups pour que l’ennemi garde au moins 1 PV et ne tombe pas K.O.",
+    "description_en": "Cannot lower the target’s HP below 1.",
+    "description_fr": "Ne peut pas baisser les PV de la cible en dessous de 1.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

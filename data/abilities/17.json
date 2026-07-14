@@ -3,6 +3,6 @@
     "name": "immunity",
     "name_fr": "Vaccin",
     "name_en": "Immunity",
-    "description_fr": "Empêche l'empoisonnement.",
-    "description_en": "Prevents poisoning."
+    "description_fr": "Ce Pokémon ne peut pas être empoisonné.  Cela inclut le poison grave.  Si un Pokémon est empoisonné et acquiert ce talent, le poison est soigné; également lorsqu'il regagne un talent perdu en quittant le combat.",
+    "description_en": "This Pokémon cannot be poisoned.  This includes bad poison.  If a Pokémon is poisoned and acquires this ability, its poison is healed; this includes when regaining a lost ability upon leaving battle."
 }

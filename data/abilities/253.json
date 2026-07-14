@@ -3,6 +3,6 @@
     "name": "perish-body",
     "name_fr": "Corps Condamné",
     "name_en": "Perish Body",
-    "description_fr": "Lorsque le Pokémon est directement touché par une attaque, l’assaillant et lui tomberont K.O. dans trois tours, à moins qu’ils ne soient remplacés entre temps.",
-    "description_en": "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle."
+    "description_fr": "Quand un Pokémon avec Corps Condamné est frappé par une capacité de contact, l'éattaquant et le Pokémon avec Corps Condamné seront mis KO dans trois tours.",
+    "description_en": "When the Pokémon with Perish Body is hit with a contact move, both the attacker and the Pokémon with Perish Body will faint in three turns."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "special",
-    "description_en": "The user yells as if it is ranting about something, making the target’s Sp. Atk stat decrease.",
-    "description_fr": "Le lanceur hurle sur l’ennemi. Baisse l’Attaque Spéciale de l’ennemi.",
+    "description_en": "Has a chance to lower the target’s Special Attack by one stage.",
+    "description_fr": "A une chance de diminuer l'Attaque Spéciale de la cible d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "May miss, damaging the user.",
-    "description_fr": "Le lanceur s’envole pour décocher un coup de pied sauté. S’il échoue, le lanceur se blesse.",
+    "description_en": "If the user misses, it takes half the damage it would have inflicted in recoil.",
+    "description_fr": "Si le lanceur rate son attaque, il subit la moitié des dégâts qu'il aurait infligé en retour.",
     "effect_chance": null,
     "effect_changes": [
         {

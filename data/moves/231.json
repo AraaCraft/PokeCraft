@@ -1,8 +1,8 @@
 {
     "accuracy": 75,
     "damage_class": "physical",
-    "description_en": "An attack that may reduce DEFENSE.",
-    "description_fr": "Attaque l’ennemi avec une queue de fer. Peut aussi baisser la Défense de l’ennemi.",
+    "description_en": "Has a chance to lower the target’s Defense by one stage.",
+    "description_fr": "A une chance de diminuer la Défense de la cible d'un niveau.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

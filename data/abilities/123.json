@@ -3,6 +3,6 @@
     "name": "bad-dreams",
     "name_fr": "Mauvais Rêve",
     "name_en": "Bad Dreams",
-    "description_fr": "Réduit les PV d'un ennemi endormi.",
-    "description_en": "Reduces a sleeping foe’s HP."
+    "description_fr": "Les Pokémon adverses subissent 1/8 de leurs PV maximum en dégâts après chaque tour quand ils sont endormis.",
+    "description_en": "Opposing Pokémon take 1/8 of their maximum HP in damage after each turn while they are asleep."
 }

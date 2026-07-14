@@ -3,6 +3,6 @@
     "name": "ice-body",
     "name_fr": "Corps Gel",
     "name_en": "Ice Body",
-    "description_fr": "Récupère des PV lors des tempêtes de grêle.",
-    "description_en": "The Pokémon regains HP in a hailstorm."
+    "description_fr": "Ce Pokémon se soigne d'1/16 de ses PV maximum après chaque tour sous grêle, et il ne subit pas les dégâts de la grêle peu importe son type.",
+    "description_en": "This Pokémon heals for 1/16 of its maximum HP after each turn during hail, and it does not take hail damage regardless of type."
 }

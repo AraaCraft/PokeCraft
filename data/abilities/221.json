@@ -3,6 +3,6 @@
     "name": "tangling-hair",
     "name_fr": "Mèche Rebelle",
     "name_en": "Tangling Hair",
-    "description_fr": "Baisse la Vitesse de l’attaquant lorsque le Pokémon subit une attaque directe.",
-    "description_en": "Contact with the Pokémon lowers the attacker’s Speed stat."
+    "description_fr": "Quand ce Pokémon subit des dégâts réguliers de capacités à contact, la Vitesse des Pokémon attaquants diminue d’un niveau.",
+    "description_en": "When this Pokémon takes regular damage from a contact move, the attacking Pokémon's Speed lowers by one stage."
 }

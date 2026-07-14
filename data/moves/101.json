@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user's level equals damage HP.",
-    "description_fr": "Le lanceur invoque un mirage. Inflige des dégâts équivalents au niveau du lanceur.",
+    "description_en": "Inflicts damage equal to the user’s level.",
+    "description_fr": "Inflige des dégâts égaux au niveau du lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

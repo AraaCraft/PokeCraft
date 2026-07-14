@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user attacks while simultaneously stitching the target’s shadow to the ground to prevent the target from escaping.",
-    "description_fr": "Une attaque qui coud l’ennemi à son ombre, ce qui l’empêche de s’enfuir.",
+    "description_en": "Traps the target.",
+    "description_fr": "Piège la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

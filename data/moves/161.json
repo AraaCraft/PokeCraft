@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Fires three kinds of beams at once.",
-    "description_fr": "Le lanceur envoie trois boules d’énergie simultanément. Peut aussi paralyser, brûler ou geler l’ennemi.",
+    "description_en": "Has a chance to burn, freeze, or paralyze the target.",
+    "description_fr": "A une chance de brûler, geler, ou paralyser la cible.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

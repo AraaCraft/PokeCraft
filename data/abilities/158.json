@@ -3,6 +3,6 @@
     "name": "prankster",
     "name_fr": "Farceur",
     "name_en": "Prankster",
-    "description_fr": "Utilise les attaques de statut en premier.",
-    "description_en": "Gives priority to a status move."
+    "description_fr": "Les capacités non offensives de ce Pokémon ont leur priorité augmentées d'un niveau.",
+    "description_en": "This Pokémon's non-damaging moves have their priority increased by one stage."
 }

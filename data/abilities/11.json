@@ -3,6 +3,6 @@
     "name": "water-absorb",
     "name_fr": "Absorbe-Eau",
     "name_en": "Water Absorb",
-    "description_fr": "Change l'eau en PV.",
-    "description_en": "Changes water into HP."
+    "description_fr": "Lorsqu'une capacité de type Eau touche ce Pokémon, elle lui soigne 1/4 de ses PV max, annulant tous les autres effets.   Les capacités Eau ignorent le Clonage de ce Pokémon.",
+    "description_en": "Whenever a Water-type move hits this Pokémon, it heals for 1/4 of its maximum HP, negating any other effect on it.  Water moves will ignore this Pokémon's Substitute."
 }

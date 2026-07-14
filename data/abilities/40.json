@@ -3,6 +3,6 @@
     "name": "magma-armor",
     "name_fr": "Armumagma",
     "name_en": "Magma Armor",
-    "description_fr": "Empêche le gel.",
-    "description_en": "Prevents freezing."
+    "description_fr": "Ce Pokémon ne peut pas être gelé.  Si un Pokémon est gelé et acquiert ce talent, il sera immédiatement dégelé; cela inclut la récupération de talent perdu en quittant le combat.  Monde extérieur: Si n'importe quel Pokémon de l'équipe a ce talent, chaque œuf de l'équipe a son compteur d'éclosion diminué de 2 (plutôt que 1) à chaque cycle de pas, faisant éclore les œufs environ deux fois plus rapidement.  Cet effet ne se cumule pas si plusieurs Pokémon ont ce talent ou Corps Ardent.",
+    "description_en": "This Pokémon cannot be frozen.  If a Pokémon is frozen and acquires this ability, it will immediately thaw out; this includes when regaining a lost ability upon leaving battle.  Overworld: If any Pokémon in the party has this ability, each egg in the party has its hatch counter decreased by 2 (rather than 1) each step cycle, making eggs hatch roughly twice as quickly.  This effect does not stack if multiple Pokémon have this ability or Flame Body."
 }

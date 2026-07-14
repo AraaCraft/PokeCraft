@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "A tackle that also hurts the user.",
-    "description_fr": "Une dangereuse charge. Inflige aussi des dégâts assez importants au lanceur.",
+    "description_en": "User receives 1/3 the damage inflicted in recoil.",
+    "description_fr": "Le lanceur reçoit 1/3 des dégâts infligés en contrecoup.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

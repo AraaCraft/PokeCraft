@@ -3,6 +3,6 @@
     "name": "stakeout",
     "name_fr": "Filature",
     "name_en": "Stakeout",
-    "description_fr": "Lorsque le Pokémon attaque une cible qui vient d’entrer sur le terrain en remplacement d’un autre Pokémon, les dégâts infligés sont doublés.",
-    "description_en": "Doubles the damage dealt to the target’s replacement if the target switches out."
+    "description_fr": "Les capacités de ce Pokémon ont une puissance double contre les Pokémon qui sont entrés sur le terrain ce tour.",
+    "description_en": "This Pokémon's moves have double power against Pokémon that switched in this turn."
 }

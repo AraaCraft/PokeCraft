@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user rapidly cools the target. This may also leave the target frozen. This move is super effective on Water types.",
-    "description_fr": "Refroidit violemment l’ennemi et peut le geler. Super efficace sur les Pokémon de type Eau.",
+    "description_en": "Super-effective against Water.",
+    "description_fr": "Super-efficace contre Eau.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

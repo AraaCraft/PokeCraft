@@ -3,6 +3,6 @@
     "name": "shield-dust",
     "name_fr": "Écran Poudre",
     "name_en": "Shield Dust",
-    "description_fr": "Empêche le cumul d'effets.",
-    "description_en": "Prevents added effects."
+    "description_fr": "Ce Pokémon est immunisé contre les effets additionnels des capacités utilisées contre lui.    Un effet additionnel est une possibilité qu'une capacité, listée comme une \"probabilité d'effet\", inflige une altération de statut, cause un changement de stat, ou apeure la cible en plus de l'effet principal de la capacité.  Par exemple, la paralysie de Éclair est un effet additionnel, mais celle de Cage Éclair ne l'est pas, ni le retrait d'objet de Sabotage et l'augmentation de taux de coups critiques de Tranch’Air.",
+    "description_en": "This Pokémon is immune to the extra effects of moves used against it.  An extra effect is a move's chance, listed as an \"effect chance\", to inflict a status ailment, cause a stat change, or make the target flinch in addition to the move's main effect.  For example, Thunder Shock's paralysis is an extra effect, but Thunder Wave's is not, nor are Knock Off's item removal and Air Cutter's increased critical hit rate."
 }

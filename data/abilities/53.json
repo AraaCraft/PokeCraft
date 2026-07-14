@@ -3,6 +3,6 @@
     "name": "pickup",
     "name_fr": "Ramassage",
     "name_en": "Pickup",
-    "description_fr": "Permet parfois au Pokémon de ramasser des objets.",
-    "description_en": "May pick up items."
+    "description_fr": "À la fin de chaque tour, si un autre Pokémon a consommé ou jeté un objet tenu ce tour, ce Pokémon ramasse l'objet s'il n'en tient pas déjà un.  Après chaque combat, ce Pokémon a 10% de chances de ramasser un objet s'il n'en tient pas déjà un.  Le Ballon et Bouton Fuite ne peuvent pas être ramassés.  Les objets qui peuvent être trouvés varient par jeu, et, depuis Pokémon Émeraude, par niveau du Pokémon.  Ce talent est vérifié après que le combat se termine, auquel moment tout changement temporaire de talent sera dissipé.",
+    "description_en": "At the end of each turn, if another Pokémon consumed or Flung a held item that turn, this Pokémon picks up the item if it is not already holding one.  After each battle, this Pokémon has a 10% chance of picking up an item if it is not already holding one.  The Air Balloon and Eject Button cannot be picked up.  The items that may be found vary by game, and, since Pokémon Emerald, by the Pokémon's level.  This ability is checked after the battle ends, at which point any temporary ability changes have worn off."
 }

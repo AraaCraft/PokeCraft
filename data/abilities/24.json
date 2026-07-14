@@ -3,6 +3,6 @@
     "name": "rough-skin",
     "name_fr": "Peau Dure",
     "name_en": "Rough Skin",
-    "description_fr": "Blesse quand touché.",
-    "description_en": "Hurts to touch."
+    "description_fr": "Quand une capacité réalise un contact avec ce Pokémon, le lanceur de la capacité subit 1/8 de ses PV maximum en dégâts.  Ce talent fonctionne de la même manière que Épine de Fer.",
+    "description_en": "Whenever a move makes contact with this Pokémon, the move's user takes 1/8 of its maximum HP in damage.  This ability functions identically to Iron Barbs."
 }

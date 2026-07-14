@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user slams into the target with the force of a meteor. This move can be used on the target  regardless of its Abilities.",
-    "description_fr": "Le lanceur fonce sur la cible à la vitesse d’une météorite. Ignore le talent de l’ennemi.",
+    "description_en": "Cannot be disrupted by abilities.",
+    "description_fr": "Ne peut pas être perturbé par les talents.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

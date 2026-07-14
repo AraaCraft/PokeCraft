@@ -3,6 +3,6 @@
     "name": "dauntless-shield",
     "name_fr": "Égide Inflexible",
     "name_en": "Dauntless Shield",
-    "description_fr": "Augmente la Défense du Pokémon quand il entre au combat.",
-    "description_en": "Boosts the Pokémon’s Defense stat when the Pokémon enters a battle."
+    "description_fr": "Booste la stat de Défense du Pokémon la première fois que le Pokémon entre au combat.",
+    "description_en": "Boosts the Pokémon’s Defense stat the first time the Pokémon enters a battle."
 }

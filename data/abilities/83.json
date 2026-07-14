@@ -3,6 +3,6 @@
     "name": "anger-point",
     "name_fr": "Colérique",
     "name_en": "Anger Point",
-    "description_fr": "Monte l’Attaque au max après un coup critique.",
-    "description_en": "Raises Attack upon taking a critical hit."
+    "description_fr": "Quand ce Pokémon reçoit un coup critique, son Attaque augmente au maximum de 6 niveaux.  Ce talent prendra toujours effet si le coup critique est reçu par un Clonage.",
+    "description_en": "Whenever this Pokémon receives a critical hit, its Attack rises to the maximum of 6 stages.  This ability will still take effect if the critical hit is received by a Substitute."
 }

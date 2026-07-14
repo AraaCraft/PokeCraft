@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user faints. In return, the Pokémon taking its place will have its status and HP fully restored.",
-    "description_fr": "Le lanceur tombe K.O. pour soigner le statut et les PV du Pokémon qui prendra sa place au combat.",
+    "description_en": "User faints, and its replacement is fully healed.",
+    "description_fr": "Le lanceur est mis KO, et son remplaçant est complètement soigné.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

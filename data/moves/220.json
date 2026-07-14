@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Adds user & foe's HPs. Shares total.",
-    "description_fr": "Le lanceur ajoute ses PV à ceux de sa cible et les répartit équitablement.",
+    "description_en": "Sets the user’s and targets’s HP to the average of their current HP.",
+    "description_fr": "Les PV du lanceur et de la cible deviennent la moyenne de leurs PV actuels.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

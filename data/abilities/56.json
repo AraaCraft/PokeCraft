@@ -3,6 +3,6 @@
     "name": "cute-charm",
     "name_fr": "Joli Sourire",
     "name_en": "Cute Charm",
-    "description_fr": "Séduit quand touché.",
-    "description_en": "Infatuates on contact."
+    "description_fr": "Quand une capacité réalise un contact avec ce Pokémon, le lanceur de la capacité a 30% de chances d'être amoureux.  Monde extérieur: Si le premier Pokémon de l'équipe a ce talent, n'importe quel Pokémon sauvage dont l'espèce peut être des deux genres a 2/3 de chances d'être du genre opposé, et 1/3 chances d'avoir un genre aléatoire comme d'habitude.",
+    "description_en": "Whenever a move makes contact with this Pokémon, the move's user has a 30% chance of being infatuated.  Overworld: If the first Pokémon in the party has this ability, any wild Pokémon whose species can be either gender has a 2/3 chance of being set to the opposite gender, and a 1/3 chance of having a random gender as usual."
 }

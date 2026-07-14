@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Summons strong sunlight to attack 2 turns later.",
-    "description_fr": "Le lanceur génère une sphère lumineuse qu’il projette sur l’ennemi 2 tours plus tard.",
+    "description_en": "Hits the target two turns later.",
+    "description_fr": "Touche la cible deux tours plus tard.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

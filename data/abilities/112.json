@@ -3,6 +3,6 @@
     "name": "slow-start",
     "name_fr": "Début Calme",
     "name_en": "Slow Start",
-    "description_fr": "Divise temporairement Vitesse et Attaque par 2.",
-    "description_en": "Temporarily halves Attack and Speed."
+    "description_fr": "L’Attaque et Vitesse de ce Pokémon sont divisés par deux pendant cinq tours en entrant au combat.  Ce talent s’active aussi quand acquis pendant le combat.  Si ce Pokémon perd son talent avant que les cinq tours s’écoulent, ses Attaque et Vitesse reviennent à la normale; s’il regagne ce talent sans quitter le combat, ses Attaque et Vitesse sont divisées par deux à nouveau, mais le compteur continue de compter d’où il était.",
+    "description_en": "This Pokémon's Attack and Speed are halved for five turns upon entering battle.  This ability also takes effect when acquired during battle.  If this Pokémon loses its ability before the five turns are up, its Attack and Speed return to normal; if it then regains this ability without leaving battle, its Attack and Speed are halved again, but the counter keeps counting from where it was."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "physical",
-    "description_en": "Repeatedly punches 2-5 times.",
-    "description_fr": "Une tornade de coups de poing qui frappe de 2 à 5 fois d’affilée.",
+    "description_en": "Hits 2-5 times in one turn.",
+    "description_fr": "Touche 2-5 fois en un tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

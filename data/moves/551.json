@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "special",
-    "description_en": "The user attacks by engulfing the target in an intense, yet beautiful, blue flame. It may leave the target with a burn.",
-    "description_fr": "De magnifiques et redoutables flammes bleues fondent sur l’ennemi. Peut aussi le brûler.",
+    "description_en": "Has a chance to burn the target.",
+    "description_fr": "A une chance de brûler la cible.",
     "effect_chance": 20,
     "effect_changes": [],
     "effect_entries": null,

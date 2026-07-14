@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "special",
-    "description_en": "The user lets loose a pitch-black shock wave at its target. It may also lower the target’s accuracy.",
-    "description_fr": "Le lanceur attaque l’ennemi avec une onde de choc ténébreuse. Peut aussi baisser la Précision de l’ennemi.",
+    "description_en": "Has a chance to lower the target’s accuracy by one stage.",
+    "description_fr": "A une chance de diminuer la précision de la cible d'un niveau.",
     "effect_chance": 40,
     "effect_changes": [],
     "effect_entries": null,

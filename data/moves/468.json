@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user sharpens its claws to boost its Attack stat and accuracy.",
-    "description_fr": "Le lanceur s’aiguise les griffes. Augmente l’Attaque et la Précision.",
+    "description_en": "Raises the user’s Attack and accuracy by one stage.",
+    "description_fr": "Augmente l'Attaque et la précision du lanceur d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

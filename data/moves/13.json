@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "1st turn: Prepare 2nd turn: Attack",
-    "description_fr": "Attaque en 2 tours. Des lames de vent frappent l’ennemi au 2è tour. Taux de critiques élevé.",
+    "description_en": "Requires a turn to charge before attacking.",
+    "description_fr": "Requiert un tour pour charger avant d'attaquer.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

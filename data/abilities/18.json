@@ -3,6 +3,6 @@
     "name": "flash-fire",
     "name_fr": "Torche",
     "name_en": "Flash Fire",
-    "description_fr": "Puissance monte si brûlé.",
-    "description_en": "Powers up if hit by fire."
+    "description_fr": "Ce Pokémon est immunisé aux capacités de type Feu.  Une fois que ce Pokémon a été touché par une capacité Feu, ses propres capacités Feu infligent 50% de dommages supplémentaires jusqu'à ce qu'il quitte le combat.  Ce talent n'a pas d'effet tant que le Pokémon est gelé.  Le bonus de dommages Feu est retenu même si le Pokémon est gelé et degelé ou si le talent est perdu ou désactivé.  Les capacités Feu ignorent le Clonage de ce Pokémon.  Ce talent prend s'active aussi sur les capacités non-offensives, i.e. Feu Follet.",
+    "description_en": "This Pokémon is immune to Fire-type moves.  Once this Pokémon has been hit by a Fire move, its own Fire moves will inflict 1.5× as much damage until it leaves battle.  This ability has no effect while the Pokémon is frozen.  The Fire damage bonus is retained even if the Pokémon is frozen and thawed or the ability is lost or disabled.  Fire moves will ignore this Pokémon's Substitute.  This ability takes effect even on non-damaging moves, i.e. Will-O-Wisp."
 }

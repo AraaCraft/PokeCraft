@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "If it is the opposite gender of the user, the foe is charmed into sharply lowering its Sp. Atk stat.",
-    "description_fr": "Si l’ennemi est de sexe opposé au lanceur, il est séduit et son Attaque Spéciale baisse fortement.",
+    "description_en": "Lowers the target’s Special Attack by two stages if it’s the opposite gender.",
+    "description_fr": "Diminue l'Attaque Spéciale de la cible de deux niveaux si elle est du genre opposé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

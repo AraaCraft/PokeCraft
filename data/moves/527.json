@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "special",
-    "description_en": "The user captures and attacks opposing Pokémon by using an electric net. It reduces the targets’ Speed stat.",
-    "description_fr": "Attrape l’ennemi dans un filet électrique. Baisse aussi la Vitesse de l’ennemi.",
+    "description_en": "Lowers the target’s Speed by one stage.",
+    "description_fr": "Diminue la Vitesse de la cible d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

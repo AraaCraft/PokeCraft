@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "If the target’s HP is down to about half, this attack will hit with double the power.",
-    "description_fr": "Cette attaque est deux fois plus puissante lorsque l’ennemi a moins de la moitié de ses PV.",
+    "description_en": "Has double power against Pokémon that have less than half their max HP remaining.",
+    "description_fr": "A une puissance double contre les Pokémon qui ont moins de la moitié de leurs PV max restants.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

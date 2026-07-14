@@ -3,6 +3,6 @@
     "name": "long-reach",
     "name_fr": "Longue Portée",
     "name_en": "Long Reach",
-    "description_fr": "Le Pokémon est capable d’utiliser toutes ses capacités sans entrer en contact direct avec sa cible.",
-    "description_en": "The Pokémon uses its moves without making contact with the target."
+    "description_fr": "Une capacité utilisée par ce Pokémon ne réalisera pas de contact.",
+    "description_en": "A move used by this Pokémon will not make contact."
 }

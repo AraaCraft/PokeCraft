@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Always inflicts 40HP damage.",
-    "description_fr": "La colère du lanceur déclenche une onde de choc destructrice qui inflige toujours 40 PV de dégâts.",
+    "description_en": "Inflicts 40 points of damage.",
+    "description_fr": "Inflige 40 points de dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "magician",
     "name_fr": "Magicien",
     "name_en": "Magician",
-    "description_fr": "Les capacités volent aussi l’objet tenu par la cible.",
-    "description_en": "The Pokémon steals the held item of a Pokémon it hits with a move."
+    "description_fr": "Ce Pokémon vole l’objet tenu de l’adversaire une fois l’attaque effectuée.  Ce talent ne fonctionne pas si son possesseur tient déjà un objet, si son adversaire ne tient pas d'objet, ou encore si l'un des deux Pokémon est protégé par un Clone.",
+    "description_en": "Steals the target's held item when the bearer uses a damaging move."
 }

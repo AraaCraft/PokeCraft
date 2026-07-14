@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Using a pulled-up mat as a shield, the user protects itself and its allies from damaging moves. This does not stop status moves.",
-    "description_fr": "Retourne un tatami pour bloquer, comme avec un bouclier, les capacités visant le lanceur ou ses alliés. N’a pas d’effet sur les attaques de statut.",
+    "description_en": "Protects all friendly Pokémon from damaging moves.  Only works on the first turn after the user is sent out.",
+    "description_fr": "Protège tous les Pokémon alliés des capacités offensives.  Ne fonctionne que le premier tour après que le lanceur soit envoyé.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

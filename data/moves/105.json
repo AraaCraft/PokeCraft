@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Restores HP by 1/2 the max HP.",
-    "description_fr": "Un soin qui permet au lanceur de récupérer jusqu’à la moitié de ses PV max.",
+    "description_en": "Heals the user by half its max HP.",
+    "description_fr": "Soigne le lanceur de la moitié de ses PV max.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

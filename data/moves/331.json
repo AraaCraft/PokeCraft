@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Shoots 2 to 5 seeds in a row to strike the foe.",
-    "description_fr": "Le lanceur mitraille l’ennemi avec une rafale de graines. De 2 à 5 rafales sont lancées à la suite.",
+    "description_en": "Hits 2-5 times in one turn.",
+    "description_fr": "Touche 2-5 fois en un tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

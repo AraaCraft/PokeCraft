@@ -3,6 +3,6 @@
     "name": "natural-cure",
     "name_fr": "Médic Nature",
     "name_en": "Natural Cure",
-    "description_fr": "Soigne POKéMON changeant.",
-    "description_en": "Heals upon switching out."
+    "description_fr": "Ce Pokémon est soigné de n'importe quelle altération majeure de statut quand il est retiré pour un autre Pokémon.  Si ce talent est acquis au cours d'un combat, le Pokémon est soigné lorsqu'il quitte le combat avant de perdre le talent temporaire.",
+    "description_en": "This Pokémon is cured of any major status ailment when it is switched out for another Pokémon.  If this ability is acquired during battle, the Pokémon is cured upon leaving battle before losing the temporary ability."
 }

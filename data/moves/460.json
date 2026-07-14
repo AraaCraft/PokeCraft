@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "special",
-    "description_en": "The user tears the foe along with the space around it. This move has a high critical-hit ratio.",
-    "description_fr": "Le lanceur déchire l’ennemi et l’espace autour de lui. Taux de critiques élevé.",
+    "description_en": "Has an increased chance for a critical hit.",
+    "description_fr": "A une chance augmentée de coup critique.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

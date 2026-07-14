@@ -3,6 +3,6 @@
     "name": "defeatist",
     "name_fr": "Défaitiste",
     "name_en": "Defeatist",
-    "description_fr": "Baisse les stats quand les PV tombent à la moitié.",
-    "description_en": "Lowers stats when HP becomes half or less."
+    "description_fr": "L'Attaque et Attaque Spéciale de ce Pokémon sont divisées par deux quand il a ses PV à la moitié ou moins.",
+    "description_en": "This Pokémon's Attack and Special Attack are halved when it has half its HP or less."
 }

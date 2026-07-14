@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "special",
-    "description_en": "This is Eternatus’s most powerful attack in its original form. The user can’t move on the next turn.",
-    "description_fr": "L’attaque la plus puissante d’Éthernatos sous sa forme originelle. S’il l’utilise, il devra se reposer au tour suivant.",
+    "description_en": "User foregoes its next turn to recharge.",
+    "description_fr": "Le lanceur passe son prochain tour pour se recharger.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

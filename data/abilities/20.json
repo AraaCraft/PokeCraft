@@ -3,6 +3,6 @@
     "name": "own-tempo",
     "name_fr": "Tempo Perso",
     "name_en": "Own Tempo",
-    "description_fr": "Empêche la confusion.",
-    "description_en": "Prevents confusion."
+    "description_fr": "Ce Pokémon ne peut pas être confus.  Si un Pokémon est confus et acquiert ce talent, sa confusion sera immédiatement soignée.",
+    "description_en": "This Pokémon cannot be confused.  If a Pokémon is confused and acquires this ability, its confusion will immediately be healed."
 }

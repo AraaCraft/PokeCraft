@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "special",
-    "description_en": "The user, the Land Spirit Pokémon, obtains Alola’s energy using its Z-Power and attacks the target with full force. This reduces the target’s HP greatly.",
-    "description_fr": "Le Pokémon Tutélaire utilise la Force Z et déchaîne toute la puissance d’Alola sur sa cible. Inflige des dégâts en fonction des PV restants de celle-ci.",
+    "description_en": "Damages the target for 75% of its remaining HP.",
+    "description_fr": "Inflige des dégâts à la cible à hauteur de 75% de ses PV restants.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

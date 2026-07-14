@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target’s.",
-    "description_fr": "Additionne l’Attaque Spéciale et l’Attaque du lanceur et de sa cible et les redistribue équitablement entre les deux.",
+    "description_en": "Averages Attack and Special Attack with the target.",
+    "description_fr": "Moyenne l'Attaque et Attaque Spéciale avec la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

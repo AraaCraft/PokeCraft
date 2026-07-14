@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "With a hot flame on its forehead, the user hurls itself at its target. It lowers the user’s Defense, Sp. Def, and Speed stats.",
-    "description_fr": "Le lanceur projette une flamme ardente de son front et se jette sur l’ennemi. Baisse la Défense, la Déf. Spé. et la Vitesse.",
+    "description_en": "Lowers the user’s Defense, Special Defense, and Speed by one stage each.",
+    "description_fr": "Diminue la Défense, Défense Spéciale, et Vitesse du lanceur d'un niveau chacune.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

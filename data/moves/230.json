@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Allures the foe to reduce evasiveness.",
-    "description_fr": "Un doux parfum qui réduit l’Esquive de l’ennemi. Attire aussi les Pokémon sauvages.",
+    "description_en": "Lowers the target’s evasion by one stage.",
+    "description_fr": "Diminue l'esquive de la cible d'un niveau",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "disguise",
     "name_fr": "Fantômasque",
     "name_en": "Disguise",
-    "description_fr": "Le déguisement qui recouvre le corps du Pokémon est capable de le protéger d’une attaque.",
-    "description_en": "Once per battle, the shroud that covers the Pokémon can protect it from an attack."
+    "description_fr": "Si ce Pokémon est dans sa Forme Déguisée et subit des dégâts d'une capacité, il change en sa Forme Démasquée et les dégâts sont annulés.  Les autres effets ne sont pas empêchés.  Ce talent ne peut pas être copié ou remplacé.  Ce talent s'active seulement pour Mimiqui.",
+    "description_en": "If this Pokémon is in its Disguised Form and takes damage from a move, it switches to its Busted Form and the damage is prevented.  Other effects are not prevented.  This ability cannot be copied or replaced.  This ability only takes effect for Mimikyu."
 }

@@ -3,6 +3,6 @@
     "name": "air-lock",
     "name_fr": "Air Lock",
     "name_en": "Air Lock",
-    "description_fr": "Ignore les effets du climat.",
-    "description_en": "Negates weather effects."
+    "description_fr": "Quand ce Pokémon est au combat, la météo peut toujours être en jeu, mais n'aura aucun de ses effets.  Ce talent fonctionne de la même manière que Ciel Gris.",
+    "description_en": "While this Pokémon is in battle, weather can still be in play, but will not have any of its effects.  This ability functions identically to Cloud Nine."
 }

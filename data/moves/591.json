@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "The user whips up a storm of diamonds to damage opposing Pokémon. This may also raise the user’s Defense stat.",
-    "description_fr": "Provoque une tempête de diamants qui inflige des dégâts. Peut augmenter la Défense du lanceur.",
+    "description_en": "Has a chance to raise the user’s Defense by two stages for each target hit.",
+    "description_fr": "A une chance d'augmenter la Défense du lanceur de deux niveaux pour chaque cible touchée.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

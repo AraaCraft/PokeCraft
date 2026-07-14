@@ -3,6 +3,6 @@
     "name": "solar-power",
     "name_fr": "Force Soleil",
     "name_en": "Solar Power",
-    "description_fr": "Augmente l'Atq. Spé. mais baisse les PV au soleil.",
-    "description_en": "Boosts Sp. Atk, but lowers HP in sunshine."
+    "description_fr": "Sous soleil intense, ce Pokémon a 1.5× son Attaque Spéciale mais subit 1/8 de ses PV maximum en dégâts après chaque tour.",
+    "description_en": "During strong sunlight, this Pokémon has 1.5× its Special Attack but takes 1/8 of its maximum HP in damage after each turn."
 }

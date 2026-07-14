@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "Attacks with a burst of light. May lower SP. DEF.",
-    "description_fr": "Le lanceur libère un éclair lumineux. Peut aussi baisser la Défense Spéciale de l’ennemi.",
+    "description_en": "Has a chance to lower the target’s Special Defense by one stage.",
+    "description_fr": "A une chance de diminuer la Défense Spéciale de la cible d'un niveau.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

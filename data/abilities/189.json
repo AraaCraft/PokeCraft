@@ -3,6 +3,6 @@
     "name": "primordial-sea",
     "name_fr": "Mer Primaire",
     "name_en": "Primordial Sea",
-    "description_fr": "Altère les conditions météo et rend inefficaces les attaques Feu.",
-    "description_en": "Affects weather and nullifies any Fire-type attacks."
+    "description_fr": "Quand ce Pokémon entre au combat ou gagne ce talent, la météo devient une pluie abondante.  La pluie abondante a les mêmes propriétés que Danse Pluie et fait aussi échouer les capacités offensives Feu.  La pluie abondante prend fin quand ce Pokémon quitte le combat ou perd son talent, ou quand ce talent est annulé.  La météo ne peut pas être changée autrement sauf par les effets de Souffle Delta et Terre Finale.  Air Lock et Ciel Gris empêcheront les effets de la pluie abondante, incluant l’autorisation aux capacités Feu de fonctionner, mais ne permettront pas à la météo d’être changée.",
+    "description_en": "When this Pokémon enters battle or gains this ability, the weather becomes heavy rain.  Heavy rain has all the properties of Rain Dance and also causes damaging Fire moves to fail.  Heavy rain ends when this Pokémon leaves battle or loses this ability, or when this ability is nullified.  The weather cannot otherwise be changed except by the effects of Delta Stream and Desolate Land.  Air Lock and Cloud Nine will prevent the effects of heavy rain, including allowing Fire moves to work, but will not allow the weather to be changed."
 }

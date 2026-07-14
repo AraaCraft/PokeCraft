@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "An attack that may steal a held item.",
-    "description_fr": "Le lanceur attaque la cible et vole son objet. Le lanceur ne peut rien voler s’il tient déjà un objet.",
+    "description_en": "Takes the target’s item.",
+    "description_fr": "Prend l'objet de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

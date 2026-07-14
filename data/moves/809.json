@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user attacks the target by controlling the target’s item. The move fails if the target doesn’t have an item.",
-    "description_fr": "Le lanceur manipule l’objet tenu par l’ennemi pour l’attaquer. Échoue si la cible ne tient rien.",
+    "description_en": "Inflicts regular damage with no additional effect.",
+    "description_fr": "Inflige des dégâts réguliers avec aucun effet additionnel.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

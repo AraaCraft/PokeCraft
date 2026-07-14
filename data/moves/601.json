@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats on the next turn.",
-    "description_fr": "Le lanceur absorbe de l’énergie au premier tour et augmente fortement son Attaque Spéciale, sa Défense Spéciale et sa Vitesse au second.",
+    "description_en": "Takes one turn to charge, then raises the user’s Special Attack, Special Defense, and Speed by two stages.",
+    "description_fr": "Prend un tour pour charger, puis augmente l'Attaque Spéciale, Défense Spéciale, et Vitesse du lanceur de deux niveaux.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 30,
     "damage_class": "physical",
-    "description_en": "A ground-type, one-hit KO attack.",
-    "description_fr": "Le lanceur fait tomber l’ennemi dans une crevasse. Si cette attaque réussit, elle met K.O. sur le coup.",
+    "description_en": "Causes a one-hit KO.",
+    "description_fr": "Provoque un KO en un coup.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

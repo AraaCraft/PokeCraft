@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Cloaking itself in high energy, the user slams into the target. The memory held determines the move’s type.",
-    "description_fr": "Le Pokémon s’entoure d’une puissante énergie avant de foncer sur sa cible. Le type de la capacité dépend de la ROM installée.",
+    "description_en": "If the user is holding a appropriate plate or drive, the damage inflicted will match it.",
+    "description_fr": "Si le lanceur tient une plaque ou module approprié, les dégâts infligés y correspondent.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

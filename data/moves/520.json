@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "A column of grass hits opposing Pokémon. When used with its water equivalent, its damage increases into a vast swamp.",
-    "description_fr": "Une masse végétale s’abat sur l’ennemi. En l’utilisant avec Aire d’Eau, l’effet augmente et un marécage apparaît.",
+    "description_en": "With Fire Pledge, damages opposing Pokémon for 1/8 their max HP every turn for four turns.",
+    "description_fr": "Avec Aire de Feu, inflige des dégâts aux Pokémon adverses d'1/8 de leurs PV max à chaque tour pendant quatre tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

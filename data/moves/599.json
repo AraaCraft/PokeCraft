@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Opposing Pokémon are drenched in an odd poisonous liquid. This lowers the Attack, Sp. Atk, and Speed stats of a poisoned target.",
-    "description_fr": "Sécrète un liquide empoisonné. Diminue l’Attaque, l’Attaque Spéciale et la Vitesse de l’ennemi empoisonné.",
+    "description_en": "Lowers the target’s Attack, Special Attack, and Speed by one stage if it is poisoned.",
+    "description_fr": "Diminue l'Attaque, Attaque Spéciale, et Vitesse de la cible d'un niveau si elle est empoisonnée.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

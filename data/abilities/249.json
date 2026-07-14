@@ -3,6 +3,6 @@
     "name": "power-spot",
     "name_fr": "Cercle d’Énergie",
     "name_en": "Power Spot",
-    "description_fr": "Augmente la puissance des capacités des Pokémon qui se trouvent à proximité.",
-    "description_en": "Just being next to the Pokémon powers up moves."
+    "description_fr": "La puissance des capacités utilisées par les alliés du Pokémon avec Cercle d'Énergie est augmentée de 30%.",
+    "description_en": " \"The power of moves used by the allies of the Pokémon with Power Spot is increased by 30%.\""
 }

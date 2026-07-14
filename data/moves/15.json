@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "physical",
-    "description_en": "A basic attack. It can be used to cut down thin trees and grass.",
-    "description_fr": "Coupe l’ennemi avec des lames ou des griffes. Hors combat, permet de couper des arbres fins.",
+    "description_en": "Inflicts regular damage with no additional effect.",
+    "description_fr": "Inflige des dégâts réguliers avec aucun effet additionnel.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

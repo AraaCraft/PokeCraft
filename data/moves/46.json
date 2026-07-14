@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Scares wild foes to end battle.",
-    "description_fr": "Effraie le Pokémon ennemi et le remplace par un autre. Dans la nature, met fin au combat.",
+    "description_en": "Immediately ends wild battles.  Forces trainers to switch Pokémon.",
+    "description_fr": "Termine immédiatement les combats sauvages.   Force les dresseurs à retirer leur Pokémon.",
     "effect_chance": null,
     "effect_changes": [
         {

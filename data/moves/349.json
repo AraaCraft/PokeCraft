@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "A mystical dance that ups ATTACK and SPEED.",
-    "description_fr": "Une danse mystique dont le rythme effréné augmente l’Attaque et la Vitesse du lanceur.",
+    "description_en": "Raises the user’s Attack and Speed by one stage.",
+    "description_fr": "Augmente l'Attaque et la Vitesse du lanceur d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

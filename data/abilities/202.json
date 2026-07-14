@@ -3,6 +3,6 @@
     "name": "slush-rush",
     "name_fr": "Chasse-Neige",
     "name_en": "Slush Rush",
-    "description_fr": "Augmente la Vitesse du Pokémon quand il grêle.",
-    "description_en": "Boosts the Pokémon’s Speed stat in a hailstorm."
+    "description_fr": "Sous Grêle, ce Pokémon a une Vitesse double.",
+    "description_en": "During Hail, this Pokémon has double Speed."
 }

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Reduces the foe's ATTACK.",
-    "description_fr": "Le lanceur pousse un cri tout mimi pour tromper la vigilance de l’ennemi et baisser son Attaque.",
+    "description_en": "Lowers the target’s Attack by one stage.",
+    "description_fr": "Diminue l'Attaque de la cible d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

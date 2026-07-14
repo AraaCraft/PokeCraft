@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "All stat changes affecting the target turn topsy-turvy and become the opposite of what they were.",
-    "description_fr": "Inverse tous les changements de stats de la cible.",
+    "description_en": "Inverts the target’s stat modifiers.",
+    "description_fr": "Inverse les modifications de stat de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

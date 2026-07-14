@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Hurts foes when they switch out.",
-    "description_fr": "Le lanceur disperse des piquants sur le sol pour blesser tout ennemi qui entre au combat.",
+    "description_en": "Scatters Spikes, hurting opposing Pokémon that switch in.",
+    "description_fr": "Éparpille des Picots, blessant les Pokémon adverses qui entrent sur le terrain.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

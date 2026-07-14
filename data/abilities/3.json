@@ -3,6 +3,6 @@
     "name": "speed-boost",
     "name_fr": "Turbo",
     "name_en": "Speed Boost",
-    "description_fr": "Améliore la VITESSE.",
-    "description_en": "Gradually boosts SPEED."
+    "description_fr": "La Vitesse de ce Pokémon augmente d'un niveau après chaque tour.",
+    "description_en": "This Pokémon's Speed rises one stage after each turn."
 }

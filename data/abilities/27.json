@@ -3,6 +3,6 @@
     "name": "effect-spore",
     "name_fr": "Pose Spore",
     "name_en": "Effect Spore",
-    "description_fr": "Laisse spores si touché.",
-    "description_en": "Leaves spores on contact."
+    "description_fr": "Quand une capacité réalise un contact avec ce Pokémon, le lanceur de la capacité a 30% de chances d'être paralysé, empoisonné, ou endormi, choisi au hasard.  Rien n'est fait pour compenser si le lanceur de la capacité est immunisé à l'une de ces altérations; il y a simplement moins de chances que le lanceur de la capacité soit affecté.",
+    "description_en": "Whenever a move makes contact with this Pokémon, the move's user has a 30% chance of being paralyzed, poisoned, or put to sleep, chosen at random.  Nothing is done to compensate if the move's user is immune to one of these ailments; there is simply a lower chance that the move's user will be affected."
 }

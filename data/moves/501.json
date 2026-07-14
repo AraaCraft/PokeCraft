@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user protects itself and its allies from priority moves. If used in succession, its chance of failing rises.",
-    "description_fr": "Le lanceur et son équipe sont protégés contre les attaques prioritaires. Peut échouer si utilisée plusieurs fois de suite.",
+    "description_en": "Prevents any priority moves from hitting friendly Pokémon this turn.",
+    "description_fr": "Empêche toute capacité prioritaire de frapper un Pokémon allié ce tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

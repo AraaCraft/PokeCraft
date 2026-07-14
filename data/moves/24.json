@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "A double kicking attack.",
-    "description_fr": "Deux coups de pied qui frappent l’ennemi deux fois d’affilée.",
+    "description_en": "Hits twice in one turn.",
+    "description_fr": "Touche deux fois en un tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

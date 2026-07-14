@@ -3,6 +3,6 @@
     "name": "solid-rock",
     "name_fr": "Solide Roc",
     "name_en": "Solid Rock",
-    "description_fr": "Affaiblit les capacités “super efficaces”.",
-    "description_en": "Powers down super­ effective moves."
+    "description_fr": "Ce Pokémon subit 0.75× de dégâts des capacités qui sont super efficaces contre lui.  Ce talent fonctionne de la même manière que Filtre.",
+    "description_en": "This Pokémon takes 0.75× as much damage from moves that are super effective against it.  This ability functions identically to Filter."
 }

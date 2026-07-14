@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Negates the foe’s efforts to heighten evasiveness.",
-    "description_fr": "Permet de toucher un Pokémon Spectre avec n’importe quelle capacité et de toucher un ennemi insaisissable.",
+    "description_en": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it’s a Ghost.",
+    "description_fr": "Force la cible à ne pas pouvoir Fuir, et la rend sensible aux capacités Normal et Combat même si elle est un Spectre.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

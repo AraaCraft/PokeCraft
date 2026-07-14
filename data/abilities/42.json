@@ -3,6 +3,6 @@
     "name": "magnet-pull",
     "name_fr": "Magnépiège",
     "name_en": "Magnet Pull",
-    "description_fr": "Piège les POKéMON ACIER.",
-    "description_en": "Traps STEEL-type POKéMON."
+    "description_fr": "Tant que ce Pokémon est au combat, les Pokémon adverses de type Acier ne peuvent pas fuir ou se retirer.  Les Pokémon avec Fuite peuvent toujours fuir.  Les Pokémon peuvent toujours se retirer avec l'utilisation d'une capacité ou objet.  Monde extérieur: Si le Pokémon de tête a ce talent, les Pokémon de type Acier ont un taux de rencontre plus grand.",
+    "description_en": "While this Pokémon is in battle, opposing Steel-type Pokémon cannot flee or switch out.  Pokémon with Run Away can still flee.  Pokémon can still switch out with the use of a move or item.  Overworld: If the lead Pokémon has this ability, Steel-type Pokémon have a higher encounter rate."
 }

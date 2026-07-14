@@ -3,6 +3,6 @@
     "name": "white-smoke",
     "name_fr": "Écran Fumée",
     "name_en": "White Smoke",
-    "description_fr": "Empêche réduction des cap.",
-    "description_en": "Prevents ability reduction."
+    "description_fr": "Ce Pokémon ne peut pas avoir ses stats baissées par d'autres Pokémon.  Ce talent n'empêche pas les baisses de stat autres que les modifications de stat, telles que la baisse de Vitesse de la paralysie; ni les baisses de stat auto-infligées, telles que la baisse d'Attaque Spéciale de Surchauffe; ni les boosts de stat déclenchées par l'adversaire, tels que le boost d'Attaque de Vantardise.  Ce Pokémon peut toujours recevoir des modifications de stat négatives via Permugarde, Permucœur, ou Permuforce.  Ce talent fonctionne de la même manière que Corps Sain au combat.  Monde extérieur: Si le Pokémon de tête a ce talent, le taux de rencontre sauvage est divisé par deux.",
+    "description_en": "This Pokémon cannot have its stats lowered by other Pokémon.  This ability does not prevent any stat losses other than stat modifiers, such as the Speed cut from paralysis; nor self-inflicted stat drops, such as the Special Attack drop from Overheat; nor opponent-triggered stat boosts, such as the Attack boost from Swagger.  This Pokémon can still be passed negative stat modifiers through Guard Swap, Heart Swap, or Power Swap.  This ability functions identically to Clear Body in battle.  Overworld: If the lead Pokémon has this ability, the wild encounter rate is halved."
 }

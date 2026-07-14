@@ -3,6 +3,6 @@
     "name": "telepathy",
     "name_fr": "Télépathe",
     "name_en": "Telepathy",
-    "description_fr": "Anticipe et évite les attaques de ses alliés.",
-    "description_en": "Anticipates an ally’s attack and dodges it."
+    "description_fr": "Ce Pokémon ne subit pas de dégâts des capacités de Pokémon alliés, incluant les capacités à cible unique ciblée sur lui.",
+    "description_en": "This Pokémon does not take damage from friendly Pokémon's moves, including single-target moves aimed at it."
 }

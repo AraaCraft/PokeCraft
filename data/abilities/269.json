@@ -3,6 +3,6 @@
     "name": "seed-sower",
     "name_fr": "Semencier",
     "name_en": "Seed Sower",
-    "description_fr": "Le Pokémon crée un champ herbu quand\\nil subit une attaque.",
+    "description_fr": "Change le sol en Champ Herbu quand le Pokémon est frappé par une attaque.",
     "description_en": "Turns the ground into Grassy Terrain when the Pokémon is hit by an attack."
 }

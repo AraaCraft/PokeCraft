@@ -3,6 +3,6 @@
     "name": "fluffy",
     "name_fr": "Boule de Poils",
     "name_en": "Fluffy",
-    "description_fr": "Divise par deux les dégâts des attaques directes subies par le Pokémon, mais double les dégâts des capacités de type Feu.",
-    "description_en": "Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves."
+    "description_fr": "Les dégâts des capacités à contact sont divisées par deux.  Les dégâts des capacités Feu sont doublés.",
+    "description_en": "Damage from contact moves is halved.  Damage from Fire moves is doubled."
 }

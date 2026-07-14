@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The foe faints if the user does.",
-    "description_fr": "Quand cette capacité est activée, elle met K.O. un ennemi qui porte un coup fatal au lanceur.",
+    "description_en": "If the user faints this turn, the target automatically will, too.",
+    "description_fr": "Si le lanceur est mis KO ce tour, la cible le sera aussi, également.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

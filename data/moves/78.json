@@ -1,8 +1,8 @@
 {
     "accuracy": 75,
     "damage_class": "status",
-    "description_en": "A move that may paralyze the foe.",
-    "description_fr": "Le lanceur répand sur l’ennemi une poudre qui le paralyse.",
+    "description_en": "Paralyzes the target.",
+    "description_fr": "Paralyse la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

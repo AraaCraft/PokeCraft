@@ -3,6 +3,6 @@
     "name": "pastel-veil",
     "name_fr": "Voile Pastel",
     "name_en": "Pastel Veil",
-    "description_fr": "Protège le Pokémon et ses alliés contre toutes les altérations de statut liées à l’empoisonnement.",
-    "description_en": "Protects the Pokémon and its ally Pokémon from being poisoned."
+    "description_fr": "Empêche le Pokémon et ses alliés d'être empoisonnés. Il soigne aussi les alliés du poison quand il entre sur le champ de bataille.",
+    "description_en": "Prevents the Pokémon and its teammates from being poisoned. It also cures teammates of poisoning when it enters the battlefield."
 }

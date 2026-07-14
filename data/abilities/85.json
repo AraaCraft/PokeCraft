@@ -3,6 +3,6 @@
     "name": "heatproof",
     "name_fr": "Ignifugé",
     "name_en": "Heatproof",
-    "description_fr": "Réduit la puissance des capacités de type Feu.",
-    "description_en": "Weakens the power of Fire-type moves."
+    "description_fr": "Ce Pokémon subit la moitié des dégâts des capacités de type Feu et brûlures.",
+    "description_en": "This Pokémon takes half as much damage from Fire-type moves and burns."
 }

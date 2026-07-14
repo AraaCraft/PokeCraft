@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Copies the foe's stat changes.",
-    "description_fr": "Une autohypnose qui permet au lanceur de copier les changements de stats de la cible.",
+    "description_en": "Discards the user’s stat changes and copies the target’s.",
+    "description_fr": "Retire les changements de stat du lanceur et copie ceux de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "This attack’s power increases the more the foe has powered up with stat changes. ",
-    "description_fr": "Plus l’ennemi a utilisé des augmentations de stats et plus cette capacité est puissante.",
+    "description_en": "Power increases against targets with more raised stats, up to a maximum of 200.",
+    "description_fr": "La puissance augmente contre les cibles avec plus de stats augmentées, jusqu'à un maximum de 200.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

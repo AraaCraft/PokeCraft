@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "1st turn: Prepare 2nd turn: Attack",
-    "description_fr": "Une attaque en 2 tours au taux de critiques élevé. Peut aussi apeurer l’ennemi.",
+    "description_en": "User charges for one turn before attacking.  Has a chance to make the target flinch.",
+    "description_fr": "Le lanceur charge pendant un tour avant d'attaquer.  A une chance d'apeurer la cible.",
     "effect_chance": 30,
     "effect_changes": [],
     "effect_entries": null,

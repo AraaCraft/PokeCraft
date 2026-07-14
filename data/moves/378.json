@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user powerfully wrings the foe. The more HP the foe has, the greater this attack’s power.",
-    "description_fr": "Le lanceur essore l’ennemi. Plus l’ennemi a de PV, plus cette attaque est puissante.",
+    "description_en": "Power increases against targets with more HP remaining, up to a maximum of 121 power.",
+    "description_fr": "La puissance augmente contre les cibles avec plus de PV restants, jusqu'à un maximum de 121 de puissance.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

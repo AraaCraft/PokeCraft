@@ -3,6 +3,6 @@
     "name": "rks-system",
     "name_fr": "Système Alpha",
     "name_en": "RKS System",
-    "description_fr": "Change le type du Pokémon en fonction de la ROM équipée.",
-    "description_en": "Changes the Pokémon’s type to match the memory disc it holds."
+    "description_fr": "Change le type de ce Pokémon pour correspondre à sa ROM tenue.  Ce talent ne peut pas être copié, remplacé, ou annulé.  Ce talent s'active seulement sur Silvallié.",
+    "description_en": "Changes this Pokémon's type to match its held Memory.  This ability cannot be copied, replaced, or nullified.  This ability only takes effect for Silvally."
 }

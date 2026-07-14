@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "special",
-    "description_en": "An attack that may reduce accuracy.",
-    "description_fr": "Le lanceur attaque en projetant de l’encre au visage de l’ennemi. Peut aussi baisser la Précision de l’ennemi.",
+    "description_en": "Has a chance to lower the target’s accuracy by one stage.",
+    "description_fr": "A une chance de diminuer la précision de la cible d'un niveau.",
     "effect_chance": 50,
     "effect_changes": [],
     "effect_entries": null,

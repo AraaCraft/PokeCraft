@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "physical",
-    "description_en": "An unavoidable punch that is thrown from shadows.",
-    "description_fr": "Le lanceur surgit des ombres et donne un coup de poing. N’échoue jamais.",
+    "description_en": "Never misses.",
+    "description_fr": "N'échoue jamais.",
     "effect_chance": null,
     "effect_changes": [
         {

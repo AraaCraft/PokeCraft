@@ -3,6 +3,6 @@
     "name": "volt-absorb",
     "name_fr": "Absorbe-Volt",
     "name_en": "Volt Absorb",
-    "description_fr": "Change l'électricité en PV.",
-    "description_en": "Turns electricity into HP."
+    "description_fr": "Lorsqu'une capacité de type Électrik touche ce Pokémon, elle lui soigne 1/4 de ses PV max, annulant tous les autres effets.  Ce talent ne s'activera pas si ce Pokémon est de type Sol et est ainsi immunisé aux capacités Électrik.  Les capacités Électrik ignorent le Clonage de ce Pokémon.  Cet effet inclut les capacités non-offensives, i.e. Cage Éclair.",
+    "description_en": "Whenever an Electric-type move hits this Pokémon, it heals for 1/4 of its maximum HP, negating any other effect on it.  This ability will not take effect if this Pokémon is Ground-type and thus immune to Electric moves.  Electric moves will ignore this Pokémon's Substitute.  This effect includes non-damaging moves, i.e. Thunder Wave."
 }

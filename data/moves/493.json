@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "The user’s mysterious psychic wave changes the target’s Ability to Simple.",
-    "description_fr": "Le lanceur envoie des ondes mystérieuses à l’ennemi. Sa capacité spéciale devient Simple.",
+    "description_en": "Changes the target’s ability to Simple.",
+    "description_fr": "Change le talent de la cible en Simple.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

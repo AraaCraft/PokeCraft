@@ -3,6 +3,6 @@
     "name": "clear-body",
     "name_fr": "Corps Sain",
     "name_en": "Clear Body",
-    "description_fr": "Empêche réduction de cap.",
-    "description_en": "Prevents ability reduction."
+    "description_fr": "Ce Pokémon ne peut pas avoir ses stats baissées par d'autres Pokémon.  Ce talent n'empêche pas les baisses de stat autres que les modifications de stats, telles que la perte de Vitesse de la paralysie.  Ce Pokémon peut toujours recevoir des modifications de stat négatives via Permugarde, Permucœur, ou Permuforce.  Ce talent fonctionne de la même manière que Écran Fumée au combat.",
+    "description_en": "This Pokémon cannot have its stats lowered by other Pokémon.  This ability does not prevent any stat losses other than stat modifiers, such as the Speed cut from paralysis.  This Pokémon can still be passed negative stat modifiers through Guard Swap, Heart Swap, or Power Swap.  This ability functions identically to White Smoke in battle."
 }

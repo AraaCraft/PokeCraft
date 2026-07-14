@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Attacks the foe by firing 2 to 5 icicles in a row.",
-    "description_fr": "Le lanceur jette des pics de glace sur l’ennemi, de 2 à 5 fois de suite.",
+    "description_en": "Hits 2-5 times in one turn.",
+    "description_fr": "Touche 2-5 fois en un tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

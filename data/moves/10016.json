@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "status",
-    "description_en": null,
-    "description_fr": null,
+    "description_en": "Confuses the target.",
+    "description_fr": "Rend la cible confuse.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

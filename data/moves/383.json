@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user mimics the move used immediately before it. The move fails if no other move has been used yet.",
-    "description_fr": "Le lanceur imite la dernière capacité employée. Échoue si aucune capacité n’a été utilisée.",
+    "description_en": "Uses the target’s last used move.",
+    "description_fr": "Utilise la dernière capacité utilisée par la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

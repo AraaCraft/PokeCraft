@@ -3,6 +3,6 @@
     "name": "contrary",
     "name_fr": "Contestation",
     "name_en": "Contrary",
-    "description_fr": "Inverse les variations de stats.",
-    "description_en": "Makes stat changes have an opposite effect."
+    "description_fr": "Quand les stats de ce Pokémon seront augmentées, ils sont diminués de la même quantité à la place, et vice versa.",
+    "description_en": "Whenever this Pokémon's stats would be raised, they are instead lowered by the same amount, and vice versa."
 }

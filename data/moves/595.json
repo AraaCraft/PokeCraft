@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user attacks by breathing a special, hot fire. This also lowers the target’s Sp. Atk stat.",
-    "description_fr": "Attaque avec des flammes brûlantes soufflées de la bouche du lanceur. Diminue l’Attaque Spéciale de l’ennemi.",
+    "description_en": "Has a chance to lower the target’s Special Attack by one stage.",
+    "description_fr": "A une chance de diminuer l'Attaque Spéciale de la cible d'un niveau.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

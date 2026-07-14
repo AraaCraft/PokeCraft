@@ -3,6 +3,6 @@
     "name": "aroma-veil",
     "name_fr": "Aroma-Voile",
     "name_en": "Aroma Veil",
-    "description_fr": "Protège l’équipe des attaques limitant le choix des capacités.",
-    "description_en": "Protects allies from attacks that limit their move choices."
+    "description_fr": "Immunise les alliés des effets des capacités Attraction, Lien du Destin, Entrave, Encore, Anti-Soin, Provoc ou Tourmente, ainsi que des talents Corps Maudit et Joli Sourire.",
+    "description_en": "Protects allies against moves that affect their mental state."
 }

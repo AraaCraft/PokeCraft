@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user tackles the foe with a high-speed spin. The slower the user, the greater the damage.",
-    "description_fr": "Le lanceur effectue une rotation et frappe l’ennemi. Plus le lanceur est lent, plus il fait de dégâts.",
+    "description_en": "Power raises when the user has lower Speed, up to a maximum of 150.",
+    "description_fr": "La puissance augmente quand le lanceur a une Vitesse inférieure, jusqu'à un maximum de 150.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

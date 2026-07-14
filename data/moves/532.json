@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "The user drains the target’s energy with its horns. The user’s HP is restored by half the damage taken by the target.",
-    "description_fr": "Un coup de corne qui draine l’énergie de l’ennemi. Convertit la moitié des dégâts infligés en PV pour le lanceur.",
+    "description_en": "Drains half the damage inflicted to heal the user.",
+    "description_fr": "Draine la moitié des dégâts infligés pour soigner le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

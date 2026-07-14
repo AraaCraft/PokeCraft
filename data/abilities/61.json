@@ -3,6 +3,6 @@
     "name": "shed-skin",
     "name_fr": "Mue",
     "name_en": "Shed Skin",
-    "description_fr": "Mue pour se soigner.",
-    "description_en": "Heals the body by shedding."
+    "description_fr": "Après chaque tour, ce Pokémon a 33% de chances d 'être soigné de n'importe quelle altération majeure de statut.",
+    "description_en": "After each turn, this Pokémon has a 33% of being cured of any major status ailment."
 }

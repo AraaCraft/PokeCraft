@@ -3,6 +3,6 @@
     "name": "guard-dog",
     "name_fr": "Chien de Garde",
     "name_en": "Guard Dog",
-    "description_fr": "L’Attaque du Pokémon augmente s’il subit l’effet du\\ntalent Intimidation. Les capacités ou objets qui font\\nchanger de Pokémon n’ont aucun effet sur lui.",
+    "description_fr": "Booste la stat d'Attaque du Pokémon si intimidé. Les capacités et objets qui forceraient le Pokémon à se retirer échouent aussi.",
     "description_en": "Boosts the Pokémon’s Attack stat if intimidated. Moves and items that would force the Pokémon to switch out also fail to work."
 }

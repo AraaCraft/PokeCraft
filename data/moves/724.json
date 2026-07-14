@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "physical",
-    "description_en": "After obtaining Z-Power, the user, Solgaleo, attacks the target with full force. This move can ignore the effect of the target’s Ability.",
-    "description_fr": "Baigné dans la Force Z, Solgaleo attaque en déchaînant toute sa puissance. Ignore le talent de la cible.",
+    "description_en": "Cannot be disrupted by abilities.",
+    "description_fr": "Ne peut pas être perturbé par les talents.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -3,6 +3,6 @@
     "name": "stamina",
     "name_fr": "Endurance",
     "name_en": "Stamina",
-    "description_fr": "Augmente la Défense du Pokémon lorsqu’il subit une attaque.",
-    "description_en": "Boosts the Defense stat when hit by an attack."
+    "description_fr": "Augmente la Défense de ce Pokémon d'un niveaux quand il subit des dégâts d'une capacité.",
+    "description_en": "Raises this Pokémon's Defense by one stage when it takes damage from a move."
 }

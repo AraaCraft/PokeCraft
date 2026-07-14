@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "special",
-    "description_en": "After obtaining Z-Power, the user, Mew, attacks the target with full force. The terrain will be charged with psychic energy.",
-    "description_fr": "Mew utilise la Force Z pour attaquer la cible. Le terrain devient un Champ Psychique.",
+    "description_en": "Changes the terrain to Psychic Terrain after inflicting damage.",
+    "description_fr": "Change le terrain en Champ Psychique après avoir infligé des dégâts.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "The user charges at the foe using every bit of its power. The user must rest on the next turn.",
-    "description_fr": "Le lanceur charge l’ennemi de toute sa puissance. Il doit ensuite se reposer au tour suivant.",
+    "description_en": "User foregoes its next turn to recharge.",
+    "description_fr": "Le lanceur passe son prochain tour pour se recharger.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

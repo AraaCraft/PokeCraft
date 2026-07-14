@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The power varies with the POKéMON.",
-    "description_fr": "Attaque dont la puissance et le type dépendent du Pokémon qui l’utilise.",
+    "description_en": "Power and type depend upon user’s IVs.  Power can range from 30 to 70.",
+    "description_fr": "La puissance et le type dépend des IVs du lanceur.  La puissance peut s'étendre entre 30 et 70.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

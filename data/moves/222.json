@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "A ground attack with random power.",
-    "description_fr": "Un tremblement de terre d’intensité variable qui affecte tous les Pokémon alentour. L’efficacité varie.",
+    "description_en": "Power varies randomly from 10 to 150.",
+    "description_fr": "La puissance varie aléatoirement entre 10 et 150.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

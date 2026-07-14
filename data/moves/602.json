@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user manipulates magnetic fields, which raises the Defense and Sp. Def stats of ally Pokémon with the Plus or Minus Ability.",
-    "description_fr": "Manipule les champs magnétiques pour augmenter la Défense et la Défense Spéciale des Pokémon alliés dotés du talent Plus ou du talent Minus.",
+    "description_en": "Raises the Defense and Special Defense of all friendly Pokémon with Plus or Minus by one stage.",
+    "description_fr": "Augmente la Défense et Défense Spéciale d'un Pokémon allié avec Plus ou Moins d'un niveau.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

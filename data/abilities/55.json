@@ -3,6 +3,6 @@
     "name": "hustle",
     "name_fr": "Agitation",
     "name_en": "Hustle",
-    "description_fr": "Substitue préc. par puiss.",
-    "description_en": "Trades accuracy for power."
+    "description_fr": "Les capacités physiques de ce Pokémon font 1.5× plus de dégâts réguliers, mais ont 0.8× leur précision habituelle.  Les capacités Spéciales ne sont pas affectées.  Les capacités qui ont des dégâts fixes, telles que Frappe Atlas, ont leur précision affectée, mais pas leurs dégâts.  Monde extérieur: Si le Pokémon de tête a ce talent, les Pokémon de plus haut niveau ont leur taux de rencontre augmenté.",
+    "description_en": "This Pokémon's physical moves do 1.5× as much regular damage, but have 0.8× their usual accuracy.  Special moves are unaffected.  Moves that do set damage, such as Seismic Toss, have their accuracy affected, but not their damage.  Overworld: If the lead Pokémon has this ability, higher-levelled Pokémon have their encounter rate increased."
 }

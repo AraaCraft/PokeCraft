@@ -3,6 +3,6 @@
     "name": "bulletproof",
     "name_fr": "Pare-Balles",
     "name_en": "Bulletproof",
-    "description_fr": "Protège de certaines capacités projetant des bombes, balles…",
-    "description_en": "Protects the Pokémon from some ball and bomb moves."
+    "description_fr": "Ignore les effets des capacités utilisant des projectiles, soit la plupart des capacités comprenant les mots Balle (ou Ball), Bombe (ou Bomb), Boule, Canon ou Sphère.",
+    "description_en": "Protects against bullet, ball, and bomb-based moves."
 }

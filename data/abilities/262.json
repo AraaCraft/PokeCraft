@@ -3,6 +3,6 @@
     "name": "transistor",
     "name_fr": "Transistor",
     "name_en": "Transistor",
-    "description_fr": "Augmente la puissance des attaques de type Électrik.",
-    "description_en": "Powers up Electric-type moves."
+    "description_fr": "Augmente la puissance des capacités de type Électrik utilisées par ce Pokémon de 50%.",
+    "description_en": "Increases the power of Electric-type moves used by this Pokémon by 50%."
 }

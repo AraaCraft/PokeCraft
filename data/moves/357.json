@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Enables the user to hit a Ghost type with any type of move. It also enables the user to hit an evasive foe.",
-    "description_fr": "Permet de toucher un Pokémon Ténèbres avec toute capacité et de toucher un ennemi insaisissable.",
+    "description_en": "Forces the target to have no evasion, and allows it to be hit by Psychic moves even if it’s Dark.",
+    "description_fr": "Force la cible à ne pas pouvoir fuir, et la rend sensible aux capacités Psy même si elle est Ténèbres.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

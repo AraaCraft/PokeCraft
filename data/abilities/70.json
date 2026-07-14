@@ -3,6 +3,6 @@
     "name": "drought",
     "name_fr": "Sécheresse",
     "name_en": "Drought",
-    "description_fr": "Invoque le soleil.",
-    "description_en": "Summons sunlight in battle."
+    "description_fr": "La météo change en soleil intense quand ce Pokémon entre au combat et ne prend pas fin à moins d'être annulé par une autre condition météo.  Si plusieurs Pokémon avec ce talent, Crachin, Sable Volant, ou Alerte Neige sont envoyés en même temps, les talents s'activeront dans l'ordre des Vitesses, respectant Distorsion.  Chaque météo de talent annulera la météo précédente, et seulement la météo invoquée par le plus lent des Pokémon restera.",
+    "description_en": "The weather changes to strong sunlight when this Pokémon enters battle and does not end unless cancelled by another weather condition.  If multiple Pokémon with this ability, Drizzle, Sand Stream, or Snow Warning are sent out at the same time, the abilities will activate in order of Speed, respecting Trick Room.  Each ability's weather will cancel the previous weather, and only the weather summoned by the slowest of the Pokémon will stay."
 }

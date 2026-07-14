@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user passes its held item to the target when the target isn’t holding an item.",
-    "description_fr": "Si la cible ne tient pas d’objet, le lanceur lui donne l’objet qu’il tient.",
+    "description_en": "Gives the user’s held item to the target.",
+    "description_fr": "Donne l'objet tenu du lanceur à la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

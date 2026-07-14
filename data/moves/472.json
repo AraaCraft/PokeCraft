@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user creates a bizarre area in which Pokémon’s Defense and Sp. Def stats are swapped for five turns.",
-    "description_fr": "Crée une zone étrange où pendant 5 tours, la Défense et la Défense Spéciale de tous les Pokémon sont inversées.",
+    "description_en": "All Pokémon’s Defense and Special Defense are swapped for 5 turns.",
+    "description_fr": "La Défense et Défense Spéciale de tous les Pokémon sont échangées pendant 5 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

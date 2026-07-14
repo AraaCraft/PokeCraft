@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Lulls the foe into yawning, then sleeping next turn.",
-    "description_fr": "Fait bâiller l’ennemi qui s’endort au tour suivant.",
+    "description_en": "Target sleeps at the end of the next turn.",
+    "description_fr": "La cible s'endort à la fin du prochain tour.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

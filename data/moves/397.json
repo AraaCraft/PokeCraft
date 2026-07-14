@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user polishes its body to reduce drag. It can sharply raise the Speed stat. ",
-    "description_fr": "Le lanceur polit son corps pour diminuer sa résistance au vent. Augmente fortement la Vitesse.",
+    "description_en": "Raises the user’s Speed by two stages.",
+    "description_fr": "Augmente la Vitesse du lanceur de deux niveaux.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

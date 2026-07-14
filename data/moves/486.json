@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user hurls an electric orb at the target. The faster the user is than the target, the greater the damage.",
-    "description_fr": "Le lanceur envoie une boule d’électricité. Si sa Vitesse est plus grande que celle de l’ennemi, les dégâts augmentent d’autant.",
+    "description_en": "Power is higher when the user has greater Speed than the target, up to a maximum of 150.",
+    "description_fr": "La puissance est plus grande quand le lanceur a une Vitesse plus élevée que la cible, jusqu'à un maximum de 150.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user emits a sinister ray to attack the target. This move can be used on the target regardless of  its Abilities.",
-    "description_fr": "Le lanceur attaque avec un rayon de lumière mystérieux. Ignore le talent de la cible.",
+    "description_en": "Cannot be disrupted by abilities.",
+    "description_fr": "Ne peut pas être perturbé par les talents.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

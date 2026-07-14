@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Cuts the PP of the foe's last move.",
-    "description_fr": "Le lanceur exprime son ressentiment en retirant 4 PP de la dernière attaque de l’ennemi.",
+    "description_en": "Lowers the PP of the target’s last used move by 4.",
+    "description_fr": "Diminue les PP de la dernière capacité utilisée par la cible de 4.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

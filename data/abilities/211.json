@@ -3,6 +3,6 @@
     "name": "power-construct",
     "name_fr": "Rassemblement",
     "name_en": "Power Construct",
-    "description_fr": "Lorsque le Pokémon perd la moitié de ses PV, ses Cellules se rassemblent pour l’encourager, ce qui lui permet de prendre sa Forme Parfaite.",
-    "description_en": "Other Cells gather to aid when its HP becomes half or less. Then the Pokémon changes its form to Complete Forme."
+    "description_fr": "Transforme Zygarde 10% ou 50% en Forme Parfaite quand ses PV sont 50%.  Ce talent ne peut pas être copié ou remplacé.  Ce talent s'active seulement pour Zygarde.",
+    "description_en": "Transforms 10% or 50% Zygarde into Complete Forme when its HP is below 50%.  This ability cannot be copied or replaced.  This ability only takes effect for Zygarde."
 }

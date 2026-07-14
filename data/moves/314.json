@@ -1,8 +1,8 @@
 {
     "accuracy": 95,
     "damage_class": "special",
-    "description_en": "Hacks with razorlike wind. High critical-hit ratio.",
-    "description_fr": "Le lanceur appelle des vents tranchants qui lacèrent l’ennemi. Taux de critiques élevé.",
+    "description_en": "Has an increased chance for a critical hit.",
+    "description_fr": "A une chance augmentée de coup critique.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

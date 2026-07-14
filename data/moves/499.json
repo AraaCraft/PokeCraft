@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "special",
-    "description_en": "The user attacks by throwing a clump of special mud. All status changes are returned to normal.",
-    "description_fr": "Le lanceur jette un tas de détritus spéciaux sur la cible. Les changements de stats de la cible sont annulés.",
+    "description_en": "Removes all of the target’s stat modifiers.",
+    "description_fr": "Supprime toutes les modifications de stat de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

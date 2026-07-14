@@ -3,6 +3,6 @@
     "name": "tangled-feet",
     "name_fr": "Pieds Confus",
     "name_en": "Tangled Feet",
-    "description_fr": "Augmente l'esquive si le Pokémon est confus.",
-    "description_en": "Raises evasion if the Pokémon is confused."
+    "description_fr": "Quand ce Pokémon est confus, il a le double de son esquive.",
+    "description_en": "When this Pokémon is confused, it has twice its evasion."
 }

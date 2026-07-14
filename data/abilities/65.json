@@ -3,6 +3,6 @@
     "name": "overgrow",
     "name_fr": "Engrais",
     "name_en": "Overgrow",
-    "description_fr": "Augmente attaques PLANTE.",
-    "description_en": "Ups GRASS moves in a pinch."
+    "description_fr": "Quand ce Pokémon a 1/3 de ses PV restants ou moins, ses capacités de type Plante infligent 1.5× plus de dégâts réguliers.",
+    "description_en": "When this Pokémon has 1/3 or less of its HP remaining, its Grass-type moves inflict 1.5× as much regular damage."
 }

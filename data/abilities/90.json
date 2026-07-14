@@ -3,6 +3,6 @@
     "name": "poison-heal",
     "name_fr": "Soin Poison",
     "name_en": "Poison Heal",
-    "description_fr": "Restaure des PV si le Pokémon est empoisonné.",
-    "description_en": "Restores HP if the Pokémon is poisoned."
+    "description_fr": "Si ce Pokémon est empoisonné, il sera soigné d'1/8 de ses PV maximum après chaque tour plutôt que de subir des dégâts.  Cela inclut le poison grave.",
+    "description_en": "If this Pokémon is poisoned, it will heal for 1/8 of its maximum HP after each turn rather than taking damage.  This includes bad poison."
 }

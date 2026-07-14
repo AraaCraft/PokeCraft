@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "A 1st-turn, 1st-strike move that causes flinching.",
-    "description_fr": "Permet de frapper en premier et apeure l’ennemi. Ne fonctionne qu’au premier tour.",
+    "description_en": "Can only be used as the first move after the user enters battle.  Causes the target to flinch.",
+    "description_fr": "Ne peut être utilisé comme première capacité après que le lanceur entre au combat.  Apeure la cible.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

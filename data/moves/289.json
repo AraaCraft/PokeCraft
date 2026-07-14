@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "Steals the effects of the move the foe uses next.",
-    "description_fr": "Le lanceur vole l’effet des capacités de soin ou de changement de stats utilisées par la cible.",
+    "description_en": "Steals the target’s move, if it’s self-targeted.",
+    "description_fr": "Vole la capacité de la cible, si elle se cible elle-même.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

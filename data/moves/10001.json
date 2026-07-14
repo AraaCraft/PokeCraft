@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": null,
-    "description_fr": null,
+    "description_en": "Has an increased chance for a critical hit in Hyper Mode.",
+    "description_fr": "A une chance augmentée de coup critique en Mode Hyper.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "special",
-    "description_en": "The user blows a cold breath on the target. This attack always results in a critical hit.",
-    "description_fr": "Un souffle froid blesse l’ennemi. L’effet est toujours critique.",
+    "description_en": "Always scores a critical hit.",
+    "description_fr": "Réalise toujours un coup critique.",
     "effect_chance": 100,
     "effect_changes": [],
     "effect_entries": null,

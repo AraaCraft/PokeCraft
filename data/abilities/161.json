@@ -3,6 +3,6 @@
     "name": "zen-mode",
     "name_fr": "Mode Transe",
     "name_en": "Zen Mode",
-    "description_fr": "Transforme le Pokémon dans les moments délicats.",
-    "description_en": "Changes the Pokémon’s shape when HP is halved."
+    "description_fr": "Ce Pokémon permute entre le Mode Normal et Mode Transe après chaque tour selon ses PV.  Sous 50% de ses PV maximum, il change en Mode Transe, et à 50% ou au dessus, il change en Mode Normal.  Ce Pokémon retourne en Mode Normal en quittant le combat ou perdant son talent.  Ce talent n’a pas d’effet si ce Pokémon n’est pas un Darumacho.",
+    "description_en": "This Pokémon switches between Standard Mode and Zen Mode after each turn depending on its HP.  Below 50% of its maximum HP, it switches to Zen Mode, and at 50% or above, it switches to Standard Mode.  This Pokémon returns to Standard Mode upon leaving battle or losing this ability.  This ability has no effect if this Pokémon is not a Darmanitan."
 }

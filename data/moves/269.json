@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Taunts the foe into only using attack moves.",
-    "description_fr": "Provoque l’ennemi. L’oblige à n’utiliser que des attaques pendant 3 tours.",
+    "description_en": "For the next few turns, the target can only use damaging moves.",
+    "description_fr": "Pour les prochains tours, la cible ne peut qu'utiliser des capacités offensives.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

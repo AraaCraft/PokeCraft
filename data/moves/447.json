@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user snares the foe with grass and trips it. The heavier the foe, the greater the damage.",
-    "description_fr": "L’ennemi est piégé dans de l’herbe qui le fait trébucher. Plus il est lourd, plus il subit de dégâts.",
+    "description_en": "Inflicts more damage to heavier targets, with a maximum of 120 power.",
+    "description_fr": "Inflige plus de dégâts aux cibles plus lourdes, avec un maximum de 120 de puissance.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

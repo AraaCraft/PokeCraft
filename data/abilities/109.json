@@ -3,6 +3,6 @@
     "name": "unaware",
     "name_fr": "Inconscient",
     "name_en": "Unaware",
-    "description_fr": "Ignore les changements de stats de l'ennemi.",
-    "description_en": "Ignores any change in ability by the foe."
+    "description_fr": "Ce Pokémon ignore les modifications de stat des autres Pokémon aux fins des calculs de dégâts et de précision.  En réalité, ceci affecte les modifications de toutes les stats sauf la Vitesse.  La puissance de Punition et Force Ajoutée est calculée normalement.  Quand ce Pokémon se blesse dans la confusion, ses modifications de stat affectent les dégâts normalement.",
+    "description_en": "This Pokémon ignores other Pokémon's stat modifiers for the purposes of damage and accuracy calculation.  Effectively, this affects modifiers of every stat except Speed.  The power of Punishment and Stored Power is calculated as usual.  When this Pokémon hurts itself in confusion, its stat modifiers affect damage as usual."
 }

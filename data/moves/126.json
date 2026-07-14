@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "special",
-    "description_en": "An attack that may cause a burn.",
-    "description_fr": "Un déluge de flammes ardentes submerge l’ennemi. Peut aussi le brûler.",
+    "description_en": "Has a chance to burn the target.",
+    "description_fr": "A une chance de brûler la cible.",
     "effect_chance": 10,
     "effect_changes": [],
     "effect_entries": null,

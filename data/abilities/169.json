@@ -3,6 +3,6 @@
     "name": "fur-coat",
     "name_fr": "Toison Épaisse",
     "name_en": "Fur Coat",
-    "description_fr": "Divise les dégâts des attaques physiques par deux.",
-    "description_en": "Halves damage from physical moves."
+    "description_fr": "Divise par deux les dégâts reçus des attaques physiques.",
+    "description_en": "Halves damage from physical attacks."
 }

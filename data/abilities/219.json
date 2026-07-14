@@ -3,6 +3,6 @@
     "name": "dazzling",
     "name_fr": "Corps Coloré",
     "name_en": "Dazzling",
-    "description_fr": "L’adversaire est abasourdi par le Pokémon et ne peut pas le viser avec une capacité prioritaire.",
-    "description_en": "Surprises the opposing Pokémon, making it unable to attack using priority moves."
+    "description_fr": "Quand un Pokémon adverse tente d'utiliser une capacité qui cible ce Pokémon ou un allié, et que cette capacité a une priorité, elle échouera.",
+    "description_en": "When an opposing Pokémon attempts to use a move that targets this Pokémon or an ally, and that move has priority, it will fail."
 }

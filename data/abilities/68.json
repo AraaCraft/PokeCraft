@@ -3,6 +3,6 @@
     "name": "swarm",
     "name_fr": "Essaim",
     "name_en": "Swarm",
-    "description_fr": "Augmente attaques INSECT.",
-    "description_en": "Ups BUG moves in a pinch."
+    "description_fr": "Quand ce Pokémon a 1/3 de ses PV restants ou moins, ses capacités de type Insecte infligent 1.5× plus de dégâts réguliers.  Monde extérieur: Si le Pokémon de tête a ce talent, le taux de rencontre sauvage est augmenté.",
+    "description_en": "When this Pokémon has 1/3 or less of its HP remaining, its Bug-type moves inflict 1.5× as much regular damage.  Overworld: If the lead Pokémon has this ability, the wild encounter rate is increased."
 }

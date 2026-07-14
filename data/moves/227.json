@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "status",
-    "description_en": "Makes the foe re­ peat 2-6 times.",
-    "description_fr": "Oblige l’ennemi à répéter la dernière capacité utilisée durant 3 tours.",
+    "description_en": "Forces the target to repeat its last used move every turn for 2 to 6 turns.",
+    "description_fr": "Force la cible à répéter sa dernière capacité utilisée à chaque tour pendant 2 à 6 tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

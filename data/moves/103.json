@@ -1,8 +1,8 @@
 {
     "accuracy": 85,
     "damage_class": "status",
-    "description_en": "Sharply reduces the foe's DEFENSE.",
-    "description_fr": "Cri strident qui baisse beaucoup la Défense ennemie.",
+    "description_en": "Lowers the target’s Defense by two stages.",
+    "description_fr": "Diminue la Défense de la cible de deux niveaux.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

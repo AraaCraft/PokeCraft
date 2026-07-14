@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "This relentless attack does massive damage to a target affected by status problems.",
-    "description_fr": "Attaque acharnée qui cause davantage de dégâts à l’ennemi s’il a un problème de statut.",
+    "description_en": "Has double power if the target has a major status ailment.",
+    "description_fr": "A une puissance double si la cible a une altération majeure de statut.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

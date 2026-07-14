@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Heavily strikes switching POKéMON.",
-    "description_fr": "Une attaque qui inflige deux fois plus de dégâts à un ennemi qui quitte le combat.",
+    "description_en": "Has double power against, and can hit, Pokémon attempting to switch out.",
+    "description_fr": "A une puissance double contre, et peut frapper, les Pokémon qui tentent de se retirer.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

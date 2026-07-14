@@ -1,8 +1,8 @@
 {
     "accuracy": null,
     "damage_class": "status",
-    "description_en": "The user makes the target float with its psychic power. The target is easier to hit for three turns.",
-    "description_fr": "Un pouvoir qui fait flotter l’ennemi dans les airs. Pendant 3 tours, il devient plus facile à atteindre.",
+    "description_en": "Moves have 100% accuracy against the target for three turns.",
+    "description_fr": "Les capacités ont 100% de précision contre la cible pendant trois tours.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

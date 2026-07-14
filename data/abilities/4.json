@@ -3,6 +3,6 @@
     "name": "battle-armor",
     "name_fr": "Armurbaston",
     "name_en": "Battle Armor",
-    "description_fr": "Bloque les coups critiques.",
-    "description_en": "Blocks critical hits."
+    "description_fr": "Les capacités ne peuvent pas infliger de coups critiques à ce Pokémon.  Ce talent fonctionne de la même manière que Coque Armure.",
+    "description_en": "Moves cannot score critical hits against this Pokémon.  This ability functions identically to Shell Armor."
 }

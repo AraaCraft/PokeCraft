@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "physical",
-    "description_en": "Cuts the foe's HP by 1/2.",
-    "description_fr": "Une vilaine morsure d’incisives qui réduit de moitié les PV de l’ennemi.",
+    "description_en": "Inflicts damage equal to half the target’s HP.",
+    "description_fr": "Inflige des dégâts égaux à la moitié des PV de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

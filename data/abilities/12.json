@@ -3,6 +3,6 @@
     "name": "oblivious",
     "name_fr": "Benêt",
     "name_en": "Oblivious",
-    "description_fr": "Empêche l'attirance.",
-    "description_en": "Prevents attraction."
+    "description_fr": "Ce Pokémon ne peut pas être attiré et est immunisé contre Séduction.  Si un Pokémon est attiré et acquiert ce ca telent, son attraction disparaît.",
+    "description_en": "This Pokémon cannot be infatuated and is immune to Captivate.  If a Pokémon is infatuated and acquires this ability, its infatuation is cleared."
 }

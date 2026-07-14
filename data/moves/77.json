@@ -1,8 +1,8 @@
 {
     "accuracy": 75,
     "damage_class": "status",
-    "description_en": "A move that may poison the foe.",
-    "description_fr": "Une poudre toxique empoisonne l’ennemi.",
+    "description_en": "Poisons the target.",
+    "description_fr": "Empoisonne la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

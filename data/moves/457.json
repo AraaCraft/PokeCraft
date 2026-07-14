@@ -1,8 +1,8 @@
 {
     "accuracy": 80,
     "damage_class": "physical",
-    "description_en": "The user delivers a life-endangering head butt at full power. The user also takes terrible damage.",
-    "description_fr": "Le lanceur assène un coup de tête désespéré. Blesse aussi gravement le lanceur.",
+    "description_en": "User receives 1/2 the damage inflicted in recoil.",
+    "description_fr": "Le lanceur reçoit 1/2 des dégâts infligés en contrecoup.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

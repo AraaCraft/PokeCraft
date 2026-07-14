@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "special",
-    "description_en": "The user attacks the target by dancing very hard. The user’s type determines the type of this move.",
-    "description_fr": "Le lanceur attaque en dansant avec enthousiasme. Le type de la capacité est le même que celui du lanceur.",
+    "description_en": "Has the same type as the user.",
+    "description_fr": "A le même type que le lanceur.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

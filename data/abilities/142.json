@@ -3,6 +3,6 @@
     "name": "overcoat",
     "name_fr": "Envelocape",
     "name_en": "Overcoat",
-    "description_fr": "Neutralise les dégâts dus à la météo.",
-    "description_en": "Protects the Pokémon from damage from weather."
+    "description_fr": "Ce Pokémon ne subit pas de dégât de la météo.",
+    "description_en": "This Pokémon does not take damage from weather."
 }

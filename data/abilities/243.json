@@ -3,6 +3,6 @@
     "name": "steam-engine",
     "name_fr": "Turbine",
     "name_en": "Steam Engine",
-    "description_fr": "Lorsque le Pokémon est touché par des capacités de type Eau ou Feu, sa Vitesse augmente énormément.",
-    "description_en": "Boosts the Pokémon’s Speed stat drastically if hit by a Fire- or Water-type move."
+    "description_fr": "Augmente la Vitesse de l'utilisateur de trois niveaux quand il est frappé par une attaque de type Feu ou Eau.  L'attaque inflige toujours des dégâts.",
+    "description_en": "Raises the user's Speed by three stages when it is hit by a Fire- or Water-type attack. The attack still deals damage."
 }

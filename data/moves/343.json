@@ -1,8 +1,8 @@
 {
     "accuracy": 100,
     "damage_class": "physical",
-    "description_en": "Cutely begs to obtain an item held by the foe.",
-    "description_fr": "Le lanceur s’approche de la cible avec un air angélique afin de dérober l’objet qu’elle tient.",
+    "description_en": "Takes the target’s item.",
+    "description_fr": "Prend l'objet de la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

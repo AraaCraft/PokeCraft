@@ -1,8 +1,8 @@
 {
     "accuracy": 90,
     "damage_class": "status",
-    "description_en": "A move that may cause paralysis.",
-    "description_fr": "Un faible choc électrique frappe l’ennemi. Si l’attaque touche, celui-ci est paralysé.",
+    "description_en": "Paralyzes the target.",
+    "description_fr": "Paralyse la cible.",
     "effect_chance": null,
     "effect_changes": [],
     "effect_entries": null,

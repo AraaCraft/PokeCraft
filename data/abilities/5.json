@@ -3,6 +3,6 @@
     "name": "sturdy",
     "name_fr": "Fermeté",
     "name_en": "Sturdy",
-    "description_fr": "Protège des capacités mettant K.O. en un coup.",
-    "description_en": "Negates 1-hit KO attacks."
+    "description_fr": "Quand ce Pokémon a tous ses PV, n'importe quel coup qui devrait le mettre KO lui laisse 1 PV à la place.  Peu importe son nombre actuel de PV, il est aussi immunisé contre les capacités OHKO: Abîme, Guillotine, Empal’Korne, et Glaciation.    Si ce Pokémon porte une Ceinture Force, ce talent s'applique en priorité et l'objet ne sera pas utilisé.",
+    "description_en": "When this Pokémon is at full HP, any hit that would knock it out will instead leave it with 1 HP.  Regardless of its current HP, it is also immune to the one-hit KO moves: Fissure, Guillotine, Horn Drill, and Sheer Cold.  If this Pokémon is holding a Focus Sash, this ability takes precedence and the item will not be consumed."
 }
