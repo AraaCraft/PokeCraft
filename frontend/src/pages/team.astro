@@ -1402,7 +1402,7 @@ allPokemons.forEach(p => {
         const types = btn.dataset.types!.split(',');
 
         const form = card.querySelector(".pokemon-name")?.textContent?.toLowerCase() || "";
-        const isMega = form.includes("mega");
+        const isMega = form.includes("mega") || form.includes("méga");
 
         let matchType = activeTypes.has('all') || (activeTypes.has('mega') ? isMega : types.some(t => activeTypes.has(t)));
 
