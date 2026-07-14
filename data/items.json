@@ -1,75 +1,12 @@
 {
-  "169": {
-    "id": 169,
-    "name": "coba-berry",
-    "name_en": "Coba Berry",
-    "name_fr": "Baie Cobaba",
-    "effect_en": "Held in battle :   When the holder would take super-effective Flying-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Vol, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/coba-berry.png"
-  },
-  "717": {
-    "id": 717,
-    "name": "charizardite-y",
-    "name_en": "Charizardite Y",
-    "name_fr": "Dracaufite Y",
-    "effect_en": "Held: Allows Charizard to Mega Evolve into Mega Charizard Y.",
-    "effect_fr": "Tenu: Permet à Dracaufeu de Méga-Évoluer en Méga-Dracaufeu Y.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charizardite-y.png"
-  },
-  "224": {
-    "id": 224,
-    "name": "spell-tag",
-    "name_en": "Spell Tag",
-    "name_fr": "Rune Sort",
-    "effect_en": "Held: Increases the power of the holder’s Ghost moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Spectre du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/spell-tag.png"
-  },
-  "2242": {
-    "id": 2242,
-    "name": "darkranite",
-    "name_en": "Darkranite",
-    "name_fr": "Darkranite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "2251": {
-    "id": 2251,
-    "name": "greninjite",
-    "name_en": "Greninjite",
-    "name_fr": "Greninjite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "209": {
-    "id": 209,
-    "name": "scope-lens",
-    "name_en": "Scope Lens",
-    "name_fr": "Lentilscope",
-    "effect_en": "Held: Raises the holder’s critical hit counter by 1.",
-    "effect_fr": "Tenu: Augmente le compteur taux de coups critiques du porteur de 1.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/scope-lens.png"
-  },
-  "2248": {
-    "id": 2248,
-    "name": "chandelurite",
-    "name_en": "Chandelurite",
-    "name_fr": "Chandelurite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "172": {
-    "id": 172,
-    "name": "charti-berry",
-    "name_en": "Charti Berry",
-    "name_fr": "Baie Charti",
-    "effect_en": "Held in battle :   When the holder would take super-effective Rock-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Roche, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charti-berry.png"
+  "199": {
+    "id": 199,
+    "name": "silver-powder",
+    "name_en": "Silver Powder",
+    "name_fr": "Poudre Argent\u00e9e",
+    "effect_en": "Held in battle :   Holder\u2019s Bug-type moves have 1.2\u00d7 their power. ",
+    "effect_fr": "Tenu au combat :   La puissance des capacit\u00e9s de type Insecte du porteur est augment\u00e9e de 20%. ",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/silver-powder.png"
   },
   "211": {
     "id": 211,
@@ -77,26 +14,17 @@
     "name_en": "Leftovers",
     "name_fr": "Restes",
     "effect_en": "Held: Heals the holder by 1/16 its max HP at the end of each turn.",
-    "effect_fr": "Tenu: Soigne 1/16 des PV max du porteur à la fin de chaque tour.",
+    "effect_fr": "Tenu: Soigne 1/16 des PV max du porteur \u00e0 la fin de chaque tour.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/leftovers.png"
   },
-  "230": {
-    "id": 230,
-    "name": "shell-bell",
-    "name_en": "Shell Bell",
-    "name_fr": "Grelot Coque",
-    "effect_en": "Held: Heals the holder by 1/8 of any damage it inflicts.",
-    "effect_fr": "Tenu: Soigne le porteur d'1/8 des dégâts qu'il inflige.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shell-bell.png"
-  },
-  "252": {
-    "id": 252,
-    "name": "focus-sash",
-    "name_en": "Focus Sash",
-    "name_fr": "Ceinture Force",
-    "effect_en": "Held: If the holder has full HP and is attacked for regular damage that would faint it, this item is consumed and prevents the holder’s HP from lowering below 1.  This effect works against multi-hit attacks, but does not work against the effects of Doom Desire or Future Sight.",
-    "effect_fr": "Tenu: Si le porteur a tous ses PV et est touché par des dommages qui devraient le mettre KO, cet objet est consommé et empêche les PV du porteur de tomber en dessous de 1.  Cet effet fonctionne sur des attaques multi-coups, mais ne fonctionne pas contre des effets comme Vœu Destructeur or Prescience.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/focus-sash.png"
+  "215": {
+    "id": 215,
+    "name": "hard-stone",
+    "name_en": "Hard Stone",
+    "name_fr": "Pierre Dure",
+    "effect_en": "Held: Increases the power of the holder\u2019s Rock moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Roche du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hard-stone.png"
   },
   "175": {
     "id": 175,
@@ -104,476 +32,17 @@
     "name_en": "Colbur Berry",
     "name_fr": "Baie Lampou",
     "effect_en": "Held in battle :   When the holder would take super-effective Dark-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Ténèbres, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type T\u00e9n\u00e8bres, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/colbur-berry.png"
   },
-  "2233": {
-    "id": 2233,
-    "name": "clefablite",
-    "name_en": "Clefablite",
-    "name_fr": "Clefablite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "207": {
-    "id": 207,
-    "name": "focus-band",
-    "name_en": "Focus Band",
-    "name_fr": "Bandeau",
-    "effect_en": "Held: If the holder is attacked for regular damage that would faint it, this item has a 10% chance to prevent the holder’s HP from lowering below 1.",
-    "effect_fr": "Tenu: Si le porteur subit des dégâts réguliers par lesquels il serait mis KO, cet objet a 10% de chances d'empêcher les PV du porteur de tomber sous 1.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/focus-band.png"
-  },
-  "2266": {
-    "id": 2266,
-    "name": "staraptite",
-    "name_en": "Staraptite",
-    "name_fr": "Staraptite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "173": {
-    "id": 173,
-    "name": "kasib-berry",
-    "name_en": "Kasib Berry",
-    "name_fr": "Baie Sédra",
-    "effect_en": "Held in battle :   When the holder would take super-effective Ghost-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Spectre, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kasib-berry.png"
-  },
-  "2255": {
-    "id": 2255,
-    "name": "barbaracite",
-    "name_en": "Barbaracite",
-    "name_fr": "Barbaracite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "242": {
-    "id": 242,
-    "name": "wide-lens",
-    "name_en": "Wide Lens",
-    "name_fr": "Loupe",
-    "effect_en": "Held: Increases the accuracy of any move the holder uses by 10% (multiplied; i.e. 70% accuracy is increased to 77%).",
-    "effect_fr": "Tenu: Augmente la précision de n'importe quelle capacité que le porteur utilise de 10% (multiplié; i.e. 70% de précision est augmenté à 77%).",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wide-lens.png"
-  },
-  "696": {
-    "id": 696,
-    "name": "gardevoirite",
-    "name_en": "Gardevoirite",
-    "name_fr": "Gardevoirite",
-    "effect_en": "Held: Allows Gardevoir to Mega Evolve into Mega Gardevoir.",
-    "effect_fr": "Tenu: Permet à Gardevoir de Méga-Évoluer en Méga-Gardevoir.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/gardevoirite.png"
-  },
-  "760": {
-    "id": 760,
-    "name": "latiasite",
-    "name_en": "Latiasite",
-    "name_fr": "Latiasite",
-    "effect_en": "Held: Allows Latias to Mega Evolve into Mega Latias.",
-    "effect_fr": "Tenu: Permet à Latias de Méga-Évoluer en Méga-Latias.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/latiasite.png"
-  },
-  "129": {
-    "id": 129,
-    "name": "rawst-berry",
-    "name_en": "Rawst Berry",
-    "name_fr": "Baie Fraive",
-    "effect_en": "Held in battle :   When the holder is burned, it consumes this item to cure the burn.  Used on a party Pokémon :   Cures a burn.",
-    "effect_fr": "Tenu au combat :   Quand le porteur est brûlé, cela consomme cet objet pour soigner la brûlure.  Utilisé sur un Pokémon de l'équipe :   Soigne la brûlure.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rawst-berry.png"
-  },
-  "711": {
-    "id": 711,
-    "name": "aerodactylite",
-    "name_en": "Aerodactylite",
-    "name_fr": "Ptéraïte",
-    "effect_en": "Held: Allows Aerodactyl to Mega Evolve into Mega Aerodactyl.",
-    "effect_fr": "Tenu: Permet à Ptéra de Méga-Évoluer en Méga-Ptéra.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aerodactylite.png"
-  },
-  "215": {
-    "id": 215,
-    "name": "hard-stone",
-    "name_en": "Hard Stone",
-    "name_fr": "Pierre Dure",
-    "effect_en": "Held: Increases the power of the holder’s Rock moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Roche du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hard-stone.png"
-  },
-  "801": {
-    "id": 801,
-    "name": "slowbronite",
-    "name_en": "Slowbronite",
-    "name_fr": "Flagadossite",
-    "effect_en": "Held: Allows Slowbro to Mega Evolve into Mega Slowbro.",
-    "effect_fr": "Tenu: Permet à Flagadoss de Méga-Évoluer en Méga-Flagadoss.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/slowbronite.png"
-  },
-  "176": {
-    "id": 176,
-    "name": "babiri-berry",
-    "name_en": "Babiri Berry",
-    "name_fr": "Baie Babiri",
-    "effect_en": "Held in battle :   When the holder would take super-effective Steel-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Acier, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/babiri-berry.png"
-  },
-  "2275": {
-    "id": 2275,
-    "name": "baxcalibrite",
-    "name_en": "Baxcalibrite",
-    "name_fr": "Baxcalibrite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "219": {
-    "id": 219,
-    "name": "magnet",
-    "name_en": "Magnet",
-    "name_fr": "Aimant",
-    "effect_en": "Held: Increases the power of the holder’s Electric moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Électrik du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magnet.png"
-  },
-  "2238": {
-    "id": 2238,
-    "name": "feraligite",
-    "name_en": "Feraligite",
-    "name_fr": "Feraligite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "134": {
-    "id": 134,
-    "name": "lum-berry",
-    "name_en": "Lum Berry",
-    "name_fr": "Baie Prine",
-    "effect_en": "Held in battle :   When the holder is afflicted with a major status ailment, it consumes this item to cure the ailment.  Used on a party Pokémon :   Cures any major status ailment.",
-    "effect_fr": "Tenu au combat :   Quand le porteur est affecté par une altération majeure de statut, cela consomme cet objet pour soigner l'altération.  Utilisé sur un Pokémon de l'équipe :   Soigne n'importe quelle altération majeure de statut.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lum-berry.png"
-  },
-  "2258": {
-    "id": 2258,
-    "name": "zygardite",
-    "name_en": "Zygardite",
-    "name_fr": "Zygardite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "163": {
-    "id": 163,
-    "name": "wacan-berry",
-    "name_en": "Wacan Berry",
-    "name_fr": "Baie Parma",
-    "effect_en": "Held in battle :   When the holder would take super-effective Electric-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Électrik, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wacan-berry.png"
-  },
-  "218": {
-    "id": 218,
-    "name": "black-belt",
-    "name_en": "Black Belt",
-    "name_fr": "Ceinture Noire",
-    "effect_en": "Held: Increases the power of the holder’s Fighting moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Combat du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-belt.png"
-  },
-  "191": {
-    "id": 191,
-    "name": "white-herb",
-    "name_en": "White Herb",
-    "name_fr": "Herbe Blanche",
-    "effect_en": "Held in battle :   At the end of each turn, if any of the holder’s stats have a negative stat modifier, the holder consumes this item to remove the modifiers from those stats.",
-    "effect_fr": "Tenu au combat :   À la fin de chaque tour, si n'importe quelle stat du porteur a une modification de stat négative, le porteur consomme cet objet pour annuler les modifications de ces stats.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/white-herb.png"
-  },
-  "2245": {
-    "id": 2245,
-    "name": "scolipite",
-    "name_en": "Scolipite",
-    "name_fr": "Scolipite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "194": {
-    "id": 194,
-    "name": "quick-claw",
-    "name_en": "Quick Claw",
-    "name_fr": "Vive Griffe",
-    "effect_en": "Held in battle :   Whenever the holder attempts to use a move, it has a 3/16 chance to act first among moves with the same priority.  If multiple Pokémon have this effect at the same time, Speed is the tie-breaker as normal, but the effect of Trick Room is ignored.",
-    "effect_fr": "Tenu au combat :   Quand le porteur tente d'utiliser une capacité, il y a 3/16 chances d'agir en premier parmi les capacités de même priorité.  Si plusieurs Pokémon ont cet effet en même temps, la Vitesse est utilisée pour départager comme normalement, mais l'effet de Distorsion est ignoré.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-claw.png"
-  },
-  "126": {
-    "id": 126,
-    "name": "cheri-berry",
-    "name_en": "Cheri Berry",
-    "name_fr": "Baie Ceriz",
-    "effect_en": "Held in battle :   When the holder is paralyzed, it consumes this item to cure the paralysis.  Used on a party Pokémon :   Cures paralysis.",
-    "effect_fr": "Tenu au combat :   Quand le porteur est paralysé, cela consomme cet objet pour soigner la paralysie.  Utilisé sur un Pokémon de l'équipe :   Soigne la paralysie.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/cheri-berry.png"
-  },
-  "244": {
-    "id": 244,
-    "name": "wise-glasses",
-    "name_en": "Wise Glasses",
-    "name_fr": "Lunettes Sages",
-    "effect_en": "Held: Increases the power of the holder’s special moves by 10%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités spéciales du porteur de 10%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wise-glasses.png"
-  },
-  "698": {
-    "id": 698,
-    "name": "venusaurite",
-    "name_en": "Venusaurite",
-    "name_fr": "Florizarrite",
-    "effect_en": "Held: Allows Venusaur to Mega Evolve into Mega Venusaur.",
-    "effect_fr": "Tenu: Permet à Florizarre de Méga-Évoluer en Méga-Florizarre.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png"
-  },
-  "245": {
-    "id": 245,
-    "name": "expert-belt",
-    "name_en": "Expert Belt",
-    "name_fr": "Ceinture Pro",
-    "effect_en": "Held: When the holder hits with a super-effective move, its power is raised by 20%.",
-    "effect_fr": "Tenu: Quand le porteur touche avec une capacité super efficace, sa puissance est augmentée de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/expert-belt.png"
-  },
-  "794": {
-    "id": 794,
-    "name": "sceptilite",
-    "name_en": "Sceptilite",
-    "name_fr": "Jungkite",
-    "effect_en": "Held: Allows Sceptile to Mega Evolve into Mega Sceptile.",
-    "effect_fr": "Tenu: Permet à Jungko de Méga-Évoluer en Méga-Jungko.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sceptilite.png"
-  },
-  "2270": {
-    "id": 2270,
-    "name": "meowsticite",
-    "name_en": "Meowsticite",
-    "name_fr": "Meowsticite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "161": {
-    "id": 161,
-    "name": "occa-berry",
-    "name_en": "Occa Berry",
-    "name_fr": "Baie Chocco",
-    "effect_en": "Held in battle :   When the holder would take super-effective Fire-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Feu, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/occa-berry.png"
-  },
-  "127": {
-    "id": 127,
-    "name": "chesto-berry",
-    "name_en": "Chesto Berry",
-    "name_fr": "Baie Maron",
-    "effect_en": "Held in battle :   When the holder is asleep, it consumes this item to wake up.  Used on a party Pokémon :   Cures sleep.",
-    "effect_fr": "Tenu au combat :   Quand le porteur est endormi, cela consomme cet objet pour le réveiller.  Utilisé sur un Pokémon de l'équipe :   Soigne le sommeil.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chesto-berry.png"
-  },
-  "177": {
-    "id": 177,
-    "name": "chilan-berry",
-    "name_en": "Chilan Berry",
-    "name_fr": "Baie Zalis",
-    "effect_en": "Held in battle :   When the holder would take Normal-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts de type Normal, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chilan-berry.png"
-  },
-  "2253": {
-    "id": 2253,
-    "name": "floettite",
-    "name_en": "Floettite",
-    "name_fr": "Floettite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "714": {
-    "id": 714,
-    "name": "kangaskhanite",
-    "name_en": "Kangaskhanite",
-    "name_fr": "Kangourexite",
-    "effect_en": "Held: Allows Kangaskhan to Mega Evolve into Mega Kangaskhan.",
-    "effect_fr": "Tenu: Permet à Kangourex de Méga-Évoluer en Méga-Kangourex.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kangaskhanite.png"
-  },
-  "174": {
-    "id": 174,
-    "name": "haban-berry",
-    "name_en": "Haban Berry",
-    "name_fr": "Baie Fraigo",
-    "effect_en": "Held in battle :   When the holder would take super-effective Dragon-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Dragon, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/haban-berry.png"
-  },
-  "721": {
-    "id": 721,
-    "name": "manectite",
-    "name_en": "Manectite",
-    "name_fr": "Élecsprintite",
-    "effect_en": "Held: Allows Manectric to Mega Evolve into Mega Manectric.",
-    "effect_fr": "Tenu: Permet à Élecsprint de Méga-Évoluer en Méga-Élecsprint.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/manectite.png"
-  },
-  "259": {
-    "id": 259,
-    "name": "icy-rock",
-    "name_en": "Icy Rock",
-    "name_fr": "Roche Glace",
-    "effect_en": "Held: The holder’s Hail will create a hailstorm lasting for eight turns rather than five.  As this item affects the move rather than the weather itself, the effect is not lost if the holder leaves battle or drops this item.",
-    "effect_fr": "Tenu: La Grêle du porteur crée une averse de grêle durant huit tours au lieu de cinq.  Comme cet objet affecte la capacité plutôt que la météo elle-même, l'effet n'est pas perdu si le porteur quitte le terrain ou fait tomber cet objet.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/icy-rock.png"
-  },
-  "708": {
-    "id": 708,
-    "name": "tyranitarite",
-    "name_en": "Tyranitarite",
-    "name_fr": "Tyranocivite",
-    "effect_en": "Held: Allows Tyranitar to Mega Evolve into Mega Tyranitar.",
-    "effect_fr": "Tenu: Permet à Tyranocif de Méga-Évoluer en Méga-Tyranocif.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tyranitarite.png"
-  },
-  "255": {
-    "id": 255,
-    "name": "iron-ball",
-    "name_en": "Iron Ball",
-    "name_fr": "Balle Fer",
-    "effect_en": "Held: Decreases the holder’s Speed by 50%.  If the holder is Flying or has Levitate, it takes regular damage from Ground attacks and is suspectible to Spikes and Toxic Spikes.",
-    "effect_fr": "Tenu: Diminue la Vitesse du porteur de 50%.  Si le porteure est de type Vol ou a Lévitation, il subit des dégâts normaux des attaques Sol et est sensible aux Picots et Pics Toxik.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/iron-ball.png"
-  },
-  "261": {
-    "id": 261,
-    "name": "heat-rock",
-    "name_en": "Heat Rock",
-    "name_fr": "Roche Chaude",
-    "effect_en": "Held: The holder’s Sunny Day will create sunshine lasting for eight turns rather than five.  As this item affects the move rather than the weather itself, the effect is not lost if the holder leaves battle or drops this item.",
-    "effect_fr": "Tenu: Le Zénith du porteur crée un soleil durant huit tours au lieu de cinq.  Comme cet objet affecte la capacité plutôt que la météo elle-même, l'effet n'est pas perdu si le porteur quitte le terrain ou fait tomber cet objet.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heat-rock.png"
-  },
-  "707": {
-    "id": 707,
-    "name": "banettite",
-    "name_en": "Banettite",
-    "name_fr": "Branettite",
-    "effect_en": "Held: Allows Banette to Mega Evolve into Mega Banette.",
-    "effect_fr": "Tenu: Permet à Branette de Méga-Évoluer en Méga-Branette.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/banettite.png"
-  },
-  "264": {
-    "id": 264,
-    "name": "choice-scarf",
-    "name_en": "Choice Scarf",
-    "name_fr": "Mouchoir Choix",
-    "effect_en": "Held: Increases the holder’s Speed by 50%, but restricts it to the first move it uses until it leaves battle or loses this item.  If this item is swapped for another Choice item via Trick or Switcheroo, the holder’s restriction is still lifted, but it will again be restricted to the next move it uses. (Quirk: If the holder is switched in by U-Turn and it also knows U-Turn, U-Turn becomes its restricted move.)",
-    "effect_fr": "Tenu: Augmente la Vitesse du porteur de 50%, mais le restreint à la première capacité utilisée jusqu'à ce qu'il quitte le terrain ou perde cet objet.  Si cet objet est échangé pour un autre objet Choix via Tour de Magie ou Passe-Passe, la restriction du porteur est toujours active, mais concernera la prochaine capacité utilisée. (Particularité: Si le porteur est retiré avec Demi-Tour et que le remplaçant connaît également Demi-Tour, Demi-Tour devient la capacité restreinte.)",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-scarf.png"
-  },
-  "797": {
-    "id": 797,
-    "name": "galladite",
-    "name_en": "Galladite",
-    "name_fr": "Gallamite",
-    "effect_en": "Held: Allows Gallade to Mega Evolve into Mega Gallade.",
-    "effect_fr": "Tenu: Permet à Gallame de Méga-Évoluer en Méga-Gallame.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/galladite.png"
-  },
-  "705": {
-    "id": 705,
-    "name": "houndoominite",
-    "name_en": "Houndoominite",
-    "name_fr": "Démolossite",
-    "effect_en": "Held: Allows Houndoom to Mega Evolve into Mega Houndoom.",
-    "effect_fr": "Tenu: Permet à Démolosse de Méga-Évoluer en Méga-Démolosse.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/houndoominite.png"
-  },
-  "795": {
-    "id": 795,
-    "name": "sablenite",
-    "name_en": "Sablenite",
-    "name_fr": "Ténéfixite",
-    "effect_en": "Held: Allows Sableye to Mega Evolve into Mega Sableye.",
-    "effect_fr": "Tenu: Permet à Ténéfix de Méga-Évoluer en Méga-Ténéfix.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sablenite.png"
-  },
-  "2105": {
-    "id": 2105,
-    "name": "fairy-feather",
-    "name_en": "Fairy Feather",
-    "name_fr": "Plume Enchantée",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "804": {
-    "id": 804,
-    "name": "glalitite",
-    "name_en": "Glalitite",
-    "name_fr": "Oniglalite",
-    "effect_en": "Held: Allows Glalie to Mega Evolve into Mega Glalie.",
-    "effect_fr": "Tenu: Permet à Oniglali de Méga-Évoluer en Méga-Oniglali.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/glalitite.png"
-  },
-  "799": {
-    "id": 799,
-    "name": "metagrossite",
-    "name_en": "Metagrossite",
-    "name_fr": "Métalossite",
-    "effect_en": "Held: Allows Metagross to Mega Evolve into Mega Metagross.",
-    "effect_fr": "Tenu: Permet à Métalosse de Méga-Évoluer en Méga-Métalosse.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metagrossite.png"
-  },
-  "2269": {
-    "id": 2269,
-    "name": "golurkite",
-    "name_en": "Golurkite",
-    "name_fr": "Golurkite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "805": {
-    "id": 805,
-    "name": "diancite",
-    "name_en": "Diancite",
-    "name_fr": "Diancite",
-    "effect_en": "Held: Allows Diancie to Mega Evolve into Mega Diancie.",
-    "effect_fr": "Tenu: Permet à Diancie de Méga-Évoluer en Méga-Diancie.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/diancite.png"
-  },
-  "130": {
-    "id": 130,
-    "name": "aspear-berry",
-    "name_en": "Aspear Berry",
-    "name_fr": "Baie Willia",
-    "effect_en": "Held in battle :   When the holder is frozen, it consumes this item to thaw itself.  Used on a party Pokémon :   Cures freezing.",
-    "effect_fr": "Tenu au combat :   Quand le porteur est gelé, cela consomme cet objet pour le dégeler.  Utilisé sur un Pokémon de l'équipe :   Soigne le gel.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aspear-berry.png"
-  },
-  "254": {
-    "id": 254,
-    "name": "metronome",
-    "name_en": "Metronome",
-    "name_fr": "Métronome",
-    "effect_en": "Held: Each time the holder uses the same move consecutively, its power is increased by another 10% of its original, to a maximum of 100%.",
-    "effect_fr": "Tenu: À chaque fois que le porteur utilise la même capacité consécutivement, sa puissance originale est augmentée de 10% supplémentaires, jusqu'à un maximum de 100%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metronome.png"
+  "170": {
+    "id": 170,
+    "name": "payapa-berry",
+    "name_en": "Payapa Berry",
+    "name_fr": "Baie Yapap",
+    "effect_en": "Held in battle :   When the holder would take super-effective Psychic-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Psy, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/payapa-berry.png"
   },
   "723": {
     "id": 723,
@@ -581,152 +50,116 @@
     "name_en": "Roseli Berry",
     "name_fr": "Baie Selro",
     "effect_en": "Held: Consumed when struck by a super-effective Fairy-type attack to halve the damage.",
-    "effect_fr": "Tenu: Consommé quand touché par une attaque de type Fée super efficace pour diviser par deux les dégâts.",
+    "effect_fr": "Tenu: Consomm\u00e9 quand touch\u00e9 par une attaque de type F\u00e9e super efficace pour diviser par deux les d\u00e9g\u00e2ts.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/roseli-berry.png"
   },
-  "2261": {
-    "id": 2261,
-    "name": "falinksite",
-    "name_en": "Falinksite",
-    "name_fr": "Falinksite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "169": {
+    "id": 169,
+    "name": "coba-berry",
+    "name_en": "Coba Berry",
+    "name_fr": "Baie Cobaba",
+    "effect_en": "Held in battle :   When the holder would take super-effective Flying-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Vol, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/coba-berry.png"
   },
-  "2239": {
-    "id": 2239,
-    "name": "skarmorite",
-    "name_en": "Skarmorite",
-    "name_fr": "Skarmorite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "219": {
+    "id": 219,
+    "name": "magnet",
+    "name_en": "Magnet",
+    "name_fr": "Aimant",
+    "effect_en": "Held: Increases the power of the holder\u2019s Electric moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s \u00c9lectrik du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magnet.png"
   },
-  "793": {
-    "id": 793,
-    "name": "swampertite",
-    "name_en": "Swampertite",
-    "name_fr": "Laggronite",
-    "effect_en": "Held: Allows Swampert to Mega Evolve into Mega Swampert.",
-    "effect_fr": "Tenu: Permet à Laggron de Méga-Évoluer en Méga-Laggron.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/swampertite.png"
+  "171": {
+    "id": 171,
+    "name": "tanga-berry",
+    "name_en": "Tanga Berry",
+    "name_fr": "Baie Panga",
+    "effect_en": "Held in battle :   When the holder would take super-effective Bug-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Insecte, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tanga-berry.png"
   },
-  "2264": {
-    "id": 2264,
-    "name": "chimechite",
-    "name_en": "Chimechite",
-    "name_fr": "Chimechite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "245": {
+    "id": 245,
+    "name": "expert-belt",
+    "name_en": "Expert Belt",
+    "name_fr": "Ceinture Pro",
+    "effect_en": "Held: When the holder hits with a super-effective move, its power is raised by 20%.",
+    "effect_fr": "Tenu: Quand le porteur touche avec une capacit\u00e9 super efficace, sa puissance est augment\u00e9e de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/expert-belt.png"
   },
-  "214": {
-    "id": 214,
-    "name": "soft-sand",
-    "name_en": "Soft Sand",
-    "name_fr": "Sable Doux",
-    "effect_en": "Held: Increases the power of the holder’s Ground moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Sol du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/soft-sand.png"
+  "220": {
+    "id": 220,
+    "name": "mystic-water",
+    "name_en": "Mystic Water",
+    "name_fr": "Eau Mystique",
+    "effect_en": "Held: Increases the power of the holder\u2019s Water moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Eau du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mystic-water.png"
   },
-  "217": {
-    "id": 217,
-    "name": "black-glasses",
-    "name_en": "Black Glasses",
-    "name_fr": "Lunettes Noires",
-    "effect_en": "Held: Increases the power of the holder’s Dark moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Ténèbres du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-glasses.png"
+  "130": {
+    "id": 130,
+    "name": "aspear-berry",
+    "name_en": "Aspear Berry",
+    "name_fr": "Baie Willia",
+    "effect_en": "Held in battle :   When the holder is frozen, it consumes this item to thaw itself.  Used on a party Pok\u00e9mon :   Cures freezing.",
+    "effect_fr": "Tenu au combat :   Quand le porteur est gel\u00e9, cela consomme cet objet pour le d\u00e9geler.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Soigne le gel.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aspear-berry.png"
   },
-  "2274": {
-    "id": 2274,
-    "name": "scovillainite",
-    "name_en": "Scovillainite",
-    "name_fr": "Scovillainite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "165": {
+    "id": 165,
+    "name": "yache-berry",
+    "name_en": "Yache Berry",
+    "name_fr": "Baie Nanone",
+    "effect_en": "Held in battle :   When the holder would take super-effective Ice-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Glace, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/yache-berry.png"
   },
-  "713": {
-    "id": 713,
-    "name": "abomasite",
-    "name_en": "Abomasite",
-    "name_fr": "Blizzarite",
-    "effect_en": "Held: Allows Abomasnow to Mega Evolve into Mega Abomasnow.",
-    "effect_fr": "Tenu: Permet à Blizzaroi de Méga-Évoluer en Méga-Blizzaroi.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/abomasite.png"
+  "127": {
+    "id": 127,
+    "name": "chesto-berry",
+    "name_en": "Chesto Berry",
+    "name_fr": "Baie Maron",
+    "effect_en": "Held in battle :   When the holder is asleep, it consumes this item to wake up.  Used on a party Pok\u00e9mon :   Cures sleep.",
+    "effect_fr": "Tenu au combat :   Quand le porteur est endormi, cela consomme cet objet pour le r\u00e9veiller.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Soigne le sommeil.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chesto-berry.png"
   },
-  "128": {
-    "id": 128,
-    "name": "pecha-berry",
-    "name_en": "Pecha Berry",
-    "name_fr": "Baie Pêcha",
-    "effect_en": "Held in battle :   When the holder is poisoned, it consumes this item to cure the poison.  Used on a party Pokémon :   Cures poison.",
-    "effect_fr": "Tenu au combat :   Quand le porteur est empoisonné, cela consomme cet objet pour soigner le poison.  Utilisé sur un Pokémon de l'équipe :   Soigne le poison.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pecha-berry.png"
+  "227": {
+    "id": 227,
+    "name": "dragon-fang",
+    "name_en": "Dragon Fang",
+    "name_fr": "Croc Dragon",
+    "effect_en": "Held: Increases the power of the holder\u2019s Dragon moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Dragon du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dragon-fang.png"
   },
-  "2256": {
-    "id": 2256,
-    "name": "dragalgite",
-    "name_en": "Dragalgite",
-    "name_fr": "Dragalgite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "198": {
+    "id": 198,
+    "name": "kings-rock",
+    "name_en": "King\u2019s Rock",
+    "name_fr": "Roche Royale",
+    "effect_en": "Held in battle :   Holder\u2019s damaging moves have a 10% chance to make their target flinch.  This chance applies independently to each hit of a multi-hit move.      This item\u2019s chance is rolled independently of any other move effects; e.g., a move with a 30% chance to flinch normally will have a 37% total chance to flinch when used with this item, because 3% of the time, both effects activate.  Held by Poliwhirl or Slowbro :   Holder evolves into Politoed or Slowking, respectively, when traded.",
+    "effect_fr": "Tenu au combat :   Les capacit\u00e9s offensives du porteur ont 10% de chances d'apeurer leur cible.  Cette probabilit\u00e9 s'applique ind\u00e9pendamment \u00e0 chaque coup d'une capacit\u00e9 multi-coups.      La probabilit\u00e9 de cet objet est tir\u00e9e ind\u00e9pendamment des effets des autres capacit\u00e9s; e.g., une capacit\u00e9 avec 30% de chances d'apeurer normalement aura 37% de chance totale d'apeurer quand utilis\u00e9e avec cet objet, car 3% du temps, les deux effets s'activent.  Tenu par T\u00eatarte ou Flagadoss :   Le porteur \u00e9volue en Tarpaud ou Roigada, respectivement, quand \u00e9chang\u00e9.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kings-rock.png"
   },
-  "225": {
-    "id": 225,
-    "name": "twisted-spoon",
-    "name_en": "Twisted Spoon",
-    "name_fr": "Cuillère Tordue",
-    "effect_en": "Held: Increases the power of the holder’s Psychic moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Psy du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/twisted-spoon.png"
+  "191": {
+    "id": 191,
+    "name": "white-herb",
+    "name_en": "White Herb",
+    "name_fr": "Herbe Blanche",
+    "effect_en": "Held in battle :   At the end of each turn, if any of the holder\u2019s stats have a negative stat modifier, the holder consumes this item to remove the modifiers from those stats.",
+    "effect_fr": "Tenu au combat :   \u00c0 la fin de chaque tour, si n'importe quelle stat du porteur a une modification de stat n\u00e9gative, le porteur consomme cet objet pour annuler les modifications de ces stats.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/white-herb.png"
   },
-  "135": {
-    "id": 135,
-    "name": "sitrus-berry",
-    "name_en": "Sitrus Berry",
-    "name_fr": "Baie Sitrus",
-    "effect_en": "Held in battle :   When the holder has 1/2 its max HP remaining or less, it consumes this item to restore 1/4 its max HP.  Used on a party Pokémon :   Restores 1/4 the Pokémon’s max HP.",
-    "effect_fr": "Tenu au combat :   Quand le porteur a 1/2 de ses PV max restants ou moins, cela consomme cet objet pour restaurer 1/4 de ses PV max.  Utilisé sur un Pokémon de l'équipe :   Restaure 1/4 des PV max du Pokémon.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sitrus-berry.png"
-  },
-  "226": {
-    "id": 226,
-    "name": "charcoal",
-    "name_en": "Charcoal",
-    "name_fr": "Charbon",
-    "effect_en": "Held: Increases the power of the holder’s Fire moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Feu du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charcoal.png"
-  },
-  "715": {
-    "id": 715,
-    "name": "gyaradosite",
-    "name_en": "Gyaradosite",
-    "name_fr": "Léviatorite",
-    "effect_en": "Held: Allows Gyarados to Mega Evolve into Mega Gyarados.",
-    "effect_fr": "Tenu: Permet à Léviator de Méga-Évoluer en Méga-Léviator.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/gyaradosite.png"
-  },
-  "800": {
-    "id": 800,
-    "name": "sharpedonite",
-    "name_en": "Sharpedonite",
-    "name_fr": "Sharpedite",
-    "effect_en": "Held: Allows Sharpedo to Mega Evolve into Mega Sharpedo.",
-    "effect_fr": "Tenu: Permet à Sharpedo de Méga-Évoluer en Méga-Sharpedo.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sharpedonite.png"
-  },
-  "131": {
-    "id": 131,
-    "name": "leppa-berry",
-    "name_en": "Leppa Berry",
-    "name_fr": "Baie Mepo",
-    "effect_en": "Held in battle :   When the holder is out of PP for one of its moves, it consumes this item to restore 10 of that move’s PP.  Used on a party Pokémon :   Restores 10 PP for a selected move.",
-    "effect_fr": "Tenu au combat :   Quand le porteur est à court de PP pour une de ses capacités, cela consomme cet objet pour restaurer 10 PP de cette capacité.  Utilisé sur un Pokémon de l'équipe :   Restaure 10 PP pour une capacité sélectionnée.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/leppa-berry.png"
+  "259": {
+    "id": 259,
+    "name": "icy-rock",
+    "name_en": "Icy Rock",
+    "name_fr": "Roche Glace",
+    "effect_en": "Held: The holder\u2019s Hail will create a hailstorm lasting for eight turns rather than five.  As this item affects the move rather than the weather itself, the effect is not lost if the holder leaves battle or drops this item.",
+    "effect_fr": "Tenu: La Gr\u00eale du porteur cr\u00e9e une averse de gr\u00eale durant huit tours au lieu de cinq.  Comme cet objet affecte la capacit\u00e9 plut\u00f4t que la m\u00e9t\u00e9o elle-m\u00eame, l'effet n'est pas perdu si le porteur quitte le terrain ou fait tomber cet objet.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/icy-rock.png"
   },
   "272": {
     "id": 272,
@@ -734,17 +167,17 @@
     "name_en": "Shed Shell",
     "name_fr": "Carapace Mue",
     "effect_en": "Held: The holder is unaffected by any moves or abilities that would prevent it from actively leaving battle.",
-    "effect_fr": "Tenu: Le porteur n'eest pas affecté par les capacités ou talents qui l'empêcheraient de quitter le terrain délibérément.",
+    "effect_fr": "Tenu: Le porteur n'eest pas affect\u00e9 par les capacit\u00e9s ou talents qui l'emp\u00eacheraient de quitter le terrain d\u00e9lib\u00e9r\u00e9ment.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shed-shell.png"
   },
-  "132": {
-    "id": 132,
-    "name": "oran-berry",
-    "name_en": "Oran Berry",
-    "name_fr": "Baie Oran",
-    "effect_en": "Held in battle :   When the holder has 1/2 its max HP remaining or less, it consumes this item to restore 10 HP.  Used on a party Pokémon :   Restores 10 HP.",
-    "effect_fr": "Tenu au combat :   Quand le porteur a 1/2 de ses PV max restants ou moins, cela consomme cet objet pour restaurer 10 PV.  Utilisé sur un Pokémon de l'équipe :   Restaure 10 PV.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oran-berry.png"
+  "273": {
+    "id": 273,
+    "name": "big-root",
+    "name_en": "Big Root",
+    "name_fr": "Grosse Racine",
+    "effect_en": "Held: HP restored from Absorb, Aqua Ring, Drain Punch, Dream Eater, Giga Drain, Ingrain, Leech Life, Leech Seed, and Mega Drain is increased by 30%.  Damage inflicted is not affected.",
+    "effect_fr": "Tenu: Les PV restaur\u00e9s par Vole-Vie, Anneau Hydro, Campi-Poing, D\u00e9vor\u00eave, Giga-Sangsue, Racine, Vampirisme, Vampigraine, et M\u00e9ga-Sangsue sont augment\u00e9s de 30%.  Les d\u00e9g\u00e2ts inflig\u00e9s ne sont pas affect\u00e9s.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/big-root.png"
   },
   "164": {
     "id": 164,
@@ -752,89 +185,89 @@
     "name_en": "Rindo Berry",
     "name_fr": "Baie Ratam",
     "effect_en": "Held in battle :   When the holder would take super-effective Grass-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Plante, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Plante, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rindo-berry.png"
   },
-  "808": {
-    "id": 808,
-    "name": "cameruptite",
-    "name_en": "Cameruptite",
-    "name_fr": "Caméruptite",
-    "effect_en": "Held: Allows Camerupt to Mega Evolve into Mega Camerupt.",
-    "effect_fr": "Tenu: Permet à Camérupt de Méga-Évoluer en Méga-Camérupt.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/cameruptite.png"
+  "172": {
+    "id": 172,
+    "name": "charti-berry",
+    "name_en": "Charti Berry",
+    "name_fr": "Baie Charti",
+    "effect_en": "Held in battle :   When the holder would take super-effective Rock-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Roche, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charti-berry.png"
   },
-  "2259": {
-    "id": 2259,
-    "name": "drampanite",
-    "name_en": "Drampanite",
-    "name_fr": "Drampanite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "214": {
+    "id": 214,
+    "name": "soft-sand",
+    "name_en": "Soft Sand",
+    "name_fr": "Sable Doux",
+    "effect_en": "Held: Increases the power of the holder\u2019s Ground moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Sol du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/soft-sand.png"
   },
-  "2237": {
-    "id": 2237,
-    "name": "meganiumite",
-    "name_en": "Meganiumite",
-    "name_fr": "Meganiumite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "218": {
+    "id": 218,
+    "name": "black-belt",
+    "name_en": "Black Belt",
+    "name_fr": "Ceinture Noire",
+    "effect_en": "Held: Increases the power of the holder\u2019s Fighting moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Combat du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-belt.png"
   },
-  "2247": {
-    "id": 2247,
-    "name": "eelektrossite",
-    "name_en": "Eelektrossite",
-    "name_fr": "Eelektrossite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "255": {
+    "id": 255,
+    "name": "iron-ball",
+    "name_en": "Iron Ball",
+    "name_fr": "Balle Fer",
+    "effect_en": "Held: Decreases the holder\u2019s Speed by 50%.  If the holder is Flying or has Levitate, it takes regular damage from Ground attacks and is suspectible to Spikes and Toxic Spikes.",
+    "effect_fr": "Tenu: Diminue la Vitesse du porteur de 50%.  Si le porteure est de type Vol ou a L\u00e9vitation, il subit des d\u00e9g\u00e2ts normaux des attaques Sol et est sensible aux Picots et Pics Toxik.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/iron-ball.png"
   },
-  "2246": {
-    "id": 2246,
-    "name": "scraftinite",
-    "name_en": "Scraftinite",
-    "name_fr": "Scraftinite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "194": {
+    "id": 194,
+    "name": "quick-claw",
+    "name_en": "Quick Claw",
+    "name_fr": "Vive Griffe",
+    "effect_en": "Held in battle :   Whenever the holder attempts to use a move, it has a 3/16 chance to act first among moves with the same priority.  If multiple Pok\u00e9mon have this effect at the same time, Speed is the tie-breaker as normal, but the effect of Trick Room is ignored.",
+    "effect_fr": "Tenu au combat :   Quand le porteur tente d'utiliser une capacit\u00e9, il y a 3/16 chances d'agir en premier parmi les capacit\u00e9s de m\u00eame priorit\u00e9.  Si plusieurs Pok\u00e9mon ont cet effet en m\u00eame temps, la Vitesse est utilis\u00e9e pour d\u00e9partager comme normalement, mais l'effet de Distorsion est ignor\u00e9.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-claw.png"
   },
-  "2277": {
-    "id": 2277,
-    "name": "glimmoranite",
-    "name_en": "Glimmoranite",
-    "name_fr": "Glimmoranite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "133": {
+    "id": 133,
+    "name": "persim-berry",
+    "name_en": "Persim Berry",
+    "name_fr": "Baie Kika",
+    "effect_en": "Held in battle :   When the holder is confused, it consumes this item to cure the confusion.  Used on a party Pok\u00e9mon :   Cures confusion.",
+    "effect_fr": "Tenu au combat :   Quand le porteur est confus, cela consomme cet objet pour soigner la confusion.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Soigne la confusion.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/persim-berry.png"
   },
-  "2234": {
-    "id": 2234,
-    "name": "victreebelite",
-    "name_en": "Victreebelite",
-    "name_fr": "Victreebelite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+  "210": {
+    "id": 210,
+    "name": "metal-coat",
+    "name_en": "Metal Coat",
+    "name_fr": "Peau M\u00e9tal",
+    "effect_en": "Held: Increases the power of the holder\u2019s Steel moves by 20%. Held by Onix or Scyther: Evolves the holder into Steelix or Scizor when traded, respectively.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Acier du porteur de 20%. Tenu par Onix ou Ins\u00e9cateur: Fait \u00e9voluer le porteur en Steelix ou Cizayox, respectivement.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png"
   },
-  "243": {
-    "id": 243,
-    "name": "muscle-band",
-    "name_en": "Muscle Band",
-    "name_fr": "Bandeau Muscle",
-    "effect_en": "Held: Increases the power of the holder’s physical moves by 10%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités physiques du porteur de 10%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/muscle-band.png"
+  "167": {
+    "id": 167,
+    "name": "kebia-berry",
+    "name_en": "Kebia Berry",
+    "name_fr": "Baie K\u00e9bia",
+    "effect_en": "Held in battle :   When the holder would take super-effective Poison-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Poison, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kebia-berry.png"
   },
-  "262": {
-    "id": 262,
-    "name": "damp-rock",
-    "name_en": "Damp Rock",
-    "name_fr": "Roche Humide",
-    "effect_en": "Held: The holder’s Rain Dance will create rain lasting for eight turns rather than five.  As this item affects the move rather than the weather itself, the effect is not lost if the holder leaves battle or drops this item.",
-    "effect_fr": "Tenu: La Danse Pluie du porteur crée une pluie durant huit tours au lieu de cinq.  Comme cet objet affecte la capacité plutôt que la météo elle-même, l'effet n'est pas perdu si le porteur quitte le terrain ou fait tomber cet objet.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/damp-rock.png"
+  "126": {
+    "id": 126,
+    "name": "cheri-berry",
+    "name_en": "Cheri Berry",
+    "name_fr": "Baie Ceriz",
+    "effect_en": "Held in battle :   When the holder is paralyzed, it consumes this item to cure the paralysis.  Used on a party Pok\u00e9mon :   Cures paralysis.",
+    "effect_fr": "Tenu au combat :   Quand le porteur est paralys\u00e9, cela consomme cet objet pour soigner la paralysie.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Soigne la paralysie.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/cheri-berry.png"
   },
   "196": {
     "id": 196,
@@ -845,113 +278,14 @@
     "effect_fr": "Tenu au combat  :   Quand le porteur est amoureux, cela consomme cet objet pour soigner l'amour.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mental-herb.png"
   },
-  "2263": {
-    "id": 2263,
-    "name": "raichunite-y",
-    "name_en": "Raichunite Y",
-    "name_fr": "Raichunite Y",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "220": {
-    "id": 220,
-    "name": "mystic-water",
-    "name_en": "Mystic Water",
-    "name_fr": "Eau Mystique",
-    "effect_en": "Held: Increases the power of the holder’s Water moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Eau du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mystic-water.png"
-  },
-  "171": {
-    "id": 171,
-    "name": "tanga-berry",
-    "name_en": "Tanga Berry",
-    "name_fr": "Baie Panga",
-    "effect_en": "Held in battle :   When the holder would take super-effective Bug-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Insecte, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tanga-berry.png"
-  },
-  "697": {
-    "id": 697,
-    "name": "ampharosite",
-    "name_en": "Ampharosite",
-    "name_fr": "Pharampite",
-    "effect_en": "Held: Allows Ampharos to Mega Evolve into Mega Ampharos.",
-    "effect_fr": "Tenu: Permet à Pharamp de Méga-Évoluer en Méga-Pharamp.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ampharosite.png"
-  },
-  "719": {
-    "id": 719,
-    "name": "heracronite",
-    "name_en": "Heracronite",
-    "name_fr": "Scarhinoïte",
-    "effect_en": "Held: Allows Heracross to Mega Evolve into Mega Heracross.",
-    "effect_fr": "Tenu: Permet à Scarhino de Méga-Évoluer en Méga-Scarhino.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heracronite.png"
-  },
-  "761": {
-    "id": 761,
-    "name": "latiosite",
-    "name_en": "Latiosite",
-    "name_fr": "Latiosite",
-    "effect_en": "Held: Allows Latios to Mega Evolve into Mega Latios.",
-    "effect_fr": "Tenu: Permet à Latios de Méga-Évoluer en Méga-Latios.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/latiosite.png"
-  },
-  "798": {
-    "id": 798,
-    "name": "audinite",
-    "name_en": "Audinite",
-    "name_fr": "Nanméouïte",
-    "effect_en": "Held: Allows Audino to Mega Evolve into Mega Audino.",
-    "effect_fr": "Tenu: Permet à Nanméouïe de Méga-Évoluer en Méga-Nanméouïe.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/audinite.png"
-  },
-  "2249": {
-    "id": 2249,
-    "name": "chesnaughtite",
-    "name_en": "Chesnaughtite",
-    "name_fr": "Chesnaughtite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "166": {
-    "id": 166,
-    "name": "chople-berry",
-    "name_en": "Chople Berry",
-    "name_fr": "Baie Pomroz",
-    "effect_en": "Held in battle :   When the holder would take super-effective Fighting-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Combat, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chople-berry.png"
-  },
-  "167": {
-    "id": 167,
-    "name": "kebia-berry",
-    "name_en": "Kebia Berry",
-    "name_fr": "Baie Kébia",
-    "effect_en": "Held in battle :   When the holder would take super-effective Poison-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Poison, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kebia-berry.png"
-  },
-  "2254": {
-    "id": 2254,
-    "name": "malamarite",
-    "name_en": "Malamarite",
-    "name_fr": "Malamarite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "190": {
-    "id": 190,
-    "name": "bright-powder",
-    "name_en": "Bright Powder",
-    "name_fr": "Poudre Claire",
-    "effect_en": "Held in battle :   Moves targeting the holder have 0.9× chance to hit.",
-    "effect_fr": "Tenu au combat  :   Les capacités ciblant le porteur ont 90% de chances de toucher.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/bright-powder.png"
+  "242": {
+    "id": 242,
+    "name": "wide-lens",
+    "name_en": "Wide Lens",
+    "name_fr": "Loupe",
+    "effect_en": "Held: Increases the accuracy of any move the holder uses by 10% (multiplied; i.e. 70% accuracy is increased to 77%).",
+    "effect_fr": "Tenu: Augmente la pr\u00e9cision de n'importe quelle capacit\u00e9 que le porteur utilise de 10% (multipli\u00e9; i.e. 70% de pr\u00e9cision est augment\u00e9 \u00e0 77%).",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wide-lens.png"
   },
   "162": {
     "id": 162,
@@ -959,26 +293,53 @@
     "name_en": "Passho Berry",
     "name_fr": "Baie Pocpoc",
     "effect_en": "Held in battle :   When the holder would take super-effective Water-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Eau, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Eau, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/passho-berry.png"
   },
-  "802": {
-    "id": 802,
-    "name": "steelixite",
-    "name_en": "Steelixite",
-    "name_fr": "Steelixite",
-    "effect_en": "Held: Allows Steelix to Mega Evolve into Mega Steelix.",
-    "effect_fr": "Tenu: Permet à Steelix de Méga-Évoluer en Méga-Steelix.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/steelixite.png"
+  "226": {
+    "id": 226,
+    "name": "charcoal",
+    "name_en": "Charcoal",
+    "name_fr": "Charbon",
+    "effect_en": "Held: Increases the power of the holder\u2019s Fire moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Feu du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charcoal.png"
   },
-  "2257": {
-    "id": 2257,
-    "name": "hawluchanite",
-    "name_en": "Hawluchanite",
-    "name_fr": "Hawluchanite",
+  "246": {
+    "id": 246,
+    "name": "light-clay",
+    "name_en": "Light Clay",
+    "name_fr": "Lumargile",
+    "effect_en": "Held: The holder\u2019s Reflect and Light Screen will create effects lasting for eight turns rather than five.  As this item affects the move rather than the barrier itself, the effect is not lost if the holder leaves battle or drops this item.",
+    "effect_fr": "Tenu: Le Protection et Mur Lumi\u00e8re du porteur cr\u00e9ent des effets durant huit tours plut\u00f4t que cinq.  Comme cet objet accete la capacit\u00e9 plut\u00f4t que la barri\u00e8re elle-m\u00eame, l'effet n'est pas perdu si le porteur quitte le combat ou fait tomber cet objet.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/light-clay.png"
+  },
+  "2105": {
+    "id": 2105,
+    "name": "fairy-feather",
+    "name_en": "Fairy Feather",
+    "name_fr": "Plume Enchant\u00e9e",
     "effect_en": "",
     "effect_fr": "",
     "sprite": null
+  },
+  "223": {
+    "id": 223,
+    "name": "never-melt-ice",
+    "name_en": "Never-Melt Ice",
+    "name_fr": "Glace \u00c9ternelle",
+    "effect_en": "Held: Increases the power of the holder\u2019s Ice moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Glace du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/never-melt-ice.png"
+  },
+  "190": {
+    "id": 190,
+    "name": "bright-powder",
+    "name_en": "Bright Powder",
+    "name_fr": "Poudre Claire",
+    "effect_en": "Held in battle :   Moves targeting the holder have 0.9\u00d7 chance to hit.",
+    "effect_fr": "Tenu au combat  :   Les capacit\u00e9s ciblant le porteur ont 90% de chances de toucher.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/bright-powder.png"
   },
   "168": {
     "id": 168,
@@ -986,493 +347,979 @@
     "name_en": "Shuca Berry",
     "name_fr": "Baie Jouca",
     "effect_en": "Held in battle :   When the holder would take super-effective Ground-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Sol, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Sol, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shuca-berry.png"
-  },
-  "2267": {
-    "id": 2267,
-    "name": "garchompite-z",
-    "name_en": "Garchompite Z",
-    "name_fr": "Garchompite Z",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "221": {
-    "id": 221,
-    "name": "sharp-beak",
-    "name_en": "Sharp Beak",
-    "name_fr": "Bec Pointu",
-    "effect_en": "Held: Increases the power of the holder’s Flying moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Vol du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sharp-beak.png"
-  },
-  "2265": {
-    "id": 2265,
-    "name": "absolite-z",
-    "name_en": "Absolite Z",
-    "name_fr": "Absolite Z",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "699": {
-    "id": 699,
-    "name": "charizardite-x",
-    "name_en": "Charizardite X",
-    "name_fr": "Dracaufite X",
-    "effect_en": "Held: Allows Charizard to Mega Evolve into Mega Charizard X.",
-    "effect_fr": "Tenu: Permet à Dracaufeu de Méga-Évoluer en Méga-Dracaufeu X.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charizardite-x.png"
-  },
-  "2243": {
-    "id": 2243,
-    "name": "emboarite",
-    "name_en": "Emboarite",
-    "name_fr": "Emboarite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "803": {
-    "id": 803,
-    "name": "pidgeotite",
-    "name_en": "Pidgeotite",
-    "name_fr": "Roucarnagite",
-    "effect_en": "Held: Allows Pidgeot to Mega Evolve into Mega Pidgeot.",
-    "effect_fr": "Tenu: Permet à Roucarnage de Méga-Évoluer en Méga-Roucarnage.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pidgeotite.png"
-  },
-  "222": {
-    "id": 222,
-    "name": "poison-barb",
-    "name_en": "Poison Barb",
-    "name_fr": "Pic Venin",
-    "effect_en": "Held: Increases the power of the holder’s Poison moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Poison du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poison-barb.png"
-  },
-  "695": {
-    "id": 695,
-    "name": "gengarite",
-    "name_en": "Gengarite",
-    "name_fr": "Ectoplasmite",
-    "effect_en": "Held: Allows Gengar to Mega Evolve into Mega Gengar.",
-    "effect_fr": "Tenu: Permet à Ectoplasma de Méga-Évoluer en Méga-Ectoplasma.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/gengarite.png"
-  },
-  "133": {
-    "id": 133,
-    "name": "persim-berry",
-    "name_en": "Persim Berry",
-    "name_fr": "Baie Kika",
-    "effect_en": "Held in battle :   When the holder is confused, it consumes this item to cure the confusion.  Used on a party Pokémon :   Cures confusion.",
-    "effect_fr": "Tenu au combat :   Quand le porteur est confus, cela consomme cet objet pour soigner la confusion.  Utilisé sur un Pokémon de l'équipe :   Soigne la confusion.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/persim-berry.png"
-  },
-  "2276": {
-    "id": 2276,
-    "name": "tatsugirinite",
-    "name_en": "Tatsugirinite",
-    "name_fr": "Tatsugirinite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "706": {
-    "id": 706,
-    "name": "aggronite",
-    "name_en": "Aggronite",
-    "name_fr": "Galekingite",
-    "effect_en": "Held: Allows Aggron to Mega Evolve into Mega Aggron.",
-    "effect_fr": "Tenu: Permet à Galeking de Méga-Évoluer en Méga-Galeking.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aggronite.png"
-  },
-  "703": {
-    "id": 703,
-    "name": "blazikenite",
-    "name_en": "Blazikenite",
-    "name_fr": "Braségalite",
-    "effect_en": "Held: Allows Blaziken to Mega Evolve into Mega Blaziken.",
-    "effect_fr": "Tenu: Permet à Braségali de Méga-Évoluer en Méga-Braségali.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/blazikenite.png"
-  },
-  "811": {
-    "id": 811,
-    "name": "beedrillite",
-    "name_en": "Beedrillite",
-    "name_fr": "Dardargnite",
-    "effect_en": "Held: Allows Beedrill to Mega Evolve into Mega Beedrill.",
-    "effect_fr": "Tenu: Permet à Dardargnan de Méga-Évoluer en Méga-Dardargnan.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/beedrillite.png"
-  },
-  "2272": {
-    "id": 2272,
-    "name": "golisopite",
-    "name_en": "Golisopite",
-    "name_fr": "Golisopite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "701": {
-    "id": 701,
-    "name": "mewtwonite-x",
-    "name_en": "Mewtwonite X",
-    "name_fr": "Mewtwoïte X",
-    "effect_en": "Held: Allows Mewtwo to Mega Evolve into Mega Mewtwo X.",
-    "effect_fr": "Tenu: Permet à Mewtwo de Méga-Évoluer en Méga-Mewtwo X.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mewtwonite-x.png"
-  },
-  "210": {
-    "id": 210,
-    "name": "metal-coat",
-    "name_en": "Metal Coat",
-    "name_fr": "Peau Métal",
-    "effect_en": "Held: Increases the power of the holder’s Steel moves by 20%. Held by Onix or Scyther: Evolves the holder into Steelix or Scizor when traded, respectively.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Acier du porteur de 20%. Tenu par Onix ou Insécateur: Fait évoluer le porteur en Steelix ou Cizayox, respectivement.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png"
-  },
-  "2252": {
-    "id": 2252,
-    "name": "pyroarite",
-    "name_en": "Pyroarite",
-    "name_fr": "Pyroarite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "704": {
-    "id": 704,
-    "name": "medichamite",
-    "name_en": "Medichamite",
-    "name_fr": "Charminite",
-    "effect_en": "Held: Allows Medicham to Mega Evolve into Mega Medicham.",
-    "effect_fr": "Tenu: Permet à Charmina de Méga-Évoluer en Méga-Charmina.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/medichamite.png"
-  },
-  "712": {
-    "id": 712,
-    "name": "lucarionite",
-    "name_en": "Lucarionite",
-    "name_fr": "Lucarite",
-    "effect_en": "Held: Allows Lucario to Mega Evolve into Mega Lucario.",
-    "effect_fr": "Tenu: Permet à Lucario de Méga-Évoluer en Méga-Lucario.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lucarionite.png"
-  },
-  "198": {
-    "id": 198,
-    "name": "kings-rock",
-    "name_en": "King’s Rock",
-    "name_fr": "Roche Royale",
-    "effect_en": "Held in battle :   Holder’s damaging moves have a 10% chance to make their target flinch.  This chance applies independently to each hit of a multi-hit move.      This item’s chance is rolled independently of any other move effects; e.g., a move with a 30% chance to flinch normally will have a 37% total chance to flinch when used with this item, because 3% of the time, both effects activate.  Held by Poliwhirl or Slowbro :   Holder evolves into Politoed or Slowking, respectively, when traded.",
-    "effect_fr": "Tenu au combat :   Les capacités offensives du porteur ont 10% de chances d'apeurer leur cible.  Cette probabilité s'applique indépendamment à chaque coup d'une capacité multi-coups.      La probabilité de cet objet est tirée indépendamment des effets des autres capacités; e.g., une capacité avec 30% de chances d'apeurer normalement aura 37% de chance totale d'apeurer quand utilisée avec cet objet, car 3% du temps, les deux effets s'activent.  Tenu par Têtarte ou Flagadoss :   Le porteur évolue en Tarpaud ou Roigada, respectivement, quand échangé.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kings-rock.png"
-  },
-  "2240": {
-    "id": 2240,
-    "name": "froslassite",
-    "name_en": "Froslassite",
-    "name_fr": "Froslassite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "2241": {
-    "id": 2241,
-    "name": "heatranite",
-    "name_en": "Heatranite",
-    "name_fr": "Heatranite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "165": {
-    "id": 165,
-    "name": "yache-berry",
-    "name_en": "Yache Berry",
-    "name_fr": "Baie Nanone",
-    "effect_en": "Held in battle :   When the holder would take super-effective Ice-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Glace, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/yache-berry.png"
-  },
-  "702": {
-    "id": 702,
-    "name": "mewtwonite-y",
-    "name_en": "Mewtwonite Y",
-    "name_fr": "Mewtwoïte Y",
-    "effect_en": "Held: Allows Mewtwo to Mega Evolve into Mega Mewtwo Y.",
-    "effect_fr": "Tenu: Permet à Mewtwo de Méga-Évoluer en Méga-Mewtwo Y.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mewtwonite-y.png"
-  },
-  "273": {
-    "id": 273,
-    "name": "big-root",
-    "name_en": "Big Root",
-    "name_fr": "Grosse Racine",
-    "effect_en": "Held: HP restored from Absorb, Aqua Ring, Drain Punch, Dream Eater, Giga Drain, Ingrain, Leech Life, Leech Seed, and Mega Drain is increased by 30%.  Damage inflicted is not affected.",
-    "effect_fr": "Tenu: Les PV restaurés par Vole-Vie, Anneau Hydro, Campi-Poing, Dévorêve, Giga-Sangsue, Racine, Vampirisme, Vampigraine, et Méga-Sangsue sont augmentés de 30%.  Les dégâts infligés ne sont pas affectés.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/big-root.png"
-  },
-  "2236": {
-    "id": 2236,
-    "name": "dragoninite",
-    "name_en": "Dragoninite",
-    "name_fr": "Dragoninite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "716": {
-    "id": 716,
-    "name": "absolite",
-    "name_en": "Absolite",
-    "name_fr": "Absolite",
-    "effect_en": "Held: Allows Absol to Mega Evolve into Mega Absol.",
-    "effect_fr": "Tenu: Permet à Absol de Méga-Évoluer en Méga-Absol.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/absolite.png"
-  },
-  "223": {
-    "id": 223,
-    "name": "never-melt-ice",
-    "name_en": "Never-Melt Ice",
-    "name_fr": "Glace Éternelle",
-    "effect_en": "Held: Increases the power of the holder’s Ice moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Glace du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/never-melt-ice.png"
-  },
-  "2250": {
-    "id": 2250,
-    "name": "delphoxite",
-    "name_en": "Delphoxite",
-    "name_fr": "Delphoxite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "2273": {
-    "id": 2273,
-    "name": "magearnite",
-    "name_en": "Magearnite",
-    "name_fr": "Magearnite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "216": {
-    "id": 216,
-    "name": "miracle-seed",
-    "name_en": "Miracle Seed",
-    "name_fr": "Graine Miracle",
-    "effect_en": "Held: Increases the power of the holder’s Grass moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Plante du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/miracle-seed.png"
-  },
-  "718": {
-    "id": 718,
-    "name": "alakazite",
-    "name_en": "Alakazite",
-    "name_fr": "Alakazamite",
-    "effect_en": "Held: Allows Alakazam to Mega Evolve into Mega Alakazam.",
-    "effect_fr": "Tenu: Permet à Alakazam de Méga-Évoluer en Méga-Alakazam.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/alakazite.png"
-  },
-  "213": {
-    "id": 213,
-    "name": "light-ball",
-    "name_en": "Light Ball",
-    "name_fr": "Balle Lumière",
-    "effect_en": "Held by Pikachu: Doubles the holder’s initial Attack and Special Attack.",
-    "effect_fr": "Tenu par Pikachu: Double l'Attaque et l'Attaque Spéciale initiales du porteur.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/light-ball.png"
-  },
-  "260": {
-    "id": 260,
-    "name": "smooth-rock",
-    "name_en": "Smooth Rock",
-    "name_fr": "Roche Lisse",
-    "effect_en": "Held: The holder’s Sandstorm will create a sandstorm lasting for eight turns rather than five.  As this item affects the move rather than the weather itself, the effect is not lost if the holder leaves battle or drops this item.",
-    "effect_fr": "Tenu: La Tempête de Sable du porteur crée une tempête de sable durant huit tours au lieu de cinq.  Comme cet objet affecte la capacité plutôt que la météo elle-même, l'effet n'est pas perdu si le porteur quitte le terrain ou fait tomber cet objet.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/smooth-rock.png"
-  },
-  "2260": {
-    "id": 2260,
-    "name": "zeraorite",
-    "name_en": "Zeraorite",
-    "name_fr": "Zeraorite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "2244": {
-    "id": 2244,
-    "name": "excadrite",
-    "name_en": "Excadrite",
-    "name_fr": "Excadrite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "246": {
-    "id": 246,
-    "name": "light-clay",
-    "name_en": "Light Clay",
-    "name_fr": "Lumargile",
-    "effect_en": "Held: The holder’s Reflect and Light Screen will create effects lasting for eight turns rather than five.  As this item affects the move rather than the barrier itself, the effect is not lost if the holder leaves battle or drops this item.",
-    "effect_fr": "Tenu: Le Protection et Mur Lumière du porteur créent des effets durant huit tours plutôt que cinq.  Comme cet objet accete la capacité plutôt que la barrière elle-même, l'effet n'est pas perdu si le porteur quitte le combat ou fait tomber cet objet.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/light-clay.png"
-  },
-  "722": {
-    "id": 722,
-    "name": "garchompite",
-    "name_en": "Garchompite",
-    "name_fr": "Carchacrokite",
-    "effect_en": "Held: Allows Garchomp to Mega Evolve into Mega Garchomp.",
-    "effect_fr": "Tenu: Permet à Carchacrok de Méga-Évoluer en Méga-Carchacrok.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/garchompite.png"
-  },
-  "2268": {
-    "id": 2268,
-    "name": "lucarionite-z",
-    "name_en": "Lucarionite Z",
-    "name_fr": "Lucarionite Z",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "810": {
-    "id": 810,
-    "name": "salamencite",
-    "name_en": "Salamencite",
-    "name_fr": "Drattakite",
-    "effect_en": "Held: Allows Salamence to Mega Evolve into Mega Salamence.",
-    "effect_fr": "Tenu: Permet à Drattak de Méga-Évoluer en Méga-Drattak.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/salamencite.png"
-  },
-  "2271": {
-    "id": 2271,
-    "name": "crabominite",
-    "name_en": "Crabominite",
-    "name_fr": "Crabominite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "796": {
-    "id": 796,
-    "name": "altarianite",
-    "name_en": "Altarianite",
-    "name_fr": "Altarite",
-    "effect_en": "Held: Allows Altaria to Mega Evolve into Mega Altaria.",
-    "effect_fr": "Tenu: Permet à Altaria de Méga-Évoluer en Méga-Altaria.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/altarianite.png"
-  },
-  "199": {
-    "id": 199,
-    "name": "silver-powder",
-    "name_en": "Silver Powder",
-    "name_fr": "Poudre Argentée",
-    "effect_en": "Held in battle :   Holder’s Bug-type moves have 1.2× their power. ",
-    "effect_fr": "Tenu au combat :   La puissance des capacités de type Insecte du porteur est augmentée de 20%. ",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/silver-powder.png"
-  },
-  "247": {
-    "id": 247,
-    "name": "life-orb",
-    "name_en": "Life Orb",
-    "name_fr": "Orbe Vie",
-    "effect_en": "Held: Damage from the holder’s moves is increased by 30%.  On each turn the holder uses a damage-inflicting move, it takes 10% its max HP in damage.",
-    "effect_fr": "Tenu: Les dégâts des capacités du porteur sont augmentés de 30%.  À chaque tour où le porteur utilise une capacité offensive, il subit 10% de ses PV max en dégâts.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/life-orb.png"
-  },
-  "2262": {
-    "id": 2262,
-    "name": "raichunite-x",
-    "name_en": "Raichunite X",
-    "name_fr": "Raichunite X",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
-  },
-  "709": {
-    "id": 709,
-    "name": "scizorite",
-    "name_en": "Scizorite",
-    "name_fr": "Cizayoxite",
-    "effect_en": "Held: Allows Scizor to Mega Evolve into Mega Scizor.",
-    "effect_fr": "Tenu: Permet à Cizayox de Méga-Évoluer en Méga-Cizayox.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/scizorite.png"
   },
   "228": {
     "id": 228,
     "name": "silk-scarf",
     "name_en": "Silk Scarf",
     "name_fr": "Mouchoir Soie",
-    "effect_en": "Held: Increases the power of the holder’s Normal moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Normal du porteur de 20%.",
+    "effect_en": "Held: Increases the power of the holder\u2019s Normal moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Normal du porteur de 20%.",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/silk-scarf.png"
   },
-  "227": {
-    "id": 227,
-    "name": "dragon-fang",
-    "name_en": "Dragon Fang",
-    "name_fr": "Croc Dragon",
-    "effect_en": "Held: Increases the power of the holder’s Dragon moves by 20%.",
-    "effect_fr": "Tenu: Augmente la puissance des capacités Dragon du porteur de 20%.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dragon-fang.png"
+  "261": {
+    "id": 261,
+    "name": "heat-rock",
+    "name_en": "Heat Rock",
+    "name_fr": "Roche Chaude",
+    "effect_en": "Held: The holder\u2019s Sunny Day will create sunshine lasting for eight turns rather than five.  As this item affects the move rather than the weather itself, the effect is not lost if the holder leaves battle or drops this item.",
+    "effect_fr": "Tenu: Le Z\u00e9nith du porteur cr\u00e9e un soleil durant huit tours au lieu de cinq.  Comme cet objet affecte la capacit\u00e9 plut\u00f4t que la m\u00e9t\u00e9o elle-m\u00eame, l'effet n'est pas perdu si le porteur quitte le terrain ou fait tomber cet objet.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heat-rock.png"
   },
-  "700": {
-    "id": 700,
+  "264": {
+    "id": 264,
+    "name": "choice-scarf",
+    "name_en": "Choice Scarf",
+    "name_fr": "Mouchoir Choix",
+    "effect_en": "Held: Increases the holder\u2019s Speed by 50%, but restricts it to the first move it uses until it leaves battle or loses this item.  If this item is swapped for another Choice item via Trick or Switcheroo, the holder\u2019s restriction is still lifted, but it will again be restricted to the next move it uses. (Quirk: If the holder is switched in by U-Turn and it also knows U-Turn, U-Turn becomes its restricted move.)",
+    "effect_fr": "Tenu: Augmente la Vitesse du porteur de 50%, mais le restreint \u00e0 la premi\u00e8re capacit\u00e9 utilis\u00e9e jusqu'\u00e0 ce qu'il quitte le terrain ou perde cet objet.  Si cet objet est \u00e9chang\u00e9 pour un autre objet Choix via Tour de Magie ou Passe-Passe, la restriction du porteur est toujours active, mais concernera la prochaine capacit\u00e9 utilis\u00e9e. (Particularit\u00e9: Si le porteur est retir\u00e9 avec Demi-Tour et que le rempla\u00e7ant conna\u00eet \u00e9galement Demi-Tour, Demi-Tour devient la capacit\u00e9 restreinte.)",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-scarf.png"
+  },
+  "132": {
+    "id": 132,
+    "name": "oran-berry",
+    "name_en": "Oran Berry",
+    "name_fr": "Baie Oran",
+    "effect_en": "Held in battle :   When the holder has 1/2 its max HP remaining or less, it consumes this item to restore 10 HP.  Used on a party Pok\u00e9mon :   Restores 10 HP.",
+    "effect_fr": "Tenu au combat :   Quand le porteur a 1/2 de ses PV max restants ou moins, cela consomme cet objet pour restaurer 10 PV.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Restaure 10 PV.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oran-berry.png"
+  },
+  "254": {
+    "id": 254,
+    "name": "metronome",
+    "name_en": "Metronome",
+    "name_fr": "M\u00e9tronome",
+    "effect_en": "Held: Each time the holder uses the same move consecutively, its power is increased by another 10% of its original, to a maximum of 100%.",
+    "effect_fr": "Tenu: \u00c0 chaque fois que le porteur utilise la m\u00eame capacit\u00e9 cons\u00e9cutivement, sa puissance originale est augment\u00e9e de 10% suppl\u00e9mentaires, jusqu'\u00e0 un maximum de 100%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metronome.png"
+  },
+  "135": {
+    "id": 135,
+    "name": "sitrus-berry",
+    "name_en": "Sitrus Berry",
+    "name_fr": "Baie Sitrus",
+    "effect_en": "Held in battle :   When the holder has 1/2 its max HP remaining or less, it consumes this item to restore 1/4 its max HP.  Used on a party Pok\u00e9mon :   Restores 1/4 the Pok\u00e9mon\u2019s max HP.",
+    "effect_fr": "Tenu au combat :   Quand le porteur a 1/2 de ses PV max restants ou moins, cela consomme cet objet pour restaurer 1/4 de ses PV max.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Restaure 1/4 des PV max du Pok\u00e9mon.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sitrus-berry.png"
+  },
+  "128": {
+    "id": 128,
+    "name": "pecha-berry",
+    "name_en": "Pecha Berry",
+    "name_fr": "Baie P\u00eacha",
+    "effect_en": "Held in battle :   When the holder is poisoned, it consumes this item to cure the poison.  Used on a party Pok\u00e9mon :   Cures poison.",
+    "effect_fr": "Tenu au combat :   Quand le porteur est empoisonn\u00e9, cela consomme cet objet pour soigner le poison.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Soigne le poison.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pecha-berry.png"
+  },
+  "224": {
+    "id": 224,
+    "name": "spell-tag",
+    "name_en": "Spell Tag",
+    "name_fr": "Rune Sort",
+    "effect_en": "Held: Increases the power of the holder\u2019s Ghost moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Spectre du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/spell-tag.png"
+  },
+  "129": {
+    "id": 129,
+    "name": "rawst-berry",
+    "name_en": "Rawst Berry",
+    "name_fr": "Baie Fraive",
+    "effect_en": "Held in battle :   When the holder is burned, it consumes this item to cure the burn.  Used on a party Pok\u00e9mon :   Cures a burn.",
+    "effect_fr": "Tenu au combat :   Quand le porteur est br\u00fbl\u00e9, cela consomme cet objet pour soigner la br\u00fblure.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Soigne la br\u00fblure.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rawst-berry.png"
+  },
+  "174": {
+    "id": 174,
+    "name": "haban-berry",
+    "name_en": "Haban Berry",
+    "name_fr": "Baie Fraigo",
+    "effect_en": "Held in battle :   When the holder would take super-effective Dragon-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Dragon, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/haban-berry.png"
+  },
+  "131": {
+    "id": 131,
+    "name": "leppa-berry",
+    "name_en": "Leppa Berry",
+    "name_fr": "Baie Mepo",
+    "effect_en": "Held in battle :   When the holder is out of PP for one of its moves, it consumes this item to restore 10 of that move\u2019s PP.  Used on a party Pok\u00e9mon :   Restores 10 PP for a selected move.",
+    "effect_fr": "Tenu au combat :   Quand le porteur est \u00e0 court de PP pour une de ses capacit\u00e9s, cela consomme cet objet pour restaurer 10 PP de cette capacit\u00e9.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Restaure 10 PP pour une capacit\u00e9 s\u00e9lectionn\u00e9e.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/leppa-berry.png"
+  },
+  "216": {
+    "id": 216,
+    "name": "miracle-seed",
+    "name_en": "Miracle Seed",
+    "name_fr": "Graine Miracle",
+    "effect_en": "Held: Increases the power of the holder\u2019s Grass moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Plante du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/miracle-seed.png"
+  },
+  "217": {
+    "id": 217,
+    "name": "black-glasses",
+    "name_en": "Black Glasses",
+    "name_fr": "Lunettes Noires",
+    "effect_en": "Held: Increases the power of the holder\u2019s Dark moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s T\u00e9n\u00e8bres du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-glasses.png"
+  },
+  "173": {
+    "id": 173,
+    "name": "kasib-berry",
+    "name_en": "Kasib Berry",
+    "name_fr": "Baie S\u00e9dra",
+    "effect_en": "Held in battle :   When the holder would take super-effective Ghost-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Spectre, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kasib-berry.png"
+  },
+  "163": {
+    "id": 163,
+    "name": "wacan-berry",
+    "name_en": "Wacan Berry",
+    "name_fr": "Baie Parma",
+    "effect_en": "Held in battle :   When the holder would take super-effective Electric-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type \u00c9lectrik, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wacan-berry.png"
+  },
+  "176": {
+    "id": 176,
+    "name": "babiri-berry",
+    "name_en": "Babiri Berry",
+    "name_fr": "Baie Babiri",
+    "effect_en": "Held in battle :   When the holder would take super-effective Steel-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Acier, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/babiri-berry.png"
+  },
+  "222": {
+    "id": 222,
+    "name": "poison-barb",
+    "name_en": "Poison Barb",
+    "name_fr": "Pic Venin",
+    "effect_en": "Held: Increases the power of the holder\u2019s Poison moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Poison du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poison-barb.png"
+  },
+  "252": {
+    "id": 252,
+    "name": "focus-sash",
+    "name_en": "Focus Sash",
+    "name_fr": "Ceinture Force",
+    "effect_en": "Held: If the holder has full HP and is attacked for regular damage that would faint it, this item is consumed and prevents the holder\u2019s HP from lowering below 1.  This effect works against multi-hit attacks, but does not work against the effects of Doom Desire or Future Sight.",
+    "effect_fr": "Tenu: Si le porteur a tous ses PV et est touch\u00e9 par des dommages qui devraient le mettre KO, cet objet est consomm\u00e9 et emp\u00eache les PV du porteur de tomber en dessous de 1.  Cet effet fonctionne sur des attaques multi-coups, mais ne fonctionne pas contre des effets comme V\u0153u Destructeur or Prescience.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/focus-sash.png"
+  },
+  "207": {
+    "id": 207,
+    "name": "focus-band",
+    "name_en": "Focus Band",
+    "name_fr": "Bandeau",
+    "effect_en": "Held: If the holder is attacked for regular damage that would faint it, this item has a 10% chance to prevent the holder\u2019s HP from lowering below 1.",
+    "effect_fr": "Tenu: Si le porteur subit des d\u00e9g\u00e2ts r\u00e9guliers par lesquels il serait mis KO, cet objet a 10% de chances d'emp\u00eacher les PV du porteur de tomber sous 1.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/focus-band.png"
+  },
+  "247": {
+    "id": 247,
+    "name": "life-orb",
+    "name_en": "Life Orb",
+    "name_fr": "Orbe Vie",
+    "effect_en": "Held: Damage from the holder\u2019s moves is increased by 30%.  On each turn the holder uses a damage-inflicting move, it takes 10% its max HP in damage.",
+    "effect_fr": "Tenu: Les d\u00e9g\u00e2ts des capacit\u00e9s du porteur sont augment\u00e9s de 30%.  \u00c0 chaque tour o\u00f9 le porteur utilise une capacit\u00e9 offensive, il subit 10% de ses PV max en d\u00e9g\u00e2ts.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/life-orb.png"
+  },
+  "262": {
+    "id": 262,
+    "name": "damp-rock",
+    "name_en": "Damp Rock",
+    "name_fr": "Roche Humide",
+    "effect_en": "Held: The holder\u2019s Rain Dance will create rain lasting for eight turns rather than five.  As this item affects the move rather than the weather itself, the effect is not lost if the holder leaves battle or drops this item.",
+    "effect_fr": "Tenu: La Danse Pluie du porteur cr\u00e9e une pluie durant huit tours au lieu de cinq.  Comme cet objet affecte la capacit\u00e9 plut\u00f4t que la m\u00e9t\u00e9o elle-m\u00eame, l'effet n'est pas perdu si le porteur quitte le terrain ou fait tomber cet objet.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/damp-rock.png"
+  },
+  "213": {
+    "id": 213,
+    "name": "light-ball",
+    "name_en": "Light Ball",
+    "name_fr": "Balle Lumi\u00e8re",
+    "effect_en": "Held by Pikachu: Doubles the holder\u2019s initial Attack and Special Attack.",
+    "effect_fr": "Tenu par Pikachu: Double l'Attaque et l'Attaque Sp\u00e9ciale initiales du porteur.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/light-ball.png"
+  },
+  "244": {
+    "id": 244,
+    "name": "wise-glasses",
+    "name_en": "Wise Glasses",
+    "name_fr": "Lunettes Sages",
+    "effect_en": "Held: Increases the power of the holder\u2019s special moves by 10%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s sp\u00e9ciales du porteur de 10%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wise-glasses.png"
+  },
+  "221": {
+    "id": 221,
+    "name": "sharp-beak",
+    "name_en": "Sharp Beak",
+    "name_fr": "Bec Pointu",
+    "effect_en": "Held: Increases the power of the holder\u2019s Flying moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Vol du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sharp-beak.png"
+  },
+  "177": {
+    "id": 177,
+    "name": "chilan-berry",
+    "name_en": "Chilan Berry",
+    "name_fr": "Baie Zalis",
+    "effect_en": "Held in battle :   When the holder would take Normal-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts de type Normal, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chilan-berry.png"
+  },
+  "260": {
+    "id": 260,
+    "name": "smooth-rock",
+    "name_en": "Smooth Rock",
+    "name_fr": "Roche Lisse",
+    "effect_en": "Held: The holder\u2019s Sandstorm will create a sandstorm lasting for eight turns rather than five.  As this item affects the move rather than the weather itself, the effect is not lost if the holder leaves battle or drops this item.",
+    "effect_fr": "Tenu: La Temp\u00eate de Sable du porteur cr\u00e9e une temp\u00eate de sable durant huit tours au lieu de cinq.  Comme cet objet affecte la capacit\u00e9 plut\u00f4t que la m\u00e9t\u00e9o elle-m\u00eame, l'effet n'est pas perdu si le porteur quitte le terrain ou fait tomber cet objet.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/smooth-rock.png"
+  },
+  "134": {
+    "id": 134,
+    "name": "lum-berry",
+    "name_en": "Lum Berry",
+    "name_fr": "Baie Prine",
+    "effect_en": "Held in battle :   When the holder is afflicted with a major status ailment, it consumes this item to cure the ailment.  Used on a party Pok\u00e9mon :   Cures any major status ailment.",
+    "effect_fr": "Tenu au combat :   Quand le porteur est affect\u00e9 par une alt\u00e9ration majeure de statut, cela consomme cet objet pour soigner l'alt\u00e9ration.  Utilis\u00e9 sur un Pok\u00e9mon de l'\u00e9quipe :   Soigne n'importe quelle alt\u00e9ration majeure de statut.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lum-berry.png"
+  },
+  "161": {
+    "id": 161,
+    "name": "occa-berry",
+    "name_en": "Occa Berry",
+    "name_fr": "Baie Chocco",
+    "effect_en": "Held in battle :   When the holder would take super-effective Fire-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Feu, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/occa-berry.png"
+  },
+  "230": {
+    "id": 230,
+    "name": "shell-bell",
+    "name_en": "Shell Bell",
+    "name_fr": "Grelot Coque",
+    "effect_en": "Held: Heals the holder by 1/8 of any damage it inflicts.",
+    "effect_fr": "Tenu: Soigne le porteur d'1/8 des d\u00e9g\u00e2ts qu'il inflige.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shell-bell.png"
+  },
+  "166": {
+    "id": 166,
+    "name": "chople-berry",
+    "name_en": "Chople Berry",
+    "name_fr": "Baie Pomroz",
+    "effect_en": "Held in battle :   When the holder would take super-effective Fighting-type damage, it consumes this item to halve the amount of damage taken.",
+    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des d\u00e9g\u00e2ts super efficaces de type Combat, cela consomme cet objet pour diviser par deux la quantit\u00e9 de d\u00e9g\u00e2ts subis.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chople-berry.png"
+  },
+  "225": {
+    "id": 225,
+    "name": "twisted-spoon",
+    "name_en": "Twisted Spoon",
+    "name_fr": "Cuill\u00e8re Tordue",
+    "effect_en": "Held: Increases the power of the holder\u2019s Psychic moves by 20%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s Psy du porteur de 20%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/twisted-spoon.png"
+  },
+  "243": {
+    "id": 243,
+    "name": "muscle-band",
+    "name_en": "Muscle Band",
+    "name_fr": "Bandeau Muscle",
+    "effect_en": "Held: Increases the power of the holder\u2019s physical moves by 10%.",
+    "effect_fr": "Tenu: Augmente la puissance des capacit\u00e9s physiques du porteur de 10%.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/muscle-band.png"
+  },
+  "209": {
+    "id": 209,
+    "name": "scope-lens",
+    "name_en": "Scope Lens",
+    "name_fr": "Lentilscope",
+    "effect_en": "Held: Raises the holder\u2019s critical hit counter by 1.",
+    "effect_fr": "Tenu: Augmente le compteur taux de coups critiques du porteur de 1.",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/scope-lens.png"
+  },
+  "10001": {
+    "id": 10001,
+    "name": "venusaurite",
+    "name_en": "Venusaurite",
+    "name_fr": "Florizarrite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/venusaurite.png"
+  },
+  "10002": {
+    "id": 10002,
+    "name": "charizardite-x",
+    "name_en": "Charizardite X",
+    "name_fr": "Dracaufite X",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/charizardite-x.png"
+  },
+  "10003": {
+    "id": 10003,
+    "name": "charizardite-y",
+    "name_en": "Charizardite Y",
+    "name_fr": "Dracaufite Y",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/charizardite-y.png"
+  },
+  "10004": {
+    "id": 10004,
     "name": "blastoisinite",
     "name_en": "Blastoisinite",
     "name_fr": "Tortankite",
-    "effect_en": "Held: Allows Blastoise to Mega Evolve into Mega Blastoise.",
-    "effect_fr": "Tenu: Permet à Tortank de Méga-Évoluer en Méga-Tortank.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/blastoisinite.png"
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/blastoisinite.png"
   },
-  "720": {
-    "id": 720,
-    "name": "mawilite",
-    "name_en": "Mawilite",
-    "name_fr": "Mysdibulite",
-    "effect_en": "Held: Allows Mawile to Mega Evolve into Mega Mawile.",
-    "effect_fr": "Tenu: Permet à Mysdibule de Méga-Évoluer en Méga-Mysdibule.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mawilite.png"
+  "10005": {
+    "id": 10005,
+    "name": "beedrillite",
+    "name_en": "Beedrillite",
+    "name_fr": "Dardargnite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/beedrillite.png"
   },
-  "2235": {
-    "id": 2235,
+  "10006": {
+    "id": 10006,
+    "name": "pidgeotite",
+    "name_en": "Pidgeotite",
+    "name_fr": "Roucarnagite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/pidgeotite.png"
+  },
+  "10007": {
+    "id": 10007,
+    "name": "raichunite-x",
+    "name_en": "Raichunite X",
+    "name_fr": "Raichu\u00efte X",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/raichunite-x.png"
+  },
+  "10008": {
+    "id": 10008,
+    "name": "raichunite-y",
+    "name_en": "Raichunite Y",
+    "name_fr": "Raichu\u00efte Y",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/raichunite-y.png"
+  },
+  "10009": {
+    "id": 10009,
+    "name": "clefablite",
+    "name_en": "Clefablite",
+    "name_fr": "M\u00e9lodelfite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/clefablite.png"
+  },
+  "10010": {
+    "id": 10010,
+    "name": "alakazite",
+    "name_en": "Alakazite",
+    "name_fr": "Alakazamite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/alakazite.png"
+  },
+  "10011": {
+    "id": 10011,
+    "name": "victreebelite",
+    "name_en": "Victreebelite",
+    "name_fr": "Empiflorite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/victreebelite.png"
+  },
+  "10012": {
+    "id": 10012,
+    "name": "slowbronite",
+    "name_en": "Slowbronite",
+    "name_fr": "Flagadossite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/slowbronite.png"
+  },
+  "10013": {
+    "id": 10013,
+    "name": "gengarite",
+    "name_en": "Gengarite",
+    "name_fr": "Ectoplasmite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/gengarite.png"
+  },
+  "10014": {
+    "id": 10014,
+    "name": "kangaskhanite",
+    "name_en": "Kangaskhanite",
+    "name_fr": "Kangourexite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/kangaskhanite.png"
+  },
+  "10015": {
+    "id": 10015,
     "name": "starminite",
     "name_en": "Starminite",
-    "name_fr": "Starminite",
-    "effect_en": "",
-    "effect_fr": "",
-    "sprite": null
+    "name_fr": "Starossite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/starminite.png"
   },
-  "809": {
-    "id": 809,
-    "name": "lopunnite",
-    "name_en": "Lopunnite",
-    "name_fr": "Lockpinite",
-    "effect_en": "Held: Allows Lopunny to Mega Evolve into Mega Lopunny.",
-    "effect_fr": "Tenu: Permet à Lockpin de Méga-Évoluer en Méga-Lockpin.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lopunnite.png"
-  },
-  "170": {
-    "id": 170,
-    "name": "payapa-berry",
-    "name_en": "Payapa Berry",
-    "name_fr": "Baie Yapap",
-    "effect_en": "Held in battle :   When the holder would take super-effective Psychic-type damage, it consumes this item to halve the amount of damage taken.",
-    "effect_fr": "Tenu au combat :   Quand le porteur devrait subir des dégâts super efficaces de type Psy, cela consomme cet objet pour diviser par deux la quantité de dégâts subis.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/payapa-berry.png"
-  },
-  "710": {
-    "id": 710,
+  "10016": {
+    "id": 10016,
     "name": "pinsirite",
     "name_en": "Pinsirite",
     "name_fr": "Scarabruite",
-    "effect_en": "Held: Allows Pinsir to Mega Evolve into Mega Pinsir.",
-    "effect_fr": "Tenu: Permet à Scarabrute de Méga-Évoluer en Méga-Scarabrute.",
-    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pinsirite.png"
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/pinsirite.png"
+  },
+  "10017": {
+    "id": 10017,
+    "name": "gyaradosite",
+    "name_en": "Gyaradosite",
+    "name_fr": "L\u00e9viatorite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/gyaradosite.png"
+  },
+  "10018": {
+    "id": 10018,
+    "name": "aerodactylite",
+    "name_en": "Aerodactylite",
+    "name_fr": "Pt\u00e9ra\u00efte",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/aerodactylite.png"
+  },
+  "10019": {
+    "id": 10019,
+    "name": "dragoninite",
+    "name_en": "Dragoninite",
+    "name_fr": "Dracolossite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/dragoninite.png"
+  },
+  "10020": {
+    "id": 10020,
+    "name": "meganiumite",
+    "name_en": "Meganiumite",
+    "name_fr": "M\u00e9ganiumite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/meganiumite.png"
+  },
+  "10021": {
+    "id": 10021,
+    "name": "feraligite",
+    "name_en": "Feraligite",
+    "name_fr": "Aligatueurite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/feraligite.png"
+  },
+  "10022": {
+    "id": 10022,
+    "name": "ampharosite",
+    "name_en": "Ampharosite",
+    "name_fr": "Pharampite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/ampharosite.png"
+  },
+  "10023": {
+    "id": 10023,
+    "name": "steelixite",
+    "name_en": "Steelixite",
+    "name_fr": "Steelixite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/steelixite.png"
+  },
+  "10024": {
+    "id": 10024,
+    "name": "scizorite",
+    "name_en": "Scizorite",
+    "name_fr": "Cizayoxite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/scizorite.png"
+  },
+  "10025": {
+    "id": 10025,
+    "name": "heracronite",
+    "name_en": "Heracronite",
+    "name_fr": "Scarhino\u00efte",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/heracronite.png"
+  },
+  "10026": {
+    "id": 10026,
+    "name": "skarmorite",
+    "name_en": "Skarmorite",
+    "name_fr": "Airmurite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/skarmorite.png"
+  },
+  "10027": {
+    "id": 10027,
+    "name": "houndoominite",
+    "name_en": "Houndoominite",
+    "name_fr": "D\u00e9molossite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/houndoominite.png"
+  },
+  "10028": {
+    "id": 10028,
+    "name": "tyranitarite",
+    "name_en": "Tyranitarite",
+    "name_fr": "Tyranocivite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/tyranitarite.png"
+  },
+  "10029": {
+    "id": 10029,
+    "name": "sceptilite",
+    "name_en": "Sceptilite",
+    "name_fr": "Jungkite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/sceptilite.png"
+  },
+  "10030": {
+    "id": 10030,
+    "name": "blazikenite",
+    "name_en": "Blazikenite",
+    "name_fr": "Bras\u00e9galite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/blazikenite.png"
+  },
+  "10031": {
+    "id": 10031,
+    "name": "swampertite",
+    "name_en": "Swampertite",
+    "name_fr": "Laggronite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/swampertite.png"
+  },
+  "10032": {
+    "id": 10032,
+    "name": "gardevoirite",
+    "name_en": "Gardevoirite",
+    "name_fr": "Gardevoirite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/gardevoirite.png"
+  },
+  "10033": {
+    "id": 10033,
+    "name": "sablenite",
+    "name_en": "Sablenite",
+    "name_fr": "T\u00e9n\u00e9fixite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/sablenite.png"
+  },
+  "10034": {
+    "id": 10034,
+    "name": "aggronite",
+    "name_en": "Aggronite",
+    "name_fr": "Galekingite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/aggronite.png"
+  },
+  "10035": {
+    "id": 10035,
+    "name": "mawilite",
+    "name_en": "Mawilite",
+    "name_fr": "Mysdibulite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/mawilite.png"
+  },
+  "10036": {
+    "id": 10036,
+    "name": "medichamite",
+    "name_en": "Medichamite",
+    "name_fr": "Charminite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/medichamite.png"
+  },
+  "10037": {
+    "id": 10037,
+    "name": "manectite",
+    "name_en": "Manectite",
+    "name_fr": "\u00c9lecsprintite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/manectite.png"
+  },
+  "10038": {
+    "id": 10038,
+    "name": "sharpedonite",
+    "name_en": "Sharpedonite",
+    "name_fr": "Sharpedite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/sharpedonite.png"
+  },
+  "10039": {
+    "id": 10039,
+    "name": "cameruptite",
+    "name_en": "Cameruptite",
+    "name_fr": "Cam\u00e9ruptite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/cameruptite.png"
+  },
+  "10040": {
+    "id": 10040,
+    "name": "altarianite",
+    "name_en": "Altarianite",
+    "name_fr": "Altarite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/altarianite.png"
+  },
+  "10041": {
+    "id": 10041,
+    "name": "banettite",
+    "name_en": "Banettite",
+    "name_fr": "Branettite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/banettite.png"
+  },
+  "10042": {
+    "id": 10042,
+    "name": "chimechite",
+    "name_en": "Chimechite",
+    "name_fr": "\u00c9okite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/chimechite.png"
+  },
+  "10043": {
+    "id": 10043,
+    "name": "absolite",
+    "name_en": "Absolite",
+    "name_fr": "Absolite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/absolite.png"
+  },
+  "10044": {
+    "id": 10044,
+    "name": "glalitite",
+    "name_en": "Glalitite",
+    "name_fr": "Oniglalite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/glalitite.png"
+  },
+  "10045": {
+    "id": 10045,
+    "name": "metagrossite",
+    "name_en": "Metagrossite",
+    "name_fr": "M\u00e9talossite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/metagrossite.png"
+  },
+  "10046": {
+    "id": 10046,
+    "name": "lopunnite",
+    "name_en": "Lopunnite",
+    "name_fr": "Lockpinite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/lopunnite.png"
+  },
+  "10047": {
+    "id": 10047,
+    "name": "garchompite",
+    "name_en": "Garchompite",
+    "name_fr": "Carchacrokite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/garchompite.png"
+  },
+  "10048": {
+    "id": 10048,
+    "name": "staraptite",
+    "name_en": "Staraptite",
+    "name_fr": "\u00c9touraptorite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/staraptite.png"
+  },
+  "10049": {
+    "id": 10049,
+    "name": "lucarionite",
+    "name_en": "Lucarionite",
+    "name_fr": "Lucarite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/lucarionite.png"
+  },
+  "10050": {
+    "id": 10050,
+    "name": "abomasite",
+    "name_en": "Abomasite",
+    "name_fr": "Blizzarite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/abomasite.png"
+  },
+  "10051": {
+    "id": 10051,
+    "name": "galladite",
+    "name_en": "Galladite",
+    "name_fr": "Gallamite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/galladite.png"
+  },
+  "10052": {
+    "id": 10052,
+    "name": "froslassite",
+    "name_en": "Froslassite",
+    "name_fr": "Momartikite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/froslassite.png"
+  },
+  "10053": {
+    "id": 10053,
+    "name": "emboarite",
+    "name_en": "Emboarite",
+    "name_fr": "Roitiflamite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/emboarite.png"
+  },
+  "10054": {
+    "id": 10054,
+    "name": "excadrite",
+    "name_en": "Excadrite",
+    "name_fr": "Minotaupite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/excadrite.png"
+  },
+  "10055": {
+    "id": 10055,
+    "name": "audinite",
+    "name_en": "Audinite",
+    "name_fr": "Nanm\u00e9ou\u00efte",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/audinite.png"
+  },
+  "10056": {
+    "id": 10056,
+    "name": "scolipite",
+    "name_en": "Scolipite",
+    "name_fr": "Brutapodite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/scolipite.png"
+  },
+  "10057": {
+    "id": 10057,
+    "name": "scraftinite",
+    "name_en": "Scraftinite",
+    "name_fr": "Bagga\u00efdite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/scraftinite.png"
+  },
+  "10058": {
+    "id": 10058,
+    "name": "chandelurite",
+    "name_en": "Chandelurite",
+    "name_fr": "Lugulabrite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/chandelurite.png"
+  },
+  "10059": {
+    "id": 10059,
+    "name": "eelektrossite",
+    "name_en": "Eelektrossite",
+    "name_fr": "Ohmassacrite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/eelektrossite.png"
+  },
+  "10060": {
+    "id": 10060,
+    "name": "golurkite",
+    "name_en": "Golurkite",
+    "name_fr": "Golemastokite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/golurkite.png"
+  },
+  "10061": {
+    "id": 10061,
+    "name": "chesnaughtite",
+    "name_en": "Chesnaughtite",
+    "name_fr": "Blind\u00e9piquite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/chesnaughtite.png"
+  },
+  "10062": {
+    "id": 10062,
+    "name": "delphoxite",
+    "name_en": "Delphoxite",
+    "name_fr": "Goupelinite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/delphoxite.png"
+  },
+  "10063": {
+    "id": 10063,
+    "name": "greninjite",
+    "name_en": "Greninjite",
+    "name_fr": "Amphinolite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/greninjite.png"
+  },
+  "10064": {
+    "id": 10064,
+    "name": "floettite",
+    "name_en": "Floettite",
+    "name_fr": "Floettite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/floettite.png"
+  },
+  "10065": {
+    "id": 10065,
+    "name": "meowsticite",
+    "name_en": "Meowsticite",
+    "name_fr": "Mistigrixite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/meowsticite.png"
+  },
+  "10066": {
+    "id": 10066,
+    "name": "pyroarite",
+    "name_en": "Pyroarite",
+    "name_fr": "N\u00e9m\u00e9liosite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/pyroarite.png"
+  },
+  "10067": {
+    "id": 10067,
+    "name": "malamarite",
+    "name_en": "Malamarite",
+    "name_fr": "S\u00e9piatrocite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/malamarite.png"
+  },
+  "10068": {
+    "id": 10068,
+    "name": "barbaracite",
+    "name_en": "Barbaracite",
+    "name_fr": "Golgopathite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/barbaracite.png"
+  },
+  "10069": {
+    "id": 10069,
+    "name": "hawluchanite",
+    "name_en": "Hawluchanite",
+    "name_fr": "Brutalibrite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/hawluchanite.png"
+  },
+  "10070": {
+    "id": 10070,
+    "name": "dragalgite",
+    "name_en": "Dragalgite",
+    "name_fr": "Kravarekite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/dragalgite.png"
+  },
+  "10071": {
+    "id": 10071,
+    "name": "crabominite",
+    "name_en": "Crabominite",
+    "name_fr": "Crabominablite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/crabominite.png"
+  },
+  "10072": {
+    "id": 10072,
+    "name": "drampanite",
+    "name_en": "Drampanite",
+    "name_fr": "Dra\u00efeulite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/drampanite.png"
+  },
+  "10073": {
+    "id": 10073,
+    "name": "falinksite",
+    "name_en": "Falinksite",
+    "name_fr": "Hexadronite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/falinksite.png"
+  },
+  "10074": {
+    "id": 10074,
+    "name": "scovillainite",
+    "name_en": "Scovillainite",
+    "name_fr": "Scovilainite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/scovillainite.png"
+  },
+  "10075": {
+    "id": 10075,
+    "name": "glimmoranite",
+    "name_en": "Glimmoranite",
+    "name_fr": "Flor\u00e9clatite",
+    "effect_en": "Allows a certain Pok\u00e9mon to Mega Evolve in battle.",
+    "effect_fr": "Permet \u00e0 un certain Pok\u00e9mon de m\u00e9ga-\u00e9voluer en combat.",
+    "sprite": "/images/items/glimmoranite.png"
   }
 }
