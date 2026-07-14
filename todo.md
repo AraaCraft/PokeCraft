@@ -2,14 +2,14 @@
     ✅ - Pokédex
     - Équipes : importer à nouveau les fichiers qu'on a exporté
     - Simulateur de dégâts / combat
-    - Générer un tableau de faiblesses et résistances en fonction des types
-    - Générer ue page qui liste tous les items présents dans le jeu ainsi que leurs descriptions et leurs icons
+    ✅ - Générer un tableau de faiblesses et résistances en fonction des types
+    - Générer une page qui liste tous les items présents dans le jeu ainsi que leurs descriptions et leurs sprites
 
 ✅ - Faire la traduction FR
 ✅ - Changer le favicon
 - Faire en sorte que les faiblesses/résistances/immunités soient mises à jour en fonction du talent si nécessaire (exemple : Lévitation)
 
-- Faire un menu dans le header avec les liens vers les différentes pages
+✅ - Faire un menu dans le header avec les liens vers les différentes pages
 
 - Toggle theme light/dark (basé sur le user system)
 
@@ -21,6 +21,7 @@
 
 
 # CORRECTIONS à faire :
+    - Le tri par type de la liste des moves sur la page d'un pokemon n'est pas traduis en FR (dans le menu déroulant ainsi que dans la colonne des types)
     ✅ - Bouton "Répartition" du le teambuilding à rendre + visible ou à mettre ailleurs
     ✅ - Mettre les noms de MEGA à la ligne, exemple :
             Dracaufeu (Mega

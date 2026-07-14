@@ -526,10 +526,11 @@ const pokemonAbilitiesJson = encodeURIComponent(JSON.stringify(pokemonAbilitiesM
            
            while(filterTypeEl.options.length > 1) { filterTypeEl.remove(1); }
            
-           typesArr.forEach(t => {
+           typesArr.forEach(typeName => {
               const opt = document.createElement('option');
-              opt.value = t;
-              opt.textContent = t.charAt(0).toUpperCase() + t.slice(1);
+              opt.value = typeName;
+              opt.setAttribute('data-i18n', `type_${typeName}`);
+              opt.textContent = t(`type_${typeName}`) || (typeName.charAt(0).toUpperCase() + typeName.slice(1));
               filterTypeEl.appendChild(opt);
            });
         }
